@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import React, { useState } from "react"
+import { motion } from "framer-motion"
 import { 
     ArrowLeft, 
     ArrowUpRight
@@ -463,7 +463,7 @@ export default function JourneyPage() {
 
                     <div className="space-y-12">
                         {content[lang].weeks.map((week: any, i: number) => (
-                            <WeekCard key={i} {...week} lang={lang} />
+                            <WeekCard key={i} {...week} lang={lang} index={i} />
                         ))}
                     </div>
                 </div>

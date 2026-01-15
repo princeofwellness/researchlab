@@ -16,6 +16,7 @@ export function TopNav({
     const pathname = usePathname()
 
     const navItems = [
+        { name: "Protocol", href: "/protocol" },
         { name: "Journey", href: "/journey" },
         { name: "Archive", href: "/archive" },
     ]

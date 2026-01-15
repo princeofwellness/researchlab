@@ -2,11 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion"
-import {
-    ArrowUpRight,
-    ChevronDown,
-    Plus
-} from "lucide-react"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { TopNav } from "@/components/navigation/top-nav"
 
@@ -43,8 +39,9 @@ function MissionCollapsible({ content }: { content: any }) {
                     <motion.div
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.3 }}
+                        className="text-[#0047BB] text-[10px]"
                     >
-                        <ChevronDown size={16} className="text-[#0047BB]" />
+                        {isOpen ? "CLOSE" : "OPEN"}
                     </motion.div>
                 </button>
             </div>
@@ -539,16 +536,14 @@ export default function SorrywecanResearchLab() {
                             href="mailto:hello@sorrywecan.com?subject=Discovery Call Request&body=Hi, I'm interested in booking a discovery call for the Research Lab.%0D%0A%0D%0ACompany:%0D%0ATeam Size:%0D%0ACurrent Challenge:%0D%0A%0D%0AThank you!"
                             className="bg-[#0047BB] text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest shadow-2xl flex items-center gap-3 hover:scale-105 transition-all"
                         >
-                            {t.nav.bookCall} <ArrowUpRight size={16} />
+                            {t.nav.bookCall} [CALL]
                         </a>
                     </motion.div>
                 )}
             </AnimatePresence>
 
             {/* Hero Section */}
-            <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-20 pt-20 overflow-hidden border-b border-black blueprint-grid">
-                <div className="absolute inset-0 noise-bg" />
-
+            <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-20 pt-20 overflow-hidden border-b border-black">
                 <div className="relative z-10 max-w-7xl mx-auto w-full">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -584,7 +579,7 @@ export default function SorrywecanResearchLab() {
                         <div className="space-y-4">
                             <div className="flex flex-wrap gap-4">
                                 <a href="mailto:hello@sorrywecan.com?subject=Discovery Call Request&body=Hi, I'm interested in booking a discovery call for the Research Lab.%0D%0A%0D%0ACompany:%0D%0ATeam Size:%0D%0ACurrent Challenge:%0D%0A%0D%0AThank you!" className="bg-[#0047BB] text-white px-10 py-5 font-inter font-semibold text-[11px] uppercase tracking-[0.25em] flex items-center gap-3 hover:bg-black transition-all">
-                                    {t.nav.bookCall} <ArrowUpRight size={16} />
+                                    {t.nav.bookCall} [CALL]
                                 </a>
                             </div>
                             <p className="text-xs font-inter uppercase tracking-[0.3em] text-[#0047BB] font-semibold">
@@ -652,7 +647,7 @@ export default function SorrywecanResearchLab() {
                             <div className="space-y-4">
                                 {t.problem.comparison.without.items.map((item, i) => (
                                     <div key={i} className="flex items-start gap-3">
-                                        <span className="text-red-500 text-xl mt-0.5">×</span>
+                                        <span className="text-red-500 text-xs font-bold mt-1">[X]</span>
                                         <span className="text-sm font-inter opacity-60">{item}</span>
                                     </div>
                                 ))}
@@ -790,7 +785,6 @@ export default function SorrywecanResearchLab() {
                     <TierCarousel content={t.tiers} />
 
                     <div className="mt-20 bg-[#f5f5f3] border border-black/10 p-12 md:p-24 relative overflow-hidden">
-                        <div className="absolute inset-0 blueprint-grid opacity-30" />
                         <div className="max-w-5xl mx-auto text-center relative z-10">
                             <h3 className="font-serif-instrument text-6xl italic mb-10 text-black">{t.roi.title}</h3>
                             <p className="text-2xl font-serif-instrument italic opacity-70 mb-16 leading-relaxed max-w-3xl mx-auto text-black">
@@ -827,8 +821,8 @@ export default function SorrywecanResearchLab() {
                                 className="w-full px-10 py-8 flex justify-between items-center text-left"
                             >
                                 <span className="font-serif-instrument text-2xl italic pr-6 group-hover:text-[#0047BB] transition-colors">{item.q}</span>
-                                <div className={cn("transition-transform duration-500", faqOpen === i ? "rotate-45" : "rotate-0")}>
-                                    <Plus size={24} className={faqOpen === i ? "text-[#0047BB]" : "text-black"} />
+                                <div className={cn("transition-transform duration-500 font-bold", faqOpen === i ? "rotate-45" : "rotate-0")}>
+                                    {faqOpen === i ? "[X]" : "[+]"}
                                 </div>
                             </button>
                             <AnimatePresence>
@@ -854,7 +848,6 @@ export default function SorrywecanResearchLab() {
 
             {/* Final CTA */}
             <section id="contact" className="py-48 bg-[#0047BB] text-white overflow-hidden relative border-t border-black">
-                <div className="absolute inset-0 noise-bg opacity-20" />
                 <div className="max-w-6xl mx-auto text-center px-6 relative z-10">
                     <h2 className="font-serif-instrument text-[9vw] md:text-[7vw] leading-[0.8] mb-16 italic tracking-tight">
                         {t.cta.headline.line1} <br />
@@ -868,7 +861,7 @@ export default function SorrywecanResearchLab() {
                             href="mailto:hello@sorrywecan.com?subject=Discovery Call Request&body=Hi, I'm interested in booking a discovery call for the Research Lab.%0D%0A%0D%0ACompany:%0D%0ATeam Size:%0D%0ACurrent Challenge:%0D%0A%0D%0AThank you!"
                             className="bg-white text-[#0047BB] px-16 py-8 font-inter font-semibold text-xs uppercase tracking-[0.4em] hover:bg-black hover:text-white transition-all inline-block shadow-[15px_15px_0px_rgba(0,0,0,0.2)]"
                         >
-                            {t.cta.button} →
+                            {t.cta.button} [JOIN]
                         </a>
                         <div className="space-y-2">
                             <p className="text-[11px] font-inter font-semibold uppercase tracking-[0.3em] opacity-60">{t.cta.limited}</p>
@@ -1167,7 +1160,7 @@ function OfferCard({ tier, name, price, duration, features, ideal, featured, vat
                             : "border border-black hover:bg-black hover:text-white"
                     )}
                 >
-                    {book} {tier} {call} <ArrowUpRight size={12} />
+                    {book} {tier} {call}
                 </a>
             </div>
         </div>

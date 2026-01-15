@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"

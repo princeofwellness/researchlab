@@ -604,12 +604,6 @@ export default function SorrywecanResearchLab() {
                                 <a href="mailto:hello@sorrywecan.com?subject=Discovery Call Request&body=Hi, I'm interested in booking a discovery call for the Research Lab.%0D%0A%0D%0ACompany:%0D%0ATeam Size:%0D%0ACurrent Challenge:%0D%0A%0D%0AThank you!" className="bg-[#0047BB] text-white px-10 py-5 font-inter font-semibold text-[11px] uppercase tracking-[0.25em] flex items-center gap-3 hover:bg-black transition-all">
                                     {t.nav.bookCall} <ArrowUpRight size={16} />
                                 </a>
-                                <a href="#offers" className="border border-black px-10 py-5 font-inter font-semibold text-[11px] uppercase tracking-[0.25em] hover:bg-black hover:text-white transition-all">
-                                    {t.nav.tiers}
-                                </a>
-                                <Link href="/journey" className="border border-black/10 px-10 py-5 font-inter font-semibold text-[11px] uppercase tracking-[0.25em] hover:bg-[#0047BB] hover:text-white hover:border-[#0047BB] transition-all flex items-center gap-2">
-                                    {t.nav.journey} <ArrowUpRight size={14} />
-                                </Link>
                             </div>
                             <p className="text-xs font-inter uppercase tracking-[0.3em] text-[#0047BB] font-semibold">
                                 {t.hero.availability}

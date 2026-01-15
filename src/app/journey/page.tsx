@@ -20,6 +20,7 @@ import {
 import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
+import { GeoCircle, GeoTriangle, GeoSquare, GeoHexagon, GeoCross } from "@/components/visuals/geometric-shapes"
 
 // --- Components ---
 
@@ -51,7 +52,17 @@ function Section({ children, className, id }: { children: React.ReactNode, class
     )
 }
 
-function WeekCard({ number, title, focus, result, details, lang }: any) {
+function WeekCard({ number, title, focus, result, details, lang, index }: any) {
+    const renderShape = (idx: number) => {
+        switch (idx) {
+            case 0: return <GeoCircle className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
+            case 1: return <GeoTriangle className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
+            case 2: return <GeoSquare className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
+            case 3: return <GeoHexagon className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
+            default: return <GeoCircle className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
+        }
+    }
+
     return (
         <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -59,6 +70,11 @@ function WeekCard({ number, title, focus, result, details, lang }: any) {
             viewport={{ once: true }}
             className="border border-black/10 p-8 md:p-12 space-y-8 bg-white/50 backdrop-blur-sm relative overflow-hidden group hover:border-[#0047BB]/30 transition-colors"
         >
+            {/* Geometric Shape Background */}
+            <div className="absolute -right-20 -bottom-20 pointer-events-none">
+                {renderShape(index)}
+            </div>
+
             <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
                 <span className="text-[15vw] font-serif-instrument italic leading-none">{number}</span>
             </div>
@@ -116,7 +132,7 @@ const content = {
             title: "Trajektória",
             subtitle: "NIE JE TO KURZ, ALE LABORATÓRIUM",
             description: "Za jeden mesiac si vybuduješ funkčný systém na rozšírenie a zosilnenie inteligencie. Od roztrúsených promptov k integrovanej AI-sústave.",
-            philosophy: "Neposkytujeme vám len informácie. Informácie sa menia príliš rýchlo — potrebujeme meniť spôsob myslenia a prístup."
+            philosophy: "Neposkytujeme vám len informácie. Budujete si 'druhý mozog' a sadu digitálnych nástrojov, ktoré vám zostanú navždy."
         },
         automation: {
             title: "Automation — čo sa naučíš",
@@ -133,7 +149,7 @@ const content = {
                 number: "01",
                 title: "Diagnostika rutiny a audit úloh",
                 focus: "Od procesného chaosu k vedomému výberu.",
-                result: "Mapa vašich aktuálnych procesov a tri kľúčové úlohy pripravené na delegovanie AI-asistentom.",
+                result: "Digitálna mapa procesov a Prioritizačná matica (Notion/Miro šablóna).",
                 details: [
                     "Pochopiť, čo je vhodné automatizovať — a čo nie.",
                     "Osvojiť si framework 6T na prioritizáciu úloh.",
@@ -152,7 +168,7 @@ const content = {
                 number: "02",
                 title: "Ekosystém nástrojov a AI integrácie",
                 focus: "Od mechanických úkonov k inteligentnému spracovaniu.",
-                result: "1–2 funkčné automatizácie s AI a knižnica 5–7 systémových promptov.",
+                result: "Vlastné automatizačné scenáre (Make/n8n) a Knižnica systémových promptov.",
                 details: [
                     "Zorientovať sa v mape nástrojov od jednoduchých po výkonné no-code.",
                     "Pochopiť, ako sa AI stáva súčasťou automatizácií.",
@@ -171,7 +187,7 @@ const content = {
                 number: "03",
                 title: "Agenti, MCP a orchestrácia",
                 focus: "Od jednotlivých scenárov k orchestrácii procesov.",
-                result: "Funkčná viacstupňová automatizácia s AI agentmi, ktorá rieši komplexnú úlohu.",
+                result: "Nasadený multi-agentný systém s MCP integráciou (Claude Desktop).",
                 details: [
                     "Navrhovať komplexné viacstupňové scenáre.",
                     "Osvojiť si prácu s API, webhookmi a JSON.",
@@ -190,7 +206,7 @@ const content = {
                 number: "04",
                 title: "Ekosystémy a škálovanie",
                 focus: "Od automatizácií k ucelenej AI ekosystéme.",
-                result: "Mapa vašej osobnej AI ekosystémy, finálny projekt a plán rozvoja na 3 mesiace.",
+                result: "Osobný AI Operačný Systém (Dashboard) a produkčná roadmapa.",
                 details: [
                     "Myslieť v kategóriách ekosystémov a multiagentných systémov.",
                     "Pochopiť princípy škálovania a údržby.",
@@ -222,24 +238,24 @@ const content = {
             ]
         },
         examples: [
-            { t: "AI Coaching", d: "Personalizovaný AI kouč s hlasovým rozhraním.", tools: "Claude · Vapi · Obsidian" },
-            { t: "AI Vision", d: "Automatické triedenie a tagovanie vizuálneho obsahu.", tools: "GPT Vision · Claude" },
-            { t: "AI Summary", d: "Transkripcia stretnutí s action items do CRM.", tools: "Zoom · Gemini · Whisper" },
-            { t: "AI Learning", d: "Jazykový partner s adaptívnou náročnosťou.", tools: "GPT-4 · ElevenLabs" },
-            { t: "AI Knowledge", d: "RAG systém pre sémantické vyhľadávanie v poznámkach.", tools: "Obsidian · Claude API" },
-            { t: "AI Automation", d: "Email triage a automatická správa dokumentov.", tools: "n8n · Make · Claude" }
+            { t: "The Second Brain (Vault)", d: "Pred-konfigurovaný systém na správu znalostí (PARA metóda) s integrovanými AI agentmi.", tools: "Obsidian · Claude" },
+            { t: "Automation Blueprints", d: "Knižnica hotových scenárov pre Make/n8n (fakturácia, triedenie emailov, research).", tools: "JSON · Make · n8n" },
+            { t: "The Prompt Library", d: "Databáza testovaných systémových promptov pre GPT-4 a Claude 3.5.", tools: "Notion · Text" },
+            { t: "Local Agent Configs", d: "Konfiguračné súbory pre prepojenie Claude Desktop s vašimi súbormi a databázami.", tools: "MCP · JSON · SQLite" },
+            { t: "Decision Matrix", d: "Digitálne nástroje na audit procesov a strategické rozhodovanie.", tools: "Miro · Excel" },
+            { t: "Voice Interface", d: "Nastavenie pre hlasovú interakciu s vašou znalostnou bázou na cestách.", tools: "Vapi · Whisper" }
         ],
         learningGoals: {
-            title: "Čo sa v laboratóriu naučíte?",
+            title: "Čo si odnesiete (Digital Toolkit)",
             items: [
-                "Budovať znalostnú bázu v Obsidiane na mieru úlohám",
-                "Integrovať AI (GPT, Claude, Groq) do systému práce",
-                "Navrhovať personifikovaných AI asistentov",
-                "Vizualizovať graf znalostí pre nové insighty",
-                "Využívať AI na tvorbu obsahu priamo z databázy",
-                "Nastavovať procesy zberu a integrácie informácií",
-                "Organizovať spoluprácu v tímoch cez Obsidian",
-                "Prepojiť Obsidian s vývojovými nástrojmi cez MCP"
+                "Vlastnú znalostnú bázu v Obsidiane",
+                "Funkčné API integrácie (GPT, Claude, Groq)",
+                "Osobných AI asistentov na mieru",
+                "Vizuálny graf vašich znalostí",
+                "Automatizované publikačné pipeline-y",
+                "Systém na zber a triedenie informácií",
+                "Nástroje na tímovú kolaboráciu",
+                "Prepojenie lokálnych dát s LLM (RAG)"
             ]
         }
     },
@@ -248,7 +264,7 @@ const content = {
             title: "Trajectory",
             subtitle: "NOT A COURSE, BUT A LABORATORY",
             description: "In one month, you will build a functional system to expand and amplify intelligence. From scattered prompts to an integrated AI system.",
-            philosophy: "We don't just provide information. Information changes too fast — we need to change the way of thinking and approach."
+            philosophy: "We don't just provide information. You are building a 'second brain' and a suite of digital tools that you keep forever."
         },
         automation: {
             title: "Automation — what you'll learn",
@@ -265,7 +281,7 @@ const content = {
                 number: "01",
                 title: "Routine Diagnosis & Task Audit",
                 focus: "From process chaos to conscious choice.",
-                result: "A map of your current processes and three key tasks ready for delegation to AI assistants.",
+                result: "Digital Process Map & Priority Matrix (Notion/Miro Template).",
                 details: [
                     "Understand what is suitable for automation — and what is not.",
                     "Master the 6T framework for task prioritization.",
@@ -284,7 +300,7 @@ const content = {
                 number: "02",
                 title: "Tool Ecosystem & AI Integration",
                 focus: "From mechanical actions to intelligent processing.",
-                result: "1–2 functional AI automations and a library of 5–7 systematic prompts.",
+                result: "Custom Automation Scenarios (Make/n8n) & System Prompt Library.",
                 details: [
                     "Navigate the tool map from simple to powerful no-code solutions.",
                     "Understand how AI becomes part of automations.",
@@ -303,7 +319,7 @@ const content = {
                 number: "03",
                 title: "Agents, MCP & Orchestration",
                 focus: "From individual scenarios to process orchestration.",
-                result: "Functional multi-stage automation with AI agents solving a complex task.",
+                result: "Deployed Multi-Agent System with MCP Integration (Claude Desktop).",
                 details: [
                     "Design complex multi-stage scenarios.",
                     "Master working with APIs, webhooks, and JSON.",
@@ -322,7 +338,7 @@ const content = {
                 number: "04",
                 title: "Ecosystems & Scaling",
                 focus: "From automations to a complete AI ecosystem.",
-                result: "Map of your personal AI ecosystem, final project, and a 3-month growth plan.",
+                result: "Personal AI Operating System (Dashboard) & Production Roadmap.",
                 details: [
                     "Think in terms of ecosystems and multi-agent systems.",
                     "Understand principles of scaling and maintenance.",
@@ -354,24 +370,24 @@ const content = {
             ]
         },
         examples: [
-            { t: "AI Coaching", d: "Personalized AI coach with voice interface.", tools: "Claude · Vapi · Obsidian" },
-            { t: "AI Vision", d: "Automatic sorting and tagging of visual content.", tools: "GPT Vision · Claude" },
-            { t: "AI Summary", d: "Meeting transcription with action items to CRM.", tools: "Zoom · Gemini · Whisper" },
-            { t: "AI Learning", d: "Language partner with adaptive difficulty.", tools: "GPT-4 · ElevenLabs" },
-            { t: "AI Knowledge", d: "RAG system for semantic search in notes.", tools: "Obsidian · Claude API" },
-            { t: "AI Automation", d: "Email triage and automatic document management.", tools: "n8n · Make · Claude" }
+            { t: "The Second Brain (Vault)", d: "Pre-configured knowledge management system (PARA method) with integrated AI agents.", tools: "Obsidian · Claude" },
+            { t: "Automation Blueprints", d: "Library of ready-to-use scenarios for Make/n8n (invoicing, email triage, research).", tools: "JSON · Make · n8n" },
+            { t: "The Prompt Library", d: "Database of tested system prompts for GPT-4 and Claude 3.5.", tools: "Notion · Text" },
+            { t: "Local Agent Configs", d: "Configuration files for connecting Claude Desktop with your local files and DBs.", tools: "MCP · JSON · SQLite" },
+            { t: "Decision Matrix", d: "Digital tools for process auditing and strategic decision making.", tools: "Miro · Excel" },
+            { t: "Voice Interface", d: "Setup for voice interaction with your knowledge base on the go.", tools: "Vapi · Whisper" }
         ],
         learningGoals: {
-            title: "What will you learn in the lab?",
+            title: "What you take home (Digital Toolkit)",
             items: [
-                "Build a knowledge base in Obsidian tailored to tasks",
-                "Integrate AI (GPT, Claude, Groq) into your workflow",
-                "Design personalized AI assistants",
-                "Visualize knowledge graph for new insights",
-                "Use AI for content creation directly from the database",
-                "Set up data collection and integration processes",
-                "Organize team collaboration through Obsidian",
-                "Connect Obsidian with dev tools via MCP"
+                "Your own Obsidian knowledge base",
+                "Functional API integrations (GPT, Claude, Groq)",
+                "Personalized AI assistants",
+                "Visual graph of your knowledge",
+                "Automated publishing pipelines",
+                "Information collection & sorting system",
+                "Team collaboration tools",
+                "Local data connection with LLMs (RAG)"
             ]
         }
     }
@@ -397,6 +413,14 @@ export default function JourneyPage() {
             {/* Hero Section */}
             <Section className="min-h-[80vh] flex flex-col justify-center blueprint-grid relative">
                 <div className="absolute inset-0 noise-bg opacity-10 pointer-events-none" />
+                
+                {/* Floating Geometric Shapes */}
+                <div className="absolute top-20 right-[10%] pointer-events-none">
+                    <GeoCross size={300} className="text-[#0047BB] opacity-10" delay={0.5} />
+                </div>
+                <div className="absolute bottom-20 left-[5%] pointer-events-none">
+                    <GeoCircle size={200} className="text-black opacity-5" delay={0.8} />
+                </div>
                 
                 <div className="relative z-10 space-y-12">
                     <motion.div
@@ -484,7 +508,7 @@ export default function JourneyPage() {
 
                     <div className="space-y-12">
                         {content[lang].weeks.map((week: any, i: number) => (
-                            <WeekCard key={i} {...week} lang={lang} />
+                            <WeekCard key={i} {...week} lang={lang} index={i} />
                         ))}
                     </div>
                 </div>

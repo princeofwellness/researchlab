@@ -684,17 +684,16 @@ export default function SorrywecanResearchLab() {
                             transition={{ duration: 0.6, delay: 0.3 }}
                             className="border-2 border-[#0047BB] p-12 bg-[#0047BB]/5 relative"
                         >
-                            <div className="absolute top-4 right-4 w-3 h-3 bg-[#0047BB] rounded-full" />
-                            <h4 className="font-serif-instrument text-3xl italic mb-8 text-[#0047BB]">{t.problem.comparison.with.title}</h4>
-                            <div className="space-y-4">
-                                {t.problem.comparison.with.items.map((item, i) => (
-                                    <div key={i} className="flex items-start gap-3">
-                                        <CheckCircle2 size={20} className="text-[#0047BB] shrink-0 mt-0.5" />
-                                        <span className="text-sm font-inter opacity-80">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </motion.div>
+                            <div className="absolute top-48 right-0 text-[15vw] font-serif-instrument italic text-black/[0.04] select-none pointer-events-none">
+                {number}
+            </div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="max-w-7xl mx-auto px-6 md:px-20"
+            >
                     </motion.div>
 
                     <motion.div 
@@ -705,9 +704,6 @@ export default function SorrywecanResearchLab() {
                         className="mt-24 max-w-4xl mx-auto"
                     >
                         <div className="relative border-l-4 border-[#0047BB] bg-[#0047BB]/5 p-12 md:p-16">
-                            <div className="absolute -top-6 -left-6 w-12 h-12 bg-[#0047BB] flex items-center justify-center text-white font-serif-instrument text-3xl italic">
-                                ∞
-                            </div>
                             <p className="text-2xl md:text-3xl font-serif-instrument italic leading-relaxed text-black">
                                 {t.problem.quote}
                             </p>
@@ -732,7 +728,6 @@ export default function SorrywecanResearchLab() {
                         {t.approach.points.map((point, i) => (
                             <Point
                                 key={i}
-                                icon={[<Brain className="w-8 h-8 text-[#0047BB]" />, <Zap className="w-8 h-8 text-[#0047BB]" />, <Globe className="w-8 h-8 text-[#0047BB]" />][i]}
                                 title={point.title}
                                 desc={point.desc}
                             />
@@ -934,9 +929,6 @@ function StatSmall({ label, value, accent }: any) {
 function Section({ id, number, title, children }: any) {
     return (
         <section id={id} className="scroll-mt-32 py-48 border-b border-black last:border-0 relative">
-            <div className="absolute top-48 right-0 text-[15vw] font-serif-instrument italic text-black/[0.04] select-none pointer-events-none">
-                {number}
-            </div>
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -974,9 +966,6 @@ function StatBox({ val, label, accent }: any) {
 function Point({ icon, title, desc }: any) {
     return (
         <div className="space-y-8 p-10 border border-black bg-white group hover:bg-[#0047BB]/5 transition-colors">
-            <div className="p-4 bg-[#0047BB]/5 rounded-sm inline-block group-hover:bg-[#0047BB] group-hover:text-white transition-all duration-500">
-                {icon}
-            </div>
             <h4 className="font-serif-instrument text-4xl italic uppercase tracking-tighter">{title}</h4>
             <p className="text-sm text-black/60 leading-relaxed font-inter">{desc}</p>
         </div>
@@ -1163,7 +1152,7 @@ function OfferCard({ tier, name, price, duration, features, ideal, featured, vat
         )}>
             {featured && (
                 <div className="absolute top-0 right-6 -translate-y-1/2 bg-[#0047BB] text-white px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.3em] flex items-center gap-2 font-inter">
-                    <Star size={10} fill="white" /> {priority}
+                    {priority}
                 </div>
             )}
 
@@ -1180,7 +1169,7 @@ function OfferCard({ tier, name, price, duration, features, ideal, featured, vat
             <div className="space-y-3 mb-8 flex-1">
                 {features.map((f: string, i: number) => (
                     <div key={i} className="flex items-start gap-3">
-                        <CheckCircle2 size={14} className="text-[#0047BB] shrink-0 mt-0.5" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-1.5 shrink-0" />
                         <span className="text-[11px] font-inter leading-relaxed opacity-70">{f}</span>
                     </div>
                 ))}

@@ -52,33 +52,14 @@ function Section({ children, className, id }: { children: React.ReactNode, class
     )
 }
 
-function WeekCard({ number, title, focus, result, details, lang, index }: any) {
-    const renderShape = (idx: number) => {
-        switch (idx) {
-            case 0: return <GeoCircle className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
-            case 1: return <GeoTriangle className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
-            case 2: return <GeoSquare className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
-            case 3: return <GeoHexagon className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
-            default: return <GeoCircle className="text-[#0047BB] opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" size={400} />
-        }
-    }
-
+function WeekCard({ number, title, focus, result, details, lang }: any) {
     return (
         <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="border border-black/10 p-8 md:p-12 space-y-8 bg-white/50 backdrop-blur-sm relative overflow-hidden group hover:border-[#0047BB]/30 transition-colors"
+            className="border border-black/10 p-8 md:p-12 space-y-8 bg-white/50 backdrop-blur-sm relative overflow-hidden group hover:border-[#0047BB]/30 transition-all"
         >
-            {/* Geometric Shape Background */}
-            <div className="absolute -right-20 -bottom-20 pointer-events-none">
-                {renderShape(index)}
-            </div>
-
-            <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
-                <span className="text-[15vw] font-serif-instrument italic leading-none">{number}</span>
-            </div>
-            
             <div className="relative z-10">
                 <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#0047BB]">
                     {lang === 'en' ? `WEEK ${number}` : `TÝŽDEŇ ${number}`}
@@ -112,7 +93,7 @@ function WeekCard({ number, title, focus, result, details, lang, index }: any) {
                         <div className="space-y-3">
                             {details.map((goal: string, i: number) => (
                                 <div key={i} className="flex items-start gap-3">
-                                    <CheckCircle2 size={14} className="text-[#0047BB] mt-1 shrink-0" />
+                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-1.5 shrink-0" />
                                     <span className="text-xs font-inter leading-relaxed opacity-60">{goal}</span>
                                 </div>
                             ))}
@@ -475,12 +456,6 @@ export default function JourneyPage() {
                                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
                                 className="absolute inset-4 border-t-2 border-[#0047BB]/20 rounded-full"
                             />
-                            <motion.div 
-                                animate={{ rotate: -360 }}
-                                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                                className="absolute inset-12 border-b-2 border-black/10 rounded-full"
-                            />
-                            <Brain size={40} className="text-[#0047BB] opacity-40" />
                         </div>
                     </div>
                 </div>
@@ -549,7 +524,6 @@ export default function JourneyPage() {
                     <div className="flex items-center justify-center">
                         <div className="p-12 border border-white/10 space-y-8 bg-white/5 backdrop-blur-sm max-w-md w-full">
                             <div className="flex gap-4 items-center opacity-40">
-                                <Users size={20} />
                                 <span className="text-[10px] font-bold uppercase tracking-[0.3em]">Corporate Transformation</span>
                             </div>
                             <p className="text-xl italic font-serif-instrument leading-relaxed">

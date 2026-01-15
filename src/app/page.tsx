@@ -132,7 +132,7 @@ export default function SorrywecanResearchLab() {
                 title: {
                     line1: "AI is the Engine.",
                     line2: "You are the Driver.",
-                    line3: "Restore Your Human Edge."
+                    line3: "Take Control."
                 },
                 trustedBy: "Trusted by",
                 description: "One session can change how your team thinks. We help leaders restore taste, judgment, and creative confidence in an age of automation.",
@@ -333,7 +333,7 @@ export default function SorrywecanResearchLab() {
                 title: {
                     line1: "AI je Motor.",
                     line2: "Vy ste Vodič.",
-                    line3: "Obnovte Svoj Ľudský Náskok."
+                    line3: "Prevezmite Kontrolu."
                 },
                 trustedBy: "Dôverujú nám",
                 description: "Jedno sedenie môže zmeniť, ako váš tím myslí. Pomáhame lídrom obnoviť vkus, úsudok a kreatívnu sebadôveru vo veku automatizácie.",

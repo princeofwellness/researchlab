@@ -591,8 +591,46 @@ export default function GamePlanPage() {
                 </div>
             </section>
 
+            {/* Things to Consider */}
+            <section className="py-16 px-6 md:px-20 border-t border-black/10 bg-[#f5f5f3]">
+                <div className="max-w-4xl mx-auto">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/30 mb-8">
+                        Things to Think About
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm text-black/50">
+                        <div className="flex items-start gap-2">
+                            <span className="text-black/30">—</span>
+                            <span>Discovery call script (key questions to ask)</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                            <span className="text-black/30">—</span>
+                            <span>Simple contract / terms of service</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                            <span className="text-black/30">—</span>
+                            <span>Payment process (invoice, deposit?)</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                            <span className="text-black/30">—</span>
+                            <span>Pre-workshop questionnaire for clients</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                            <span className="text-black/30">—</span>
+                            <span>Calendar capacity (how many per month?)</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                            <span className="text-black/30">—</span>
+                            <span>Post-workshop feedback collection</span>
+                        </div>
+                    </div>
+                    <p className="text-xs text-black/30 mt-8 italic">
+                        Target tier: Mid (€6,930 Taste Sprint) • Lead = anyone interested who wants to know more
+                    </p>
+                </div>
+            </section>
+
             {/* Footer */}
-            <footer className="py-20 px-6 border-t border-black/10 text-center bg-[#f5f5f3]">
+            <footer className="py-12 px-6 border-t border-black/10 text-center bg-[#f5f5f3]">
                 <p className="text-[10px] font-bold uppercase tracking-[0.5em] opacity-20">
                     SORRYWECAN // GAME PLAN // UPDATED DAILY
                 </p>

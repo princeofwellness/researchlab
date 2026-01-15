@@ -591,39 +591,189 @@ export default function GamePlanPage() {
                 </div>
             </section>
 
-            {/* Things to Consider */}
-            <section className="py-16 px-6 md:px-20 border-t border-black/10 bg-[#f5f5f3]">
-                <div className="max-w-4xl mx-auto">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/30 mb-8">
-                        Things to Think About
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm text-black/50">
-                        <div className="flex items-start gap-2">
-                            <span className="text-black/30">—</span>
-                            <span>Discovery call script (key questions to ask)</span>
+            {/* Things to Consider - Expanded */}
+            <section className="py-24 px-6 md:px-20 border-t border-black/10 bg-[#f5f5f3]">
+                <div className="max-w-6xl mx-auto">
+                    <div className="mb-16">
+                        <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#0047BB] block mb-4">05</span>
+                        <h2 className="font-serif-instrument text-5xl md:text-6xl tracking-tighter leading-none">Things to Think About</h2>
+                        <p className="text-sm text-black/40 mt-4">Future considerations as you scale</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* Discovery Call Script */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Discovery Call Script</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">Key questions to ask</p>
+                            <div className="space-y-3 text-sm text-black/70">
+                                <p className="font-medium text-black">Understand their situation:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• "What AI tools is your team currently using?"</p>
+                                    <p>• "How would you describe your team's AI adoption level?"</p>
+                                    <p>• "What's your biggest frustration with AI output right now?"</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Diagnose the pain:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• "Do you feel your work is starting to look like everyone else's?"</p>
+                                    <p>• "Is your team prompting or curating?"</p>
+                                    <p>• "Where do you lose the most time in your creative process?"</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Qualify & close:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• "How many people would attend the workshop?"</p>
+                                    <p>• "What's your timeline for making a decision?"</p>
+                                    <p>• "Who else needs to be involved in this decision?"</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex items-start gap-2">
-                            <span className="text-black/30">—</span>
-                            <span>Simple contract / terms of service</span>
+
+                        {/* Contract / Terms */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Simple Contract / Terms</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">What to include</p>
+                            <div className="space-y-3 text-sm text-black/70">
+                                <p className="font-medium text-black">Scope of work:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Workshop duration and format (in-person/remote)</p>
+                                    <p>• Number of participants included</p>
+                                    <p>• Deliverables (toolkit, materials, recordings?)</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Payment terms:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• 50% deposit to confirm booking</p>
+                                    <p>• 50% due before workshop date</p>
+                                    <p>• Payment methods accepted</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Cancellation policy:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• 14+ days notice: full refund</p>
+                                    <p>• 7-14 days: 50% refund or reschedule</p>
+                                    <p>• Less than 7 days: reschedule only</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Confidentiality:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• NDA for sensitive client information</p>
+                                    <p>• Permission to use logo/testimonial</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex items-start gap-2">
-                            <span className="text-black/30">—</span>
-                            <span>Payment process (invoice, deposit?)</span>
+
+                        {/* Payment Process */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Payment Process</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">How money flows</p>
+                            <div className="space-y-3 text-sm text-black/70">
+                                <p className="font-medium text-black">Simple flow:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>1. Send proposal/quote after discovery call</p>
+                                    <p>2. Client confirms → send invoice for 50% deposit</p>
+                                    <p>3. Deposit received → date is locked</p>
+                                    <p>4. Send final invoice 7 days before workshop</p>
+                                    <p>5. Workshop happens after full payment</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Payment methods:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Bank transfer (primary)</p>
+                                    <p>• Stripe/card payment (optional, adds fees)</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Invoice details:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Company name, VAT number</p>
+                                    <p>• Clear description of service</p>
+                                    <p>• Payment deadline (7-14 days)</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex items-start gap-2">
-                            <span className="text-black/30">—</span>
-                            <span>Pre-workshop questionnaire for clients</span>
+
+                        {/* Pre-Workshop Questionnaire */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Pre-Workshop Questionnaire</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">Send 1 week before</p>
+                            <div className="space-y-3 text-sm text-black/70">
+                                <p className="font-medium text-black">Company context:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Industry and company size</p>
+                                    <p>• Main products/services</p>
+                                    <p>• Brand positioning (premium, mass, etc.)</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Current AI usage:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Which tools does the team use? (ChatGPT, Midjourney, etc.)</p>
+                                    <p>• How often? Daily, weekly, rarely?</p>
+                                    <p>• What do they use it for? (copy, images, research)</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Goals for workshop:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Top 3 things they want to learn</p>
+                                    <p>• Biggest current challenge with AI</p>
+                                    <p>• What would make this workshop successful?</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Logistics:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• List of attendees (names, roles)</p>
+                                    <p>• Technical setup available (screens, laptops)</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex items-start gap-2">
-                            <span className="text-black/30">—</span>
-                            <span>Calendar capacity (how many per month?)</span>
+
+                        {/* Calendar Capacity */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Calendar Capacity</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">Define your limits</p>
+                            <div className="space-y-3 text-sm text-black/70">
+                                <p className="font-medium text-black">Questions to answer:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• How many workshops per month max? (2? 4? 6?)</p>
+                                    <p>• Which days of the week work best?</p>
+                                    <p>• How much prep time needed per workshop?</p>
+                                    <p>• Buffer days between workshops?</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Consider:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Travel time if not local</p>
+                                    <p>• Energy/quality — don't overbook</p>
+                                    <p>• Other commitments (SORRYWECAN projects)</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Suggested start:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• 2-3 workshops per month maximum</p>
+                                    <p>• Tuesdays, Wednesdays, Thursdays</p>
+                                    <p>• Minimum 3 days prep time</p>
+                                    <p>• Block Mondays and Fridays</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex items-start gap-2">
-                            <span className="text-black/30">—</span>
-                            <span>Post-workshop feedback collection</span>
+
+                        {/* Post-Workshop Feedback */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Post-Workshop Feedback</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">Collect within 48 hours</p>
+                            <div className="space-y-3 text-sm text-black/70">
+                                <p className="font-medium text-black">Quick survey (5 questions max):</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• "How would you rate the workshop? (1-10)"</p>
+                                    <p>• "What was the most valuable insight?"</p>
+                                    <p>• "What would you improve?"</p>
+                                    <p>• "Would you recommend this to others?"</p>
+                                    <p>• "Can we use your feedback as a testimonial?"</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Testimonial request:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Ask for 2-3 sentence quote</p>
+                                    <p>• Permission to use name + company</p>
+                                    <p>• LinkedIn recommendation request</p>
+                                </div>
+                                <p className="font-medium text-black pt-4">Follow-up sequence:</p>
+                                <div className="pl-4 space-y-2">
+                                    <p>• Day 1: Thank you email + survey link</p>
+                                    <p>• Day 7: "How's the toolkit working?" check-in</p>
+                                    <p>• Day 30: Results check + upsell opportunity</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p className="text-xs text-black/30 mt-8 italic">
+
+                    <p className="text-xs text-black/30 mt-12 italic text-center">
                         Target tier: Mid (€6,930 Taste Sprint) • Lead = anyone interested who wants to know more
                     </p>
                 </div>

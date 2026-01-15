@@ -175,8 +175,7 @@ export default function ProtocolPage() {
                     </div>
 
                     {/* The Navigator (Center) */}
-                    <div className="bg-[#fcfcfc] p-10 space-y-8 flex flex-col relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-20 h-20 bg-[#0047BB]/5 rounded-bl-full" />
+                    <div className="bg-white p-10 space-y-8 flex flex-col">
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">THE COMPASS</span>
                         <h3 className="font-serif-instrument text-4xl italic">The Navigator</h3>
                         <p className="text-sm text-black/60 leading-relaxed flex-grow">

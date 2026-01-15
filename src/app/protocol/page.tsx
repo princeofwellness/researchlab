@@ -112,7 +112,7 @@ export default function ProtocolPage() {
                     line1: "The Cognitive",
                     line2: "Operating System."
                 },
-                description: "Companies don't just need software; they need a new way to think. We audit your mindset, map your automation potential, and install the navigation tools to survive speed.",
+                description: "Companies don't just need software; they need a new way to think. We audit your mindset, map your automation potential, and install the navigation tools to turn speed into your unfair advantage.",
                 features: ["Audit (Diagnosis)", "Map (Prototyping)", "Integrate (Mindset)"]
             },
             trinity: {
@@ -129,7 +129,7 @@ export default function ProtocolPage() {
                     {
                         tag: "THE COMPASS",
                         title: "The Navigator",
-                        desc: "Focuses on purpose, human agency, and Zen in the age of speed. Grounds the team so they can steer the machine without being consumed by it.",
+                        desc: "Focuses on critical distance and strategic clarity. In an age of infinite speed, he ensures the team retains the judgment to steer the machine, rather than being automated by it.",
                         name: "Roman Pii Wagner",
                         role: "TRANSFORMATIONAL DESIGN"
                     },
@@ -174,7 +174,7 @@ export default function ProtocolPage() {
                         title: "The Studio",
                         focus: "CREATIVE & BRAND",
                         expert: "The Creative",
-                        desc: "For C-levels, design leads, and brand guardians. We focus on Visual Strategy and How to Think with AI. The goal is variance, taste, and high-level direction.",
+                        desc: "For C-levels, design leads, and brand guardians. We focus on Visual Strategy and How to Think with AI. The goal is Unignorable Distinctiveness and high-level direction.",
                         outcome: "The 100-to-1 Curation Workflow",
                         tags: ["Taste", "Visual Strategy", "C-Level Thinking", "Brand Voice"]
                     },
@@ -217,13 +217,13 @@ export default function ProtocolPage() {
                     },
                     {
                         title: "The Sovereign",
-                        desc: "We need speed, privacy, and secure automation.",
+                        desc: "We need maximum speed, but zero data leakage. Total privacy.",
                         os: "Product OS",
                         combo: "Architect + Navigator"
                     },
                     {
                         title: "The Synthesis",
-                        desc: "Magic meets Logic. Scale the vision without losing the soul.",
+                        desc: "Magic meets Logic. Scale the vision 10x without losing the soul.",
                         os: "Dual Core OS",
                         combo: "Creative + Architect"
                     },
@@ -243,7 +243,7 @@ export default function ProtocolPage() {
                     line1: "Kognitívny",
                     line2: "Operačný Systém."
                 },
-                description: "Firmy nepotrebujú len softvér; potrebujú nový spôsob myslenia. Auditujeme váš mindset, mapujeme automatizačný potenciál a inštalujeme navigačné nástroje na prežitie rýchlosti.",
+                description: "Firmy nepotrebujú len softvér; potrebujú nový spôsob myslenia. Auditujeme váš mindset, mapujeme automatizačný potenciál a inštalujeme navigačné nástroje na využitie rýchlosti vo váš prospech.",
                 features: ["Audit (Diagnóza)", "Mapa (Prototypovanie)", "Integrácia (Mindset)"]
             },
             trinity: {
@@ -260,7 +260,7 @@ export default function ProtocolPage() {
                     {
                         tag: "KOMPAS",
                         title: "Navigátor",
-                        desc: "Zameriava sa na účel, ľudskú agentnosť a Zen v dobe rýchlosti. Uzemňuje tím, aby mohli riadiť stroj bez toho, aby ich pohltil.",
+                        desc: "Zameriava sa na strategickú jasnosť a kritický odstup. V dobe nekonečnej rýchlosti zabezpečuje, aby tím riadil stroj, namiesto toho, aby ním bol automatizovaný.",
                         name: "Roman Pii Wagner",
                         role: "TRANSFORMATIONAL DESIGN"
                     },
@@ -305,7 +305,7 @@ export default function ProtocolPage() {
                         title: "Štúdio",
                         focus: "KREATÍVA & BRAND",
                         expert: "Kreatívec",
-                        desc: "Pre C-level, dizajnérov a strážcov značky. Sústredíme sa na Vizuálnu Stratégiu a Ako Myslieť s AI. Cieľom je variancia, vkus a smerovanie na vysokej úrovni.",
+                        desc: "Pre C-level, dizajnérov a strážcov značky. Sústredíme sa na Vizuálnu Stratégiu a Ako Myslieť s AI. Cieľom je Neprehliadnuteľná Odlišnosť a smerovanie na vysokej úrovni.",
                         outcome: "Workflow 100-do-1 Kurátorstva",
                         tags: ["Vkus", "Vizuálna Stratégia", "C-Level Myslenie", "Hlas Značky"]
                     },
@@ -348,13 +348,13 @@ export default function ProtocolPage() {
                     },
                     {
                         title: "Suverén",
-                        desc: "Potrebujeme rýchlosť, súkromie a bezpečnú automatizáciu.",
+                        desc: "Potrebujeme maximálnu rýchlosť, ale nulový únik dát. Úplné súkromie.",
                         os: "Produktový OS",
                         combo: "Architekt + Navigátor"
                     },
                     {
                         title: "Syntéza",
-                        desc: "Mágia stretáva Logiku. Škálovanie vízie bez straty duše.",
+                        desc: "Mágia stretáva Logiku. Škálovanie vízie 10x bez straty duše.",
                         os: "Dual Core OS",
                         combo: "Kreatívec + Architekt"
                     },

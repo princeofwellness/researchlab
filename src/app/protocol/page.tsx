@@ -33,9 +33,12 @@ function Section({ id, number, title, children, className }: any) {
     )
 }
 
-function PhaseCard({ number, title, subtitle, desc, items }: any) {
+function PhaseCard({ number, title, subtitle, desc, items, highlight }: any) {
     return (
-        <div className="border border-black/10 bg-white p-8 md:p-12 relative group hover:border-black transition-colors">
+        <div className={cn(
+            "border border-black/10 bg-white p-8 md:p-12 relative group hover:border-black transition-colors",
+            highlight && "bg-[#0047BB]/5 border-[#0047BB]/20"
+        )}>
             <span className="absolute top-8 right-8 text-[10px] font-bold tracking-[0.3em] opacity-30">PHASE {number}</span>
             <h3 className="text-3xl font-serif-instrument italic mb-2">{title}</h3>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0047BB] mb-8">{subtitle}</p>
@@ -54,10 +57,10 @@ function PhaseCard({ number, title, subtitle, desc, items }: any) {
     )
 }
 
-function TrackCard({ title, expert, focus, desc, outcome, active }: any) {
+function TrackCard({ title, expert, focus, desc, outcome, tags, active }: any) {
     return (
         <div className={cn(
-            "p-10 border transition-all duration-500",
+            "p-10 border transition-all duration-500 flex flex-col",
             active ? "bg-black text-white border-black scale-[1.02] shadow-2xl" : "bg-white text-black border-black/10 hover:border-black"
         )}>
             <div className="flex justify-between items-start mb-8">
@@ -73,13 +76,26 @@ function TrackCard({ title, expert, focus, desc, outcome, active }: any) {
                 <p className="font-serif-instrument text-xl">{expert}</p>
             </div>
 
-            <p className={cn("text-sm leading-relaxed mb-8", active ? "opacity-80" : "opacity-60")}>
+            <p className={cn("text-sm leading-relaxed mb-8 flex-grow", active ? "opacity-80" : "opacity-60")}>
                 {desc}
             </p>
 
-            <div className={cn("pt-8 border-t", active ? "border-white/20" : "border-black/10")}>
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-50 mb-2">OUTCOME</p>
-                <p className="font-medium">{outcome}</p>
+            <div className="space-y-6">
+                <div className="flex flex-wrap gap-2">
+                    {tags.map((tag: string) => (
+                        <span key={tag} className={cn(
+                            "text-[9px] font-bold uppercase tracking-wider px-2 py-1",
+                            active ? "bg-white/10 text-white" : "bg-black/5 text-black"
+                        )}>
+                            {tag}
+                        </span>
+                    ))}
+                </div>
+
+                <div className={cn("pt-6 border-t", active ? "border-white/20" : "border-black/10")}>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-50 mb-2">OUTPUT</p>
+                    <p className="font-medium">{outcome}</p>
+                </div>
             </div>
         </div>
     )
@@ -109,53 +125,75 @@ export default function ProtocolPage() {
                         transition={{ delay: 0.1 }}
                         className="font-serif-instrument text-[10vw] leading-[0.8] tracking-tighter mb-16"
                     >
-                        Cognitive <br />
-                        <span className="text-[#0047BB] italic">Rehabilitation.</span>
+                        The Cognitive <br />
+                        <span className="text-[#0047BB] italic">Operating System.</span>
                     </motion.h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 border-t border-black/10 pt-12">
                         <div className="max-w-md">
                             <p className="text-xl leading-relaxed text-black/70">
-                                This is not a workshop. It is an intervention. We treat AI paralysis and "slop addiction" by installing a new operating system for your business.
+                                Companies don't just need software; they need a new way to think. We audit your mindset, map your automation potential, and install the navigation tools to survive speed.
                             </p>
                         </div>
                         <div className="space-y-6">
                             <div className="flex items-center gap-4">
                                 <div className="w-2 h-2 bg-[#0047BB]" />
-                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Therapy (Mindset)</span>
+                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Audit (Diagnosis)</span>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="w-2 h-2 bg-[#0047BB]" />
-                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Surgery (Process)</span>
+                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Map (Prototyping)</span>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="w-2 h-2 bg-[#0047BB]" />
-                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Implant (Toolkit)</span>
+                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Integrate (Mindset)</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* The Dual Core Philosophy */}
-            <Section number="01" title="Dual Core">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-black/10 border border-black/10">
-                    <div className="bg-white p-12 md:p-20 space-y-8">
-                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">RIGHT BRAIN</span>
-                        <h3 className="font-serif-instrument text-5xl italic">The Creative</h3>
-                        <p className="text-lg text-black/60 leading-relaxed">
-                            Focuses on taste, nuance, and the "soul" of the brand. Ensures AI output isn't generic. Teaches your team to stop prompting and start curating.
+            {/* The Trinity Philosophy */}
+            <Section number="01" title="The Trinity">
+                <div className="mb-16">
+                    <p className="text-xl text-black/60 max-w-3xl leading-relaxed">
+                        Transformation requires three forces: Vision to see the future, Logic to build the path, and Awareness to stay on it. We bring all three.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10 border border-black/10">
+                    {/* The Creative */}
+                    <div className="bg-white p-10 space-y-8 flex flex-col">
+                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">THE SPARK</span>
+                        <h3 className="font-serif-instrument text-4xl italic">The Creative</h3>
+                        <p className="text-sm text-black/60 leading-relaxed flex-grow">
+                            Focuses on taste, variance, and the "soul" of the brand. Ensures AI output isn't generic. Teaches your team to stop prompting and start curating.
                         </p>
                         <div className="pt-8 border-t border-black/10">
                             <p className="text-xs font-bold uppercase tracking-widest">Roland Vraník</p>
                             <p className="text-[10px] opacity-50 mt-1">FOUNDER & CD</p>
                         </div>
                     </div>
-                    <div className="bg-white p-12 md:p-20 space-y-8">
-                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">LEFT BRAIN</span>
-                        <h3 className="font-serif-instrument text-5xl italic">The Architect</h3>
-                        <p className="text-lg text-black/60 leading-relaxed">
-                            Focuses on scale, systems, and logic. Builds the pipelines that allow the creative vision to be executed 100x faster without breaking.
+
+                    {/* The Navigator (Center) */}
+                    <div className="bg-[#fcfcfc] p-10 space-y-8 flex flex-col relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-20 h-20 bg-[#0047BB]/5 rounded-bl-full" />
+                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">THE COMPASS</span>
+                        <h3 className="font-serif-instrument text-4xl italic">The Navigator</h3>
+                        <p className="text-sm text-black/60 leading-relaxed flex-grow">
+                            Focuses on purpose, human agency, and "Zen" in the age of speed. Grounds the team so they can steer the machine without being consumed by it.
+                        </p>
+                        <div className="pt-8 border-t border-black/10">
+                            <p className="text-xs font-bold uppercase tracking-widest">Roman Pii Wagner</p>
+                            <p className="text-[10px] opacity-50 mt-1">TRANSFORMATIONAL DESIGN</p>
+                        </div>
+                    </div>
+
+                    {/* The Architect */}
+                    <div className="bg-white p-10 space-y-8 flex flex-col">
+                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">THE ENGINE</span>
+                        <h3 className="font-serif-instrument text-4xl italic">The Architect</h3>
+                        <p className="text-sm text-black/60 leading-relaxed flex-grow">
+                            Focuses on scale, sovereignty, and logic. Builds the pipelines and safety layers (Private Models) that allow vision to scale securely.
                         </p>
                         <div className="pt-8 border-t border-black/10">
                             <p className="text-xs font-bold uppercase tracking-widest">Ján Koščelanský</p>
@@ -171,35 +209,36 @@ export default function ProtocolPage() {
                     <PhaseCard 
                         number="01"
                         title="The Diagnosis"
-                        subtitle="THERAPY & MINDSET (90 MIN)"
-                        desc="We break the current mental model. We prove that AI creates average work unless steered by an expert. We identify the 'Sea of Sameness' in your current output."
+                        subtitle="AUDIT & MINDSET (90 MIN)"
+                        desc="We audit your 'Mental Operating System.' We expose the 'Slop' (generic output) and identify where your current processes are obsolete."
                         items={[
+                            "Process Archaeology: Digging up bad habits",
                             "The 'Slop' Audit: Blind test of your work vs. AI",
-                            "Cognitive Sorting: Using the 6T Framework",
-                            "The 'Driver' Mindset Shift"
+                            "Cognitive Sorting: Using the 6T Framework"
                         ]}
                     />
                     <PhaseCard 
                         number="02"
-                        title="The Surgery"
-                        subtitle="KNOWING BY DOING (120 MIN)"
-                        desc="We split into tracks. We don't talk about theory; we solve one burning problem in the room using the Hybrid approach."
+                        title="The Mapping"
+                        subtitle="PROTOTYPING & LOGIC (120 MIN)"
+                        desc="We don't just talk; we map. We select a specific bottleneck and build a live blueprint of the solution. We simulate the future workflow."
                         items={[
-                            "Real-time workflow construction",
-                            "solving actual company bottlenecks",
-                            "From 'Prompting' to 'Orchestration'"
+                            "Live workflow prototyping",
+                            "Defining the 'Sovereignty' requirements (Private Data)",
+                            "Mapping the Automaton Blueprint"
                         ]}
                     />
                     <PhaseCard 
                         number="03"
-                        title="The Implant"
-                        subtitle="INSTALLATION (30 MIN)"
-                        desc="We leave you with a system, not just notes. We install the 'Second Brain' on your devices."
+                        title="The Integration"
+                        subtitle="ANCHORING (30 MIN)"
+                        desc="Speed without direction is dangerous. We end by grounding the team, defining the 'Human Constant,' and handing over the navigation tools."
                         items={[
-                            "Deploying the Digital Toolkit",
-                            "Installation ceremony",
-                            "The Driver's Manual handover"
+                            "The 'Human Constant' session with Roman",
+                            "Handover of the Digital Toolkit",
+                            "Installation of the Decision Matrix"
                         ]}
+                        highlight
                     />
                 </div>
             </Section>
@@ -208,24 +247,26 @@ export default function ProtocolPage() {
             <Section number="03" title="The Tracks">
                 <div className="mb-16 max-w-3xl">
                     <p className="text-xl text-black/60 leading-relaxed">
-                        In Phase 02, we divide and conquer. Your team chooses the surgery they need.
+                        In Phase 02, we customize the intervention. What is your primary operating deficit?
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <TrackCard 
                         title="The Studio"
                         focus="CREATIVE & BRAND"
-                        expert="The Creative Founder"
-                        desc="For marketing, design, and content teams. We move from generating ideas to generating variations. The goal is variance and taste."
+                        expert="The Creative"
+                        desc="For marketing, design, and content teams. We move from generating ideas to generating variations. The goal is variance, taste, and escaping the 'Sea of Sameness'."
                         outcome="The '100-to-1' Curation Workflow"
+                        tags={["Taste", "Variance", "Multimedia", "Brand Voice"]}
                         active={false}
                     />
                     <TrackCard 
                         title="The Engine"
                         focus="PRODUCT & OPS"
-                        expert="The Systems Architect"
-                        desc="For operations, legal, and product teams. We build 'RAG' architectures to talk to your data securely. The goal is accuracy and speed."
-                        outcome="The Analyst Agent Blueprint"
+                        expert="The Architect"
+                        desc="For operations, legal, and product teams. We focus on 'Sovereign AI'—private models, RAG architectures, and secure automation. The goal is accuracy and scale."
+                        outcome="The Sovereign Automation Blueprint"
+                        tags={["Logic", "Private Models", "Regulations", "RAG"]}
                         active={true}
                     />
                 </div>
@@ -236,28 +277,28 @@ export default function ProtocolPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
                     <div className="space-y-12">
                         <p className="text-2xl font-serif-instrument italic leading-relaxed">
-                            We don't charge for the time. <br />
-                            We charge for the <span className="text-[#0047BB]">System</span> we install.
+                            We don't charge for hours. <br />
+                            We charge for the <span className="text-[#0047BB]">Cognitive OS</span> we install.
                         </p>
                         <p className="text-sm text-black/60 leading-relaxed max-w-sm">
-                            Every client receives the Base System (The Console). You then select your specialized Game Cartridge based on your industry.
+                            This is not just software. It is a set of mental models, decision matrices, and digital artifacts that remain with you forever.
                         </p>
                     </div>
                     <div className="space-y-px bg-black/10 border border-black/10">
                         <div className="bg-white p-8 flex justify-between items-center">
-                            <span className="font-serif-instrument text-xl">The Constitution</span>
+                            <span className="font-serif-instrument text-xl">The Constitution (Prompt)</span>
                             <span className="text-[9px] uppercase tracking-widest opacity-40">BASE SYSTEM</span>
                         </div>
                         <div className="bg-white p-8 flex justify-between items-center">
                             <span className="font-serif-instrument text-xl">Decision Matrix (6T)</span>
-                            <span className="text-[9px] uppercase tracking-widest opacity-40">BASE SYSTEM</span>
+                            <span className="text-[9px] uppercase tracking-widest opacity-40">MENTAL MODEL</span>
                         </div>
                         <div className="bg-white p-8 flex justify-between items-center">
-                            <span className="font-serif-instrument text-xl">The Driver's Manual</span>
-                            <span className="text-[9px] uppercase tracking-widest opacity-40">BASE SYSTEM</span>
+                            <span className="font-serif-instrument text-xl">The Navigator's Manual</span>
+                            <span className="text-[9px] uppercase tracking-widest opacity-40">GUIDE</span>
                         </div>
                         <div className="bg-[#0047BB] text-white p-8 flex justify-between items-center">
-                            <span className="font-serif-instrument text-xl italic">The Muse / Analyst Pack</span>
+                            <span className="font-serif-instrument text-xl italic">Sovereignty / Muse Pack</span>
                             <span className="text-[9px] uppercase tracking-widest opacity-60">INDUSTRY MODULE</span>
                         </div>
                     </div>
@@ -276,38 +317,38 @@ export default function ProtocolPage() {
                         <div className="border border-white/20 p-10 space-y-8 hover:bg-white/5 transition-colors">
                             <h3 className="text-3xl font-serif-instrument italic">The Amplifier</h3>
                             <p className="text-sm opacity-60 leading-relaxed h-20">
-                                "Our work feels generic. We are scared AI will make us boring."
+                                "Our work feels generic. We need to restore taste and variance."
                             </p>
                             <ul className="space-y-4 pt-8 border-t border-white/10">
-                                <li className="text-xs font-bold uppercase tracking-widest">Creative Focus</li>
-                                <li className="text-xs opacity-60">The Muse Pack</li>
+                                <li className="text-xs font-bold uppercase tracking-widest">Creative OS</li>
+                                <li className="text-xs opacity-60">Creative + Navigator</li>
                             </ul>
                         </div>
                         <div className="border border-white/20 p-10 space-y-8 hover:bg-white/5 transition-colors">
-                            <h3 className="text-3xl font-serif-instrument italic">The Accelerator</h3>
+                            <h3 className="text-3xl font-serif-instrument italic">The Sovereign</h3>
                             <p className="text-sm opacity-60 leading-relaxed h-20">
-                                "We are drowning in admin. We need speed and accuracy."
+                                "We need speed, privacy, and secure automation."
                             </p>
                             <ul className="space-y-4 pt-8 border-t border-white/10">
-                                <li className="text-xs font-bold uppercase tracking-widest">Systems Focus</li>
-                                <li className="text-xs opacity-60">The Analyst Pack</li>
+                                <li className="text-xs font-bold uppercase tracking-widest">Product OS</li>
+                                <li className="text-xs opacity-60">Architect + Navigator</li>
                             </ul>
                         </div>
                         <div className="bg-[#0047BB] text-white p-10 space-y-8 border border-[#0047BB] relative overflow-hidden">
-                            <h3 className="text-3xl font-serif-instrument italic relative z-10">The Transformation</h3>
+                            <h3 className="text-3xl font-serif-instrument italic relative z-10">The Trinity</h3>
                             <p className="text-sm opacity-80 leading-relaxed h-20 relative z-10">
-                                "We need to change our entire DNA. Magic meets Logic."
+                                "We need to change our entire DNA. Vision, Logic, and Mindset."
                             </p>
                             <ul className="space-y-4 pt-8 border-t border-white/20 relative z-10">
-                                <li className="text-xs font-bold uppercase tracking-widest">Full Hybrid</li>
-                                <li className="text-xs opacity-80">Complete Toolkit</li>
+                                <li className="text-xs font-bold uppercase tracking-widest">Full Hybrid OS</li>
+                                <li className="text-xs opacity-80">Roland + Jan + Roman</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="mt-24 text-center">
                         <a
-                            href="mailto:hello@sorrywecan.com?subject=Protocol Inquiry&body=We are interested in The Transformation protocol."
+                            href="mailto:hello@sorrywecan.com?subject=Protocol Inquiry&body=We are interested in The Trinity protocol."
                             className="bg-white text-black px-16 py-6 font-inter font-bold text-xs uppercase tracking-[0.3em] hover:bg-[#0047BB] hover:text-white transition-all inline-block"
                         >
                             Start The Protocol

@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react"
 import { motion, useScroll, useSpring } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { Brain, Globe, Target, TrendingUp, Users, Shield, Zap, ChevronRight, FileText, BarChart3, Rocket, AlertCircle, Quote } from "lucide-react"
-import React, { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 
 export default function AIMarketIntelligencePage() {

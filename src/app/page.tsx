@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"
@@ -26,7 +26,6 @@ import {
     Search,
     Shield
 } from "lucide-react"
-import React, { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 
 // Mission Collapsible Component

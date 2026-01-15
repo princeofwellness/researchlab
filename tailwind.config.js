@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Instrument Serif", "serif"],
-        "serif-instrument": ["Instrument Serif", "serif"],
-        mono: ["Space Mono", "monospace"],
-        syne: ["Syne", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        serif: ["var(--font-instrument-serif)", "serif"],
+        "serif-instrument": ["var(--font-instrument-serif)", "serif"],
+        mono: ["var(--font-space-mono)", "monospace"],
+        syne: ["var(--font-syne)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
       colors: {
         accent: "#0047BB",

@@ -3,21 +3,21 @@ import { TopNav } from "@/components/navigation/top-nav"
 
 const archiveEntries = [
   {
-    title: "AI Education Blueprint",
+    title: "Education Blueprint v0.2",
     route: "/ai-education-blueprint",
-    type: "Education Track",
-    summary: "Curriculum + systems blueprint for Sorrywecan Education.",
+    type: "Research",
+    summary: "Curriculum + systems blueprint for Sorrywecan Education (version 0.2).",
   },
   {
     title: "AI Market Intelligence",
     route: "/ai-market-intelligence",
-    type: "Advisory Program",
+    type: "Research",
     summary: "Dark mode systems deck for executive intelligence teams.",
   },
   {
     title: "Founders Pay",
     route: "/founders-pay",
-    type: "Transformation Sprint",
+    type: "Research",
     summary: "Financial autonomy and compliance operating system for founders.",
   },
 ]

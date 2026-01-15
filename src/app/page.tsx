@@ -346,7 +346,7 @@ export default function SorrywecanResearchLab() {
                 }
             },
             problem: {
-                title: "Pasca",
+                title: "Problem",
                 headline: "Oceán Priemernosti.",
                 description: "Každý má teraz AI. Každý znie rovnako. Ak váš výstup môže byť od kohokoľvek, nemáte značku. Horšie: váš tím zabúda myslieť. Stroj to robí za nich.",
                 stats: {

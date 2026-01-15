@@ -207,14 +207,14 @@ export default function SorrywecanResearchLab() {
                         company: "SORRYWECAN",
                         name: "Roland Vraník",
                         role: "Founder & Creative Director",
-                        bio: "Founder of SORRYWECAN – art-tech studio blending film, music, and emerging technologies into visuals that look like they're from the future. Builds production on AI and real-time workflows while maintaining craft and emotional depth. Delivering high-end shows from Bratislava to the world.",
+                        bio: "Art-tech studio mixing film, music, and emerging tech into future-looking visuals. AI-driven production with craft and emotion. High-end shows from Bratislava to the world.",
                         tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum", "Kreatívny Režisér", "Technológ", "Vizionár"]
                     },
                     {
                         company: "SUDOLABS // CO-FOUNDER & CPO",
                         name: "Ján Koščelanský",
                         role: "Product Visionary & Strategic Architect",
-                        bio: "CPO & co-founder at Sudolabs – product leader driving discovery, UX processes, and product-market fit. Background in digital transformation consulting (Accenture) and scaling digital products at OLX Group (global marketplace). Architect of €5M+ revenue growth across enterprise ecosystems.",
+                        bio: "Product leader driving discovery, UX, and product-market fit. Ex-Accenture digital transformation, ex-OLX scaling. €5M+ revenue architect.",
                         tags: ["$1.5B Valuation", "€5M+ Revenue", "Product-Market Fit", "Digital Transformation"]
                     },
                     {
@@ -408,14 +408,14 @@ export default function SorrywecanResearchLab() {
                         company: "SORRYWECAN",
                         name: "Roland Vraník",
                         role: "Founder & Creative Director",
-                        bio: "Founder SORRYWECAN – art-tech štúdia, ktoré mieša film, hudbu a nové technológie do vizuálov, ktoré vyzerajú ako z budúcnosti. Stavia produkciu na AI a real-time prístupe, no stále drží tvrdé remeslo a cit pre emóciu. High-end show z Bratislavy pre svet.",
+                        bio: "Art-tech štúdio miešajúce film, hudbu a emerging tech do vizuálov z budúcnosti. AI produkcia s remeslom a emóciou. High-end show z Bratislavy pre svet.",
                         tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum", "Kreatívny Režisér", "Technológ", "Vizionár"]
                     },
                     {
                         company: "SUDOLABS // CO-FOUNDER & CPO",
                         name: "Ján Koščelanský",
                         role: "Produktový Vizionár & Strategický Architekt",
-                        bio: "CPO & co-founder Sudolabs – produktový človek, ktorý rieši discovery, UX procesy a product-market fit. Background v digitálnej transformácii (Accenture consulting) a v škálovaní digitálnych produktov v OLX Group (globálny marketplace). Architekt rastu príjmov €5M+ naprieč enterprise ekosystémami.",
+                        bio: "Produktový leader riešiaci discovery, UX a product-market fit. Ex-Accenture digitálna transformácia, ex-OLX scaling. €5M+ revenue architekt.",
                         tags: ["$1.5B Valuation", "€5M+ Príjmy", "Product-Market Fit", "Digitálna Transformácia"]
                     },
                     {

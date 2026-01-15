@@ -221,14 +221,14 @@ export default function SorrywecanResearchLab() {
                         company: "TRANSFORMATIONAL DESIGN",
                         name: "Roman Pii Wagner",
                         role: "Transformational Designer & Zen Buddhist",
-                        bio: "Decades of experience bridging business transformation with contemplative practice. Master of integrating strategic design with mindful awareness, guiding organizations through profound change with clarity and presence.",
+                        bio: "Decades bridging business transformation with Zen practice. Strategic design meets mindful awareness. Guiding profound organizational change with clarity.",
                         tags: ["Design Mastery", "Zen Practice", "Business Transformation", "Contemplative Leadership"]
                     },
                     {
                         company: "RESEARCH LAB // HEAD OF CULTURE",
                         name: "Tiep Le Dinh",
                         role: "Cultural Architect & Research Co-Lead",
-                        bio: "Expertise in emerging technologies and cultural innovation. Creative visionary building digital products that bridge technology and human experience. Co-leading the Research Lab with a focus on cultivating organizational culture in the age of AI.",
+                        bio: "Emerging tech and cultural innovation expert. Building digital products bridging technology and human experience. Co-leading Research Lab, cultivating organizational culture in the AI age.",
                         tags: ["Emerging Tech", "Cultural Innovation", "Digital Products", "Research Leadership"]
                     }
                 ]
@@ -422,14 +422,14 @@ export default function SorrywecanResearchLab() {
                         company: "TRANSFORMATIONAL DESIGN",
                         name: "Roman Pii Wagner",
                         role: "Transformačný Dizajnér & Zen Budhista",
-                        bio: "Desaťročia skúseností s prepájaním biznis transformácie s kontemplatívnou praxou. Majster integrácie strategického dizajnu s mindful awareness, vedenie organizácií cez hlbokú zmenu s jasnosťou a prítomnosťou.",
+                        bio: "Desaťročia prepájania biznis transformácie so Zen praxou. Strategický dizajn stretáva mindful awareness. Vedenie hlbokej organizačnej zmeny s jasnosťou.",
                         tags: ["Design Mastery", "Zen Prax", "Biznis Transformácia", "Kontemplatívne Vedenie"]
                     },
                     {
                         company: "RESEARCH LAB // HEAD OF CULTURE",
                         name: "Tiep Le Dinh",
                         role: "Kultúrny Architekt & Research Co-Lead",
-                        bio: "Expertíza v emerging technológiách a kultúrnej inovácii. Kreatívny vizionár budujúci digitálne produkty, ktoré prepájajú technológiu a ľudskú skúsenosť. Spoluvede Research Lab so zameraním na kultiváciu organizačnej kultúry vo veku AI.",
+                        bio: "Expert na emerging tech a kultúrnu inováciu. Buduje digitálne produkty prepájajúce technológiu a ľudskú skúsenosť. Spoluvede Research Lab, kultivuje organizačnú kultúru vo veku AI.",
                         tags: ["Emerging Tech", "Kultúrna Inovácia", "Digitálne Produkty", "Research Leadership"]
                     }
                 ]

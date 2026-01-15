@@ -3,18 +3,6 @@ import { TopNav } from "@/components/navigation/top-nav"
 
 const archiveEntries = [
   {
-    title: "Research Lab",
-    route: "/",
-    type: "Landing Experience",
-    summary: "Flagship Sorrywecan Research Lab narrative and hero journey.",
-  },
-  {
-    title: "Journey",
-    route: "/journey",
-    type: "Product Story",
-    summary: "Living operating manual for our trajectory, rituals, and proof of work.",
-  },
-  {
     title: "AI Education Blueprint",
     route: "/ai-education-blueprint",
     type: "Education Track",

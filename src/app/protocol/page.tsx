@@ -207,33 +207,33 @@ export default function ProtocolPage() {
                 <div className="space-y-8 max-w-5xl mx-auto">
                     <PhaseCard 
                         number="01"
-                        title="The Diagnosis"
-                        subtitle="AUDIT & MINDSET (90 MIN)"
-                        desc="We audit your 'Mental Operating System.' We expose the 'Slop' (generic output) and identify where your current processes are obsolete."
+                        title="The Vision"
+                        subtitle="OPENING THE STATE (90 MIN)"
+                        desc="We start with the 'Art of the Possible'. We shatter the 'Sea of Sameness' by showing what AI looks like when steered by C-Level Vision and Taste, not just prompts."
                         items={[
-                            "Process Archaeology: Digging up bad habits",
-                            "The 'Slop' Audit: Blind test of your work vs. AI",
-                            "Cognitive Sorting: Using the 6T Framework"
+                            "Breaking the 'Slop' mental model",
+                            "C-Level Visual Thinking & Strategy",
+                            "Defining the new standard of Quality"
                         ]}
                     />
                     <PhaseCard 
                         number="02"
-                        title="The Mapping"
-                        subtitle="PROTOTYPING & LOGIC (120 MIN)"
-                        desc="We don't just talk; we map. We select a specific bottleneck and build a live blueprint of the solution. We simulate the future workflow."
+                        title="The Architecture"
+                        subtitle="DIAGNOSIS & MAPPING (120 MIN)"
+                        desc="From vision to logic. We audit your current workflows and map the 'Automaton Blueprint'—identifying exactly where to inject speed and where to preserve soul."
                         items={[
-                            "Live workflow prototyping",
-                            "Defining the 'Sovereignty' requirements (Private Data)",
-                            "Mapping the Automaton Blueprint"
+                            "Auditing current bottlenecks",
+                            "Mapping automation potential",
+                            "Building the blueprint live"
                         ]}
                     />
                     <PhaseCard 
                         number="03"
                         title="The Integration"
-                        subtitle="ANCHORING (30 MIN)"
-                        desc="Speed without direction is dangerous. We end by grounding the team, defining the 'Human Constant,' and handing over the navigation tools."
+                        subtitle="HANDOVER & ANCHORING (30 MIN)"
+                        desc="We don't just leave you with ideas. We install the 'Cognitive OS'. You walk away with a functioning Digital Toolkit and the mindset to navigate the new speed."
                         items={[
-                            "The 'Human Constant' session with Roman",
+                            "The 'Human Constant' session",
                             "Handover of the Digital Toolkit",
                             "Installation of the Decision Matrix"
                         ]}
@@ -254,9 +254,9 @@ export default function ProtocolPage() {
                         title="The Studio"
                         focus="CREATIVE & BRAND"
                         expert="The Creative"
-                        desc="For marketing, design, and content teams. We move from generating ideas to generating variations. The goal is variance, taste, and escaping the 'Sea of Sameness'."
+                        desc="For C-levels, design leads, and brand guardians. We focus on Visual Strategy and 'How to Think' with AI. The goal is variance, taste, and high-level direction."
                         outcome="The '100-to-1' Curation Workflow"
-                        tags={["Taste", "Variance", "Multimedia", "Brand Voice"]}
+                        tags={["Taste", "Visual Strategy", "C-Level Thinking", "Brand Voice"]}
                         active={false}
                     />
                     <TrackCard 

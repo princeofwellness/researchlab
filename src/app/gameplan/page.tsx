@@ -621,7 +621,7 @@ export default function GamePlanPage() {
                         </div>
 
                         <div className="p-8 border border-white/20">
-                            <p className="text-[10px] uppercase tracking-widest text-amber-400 mb-2">CFO + GROWTH</p>
+                            <p className="text-[10px] uppercase tracking-widest text-amber-400 mb-2">CFO</p>
                             <h3 className="font-serif-instrument text-2xl italic mb-4">Tibor</h3>
                             <div className="space-y-3">
                                 <div className="flex items-start gap-2">
@@ -634,16 +634,12 @@ export default function GamePlanPage() {
                                 </div>
                                 <div className="flex items-start gap-2">
                                     <div className="w-1 h-1 rounded-full bg-amber-400 mt-2 shrink-0" />
-                                    <span className="text-xs opacity-70">Create marketing video</span>
+                                    <span className="text-xs opacity-70">Budget & cash flow</span>
                                 </div>
                                 <div className="flex items-start gap-2">
                                     <div className="w-1 h-1 rounded-full bg-amber-400 mt-2 shrink-0" />
-                                    <span className="text-xs opacity-70">Run paid ads (€300-400)</span>
+                                    <span className="text-xs opacity-70">Contracts & legal</span>
                                 </div>
-                            </div>
-                            <div className="mt-6 pt-4 border-t border-white/10">
-                                <p className="text-[9px] uppercase tracking-widest opacity-40 mb-2">Phase 2</p>
-                                <p className="text-[10px] opacity-50">Scale ads if ROI positive</p>
                             </div>
                         </div>
 
@@ -681,7 +677,10 @@ export default function GamePlanPage() {
             <section className="py-24 px-6 md:px-20 bg-[#f5f5f3] border-t border-black/10">
                 <div className="max-w-6xl mx-auto">
                     <div className="mb-16">
-                        <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-amber-600 block mb-4">PHASE 2</span>
+                        <div className="flex items-center gap-4 mb-4">
+                            <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-amber-600">PHASE 2</span>
+                            <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-red-500 bg-red-50 px-3 py-1 border border-red-200">NO OWNER YET</span>
+                        </div>
                         <h2 className="font-serif-instrument text-5xl md:text-6xl tracking-tighter leading-none">
                             Marketing Video + Ads
                         </h2>
@@ -836,8 +835,11 @@ export default function GamePlanPage() {
                     </div>
 
                     {/* Quick Action Plan */}
-                    <div className="mt-12 p-8 bg-amber-50 border border-amber-200">
-                        <h4 className="font-serif-instrument text-xl italic mb-4">Tibor's Marketing Checklist</h4>
+                    <div className="mt-12 p-8 bg-red-50 border border-red-200">
+                        <div className="flex items-center justify-between mb-4">
+                            <h4 className="font-serif-instrument text-xl italic">Marketing Checklist</h4>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-red-500">Owner: TBD</span>
+                        </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                             <div className="space-y-2">
                                 <p className="font-medium">Week 1:</p>
@@ -866,7 +868,7 @@ export default function GamePlanPage() {
                         <p className="opacity-80">1. Finalize product & website by Jan 21</p>
                         <p className="opacity-80">2. Roland + Tibor: Call warm leads</p>
                         <p className="opacity-80">3. Tepi: Close interested leads</p>
-                        <p className="opacity-60">4. Tibor: Launch video ads (€300-400 test)</p>
+                        <p className="opacity-60">4. (TBD): Launch video ads (€300-400 test)</p>
                         <p className="opacity-60">5. If ROI positive → scale ads</p>
                     </div>
                     <div className="mt-16 p-8 bg-white/10 border border-white/20 inline-block">

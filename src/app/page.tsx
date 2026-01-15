@@ -202,13 +202,6 @@ export default function SorrywecanResearchLab() {
                         role: "Transformational Designer & Zen Buddhist",
                         bio: "Decades bridging business transformation with Zen practice. Strategic design meets mindful awareness. Guiding profound organizational change with clarity.",
                         tags: ["Design Mastery", "Zen Practice", "Business Transformation", "Contemplative Leadership"]
-                    },
-                    {
-                        company: "RESEARCH LAB // HEAD OF CULTURE",
-                        name: "Tiep Le Dinh",
-                        role: "Cultural Architect & Research Co-Lead",
-                        bio: "Emerging tech and cultural innovation expert. Building digital products bridging technology and human experience. Co-leading Research Lab, cultivating organizational culture in the AI age.",
-                        tags: ["Emerging Tech", "Cultural Innovation", "Digital Products", "Research Leadership"]
                     }
                 ]
             },
@@ -403,13 +396,6 @@ export default function SorrywecanResearchLab() {
                         role: "Transformačný Dizajnér & Zen Budhista",
                         bio: "Desaťročia prepájania biznis transformácie so Zen praxou. Strategický dizajn stretáva mindful awareness. Vedenie hlbokej organizačnej zmeny s jasnosťou.",
                         tags: ["Design Mastery", "Zen Prax", "Biznis Transformácia", "Kontemplatívne Vedenie"]
-                    },
-                    {
-                        company: "RESEARCH LAB // HEAD OF CULTURE",
-                        name: "Tiep Le Dinh",
-                        role: "Kultúrny Architekt & Research Co-Lead",
-                        bio: "Expert na emerging tech and kultúrnu inováciu. Buduje digitálne produkty prepájajúce technológiu a ľudskú skúsenosť. Spoluvede Research Lab, kultivuje organizačnú kultúru vo veku AI.",
-                        tags: ["Emerging Tech", "Kultúrna Inovácia", "Digitálne Produkty", "Research Leadership"]
                     }
                 ]
             },

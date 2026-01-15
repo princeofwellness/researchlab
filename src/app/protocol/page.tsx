@@ -312,25 +312,35 @@ export default function ProtocolPage() {
                         <h2 className="font-serif-instrument text-6xl md:text-8xl tracking-tighter leading-none">Which OS do you need?</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="border border-white/20 p-10 space-y-8 hover:bg-white/5 transition-colors">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="border border-black/10 p-10 space-y-8 hover:bg-black hover:text-white transition-colors group">
                             <h3 className="text-3xl font-serif-instrument italic">The Amplifier</h3>
-                            <p className="text-sm opacity-60 leading-relaxed h-20">
+                            <p className="text-sm opacity-60 leading-relaxed h-20 group-hover:opacity-80">
                                 "Our work feels generic. We need to restore taste and variance."
                             </p>
-                            <ul className="space-y-4 pt-8 border-t border-white/10">
+                            <ul className="space-y-4 pt-8 border-t border-black/10">
                                 <li className="text-xs font-bold uppercase tracking-widest">Creative OS</li>
-                                <li className="text-xs opacity-60">Creative + Navigator</li>
+                                <li className="text-xs opacity-60 group-hover:opacity-80">Creative + Navigator</li>
                             </ul>
                         </div>
-                        <div className="border border-white/20 p-10 space-y-8 hover:bg-white/5 transition-colors">
+                        <div className="border border-black/10 p-10 space-y-8 hover:bg-black hover:text-white transition-colors group">
                             <h3 className="text-3xl font-serif-instrument italic">The Sovereign</h3>
-                            <p className="text-sm opacity-60 leading-relaxed h-20">
+                            <p className="text-sm opacity-60 leading-relaxed h-20 group-hover:opacity-80">
                                 "We need speed, privacy, and secure automation."
                             </p>
-                            <ul className="space-y-4 pt-8 border-t border-white/10">
+                            <ul className="space-y-4 pt-8 border-t border-black/10">
                                 <li className="text-xs font-bold uppercase tracking-widest">Product OS</li>
-                                <li className="text-xs opacity-60">Architect + Navigator</li>
+                                <li className="text-xs opacity-60 group-hover:opacity-80">Architect + Navigator</li>
+                            </ul>
+                        </div>
+                        <div className="border border-black/10 p-10 space-y-8 hover:bg-black hover:text-white transition-colors group">
+                            <h3 className="text-3xl font-serif-instrument italic">The Synthesis</h3>
+                            <p className="text-sm opacity-60 leading-relaxed h-20 group-hover:opacity-80">
+                                "Magic meets Logic. Scale the vision without losing the soul."
+                            </p>
+                            <ul className="space-y-4 pt-8 border-t border-black/10">
+                                <li className="text-xs font-bold uppercase tracking-widest">Dual Core OS</li>
+                                <li className="text-xs opacity-60 group-hover:opacity-80">Creative + Architect</li>
                             </ul>
                         </div>
                         <div className="bg-[#0047BB] text-white p-10 space-y-8 border border-[#0047BB] relative overflow-hidden">

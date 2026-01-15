@@ -159,7 +159,7 @@ const initialCategories: Category[] = [
                 id: "s2",
                 title: "Agency & Production Outreach",
                 description: "Reach out to agencies and production companies",
-                owner: "Tibor",
+                owner: "Tepi",
                 status: "pending",
                 priority: "critical",
                 subtasks: [
@@ -491,6 +491,68 @@ export default function GamePlanPage() {
                 </div>
             </section>
 
+            {/* Sales Flow */}
+            <section className="py-24 px-6 md:px-20 bg-white border-t border-black/10">
+                <div className="max-w-5xl mx-auto">
+                    <div className="mb-16">
+                        <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#0047BB] block mb-4">THE FLOW</span>
+                        <h2 className="font-serif-instrument text-5xl md:text-6xl tracking-tighter leading-none">
+                            Sales Process
+                        </h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                        {/* Step 1 */}
+                        <div className="bg-black text-white p-8 relative">
+                            <div className="absolute top-4 right-4 text-[#0047BB] text-xs font-bold">01</div>
+                            <h3 className="font-serif-instrument text-2xl italic mb-2">Roland</h3>
+                            <p className="text-xs uppercase tracking-widest text-white/40 mb-6">OPENER</p>
+                            <p className="text-sm text-white/70 leading-relaxed">
+                                Best connections in the market. Opens the call, qualifies interest, gets market feedback.
+                            </p>
+                            <div className="mt-6 pt-6 border-t border-white/10 space-y-2">
+                                <p className="text-xs text-white/50">"Are you interested in AI workshops?"</p>
+                                <p className="text-xs text-white/50">Yes → hand to Tepi</p>
+                                <p className="text-xs text-white/50">No → "What's holding you back?"</p>
+                            </div>
+                        </div>
+
+                        {/* Arrow */}
+                        <div className="hidden md:flex items-center justify-center">
+                            <div className="text-4xl text-black/20">→</div>
+                        </div>
+                        <div className="md:hidden flex items-center justify-center py-4">
+                            <div className="text-2xl text-black/20">↓</div>
+                        </div>
+
+                        {/* Step 2 */}
+                        <div className="bg-[#0047BB] text-white p-8 relative">
+                            <div className="absolute top-4 right-4 text-white/40 text-xs font-bold">02</div>
+                            <h3 className="font-serif-instrument text-2xl italic mb-2">Tepi</h3>
+                            <p className="text-xs uppercase tracking-widest text-white/40 mb-6">CLOSER</p>
+                            <p className="text-sm text-white/80 leading-relaxed">
+                                Discovery call, explains tiers, handles objections, closes the deal.
+                            </p>
+                            <div className="mt-6 pt-6 border-t border-white/20 space-y-2">
+                                <p className="text-xs text-white/60">Brief discovery (team size, AI usage)</p>
+                                <p className="text-xs text-white/60">Recommend mid-tier (€6,930)</p>
+                                <p className="text-xs text-white/60">Close: "When do you want to do this?"</p>
+                                <p className="text-xs text-white/60">Send invoice</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Workshop */}
+                    <div className="bg-black/5 border border-black/10 p-8 text-center">
+                        <p className="text-xs uppercase tracking-widest text-black/40 mb-4">03 — DELIVERY</p>
+                        <h3 className="font-serif-instrument text-3xl italic mb-4">Standard Workshop</h3>
+                        <p className="text-sm text-black/60 max-w-lg mx-auto">
+                            Same curriculum every time. Your method IS the product. No customization = no overhead.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* Team Responsibilities */}
             <section className="py-24 px-6 md:px-20 bg-black text-white border-t border-black">
                 <div className="max-w-7xl mx-auto">
@@ -505,63 +567,84 @@ export default function GamePlanPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="p-10 border border-white/20">
+                            <p className="text-[10px] uppercase tracking-widest text-[#0047BB] mb-2">OPENER</p>
                             <h3 className="font-serif-instrument text-3xl italic mb-6">Roland</h3>
                             <div className="space-y-4">
                                 <div className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Track and call all warm leads</span>
+                                    <span className="text-sm opacity-70">Call warm leads (best connections)</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Finalize pitch PDF and curriculum</span>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Review and approve website copy</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="p-10 border border-white/20">
-                            <h3 className="font-serif-instrument text-3xl italic mb-6">Tibor</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Call all contacts from network</span>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Reach out to agencies</span>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Reach out to production companies</span>
+                                    <span className="text-sm opacity-70">Qualify interest (yes/no)</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
                                     <span className="text-sm opacity-70">Gather market feedback</span>
                                 </div>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
+                                    <span className="text-sm opacity-70">Hand interested leads to Tepi</span>
+                                </div>
+                            </div>
+                            <div className="mt-8 pt-6 border-t border-white/10">
+                                <p className="text-[10px] uppercase tracking-widest opacity-40 mb-2">Also</p>
+                                <div className="space-y-2">
+                                    <p className="text-xs opacity-50">Finalize pitch PDF</p>
+                                    <p className="text-xs opacity-50">Review website copy</p>
+                                </div>
                             </div>
                         </div>
 
                         <div className="p-10 border border-[#0047BB] bg-[#0047BB]/10">
-                            <h3 className="font-serif-instrument text-3xl italic mb-6">Team</h3>
+                            <p className="text-[10px] uppercase tracking-widest text-[#0047BB] mb-2">CLOSER</p>
+                            <h3 className="font-serif-instrument text-3xl italic mb-6">Tepi</h3>
                             <div className="space-y-4">
                                 <div className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Define pricing strategy together</span>
+                                    <span className="text-sm opacity-70">Run discovery calls</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-sm opacity-70">Explain tiers, recommend mid</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-sm opacity-70">Handle objections</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-sm opacity-70">Close deals, send invoices</span>
+                                </div>
+                            </div>
+                            <div className="mt-8 pt-6 border-t border-white/10">
+                                <p className="text-[10px] uppercase tracking-widest opacity-40 mb-2">Also</p>
+                                <div className="space-y-2">
+                                    <p className="text-xs opacity-50">Reach out to agencies</p>
+                                    <p className="text-xs opacity-50">Reach out to production companies</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="p-10 border border-white/20">
+                            <p className="text-[10px] uppercase tracking-widest text-white/40 mb-2">SUPPORT</p>
+                            <h3 className="font-serif-instrument text-3xl italic mb-6">Team</h3>
+                            <div className="space-y-4">
+                                <div className="flex items-start gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
+                                    <span className="text-sm opacity-70">Define pricing strategy</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
                                     <span className="text-sm opacity-70">Set up scheduling system</span>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
                                     <span className="text-sm opacity-70">Email & CRM setup</span>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Automation workflows (as we go)</span>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
+                                    <span className="text-sm opacity-70">Automate as we go</span>
                                 </div>
                             </div>
                         </div>

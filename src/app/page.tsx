@@ -131,7 +131,7 @@ export default function SorrywecanResearchLab() {
                 subtitle: "SORRYWECAN // HUMAN EDGE LAB",
                 title: {
                     line1: "AI is the Engine.",
-                    line2: "You are the Steering Wheel.",
+                    line2: "You are the Driver.",
                     line3: "Restore Your Human Edge."
                 },
                 trustedBy: "Trusted by",
@@ -332,7 +332,7 @@ export default function SorrywecanResearchLab() {
                 subtitle: "SORRYWECAN // LABORATÓRIUM ĽUDSKEJ PREVAHY",
                 title: {
                     line1: "AI je Motor.",
-                    line2: "Vy ste Volant.",
+                    line2: "Vy ste Vodič.",
                     line3: "Obnovte Svoj Ľudský Náskok."
                 },
                 trustedBy: "Dôverujú nám",

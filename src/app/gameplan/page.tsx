@@ -565,87 +565,291 @@ export default function GamePlanPage() {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="p-10 border border-white/20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="p-8 border border-white/20">
                             <p className="text-[10px] uppercase tracking-widest text-[#0047BB] mb-2">OPENER</p>
-                            <h3 className="font-serif-instrument text-3xl italic mb-6">Roland</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Call warm leads (best connections)</span>
+                            <h3 className="font-serif-instrument text-2xl italic mb-4">Roland</h3>
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-[#0047BB] mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Call warm leads (best connections)</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Qualify interest (yes/no)</span>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-[#0047BB] mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Qualify interest (yes/no)</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Gather market feedback</span>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-[#0047BB] mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Gather market feedback</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Hand interested leads to Tepi</span>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-[#0047BB] mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Hand interested → Tepi</span>
                                 </div>
                             </div>
-                            <div className="mt-8 pt-6 border-t border-white/10">
-                                <p className="text-[10px] uppercase tracking-widest opacity-40 mb-2">Also</p>
-                                <div className="space-y-2">
-                                    <p className="text-xs opacity-50">Finalize pitch PDF</p>
-                                    <p className="text-xs opacity-50">Review website copy</p>
-                                </div>
+                            <div className="mt-6 pt-4 border-t border-white/10">
+                                <p className="text-[9px] uppercase tracking-widest opacity-40 mb-2">Also</p>
+                                <p className="text-[10px] opacity-50">Pitch PDF, website copy</p>
                             </div>
                         </div>
 
-                        <div className="p-10 border border-[#0047BB] bg-[#0047BB]/10">
+                        <div className="p-8 border border-[#0047BB] bg-[#0047BB]/10">
                             <p className="text-[10px] uppercase tracking-widest text-[#0047BB] mb-2">CLOSER</p>
-                            <h3 className="font-serif-instrument text-3xl italic mb-6">Tepi</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Run discovery calls</span>
+                            <h3 className="font-serif-instrument text-2xl italic mb-4">Tepi</h3>
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Run discovery calls</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Explain tiers, recommend mid</span>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Explain tiers, recommend mid</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Handle objections</span>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Handle objections</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Close deals, send invoices</span>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-white mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Close deals, send invoices</span>
                                 </div>
                             </div>
-                            <div className="mt-8 pt-6 border-t border-white/10">
-                                <p className="text-[10px] uppercase tracking-widest opacity-40 mb-2">Also</p>
-                                <div className="space-y-2">
-                                    <p className="text-xs opacity-50">Reach out to agencies</p>
-                                    <p className="text-xs opacity-50">Reach out to production companies</p>
+                            <div className="mt-6 pt-4 border-t border-white/10">
+                                <p className="text-[9px] uppercase tracking-widest opacity-40 mb-2">Also</p>
+                                <p className="text-[10px] opacity-50">Agencies, production cos</p>
+                            </div>
+                        </div>
+
+                        <div className="p-8 border border-white/20">
+                            <p className="text-[10px] uppercase tracking-widest text-amber-400 mb-2">CFO + GROWTH</p>
+                            <h3 className="font-serif-instrument text-2xl italic mb-4">Tibor</h3>
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-amber-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Finance & invoicing</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-amber-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Call warm leads (his network)</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-amber-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Create marketing video</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-amber-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Run paid ads (€300-400)</span>
+                                </div>
+                            </div>
+                            <div className="mt-6 pt-4 border-t border-white/10">
+                                <p className="text-[9px] uppercase tracking-widest opacity-40 mb-2">Phase 2</p>
+                                <p className="text-[10px] opacity-50">Scale ads if ROI positive</p>
+                            </div>
+                        </div>
+
+                        <div className="p-8 border border-green-500/30 bg-green-500/5">
+                            <p className="text-[10px] uppercase tracking-widest text-green-400 mb-2">LEADER + COMMS</p>
+                            <h3 className="font-serif-instrument text-2xl italic mb-4">Andrea</h3>
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-green-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Project management</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-green-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Internal team coordination</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-green-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">External communication</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <div className="w-1 h-1 rounded-full bg-green-400 mt-2 shrink-0" />
+                                    <span className="text-xs opacity-70">Support & follow-ups</span>
+                                </div>
+                            </div>
+                            <div className="mt-6 pt-4 border-t border-white/10">
+                                <p className="text-[9px] uppercase tracking-widest opacity-40 mb-2">Keeps it moving</p>
+                                <p className="text-[10px] opacity-50">Scheduling, emails, CRM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Marketing & Ads Strategy */}
+            <section className="py-24 px-6 md:px-20 bg-[#f5f5f3] border-t border-black/10">
+                <div className="max-w-6xl mx-auto">
+                    <div className="mb-16">
+                        <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-amber-600 block mb-4">PHASE 2</span>
+                        <h2 className="font-serif-instrument text-5xl md:text-6xl tracking-tighter leading-none">
+                            Marketing Video + Ads
+                        </h2>
+                        <p className="text-sm text-black/40 mt-4">€300-400 test budget to find target audience</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {/* Video Concept */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Video Concept</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">30-60 seconds, hook-first</p>
+
+                            <div className="space-y-4 text-sm text-black/70">
+                                <div className="p-4 bg-black/5 border-l-2 border-[#0047BB]">
+                                    <p className="font-medium text-black mb-2">Hook (0-5 sec)</p>
+                                    <p className="italic">"Your AI output looks like everyone else's. Here's why."</p>
+                                </div>
+                                <div className="p-4 bg-black/5 border-l-2 border-black/20">
+                                    <p className="font-medium text-black mb-2">Problem (5-20 sec)</p>
+                                    <p>Show side-by-side: generic AI slop vs curated quality. The Sea of Sameness is real.</p>
+                                </div>
+                                <div className="p-4 bg-black/5 border-l-2 border-black/20">
+                                    <p className="font-medium text-black mb-2">Solution (20-40 sec)</p>
+                                    <p>We teach your team to stop prompting and start curating. One workshop changes how they see.</p>
+                                </div>
+                                <div className="p-4 bg-black/5 border-l-2 border-amber-500">
+                                    <p className="font-medium text-black mb-2">CTA (40-60 sec)</p>
+                                    <p>"Book a discovery call. Limited spots monthly."</p>
+                                </div>
+                            </div>
+
+                            <div className="pt-6 border-t border-black/10">
+                                <p className="text-[10px] uppercase tracking-widest text-black/40 mb-3">Video Formats</p>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="px-2 py-1 bg-black/5 text-[10px]">9:16 (Stories/Reels)</span>
+                                    <span className="px-2 py-1 bg-black/5 text-[10px]">1:1 (Feed)</span>
+                                    <span className="px-2 py-1 bg-black/5 text-[10px]">16:9 (LinkedIn)</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="p-10 border border-white/20">
-                            <p className="text-[10px] uppercase tracking-widest text-white/40 mb-2">SUPPORT</p>
-                            <h3 className="font-serif-instrument text-3xl italic mb-6">Team</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Define pricing strategy</span>
+                        {/* Target Audience */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Target Audience</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">Who we're talking to</p>
+
+                            <div className="space-y-4 text-sm text-black/70">
+                                <div>
+                                    <p className="font-medium text-black mb-3">Primary: Decision Makers</p>
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <span className="px-3 py-2 bg-[#0047BB]/10 text-[11px] text-center">Creative Directors</span>
+                                        <span className="px-3 py-2 bg-[#0047BB]/10 text-[11px] text-center">Marketing Directors</span>
+                                        <span className="px-3 py-2 bg-[#0047BB]/10 text-[11px] text-center">CMOs / CEOs</span>
+                                        <span className="px-3 py-2 bg-[#0047BB]/10 text-[11px] text-center">Agency Founders</span>
+                                    </div>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Set up scheduling system</span>
+
+                                <div>
+                                    <p className="font-medium text-black mb-3">Industries</p>
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <span className="px-3 py-2 bg-black/5 text-[11px] text-center">Advertising / Marketing</span>
+                                        <span className="px-3 py-2 bg-black/5 text-[11px] text-center">Creative Agencies</span>
+                                        <span className="px-3 py-2 bg-black/5 text-[11px] text-center">Production Companies</span>
+                                        <span className="px-3 py-2 bg-black/5 text-[11px] text-center">Brand Teams (In-house)</span>
+                                    </div>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Email & CRM setup</span>
+
+                                <div>
+                                    <p className="font-medium text-black mb-3">Company Size</p>
+                                    <p className="text-black/60">10-500 employees (sweet spot: 20-100)</p>
+                                    <p className="text-black/40 text-xs mt-1">Big enough to have budget, small enough to decide fast</p>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
-                                    <span className="text-sm opacity-70">Automate as we go</span>
+
+                                <div>
+                                    <p className="font-medium text-black mb-3">Geography</p>
+                                    <div className="space-y-1">
+                                        <p className="text-black/60">Tier 1: Slovakia, Czech Republic</p>
+                                        <p className="text-black/40 text-xs">Tier 2: Austria, Germany (DACH)</p>
+                                        <p className="text-black/40 text-xs">Tier 3: Poland, Hungary (CEE)</p>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        {/* Platform Strategy */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Platform Strategy</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">Where to spend €300-400</p>
+
+                            <div className="space-y-4 text-sm">
+                                <div className="p-4 border border-[#0047BB]/30 bg-[#0047BB]/5">
+                                    <div className="flex justify-between items-start mb-2">
+                                        <p className="font-bold text-[#0047BB]">LinkedIn Ads</p>
+                                        <span className="text-xs bg-[#0047BB] text-white px-2 py-0.5">RECOMMENDED</span>
+                                    </div>
+                                    <p className="text-black/60 mb-3">Best B2B targeting. Target by job title, industry, company size.</p>
+                                    <div className="text-xs text-black/50">
+                                        <p>• Budget: €200-250</p>
+                                        <p>• CPM higher but leads more qualified</p>
+                                        <p>• Direct targeting of Creative Directors, CMOs</p>
+                                    </div>
+                                </div>
+
+                                <div className="p-4 border border-black/10">
+                                    <p className="font-bold text-black mb-2">Meta (Instagram/Facebook)</p>
+                                    <p className="text-black/60 mb-3">Broader reach, lower CPM. Interest-based targeting.</p>
+                                    <div className="text-xs text-black/50">
+                                        <p>• Budget: €100-150</p>
+                                        <p>• Target: Business interests, marketing, AI tools</p>
+                                        <p>• Good for retargeting website visitors</p>
+                                    </div>
+                                </div>
+
+                                <div className="p-4 border border-black/10 opacity-60">
+                                    <p className="font-bold text-black mb-2">YouTube (Later)</p>
+                                    <p className="text-black/60 text-xs">Skip for now. Better for Phase 2 with bigger budget.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Success Metrics */}
+                        <div className="bg-white border border-black/10 p-8 space-y-6">
+                            <h3 className="font-serif-instrument text-2xl italic">Success Metrics</h3>
+                            <p className="text-xs text-black/40 uppercase tracking-widest">How we measure the test</p>
+
+                            <div className="space-y-4 text-sm text-black/70">
+                                <div>
+                                    <p className="font-medium text-black mb-3">Primary Goal</p>
+                                    <p className="text-2xl font-serif-instrument italic text-[#0047BB]">Discovery Call Bookings</p>
+                                    <p className="text-black/40 text-xs mt-1">Not impressions. Not clicks. Actual calls booked.</p>
+                                </div>
+
+                                <div className="grid grid-cols-2 gap-4 pt-4">
+                                    <div className="p-4 bg-black/5 text-center">
+                                        <p className="text-2xl font-serif-instrument italic">2-3</p>
+                                        <p className="text-[10px] uppercase tracking-widest text-black/40">Calls from €400</p>
+                                    </div>
+                                    <div className="p-4 bg-black/5 text-center">
+                                        <p className="text-2xl font-serif-instrument italic">€130-200</p>
+                                        <p className="text-[10px] uppercase tracking-widest text-black/40">Cost per Lead</p>
+                                    </div>
+                                </div>
+
+                                <div className="pt-4 border-t border-black/10">
+                                    <p className="font-medium text-black mb-2">ROI Check</p>
+                                    <p className="text-black/60 text-xs">1 closed deal (€6,930) from €400 ad spend = 17x ROI</p>
+                                    <p className="text-black/60 text-xs">Even 1 deal from €1,000 spend = 7x ROI</p>
+                                    <p className="text-black/40 text-xs mt-2 italic">If test works → scale. If not → learn why.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Quick Action Plan */}
+                    <div className="mt-12 p-8 bg-amber-50 border border-amber-200">
+                        <h4 className="font-serif-instrument text-xl italic mb-4">Tibor's Marketing Checklist</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div className="space-y-2">
+                                <p className="font-medium">Week 1:</p>
+                                <p className="text-black/60">□ Script the video (30-60 sec)</p>
+                                <p className="text-black/60">□ Shoot/edit the video</p>
+                                <p className="text-black/60">□ Create 3 versions (different hooks)</p>
+                            </div>
+                            <div className="space-y-2">
+                                <p className="font-medium">Week 2:</p>
+                                <p className="text-black/60">□ Set up LinkedIn campaign</p>
+                                <p className="text-black/60">□ Set up Meta campaign</p>
+                                <p className="text-black/60">□ Run for 7 days, measure results</p>
                             </div>
                         </div>
                     </div>
@@ -660,10 +864,10 @@ export default function GamePlanPage() {
                     </h2>
                     <div className="space-y-6 text-xl">
                         <p className="opacity-80">1. Finalize product & website by Jan 21</p>
-                        <p className="opacity-80">2. Start outreach mid next week</p>
-                        <p className="opacity-80">3. Gather feedback from market</p>
-                        <p className="opacity-60">4. If positive feedback → scale production</p>
-                        <p className="opacity-60">5. If negative feedback → pivot fast</p>
+                        <p className="opacity-80">2. Roland + Tibor: Call warm leads</p>
+                        <p className="opacity-80">3. Tepi: Close interested leads</p>
+                        <p className="opacity-60">4. Tibor: Launch video ads (€300-400 test)</p>
+                        <p className="opacity-60">5. If ROI positive → scale ads</p>
                     </div>
                     <div className="mt-16 p-8 bg-white/10 border border-white/20 inline-block">
                         <p className="text-sm font-bold uppercase tracking-widest mb-2">Philosophy</p>

@@ -122,14 +122,14 @@ export default function ProtocolPage() {
                     {
                         tag: "THE SPARK",
                         title: "The Creative",
-                        desc: "Focuses on taste, variance, and the \"soul\" of the brand. Ensures AI output isn't generic. Teaches your team to stop prompting and start curating.",
+                        desc: "Focuses on taste, variance, and the soul of the brand. Ensures AI output isn't generic. Teaches your team to stop prompting and start curating.",
                         name: "Roland Vraník",
                         role: "FOUNDER & CD"
                     },
                     {
                         tag: "THE COMPASS",
                         title: "The Navigator",
-                        desc: "Focuses on purpose, human agency, and \"Zen\" in the age of speed. Grounds the team so they can steer the machine without being consumed by it.",
+                        desc: "Focuses on purpose, human agency, and Zen in the age of speed. Grounds the team so they can steer the machine without being consumed by it.",
                         name: "Roman Pii Wagner",
                         role: "TRANSFORMATIONAL DESIGN"
                     },
@@ -147,21 +147,21 @@ export default function ProtocolPage() {
                 cards: [
                     {
                         title: "The Vision",
-                        subtitle: "OPENING THE STATE (90 MIN)",
-                        desc: "We start with the 'Art of the Possible'. We shatter the 'Sea of Sameness' by showing what AI looks like when steered by C-Level Vision and Taste, not just prompts.",
-                        items: ["Breaking the 'Slop' mental model", "C-Level Visual Thinking & Strategy", "Defining the new standard of Quality"]
+                        subtitle: "OPENING THE STATE",
+                        desc: "We start with the Art of the Possible. We shatter the Sea of Sameness by showing what AI looks like when steered by C-Level Vision and Taste, not just prompts.",
+                        items: ["Breaking the Slop mental model", "C-Level Visual Thinking & Strategy", "Defining the new standard of Quality"]
                     },
                     {
                         title: "The Architecture",
-                        subtitle: "DIAGNOSIS & MAPPING (120 MIN)",
-                        desc: "From vision to logic. We audit your current workflows and map the 'Automaton Blueprint'—identifying exactly where to inject speed and where to preserve soul.",
+                        subtitle: "DIAGNOSIS & MAPPING",
+                        desc: "From vision to logic. We audit your current workflows and map the Automaton Blueprint—identifying exactly where to inject speed and where to preserve soul.",
                         items: ["Auditing current bottlenecks", "Mapping automation potential", "Building the blueprint live"]
                     },
                     {
                         title: "The Integration",
-                        subtitle: "HANDOVER & ANCHORING (30 MIN)",
-                        desc: "We don't just leave you with ideas. We install the 'Cognitive OS'. You walk away with a functioning Digital Toolkit and the mindset to navigate the new speed.",
-                        items: ["The 'Human Constant' session", "Handover of the Digital Toolkit", "Installation of the Decision Matrix"]
+                        subtitle: "HANDOVER & ANCHORING",
+                        desc: "We don't just leave you with ideas. We install the Cognitive OS. You walk away with a functioning Digital Toolkit and the mindset to navigate the new speed.",
+                        items: ["The Human Constant session", "Handover of the Digital Toolkit", "Installation of the Decision Matrix"]
                     }
                 ]
             },
@@ -174,15 +174,15 @@ export default function ProtocolPage() {
                         title: "The Studio",
                         focus: "CREATIVE & BRAND",
                         expert: "The Creative",
-                        desc: "For C-levels, design leads, and brand guardians. We focus on Visual Strategy and 'How to Think' with AI. The goal is variance, taste, and high-level direction.",
-                        outcome: "The '100-to-1' Curation Workflow",
+                        desc: "For C-levels, design leads, and brand guardians. We focus on Visual Strategy and How to Think with AI. The goal is variance, taste, and high-level direction.",
+                        outcome: "The 100-to-1 Curation Workflow",
                         tags: ["Taste", "Visual Strategy", "C-Level Thinking", "Brand Voice"]
                     },
                     {
                         title: "The Engine",
                         focus: "PRODUCT & OPS",
                         expert: "The Architect",
-                        desc: "For operations, legal, and product teams. We focus on 'Sovereign AI'—private models, RAG architectures, and secure automation. The goal is accuracy and scale.",
+                        desc: "For operations, legal, and product teams. We focus on Sovereign AI—private models, RAG architectures, and secure automation. The goal is accuracy and scale.",
                         outcome: "The Sovereign Automation Blueprint",
                         tags: ["Logic", "Private Models", "Regulations", "RAG"]
                     }
@@ -211,25 +211,25 @@ export default function ProtocolPage() {
                 cards: [
                     {
                         title: "The Amplifier",
-                        desc: "\"Our work feels generic. We need to restore taste and variance.\"",
+                        desc: "Our work feels generic. We need to restore taste and variance.",
                         os: "Creative OS",
                         combo: "Creative + Navigator"
                     },
                     {
                         title: "The Sovereign",
-                        desc: "\"We need speed, privacy, and secure automation.\"",
+                        desc: "We need speed, privacy, and secure automation.",
                         os: "Product OS",
                         combo: "Architect + Navigator"
                     },
                     {
                         title: "The Synthesis",
-                        desc: "\"Magic meets Logic. Scale the vision without losing the soul.\"",
+                        desc: "Magic meets Logic. Scale the vision without losing the soul.",
                         os: "Dual Core OS",
                         combo: "Creative + Architect"
                     },
                     {
                         title: "The Trinity",
-                        desc: "\"We need to change our entire DNA. Vision, Logic, and Mindset.\"",
+                        desc: "We need to change our entire DNA. Vision, Logic, and Mindset.",
                         os: "Full Hybrid OS",
                         combo: "Roland + Jan + Roman"
                     }
@@ -253,14 +253,14 @@ export default function ProtocolPage() {
                     {
                         tag: "ISKRA",
                         title: "Kreatívec",
-                        desc: "Sústredí sa na vkus, varianciu a \"dušu\" značky. Zabezpečuje, aby AI výstup nebol generický. Učí váš tím prestať promptovať a začať kurátorovať.",
+                        desc: "Sústredí sa na vkus, varianciu a dušu značky. Zabezpečuje, aby AI výstup nebol generický. Učí váš tím prestať promptovať a začať kurátorovať.",
                         name: "Roland Vraník",
                         role: "FOUNDER & CD"
                     },
                     {
                         tag: "KOMPAS",
                         title: "Navigátor",
-                        desc: "Zameriava sa na účel, ľudskú agentnosť a \"Zen\" v dobe rýchlosti. Uzemňuje tím, aby mohli riadiť stroj bez toho, aby ich pohltil.",
+                        desc: "Zameriava sa na účel, ľudskú agentnosť a Zen v dobe rýchlosti. Uzemňuje tím, aby mohli riadiť stroj bez toho, aby ich pohltil.",
                         name: "Roman Pii Wagner",
                         role: "TRANSFORMATIONAL DESIGN"
                     },
@@ -278,21 +278,21 @@ export default function ProtocolPage() {
                 cards: [
                     {
                         title: "Vízia",
-                        subtitle: "OTVORENIE STAVU (90 MIN)",
-                        desc: "Začíname 'Umením Možného'. Rozbíjame 'Oceán Priemernosti' ukážkou toho, ako vyzerá AI, keď je riadená C-Level Víziou a Vkusom, nie len promptami.",
-                        items: ["Prelomenie 'Slop' mentálneho modelu", "C-Level Vizuálne Myslenie & Stratégia", "Definovanie nového štandardu Kvality"]
+                        subtitle: "OTVORENIE STAVU",
+                        desc: "Začíname Umením Možného. Rozbíjame Oceán Priemernosti ukážkou toho, ako vyzerá AI, keď je riadená C-Level Víziou a Vkusom, nie len promptami.",
+                        items: ["Prelomenie Slop mentálneho modelu", "C-Level Vizuálne Myslenie & Stratégia", "Definovanie nového štandardu Kvality"]
                     },
                     {
                         title: "Architektúra",
-                        subtitle: "DIAGNÓZA & MAPOVANIE (120 MIN)",
-                        desc: "Od vízie k logike. Auditujeme vaše súčasné workflowy a mapujeme 'Blueprint Automata'—identifikujeme presne, kde vložiť rýchlosť a kde zachovať dušu.",
+                        subtitle: "DIAGNÓZA & MAPOVANIE",
+                        desc: "Od vízie k logike. Auditujeme vaše súčasné workflowy a mapujeme Blueprint Automata—identifikujeme presne, kde vložiť rýchlosť a kde zachovať dušu.",
                         items: ["Audit súčasných úzkych hrdiel", "Mapovanie automatizačného potenciálu", "Budovanie blueprintu naživo"]
                     },
                     {
                         title: "Integrácia",
-                        subtitle: "ODOVZDANIE & UKOTVENIE (30 MIN)",
-                        desc: "Nenecháme vás len s nápadmi. Inštalujeme 'Kognitívny OS'. Odchádzate s funkčným Digitálnym Toolkitom a nastavením mysle na navigáciu v novej rýchlosti.",
-                        items: ["Sedenie 'Ľudská Konštanta'", "Odovzdanie Digitálneho Toolkitu", "Inštalácia Rozhodovacej Matice"]
+                        subtitle: "ODOVZDANIE & UKOTVENIE",
+                        desc: "Nenecháme vás len s nápadmi. Inštalujeme Kognitívny OS. Odchádzate s funkčným Digitálnym Toolkitom a nastavením mysle na navigáciu v novej rýchlosti.",
+                        items: ["Sedenie Ľudská Konštanta", "Odovzdanie Digitálneho Toolkitu", "Inštalácia Rozhodovacej Matice"]
                     }
                 ]
             },
@@ -305,15 +305,15 @@ export default function ProtocolPage() {
                         title: "Štúdio",
                         focus: "KREATÍVA & BRAND",
                         expert: "Kreatívec",
-                        desc: "Pre C-level, dizajnérov a strážcov značky. Sústredíme sa na Vizuálnu Stratégiu a 'Ako Myslieť' s AI. Cieľom je variancia, vkus a smerovanie na vysokej úrovni.",
-                        outcome: "Workflow '100-do-1' Kurátorstva",
+                        desc: "Pre C-level, dizajnérov a strážcov značky. Sústredíme sa na Vizuálnu Stratégiu a Ako Myslieť s AI. Cieľom je variancia, vkus a smerovanie na vysokej úrovni.",
+                        outcome: "Workflow 100-do-1 Kurátorstva",
                         tags: ["Vkus", "Vizuálna Stratégia", "C-Level Myslenie", "Hlas Značky"]
                     },
                     {
                         title: "Motor",
                         focus: "PRODUKT & OPS",
                         expert: "Architekt",
-                        desc: "Pre operácie, právne a produktové tímy. Zameriavame sa na 'Suverénnu AI'—privátne modely, RAG architektúry a bezpečnú automatizáciu. Cieľom je presnosť a škála.",
+                        desc: "Pre operácie, právne a produktové tímy. Zameriavame sa na Suverénnu AI—privátne modely, RAG architektúry a bezpečnú automatizáciu. Cieľom je presnosť a škála.",
                         outcome: "Blueprint Suverénnej Automatizácie",
                         tags: ["Logika", "Privátne Modely", "Regulácie", "RAG"]
                     }
@@ -342,25 +342,25 @@ export default function ProtocolPage() {
                 cards: [
                     {
                         title: "Zosilňovač",
-                        desc: "\"Naša práca pôsobí genericky. Potrebujeme obnoviť vkus a varianciu.\"",
+                        desc: "Naša práca pôsobí genericky. Potrebujeme obnoviť vkus a varianciu.",
                         os: "Kreatívny OS",
                         combo: "Kreatívec + Navigátor"
                     },
                     {
                         title: "Suverén",
-                        desc: "\"Potrebujeme rýchlosť, súkromie a bezpečnú automatizáciu.\"",
+                        desc: "Potrebujeme rýchlosť, súkromie a bezpečnú automatizáciu.",
                         os: "Produktový OS",
                         combo: "Architekt + Navigátor"
                     },
                     {
                         title: "Syntéza",
-                        desc: "\"Mágia stretáva Logiku. Škálovanie vízie bez straty duše.\"",
+                        desc: "Mágia stretáva Logiku. Škálovanie vízie bez straty duše.",
                         os: "Dual Core OS",
                         combo: "Kreatívec + Architekt"
                     },
                     {
                         title: "Trojica",
-                        desc: "\"Potrebujeme zmeniť celú našu DNA. Vízia, Logika a Mindset.\"",
+                        desc: "Potrebujeme zmeniť celú našu DNA. Vízia, Logika a Mindset.",
                         os: "Plný Hybridný OS",
                         combo: "Roland + Jan + Roman"
                     }

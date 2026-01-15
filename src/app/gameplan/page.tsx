@@ -542,13 +542,35 @@ export default function GamePlanPage() {
                         </div>
                     </div>
 
-                    {/* Workshop */}
-                    <div className="bg-black/5 border border-black/10 p-8 text-center">
-                        <p className="text-xs uppercase tracking-widest text-black/40 mb-4">03 — DELIVERY</p>
-                        <h3 className="font-serif-instrument text-3xl italic mb-4">Standard Workshop</h3>
-                        <p className="text-sm text-black/60 max-w-lg mx-auto">
-                            Same curriculum every time. Your method IS the product. No customization = no overhead.
-                        </p>
+                    {/* Pre-Workshop + Workshop */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-green-50 border border-green-200 p-6">
+                            <p className="text-xs uppercase tracking-widest text-green-600 mb-3">AFTER CLOSE — 3 QUESTIONS</p>
+                            <h3 className="font-serif-instrument text-xl italic mb-4">Pre-Workshop Form</h3>
+                            <div className="space-y-3 text-sm">
+                                <div className="flex items-start gap-3">
+                                    <span className="text-green-600 font-bold">1.</span>
+                                    <span className="text-black/70">How many people attending?</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <span className="text-green-600 font-bold">2.</span>
+                                    <span className="text-black/70">What are their roles? (designers, marketers, C-level, mixed)</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <span className="text-green-600 font-bold">3.</span>
+                                    <span className="text-black/70">What AI tools does your team currently use?</span>
+                                </div>
+                            </div>
+                            <p className="text-[10px] text-black/40 mt-4">Takes 2 min. Zero prep for you. Just know who's in the room.</p>
+                        </div>
+
+                        <div className="bg-black/5 border border-black/10 p-6 flex flex-col justify-center">
+                            <p className="text-xs uppercase tracking-widest text-black/40 mb-3">03 — DELIVERY</p>
+                            <h3 className="font-serif-instrument text-xl italic mb-2">Standard Workshop</h3>
+                            <p className="text-sm text-black/60">
+                                Same curriculum every time. Your method IS the product. No customization = no overhead.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -975,34 +997,27 @@ export default function GamePlanPage() {
                         </div>
 
                         {/* Pre-Workshop Questionnaire */}
-                        <div className="bg-white border border-black/10 p-8 space-y-6">
-                            <h3 className="font-serif-instrument text-2xl italic">Pre-Workshop Questionnaire</h3>
-                            <p className="text-xs text-black/40 uppercase tracking-widest">Send 1 week before</p>
-                            <div className="space-y-3 text-sm text-black/70">
-                                <p className="font-medium text-black">Company context:</p>
-                                <div className="pl-4 space-y-2">
-                                    <p>• Industry and company size</p>
-                                    <p>• Main products/services</p>
-                                    <p>• Brand positioning (premium, mass, etc.)</p>
+                        <div className="bg-green-50 border border-green-200 p-8 space-y-6">
+                            <div className="flex items-center gap-3">
+                                <h3 className="font-serif-instrument text-2xl italic">Pre-Workshop Form</h3>
+                                <span className="text-[9px] font-bold uppercase tracking-widest text-green-600 bg-green-100 px-2 py-1">DECIDED</span>
+                            </div>
+                            <p className="text-xs text-green-700 uppercase tracking-widest">3 questions only — send after close</p>
+                            <div className="space-y-4 text-sm text-black/70">
+                                <div className="flex items-start gap-3 p-3 bg-white border border-green-100">
+                                    <span className="text-green-600 font-bold">1.</span>
+                                    <span>How many people attending?</span>
                                 </div>
-                                <p className="font-medium text-black pt-4">Current AI usage:</p>
-                                <div className="pl-4 space-y-2">
-                                    <p>• Which tools does the team use? (ChatGPT, Midjourney, etc.)</p>
-                                    <p>• How often? Daily, weekly, rarely?</p>
-                                    <p>• What do they use it for? (copy, images, research)</p>
+                                <div className="flex items-start gap-3 p-3 bg-white border border-green-100">
+                                    <span className="text-green-600 font-bold">2.</span>
+                                    <span>What are their roles? (designers, marketers, C-level, mixed)</span>
                                 </div>
-                                <p className="font-medium text-black pt-4">Goals for workshop:</p>
-                                <div className="pl-4 space-y-2">
-                                    <p>• Top 3 things they want to learn</p>
-                                    <p>• Biggest current challenge with AI</p>
-                                    <p>• What would make this workshop successful?</p>
-                                </div>
-                                <p className="font-medium text-black pt-4">Logistics:</p>
-                                <div className="pl-4 space-y-2">
-                                    <p>• List of attendees (names, roles)</p>
-                                    <p>• Technical setup available (screens, laptops)</p>
+                                <div className="flex items-start gap-3 p-3 bg-white border border-green-100">
+                                    <span className="text-green-600 font-bold">3.</span>
+                                    <span>What AI tools does your team currently use?</span>
                                 </div>
                             </div>
+                            <p className="text-xs text-black/50 italic">Takes 2 min for client. Zero prep for you. Just know who's in the room.</p>
                         </div>
 
                         {/* Calendar Capacity */}

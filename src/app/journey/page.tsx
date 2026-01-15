@@ -4,23 +4,11 @@ import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { 
     ArrowLeft, 
-    ArrowUpRight, 
-    CheckCircle2, 
-    Brain, 
-    Zap, 
-    Target, 
-    Briefcase, 
-    Activity,
-    Search,
-    Rocket,
-    Globe,
-    Lock,
-    Users
+    ArrowUpRight
 } from "lucide-react"
 import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
-import { GeoCircle, GeoTriangle, GeoSquare, GeoHexagon, GeoCross } from "@/components/visuals/geometric-shapes"
 
 // --- Components ---
 

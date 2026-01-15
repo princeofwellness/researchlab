@@ -2,31 +2,13 @@
 
 import React, { useState, useEffect } from "react"
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion"
-import Link from "next/link"
-import { TopNav } from "@/components/navigation/top-nav"
 import {
     ArrowUpRight,
-    BarChart3,
-    CheckCircle2,
-    Clock,
-    Zap,
-    Users,
-    Activity,
-    Briefcase,
-    TrendingUp,
-    Lightbulb,
-    Target,
-    Brain,
-    Rocket,
     ChevronDown,
-    Plus,
-    Star,
-    Globe,
-    ZapOff,
-    Search,
-    Shield
+    Plus
 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { TopNav } from "@/components/navigation/top-nav"
 
 // Mission Collapsible Component
 function MissionCollapsible({ content }: { content: any }) {
@@ -429,7 +411,7 @@ export default function SorrywecanResearchLab() {
                         company: "RESEARCH LAB // HEAD OF CULTURE",
                         name: "Tiep Le Dinh",
                         role: "Kultúrny Architekt & Research Co-Lead",
-                        bio: "Expert na emerging tech a kultúrnu inováciu. Buduje digitálne produkty prepájajúce technológiu a ľudskú skúsenosť. Spoluvede Research Lab, kultivuje organizačnú kultúru vo veku AI.",
+                        bio: "Expert na emerging tech and kultúrnu inováciu. Buduje digitálne produkty prepájajúce technológiu a ľudskú skúsenosť. Spoluvede Research Lab, kultivuje organizačnú kultúru vo veku AI.",
                         tags: ["Emerging Tech", "Kultúrna Inovácia", "Digitálne Produkty", "Research Leadership"]
                     }
                 ]
@@ -666,7 +648,6 @@ export default function SorrywecanResearchLab() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="border-2 border-black/20 p-12 bg-white relative"
                         >
-                            <div className="absolute top-4 right-4 w-3 h-3 bg-red-500 rounded-full" />
                             <h4 className="font-serif-instrument text-3xl italic mb-8 text-black/40">{t.problem.comparison.without.title}</h4>
                             <div className="space-y-4">
                                 {t.problem.comparison.without.items.map((item, i) => (
@@ -684,16 +665,16 @@ export default function SorrywecanResearchLab() {
                             transition={{ duration: 0.6, delay: 0.3 }}
                             className="border-2 border-[#0047BB] p-12 bg-[#0047BB]/5 relative"
                         >
-                            <div className="absolute top-48 right-0 text-[15vw] font-serif-instrument italic text-black/[0.04] select-none pointer-events-none">
-                {number}
-            </div>
-            <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="max-w-7xl mx-auto px-6 md:px-20"
-            >
+                            <h4 className="font-serif-instrument text-3xl italic mb-8 text-[#0047BB]">{t.problem.comparison.with.title}</h4>
+                            <div className="space-y-4">
+                                {t.problem.comparison.with.items.map((item, i) => (
+                                    <div key={i} className="flex items-start gap-3">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-1.5 shrink-0" />
+                                        <span className="text-sm font-inter opacity-80">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
                     </motion.div>
 
                     <motion.div 
@@ -963,7 +944,7 @@ function StatBox({ val, label, accent }: any) {
     )
 }
 
-function Point({ icon, title, desc }: any) {
+function Point({ title, desc }: any) {
     return (
         <div className="space-y-8 p-10 border border-black bg-white group hover:bg-[#0047BB]/5 transition-colors">
             <h4 className="font-serif-instrument text-4xl italic uppercase tracking-tighter">{title}</h4>
@@ -1051,10 +1032,10 @@ function TierCarousel({ content }: { content: any }) {
                             dragElastic={0.1}
                             dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
                             onDragEnd={handleDragEnd}
-                            animate={{ 
+                            animate={{
                                 x: `calc(-1 * ${activeIndex} * (var(--card-width) + var(--gap)))`
                             }}
-                            transition={{ 
+                            transition={{
                                 type: "spring", 
                                 stiffness: 300, 
                                 damping: 30,
@@ -1074,7 +1055,7 @@ function TierCarousel({ content }: { content: any }) {
                                             opacity: isActive ? 1 : 0.5,
                                             filter: isActive ? "blur(0px)" : "blur(1px)"
                                         }}
-                                        transition={{ 
+                                        transition={{
                                             type: "spring", 
                                             stiffness: 400, 
                                             damping: 30 

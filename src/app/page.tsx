@@ -205,17 +205,17 @@ export default function SorrywecanResearchLab() {
                 experts: [
                     {
                         company: "SORRYWECAN",
-                        name: "Roland Wranik",
-                        role: "CEO & Creative Director",
-                        bio: "Architect of campaigns for Meta and Porsche. Transforming creative chaos into AI excellence.",
-                        tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum"]
+                        name: "Roland Vraník",
+                        role: "Founder & Creative Director",
+                        bio: "Founder of SORRYWECAN – art-tech studio blending film, music, and emerging technologies into visuals that look like they're from the future. Builds production on AI and real-time workflows while maintaining craft and emotional depth. Delivering high-end shows from Bratislava to the world.",
+                        tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum", "Kreatívny Režisér", "Technológ", "Vizionár"]
                     },
                     {
                         company: "SUDOLABS // CO-FOUNDER & CPO",
                         name: "Ján Koščelanský",
                         role: "Product Visionary & Strategic Architect",
-                        bio: "Co-founder and Chief Product Officer at Sudolabs. Architect of €5M+ revenue growth, driving product innovation and strategic transformation across enterprise ecosystems.",
-                        tags: ["$1.5B Valuation", "€5M+ Revenue", "Forbes Featured", "Product Leadership"]
+                        bio: "CPO & co-founder at Sudolabs – product leader driving discovery, UX processes, and product-market fit. Background in digital transformation consulting (Accenture) and scaling digital products at OLX Group (global marketplace). Architect of €5M+ revenue growth across enterprise ecosystems.",
+                        tags: ["$1.5B Valuation", "€5M+ Revenue", "Product-Market Fit", "Digital Transformation"]
                     },
                     {
                         company: "TRANSFORMATIONAL DESIGN",
@@ -406,17 +406,17 @@ export default function SorrywecanResearchLab() {
                 experts: [
                     {
                         company: "SORRYWECAN",
-                        name: "Roland Wranik",
-                        role: "CEO & Creative Director",
-                        bio: "Architekt kampaní pre Meta a Porsche. Transformuje kreatívny chaos na AI excelentnosť.",
-                        tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum"]
+                        name: "Roland Vraník",
+                        role: "Founder & Creative Director",
+                        bio: "Founder SORRYWECAN – art-tech štúdia, ktoré mieša film, hudbu a nové technológie do vizuálov, ktoré vyzerajú ako z budúcnosti. Stavia produkciu na AI a real-time prístupe, no stále drží tvrdé remeslo a cit pre emóciu. High-end show z Bratislavy pre svet.",
+                        tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum", "Kreatívny Režisér", "Technológ", "Vizionár"]
                     },
                     {
                         company: "SUDOLABS // CO-FOUNDER & CPO",
                         name: "Ján Koščelanský",
                         role: "Produktový Vizionár & Strategický Architekt",
-                        bio: "Co-founder a Chief Product Officer v Sudolabs. Architekt rastu príjmov €5M+, riadenie produktovej inovácie a strategickej transformácie naprieč enterprise ekosystémami.",
-                        tags: ["$1.5B Valuation", "€5M+ Príjmy", "Forbes Featured", "Product Leadership"]
+                        bio: "CPO & co-founder Sudolabs – produktový človek, ktorý rieši discovery, UX procesy a product-market fit. Background v digitálnej transformácii (Accenture consulting) a v škálovaní digitálnych produktov v OLX Group (globálny marketplace). Architekt rastu príjmov €5M+ naprieč enterprise ekosystémami.",
+                        tags: ["$1.5B Valuation", "€5M+ Príjmy", "Product-Market Fit", "Digitálna Transformácia"]
                     },
                     {
                         company: "TRANSFORMATIONAL DESIGN",

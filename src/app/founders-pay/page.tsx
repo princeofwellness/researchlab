@@ -57,7 +57,7 @@ export default function FoundersPay2026Page() {
 
     return (
         <div className="min-h-screen bg-black text-white font-sans selection:bg-orange-500/30">
-            <TopNav />
+            <TopNav variant="dark" />
             {/* Scroll Progress Bar */}
             <motion.div
                 className="fixed top-[64px] left-0 right-0 h-1 bg-gradient-to-r from-orange-600 via-orange-400 to-orange-600 origin-left z-50 px-6 box-content"

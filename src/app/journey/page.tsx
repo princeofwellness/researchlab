@@ -381,8 +381,8 @@ export default function JourneyPage() {
     const [lang, setLang] = useState<'en' | 'sk'>('sk')
 
     return (
-        <main className="bg-white text-black min-h-screen font-inter selection:bg-[#0047BB] selection:text-white">
-            <Nav lang={lang} />
+        <main className="bg-white text-black min-h-screen font-inter selection:bg-[#0047BB] selection:text-white pt-16">
+            <TopNav />
             
             {/* Language Switcher */}
             <div className="fixed top-24 right-6 z-[100]">

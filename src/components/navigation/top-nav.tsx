@@ -6,7 +6,13 @@ import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import React from "react"
 
-export function TopNav({ customAction }: { customAction?: React.ReactNode }) {
+export function TopNav({ 
+    customAction, 
+    variant = "light" 
+}: { 
+    customAction?: React.ReactNode,
+    variant?: "light" | "dark"
+}) {
     const pathname = usePathname()
 
     const navItems = [
@@ -16,11 +22,18 @@ export function TopNav({ customAction }: { customAction?: React.ReactNode }) {
         { name: "Journey", href: "/journey" },
     ]
 
+    const isDark = variant === "dark"
+
     return (
-        <nav className="fixed top-0 left-0 right-0 h-16 bg-[#f5f5f3]/80 backdrop-blur-md z-[100] border-b border-black/10 px-6 md:px-20 flex items-center justify-between">
+        <nav className={cn(
+            "fixed top-0 left-0 right-0 h-16 z-[100] border-b px-6 md:px-20 flex items-center justify-between transition-all duration-300",
+            isDark 
+                ? "bg-black/80 backdrop-blur-md border-white/10 text-white" 
+                : "bg-[#f5f5f3]/80 backdrop-blur-md border-black/10 text-black"
+        )}>
             <div className="flex items-center gap-8">
                 <Link href="/" className="font-syne font-bold tracking-tighter text-xl">
-                    RESEARCH<span className="text-[#0047BB]">LAB</span>
+                    RESEARCH<span className={isDark ? "text-blue-400" : "text-[#0047BB]"}>LAB</span>
                 </Link>
                 
                 <div className="hidden md:flex items-center gap-6">
@@ -30,7 +43,9 @@ export function TopNav({ customAction }: { customAction?: React.ReactNode }) {
                             href={item.href}
                             className={cn(
                                 "text-[10px] font-bold uppercase tracking-widest transition-colors hover:text-[#0047BB]",
-                                pathname === item.href ? "text-[#0047BB]" : "text-black/40"
+                                pathname === item.href 
+                                    ? (isDark ? "text-blue-400" : "text-[#0047BB]") 
+                                    : (isDark ? "text-white/40" : "text-black/40")
                             )}
                         >
                             {item.name}
@@ -43,7 +58,12 @@ export function TopNav({ customAction }: { customAction?: React.ReactNode }) {
                 {customAction}
                 <a
                     href="mailto:hello@sorrywecan.com"
-                    className="bg-black text-white px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-[#0047BB] transition-colors"
+                    className={cn(
+                        "px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition-colors",
+                        isDark 
+                            ? "bg-white text-black hover:bg-blue-400 hover:text-white" 
+                            : "bg-black text-white hover:bg-[#0047BB]"
+                    )}
                 >
                     Contact
                 </a>

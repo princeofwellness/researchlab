@@ -529,39 +529,6 @@ export default function SorrywecanResearchLab() {
 
     return (
         <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20 overflow-x-hidden">
-            <style jsx global>{`
-                @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
-                
-                :root {
-                    --accent: #0047BB;
-                }
-
-                .font-serif-instrument {
-                    font-family: 'Instrument Serif', serif;
-                }
-                
-                .font-syne {
-                    font-family: 'Syne', sans-serif;
-                }
-
-                .font-inter {
-                    font-family: 'Inter', sans-serif;
-                }
-
-                .noise-bg {
-                    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-                    opacity: 0.05;
-                    pointer-events: none;
-                }
-
-                .blueprint-grid {
-                    background-size: 40px 40px;
-                    background-image: 
-                        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-                }
-            `}</style>
-
             <TopNav customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}

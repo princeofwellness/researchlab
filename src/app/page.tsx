@@ -332,7 +332,7 @@ export default function SorrywecanResearchLab() {
                 subtitle: "SORRYWECAN // LABORATÓRIUM ĽUDSKEJ PREVAHY",
                 title: {
                     line1: "AI je Motor.",
-                    line2: "Vy ste Vodič.",
+                    line2: "Ty si Vodič.",
                     line3: "Prevezmite Kontrolu."
                 },
                 trustedBy: "Dôverujú nám",

@@ -430,10 +430,9 @@ export default function ProtocolPage() {
                         {t.trinity.description}
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10 border border-black/10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10 border border-black/10 items-stretch">
                     {t.trinity.cards.map((card, i) => (
-                        <div key={i} className={cn("p-10 space-y-8 flex flex-col", i === 1 ? "bg-[#fcfcfc] relative overflow-hidden" : "bg-white")}>
-                            {i === 1 && <div className="absolute top-0 right-0 w-20 h-20 bg-[#0047BB]/5 rounded-bl-full" />}
+                        <div key={i} className="p-10 space-y-8 flex flex-col bg-white">
                             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">{card.tag}</span>
                             <h3 className="font-serif-instrument text-4xl italic">{card.title}</h3>
                             <p className="text-sm text-black/60 leading-relaxed flex-grow">

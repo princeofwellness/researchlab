@@ -225,11 +225,11 @@ export default function SorrywecanResearchLab() {
                         tags: ["Design Mastery", "Zen Practice", "Business Transformation", "Contemplative Leadership"]
                     },
                     {
-                        company: "CREATIVE STRATEGY",
-                        name: "[Expert Name 4]",
-                        role: "Innovation & Workshop Facilitator",
-                        bio: "Expert in bridging human creativity with AI capabilities through hands-on workshops.",
-                        tags: ["Creative Direction", "Workshop Design", "Team Training", "Innovation Lead"]
+                        company: "RESEARCH LAB // HEAD OF CULTURE",
+                        name: "Tiep Le Dinh",
+                        role: "Cultural Architect & Research Co-Lead",
+                        bio: "Expertise in emerging technologies and cultural innovation. Creative visionary building digital products that bridge technology and human experience. Co-leading the Research Lab with a focus on cultivating organizational culture in the age of AI.",
+                        tags: ["Emerging Tech", "Cultural Innovation", "Digital Products", "Research Leadership"]
                     }
                 ]
             },
@@ -426,11 +426,11 @@ export default function SorrywecanResearchLab() {
                         tags: ["Design Mastery", "Zen Prax", "Biznis Transformácia", "Kontemplatívne Vedenie"]
                     },
                     {
-                        company: "CREATIVE STRATEGY",
-                        name: "[Expert Name 4]",
-                        role: "Inovácie & Facilitátor Workshopov",
-                        bio: "Expert na prepojenie ľudskej kreativity s možnosťami AI prostredníctvom praktických workshopov.",
-                        tags: ["Creative Direction", "Workshop Design", "Team Training", "Innovation Lead"]
+                        company: "RESEARCH LAB // HEAD OF CULTURE",
+                        name: "Tiep Le Dinh",
+                        role: "Kultúrny Architekt & Research Co-Lead",
+                        bio: "Expertíza v emerging technológiách a kultúrnej inovácii. Kreatívny vizionár budujúci digitálne produkty, ktoré prepájajú technológiu a ľudskú skúsenosť. Spoluvede Research Lab so zameraním na kultiváciu organizačnej kultúry vo veku AI.",
+                        tags: ["Emerging Tech", "Kultúrna Inovácia", "Digitálne Produkty", "Research Leadership"]
                     }
                 ]
             },

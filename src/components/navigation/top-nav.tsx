@@ -16,11 +16,8 @@ export function TopNav({
     const pathname = usePathname()
 
     const navItems = [
-        { name: "Research", href: "/" },
-        { name: "Education", href: "/ai-education-blueprint" },
-        { name: "Market Intelligence", href: "/ai-market-intelligence" },
-        { name: "Founders Pay", href: "/founders-pay" },
         { name: "Journey", href: "/journey" },
+        { name: "Archive", href: "/archive" },
     ]
 
     const isDark = variant === "dark"

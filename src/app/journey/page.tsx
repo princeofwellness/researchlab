@@ -414,14 +414,6 @@ export default function JourneyPage() {
             <Section className="min-h-[80vh] flex flex-col justify-center blueprint-grid relative">
                 <div className="absolute inset-0 noise-bg opacity-10 pointer-events-none" />
                 
-                {/* Floating Geometric Shapes */}
-                <div className="absolute top-20 right-[10%] pointer-events-none">
-                    <GeoCross size={300} className="text-[#0047BB] opacity-10" delay={0.5} />
-                </div>
-                <div className="absolute bottom-20 left-[5%] pointer-events-none">
-                    <GeoCircle size={200} className="text-black opacity-5" delay={0.8} />
-                </div>
-                
                 <div className="relative z-10 space-y-12">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -508,7 +500,7 @@ export default function JourneyPage() {
 
                     <div className="space-y-12">
                         {content[lang].weeks.map((week: any, i: number) => (
-                            <WeekCard key={i} {...week} lang={lang} index={i} />
+                            <WeekCard key={i} {...week} lang={lang} />
                         ))}
                     </div>
                 </div>

@@ -123,7 +123,7 @@ export default function ProtocolPage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif-instrument text-[10vw] leading-[0.8] tracking-tighter mb-16"
+                        className="font-serif-instrument text-[10vw] leading-[0.95] tracking-tighter mb-16"
                     >
                         The Cognitive <br />
                         <span className="text-[#0047BB] italic">Operating System.</span>

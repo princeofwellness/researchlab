@@ -211,18 +211,18 @@ export default function SorrywecanResearchLab() {
                         tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum"]
                     },
                     {
-                        company: "STRATEGIC PARTNER",
-                        name: "Janko Petro",
-                        role: "Transformation Designer",
-                        bio: "Co-built a €15M+ ARR entity. Mastery of enterprise-grade AI deployment at scale.",
-                        tags: ["$1.5B Valuation", "€15M+ ARR", "Forbes Featured", "CEE Expert"]
+                        company: "SUDOLABS // CO-FOUNDER & CPO",
+                        name: "Ján Koščelanský",
+                        role: "Product Visionary & Strategic Architect",
+                        bio: "Co-founder and Chief Product Officer at Sudolabs. Architect of €5M+ revenue growth, driving product innovation and strategic transformation across enterprise ecosystems.",
+                        tags: ["$1.5B Valuation", "€5M+ Revenue", "Forbes Featured", "Product Leadership"]
                     },
                     {
-                        company: "AI SYSTEMS ARCHITECT",
-                        name: "[Expert Name 3]",
-                        role: "Technical Implementation Lead",
-                        bio: "Built production AI systems for Fortune 500 companies. Specializes in workflow automation.",
-                        tags: ["Enterprise AI", "Automation Expert", "System Design", "Production Scale"]
+                        company: "TRANSFORMATIONAL DESIGN",
+                        name: "Roman Pii Wagner",
+                        role: "Transformational Designer & Zen Buddhist",
+                        bio: "Decades of experience bridging business transformation with contemplative practice. Master of integrating strategic design with mindful awareness, guiding organizations through profound change with clarity and presence.",
+                        tags: ["Design Mastery", "Zen Practice", "Business Transformation", "Contemplative Leadership"]
                     },
                     {
                         company: "CREATIVE STRATEGY",
@@ -412,18 +412,18 @@ export default function SorrywecanResearchLab() {
                         tags: ["Cannes Lions", "NY Festivals", "Effie Awards", "Golden Drum"]
                     },
                     {
-                        company: "STRATEGIC PARTNER",
-                        name: "Janko Petro",
-                        role: "Dizajnér Transformácie",
-                        bio: "Spoluvybudoval entitu s €15M+ ARR. Majstrovstvo v nasadzovaní enterprise AI vo veľkom.",
-                        tags: ["$1.5B Valuation", "€15M+ ARR", "Forbes Featured", "CEE Expert"]
+                        company: "SUDOLABS // CO-FOUNDER & CPO",
+                        name: "Ján Koščelanský",
+                        role: "Produktový Vizionár & Strategický Architekt",
+                        bio: "Co-founder a Chief Product Officer v Sudolabs. Architekt rastu príjmov €5M+, riadenie produktovej inovácie a strategickej transformácie naprieč enterprise ekosystémami.",
+                        tags: ["$1.5B Valuation", "€5M+ Príjmy", "Forbes Featured", "Product Leadership"]
                     },
                     {
-                        company: "AI SYSTEMS ARCHITECT",
-                        name: "[Expert Name 3]",
-                        role: "Technický Implementačný Lead",
-                        bio: "Budoval produkčné AI systémy pre Fortune 500 firmy. Špecializuje sa na automatizáciu workflow.",
-                        tags: ["Enterprise AI", "Automation Expert", "System Design", "Production Scale"]
+                        company: "TRANSFORMATIONAL DESIGN",
+                        name: "Roman Pii Wagner",
+                        role: "Transformačný Dizajnér & Zen Budhista",
+                        bio: "Desaťročia skúseností s prepájaním biznis transformácie s kontemplatívnou praxou. Majster integrácie strategického dizajnu s mindful awareness, vedenie organizácií cez hlbokú zmenu s jasnosťou a prítomnosťou.",
+                        tags: ["Design Mastery", "Zen Prax", "Biznis Transformácia", "Kontemplatívne Vedenie"]
                     },
                     {
                         company: "CREATIVE STRATEGY",

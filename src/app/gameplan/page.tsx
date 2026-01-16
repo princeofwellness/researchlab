@@ -36,7 +36,7 @@ const initialCategories: Category[] = [
                 id: "p1",
                 title: "Define Pricing Strategy",
                 description: "Finalize pricing for all three tiers with clear value propositions",
-                owner: "Team",
+                owner: "Roland + Team",
                 status: "pending",
                 priority: "critical",
                 subtasks: [
@@ -49,7 +49,7 @@ const initialCategories: Category[] = [
                 id: "p2",
                 title: "Create Curriculum Document",
                 description: "Detailed breakdown of what each tier includes",
-                owner: "Roland + Team",
+                owner: "Andrea + Tepi",
                 status: "pending",
                 priority: "critical",
                 subtasks: [
@@ -77,7 +77,7 @@ const initialCategories: Category[] = [
                 id: "p4",
                 title: "Define The Offer",
                 description: "Clear articulation of what clients get",
-                owner: "Team",
+                owner: "Andrea + Tepi",
                 status: "pending",
                 priority: "high",
                 subtasks: [
@@ -111,7 +111,7 @@ const initialCategories: Category[] = [
                 id: "w2",
                 title: "Update Pricing Section",
                 description: "Align website pricing with finalized strategy",
-                owner: "Dev",
+                owner: "Tepi",
                 status: "pending",
                 priority: "high",
                 subtasks: [
@@ -124,7 +124,7 @@ const initialCategories: Category[] = [
                 id: "w3",
                 title: "Add Testimonials / Social Proof",
                 description: "Include client logos, quotes, or case studies",
-                owner: "Team",
+                owner: "Andrea",
                 status: "pending",
                 priority: "medium",
                 subtasks: [
@@ -174,7 +174,7 @@ const initialCategories: Category[] = [
                 id: "s3",
                 title: "Partner Network Activation",
                 description: "Leverage existing partnerships for referrals",
-                owner: "Team",
+                owner: "Andrea",
                 status: "pending",
                 priority: "high",
                 subtasks: [
@@ -195,7 +195,7 @@ const initialCategories: Category[] = [
                 id: "a1",
                 title: "Email System Setup",
                 description: "Configure professional email for inquiries",
-                owner: "Dev",
+                owner: "Tepi",
                 status: "pending",
                 priority: "high",
                 subtasks: [
@@ -208,7 +208,7 @@ const initialCategories: Category[] = [
                 id: "a2",
                 title: "Scheduling System",
                 description: "Know availability for workshops",
-                owner: "Team",
+                owner: "Andrea",
                 status: "pending",
                 priority: "high",
                 subtasks: [
@@ -221,7 +221,7 @@ const initialCategories: Category[] = [
                 id: "a3",
                 title: "CRM / Lead Tracking",
                 description: "Simple system to track leads and follow-ups",
-                owner: "Team",
+                owner: "Andrea",
                 status: "pending",
                 priority: "medium",
                 subtasks: [
@@ -234,7 +234,7 @@ const initialCategories: Category[] = [
                 id: "a4",
                 title: "Automation Workflow",
                 description: "Automate repetitive tasks as volume grows",
-                owner: "Dev",
+                owner: "Andrea + Tepi",
                 status: "pending",
                 priority: "medium",
                 subtasks: [
@@ -434,7 +434,7 @@ export default function GamePlanPage() {
                                 Jan 21
                             </div>
                             <div className="text-[10px] font-bold uppercase tracking-widest text-black/40">
-                                Target Launch
+                                Start Outreach
                             </div>
                         </div>
                         <div className="p-6 bg-white border border-black/10">
@@ -454,11 +454,11 @@ export default function GamePlanPage() {
                             </div>
                         </div>
                         <div className="p-6 bg-black text-white">
-                            <div className="text-4xl font-serif-instrument italic text-[#0047BB] mb-2">
-                                {Math.round((completedTasks / totalTasks) * 100)}%
+                            <div className="text-4xl font-serif-instrument italic text-green-400 mb-2">
+                                3 deals
                             </div>
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/40">
-                                Progress
+                                Target by Feb
                             </div>
                         </div>
                     </div>
@@ -567,9 +567,14 @@ export default function GamePlanPage() {
                         <div className="bg-black/5 border border-black/10 p-6 flex flex-col justify-center">
                             <p className="text-xs uppercase tracking-widest text-black/40 mb-3">03 — DELIVERY</p>
                             <h3 className="font-serif-instrument text-xl italic mb-2">Standard Workshop</h3>
-                            <p className="text-sm text-black/60">
-                                Same curriculum every time. Your method IS the product. No customization = no overhead.
+                            <p className="text-sm text-black/60 mb-3">
+                                Same curriculum every time. Your method IS the product.
                             </p>
+                            <div className="text-[10px] text-black/50 space-y-1">
+                                <p><span className="font-bold">Speakers:</span> Roland + Ján + Roman</p>
+                                <p><span className="font-bold">Location:</span> Blue Room or client's office</p>
+                                <p><span className="font-bold">Format:</span> In-person only</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -887,11 +892,11 @@ export default function GamePlanPage() {
                         The Simple Plan
                     </h2>
                     <div className="space-y-6 text-xl">
-                        <p className="opacity-80">1. Finalize product & website by Jan 21</p>
-                        <p className="opacity-80">2. Roland + Tibor: Call warm leads</p>
+                        <p className="opacity-80">1. Tepi + Andrea: Prep website, curriculum, tasks by Jan 21</p>
+                        <p className="opacity-80">2. Roland + Tibor: Start calling warm leads</p>
                         <p className="opacity-80">3. Tepi: Close interested leads</p>
-                        <p className="opacity-60">4. (TBD): Launch video ads (€300-400 test)</p>
-                        <p className="opacity-60">5. If ROI positive → scale ads</p>
+                        <p className="opacity-80">4. Roland + Ján + Roman: Deliver workshops</p>
+                        <p className="opacity-60 text-green-300">5. Target: 3 closed deals by end of Jan / early Feb</p>
                     </div>
                     <div className="mt-16 p-8 bg-white/10 border border-white/20 inline-block">
                         <p className="text-sm font-bold uppercase tracking-widest mb-2">Philosophy</p>

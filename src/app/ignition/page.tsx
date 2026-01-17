@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
 
-// --- Components ---
-
 function Section({ id, number, title, children, className, dark }: any) {
     return (
         <section id={id} className={cn(
@@ -38,7 +36,7 @@ function Section({ id, number, title, children, className, dark }: any) {
     )
 }
 
-function TimeBlock({ time, title, description, emotion, accent }: any) {
+function TimeBlock({ time, title, description, tags, accent }: any) {
     return (
         <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -55,35 +53,36 @@ function TimeBlock({ time, title, description, emotion, accent }: any) {
             <div className="space-y-4">
                 <h4 className="text-2xl font-serif-instrument italic">{title}</h4>
                 <p className="text-sm text-black/60 leading-relaxed">{description}</p>
-                <div className="pt-4 border-t border-black/10">
-                    <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-black/40">Emotional State: </span>
-                    <span className="text-sm italic text-[#0047BB]">{emotion}</span>
-                </div>
+                {tags && (
+                    <div className="flex flex-wrap gap-2 pt-2">
+                        {tags.map((tag: string, i: number) => (
+                            <span key={i} className="text-[9px] font-bold uppercase tracking-widest bg-black/5 px-3 py-1">{tag}</span>
+                        ))}
+                    </div>
+                )}
             </div>
         </motion.div>
     )
 }
 
-function WhoCard({ icon, title, pain, transformation }: any) {
+function PillarCard({ icon, title, items }: any) {
     return (
         <div className="p-8 border border-black/10 bg-white space-y-6 hover:border-[#0047BB]/30 transition-all group">
             <div className="text-4xl">{icon}</div>
             <h4 className="text-xl font-bold">{title}</h4>
-            <div className="space-y-4 text-sm">
-                <div>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-red-500 block mb-2">BEFORE</span>
-                    <p className="text-black/60 leading-relaxed">{pain}</p>
-                </div>
-                <div>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-green-600 block mb-2">AFTER</span>
-                    <p className="text-black/80 leading-relaxed font-medium">{transformation}</p>
-                </div>
+            <div className="space-y-3">
+                {items.map((item: string, i: number) => (
+                    <div key={i} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-1.5 shrink-0" />
+                        <span className="text-sm text-black/70 leading-relaxed">{item}</span>
+                    </div>
+                ))}
             </div>
         </div>
     )
 }
 
-function FounderCard({ name, role, company, focus, quote }: any) {
+function FounderCard({ name, role, company, brings, industries }: any) {
     return (
         <div className="p-8 border border-white/20 bg-white/5 space-y-6 hover:bg-white/10 transition-all">
             <div>
@@ -94,13 +93,22 @@ function FounderCard({ name, role, company, focus, quote }: any) {
             <div className="space-y-4">
                 <div>
                     <span className="text-[9px] font-bold uppercase tracking-widest text-white/30 block mb-2">BRINGS</span>
-                    <p className="text-sm text-white/70 leading-relaxed">{focus}</p>
+                    <p className="text-sm text-white/70 leading-relaxed">{brings}</p>
                 </div>
                 <div className="pt-4 border-t border-white/10">
-                    <p className="text-sm italic text-white/50">"{quote}"</p>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-white/30 block mb-2">WORKED WITH</span>
+                    <p className="text-xs text-white/50">{industries}</p>
                 </div>
             </div>
         </div>
+    )
+}
+
+function IndustryTag({ name }: { name: string }) {
+    return (
+        <span className="px-4 py-2 border border-black/10 text-sm hover:border-[#0047BB] hover:bg-[#0047BB]/5 transition-all cursor-default">
+            {name}
+        </span>
     )
 }
 
@@ -111,222 +119,472 @@ export default function IgnitionPage() {
     const content = {
         en: {
             hero: {
-                subtitle: "LOGIC MEETS MAGIC",
+                subtitle: "THINKING + TOOLS + AUTOMATION + IMAGINATION",
                 title: {
                     line1: "One Day.",
-                    line2: "Everything Changes."
+                    line2: "Unlimited Potential."
                 },
-                description: "We don't teach tools. We teach thinking. In 8 hours, your team learns to see differently, decide faster, and create what AI cannot.",
+                description: "We don't care what industry you're in. We care that you want to maximize what's possible. In 8 hours, we expand thinking, unlock tools, build automations, and stretch imagination. All of it.",
                 stats: [
                     { value: "8hrs", label: "Intensive" },
                     { value: "10-25", label: "Participants" },
                     { value: "3", label: "Expert Minds" },
-                    { value: "1", label: "Transformation" }
+                    { value: "All", label: "Industries" }
                 ]
             },
             problem: {
-                title: "The Problem",
-                headline: "Everyone Has AI. Nobody Knows How to Think.",
+                title: "The Reality",
+                headline: "AI Changed Everything. Most People Missed It.",
+                description: "It's not about whether you use AI. Everyone does. It's about whether you're using 5% of what's possible or 85%. Most teams are stuck at 5% — prompting without understanding, automating without strategy, working harder instead of smarter.",
                 points: [
-                    "Your team prompts. They don't curate.",
-                    "Output looks like everyone else's output.",
-                    "Speed increased. Quality decreased.",
-                    "The machine decides. Humans execute."
-                ],
-                stats: [
-                    { value: "73%", label: "of AI output is generic 'slop'" },
-                    { value: "4hrs", label: "wasted daily on bad prompting" },
-                    { value: "0%", label: "of courses teach actual thinking" }
+                    { stat: "5%", label: "Average AI capability utilized by teams" },
+                    { stat: "4hrs", label: "Wasted daily on tasks AI could handle" },
+                    { stat: "10x", label: "Productivity gap between trained and untrained" }
                 ]
             },
-            solution: {
-                title: "The Ignition",
-                headline: "Not a Course. A Catalyst.",
-                description: "We're not here to teach you which buttons to press. We're here to rewire how your team approaches problems, creativity, and decision-making in an age where AI does the heavy lifting.",
-                principles: [
-                    { title: "Taste Over Tools", desc: "Anyone can prompt. Few can curate. We restore the judgment that makes output premium." },
-                    { title: "Think With, Not For", desc: "AI amplifies your thinking. It doesn't replace it. Learn to stay in the driver's seat." },
-                    { title: "Navigation Over Automation", desc: "The map matters more than the vehicle. We teach you to see where you're going." }
-                ]
-            },
-            day: {
-                title: "The Day",
-                headline: "8 Hours That Rewire Everything.",
-                blocks: [
-                    { time: "09:00", title: "THE SHOCK", desc: "We take your actual painful task. Solve it in 5 minutes. Your jaws drop. The old world ends here.", emotion: '"Holy shit, this is possible?"' },
-                    { time: "09:30", title: "THE MIRROR", desc: "Each person identifies their #1 time-sink. Public commitment. The problem becomes real.", emotion: '"I spend HOW much time on this?"' },
-                    { time: "10:45", title: "THE SKILL", desc: "Hands-on: Task framing + Prompting fundamentals. You practice on YOUR tasks. Not hypotheticals.", emotion: '"I can actually do this."' },
-                    { time: "13:00", title: "THE TRANSFORMATION", desc: "Workflow redesign. We take 3 actual company processes. Rebuild them live. Before/after.", emotion: '"Our process was insane."' },
-                    { time: "14:45", title: "THE NAVIGATION", desc: "Role-specific breakouts. Each person leaves with their personal AI-augmented job description.", emotion: '"I know MY path now."', accent: true },
-                    { time: "16:00", title: "THE COMMITMENT", desc: "Each person presents: 'In the next 30 days, I will...' Public accountability. No escape.", emotion: '"I\'m doing this."' }
+            what: {
+                title: "What This Is",
+                headline: "Not a Course. A Complete Upgrade.",
+                description: "One day that combines everything: expanded thinking, practical tools, real automation, and imagination for what's possible. Three experts from different worlds. Universal principles that work in any industry.",
+                pillars: [
+                    { 
+                        icon: "🧠", 
+                        title: "Thinking", 
+                        items: ["How to frame problems for AI", "Decision-making with machine intelligence", "Strategic navigation in complexity", "From reactive to proactive mindset"]
+                    },
+                    { 
+                        icon: "🛠", 
+                        title: "Tools", 
+                        items: ["Which tools for which tasks", "Practical hands-on with YOUR work", "Building your personal AI stack", "Integration into daily workflow"]
+                    },
+                    { 
+                        icon: "⚡", 
+                        title: "Automation", 
+                        items: ["Identifying automation opportunities", "Building workflows that run themselves", "From manual to systematic", "Scaling without adding headcount"]
+                    },
+                    { 
+                        icon: "✨", 
+                        title: "Imagination", 
+                        items: ["Seeing possibilities you didn't know existed", "Expanding what 'possible' means", "From incremental to exponential thinking", "Future-proofing your approach"]
+                    }
                 ]
             },
             who: {
                 title: "Who This Is For",
-                headline: "Production. Creative. Anyone Who Refuses Mediocrity.",
-                cards: [
-                    { icon: "🎬", title: "Production Companies", pain: "AI is everywhere but quality dropped. Generic visual slop. Lost your edge.", transformation: "Curated excellence. AI as multiplier, not replacement. Distinctive output." },
-                    { icon: "🎨", title: "Creative Studios", pain: "Everyone sounds the same. Brand voice diluted. Team forgot how to think.", transformation: "Restored taste. Human judgment in every workflow. Unignorable work." },
-                    { icon: "🏢", title: "Marketing Teams", pain: "Content factory mode. Speed up, meaning down. Losing the thread.", transformation: "Strategic clarity. AI handles volume, humans handle vision. Quality at scale." },
-                    { icon: "🚀", title: "Founders & Leaders", pain: "Team adopted AI chaotically. No system. No standards. Hidden risks.", transformation: "Unified approach. Clear navigation. Competitive advantage locked in." }
+                headline: "Any Industry. Any Size. One Requirement.",
+                description: "The only filter: you're serious about maximizing your team's potential. If you invest in development, if you want competitive advantage, if you refuse to let your people fall behind — this is for you.",
+                industries: [
+                    "Law Firms", "Banks & Finance", "Telco", "Healthcare", "Manufacturing",
+                    "Marketing Agencies", "Production Houses", "Consulting", "Tech Companies", "Retail",
+                    "Real Estate", "Insurance", "Education", "Government", "SMEs", "Startups", "Enterprise"
+                ],
+                note: "€8,000 is a rounding error for companies serious about their people. It's the cost of one bad hire, one wasted quarter, one competitor pulling ahead."
+            },
+            day: {
+                title: "The Day",
+                headline: "8 Hours. Complete Transformation.",
+                blocks: [
+                    { 
+                        time: "09:00", 
+                        title: "THE AWAKENING", 
+                        desc: "We take your actual work. Show you what's possible in 5 minutes. The gap between where you are and where you could be becomes viscerally real.", 
+                        tags: ["Live Demo", "Your Real Tasks", "Possibility Mapping"]
+                    },
+                    { 
+                        time: "10:00", 
+                        title: "THE FRAMEWORK", 
+                        desc: "How to think with AI, not just use it. Decision frameworks, task decomposition, strategic prompting. Universal principles that work everywhere.", 
+                        tags: ["Thinking Models", "Decision Frameworks", "Strategic Approach"]
+                    },
+                    { 
+                        time: "11:30", 
+                        title: "THE TOOLS", 
+                        desc: "Hands-on with tools that matter. Not theory — practice. You work on YOUR tasks, build YOUR workflows, solve YOUR problems.", 
+                        tags: ["Hands-On Practice", "Personal Stack", "Real Implementation"]
+                    },
+                    { 
+                        time: "13:30", 
+                        title: "THE AUTOMATION", 
+                        desc: "Identify what should run without you. Build actual automations. From manual processes to systematic workflows that scale.", 
+                        tags: ["Workflow Design", "Process Automation", "Scalable Systems"],
+                        accent: true
+                    },
+                    { 
+                        time: "15:00", 
+                        title: "THE EXPANSION", 
+                        desc: "Imagination session. What becomes possible when you combine everything? Industry-specific applications. Future scenarios. Competitive edges.", 
+                        tags: ["Possibility Thinking", "Industry Applications", "Future Planning"]
+                    },
+                    { 
+                        time: "16:30", 
+                        title: "THE COMMITMENT", 
+                        desc: "Each person leaves with a concrete 30-day implementation plan. Public commitment. Support structure. No excuses.", 
+                        tags: ["Action Plan", "Accountability", "Follow-Through"]
+                    }
                 ]
             },
             founders: {
                 title: "The Trinity",
-                headline: "Three Minds. One Mission.",
-                description: "Not consultants. Practitioners. We've built what we teach.",
+                headline: "Three Worlds. One Mission.",
+                description: "This isn't a solo trainer reading slides. It's three practitioners from completely different industries who've implemented what they teach. Together, they cover every angle.",
                 cards: [
-                    { name: "Roland Vraník", role: "The Creative", company: "SORRYWECAN // Founder", focus: "Taste, variance, and the soul of the brand. Ensures AI output isn't generic slop.", quote: "Stop prompting. Start curating." },
-                    { name: "Ján Koščelanský", role: "The Architect", company: "SUDOLABS // Co-founder & CPO", focus: "Scale, sovereignty, and logic. Builds the pipelines that let vision scale securely.", quote: "Speed without accuracy is chaos." },
-                    { name: "Roman Pii Wagner", role: "The Navigator", company: "TRANSFORMATIONAL DESIGN", focus: "Strategic clarity and critical distance. Keeps humans in the loop as the final arbiters.", quote: "Judgment is permanent." }
+                    { 
+                        name: "Roland Vraník", 
+                        role: "The Creative", 
+                        company: "SORRYWECAN // Founder & Creative Director", 
+                        brings: "Imagination expansion, visual thinking, possibility mapping. How to see what others can't and create what doesn't exist yet.",
+                        industries: "Samsung, Sennheiser, Forbes, Tatra Banka, Dubai Expo"
+                    },
+                    { 
+                        name: "Ján Koščelanský", 
+                        role: "The Architect", 
+                        company: "SUDOLABS // Co-founder & CPO", 
+                        brings: "Systems thinking, automation architecture, scaling logic. How to build processes that run themselves and grow without breaking.",
+                        industries: "Startups to $1.5B valuations, Banks, Enterprise Tech"
+                    },
+                    { 
+                        name: "Roman Pii Wagner", 
+                        role: "The Navigator", 
+                        company: "TRANSFORMATIONAL DESIGN", 
+                        brings: "Strategic clarity, decision frameworks, organizational transformation. How to navigate complexity without losing direction.",
+                        industries: "Corporate Transformation, Executive Advisory, Change Management"
+                    }
                 ]
             },
             leave: {
                 title: "What You Leave With",
-                headline: "Not Just Inspiration. Implementation.",
+                headline: "Not Inspiration. Implementation.",
                 items: [
-                    { title: "Personal AI Toolkit", desc: "Your specific tools, prompts, workflows. Not generic—built for YOUR role." },
-                    { title: "30-Day Challenge Card", desc: "One specific transformation you'll implement. Accountability built in." },
-                    { title: "Resource Vault Access", desc: "Templates, prompt libraries, video replays. Forever access." },
-                    { title: "Call-a-Friend Token", desc: "One 30-min call with our team in the next 30 days. Support when you need it." }
+                    { title: "Personal AI Stack", desc: "Your specific tools, configured and working. Not generic recommendations — actual setup you'll use Monday morning." },
+                    { title: "Automation Blueprints", desc: "At least 3 workflows designed for your actual processes. Ready to deploy or refine." },
+                    { title: "Thinking Frameworks", desc: "Mental models for AI-augmented decision making. How to frame any problem, any task, any industry." },
+                    { title: "30-Day Action Plan", desc: "Concrete next steps with accountability built in. One follow-up call included to keep momentum." },
+                    { title: "Resource Vault Access", desc: "Templates, prompts, tutorials, recordings. Permanent access. Updated continuously." },
+                    { title: "Network", desc: "Connection to others who've been through Ignition. Cross-industry insights. Ongoing community." }
                 ]
             },
             pricing: {
                 title: "Investment",
-                headline: "One Day. One Price. Everything Changes.",
+                headline: "One Day. Clear ROI.",
+                context: "For context: this is less than most companies spend on a single conference, a mediocre consultant day, or a quarter of a bad hire. The question isn't whether you can afford it. It's whether you can afford not to.",
                 tiers: [
-                    { name: "Standard", price: "8,000", currency: "EUR", features: ["8-hour intensive workshop", "Up to 15 participants", "Personal AI Toolkit for each", "30-Day Challenge Cards", "Resource Vault access", "1 month email support"], cta: "Book Standard" },
-                    { name: "Premium", price: "12,000", currency: "EUR", features: ["Everything in Standard", "Up to 25 participants", "Pre-workshop diagnostic call", "Executive 1:1 session", "Extended resource library", "3-month support + 2 follow-up calls"], cta: "Book Premium", highlight: true },
-                    { name: "Enterprise", price: "Custom", currency: "", features: ["Custom scope and duration", "Multiple sessions possible", "Ongoing advisory retainer", "Priority scheduling", "White-glove service"], cta: "Contact Us" }
+                    { 
+                        name: "Standard", 
+                        price: "8,000", 
+                        currency: "EUR", 
+                        features: [
+                            "Full 8-hour intensive workshop",
+                            "Up to 15 participants",
+                            "All three expert facilitators",
+                            "Personal AI stack setup for each",
+                            "30-day action plans",
+                            "Resource vault access (permanent)",
+                            "1 follow-up group call"
+                        ], 
+                        cta: "Book Standard" 
+                    },
+                    { 
+                        name: "Premium", 
+                        price: "12,000", 
+                        currency: "EUR", 
+                        features: [
+                            "Everything in Standard",
+                            "Up to 25 participants",
+                            "Pre-workshop diagnostic (2hr call)",
+                            "Custom industry focus",
+                            "Executive 1:1 sessions (3x 30min)",
+                            "Extended resource library",
+                            "3 follow-up calls over 90 days"
+                        ], 
+                        cta: "Book Premium", 
+                        highlight: true 
+                    },
+                    { 
+                        name: "Enterprise", 
+                        price: "Custom", 
+                        currency: "", 
+                        features: [
+                            "Multi-session programs",
+                            "Department-by-department rollout",
+                            "Ongoing advisory retainer",
+                            "Internal champion training",
+                            "Custom automation development",
+                            "Quarterly strategy sessions"
+                        ], 
+                        cta: "Contact Us" 
+                    }
                 ],
-                note: "All prices exclude VAT. In-person only. We come to you or you come to us."
+                note: "All prices exclude VAT. In-person delivery (we come to you or you come to us). Remote not available — transformation requires presence."
             },
             faq: {
                 title: "Questions",
                 items: [
-                    { q: "Is this a prompt engineering course?", a: "No. Prompting is talking TO machines. We teach thinking WITH machines. Building judgment into workflows, not just efficiency." },
-                    { q: "What if our team is already using AI?", a: "Good. That means you've hit the ceiling of 'tools'. Now it's time to develop taste and curation—what separates generic output from premium work." },
-                    { q: "Why one day instead of a longer program?", a: "Ignition, not incubation. We light the fire. You tend it. Long programs create dependency. One day creates autonomy." },
-                    { q: "What industries is this for?", a: "Production companies, creative studios, marketing teams, agencies. Anyone who refuses to sound like everyone else." },
-                    { q: "Can this be done remotely?", a: "No. The intensity requires presence. Transformation happens in the room, not through a screen." },
-                    { q: "What's the follow-up?", a: "Each participant gets a 30-min call token. For teams wanting deeper integration, we offer follow-up programs delivered by trained facilitators." }
+                    { 
+                        q: "Is this just prompt engineering training?", 
+                        a: "No. Prompting is maybe 15% of what we cover. This is about thinking, tools, automation, and imagination combined. Most 'AI training' teaches you to talk to machines. We teach you to think with them, build systems around them, and see possibilities through them." 
+                    },
+                    { 
+                        q: "Our industry is very specific. Will this apply?", 
+                        a: "Yes. The principles are universal — thinking frameworks, automation logic, possibility expansion. We've worked with creative agencies, banks, telcos, law firms, manufacturers. The application differs, the fundamentals don't." 
+                    },
+                    { 
+                        q: "We already use AI tools. Why do we need this?", 
+                        a: "Using tools isn't the same as maximizing them. Most teams use 5-10% of what's possible. We close that gap — showing what's actually achievable and building the systems to get there." 
+                    },
+                    { 
+                        q: "Why one day instead of a longer program?", 
+                        a: "Intensive > extensive. One focused day creates more change than months of occasional sessions. We light the fire and give you everything to keep it burning. The 30-day follow-up ensures it sticks." 
+                    },
+                    { 
+                        q: "Can this be done remotely?", 
+                        a: "No. The intensity requires presence. The hands-on work requires real-time collaboration. The transformation happens in the room. We don't compromise on this." 
+                    },
+                    { 
+                        q: "What's the actual ROI?", 
+                        a: "Conservative estimate: 4+ hours saved per person per week. For a 15-person team at average salary, that's €100k+ annually. Plus: better decisions, faster execution, competitive advantage. The workshop pays for itself in weeks, not months." 
+                    }
                 ]
             },
             cta: {
-                headline: "Ready to Ignite?",
-                description: "Limited to 4-6 workshops per month. We work with select organizations who refuse mediocrity.",
-                button: "Book Your Ignition",
-                note: "Discovery call takes 20 minutes. No commitment."
+                headline: "Ready to Maximize?",
+                description: "Limited to 4-6 workshops per month. We work with organizations serious about their people's potential. If that's you, let's talk.",
+                button: "Book Discovery Call",
+                note: "20-minute call. No commitment. We'll tell you honestly if this is right for your situation."
             }
         },
         sk: {
             hero: {
-                subtitle: "LOGIKA STRETÁVA MÁGIU",
+                subtitle: "MYSLENIE + NÁSTROJE + AUTOMATIZÁCIA + IMAGINÁCIA",
                 title: {
                     line1: "Jeden Deň.",
-                    line2: "Všetko Sa Zmení."
+                    line2: "Neobmedzený Potenciál."
                 },
-                description: "Neučíme nástroje. Učíme myslenie. Za 8 hodín sa váš tím naučí vidieť inak, rozhodovať rýchlejšie a tvoriť to, čo AI nedokáže.",
+                description: "Nezáleží na tom, v akom ste odvetví. Záleží na tom, či chcete maximalizovať, čo je možné. Za 8 hodín rozšírime myslenie, odomkneme nástroje, postavíme automatizácie a roztiahneme imagináciu. Všetko naraz.",
                 stats: [
                     { value: "8hod", label: "Intenzívne" },
                     { value: "10-25", label: "Účastníkov" },
                     { value: "3", label: "Expertné Mysle" },
-                    { value: "1", label: "Transformácia" }
+                    { value: "Všetky", label: "Odvetvia" }
                 ]
             },
             problem: {
-                title: "Problém",
-                headline: "Každý Má AI. Nikto Nevie Myslieť.",
+                title: "Realita",
+                headline: "AI Zmenila Všetko. Väčšina To Prehliadla.",
+                description: "Nejde o to, či používate AI. Používa ju každý. Ide o to, či využívate 5% alebo 85% toho, čo je možné. Väčšina tímov je zaseknutá na 5% — promptujú bez porozumenia, automatizujú bez stratégie, pracujú tvrdšie namiesto chytrejšie.",
                 points: [
-                    "Váš tím promptuje. Nekurátoruje.",
-                    "Výstup vyzerá ako výstup všetkých ostatných.",
-                    "Rýchlosť sa zvýšila. Kvalita klesla.",
-                    "Stroj rozhoduje. Ľudia vykonávajú."
-                ],
-                stats: [
-                    { value: "73%", label: "AI výstupu je generický 'slop'" },
-                    { value: "4hod", label: "denne stratené zlým promptovaním" },
-                    { value: "0%", label: "kurzov učí skutočné myslenie" }
+                    { stat: "5%", label: "Priemerné využitie AI kapacity tímami" },
+                    { stat: "4hod", label: "Stratené denne na úlohách, ktoré AI zvládne" },
+                    { stat: "10x", label: "Rozdiel produktivity medzi trénovanými a netrénovanými" }
                 ]
             },
-            solution: {
-                title: "Ignition",
-                headline: "Nie Kurz. Katalyzátor.",
-                description: "Nie sme tu, aby sme vás učili, ktoré tlačidlá stláčať. Sme tu, aby sme prepojili, ako váš tím pristupuje k problémom, kreativite a rozhodovaniu vo veku, keď AI robí ťažkú prácu.",
-                principles: [
-                    { title: "Vkus Nad Nástroje", desc: "Promptovať vie každý. Kurátorovať málokto. Obnovujeme úsudok, ktorý robí výstup prémiovým." },
-                    { title: "Myslieť S, Nie Za", desc: "AI zosilňuje vaše myslenie. Nenahrádza ho. Naučte sa zostať za volantom." },
-                    { title: "Navigácia Nad Automatizáciu", desc: "Mapa je dôležitejšia ako vozidlo. Učíme vás vidieť, kam idete." }
-                ]
-            },
-            day: {
-                title: "Ten Deň",
-                headline: "8 Hodín, Ktoré Zmenia Všetko.",
-                blocks: [
-                    { time: "09:00", title: "ŠOK", desc: "Vezmeme vašu skutočnú bolestivú úlohu. Vyriešime ju za 5 minút. Čeľuste padajú. Starý svet končí.", emotion: '"Sakra, toto je možné?"' },
-                    { time: "09:30", title: "ZRKADLO", desc: "Každý identifikuje svoj #1 požierač času. Verejný záväzok. Problém sa stáva reálnym.", emotion: '"TOĽKO času míňam na toto?"' },
-                    { time: "10:45", title: "SKILL", desc: "Hands-on: Framing úloh + Základy promptovania. Cvičíte na VAŠICH úlohách. Nie na hypotetických.", emotion: '"Toto naozaj zvládnem."' },
-                    { time: "13:00", title: "TRANSFORMÁCIA", desc: "Redesign workflow. Vezmeme 3 skutočné firemné procesy. Prebudujeme ich naživo. Pred/po.", emotion: '"Náš proces bol šialený."' },
-                    { time: "14:45", title: "NAVIGÁCIA", desc: "Breakouty podľa rolí. Každý odchádza s osobným AI-augmentovaným popisom práce.", emotion: '"Poznám SVOJU cestu."', accent: true },
-                    { time: "16:00", title: "ZÁVÄZOK", desc: "Každý prezentuje: 'V najbližších 30 dňoch urobím...' Verejná zodpovednosť. Bez úniku.", emotion: '"Idem do toho."' }
+            what: {
+                title: "Čo To Je",
+                headline: "Nie Kurz. Kompletný Upgrade.",
+                description: "Jeden deň, ktorý kombinuje všetko: rozšírené myslenie, praktické nástroje, reálnu automatizáciu a imagináciu pre to, čo je možné. Traja experti z rôznych svetov. Univerzálne princípy, ktoré fungujú v každom odvetví.",
+                pillars: [
+                    { 
+                        icon: "🧠", 
+                        title: "Myslenie", 
+                        items: ["Ako formulovať problémy pre AI", "Rozhodovanie so strojovou inteligenciou", "Strategická navigácia v komplexite", "Od reaktívneho k proaktívnemu mindetu"]
+                    },
+                    { 
+                        icon: "🛠", 
+                        title: "Nástroje", 
+                        items: ["Ktoré nástroje na ktoré úlohy", "Praktická práca na VAŠICH úlohách", "Budovanie osobného AI stacku", "Integrácia do denného workflow"]
+                    },
+                    { 
+                        icon: "⚡", 
+                        title: "Automatizácia", 
+                        items: ["Identifikácia príležitostí na automatizáciu", "Budovanie workflow, ktoré bežia samy", "Od manuálneho k systematickému", "Škálovanie bez pridávania ľudí"]
+                    },
+                    { 
+                        icon: "✨", 
+                        title: "Imaginácia", 
+                        items: ["Vidieť možnosti, o ktorých ste nevedeli", "Rozšírenie toho, čo 'možné' znamená", "Od inkrementálneho k exponenciálnemu mysleniu", "Future-proofing vášho prístupu"]
+                    }
                 ]
             },
             who: {
-                title: "Pre Koho",
-                headline: "Produkcia. Kreatíva. Ktokoľvek, Kto Odmieta Priemernosť.",
-                cards: [
-                    { icon: "🎬", title: "Produkčné Spoločnosti", pain: "AI je všade, ale kvalita klesla. Generický vizuálny slop. Stratili ste náskok.", transformation: "Kurátorovaná excelentnosť. AI ako multiplikátor, nie náhrada. Rozpoznateľný výstup." },
-                    { icon: "🎨", title: "Kreatívne Štúdiá", pain: "Každý znie rovnako. Hlas značky sa rozriedil. Tím zabudol myslieť.", transformation: "Obnovený vkus. Ľudský úsudok v každom workflow. Neprehliadnuteľná práca." },
-                    { icon: "🏢", title: "Marketingové Tímy", pain: "Režim obsahovej fabriky. Rýchlosť hore, význam dole. Strácate niť.", transformation: "Strategická jasnosť. AI rieši objem, ľudia riešia víziu. Kvalita vo veľkom." },
-                    { icon: "🚀", title: "Zakladatelia & Lídri", pain: "Tím prijal AI chaoticky. Žiadny systém. Žiadne štandardy. Skryté riziká.", transformation: "Jednotný prístup. Jasná navigácia. Konkurenčná výhoda uzamknutá." }
+                title: "Pre Koho To Je",
+                headline: "Akékoľvek Odvetvie. Akákoľvek Veľkosť. Jedna Požiadavka.",
+                description: "Jediný filter: myslíte to vážne s maximalizáciou potenciálu vášho tímu. Ak investujete do rozvoja, ak chcete konkurenčnú výhodu, ak odmietate nechať svojich ľudí zaostávať — toto je pre vás.",
+                industries: [
+                    "Právne Firmy", "Banky & Financie", "Telekomunikácie", "Zdravotníctvo", "Výroba",
+                    "Marketingové Agentúry", "Produkčné Spoločnosti", "Consulting", "Tech Firmy", "Retail",
+                    "Reality", "Poisťovníctvo", "Vzdelávanie", "Štátna Správa", "SME", "Startupy", "Enterprise"
+                ],
+                note: "€8 000 je zaokrúhľovacia chyba pre firmy, ktoré to myslia vážne so svojimi ľuďmi. Je to cena jedného zlého hire, jedného strateného kvartálu, jedného konkurenta, ktorý sa dostane dopredu."
+            },
+            day: {
+                title: "Ten Deň",
+                headline: "8 Hodín. Kompletná Transformácia.",
+                blocks: [
+                    { 
+                        time: "09:00", 
+                        title: "PREBUDENIE", 
+                        desc: "Vezmeme vašu skutočnú prácu. Ukážeme, čo je možné za 5 minút. Rozdiel medzi tým, kde ste a kde by ste mohli byť, sa stane viscerálne reálnym.", 
+                        tags: ["Live Demo", "Vaše Skutočné Úlohy", "Mapovanie Možností"]
+                    },
+                    { 
+                        time: "10:00", 
+                        title: "FRAMEWORK", 
+                        desc: "Ako myslieť s AI, nie ju len používať. Rozhodovacie frameworky, dekompozícia úloh, strategické promptovanie. Univerzálne princípy, ktoré fungujú všade.", 
+                        tags: ["Modely Myslenia", "Rozhodovacie Frameworky", "Strategický Prístup"]
+                    },
+                    { 
+                        time: "11:30", 
+                        title: "NÁSTROJE", 
+                        desc: "Hands-on s nástrojmi, na ktorých záleží. Nie teória — prax. Pracujete na VAŠICH úlohách, budujete VAŠE workflow, riešite VAŠE problémy.", 
+                        tags: ["Praktická Práca", "Osobný Stack", "Reálna Implementácia"]
+                    },
+                    { 
+                        time: "13:30", 
+                        title: "AUTOMATIZÁCIA", 
+                        desc: "Identifikujte, čo by malo bežať bez vás. Postavte skutočné automatizácie. Od manuálnych procesov k systematickým workflow, ktoré škálujú.", 
+                        tags: ["Dizajn Workflow", "Automatizácia Procesov", "Škálovateľné Systémy"],
+                        accent: true
+                    },
+                    { 
+                        time: "15:00", 
+                        title: "EXPANZIA", 
+                        desc: "Imaginačná session. Čo sa stane možným, keď skombinujete všetko? Aplikácie špecifické pre odvetvie. Budúce scenáre. Konkurenčné výhody.", 
+                        tags: ["Myslenie v Možnostiach", "Aplikácie pre Odvetvie", "Plánovanie Budúcnosti"]
+                    },
+                    { 
+                        time: "16:30", 
+                        title: "ZÁVÄZOK", 
+                        desc: "Každý odchádza s konkrétnym 30-dňovým implementačným plánom. Verejný záväzok. Štruktúra podpory. Žiadne výhovorky.", 
+                        tags: ["Akčný Plán", "Zodpovednosť", "Follow-Through"]
+                    }
                 ]
             },
             founders: {
                 title: "Trojica",
-                headline: "Tri Mysle. Jedna Misia.",
-                description: "Nie konzultanti. Praktici. Postavili sme to, čo učíme.",
+                headline: "Tri Svety. Jedna Misia.",
+                description: "Toto nie je sólo tréner, ktorý číta slajdy. Sú to traja praktici z úplne odlišných odvetví, ktorí implementovali to, čo učia. Spolu pokrývajú každý uhol.",
                 cards: [
-                    { name: "Roland Vraník", role: "Kreatívec", company: "SORRYWECAN // Founder", focus: "Vkus, variancia a duša značky. Zabezpečuje, že AI výstup nie je generický slop.", quote: "Prestaň promptovať. Začni kurátorovať." },
-                    { name: "Ján Koščelanský", role: "Architekt", company: "SUDOLABS // Co-founder & CPO", focus: "Škála, suverenita a logika. Buduje potrubia, ktoré umožňujú vízii rásť bezpečne.", quote: "Rýchlosť bez presnosti je chaos." },
-                    { name: "Roman Pii Wagner", role: "Navigátor", company: "TRANSFORMATIONAL DESIGN", focus: "Strategická jasnosť a kritický odstup. Drží ľudí v slučke ako finálnych arbitrov.", quote: "Úsudok je trvalý." }
+                    { 
+                        name: "Roland Vraník", 
+                        role: "Kreatívec", 
+                        company: "SORRYWECAN // Founder & Creative Director", 
+                        brings: "Rozširovanie imaginácie, vizuálne myslenie, mapovanie možností. Ako vidieť to, čo ostatní nevidia, a vytvárať to, čo ešte neexistuje.",
+                        industries: "Samsung, Sennheiser, Forbes, Tatra Banka, Dubai Expo"
+                    },
+                    { 
+                        name: "Ján Koščelanský", 
+                        role: "Architekt", 
+                        company: "SUDOLABS // Co-founder & CPO", 
+                        brings: "Systémové myslenie, architektúra automatizácie, logika škálovania. Ako budovať procesy, ktoré bežia samy a rastú bez toho, aby sa rozbili.",
+                        industries: "Startupy až po $1.5B valuácie, Banky, Enterprise Tech"
+                    },
+                    { 
+                        name: "Roman Pii Wagner", 
+                        role: "Navigátor", 
+                        company: "TRANSFORMATIONAL DESIGN", 
+                        brings: "Strategická jasnosť, rozhodovacie frameworky, organizačná transformácia. Ako navigovať komplexitu bez straty smeru.",
+                        industries: "Firemná Transformácia, Executive Advisory, Change Management"
+                    }
                 ]
             },
             leave: {
                 title: "Čo Si Odnesiete",
-                headline: "Nie Len Inšpiráciu. Implementáciu.",
+                headline: "Nie Inšpiráciu. Implementáciu.",
                 items: [
-                    { title: "Osobný AI Toolkit", desc: "Vaše špecifické nástroje, prompty, workflow. Nie generické—postavené pre VAŠU rolu." },
-                    { title: "30-Dňová Challenge Karta", desc: "Jedna konkrétna transformácia, ktorú implementujete. Zodpovednosť zabudovaná." },
-                    { title: "Prístup do Resource Vault", desc: "Šablóny, knižnice promptov, video replays. Navždy prístup." },
-                    { title: "Token na Hovor", desc: "Jeden 30-min hovor s naším tímom do 30 dní. Podpora, keď ju potrebujete." }
+                    { title: "Osobný AI Stack", desc: "Vaše špecifické nástroje, nakonfigurované a fungujúce. Nie generické odporúčania — skutočné nastavenie, ktoré použijete v pondelok ráno." },
+                    { title: "Blueprinty Automatizácie", desc: "Minimálne 3 workflow navrhnuté pre vaše skutočné procesy. Pripravené na nasadenie alebo doladenie." },
+                    { title: "Frameworky Myslenia", desc: "Mentálne modely pre AI-augmentované rozhodovanie. Ako zarámovať akýkoľvek problém, akúkoľvek úlohu, akékoľvek odvetvie." },
+                    { title: "30-Dňový Akčný Plán", desc: "Konkrétne ďalšie kroky so zabudovanou zodpovednosťou. Jeden follow-up hovor zahrnutý pre udržanie momentu." },
+                    { title: "Prístup do Resource Vault", desc: "Šablóny, prompty, tutoriály, nahrávky. Trvalý prístup. Priebežne aktualizované." },
+                    { title: "Sieť", desc: "Prepojenie s ostatnými, ktorí prešli Ignition. Cross-industry insights. Prebiehajúca komunita." }
                 ]
             },
             pricing: {
                 title: "Investícia",
-                headline: "Jeden Deň. Jedna Cena. Všetko Sa Zmení.",
+                headline: "Jeden Deň. Jasné ROI.",
+                context: "Pre kontext: toto je menej, než väčšina firiem minie na jednu konferenciu, jeden deň priemerného konzultanta, alebo štvrťrok zlého hire. Otázka nie je, či si to môžete dovoliť. Je to, či si môžete dovoliť to neurobiť.",
                 tiers: [
-                    { name: "Standard", price: "8 000", currency: "EUR", features: ["8-hodinový intenzívny workshop", "Do 15 účastníkov", "Osobný AI Toolkit pre každého", "30-Dňové Challenge Karty", "Prístup do Resource Vault", "1 mesiac email podpora"], cta: "Rezervovať Standard" },
-                    { name: "Premium", price: "12 000", currency: "EUR", features: ["Všetko v Standard", "Do 25 účastníkov", "Pre-workshop diagnostický hovor", "Executive 1:1 session", "Rozšírená knižnica zdrojov", "3-mesačná podpora + 2 follow-up hovory"], cta: "Rezervovať Premium", highlight: true },
-                    { name: "Enterprise", price: "Na mieru", currency: "", features: ["Vlastný rozsah a trvanie", "Možné viacero sessions", "Priebežný advisory retainer", "Prioritné plánovanie", "White-glove servis"], cta: "Kontaktujte Nás" }
+                    { 
+                        name: "Standard", 
+                        price: "8 000", 
+                        currency: "EUR", 
+                        features: [
+                            "Plný 8-hodinový intenzívny workshop",
+                            "Do 15 účastníkov",
+                            "Všetci traja expert facilitátori",
+                            "Nastavenie osobného AI stacku pre každého",
+                            "30-dňové akčné plány",
+                            "Prístup do resource vault (trvalý)",
+                            "1 follow-up skupinový hovor"
+                        ], 
+                        cta: "Rezervovať Standard" 
+                    },
+                    { 
+                        name: "Premium", 
+                        price: "12 000", 
+                        currency: "EUR", 
+                        features: [
+                            "Všetko v Standard",
+                            "Do 25 účastníkov",
+                            "Pre-workshop diagnostika (2hod hovor)",
+                            "Custom zameranie na odvetvie",
+                            "Executive 1:1 sessions (3x 30min)",
+                            "Rozšírená knižnica zdrojov",
+                            "3 follow-up hovory počas 90 dní"
+                        ], 
+                        cta: "Rezervovať Premium", 
+                        highlight: true 
+                    },
+                    { 
+                        name: "Enterprise", 
+                        price: "Na mieru", 
+                        currency: "", 
+                        features: [
+                            "Viac-session programy",
+                            "Rollout oddelenie po oddelení",
+                            "Priebežný advisory retainer",
+                            "Tréning interných championov",
+                            "Custom vývoj automatizácií",
+                            "Kvartálne stratégie sessions"
+                        ], 
+                        cta: "Kontaktujte Nás" 
+                    }
                 ],
-                note: "Všetky ceny bez DPH. Len osobne. Prídeme k vám alebo vy k nám."
+                note: "Všetky ceny bez DPH. Osobná realizácia (prídeme k vám alebo vy k nám). Remote nedostupné — transformácia vyžaduje prítomnosť."
             },
             faq: {
                 title: "Otázky",
                 items: [
-                    { q: "Je toto kurz prompt engineeringu?", a: "Nie. Promptovanie je rozprávanie SA strojom. My učíme myslenie SO strojmi. Budovanie úsudku do workflow, nie len efektivity." },
-                    { q: "Čo ak náš tím už AI používa?", a: "Dobre. To znamená, že ste narazili na strop 'nástrojov'. Teraz je čas rozvinúť vkus a kurátorstvo—to, čo oddeľuje generický výstup od prémiovej práce." },
-                    { q: "Prečo jeden deň namiesto dlhšieho programu?", a: "Ignition, nie inkubácia. Zapaľujeme oheň. Vy ho udržiavate. Dlhé programy vytvárajú závislosť. Jeden deň vytvára autonómiu." },
-                    { q: "Pre aké odvetvia je to?", a: "Produkčné spoločnosti, kreatívne štúdiá, marketingové tímy, agentúry. Ktokoľvek, kto odmieta znieť ako všetci ostatní." },
-                    { q: "Dá sa to robiť online?", a: "Nie. Intenzita vyžaduje prítomnosť. Transformácia sa deje v miestnosti, nie cez obrazovku." },
-                    { q: "Aký je follow-up?", a: "Každý účastník dostane token na 30-min hovor. Pre tímy, ktoré chcú hlbšiu integráciu, ponúkame follow-up programy vedené vyškolenými facilitátormi." }
+                    { 
+                        q: "Je toto len tréning prompt engineeringu?", 
+                        a: "Nie. Promptovanie je možno 15% toho, čo pokrývame. Toto je o myslení, nástrojoch, automatizácii a imaginácii kombinovaných. Väčšina 'AI tréningov' vás učí rozprávať sa so strojmi. My vás učíme myslieť s nimi, budovať systémy okolo nich a vidieť možnosti cez ne." 
+                    },
+                    { 
+                        q: "Naše odvetvie je veľmi špecifické. Bude to aplikovateľné?", 
+                        a: "Áno. Princípy sú univerzálne — frameworky myslenia, logika automatizácie, expanzia možností. Pracovali sme s kreatívnymi agentúrami, bankami, telco, právnymi firmami, výrobcami. Aplikácia sa líši, fundamenty nie." 
+                    },
+                    { 
+                        q: "Už používame AI nástroje. Prečo toto potrebujeme?", 
+                        a: "Používať nástroje nie je to isté ako ich maximalizovať. Väčšina tímov používa 5-10% toho, čo je možné. My ten rozdiel uzatvárame — ukazujeme, čo je skutočne dosiahnuteľné, a budujeme systémy, ako sa tam dostať." 
+                    },
+                    { 
+                        q: "Prečo jeden deň namiesto dlhšieho programu?", 
+                        a: "Intenzívne > extenzívne. Jeden sústredený deň vytvorí viac zmeny ako mesiace občasných sessions. Zapálime oheň a dáme vám všetko na jeho udržanie. 30-dňový follow-up zabezpečí, že to pretrvá." 
+                    },
+                    { 
+                        q: "Dá sa to robiť remote?", 
+                        a: "Nie. Intenzita vyžaduje prítomnosť. Hands-on práca vyžaduje real-time spoluprácu. Transformácia sa deje v miestnosti. V tomto nerobíme kompromisy." 
+                    },
+                    { 
+                        q: "Aké je skutočné ROI?", 
+                        a: "Konzervatívny odhad: 4+ hodiny ušetrené na osobu za týždeň. Pre 15-členný tím pri priemernej mzde je to €100k+ ročne. Plus: lepšie rozhodnutia, rýchlejšia exekúcia, konkurenčná výhoda. Workshop sa zaplatí za týždne, nie mesiace." 
+                    }
                 ]
             },
             cta: {
-                headline: "Pripravení na Ignition?",
-                description: "Limitované na 4-6 workshopov mesačne. Pracujeme s vybranými organizáciami, ktoré odmietajú priemernosť.",
-                button: "Rezervovať Ignition",
-                note: "Discovery call trvá 20 minút. Žiadny záväzok."
+                headline: "Pripravení Maximalizovať?",
+                description: "Limitované na 4-6 workshopov mesačne. Pracujeme s organizáciami, ktoré to myslia vážne s potenciálom svojich ľudí. Ak ste to vy, poďme sa porozprávať.",
+                button: "Rezervovať Discovery Call",
+                note: "20-minútový hovor. Žiadny záväzok. Úprimne vám povieme, či je to správne pre vašu situáciu."
             }
         }
     }
@@ -344,7 +602,6 @@ export default function IgnitionPage() {
                 </button>
             } />
 
-            {/* Hero */}
             <section className="min-h-screen flex flex-col justify-center px-6 md:px-20 pt-20 border-b border-black relative overflow-hidden">
                 <div className="absolute inset-0 blueprint-grid opacity-30" />
                 <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -399,60 +656,73 @@ export default function IgnitionPage() {
                 </div>
             </section>
 
-            {/* Problem Section */}
             <Section number="01" title={t.problem.title}>
-                <div className="space-y-16">
-                    <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] max-w-4xl">
-                        {t.problem.headline}
-                    </p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="space-y-6">
-                            {t.problem.points.map((point: string, i: number) => (
-                                <div key={i} className="flex items-start gap-4 p-6 border border-black/10 bg-white">
-                                    <span className="text-red-500 text-xs font-bold">[X]</span>
-                                    <span className="text-lg font-inter">{point}</span>
-                                </div>
-                            ))}
-                        </div>
-                        <div className="space-y-6">
-                            {t.problem.stats.map((stat: any, i: number) => (
-                                <div key={i} className="p-8 bg-black text-white">
-                                    <p className="text-5xl font-serif-instrument italic text-[#0047BB] mb-4">{stat.value}</p>
-                                    <p className="text-sm opacity-60">{stat.label}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </Section>
-
-            {/* Solution Section */}
-            <Section number="02" title={t.solution.title}>
                 <div className="space-y-16">
                     <div className="max-w-4xl">
                         <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] mb-8">
-                            {t.solution.headline}
+                            {t.problem.headline}
                         </p>
                         <p className="text-xl text-black/60 leading-relaxed">
-                            {t.solution.description}
+                            {t.problem.description}
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {t.solution.principles.map((principle: any, i: number) => (
-                            <div key={i} className="p-10 border border-black bg-white space-y-6 hover:bg-[#0047BB]/5 transition-all">
-                                <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB]">0{i + 1}</span>
-                                <h4 className="text-2xl font-serif-instrument italic">{principle.title}</h4>
-                                <p className="text-sm text-black/60 leading-relaxed">{principle.desc}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {t.problem.points.map((point: any, i: number) => (
+                            <div key={i} className="p-10 bg-black text-white text-center">
+                                <p className="text-6xl font-serif-instrument italic text-[#0047BB] mb-4">{point.stat}</p>
+                                <p className="text-sm opacity-60">{point.label}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </Section>
 
-            {/* The Day Section */}
-            <Section number="03" title={t.day.title}>
+            <Section number="02" title={t.what.title}>
+                <div className="space-y-16">
+                    <div className="max-w-4xl">
+                        <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] mb-8">
+                            {t.what.headline}
+                        </p>
+                        <p className="text-xl text-black/60 leading-relaxed">
+                            {t.what.description}
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {t.what.pillars.map((pillar: any, i: number) => (
+                            <PillarCard key={i} {...pillar} />
+                        ))}
+                    </div>
+                </div>
+            </Section>
+
+            <Section number="03" title={t.who.title}>
+                <div className="space-y-16">
+                    <div className="max-w-4xl">
+                        <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] mb-8">
+                            {t.who.headline}
+                        </p>
+                        <p className="text-xl text-black/60 leading-relaxed">
+                            {t.who.description}
+                        </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3">
+                        {t.who.industries.map((industry: string, i: number) => (
+                            <IndustryTag key={i} name={industry} />
+                        ))}
+                    </div>
+
+                    <div className="p-8 bg-[#0047BB]/5 border border-[#0047BB]/20">
+                        <p className="text-lg font-inter leading-relaxed text-black/70 italic">
+                            {t.who.note}
+                        </p>
+                    </div>
+                </div>
+            </Section>
+
+            <Section number="04" title={t.day.title}>
                 <div className="space-y-16">
                     <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] max-w-4xl">
                         {t.day.headline}
@@ -465,39 +735,14 @@ export default function IgnitionPage() {
                                 time={block.time}
                                 title={block.title}
                                 description={block.desc}
-                                emotion={block.emotion}
+                                tags={block.tags}
                                 accent={block.accent}
                             />
                         ))}
                     </div>
-
-                    <div className="p-12 bg-black text-white text-center">
-                        <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB] mb-4">END RESULT</p>
-                        <p className="text-2xl md:text-3xl font-serif-instrument italic">
-                            {lang === 'en' 
-                                ? "They don't leave inspired. They leave transformed." 
-                                : "Neodchádzajú inšpirovaní. Odchádzajú transformovaní."}
-                        </p>
-                    </div>
                 </div>
             </Section>
 
-            {/* Who This Is For */}
-            <Section number="04" title={t.who.title}>
-                <div className="space-y-16">
-                    <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] max-w-4xl">
-                        {t.who.headline}
-                    </p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {t.who.cards.map((card: any, i: number) => (
-                            <WhoCard key={i} {...card} />
-                        ))}
-                    </div>
-                </div>
-            </Section>
-
-            {/* The Trinity - Founders */}
             <Section number="05" title={t.founders.title} dark>
                 <div className="space-y-16">
                     <div className="max-w-3xl">
@@ -517,21 +762,20 @@ export default function IgnitionPage() {
                 </div>
             </Section>
 
-            {/* What You Leave With */}
             <Section number="06" title={t.leave.title}>
                 <div className="space-y-16">
                     <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] max-w-4xl">
                         {t.leave.headline}
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {t.leave.items.map((item: any, i: number) => (
                             <div key={i} className="p-8 border border-black bg-white space-y-4 hover:bg-[#0047BB]/5 transition-all">
                                 <div className="flex items-center gap-4">
                                     <span className="w-10 h-10 bg-[#0047BB] text-white flex items-center justify-center font-bold text-sm">
                                         {i + 1}
                                     </span>
-                                    <h4 className="text-xl font-bold">{item.title}</h4>
+                                    <h4 className="text-lg font-bold">{item.title}</h4>
                                 </div>
                                 <p className="text-sm text-black/60 leading-relaxed pl-14">{item.desc}</p>
                             </div>
@@ -540,12 +784,16 @@ export default function IgnitionPage() {
                 </div>
             </Section>
 
-            {/* Pricing */}
             <Section number="07" title={t.pricing.title}>
                 <div className="space-y-16">
-                    <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] max-w-4xl">
-                        {t.pricing.headline}
-                    </p>
+                    <div className="max-w-4xl">
+                        <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] mb-8">
+                            {t.pricing.headline}
+                        </p>
+                        <p className="text-lg text-black/60 leading-relaxed">
+                            {t.pricing.context}
+                        </p>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {t.pricing.tiers.map((tier: any, i: number) => (
@@ -560,7 +808,7 @@ export default function IgnitionPage() {
                             >
                                 {tier.highlight && (
                                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0047BB] text-white text-[9px] font-bold uppercase tracking-widest px-4 py-1">
-                                        {lang === 'en' ? 'RECOMMENDED' : 'ODPORÚČANÉ'}
+                                        {lang === 'en' ? 'MOST POPULAR' : 'NAJPOPULÁRNEJŠÍ'}
                                     </span>
                                 )}
                                 <div>
@@ -579,7 +827,7 @@ export default function IgnitionPage() {
                                     ))}
                                 </div>
                                 <a 
-                                    href="mailto:hello@sorrywecan.com?subject=Ignition Workshop - ${tier.name}"
+                                    href={`mailto:hello@sorrywecan.com?subject=Ignition Workshop - ${tier.name}`}
                                     className={cn(
                                         "block text-center py-4 font-bold text-xs uppercase tracking-widest transition-all",
                                         tier.highlight 
@@ -597,7 +845,6 @@ export default function IgnitionPage() {
                 </div>
             </Section>
 
-            {/* FAQ */}
             <Section number="08" title={t.faq.title}>
                 <div className="max-w-4xl mx-auto space-y-4">
                     {t.faq.items.map((item: any, i: number) => (
@@ -632,7 +879,6 @@ export default function IgnitionPage() {
                 </div>
             </Section>
 
-            {/* Final CTA */}
             <section className="py-48 bg-[#0047BB] text-white overflow-hidden relative border-t border-black">
                 <div className="max-w-4xl mx-auto text-center px-6 relative z-10">
                     <h2 className="font-serif-instrument text-[10vw] md:text-[8vw] leading-[0.85] mb-12 italic tracking-tight">
@@ -653,10 +899,9 @@ export default function IgnitionPage() {
                 </div>
             </section>
 
-            {/* Footer */}
             <footer className="bg-black text-white py-24 px-6 md:px-20 text-center">
                 <p className="text-[10px] font-bold uppercase tracking-[0.5em] opacity-20">
-                    SORRYWECAN // RESEARCH LAB // LOGIC MEETS MAGIC // 2026
+                    SORRYWECAN // RESEARCH LAB // THINKING + TOOLS + AUTOMATION + IMAGINATION // 2026
                 </p>
             </footer>
         </div>

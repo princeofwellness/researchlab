@@ -65,11 +65,13 @@ function TimeBlock({ time, title, description, tags, accent }: any) {
     )
 }
 
-function PillarCard({ icon, title, items }: any) {
+function PillarCard({ number, title, items }: any) {
     return (
         <div className="p-8 border border-black/10 bg-white space-y-6 hover:border-[#0047BB]/30 transition-all group">
-            <div className="text-4xl">{icon}</div>
-            <h4 className="text-xl font-bold">{title}</h4>
+            <div className="flex items-center gap-4">
+                <span className="text-[10px] font-bold tracking-[0.3em] text-[#0047BB]">[{number}]</span>
+                <h4 className="text-xl font-bold">{title}</h4>
+            </div>
             <div className="space-y-3">
                 {items.map((item: string, i: number) => (
                     <div key={i} className="flex items-start gap-3">
@@ -119,14 +121,14 @@ export default function IgnitionPage() {
     const content = {
         en: {
             hero: {
-                subtitle: "THINKING + TOOLS + AUTOMATION + IMAGINATION",
+                subtitle: "Thinking / Tools / Automation / Imagination",
                 title: {
-                    line1: "One Day.",
-                    line2: "Unlimited Potential."
+                    line1: "Half a Day.",
+                    line2: "Everything Changes."
                 },
-                description: "We don't care what industry you're in. We care that you want to maximize what's possible. In 8 hours, we expand thinking, unlock tools, build automations, and stretch imagination. All of it.",
+                description: "We don't care what industry you're in. We care that you want to maximize what's possible. In one focused session, we expand how you think, show you the tools, build real automations, and open your imagination to what's actually achievable.",
                 stats: [
-                    { value: "8hrs", label: "Intensive" },
+                    { value: "4-5h", label: "Focused Session" },
                     { value: "10-25", label: "Participants" },
                     { value: "3", label: "Expert Minds" },
                     { value: "All", label: "Industries" }
@@ -145,25 +147,25 @@ export default function IgnitionPage() {
             what: {
                 title: "What This Is",
                 headline: "Not a Course. A Complete Upgrade.",
-                description: "One day that combines everything: expanded thinking, practical tools, real automation, and imagination for what's possible. Three experts from different worlds. Universal principles that work in any industry.",
+                description: "One focused session that combines everything: expanded thinking, practical tools, real automation, and imagination for what's possible. Three experts from different worlds. Universal principles that work in any industry.",
                 pillars: [
                     { 
-                        icon: "🧠", 
+                        number: "01", 
                         title: "Thinking", 
                         items: ["How to frame problems for AI", "Decision-making with machine intelligence", "Strategic navigation in complexity", "From reactive to proactive mindset"]
                     },
                     { 
-                        icon: "🛠", 
+                        number: "02", 
                         title: "Tools", 
                         items: ["Which tools for which tasks", "Practical hands-on with YOUR work", "Building your personal AI stack", "Integration into daily workflow"]
                     },
                     { 
-                        icon: "⚡", 
+                        number: "03", 
                         title: "Automation", 
                         items: ["Identifying automation opportunities", "Building workflows that run themselves", "From manual to systematic", "Scaling without adding headcount"]
                     },
                     { 
-                        icon: "✨", 
+                        number: "04", 
                         title: "Imagination", 
                         items: ["Seeing possibilities you didn't know existed", "Expanding what 'possible' means", "From incremental to exponential thinking", "Future-proofing your approach"]
                     }
@@ -181,45 +183,34 @@ export default function IgnitionPage() {
                 note: "€8,000 is a rounding error for companies serious about their people. It's the cost of one bad hire, one wasted quarter, one competitor pulling ahead."
             },
             day: {
-                title: "The Day",
-                headline: "8 Hours. Complete Transformation.",
+                title: "The Session",
+                headline: "4-5 Hours. Focused. Interactive.",
+                intro: "This isn't a lecture. It's a conversation. We give, but we also listen — to your fears, your blockers, your reality. The session adapts to what's actually in the room.",
                 blocks: [
                     { 
-                        time: "09:00", 
-                        title: "THE AWAKENING", 
-                        desc: "We take your actual work. Show you what's possible in 5 minutes. The gap between where you are and where you could be becomes viscerally real.", 
-                        tags: ["Live Demo", "Your Real Tasks", "Possibility Mapping"]
+                        time: "Part 1", 
+                        title: "THE OPENING", 
+                        desc: "We take your actual work. Show you what's possible in minutes. Then we listen: what's holding you back? What are you afraid of? What's not working? The real conversation starts here.", 
+                        tags: ["Live Demo", "Open Dialogue", "Understanding Your Reality"]
                     },
                     { 
-                        time: "10:00", 
+                        time: "Part 2", 
                         title: "THE FRAMEWORK", 
-                        desc: "How to think with AI, not just use it. Decision frameworks, task decomposition, strategic prompting. Universal principles that work everywhere.", 
-                        tags: ["Thinking Models", "Decision Frameworks", "Strategic Approach"]
+                        desc: "How to think with AI, not just use it. Decision frameworks, task decomposition, strategic approach. We teach, you ask, we adjust to what matters to you.", 
+                        tags: ["Thinking Models", "Q&A", "Practical Application"]
                     },
                     { 
-                        time: "11:30", 
-                        title: "THE TOOLS", 
-                        desc: "Hands-on with tools that matter. Not theory — practice. You work on YOUR tasks, build YOUR workflows, solve YOUR problems.", 
-                        tags: ["Hands-On Practice", "Personal Stack", "Real Implementation"]
-                    },
-                    { 
-                        time: "13:30", 
-                        title: "THE AUTOMATION", 
-                        desc: "Identify what should run without you. Build actual automations. From manual processes to systematic workflows that scale.", 
-                        tags: ["Workflow Design", "Process Automation", "Scalable Systems"],
+                        time: "Part 3", 
+                        title: "THE TOOLS + AUTOMATION", 
+                        desc: "Hands-on with tools that matter. You work on YOUR tasks, build YOUR workflows. We guide, troubleshoot, and help you see what's actually possible for your specific situation.", 
+                        tags: ["Hands-On Practice", "Personalized Guidance", "Real Implementation"],
                         accent: true
                     },
                     { 
-                        time: "15:00", 
-                        title: "THE EXPANSION", 
-                        desc: "Imagination session. What becomes possible when you combine everything? Industry-specific applications. Future scenarios. Competitive edges.", 
-                        tags: ["Possibility Thinking", "Industry Applications", "Future Planning"]
-                    },
-                    { 
-                        time: "16:30", 
-                        title: "THE COMMITMENT", 
-                        desc: "Each person leaves with a concrete 30-day implementation plan. Public commitment. Support structure. No excuses.", 
-                        tags: ["Action Plan", "Accountability", "Follow-Through"]
+                        time: "Part 4", 
+                        title: "THE EXPANSION + COMMITMENT", 
+                        desc: "What becomes possible when you combine everything? We explore together. Then: concrete next steps. What will you actually do in the next 30 days? Public commitment, support structure.", 
+                        tags: ["Imagination", "Action Planning", "Accountability"]
                     }
                 ]
             },
@@ -273,7 +264,7 @@ export default function IgnitionPage() {
                         price: "8,000", 
                         currency: "EUR", 
                         features: [
-                            "Full 8-hour intensive workshop",
+                            "4-5 hour focused session",
                             "Up to 15 participants",
                             "All three expert facilitators",
                             "Personal AI stack setup for each",
@@ -290,7 +281,7 @@ export default function IgnitionPage() {
                         features: [
                             "Everything in Standard",
                             "Up to 25 participants",
-                            "Pre-workshop diagnostic (2hr call)",
+                            "Pre-session diagnostic call",
                             "Custom industry focus",
                             "Executive 1:1 sessions (3x 30min)",
                             "Extended resource library",
@@ -332,8 +323,8 @@ export default function IgnitionPage() {
                         a: "Using tools isn't the same as maximizing them. Most teams use 5-10% of what's possible. We close that gap — showing what's actually achievable and building the systems to get there." 
                     },
                     { 
-                        q: "Why one day instead of a longer program?", 
-                        a: "Intensive > extensive. One focused day creates more change than months of occasional sessions. We light the fire and give you everything to keep it burning. The 30-day follow-up ensures it sticks." 
+                        q: "Why a half-day instead of a longer program?", 
+                        a: "Focus > duration. People can't stay engaged for 8 hours. A tight 4-5 hour session creates more change than a full day of diminishing attention. We light the fire and give you everything to keep it burning. The follow-up ensures it sticks." 
                     },
                     { 
                         q: "Can this be done remotely?", 
@@ -354,14 +345,14 @@ export default function IgnitionPage() {
         },
         sk: {
             hero: {
-                subtitle: "MYSLENIE + NÁSTROJE + AUTOMATIZÁCIA + IMAGINÁCIA",
+                subtitle: "Myslenie / Nástroje / Automatizácia / Imaginácia",
                 title: {
-                    line1: "Jeden Deň.",
-                    line2: "Neobmedzený Potenciál."
+                    line1: "Pol Dňa.",
+                    line2: "Všetko Sa Zmení."
                 },
-                description: "Nezáleží na tom, v akom ste odvetví. Záleží na tom, či chcete maximalizovať, čo je možné. Za 8 hodín rozšírime myslenie, odomkneme nástroje, postavíme automatizácie a roztiahneme imagináciu. Všetko naraz.",
+                description: "Nezáleží na tom, v akom ste odvetví. Záleží na tom, či chcete maximalizovať, čo je možné. V jednej fokusovanej session rozšírime vaše myslenie, ukážeme nástroje, postavíme reálne automatizácie a otvoríme imagináciu pre to, čo je skutočne dosiahnuteľné.",
                 stats: [
-                    { value: "8hod", label: "Intenzívne" },
+                    { value: "4-5h", label: "Fokusovaná Session" },
                     { value: "10-25", label: "Účastníkov" },
                     { value: "3", label: "Expertné Mysle" },
                     { value: "Všetky", label: "Odvetvia" }
@@ -380,25 +371,25 @@ export default function IgnitionPage() {
             what: {
                 title: "Čo To Je",
                 headline: "Nie Kurz. Kompletný Upgrade.",
-                description: "Jeden deň, ktorý kombinuje všetko: rozšírené myslenie, praktické nástroje, reálnu automatizáciu a imagináciu pre to, čo je možné. Traja experti z rôznych svetov. Univerzálne princípy, ktoré fungujú v každom odvetví.",
+                description: "Jedna fokusovaná session, ktorá kombinuje všetko: rozšírené myslenie, praktické nástroje, reálnu automatizáciu a imagináciu pre to, čo je možné. Traja experti z rôznych svetov. Univerzálne princípy, ktoré fungujú v každom odvetví.",
                 pillars: [
                     { 
-                        icon: "🧠", 
+                        number: "01", 
                         title: "Myslenie", 
                         items: ["Ako formulovať problémy pre AI", "Rozhodovanie so strojovou inteligenciou", "Strategická navigácia v komplexite", "Od reaktívneho k proaktívnemu mindetu"]
                     },
                     { 
-                        icon: "🛠", 
+                        number: "02", 
                         title: "Nástroje", 
                         items: ["Ktoré nástroje na ktoré úlohy", "Praktická práca na VAŠICH úlohách", "Budovanie osobného AI stacku", "Integrácia do denného workflow"]
                     },
                     { 
-                        icon: "⚡", 
+                        number: "03", 
                         title: "Automatizácia", 
                         items: ["Identifikácia príležitostí na automatizáciu", "Budovanie workflow, ktoré bežia samy", "Od manuálneho k systematickému", "Škálovanie bez pridávania ľudí"]
                     },
                     { 
-                        icon: "✨", 
+                        number: "04", 
                         title: "Imaginácia", 
                         items: ["Vidieť možnosti, o ktorých ste nevedeli", "Rozšírenie toho, čo 'možné' znamená", "Od inkrementálneho k exponenciálnemu mysleniu", "Future-proofing vášho prístupu"]
                     }
@@ -416,45 +407,34 @@ export default function IgnitionPage() {
                 note: "€8 000 je zaokrúhľovacia chyba pre firmy, ktoré to myslia vážne so svojimi ľuďmi. Je to cena jedného zlého hire, jedného strateného kvartálu, jedného konkurenta, ktorý sa dostane dopredu."
             },
             day: {
-                title: "Ten Deň",
-                headline: "8 Hodín. Kompletná Transformácia.",
+                title: "Session",
+                headline: "4-5 Hodín. Fokusované. Interaktívne.",
+                intro: "Toto nie je prednáška. Je to konverzácia. Dávame, ale aj počúvame — vaše obavy, bloky, realitu. Session sa prispôsobuje tomu, čo je skutočne v miestnosti.",
                 blocks: [
                     { 
-                        time: "09:00", 
-                        title: "PREBUDENIE", 
-                        desc: "Vezmeme vašu skutočnú prácu. Ukážeme, čo je možné za 5 minút. Rozdiel medzi tým, kde ste a kde by ste mohli byť, sa stane viscerálne reálnym.", 
-                        tags: ["Live Demo", "Vaše Skutočné Úlohy", "Mapovanie Možností"]
+                        time: "Časť 1", 
+                        title: "OTVORENIE", 
+                        desc: "Vezmeme vašu skutočnú prácu. Ukážeme, čo je možné za minúty. Potom počúvame: čo vás brzdí? Čoho sa bojíte? Čo nefunguje? Skutočná konverzácia začína tu.", 
+                        tags: ["Live Demo", "Otvorený Dialóg", "Pochopenie Vašej Reality"]
                     },
                     { 
-                        time: "10:00", 
+                        time: "Časť 2", 
                         title: "FRAMEWORK", 
-                        desc: "Ako myslieť s AI, nie ju len používať. Rozhodovacie frameworky, dekompozícia úloh, strategické promptovanie. Univerzálne princípy, ktoré fungujú všade.", 
-                        tags: ["Modely Myslenia", "Rozhodovacie Frameworky", "Strategický Prístup"]
+                        desc: "Ako myslieť s AI, nie ju len používať. Rozhodovacie frameworky, dekompozícia úloh, strategický prístup. Učíme, vy sa pýtate, prispôsobujeme sa tomu, čo je pre vás dôležité.", 
+                        tags: ["Modely Myslenia", "Q&A", "Praktická Aplikácia"]
                     },
                     { 
-                        time: "11:30", 
-                        title: "NÁSTROJE", 
-                        desc: "Hands-on s nástrojmi, na ktorých záleží. Nie teória — prax. Pracujete na VAŠICH úlohách, budujete VAŠE workflow, riešite VAŠE problémy.", 
-                        tags: ["Praktická Práca", "Osobný Stack", "Reálna Implementácia"]
-                    },
-                    { 
-                        time: "13:30", 
-                        title: "AUTOMATIZÁCIA", 
-                        desc: "Identifikujte, čo by malo bežať bez vás. Postavte skutočné automatizácie. Od manuálnych procesov k systematickým workflow, ktoré škálujú.", 
-                        tags: ["Dizajn Workflow", "Automatizácia Procesov", "Škálovateľné Systémy"],
+                        time: "Časť 3", 
+                        title: "NÁSTROJE + AUTOMATIZÁCIA", 
+                        desc: "Hands-on s nástrojmi, na ktorých záleží. Pracujete na VAŠICH úlohách, budujete VAŠE workflow. Vedieme, riešime problémy a pomáhame vám vidieť, čo je skutočne možné pre vašu špecifickú situáciu.", 
+                        tags: ["Praktická Práca", "Personalizované Vedenie", "Reálna Implementácia"],
                         accent: true
                     },
                     { 
-                        time: "15:00", 
-                        title: "EXPANZIA", 
-                        desc: "Imaginačná session. Čo sa stane možným, keď skombinujete všetko? Aplikácie špecifické pre odvetvie. Budúce scenáre. Konkurenčné výhody.", 
-                        tags: ["Myslenie v Možnostiach", "Aplikácie pre Odvetvie", "Plánovanie Budúcnosti"]
-                    },
-                    { 
-                        time: "16:30", 
-                        title: "ZÁVÄZOK", 
-                        desc: "Každý odchádza s konkrétnym 30-dňovým implementačným plánom. Verejný záväzok. Štruktúra podpory. Žiadne výhovorky.", 
-                        tags: ["Akčný Plán", "Zodpovednosť", "Follow-Through"]
+                        time: "Časť 4", 
+                        title: "EXPANZIA + ZÁVÄZOK", 
+                        desc: "Čo sa stane možným, keď skombinujete všetko? Skúmame spolu. Potom: konkrétne ďalšie kroky. Čo skutočne urobíte v najbližších 30 dňoch? Verejný záväzok, štruktúra podpory.", 
+                        tags: ["Imaginácia", "Akčné Plánovanie", "Zodpovednosť"]
                     }
                 ]
             },
@@ -508,7 +488,7 @@ export default function IgnitionPage() {
                         price: "8 000", 
                         currency: "EUR", 
                         features: [
-                            "Plný 8-hodinový intenzívny workshop",
+                            "4-5 hodinová fokusovaná session",
                             "Do 15 účastníkov",
                             "Všetci traja expert facilitátori",
                             "Nastavenie osobného AI stacku pre každého",
@@ -525,7 +505,7 @@ export default function IgnitionPage() {
                         features: [
                             "Všetko v Standard",
                             "Do 25 účastníkov",
-                            "Pre-workshop diagnostika (2hod hovor)",
+                            "Pre-session diagnostický hovor",
                             "Custom zameranie na odvetvie",
                             "Executive 1:1 sessions (3x 30min)",
                             "Rozšírená knižnica zdrojov",
@@ -567,8 +547,8 @@ export default function IgnitionPage() {
                         a: "Používať nástroje nie je to isté ako ich maximalizovať. Väčšina tímov používa 5-10% toho, čo je možné. My ten rozdiel uzatvárame — ukazujeme, čo je skutočne dosiahnuteľné, a budujeme systémy, ako sa tam dostať." 
                     },
                     { 
-                        q: "Prečo jeden deň namiesto dlhšieho programu?", 
-                        a: "Intenzívne > extenzívne. Jeden sústredený deň vytvorí viac zmeny ako mesiace občasných sessions. Zapálime oheň a dáme vám všetko na jeho udržanie. 30-dňový follow-up zabezpečí, že to pretrvá." 
+                        q: "Prečo pol dňa namiesto dlhšieho programu?", 
+                        a: "Fokus > trvanie. Ľudia nedokážu zostať sústredení 8 hodín. Tesná 4-5 hodinová session vytvorí viac zmeny ako celý deň klesajúcej pozornosti. Zapálime oheň a dáme vám všetko na jeho udržanie. Follow-up zabezpečí, že to pretrvá." 
                     },
                     { 
                         q: "Dá sa to robiť remote?", 
@@ -724,9 +704,14 @@ export default function IgnitionPage() {
 
             <Section number="04" title={t.day.title}>
                 <div className="space-y-16">
-                    <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] max-w-4xl">
-                        {t.day.headline}
-                    </p>
+                    <div className="max-w-4xl">
+                        <p className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] mb-8">
+                            {t.day.headline}
+                        </p>
+                        <p className="text-xl text-black/60 leading-relaxed">
+                            {t.day.intro}
+                        </p>
+                    </div>
 
                     <div className="space-y-4">
                         {t.day.blocks.map((block: any, i: number) => (

@@ -80,6 +80,15 @@ export default function IgnitionPage() {
                 description: "A focused half-day that rewires how your team works with AI. Not a lecture — a conversation. We listen, we adapt, we transform.",
                 cta: "Book Discovery Call"
             },
+            problem: {
+                headline: "Everyone has AI. Few know how to use it.",
+                points: [
+                    "Your team prompts without strategy",
+                    "Output looks like everyone else's",
+                    "Tools multiply, clarity doesn't",
+                    "Speed went up, quality went sideways"
+                ]
+            },
             pillars: {
                 title: "Five Pillars. One Transformation.",
                 items: [
@@ -198,6 +207,15 @@ export default function IgnitionPage() {
                 },
                 description: "Fokusované pol dňa, ktoré zmení, ako váš tím pracuje s AI. Nie prednáška — konverzácia. Počúvame, prispôsobujeme sa, transformujeme.",
                 cta: "Rezervovať Discovery Call"
+            },
+            problem: {
+                headline: "Každý má AI. Málokto vie, ako ju používať.",
+                points: [
+                    "Váš tím promptuje bez stratégie",
+                    "Výstup vyzerá ako u všetkých ostatných",
+                    "Nástroje pribúdajú, jasnosť nie",
+                    "Rýchlosť stúpla, kvalita stagnuje"
+                ]
             },
             pillars: {
                 title: "Päť Pilierov. Jedna Transformácia.",
@@ -365,6 +383,21 @@ export default function IgnitionPage() {
                     </motion.div>
                 </div>
             </section>
+
+            <Section>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <h2 className="font-serif-instrument text-3xl md:text-4xl italic leading-tight">
+                        {t.problem.headline}
+                    </h2>
+                    <div className="grid grid-cols-2 gap-3">
+                        {t.problem.points.map((point: string, i: number) => (
+                            <div key={i} className="p-4 border border-black/10 bg-white">
+                                <span className="text-sm text-black/70">{point}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </Section>
 
             <Section>
                 <div className="space-y-12">

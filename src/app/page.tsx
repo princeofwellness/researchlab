@@ -78,16 +78,30 @@ export default function IgnitionPage() {
                     line2: "New Operating System."
                 },
                 description: "A focused half-day that rewires how your team works with AI. Not a lecture — a conversation. We listen, we adapt, we transform.",
+                trustedBy: "Trusted by Samsung, Tatra Banka, Sennheiser",
+                urgency: "Limited: 4-6 sessions per month",
                 cta: "Book Discovery Call"
             },
             problem: {
-                headline: "Everyone has AI. Few know how to use it.",
-                points: [
-                    "Your team prompts without strategy",
-                    "Output looks like everyone else's",
-                    "Tools multiply, clarity doesn't",
-                    "Speed went up, quality went sideways"
-                ]
+                headline: "The Sea of Sameness.",
+                description: "Everyone has AI now. Everyone sounds the same. If your output could be anyone's output, you have no brand. Worse: your team is forgetting how to think. The machine does it for them.",
+                stats: [
+                    { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
+                    { value: "41%", label: "of employers plan workforce cuts", source: "WEF 2025" },
+                    { value: "22%", label: "of all jobs disrupted by 2030", source: "WEF 2025" },
+                    { value: "1%", label: "consider AI utilization mature", source: "McKinsey 2025" }
+                ],
+                comparison: {
+                    without: {
+                        title: "The Passive Operator",
+                        items: ["Drowning in sameness", "Generic brand voice", "Declining judgment", "Hidden liability risks", "Managed by algorithms"]
+                    },
+                    with: {
+                        title: "The Human Edge",
+                        items: ["Curated excellence", "Distinctive taste", "Strategic agency", "Critical auditing", "Human-led scale"]
+                    }
+                },
+                quote: "AI multiplies judgment. It doesn't replace it. We restore the taste that makes you premium."
             },
             pillars: {
                 title: "Five Pillars. One Transformation.",
@@ -167,6 +181,15 @@ export default function IgnitionPage() {
                     { title: "30-Day Action Plan", desc: "Concrete next steps. One follow-up call included." }
                 ]
             },
+            roi: {
+                title: "What This Unlocks",
+                items: [
+                    { title: "Differentiation", desc: "Escape commoditization. Create what AI cannot. Charge premium rates." },
+                    { title: "Resilience", desc: "Teams that think critically. Reduced risk. Faster, better decisions." },
+                    { title: "Agency", desc: "Employees who architect, not just execute. Higher retention. Lower burnout." }
+                ],
+                footer: "The market pays for the human edge. Everything else is a race to the bottom."
+            },
             pricing: {
                 title: "Investment",
                 price: "10,000",
@@ -219,16 +242,30 @@ export default function IgnitionPage() {
                     line2: "Nový Operačný Systém."
                 },
                 description: "Fokusované pol dňa, ktoré zmení, ako váš tím pracuje s AI. Nie prednáška — konverzácia. Počúvame, prispôsobujeme sa, transformujeme.",
+                trustedBy: "Dôverujú nám Samsung, Tatra Banka, Sennheiser",
+                urgency: "Limitované: 4-6 sessions mesačne",
                 cta: "Rezervovať Discovery Call"
             },
             problem: {
-                headline: "Každý má AI. Málokto vie, ako ju používať.",
-                points: [
-                    "Váš tím promptuje bez stratégie",
-                    "Výstup vyzerá ako u všetkých ostatných",
-                    "Nástroje pribúdajú, jasnosť nie",
-                    "Rýchlosť stúpla, kvalita stagnuje"
-                ]
+                headline: "Oceán Priemernosti.",
+                description: "Každý má teraz AI. Každý znie rovnako. Ak váš výstup môže byť od kohokoľvek, nemáte značku. Horšie: váš tím zabúda myslieť. Stroj to robí za nich.",
+                stats: [
+                    { value: "40%", label: "pracovných miest vystavených AI", source: "IMF 2024" },
+                    { value: "41%", label: "zamestnávateľov plánuje prepúšťanie", source: "WEF 2025" },
+                    { value: "22%", label: "všetkých pozícií disrupted do 2030", source: "WEF 2025" },
+                    { value: "1%", label: "považuje využitie AI za zrelé", source: "McKinsey 2025" }
+                ],
+                comparison: {
+                    without: {
+                        title: "Pasívny Operátor",
+                        items: ["Topiaci sa v priemernosti", "Generický hlas značky", "Klesajúci úsudok", "Skryté riziká", "Riadení algoritmami"]
+                    },
+                    with: {
+                        title: "Ľudský Náskok",
+                        items: ["Kurátorská excelentnosť", "Rozpoznateľný vkus", "Strategická agentnosť", "Kritický audit", "Škálovanie vedené ľuďmi"]
+                    }
+                },
+                quote: "AI násobí úsudok. Nenahradí ho. Obnovujeme vkus, ktorý vás robí prémiovými."
             },
             pillars: {
                 title: "Päť Pilierov. Jedna Transformácia.",
@@ -307,6 +344,15 @@ export default function IgnitionPage() {
                     { title: "Frameworky Myslenia", desc: "Mentálne modely pre akýkoľvek problém." },
                     { title: "30-Dňový Akčný Plán", desc: "Konkrétne ďalšie kroky. Follow-up hovor zahrnutý." }
                 ]
+            },
+            roi: {
+                title: "Čo Toto Odomkne",
+                items: [
+                    { title: "Odlíšenie", desc: "Útek z komoditizácie. Tvorte to, čo AI nedokáže. Účtujte prémiové ceny." },
+                    { title: "Odolnosť", desc: "Tímy, ktoré myslia kriticky. Znížené riziko. Rýchlejšie, lepšie rozhodnutia." },
+                    { title: "Agentnosť", desc: "Zamestnanci, ktorí architektujú, nielen vykonávajú. Vyššia retencia. Nižšie vyhorenie." }
+                ],
+                footer: "Trh platí za ľudský náskok. Všetko ostatné je pretek ku dnu."
             },
             pricing: {
                 title: "Investícia",
@@ -396,31 +442,84 @@ export default function IgnitionPage() {
                         transition={{ delay: 0.3 }}
                         className="flex flex-col md:flex-row md:items-end md:justify-between gap-8"
                     >
-                        <p className="text-lg md:text-xl font-inter leading-relaxed text-black/60 max-w-lg">
-                            {t.hero.description}
-                        </p>
+                        <div className="space-y-4">
+                            <p className="text-lg md:text-xl font-inter leading-relaxed text-black/60 max-w-lg">
+                                {t.hero.description}
+                            </p>
+                            <p className="text-sm font-inter text-black/40">
+                                {t.hero.trustedBy}
+                            </p>
+                        </div>
 
-                        <a 
-                            href="mailto:hello@sorrywecan.com?subject=Ignition - Discovery Call"
-                            className="bg-[#0047BB] text-white px-8 py-4 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all w-fit"
-                        >
-                            {t.hero.cta}
-                        </a>
+                        <div className="space-y-3">
+                            <a 
+                                href="mailto:hello@sorrywecan.com?subject=Ignition - Discovery Call"
+                                className="bg-[#0047BB] text-white px-8 py-4 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all w-fit block"
+                            >
+                                {t.hero.cta}
+                            </a>
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-[#0047BB]">
+                                {t.hero.urgency}
+                            </p>
+                        </div>
                     </motion.div>
                 </div>
             </section>
 
             <Section>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <h2 className="font-serif-instrument text-3xl md:text-4xl italic leading-tight">
-                        {t.problem.headline}
-                    </h2>
-                    <div className="grid grid-cols-2 gap-3">
-                        {t.problem.points.map((point: string, i: number) => (
-                            <div key={i} className="p-4 border border-black/10 bg-white">
-                                <span className="text-sm text-black/70">{point}</span>
+                <div className="space-y-16">
+                    {/* Headline + Description */}
+                    <div className="max-w-4xl">
+                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic leading-tight text-[#0047BB] mb-6">
+                            {t.problem.headline}
+                        </h2>
+                        <p className="text-xl text-black/60 leading-relaxed">
+                            {t.problem.description}
+                        </p>
+                    </div>
+
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {t.problem.stats.map((stat: any, i: number) => (
+                            <div key={i} className="p-6 border border-black/10 bg-white text-center">
+                                <span className="text-4xl md:text-5xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
+                                <p className="text-xs text-black/50 mt-2 leading-relaxed">{stat.label}</p>
+                                <p className="text-[9px] text-black/30 mt-1 uppercase tracking-wider">{stat.source}</p>
                             </div>
                         ))}
+                    </div>
+
+                    {/* Comparison Visual */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                        <div className="p-8 border-2 border-black/20 bg-white">
+                            <h4 className="font-serif-instrument text-2xl italic mb-6 text-black/40">{t.problem.comparison.without.title}</h4>
+                            <div className="space-y-3">
+                                {t.problem.comparison.without.items.map((item: string, i: number) => (
+                                    <div key={i} className="flex items-start gap-3">
+                                        <span className="text-red-500 text-xs font-bold mt-0.5">[X]</span>
+                                        <span className="text-sm text-black/50">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="p-8 border-2 border-[#0047BB] bg-[#0047BB]/5">
+                            <h4 className="font-serif-instrument text-2xl italic mb-6 text-[#0047BB]">{t.problem.comparison.with.title}</h4>
+                            <div className="space-y-3">
+                                {t.problem.comparison.with.items.map((item: string, i: number) => (
+                                    <div key={i} className="flex items-start gap-3">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#0047BB] mt-1.5 shrink-0" />
+                                        <span className="text-sm text-black/70">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Quote */}
+                    <div className="max-w-3xl mx-auto p-8 border-l-4 border-[#0047BB] bg-[#0047BB]/5">
+                        <p className="text-xl md:text-2xl font-serif-instrument italic text-black/80">
+                            {t.problem.quote}
+                        </p>
                     </div>
                 </div>
             </Section>
@@ -533,6 +632,23 @@ export default function IgnitionPage() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </Section>
+
+            <Section>
+                <div className="space-y-12">
+                    <h2 className="font-serif-instrument text-4xl md:text-5xl italic text-center">{t.roi.title}</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {t.roi.items.map((item: any, i: number) => (
+                            <div key={i} className="p-8 border border-black bg-white text-center space-y-4">
+                                <h4 className="text-3xl font-serif-instrument italic text-[#0047BB]">{item.title}</h4>
+                                <p className="text-sm text-black/60 leading-relaxed">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-center text-lg font-inter text-black/50 max-w-2xl mx-auto">
+                        {t.roi.footer}
+                    </p>
                 </div>
             </Section>
 

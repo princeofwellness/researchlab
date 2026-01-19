@@ -16,7 +16,7 @@ export function TopNav({
     const pathname = usePathname()
 
     const navItems = [
-        { name: "Ignition", href: "/ignition" },
+        { name: "Tiers", href: "/tiers" },
         { name: "Protocol", href: "/protocol" },
         { name: "Journey", href: "/journey" },
         { name: "Game Plan", href: "/gameplan" },

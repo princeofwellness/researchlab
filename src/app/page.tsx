@@ -157,6 +157,39 @@ export default function SorrywecanResearchLab() {
                     "Serve better. Build quality. Shape the future instead of being shaped by it."
                 ]
             },
+            experience: {
+                title: "The Experience",
+                headline: "4-5 Hours. Interactive. Adaptive.",
+                description: "We give, but we also listen — your fears, your blockers, your reality. Every session adapts to what's actually in the room.",
+                pillars: {
+                    title: "Five Pillars of Transformation",
+                    items: [
+                        { title: "Navigation", desc: "Where to go. Strategic clarity in the noise." },
+                        { title: "Thinking", desc: "How to frame problems. Mental models that work." },
+                        { title: "Tools", desc: "What to use. Practical stack for your reality." },
+                        { title: "Automation", desc: "What to build. Workflows that run themselves." },
+                        { title: "Imagination", desc: "What's possible. Expanding the boundaries." }
+                    ]
+                },
+                session: {
+                    title: "What Happens",
+                    parts: [
+                        { num: "01", title: "Opening", time: "45 min", desc: "Live demo with your actual work. Then we listen." },
+                        { num: "02", title: "Framework", time: "75 min", desc: "How to think with AI. We teach, you ask, we adjust." },
+                        { num: "03", title: "Hands-On", time: "120 min", desc: "Tools + automation on YOUR tasks." },
+                        { num: "04", title: "Commitment", time: "30 min", desc: "Your 30-day action plan. Concrete. Accountable." }
+                    ]
+                },
+                outcomes: {
+                    title: "You Leave With",
+                    items: [
+                        { title: "Personal AI Stack", desc: "Configured. Working. Ready for Monday." },
+                        { title: "Automation Blueprints", desc: "3+ workflows for your actual processes." },
+                        { title: "Thinking Frameworks", desc: "Mental models for any problem." },
+                        { title: "30-Day Action Plan", desc: "Concrete next steps. Follow-up call included." }
+                    ]
+                }
+            },
             approach: {
                 title: "The Solution",
                 headline: "High-Fidelity Human. High-Velocity AI.",
@@ -350,6 +383,39 @@ export default function SorrywecanResearchLab() {
                     "Jedno sedenie zmení videnie vášho tímu. Odídete s nástrojmi a obnovenou sebadôverou.",
                     "Slúžte lepšie. Tvorte kvalitu. Formujte budúcnosť namiesto toho, aby formovala vás."
                 ]
+            },
+            experience: {
+                title: "Zážitok",
+                headline: "4-5 Hodín. Interaktívne. Adaptívne.",
+                description: "Dávame, ale aj počúvame — vaše obavy, bloky, realitu. Každá session sa prispôsobuje tomu, čo je v miestnosti.",
+                pillars: {
+                    title: "Päť Pilierov Transformácie",
+                    items: [
+                        { title: "Navigácia", desc: "Kam ísť. Strategická jasnosť v šume." },
+                        { title: "Myslenie", desc: "Ako formulovať problémy. Mentálne modely, ktoré fungujú." },
+                        { title: "Nástroje", desc: "Čo použiť. Praktický stack pre vašu realitu." },
+                        { title: "Automatizácia", desc: "Čo postaviť. Workflow, ktoré bežia samy." },
+                        { title: "Imaginácia", desc: "Čo je možné. Posúvanie hraníc." }
+                    ]
+                },
+                session: {
+                    title: "Čo sa Deje",
+                    parts: [
+                        { num: "01", title: "Otvorenie", time: "45 min", desc: "Live demo s vašou prácou. Potom počúvame." },
+                        { num: "02", title: "Framework", time: "75 min", desc: "Ako myslieť s AI. Učíme, pýtate sa, prispôsobujeme." },
+                        { num: "03", title: "Hands-On", time: "120 min", desc: "Nástroje + automatizácia na VAŠICH úlohách." },
+                        { num: "04", title: "Záväzok", time: "30 min", desc: "Váš 30-dňový plán. Konkrétny. Zodpovedný." }
+                    ]
+                },
+                outcomes: {
+                    title: "Odchádzate S",
+                    items: [
+                        { title: "Osobný AI Stack", desc: "Nakonfigurovaný. Fungujúci. Pripravený na pondelok." },
+                        { title: "Blueprinty Automatizácie", desc: "3+ workflow pre vaše procesy." },
+                        { title: "Frameworky Myslenia", desc: "Mentálne modely pre akýkoľvek problém." },
+                        { title: "30-Dňový Akčný Plán", desc: "Konkrétne kroky. Follow-up hovor zahrnutý." }
+                    ]
+                }
             },
             approach: {
                 title: "Riešenie",
@@ -677,6 +743,107 @@ export default function SorrywecanResearchLab() {
             {/* Section 01.5: Why This Matters - Collapsible */}
             <Section id="mission" number="01.5" title="">
                 <MissionCollapsible content={t.mission} />
+            </Section>
+
+            {/* Section 01.8: The Experience - Curriculum Preview */}
+            <Section id="experience" number="01.8" title={t.experience.title}>
+                <div className="space-y-20">
+                    {/* Hero Headline */}
+                    <div className="text-center max-w-4xl mx-auto">
+                        <motion.h2 
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="font-serif-instrument text-5xl md:text-7xl italic leading-[0.95] text-[#0047BB] mb-6"
+                        >
+                            {t.experience.headline}
+                        </motion.h2>
+                        <p className="text-xl font-inter text-black/60 leading-relaxed">
+                            {t.experience.description}
+                        </p>
+                    </div>
+
+                    {/* Five Pillars */}
+                    <div className="space-y-8">
+                        <h3 className="text-center text-[10px] font-bold uppercase tracking-[0.4em] text-black/40">
+                            {t.experience.pillars.title}
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                            {t.experience.pillars.items.map((pillar: any, i: number) => (
+                                <motion.div 
+                                    key={i}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.1 }}
+                                    className={cn(
+                                        "p-6 border text-center space-y-4 transition-all hover:border-[#0047BB]",
+                                        i === 2 ? "border-[#0047BB] bg-[#0047BB]/5" : "border-black/10 bg-white"
+                                    )}
+                                >
+                                    <span className="text-[10px] font-bold tracking-[0.3em] text-[#0047BB]">[0{i + 1}]</span>
+                                    <h4 className="text-lg font-bold font-inter">{pillar.title}</h4>
+                                    <p className="text-xs text-black/50 leading-relaxed font-inter">{pillar.desc}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Session Flow */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                        <div className="space-y-6">
+                            <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#0047BB]">
+                                {t.experience.session.title}
+                            </h3>
+                            <div className="space-y-4">
+                                {t.experience.session.parts.map((part: any, i: number) => (
+                                    <motion.div 
+                                        key={i}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: i * 0.1 }}
+                                        className="flex gap-6 p-5 border border-black/10 bg-white hover:border-[#0047BB]/30 transition-all group"
+                                    >
+                                        <div className="flex flex-col items-center">
+                                            <span className="text-[10px] font-bold text-[#0047BB]">{part.num}</span>
+                                            <span className="text-[9px] text-black/30 mt-1">{part.time}</span>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold font-inter mb-1 group-hover:text-[#0047BB] transition-colors">{part.title}</h4>
+                                            <p className="text-sm text-black/50 font-inter">{part.desc}</p>
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Outcomes */}
+                        <div className="space-y-6">
+                            <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#0047BB]">
+                                {t.experience.outcomes.title}
+                            </h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                {t.experience.outcomes.items.map((item: any, i: number) => (
+                                    <motion.div 
+                                        key={i}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: i * 0.1 }}
+                                        className="p-6 border border-black bg-white space-y-3"
+                                    >
+                                        <span className="w-8 h-8 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs">
+                                            {i + 1}
+                                        </span>
+                                        <h4 className="font-bold font-inter">{item.title}</h4>
+                                        <p className="text-sm text-black/50 font-inter">{item.desc}</p>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </Section>
 
             {/* Section 02: What This Actually Is */}

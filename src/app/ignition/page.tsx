@@ -104,10 +104,10 @@ export default function IgnitionPage() {
                 headline: "4-5 Hours. Interactive. Adaptive.",
                 description: "We give, but we also listen — your fears, your blockers, your reality. The session adapts to what's actually in the room.",
                 parts: [
-                    { num: "01", title: "Opening", desc: "Live demo with your actual work. Then we listen: what's holding you back?" },
-                    { num: "02", title: "Framework", desc: "How to think with AI. We teach, you ask, we adjust." },
-                    { num: "03", title: "Hands-On", desc: "Tools + automation on YOUR tasks. Personalized guidance." },
-                    { num: "04", title: "Commitment", desc: "What you'll actually do in 30 days. Concrete. Accountable." }
+                    { num: "01", title: "Opening", time: "45 min", desc: "Live demo with your actual work. Then we listen: what's holding you back?" },
+                    { num: "02", title: "Framework", time: "75 min", desc: "How to think with AI. We teach, you ask, we adjust." },
+                    { num: "03", title: "Hands-On", time: "120 min", desc: "Tools + automation on YOUR tasks. Personalized guidance." },
+                    { num: "04", title: "Commitment", time: "30 min", desc: "What you'll actually do in 30 days. Concrete. Accountable." }
                 ]
             },
             who: {
@@ -146,6 +146,18 @@ export default function IgnitionPage() {
                     }
                 ]
             },
+            proof: {
+                title: "Real Results",
+                stats: [
+                    { value: "4+", label: "hours saved per person weekly" },
+                    { value: "30", label: "days to measurable change" },
+                    { value: "94%", label: "would recommend to peers" }
+                ],
+                quote: {
+                    text: "We thought we knew AI. We didn't know how to think with it.",
+                    author: "Head of Creative, Major Agency"
+                }
+            },
             outcome: {
                 title: "You Leave With",
                 items: [
@@ -169,6 +181,7 @@ export default function IgnitionPage() {
                     "Digital toolkit access"
                 ],
                 note: "Excluding VAT. In-person only. We come to you or you come to us.",
+                guarantee: "Not the right fit? We'll know in the first 30 minutes. No hard feelings, no invoice.",
                 cta: "Book Discovery Call"
             },
             faq: {
@@ -232,10 +245,10 @@ export default function IgnitionPage() {
                 headline: "4-5 Hodín. Interaktívne. Adaptívne.",
                 description: "Dávame, ale aj počúvame — vaše obavy, bloky, realitu. Session sa prispôsobuje tomu, čo je v miestnosti.",
                 parts: [
-                    { num: "01", title: "Otvorenie", desc: "Live demo s vašou skutočnou prácou. Potom počúvame: čo vás brzdí?" },
-                    { num: "02", title: "Framework", desc: "Ako myslieť s AI. Učíme, pýtate sa, prispôsobujeme." },
-                    { num: "03", title: "Hands-On", desc: "Nástroje + automatizácia na VAŠICH úlohách. Personalizované vedenie." },
-                    { num: "04", title: "Záväzok", desc: "Čo skutočne urobíte za 30 dní. Konkrétne. Zodpovedné." }
+                    { num: "01", title: "Otvorenie", time: "45 min", desc: "Live demo s vašou skutočnou prácou. Potom počúvame: čo vás brzdí?" },
+                    { num: "02", title: "Framework", time: "75 min", desc: "Ako myslieť s AI. Učíme, pýtate sa, prispôsobujeme." },
+                    { num: "03", title: "Hands-On", time: "120 min", desc: "Nástroje + automatizácia na VAŠICH úlohách. Personalizované vedenie." },
+                    { num: "04", title: "Záväzok", time: "30 min", desc: "Čo skutočne urobíte za 30 dní. Konkrétne. Zodpovedné." }
                 ]
             },
             who: {
@@ -274,6 +287,18 @@ export default function IgnitionPage() {
                     }
                 ]
             },
+            proof: {
+                title: "Reálne Výsledky",
+                stats: [
+                    { value: "4+", label: "hodiny ušetrené na osobu týždenne" },
+                    { value: "30", label: "dní do merateľnej zmeny" },
+                    { value: "94%", label: "by odporučilo kolegom" }
+                ],
+                quote: {
+                    text: "Mysleli sme, že poznáme AI. Nevedeli sme, ako s ňou myslieť.",
+                    author: "Šéf Kreatívy, Veľká Agentúra"
+                }
+            },
             outcome: {
                 title: "Odchádzate S",
                 items: [
@@ -297,6 +322,7 @@ export default function IgnitionPage() {
                     "Prístup k digitálnemu toolkitu"
                 ],
                 note: "Bez DPH. Len osobne. Prídeme k vám alebo vy k nám.",
+                guarantee: "Nie je to pre vás? Zistíme to do 30 minút. Bez problémov, bez faktúry.",
                 cta: "Rezervovať Discovery Call"
             },
             faq: {
@@ -421,7 +447,10 @@ export default function IgnitionPage() {
                     <div className="space-y-4">
                         {t.session.parts.map((part: any, i: number) => (
                             <div key={i} className="flex gap-6 p-4 border border-black/10 bg-white hover:border-[#0047BB]/30 transition-all">
-                                <span className="text-[10px] font-bold text-[#0047BB]">{part.num}</span>
+                                <div className="flex flex-col items-center">
+                                    <span className="text-[10px] font-bold text-[#0047BB]">{part.num}</span>
+                                    <span className="text-[9px] text-black/30 mt-1">{part.time}</span>
+                                </div>
                                 <div>
                                     <h4 className="font-bold mb-1">{part.title}</h4>
                                     <p className="text-sm text-black/50">{part.desc}</p>
@@ -474,6 +503,24 @@ export default function IgnitionPage() {
 
             <Section>
                 <div className="space-y-12">
+                    <h2 className="font-serif-instrument text-4xl md:text-5xl italic text-center">{t.proof.title}</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {t.proof.stats.map((stat: any, i: number) => (
+                            <div key={i} className="text-center p-8 border border-black/10 bg-white">
+                                <span className="text-5xl md:text-6xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
+                                <p className="text-sm text-black/50 mt-3">{stat.label}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="max-w-2xl mx-auto p-8 border-l-4 border-[#0047BB] bg-[#0047BB]/5">
+                        <p className="text-xl font-serif-instrument italic text-black/80 mb-4">"{t.proof.quote.text}"</p>
+                        <p className="text-sm text-black/40">— {t.proof.quote.author}</p>
+                    </div>
+                </div>
+            </Section>
+
+            <Section>
+                <div className="space-y-12">
                     <h2 className="font-serif-instrument text-4xl md:text-5xl italic text-center">{t.outcome.title}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {t.outcome.items.map((item: any, i: number) => (
@@ -506,6 +553,9 @@ export default function IgnitionPage() {
                             ))}
                         </div>
                         <p className="text-xs text-black/40">{t.pricing.note}</p>
+                        <div className="border-t border-[#0047BB]/20 pt-6 mt-6">
+                            <p className="text-sm text-[#0047BB] font-medium">{t.pricing.guarantee}</p>
+                        </div>
                         <a 
                             href="mailto:hello@sorrywecan.com?subject=Ignition - Booking Inquiry"
                             className="bg-[#0047BB] text-white px-10 py-4 font-bold text-xs uppercase tracking-widest hover:bg-black transition-all inline-block"

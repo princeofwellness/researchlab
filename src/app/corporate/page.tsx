@@ -26,33 +26,6 @@ function Section({ id, children, className, dark }: any) {
     )
 }
 
-function PillarVisual({ pillars, lang }: { pillars: any[], lang: string }) {
-    return (
-        <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                {pillars.map((pillar: any, i: number) => (
-                    <div 
-                        key={i} 
-                        className={cn(
-                            "p-6 border text-center space-y-4 transition-all hover:border-[#0047BB]",
-                            i === 2 ? "border-[#0047BB] bg-[#0047BB]/5" : "border-black/10 bg-white"
-                        )}
-                    >
-                        <span className="text-[10px] font-bold tracking-[0.3em] text-[#0047BB]">[0{i + 1}]</span>
-                        <h4 className="text-lg font-bold">{pillar.title}</h4>
-                        <p className="text-xs text-black/50 leading-relaxed">{pillar.desc}</p>
-                    </div>
-                ))}
-            </div>
-            <div className="hidden md:flex absolute top-1/2 left-0 right-0 -z-10 items-center justify-between px-[10%]">
-                {[...Array(4)].map((_, i) => (
-                    <div key={i} className="flex-1 h-[1px] bg-black/10 mx-2" />
-                ))}
-            </div>
-        </div>
-    )
-}
-
 function FounderCard({ name, role, company, brings }: any) {
     return (
         <div className="p-6 border border-white/20 bg-white/5 space-y-4 hover:bg-white/10 transition-all">
@@ -73,12 +46,16 @@ export default function CorporatePage() {
     const content = {
         en: {
             hero: {
-                subtitle: "Navigation / Thinking / Tools / Automation / Imagination",
+                label: "Corporate Workshop",
+                subtitle: "Vision / Direction / Integration",
                 title: {
                     line1: "One Session.",
                     line2: "New Operating System."
                 },
-                description: "A focused half-day that rewires how your team works with AI. Not a lecture — a conversation. We listen, we adapt, we transform.",
+                description: "A strategic intervention into how your team thinks, decides, and works with AI. Not tools training — transformation.",
+                price: "6,900",
+                duration: "4-5 hours",
+                capacity: "10-15 people",
                 cta: "Book Discovery Call"
             },
             problem: {
@@ -90,25 +67,38 @@ export default function CorporatePage() {
                     "Speed went up, quality went sideways"
                 ]
             },
-            pillars: {
-                title: "Five Pillars. One Transformation.",
-                items: [
-                    { title: "Navigation", desc: "Where to go. Strategic clarity in the noise." },
-                    { title: "Thinking", desc: "How to frame problems. Mental models that work." },
-                    { title: "Tools", desc: "What to use. Practical stack for your reality." },
-                    { title: "Automation", desc: "What to build. Workflows that run themselves." },
-                    { title: "Imagination", desc: "What's possible. Expanding the boundaries." }
-                ]
-            },
-            session: {
-                title: "The Session",
-                headline: "4-5 Hours. Interactive. Adaptive.",
-                description: "We give, but we also listen — your fears, your blockers, your reality. The session adapts to what's actually in the room.",
-                parts: [
-                    { num: "01", title: "Opening", time: "45 min", desc: "Live demo with your actual work. Then we listen: what's holding you back?" },
-                    { num: "02", title: "Framework", time: "75 min", desc: "How to think with AI. We teach, you ask, we adjust." },
-                    { num: "03", title: "Hands-On", time: "120 min", desc: "Tools + automation on YOUR tasks. Personalized guidance." },
-                    { num: "04", title: "Commitment", time: "30 min", desc: "What you'll actually do in 30 days. Concrete. Accountable." }
+            framework: {
+                title: "Three Phases. One Transformation.",
+                description: "MINDSHIFT restructures how your organization thinks, decides, and delegates.",
+                phases: [
+                    { 
+                        num: "01", 
+                        title: "Vision", 
+                        time: "60 min",
+                        desc: "Opens thinking. Sets new quality standard. Before tools, change perspective.",
+                        lead: "Roland"
+                    },
+                    { 
+                        num: "02", 
+                        title: "Direction", 
+                        time: "60 min",
+                        desc: "Decision frameworks. Where AI accelerates, where human judgment stays.",
+                        lead: "Roman"
+                    },
+                    { 
+                        num: "03", 
+                        title: "Integration", 
+                        time: "90 min",
+                        desc: "Principles into practice. Leave with working system, not ideas.",
+                        lead: "Ján"
+                    },
+                    { 
+                        num: "04", 
+                        title: "Commitment", 
+                        time: "50 min",
+                        desc: "30-day action framework. Priorities locked. Accountability set.",
+                        lead: "All"
+                    }
                 ]
             },
             who: {
@@ -214,12 +204,16 @@ export default function CorporatePage() {
         },
         sk: {
             hero: {
-                subtitle: "Navigácia / Myslenie / Nástroje / Automatizácia / Imaginácia",
+                label: "Firemný Workshop",
+                subtitle: "Vízia / Smer / Integrácia",
                 title: {
                     line1: "Jedna Session.",
                     line2: "Nový Operačný Systém."
                 },
-                description: "Fokusované pol dňa, ktoré zmení, ako váš tím pracuje s AI. Nie prednáška — konverzácia. Počúvame, prispôsobujeme sa, transformujeme.",
+                description: "Strategický zásah do toho, ako váš tím myslí, rozhoduje a pracuje s AI. Nie školenie nástrojov — transformácia.",
+                price: "6 900",
+                duration: "4-5 hodín",
+                capacity: "10-15 ľudí",
                 cta: "Rezervovať Discovery Call"
             },
             problem: {
@@ -231,25 +225,38 @@ export default function CorporatePage() {
                     "Rýchlosť stúpla, kvalita stagnuje"
                 ]
             },
-            pillars: {
-                title: "Päť Pilierov. Jedna Transformácia.",
-                items: [
-                    { title: "Navigácia", desc: "Kam ísť. Strategická jasnosť v šume." },
-                    { title: "Myslenie", desc: "Ako formulovať problémy. Mentálne modely, ktoré fungujú." },
-                    { title: "Nástroje", desc: "Čo použiť. Praktický stack pre vašu realitu." },
-                    { title: "Automatizácia", desc: "Čo postaviť. Workflow, ktoré bežia samy." },
-                    { title: "Imaginácia", desc: "Čo je možné. Posúvanie hraníc." }
-                ]
-            },
-            session: {
-                title: "Session",
-                headline: "4-5 Hodín. Interaktívne. Adaptívne.",
-                description: "Dávame, ale aj počúvame — vaše obavy, bloky, realitu. Session sa prispôsobuje tomu, čo je v miestnosti.",
-                parts: [
-                    { num: "01", title: "Otvorenie", time: "45 min", desc: "Live demo s vašou skutočnou prácou. Potom počúvame: čo vás brzdí?" },
-                    { num: "02", title: "Framework", time: "75 min", desc: "Ako myslieť s AI. Učíme, pýtate sa, prispôsobujeme." },
-                    { num: "03", title: "Hands-On", time: "120 min", desc: "Nástroje + automatizácia na VAŠICH úlohách. Personalizované vedenie." },
-                    { num: "04", title: "Záväzok", time: "30 min", desc: "Čo skutočne urobíte za 30 dní. Konkrétne. Zodpovedné." }
+            framework: {
+                title: "Tri Fázy. Jedna Transformácia.",
+                description: "MINDSHIFT mení, ako vaša organizácia myslí, rozhoduje a deleguje.",
+                phases: [
+                    { 
+                        num: "01", 
+                        title: "Vízia", 
+                        time: "60 min",
+                        desc: "Otvára myslenie. Nastavuje nový štandard kvality. Pred nástrojmi zmena perspektívy.",
+                        lead: "Roland"
+                    },
+                    { 
+                        num: "02", 
+                        title: "Smer", 
+                        time: "60 min",
+                        desc: "Rozhodovacie rámce. Kde AI zrýchľuje, kde zostáva ľudský úsudok.",
+                        lead: "Roman"
+                    },
+                    { 
+                        num: "03", 
+                        title: "Integrácia", 
+                        time: "90 min",
+                        desc: "Princípy do praxe. Odchádzate so systémom, nie s ideami.",
+                        lead: "Ján"
+                    },
+                    { 
+                        num: "04", 
+                        title: "Záväzok", 
+                        time: "50 min",
+                        desc: "30-dňový akčný rámec. Priority uzamknuté. Zodpovednosť nastavená.",
+                        lead: "Všetci"
+                    }
                 ]
             },
             who: {
@@ -368,7 +375,7 @@ export default function CorporatePage() {
                 </button>
             } />
 
-            <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-20 border-b border-black relative overflow-hidden">
+            <section className="min-h-[85vh] flex flex-col justify-center px-6 md:px-12 pt-20 border-b border-black relative overflow-hidden">
                 <div className="absolute inset-0 blueprint-grid opacity-20" />
                 <div className="max-w-5xl mx-auto w-full relative z-10">
                     <motion.div
@@ -376,8 +383,8 @@ export default function CorporatePage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="mb-6"
                     >
-                        <span className="text-[11px] font-medium tracking-[0.2em] uppercase text-[#0047BB]">
-                            {t.hero.subtitle}
+                        <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB]">
+                            {t.hero.label}
                         </span>
                     </motion.div>
 
@@ -385,28 +392,42 @@ export default function CorporatePage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif-instrument text-[14vw] md:text-[10vw] leading-[0.9] tracking-tighter mb-8"
+                        className="font-serif-instrument text-[12vw] md:text-[8vw] leading-[0.9] tracking-tighter mb-8"
                     >
                         {t.hero.title.line1} <br />
                         <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
                     </motion.h1>
 
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                        className="text-lg md:text-xl font-inter leading-relaxed text-black/60 max-w-2xl mb-10"
+                    >
+                        {t.hero.description}
+                    </motion.p>
+
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="flex flex-col md:flex-row md:items-end md:justify-between gap-8"
+                        className="space-y-6"
                     >
-                        <p className="text-lg md:text-xl font-inter leading-relaxed text-black/60 max-w-lg">
-                            {t.hero.description}
-                        </p>
+                        <div className="flex items-baseline gap-3">
+                            <span className="text-6xl font-serif-instrument">{t.hero.price}</span>
+                            <span className="text-2xl opacity-40">EUR</span>
+                            <span className="text-sm text-black/40 ml-2">/ {t.hero.duration}</span>
+                        </div>
 
-                        <a 
-                            href="mailto:hello@sorrywecan.com?subject=Ignition - Discovery Call"
-                            className="bg-[#0047BB] text-white px-8 py-4 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all w-fit"
-                        >
-                            {t.hero.cta}
-                        </a>
+                        <div className="flex items-center gap-6">
+                            <a 
+                                href="mailto:hello@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
+                                className="bg-[#0047BB] text-white px-8 py-4 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
+                            >
+                                {t.hero.cta}
+                            </a>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/40">{t.hero.capacity}</span>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -428,33 +449,33 @@ export default function CorporatePage() {
 
             <Section>
                 <div className="space-y-12">
-                    <h2 className="font-serif-instrument text-3xl md:text-4xl italic text-center">
-                        {t.pillars.title}
-                    </h2>
-                    <PillarVisual pillars={t.pillars.items} lang={lang} />
-                </div>
-            </Section>
-
-            <Section>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    <div className="space-y-6">
-                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic leading-tight">
-                            {t.session.headline}
+                    <div className="text-center max-w-3xl mx-auto">
+                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic mb-4">
+                            {t.framework.title}
                         </h2>
-                        <p className="text-lg text-black/60 leading-relaxed">
-                            {t.session.description}
-                        </p>
+                        <p className="text-lg text-black/60">{t.framework.description}</p>
                     </div>
                     <div className="space-y-4">
-                        {t.session.parts.map((part: any, i: number) => (
-                            <div key={i} className="flex gap-6 p-4 border border-black/10 bg-white hover:border-[#0047BB]/30 transition-all">
-                                <div className="flex flex-col items-center">
-                                    <span className="text-[10px] font-bold text-[#0047BB]">{part.num}</span>
-                                    <span className="text-[9px] text-black/30 mt-1">{part.time}</span>
+                        {t.framework.phases.map((phase: any, i: number) => (
+                            <div 
+                                key={i} 
+                                className={cn(
+                                    "flex flex-col md:flex-row gap-6 p-6 md:p-8 border transition-all",
+                                    i === 2 
+                                        ? "border-[#0047BB] bg-[#0047BB]/5" 
+                                        : "border-black/10 bg-white hover:border-[#0047BB]/30"
+                                )}
+                            >
+                                <div className="flex md:flex-col items-center md:items-start gap-4 md:gap-2 md:w-24 shrink-0">
+                                    <span className="text-[10px] font-bold text-[#0047BB]">{phase.num}</span>
+                                    <span className="text-[10px] text-black/30">{phase.time}</span>
                                 </div>
-                                <div>
-                                    <h4 className="font-bold mb-1">{part.title}</h4>
-                                    <p className="text-sm text-black/50">{part.desc}</p>
+                                <div className="flex-1">
+                                    <h4 className="text-xl font-bold mb-2">{phase.title}</h4>
+                                    <p className="text-black/60 leading-relaxed">{phase.desc}</p>
+                                </div>
+                                <div className="md:w-24 shrink-0 text-right">
+                                    <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">{phase.lead}</span>
                                 </div>
                             </div>
                         ))}

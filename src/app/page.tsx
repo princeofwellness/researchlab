@@ -53,7 +53,7 @@ export default function HomePage() {
                     title: "Corporate Workshop",
                     price: "6,900",
                     duration: "4-5 hours",
-                    description: "Your team, your workflows, your problems. We listen first, then transform how you work. Deep dive into what actually matters.",
+                    description: "Your challenges, your frameworks. We facilitate, you create. Turn your problems into working solutions together.",
                     features: [
                         "10-15 people, single company",
                         "Customized to your workflows",
@@ -143,7 +143,7 @@ export default function HomePage() {
                     title: "Firemný Workshop",
                     price: "6 900",
                     duration: "4-5 hodín",
-                    description: "Váš tím, vaše workflow, vaše problémy. Najprv počúvame, potom transformujeme, ako pracujete. Hlboký ponor do toho, na čom skutočne záleží.",
+                    description: "Vaše výzvy, vaše frameworky. My facilitujeme, vy tvoríte. Premeňte vaše problémy na fungujúce riešenia spolu.",
                     features: [
                         "10-15 ľudí, jedna firma",
                         "Prispôsobené vašim workflow",

@@ -52,7 +52,7 @@ export default function CorporatePage() {
                     line1: "One Session.",
                     line2: "New Operating System."
                 },
-                description: "A strategic intervention into how your team thinks, decides, and works with AI. Not tools training — transformation.",
+                description: "We work through challenges together. Not a presentation — a facilitated session that turns problems into working frameworks.",
                 price: "6,900",
                 duration: "4-5 hours",
                 capacity: "10-15 people",
@@ -69,37 +69,36 @@ export default function CorporatePage() {
             },
             framework: {
                 title: "Three Phases. One Transformation.",
-                description: "MINDSHIFT restructures how your organization thinks, decides, and delegates.",
+                description: "We facilitate. You create. Challenges become frameworks.",
                 phases: [
                     { 
                         num: "01", 
                         title: "Vision", 
                         time: "60 min",
-                        desc: "Opens thinking. Sets new quality standard. Before tools, change perspective.",
+                        desc: "Opens thinking. We map challenges together — what's broken, what's slow, what's painful.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Direction", 
                         time: "60 min",
-                        desc: "Decision frameworks. Where AI accelerates, where human judgment stays.",
+                        desc: "Decision frameworks. Which problems can AI solve? Which need human judgment? We co-create the rules.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Integration", 
                         time: "90 min",
-                        desc: "Principles into practice. Leave with working system, not ideas.",
+                        desc: "Selected challenges become working frameworks. Not watching demos — building solutions together.",
                         lead: "Ján"
-                    },
-                    { 
-                        num: "04", 
-                        title: "Commitment", 
-                        time: "50 min",
-                        desc: "30-day action framework. Priorities locked. Accountability set.",
-                        lead: "All"
                     }
-                ]
+                ],
+                closing: {
+                    title: "Commitment",
+                    time: "50 min",
+                    desc: "Pick 2 pilots. Assign owners. Set metrics. You leave with a plan, not notes.",
+                    lead: "All"
+                }
             },
             who: {
                 title: "Built For",
@@ -210,7 +209,7 @@ export default function CorporatePage() {
                     line1: "Jedna Session.",
                     line2: "Nový Operačný Systém."
                 },
-                description: "Strategický zásah do toho, ako váš tím myslí, rozhoduje a pracuje s AI. Nie školenie nástrojov — transformácia.",
+                description: "Pracujeme na VAŠICH výzvach spolu. Nie prezentácia — facilitovaná session, ktorá premení vaše problémy na fungujúce frameworky.",
                 price: "6 900",
                 duration: "4-5 hodín",
                 capacity: "10-15 ľudí",
@@ -227,37 +226,36 @@ export default function CorporatePage() {
             },
             framework: {
                 title: "Tri Fázy. Jedna Transformácia.",
-                description: "MINDSHIFT mení, ako vaša organizácia myslí, rozhoduje a deleguje.",
+                description: "My facilitujeme. Vy tvoríte. Výzvy sa stávajú frameworkami.",
                 phases: [
                     { 
                         num: "01", 
                         title: "Vízia", 
                         time: "60 min",
-                        desc: "Otvára myslenie. Nastavuje nový štandard kvality. Pred nástrojmi zmena perspektívy.",
+                        desc: "Otvára myslenie. Mapujeme výzvy spolu — čo je rozbité, čo je pomalé, čo bolí.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Smer", 
                         time: "60 min",
-                        desc: "Rozhodovacie rámce. Kde AI zrýchľuje, kde zostáva ľudský úsudok.",
+                        desc: "Rozhodovacie rámce. Ktoré problémy vie AI vyriešiť? Ktoré potrebujú ľudský úsudok? Pravidlá tvoríme spolu.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Integrácia", 
                         time: "90 min",
-                        desc: "Princípy do praxe. Odchádzate so systémom, nie s ideami.",
+                        desc: "Vybrané výzvy sa stávajú fungujúcimi frameworkami. Nie pozeranie dem — budovanie riešení spolu.",
                         lead: "Ján"
-                    },
-                    { 
-                        num: "04", 
-                        title: "Záväzok", 
-                        time: "50 min",
-                        desc: "30-dňový akčný rámec. Priority uzamknuté. Zodpovednosť nastavená.",
-                        lead: "Všetci"
                     }
-                ]
+                ],
+                closing: {
+                    title: "Záväzok",
+                    time: "50 min",
+                    desc: "Vyberte 2 piloty. Priraďte vlastníkov. Nastavte metriky. Odchádzate s plánom, nie s poznámkami.",
+                    lead: "Všetci"
+                }
             },
             who: {
                 title: "Vytvorené Pre",
@@ -479,6 +477,22 @@ export default function CorporatePage() {
                                 </div>
                             </div>
                         ))}
+                        
+                        <div className="mt-8 p-6 md:p-8 bg-black text-white">
+                            <div className="flex flex-col md:flex-row gap-6">
+                                <div className="flex md:flex-col items-center md:items-start gap-4 md:gap-2 md:w-24 shrink-0">
+                                    <span className="text-[10px] font-bold text-[#0047BB]">CLOSE</span>
+                                    <span className="text-[10px] text-white/30">{t.framework.closing.time}</span>
+                                </div>
+                                <div className="flex-1">
+                                    <h4 className="text-xl font-bold mb-2">{t.framework.closing.title}</h4>
+                                    <p className="text-white/60 leading-relaxed">{t.framework.closing.desc}</p>
+                                </div>
+                                <div className="md:w-24 shrink-0 text-right">
+                                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t.framework.closing.lead}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Section>

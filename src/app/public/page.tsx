@@ -16,7 +16,7 @@ export default function PublicSessionsPage() {
                 label: "Public Sessions",
                 title: {
                     line1: "Learn. Create.",
-                    line2: "Discuss."
+                    line2: "Build."
                 },
                 description: "3 hours with professionals from different companies. You leave with working tools, new mental models, and answers to questions that matter in your field.",
                 price: "99",
@@ -33,29 +33,29 @@ export default function PublicSessionsPage() {
                 parts: [
                     { 
                         num: "01", 
-                        title: "Opening", 
-                        time: "30 min", 
-                        desc: "What's possible. Live, not slides. You'll see things that change how you think about work.",
+                        title: "Opening + Creative Process", 
+                        time: "45 min", 
+                        desc: "How to think. How to see. What makes output good vs generic. Live work, not slides. Taste, iteration, and navigating creative chaos.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Framework", 
-                        time: "45 min", 
+                        time: "40 min", 
                         desc: "How to think with AI. Mental models you'll actually use. Not prompting tips — thinking frameworks.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Hands-On", 
-                        time: "60 min", 
-                        desc: "Pick a problem. We show you how to solve it.",
+                        time: "55 min", 
+                        desc: "Pick a problem. We show you how to solve it. Build something that works.",
                         lead: "Ján"
                     },
                     { 
                         num: "04", 
                         title: "Discussion", 
-                        time: "45 min", 
+                        time: "40 min", 
                         desc: "Your field. Your questions. Real answers from people who do this daily.",
                         lead: "All"
                     }
@@ -163,7 +163,7 @@ export default function PublicSessionsPage() {
                 label: "Verejné Sessions",
                 title: {
                     line1: "Nauč sa. Tvor.",
-                    line2: "Diskutuj."
+                    line2: "Buduj."
                 },
                 description: "3 hodiny s profesionálmi z rôznych firiem. Odídeš s fungujúcimi nástrojmi, novými mentálnymi modelmi a odpoveďami na otázky, ktoré sú dôležité v tvojom odbore.",
                 price: "99",
@@ -180,29 +180,29 @@ export default function PublicSessionsPage() {
                 parts: [
                     { 
                         num: "01", 
-                        title: "Otvorenie", 
-                        time: "30 min", 
-                        desc: "Čo je možné. Naživo, nie slajdy. Uvidíš veci, ktoré zmenia, ako premýšľaš o práci.",
+                        title: "Otvorenie + Kreatívny Proces", 
+                        time: "45 min", 
+                        desc: "Ako myslieť. Ako vidieť. Čo robí výstup dobrým vs generickým. Živá práca, nie slajdy. Vkus, iterácia a navigácia kreatívnym chaosom.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Framework", 
-                        time: "45 min", 
+                        time: "40 min", 
                         desc: "Ako myslieť s AI. Mentálne modely, ktoré skutočne použiješ. Nie tipy na prompty — frameworky myslenia.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Hands-On", 
-                        time: "60 min", 
-                        desc: "Vyber si problém. Ukážeme ti, ako ho vyriešiť.",
+                        time: "55 min", 
+                        desc: "Vyber si problém. Ukážeme ti, ako ho vyriešiť. Postav niečo, čo funguje.",
                         lead: "Ján"
                     },
                     { 
                         num: "04", 
                         title: "Diskusia", 
-                        time: "45 min", 
+                        time: "40 min", 
                         desc: "Tvoj odbor. Tvoje otázky. Skutočné odpovede od ľudí, ktorí toto robia denne.",
                         lead: "Všetci"
                     }
@@ -427,8 +427,8 @@ export default function PublicSessionsPage() {
                     <div className="mt-8 p-6 bg-[#0047BB]/5 border border-[#0047BB]/20">
                         <p className="text-sm text-[#0047BB] font-medium text-center">
                             {lang === 'en' 
-                                ? "45 minutes of dedicated discussion time. Your questions. Your field. Real answers."
-                                : "45 minút venovaných diskusii. Tvoje otázky. Tvoj odbor. Skutočné odpovede."
+                        ? "40 minutes of dedicated discussion time. Your questions. Your field. Real answers."
+                        : "40 minút venovaných diskusii. Tvoje otázky. Tvoj odbor. Skutočné odpovede."
                             }
                         </p>
                     </div>

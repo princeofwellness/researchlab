@@ -356,7 +356,7 @@ export default function PublicSessionsPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="flex flex-col md:flex-row md:items-end gap-8"
+                        className="flex flex-col md:flex-row md:items-end md:justify-between gap-8"
                     >
                         <div className="flex items-baseline gap-3">
                             <span className="text-6xl font-serif-instrument">{t.hero.price}</span>

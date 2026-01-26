@@ -64,10 +64,11 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "You Leave With.",
                 items: [
+                    { title: "Clarity", desc: "Where AI is going. Where you fit. Calm confidence, not hype." },
                     { title: "Your AI Stack", desc: "Tools picked and configured for your reality." },
-                    { title: "Something Working", desc: "Built during the session. Ready for Monday." },
-                    { title: "Mental Models", desc: "How to approach any problem." },
-                    { title: "Digital Toolkit", desc: "Playbooks and community access." }
+                    { title: "A Working Workflow", desc: "Something real. Ready for Monday." },
+                    { title: "Mental Models", desc: "Decision rules to cut through noise." },
+                    { title: "Digital Toolkit", desc: "Templates, playbooks, community access." }
                 ]
             },
             who: {
@@ -94,20 +95,20 @@ export default function PublicSessionsPage() {
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
-                        company: "SORRYWECAN", 
-                        brings: "Opens with vision. Shows what's possible."
+                        company: "CEO/Founder SORRYWECAN", 
+                        brings: "Award-winning creative studio. Ignites possibility and sets taste — helping you see what others don't."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
-                        company: "SUDOLABS", 
-                        brings: "Makes it practical. You leave with working tools."
+                        company: "CPO/Co-founder SUDOLABS", 
+                        brings: "Built apps for US clients, €5M+ revenue. Makes it real — workflows and systems that run."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Strategic clarity. How to think, not just use."
+                        brings: "Strategic clarity expert. Decision frameworks for what AI can solve and what to prioritize."
                     }
                 ]
             },
@@ -211,10 +212,11 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "Odídeš S.",
                 items: [
+                    { title: "Jasnosť", desc: "Kam AI smeruje. Kde sa nachádzaš ty. Pokojná istota, nie hype." },
                     { title: "Tvoj AI Stack", desc: "Nástroje vybrané a nastavené pre tvoju realitu." },
-                    { title: "Niečo Fungujúce", desc: "Postavené počas session. Pripravené na pondelok." },
-                    { title: "Mentálne Modely", desc: "Ako pristupovať k akémukoľvek problému." },
-                    { title: "Digitálny Toolkit", desc: "Playbooks a prístup ku komunite." }
+                    { title: "Fungujúci Workflow", desc: "Niečo skutočné. Pripravené na pondelok." },
+                    { title: "Mentálne Modely", desc: "Rozhodovacie pravidlá na prerezanie šumu." },
+                    { title: "Digitálny Toolkit", desc: "Šablóny, playbooks, prístup ku komunite." }
                 ]
             },
             who: {
@@ -241,20 +243,20 @@ export default function PublicSessionsPage() {
                     { 
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
-                        company: "SORRYWECAN", 
-                        brings: "Otvára s víziou. Ukazuje, čo je možné."
+                        company: "CEO/Zakladateľ SORRYWECAN", 
+                        brings: "Oceňované kreatívne štúdio. Zapaľuje možnosti a nastavuje vkus — pomáha vidieť to, čo ostatní nevidia."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "Architekt", 
-                        company: "SUDOLABS", 
-                        brings: "Robí to praktickým. Odídeš s fungujúcimi nástrojmi."
+                        company: "CPO/Spoluzakladateľ SUDOLABS", 
+                        brings: "Budoval appky pre US klientov, €5M+ revenue. Robí to skutočným — workflow a systémy, ktoré bežia."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "Navigátor", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Strategická jasnosť. Ako myslieť, nielen používať."
+                        brings: "Expert na strategickú jasnosť. Rozhodovacie rámce pre to, čo AI vie vyriešiť a čo prioritizovať."
                     }
                 ]
             },

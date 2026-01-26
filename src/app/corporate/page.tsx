@@ -75,28 +75,28 @@ export default function CorporatePage() {
                         num: "01", 
                         title: "Vision", 
                         time: "60 min",
-                        desc: "Opens thinking. We map challenges together — what's broken, what's slow, what's painful.",
+                        desc: "Ignites possibility. Where we are, where it's going, how to see what others don't. Taste over templates.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Direction", 
                         time: "60 min",
-                        desc: "Decision frameworks. Which problems can AI solve? Which need human judgment? We co-create the rules.",
+                        desc: "Strategic clarity. Where AI creates leverage, where it creates noise. Decision rules you can use.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Integration", 
                         time: "90 min",
-                        desc: "Selected challenges become working frameworks. Not watching demos — building solutions together.",
+                        desc: "Makes it real. Design the workflow, build the system, ship something that runs.",
                         lead: "Ján"
                     }
                 ],
                 closing: {
                     title: "Commitment",
                     time: "50 min",
-                    desc: "Pick 2 pilots. Assign owners. Set metrics. You leave with a plan, not notes.",
+                    desc: "Lock it in. Roles, standards, next steps. The change sticks.",
                     lead: "All"
                 }
             },
@@ -119,20 +119,20 @@ export default function CorporatePage() {
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
-                        company: "SORRYWECAN", 
-                        brings: "Imagination, visual thinking, possibility. How to see what others can't."
+                        company: "CEO/Founder SORRYWECAN", 
+                        brings: "Award-winning creative studio. Ignites possibility and sets taste — helping teams see what others don't."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
-                        company: "SUDOLABS", 
-                        brings: "Systems, automation, scale. How to build things that run themselves."
+                        company: "CPO/Co-founder SUDOLABS", 
+                        brings: "Built apps for US clients, €5M+ revenue. Makes it real — workflows and systems that run."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Clarity, strategy, direction. How to navigate complexity."
+                        brings: "Strategic clarity expert. Decision frameworks for what AI can solve and what to prioritize."
                     }
                 ]
             },
@@ -232,28 +232,28 @@ export default function CorporatePage() {
                         num: "01", 
                         title: "Vízia", 
                         time: "60 min",
-                        desc: "Otvára myslenie. Mapujeme výzvy spolu — čo je rozbité, čo je pomalé, čo bolí.",
+                        desc: "Zapaľuje možnosti. Kde sme, kam to smeruje, ako vidieť to, čo ostatní nevidia. Vkus nad šablónami.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Smer", 
                         time: "60 min",
-                        desc: "Rozhodovacie rámce. Ktoré problémy vie AI vyriešiť? Ktoré potrebujú ľudský úsudok? Pravidlá tvoríme spolu.",
+                        desc: "Strategická jasnosť. Kde AI vytvára páku, kde vytvára šum. Rozhodovacie pravidlá, ktoré použijete.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Integrácia", 
                         time: "90 min",
-                        desc: "Vybrané výzvy sa stávajú fungujúcimi frameworkami. Nie pozeranie dem — budovanie riešení spolu.",
+                        desc: "Robí to skutočným. Navrhnite workflow, postavte systém, dodajte niečo, čo beží.",
                         lead: "Ján"
                     }
                 ],
                 closing: {
                     title: "Záväzok",
                     time: "50 min",
-                    desc: "Vyberte 2 piloty. Priraďte vlastníkov. Nastavte metriky. Odchádzate s plánom, nie s poznámkami.",
+                    desc: "Uzamknite to. Roly, štandardy, ďalšie kroky. Zmena zostane.",
                     lead: "Všetci"
                 }
             },
@@ -276,20 +276,20 @@ export default function CorporatePage() {
                     { 
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
-                        company: "SORRYWECAN", 
-                        brings: "Imaginácia, vizuálne myslenie, možnosti. Ako vidieť, čo ostatní nevidia."
+                        company: "CEO/Zakladateľ SORRYWECAN", 
+                        brings: "Oceňované kreatívne štúdio. Zapaľuje možnosti a nastavuje vkus — pomáha tímom vidieť to, čo ostatní nevidia."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "Architekt", 
-                        company: "SUDOLABS", 
-                        brings: "Systémy, automatizácia, škála. Ako budovať veci, ktoré bežia samy."
+                        company: "CPO/Spoluzakladateľ SUDOLABS", 
+                        brings: "Budoval appky pre US klientov, €5M+ revenue. Robí to skutočným — workflow a systémy, ktoré bežia."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "Navigátor", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Jasnosť, stratégia, smer. Ako navigovať komplexitu."
+                        brings: "Expert na strategickú jasnosť. Rozhodovacie rámce pre to, čo AI vie vyriešiť a čo prioritizovať."
                     }
                 ]
             },

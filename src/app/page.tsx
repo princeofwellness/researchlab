@@ -80,20 +80,20 @@ export default function HomePage() {
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
-                        company: "SORRYWECAN", 
-                        brings: "Imagination, visual thinking, possibility. How to see what others can't."
+                        company: "CEO/Founder SORRYWECAN", 
+                        brings: "Award-winning creative studio. Ignites possibility and sets taste — helping you see what others don't."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
-                        company: "SUDOLABS", 
-                        brings: "Systems, automation, scale. How to build things that run themselves."
+                        company: "CPO/Co-founder SUDOLABS", 
+                        brings: "Built apps for US clients, €5M+ revenue. Makes it real — workflows and systems that run."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Clarity, strategy, direction. How to navigate complexity."
+                        brings: "Strategic clarity expert. Decision frameworks for what AI can solve and what to prioritize."
                     }
                 ]
             },
@@ -170,20 +170,20 @@ export default function HomePage() {
                     { 
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
-                        company: "SORRYWECAN", 
-                        brings: "Imaginácia, vizuálne myslenie, možnosti. Ako vidieť, čo ostatní nevidia."
+                        company: "CEO/Zakladateľ SORRYWECAN", 
+                        brings: "Oceňované kreatívne štúdio. Zapaľuje možnosti a nastavuje vkus — pomáha vidieť to, čo ostatní nevidia."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "Architekt", 
-                        company: "SUDOLABS", 
-                        brings: "Systémy, automatizácia, škála. Ako budovať veci, ktoré bežia samy."
+                        company: "CPO/Spoluzakladateľ SUDOLABS", 
+                        brings: "Budoval appky pre US klientov, €5M+ revenue. Robí to skutočným — workflow a systémy, ktoré bežia."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "Navigátor", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Jasnosť, stratégia, smer. Ako navigovať komplexitu."
+                        brings: "Expert na strategickú jasnosť. Rozhodovacie rámce pre to, čo AI vie vyriešiť a čo prioritizovať."
                     }
                 ]
             },

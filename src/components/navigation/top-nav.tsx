@@ -20,6 +20,7 @@ export function TopNav({
         { name: "Corporate", href: "/corporate" },
         { name: "Curriculum", href: "/curriculum" },
         { name: "Game Plan", href: "/gameplan" },
+        { name: "Projections", href: "/projections" },
     ]
 
     const isDark = variant === "dark"

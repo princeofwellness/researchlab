@@ -22,48 +22,41 @@ export default function PublicSessionsPage() {
                 price: "99",
                 duration: "3 hours",
                 nextSession: "February 2025",
-                spots: "Limited to 25 seats",
+                spots: "Limited seats",
                 cta: "Reserve Your Seat"
             },
-            value: {
-                headline: "What €99 Gets You.",
-                items: [
-                    { title: "Not a Lecture", desc: "Interactive. You ask, we adapt. Your questions drive the conversation." },
-                    { title: "Not Generic", desc: "Discussion time built in. What matters in YOUR field? Let's talk." },
-                    { title: "Not Theory", desc: "Leave with 1 configured tool and 1 working automation. Today." },
-                    { title: "Not Alone", desc: "25 professionals, different companies, shared challenges. Network forms naturally." }
-                ]
-            },
+
             session: {
                 title: "The Session.",
-                headline: "3 Hours. Four Phases.",
+                headline: "3 Hours. One Room.",
+                hint: "While we talk, something builds in the background.",
                 parts: [
                     { 
                         num: "01", 
-                        title: "Opening Spark", 
+                        title: "Opening", 
                         time: "30 min", 
-                        desc: "Vision meets reality. Live demo of what's possible. We show, you see what AI can actually do.",
+                        desc: "What's possible. Live, not slides. You'll see things that change how you think about work.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Framework", 
                         time: "45 min", 
-                        desc: "Five pillars, compressed. Mental models you can use tomorrow. How to think with AI, not just prompt.",
+                        desc: "How to think with AI. Mental models you'll actually use. Not prompting tips — thinking frameworks.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Hands-On", 
                         time: "60 min", 
-                        desc: "Set up your tool. Build your first automation. Leave with something working.",
+                        desc: "Your problem, your tools. We help you build something real before you leave.",
                         lead: "Ján"
                     },
                     { 
                         num: "04", 
                         title: "Discussion", 
                         time: "45 min", 
-                        desc: "Your field, your questions. What are you actually dealing with? Let's solve it together.",
+                        desc: "Your field. Your questions. Real answers from people who do this daily.",
                         lead: "All"
                     }
                 ]
@@ -71,10 +64,10 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "You Leave With.",
                 items: [
-                    { title: "Configured AI Tool", desc: "Not just installed. Set up for YOUR work." },
-                    { title: "Working Automation", desc: "Something that runs. Saves time this week." },
-                    { title: "Thinking Framework", desc: "Mental models for any AI problem." },
-                    { title: "Digital Toolkit", desc: "Resources, templates, continued learning." }
+                    { title: "Your AI Stack", desc: "Tools picked and configured for your reality." },
+                    { title: "Something Working", desc: "Built during the session. Ready for Monday." },
+                    { title: "Mental Models", desc: "How to approach any AI problem." },
+                    { title: "Toolkit + Community", desc: "Templates, playbooks, and BA AI Builders access." }
                 ]
             },
             who: {
@@ -153,13 +146,13 @@ export default function PublicSessionsPage() {
                     { label: "Where", value: "Bratislava (venue TBA)" },
                     { label: "When", value: "February 2025" },
                     { label: "Duration", value: "3 hours" },
-                    { label: "Size", value: "Max 25 people" },
+                    { label: "Size", value: "Limited seats" },
                     { label: "Price", value: "€99 + VAT" }
                 ]
             },
             cta: {
                 headline: "Ready to Start?",
-                description: "25 seats. First session February 2025. Reserve now, pay later.",
+                description: "Limited seats. First session February 2025. Reserve now, pay later.",
                 button: "Reserve Your Seat",
                 note: "Or bring this to your team →",
                 corporate: "Corporate Workshop"
@@ -176,48 +169,41 @@ export default function PublicSessionsPage() {
                 price: "99",
                 duration: "3 hodiny",
                 nextSession: "Február 2025",
-                spots: "Limitované na 25 miest",
+                spots: "Limitované miesta",
                 cta: "Rezervovať Miesto"
             },
-            value: {
-                headline: "Čo dostaneš za €99.",
-                items: [
-                    { title: "Nie Prednáška", desc: "Interaktívne. Pýtaš sa, my sa prispôsobujeme. Tvoje otázky riadia konverzáciu." },
-                    { title: "Nie Generické", desc: "Čas na diskusiu zahrnutý. Čo je dôležité v TVOJOM odbore? Poďme sa baviť." },
-                    { title: "Nie Teória", desc: "Odíď s 1 nastaveným nástrojom a 1 fungujúcou automatizáciou. Dnes." },
-                    { title: "Nie Sám", desc: "25 profesionálov, rôzne firmy, spoločné výzvy. Sieť vzniká prirodzene." }
-                ]
-            },
+
             session: {
                 title: "Session.",
-                headline: "3 Hodiny. Štyri Fázy.",
+                headline: "3 Hodiny. Jedna Miestnosť.",
+                hint: "Kým sa rozprávame, niečo sa buduje v pozadí.",
                 parts: [
                     { 
                         num: "01", 
-                        title: "Otváracie Iskry", 
+                        title: "Otvorenie", 
                         time: "30 min", 
-                        desc: "Vízia stretáva realitu. Live demo toho, čo je možné. Ukážeme, ty uvidíš, čo AI skutočne dokáže.",
+                        desc: "Čo je možné. Naživo, nie slajdy. Uvidíš veci, ktoré zmenia, ako premýšľaš o práci.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Framework", 
                         time: "45 min", 
-                        desc: "Päť pilierov, komprimované. Mentálne modely, ktoré použiješ zajtra. Ako myslieť s AI, nielen promptovať.",
+                        desc: "Ako myslieť s AI. Mentálne modely, ktoré skutočne použiješ. Nie tipy na prompty — frameworky myslenia.",
                         lead: "Roman"
                     },
                     { 
                         num: "03", 
                         title: "Hands-On", 
                         time: "60 min", 
-                        desc: "Nastav si nástroj. Postav prvú automatizáciu. Odíď s niečím fungujúcim.",
+                        desc: "Tvoj problém, tvoje nástroje. Pomôžeme ti postaviť niečo reálne pred odchodom.",
                         lead: "Ján"
                     },
                     { 
                         num: "04", 
                         title: "Diskusia", 
                         time: "45 min", 
-                        desc: "Tvoj odbor, tvoje otázky. S čím sa skutočne stretávaš? Vyriešme to spolu.",
+                        desc: "Tvoj odbor. Tvoje otázky. Skutočné odpovede od ľudí, ktorí toto robia denne.",
                         lead: "Všetci"
                     }
                 ]
@@ -225,10 +211,10 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "Odídeš S.",
                 items: [
-                    { title: "Nakonfigurovaný AI Nástroj", desc: "Nie len nainštalovaný. Nastavený pre TVOJU prácu." },
-                    { title: "Fungujúca Automatizácia", desc: "Niečo, čo beží. Šetrí čas tento týždeň." },
-                    { title: "Framework Myslenia", desc: "Mentálne modely pre akýkoľvek AI problém." },
-                    { title: "Digitálny Toolkit", desc: "Zdroje, šablóny, pokračujúce vzdelávanie." }
+                    { title: "Tvoj AI Stack", desc: "Nástroje vybrané a nastavené pre tvoju realitu." },
+                    { title: "Niečo Fungujúce", desc: "Postavené počas session. Pripravené na pondelok." },
+                    { title: "Mentálne Modely", desc: "Ako pristupovať k akémukoľvek AI problému." },
+                    { title: "Toolkit + Komunita", desc: "Šablóny, playbooks a prístup do BA AI Builders." }
                 ]
             },
             who: {
@@ -307,13 +293,13 @@ export default function PublicSessionsPage() {
                     { label: "Kde", value: "Bratislava (miesto bude upresnené)" },
                     { label: "Kedy", value: "Február 2025" },
                     { label: "Trvanie", value: "3 hodiny" },
-                    { label: "Veľkosť", value: "Max 25 ľudí" },
+                    { label: "Veľkosť", value: "Limitované miesta" },
                     { label: "Cena", value: "€99 + DPH" }
                 ]
             },
             cta: {
                 headline: "Pripravený Začať?",
-                description: "25 miest. Prvá session február 2025. Rezervuj teraz, plať neskôr.",
+                description: "Limitované miesta. Prvá session február 2025. Rezervuj teraz, plať neskôr.",
                 button: "Rezervovať Miesto",
                 note: "Alebo prines toto k svojmu tímu →",
                 corporate: "Firemný Workshop"
@@ -395,27 +381,6 @@ export default function PublicSessionsPage() {
                 </div>
             </section>
 
-            <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-5xl mx-auto"
-                >
-                    <h2 className="font-serif-instrument text-4xl md:text-5xl italic mb-12">
-                        {t.value.headline}
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {t.value.items.map((item: any, i: number) => (
-                            <div key={i} className="p-8 border border-black/10 bg-white space-y-3">
-                                <h3 className="text-xl font-bold">{item.title}</h3>
-                                <p className="text-black/60 leading-relaxed">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </motion.div>
-            </section>
-
             <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10 bg-white">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -427,9 +392,10 @@ export default function PublicSessionsPage() {
                         <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB] block mb-4">
                             {t.session.title}
                         </span>
-                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic">
+                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic mb-3">
                             {t.session.headline}
                         </h2>
+                        <p className="text-black/40 italic">{t.session.hint}</p>
                     </div>
 
                     <div className="space-y-4">

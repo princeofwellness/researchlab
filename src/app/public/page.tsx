@@ -49,7 +49,7 @@ export default function PublicSessionsPage() {
                         num: "03", 
                         title: "Hands-On", 
                         time: "60 min", 
-                        desc: "Pick a problem. We show you exactly how to solve it.",
+                        desc: "Pick a problem. We show you how to solve it.",
                         lead: "Ján"
                     },
                     { 
@@ -196,7 +196,7 @@ export default function PublicSessionsPage() {
                         num: "03", 
                         title: "Hands-On", 
                         time: "60 min", 
-                        desc: "Vyber si problém. Ukážeme ti presne, ako ho vyriešiť.",
+                        desc: "Vyber si problém. Ukážeme ti, ako ho vyriešiť.",
                         lead: "Ján"
                     },
                     { 

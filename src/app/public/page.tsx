@@ -15,7 +15,7 @@ export default function PublicSessionsPage() {
             hero: {
                 label: "Public Sessions",
                 title: {
-                    line1: "Learn. Build.",
+                    line1: "Learn. Create.",
                     line2: "Discuss."
                 },
                 description: "3 hours with professionals from different companies. You leave with working tools, new mental models, and answers to questions that matter in your field.",
@@ -49,7 +49,7 @@ export default function PublicSessionsPage() {
                         num: "03", 
                         title: "Hands-On", 
                         time: "60 min", 
-                        desc: "Your problem, your tools. We help you build something real before you leave.",
+                        desc: "Pick a problem. We show you exactly how to solve it.",
                         lead: "Ján"
                     },
                     { 
@@ -162,7 +162,7 @@ export default function PublicSessionsPage() {
             hero: {
                 label: "Verejné Sessions",
                 title: {
-                    line1: "Nauč sa. Postav.",
+                    line1: "Nauč sa. Tvor.",
                     line2: "Diskutuj."
                 },
                 description: "3 hodiny s profesionálmi z rôznych firiem. Odídeš s fungujúcimi nástrojmi, novými mentálnymi modelmi a odpoveďami na otázky, ktoré sú dôležité v tvojom odbore.",
@@ -196,7 +196,7 @@ export default function PublicSessionsPage() {
                         num: "03", 
                         title: "Hands-On", 
                         time: "60 min", 
-                        desc: "Tvoj problém, tvoje nástroje. Pomôžeme ti postaviť niečo reálne pred odchodom.",
+                        desc: "Vyber si problém. Ukážeme ti presne, ako ho vyriešiť.",
                         lead: "Ján"
                     },
                     { 

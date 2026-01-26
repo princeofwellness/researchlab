@@ -16,11 +16,10 @@ export function TopNav({
     const pathname = usePathname()
 
     const navItems = [
+        { name: "Public", href: "/public" },
+        { name: "Corporate", href: "/corporate" },
         { name: "Curriculum", href: "/curriculum" },
-        { name: "Protocol", href: "/protocol" },
-        { name: "Journey", href: "/journey" },
         { name: "Game Plan", href: "/gameplan" },
-        { name: "Archive", href: "/archive" },
     ]
 
     const isDark = variant === "dark"

@@ -356,7 +356,7 @@ export default function PublicSessionsPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="flex flex-col md:flex-row md:items-end md:justify-between gap-8"
+                        className="space-y-6"
                     >
                         <div className="flex items-baseline gap-3">
                             <span className="text-6xl font-serif-instrument">{t.hero.price}</span>
@@ -364,10 +364,10 @@ export default function PublicSessionsPage() {
                             <span className="text-sm text-black/40 ml-2">/ {t.hero.duration}</span>
                         </div>
 
-                        <div className="space-y-3">
+                        <div className="flex items-center gap-6">
                             <a 
                                 href="mailto:hello@sorrywecan.com?subject=Public Session - Reserve Seat"
-                                className="bg-[#0047BB] text-white px-8 py-4 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all block w-fit"
+                                className="bg-[#0047BB] text-white px-8 py-4 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
                             >
                                 {t.hero.cta}
                             </a>

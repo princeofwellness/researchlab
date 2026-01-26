@@ -137,7 +137,7 @@ export default function ProtocolPage() {
                         tag: "THE ENGINE",
                         title: "The Architect",
                         desc: "Focuses on scale, sovereignty, and logic. Builds the pipelines and safety layers (Private Models) that allow vision to scale securely.",
-                        name: "Ján Koščelanský",
+                        name: "Ján Koscelanský",
                         role: "CO-FOUNDER & CPO"
                     }
                 ]
@@ -268,7 +268,7 @@ export default function ProtocolPage() {
                         tag: "MOTOR",
                         title: "Architekt",
                         desc: "Sústredí sa na škálovanie, suverenitu a logiku. Buduje potrubia a bezpečnostné vrstvy (Privátne Modely), ktoré umožňujú vízii bezpečne rásť.",
-                        name: "Ján Koščelanský",
+                        name: "Ján Koscelanský",
                         role: "CO-FOUNDER & CPO"
                     }
                 ]

@@ -134,7 +134,7 @@ export default function CorporatePage() {
                         brings: "Imagination, visual thinking, possibility. How to see what others can't."
                     },
                     { 
-                        name: "Ján Koščelanský", 
+                        name: "Ján Koscelanský", 
                         role: "The Architect", 
                         company: "SUDOLABS", 
                         brings: "Systems, automation, scale. How to build things that run themselves."
@@ -275,7 +275,7 @@ export default function CorporatePage() {
                         brings: "Imaginácia, vizuálne myslenie, možnosti. Ako vidieť, čo ostatní nevidia."
                     },
                     { 
-                        name: "Ján Koščelanský", 
+                        name: "Ján Koscelanský", 
                         role: "Architekt", 
                         company: "SUDOLABS", 
                         brings: "Systémy, automatizácia, škála. Ako budovať veci, ktoré bežia samy."

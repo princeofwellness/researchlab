@@ -66,8 +66,8 @@ export default function PublicSessionsPage() {
                 items: [
                     { title: "Your AI Stack", desc: "Tools picked and configured for your reality." },
                     { title: "Something Working", desc: "Built during the session. Ready for Monday." },
-                    { title: "Mental Models", desc: "How to approach any AI problem." },
-                    { title: "Toolkit + Community", desc: "Templates, playbooks, and BA AI Builders access." }
+                    { title: "Mental Models", desc: "How to approach any problem." },
+                    { title: "Digital Toolkit", desc: "Playbooks and community access." }
                 ]
             },
             who: {
@@ -98,7 +98,7 @@ export default function PublicSessionsPage() {
                         brings: "Opens with vision. Shows what's possible."
                     },
                     { 
-                        name: "Ján Koščelanský", 
+                        name: "Ján Koscelanský", 
                         role: "The Architect", 
                         company: "SUDOLABS", 
                         brings: "Makes it practical. You leave with working tools."
@@ -213,8 +213,8 @@ export default function PublicSessionsPage() {
                 items: [
                     { title: "Tvoj AI Stack", desc: "Nástroje vybrané a nastavené pre tvoju realitu." },
                     { title: "Niečo Fungujúce", desc: "Postavené počas session. Pripravené na pondelok." },
-                    { title: "Mentálne Modely", desc: "Ako pristupovať k akémukoľvek AI problému." },
-                    { title: "Toolkit + Komunita", desc: "Šablóny, playbooks a prístup do BA AI Builders." }
+                    { title: "Mentálne Modely", desc: "Ako pristupovať k akémukoľvek problému." },
+                    { title: "Digitálny Toolkit", desc: "Playbooks a prístup ku komunite." }
                 ]
             },
             who: {
@@ -245,7 +245,7 @@ export default function PublicSessionsPage() {
                         brings: "Otvára s víziou. Ukazuje, čo je možné."
                     },
                     { 
-                        name: "Ján Koščelanský", 
+                        name: "Ján Koscelanský", 
                         role: "Architekt", 
                         company: "SUDOLABS", 
                         brings: "Robí to praktickým. Odídeš s fungujúcimi nástrojmi."

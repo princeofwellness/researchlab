@@ -224,7 +224,7 @@ export default function SorrywecanResearchLab() {
                     },
                     {
                         company: "SUDOLABS // CO-FOUNDER & CPO",
-                        name: "Ján Koščelanský",
+                        name: "Ján Koscelanský",
                         role: "Product Visionary & Strategic Architect",
                         bio: "Product leader driving discovery, UX, and product-market fit. Ex-Accenture digital transformation, ex-OLX scaling. €5M+ revenue architect.",
                         tags: ["$1.5B Valuation", "€5M+ Revenue", "Product-Market Fit", "Digital Transformation"]
@@ -451,7 +451,7 @@ export default function SorrywecanResearchLab() {
                     },
                     {
                         company: "SUDOLABS // CO-FOUNDER & CPO",
-                        name: "Ján Koščelanský",
+                        name: "Ján Koscelanský",
                         role: "Produktový Vizionár & Strategický Architekt",
                         bio: "Produktový leader riešiaci discovery, UX a product-market fit. Ex-Accenture digitálna transformácia, ex-OLX scaling. €5M+ revenue architekt.",
                         tags: ["$1.5B Valuation", "€5M+ Príjmy", "Product-Market Fit", "Digitálna Transformácia"]

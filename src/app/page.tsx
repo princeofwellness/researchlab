@@ -30,7 +30,7 @@ export default function HomePage() {
                     line1: "One Session.",
                     line2: "New Operating System."
                 },
-                description: "We teach professionals and teams to work with AI — not just use it. Practical skills. Real transformation. Leave with something working."
+                description: "We guide creators and teams through AI — navigate where we are, learn what matters, build what works."
             },
             paths: {
                 title: "Two Ways In.",
@@ -39,7 +39,7 @@ export default function HomePage() {
                     title: "Public Sessions",
                     price: "99",
                     duration: "3 hours",
-                    description: "Join professionals from different companies. Learn the fundamentals. Build your first automation. Discuss what matters to your field.",
+                    description: "Join creators and experts from different fields. Navigate. Learn. Build. Discuss what matters.",
                     features: [
                         "Mixed group, diverse perspectives",
                         "Framework + hands-on + discussion",
@@ -120,7 +120,7 @@ export default function HomePage() {
                     line1: "Jedna Session.",
                     line2: "Nový Operačný Systém."
                 },
-                description: "Učíme profesionálov a tímy pracovať s AI — nielen ju používať. Praktické zručnosti. Skutočná transformácia. Odíďte s niečím fungujúcim."
+                description: "Sprevádzame kreatívcov a tímy cez AI — navigujeme, kde sme, učíme, čo záleží, budujeme, čo funguje."
             },
             paths: {
                 title: "Dva Spôsoby.",
@@ -129,7 +129,7 @@ export default function HomePage() {
                     title: "Verejné Sessions",
                     price: "99",
                     duration: "3 hodiny",
-                    description: "Pripojte sa k profesionálom z rôznych firiem. Naučte sa základy. Postavte prvú automatizáciu. Diskutujte o tom, čo je dôležité pre váš odbor.",
+                    description: "Pripojte sa ku kreatívcom a expertom z rôznych odborov. Navigujte. Učte sa. Budujte. Diskutujte o tom, čo záleží.",
                     features: [
                         "Zmiešaná skupina, rôzne perspektívy",
                         "Framework + hands-on + diskusia",

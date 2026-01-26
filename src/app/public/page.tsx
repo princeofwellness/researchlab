@@ -18,7 +18,7 @@ export default function PublicSessionsPage() {
                     line1: "Learn. Create.",
                     line2: "Build."
                 },
-                description: "3 hours with professionals from different companies. You leave with working tools, new mental models, and answers to questions that matter in your field.",
+                description: "3 hours with creators and experts from different fields. You leave with clarity, working tools, and answers to questions that matter.",
                 price: "99",
                 duration: "3 hours",
                 nextSession: "February 2025",
@@ -166,7 +166,7 @@ export default function PublicSessionsPage() {
                     line1: "Nauč sa. Tvor.",
                     line2: "Buduj."
                 },
-                description: "3 hodiny s profesionálmi z rôznych firiem. Odídeš s fungujúcimi nástrojmi, novými mentálnymi modelmi a odpoveďami na otázky, ktoré sú dôležité v tvojom odbore.",
+                description: "3 hodiny s kreatívcami a expertmi z rôznych odborov. Odídeš s jasnosťou, fungujúcimi nástrojmi a odpoveďami na otázky, ktoré záležia.",
                 price: "99",
                 duration: "3 hodiny",
                 nextSession: "Február 2025",

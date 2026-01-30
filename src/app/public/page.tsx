@@ -27,35 +27,35 @@ export default function PublicSessionsPage() {
             },
 
             session: {
-                title: "Three Perspectives.",
-                subtitle: "One Shift.",
+                title: "Taste. Leverage. Clarity.",
+                subtitle: "Three hours. One shift.",
                 parts: [
                     { 
                         num: "01", 
-                        title: "What's Possible", 
+                        title: "Taste", 
                         time: "50 min", 
-                        desc: "Roland opens. Not with slides — with work. Live creative process. What AI looks like when you have taste. What most people miss. What you'll stop missing.",
+                        desc: "Why most AI output is garbage — and what separates the 1% who make something real. Roland opens with live work. Not slides. Creation. What craft looks like when it meets technology.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
-                        title: "What's Real", 
+                        title: "Leverage", 
                         time: "50 min", 
-                        desc: "Jan grounds it. The builder's view. What actually works at scale. What one person can ship now. What's hype, what's not. No theory — just what we're building.",
+                        desc: "What one person can build now. The new math of small teams and unlimited output. Jan shows the builder's reality — what actually ships, where business is going, and the opportunity for those who see it first.",
                         lead: "Ján"
                     },
                     { 
                         num: "03", 
-                        title: "What To Focus On", 
+                        title: "Clarity", 
                         time: "40 min", 
-                        desc: "Roman clarifies. How to think when everything's moving. The questions that cut through noise. What to focus on. What to ignore.",
+                        desc: "How to think when everything moves. Not 50 tools to try — the questions that matter. Roman gives you the framework for every AI decision going forward. What to focus on. What to ignore.",
                         lead: "Roman"
                     },
                     { 
                         num: "04", 
                         title: "Your Questions", 
                         time: "40 min", 
-                        desc: "Your field. Your reality. We answer what matters to you. No script — just conversation.",
+                        desc: "Your field. Your reality. The things you're actually wondering about. No script — just honest answers from people who do this daily.",
                         lead: "All"
                     }
                 ]
@@ -177,35 +177,35 @@ export default function PublicSessionsPage() {
             },
 
             session: {
-                title: "Tri Pohľady.",
-                subtitle: "Jeden Posun.",
+                title: "Vkus. Páka. Jasnosť.",
+                subtitle: "Tri hodiny. Jeden posun.",
                 parts: [
                     { 
                         num: "01", 
-                        title: "Čo Je Možné", 
+                        title: "Vkus", 
                         time: "50 min", 
-                        desc: "Roland otvára. Nie slajdami — prácou. Živý kreatívny proces. Ako vyzerá AI, keď máš vkus. Čo väčšina prehliada. Čo ty prehliadať prestaneš.",
+                        desc: "Prečo je väčšina AI výstupu odpad — a čo odlišuje 1%, ktorí vytvárajú niečo skutočné. Roland otvára živou prácou. Nie slajdy. Tvorba. Ako vyzerá remeslo, keď stretne technológiu.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
-                        title: "Čo Je Reálne", 
+                        title: "Páka", 
                         time: "50 min", 
-                        desc: "Jan to uzemní. Pohľad buildera. Čo naozaj funguje vo veľkom. Čo dnes zvládne jeden človek. Čo je hype, čo nie. Žiadna teória — len čo staviame.",
+                        desc: "Čo jeden človek dokáže postaviť dnes. Nová matematika malých tímov a neobmedzeného výstupu. Jan ukáže realitu buildera — čo sa reálne dodáva, kam smeruje biznis, a príležitosť pre tých, čo to vidia prví.",
                         lead: "Ján"
                     },
                     { 
                         num: "03", 
-                        title: "Na Čo Sa Sústrediť", 
+                        title: "Jasnosť", 
                         time: "40 min", 
-                        desc: "Roman vyjasní. Ako myslieť, keď sa všetko hýbe. Otázky, ktoré prerežú šum. Na čo sa sústrediť. Čo ignorovať.",
+                        desc: "Ako myslieť, keď sa všetko hýbe. Nie 50 nástrojov na vyskúšanie — otázky, ktoré záležia. Roman ti dá framework pre každé AI rozhodnutie. Na čo sa sústrediť. Čo ignorovať.",
                         lead: "Roman"
                     },
                     { 
                         num: "04", 
                         title: "Tvoje Otázky", 
                         time: "40 min", 
-                        desc: "Tvoj odbor. Tvoja realita. Odpovieme na to, čo pre teba záleží. Žiadny skript — len rozhovor.",
+                        desc: "Tvoj odbor. Tvoja realita. Veci, nad ktorými naozaj premýšľaš. Žiadny skript — len úprimné odpovede od ľudí, čo toto robia denne.",
                         lead: "Všetci"
                     }
                 ]

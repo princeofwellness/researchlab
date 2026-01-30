@@ -34,7 +34,7 @@ export default function PublicSessionsPage() {
                         num: "01", 
                         title: "Taste", 
                         time: "50 min", 
-                        desc: "The highest form of creative work in this new era. Roland opens with live work — what's possible when taste meets technology. Not slides. Creation.",
+                        desc: "The highest form of creative work in this new era. What separates good from unforgettable. Roland opens with live work — what's possible when taste meets technology.",
                         lead: "Roland"
                     },
                     { 
@@ -184,7 +184,7 @@ export default function PublicSessionsPage() {
                         num: "01", 
                         title: "Vkus", 
                         time: "50 min", 
-                        desc: "Najvyššia forma kreatívnej práce v tejto novej ére. Roland otvára živou prácou — čo je možné, keď sa vkus stretne s technológiou. Nie slajdy. Tvorba.",
+                        desc: "Najvyššia forma kreatívnej práce v tejto novej ére. Čo odlišuje dobré od nezabudnuteľného. Roland otvára živou prácou — čo je možné, keď sa vkus stretne s technológiou.",
                         lead: "Roland"
                     },
                     { 

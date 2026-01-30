@@ -55,7 +55,7 @@ export default function PublicSessionsPage() {
                         num: "04", 
                         title: "Your Questions", 
                         time: "40 min", 
-                        desc: "Your field. Your reality. The things you're actually wondering about. No script — just honest answers from people who do this daily.",
+                        desc: "Your field. Your reality. The things you're actually wondering about. No script — just honest answers from people who build successful businesses with it daily.",
                         lead: "All"
                     }
                 ]
@@ -205,7 +205,7 @@ export default function PublicSessionsPage() {
                         num: "04", 
                         title: "Tvoje Otázky", 
                         time: "40 min", 
-                        desc: "Tvoj odbor. Tvoja realita. Veci, nad ktorými naozaj premýšľaš. Žiadny skript — len úprimné odpovede od ľudí, čo toto robia denne.",
+                        desc: "Tvoj odbor. Tvoja realita. Veci, nad ktorými naozaj premýšľaš. Žiadny skript — len úprimné odpovede od ľudí, ktorí s tým denne budujú úspešné biznisy.",
                         lead: "Všetci"
                     }
                 ]

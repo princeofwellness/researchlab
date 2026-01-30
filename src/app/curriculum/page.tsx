@@ -64,7 +64,7 @@ export default function CurriculumPage() {
                             title: "Your Questions",
                             time: "40 min",
                             lead: "All",
-                            desc: "Your field. Your reality. The things you're actually wondering about. No script — just honest answers from people who do this daily.",
+                            desc: "Your field. Your reality. The things you're actually wondering about. No script — just honest answers from people who build successful businesses with it daily.",
                             highlight: false
                         }
                     ]
@@ -282,7 +282,7 @@ export default function CurriculumPage() {
                             title: "Tvoje Otázky",
                             time: "40 min",
                             lead: "Všetci",
-                            desc: "Tvoj odbor. Tvoja realita. Odpovieme na to, čo pre teba záleží. Žiadny skript — len rozhovor.",
+                            desc: "Tvoj odbor. Tvoja realita. Veci, nad ktorými naozaj premýšľaš. Žiadny skript — len úprimné odpovede od ľudí, ktorí s tým denne budujú úspešné biznisy.",
                             highlight: false
                         }
                     ]

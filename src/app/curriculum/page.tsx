@@ -40,7 +40,7 @@ export default function CurriculumPage() {
                             title: "Taste",
                             time: "50 min",
                             lead: "Roland",
-                            desc: "Why most AI output is garbage — and what separates the 1% who make something real. Roland opens with live work. Not slides. Creation. What craft looks like when it meets technology.",
+                            desc: "The highest form of creative work in this new era. Roland opens with live work — what's possible when taste meets technology. Not slides. Creation.",
                             highlight: true
                         },
                         {
@@ -258,7 +258,7 @@ export default function CurriculumPage() {
                             title: "Vkus",
                             time: "50 min",
                             lead: "Roland",
-                            desc: "Prečo je väčšina AI výstupu odpad — a čo odlišuje 1%, ktorí vytvárajú niečo skutočné. Roland otvára živou prácou. Nie slajdy. Tvorba. Ako vyzerá remeslo, keď stretne technológiu.",
+                            desc: "Najvyššia forma kreatívnej práce v tejto novej ére. Roland otvára živou prácou — čo je možné, keď sa vkus stretne s technológiou. Nie slajdy. Tvorba.",
                             highlight: true
                         },
                         {

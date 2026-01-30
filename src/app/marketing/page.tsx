@@ -179,15 +179,17 @@ export default function MarketingStrategyPage() {
 
     const math = {
         session: {
-            seats: 30,
+            seats: 40,
+            minSeats: 35,
             price: 99,
-            revenue: 2970
+            revenue: 3960,
+            minRevenue: 3465
         },
         sources: [
-            { source: "Email list", percent: 50, seats: 15 },
-            { source: "Warm leads", percent: 30, seats: 9 },
-            { source: "Friend reshares", percent: 15, seats: 5 },
-            { source: "Organic social", percent: 5, seats: 1 }
+            { source: "Email list", percent: 50, seats: 20 },
+            { source: "Warm leads", percent: 30, seats: 12 },
+            { source: "Friend reshares", percent: 15, seats: 6 },
+            { source: "Organic social", percent: 5, seats: 2 }
         ],
         cost: "€0",
         note: "First session should be filled 100% organically."
@@ -246,7 +248,7 @@ export default function MarketingStrategyPage() {
                         </div>
                         <div className="p-6 bg-white border border-black/10">
                             <h3 className="font-bold mb-2">No Paid Ads Needed</h3>
-                            <p className="text-sm text-black/50">Email + warm leads + friend reshares = 30 seats. Save ads for scaling later.</p>
+                            <p className="text-sm text-black/50">Email + warm leads + friend reshares = 40 seats. Save ads for scaling later.</p>
                         </div>
                         <div className="p-6 bg-white border border-black/10">
                             <h3 className="font-bold mb-2">UGC Comes After</h3>
@@ -355,7 +357,7 @@ export default function MarketingStrategyPage() {
             <section className="py-16 px-6 md:px-12 border-b border-black/10 bg-white">
                 <div className="max-w-5xl mx-auto">
                     <h2 className="text-[10px] font-bold tracking-[0.3em] uppercase text-black/40 mb-2">CHANNEL STRATEGY</h2>
-                    <p className="text-2xl font-serif-instrument italic text-[#0047BB] mb-8">Fill 30 seats with €0 ad spend.</p>
+                    <p className="text-2xl font-serif-instrument italic text-[#0047BB] mb-8">Fill 40 seats with €0 ad spend.</p>
                     
                     <div className="space-y-4">
                         {channels.map((channel, i) => (
@@ -446,10 +448,15 @@ export default function MarketingStrategyPage() {
                     
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div>
-                            <div className="flex items-baseline gap-4 mb-8">
-                                <span className="text-6xl font-serif-instrument">{math.session.seats}</span>
-                                <span className="text-xl text-white/50">seats × €{math.session.price} = </span>
-                                <span className="text-4xl font-serif-instrument">€{math.session.revenue.toLocaleString()}</span>
+                            <div className="flex flex-col gap-2 mb-8">
+                                <div className="flex items-baseline gap-4">
+                                    <span className="text-6xl font-serif-instrument">{math.session.seats}</span>
+                                    <span className="text-xl text-white/50">seats × €{math.session.price} = </span>
+                                    <span className="text-4xl font-serif-instrument">€{math.session.revenue.toLocaleString()}</span>
+                                </div>
+                                <div className="text-sm text-white/50">
+                                    Minimum target: {math.session.minSeats} paid seats = €{math.session.minRevenue.toLocaleString()}
+                                </div>
                             </div>
                             
                             <div className="space-y-4">
@@ -580,6 +587,118 @@ export default function MarketingStrategyPage() {
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </section>
+
+            {/* Video Invite Scripts */}
+            <section className="py-16 px-6 md:px-12 bg-black text-white">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="text-[10px] font-bold tracking-[0.3em] uppercase text-white/40 mb-2">VIDEO INVITE</h2>
+                    <p className="text-2xl font-serif-instrument italic mb-8">Roman records. Roland & Ján reshare.</p>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+                        {/* Option 1 */}
+                        <div className="p-6 border border-white/20 bg-white/5">
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] font-bold tracking-widest text-white/40">OPTION 1</span>
+                                <span className="text-[10px] text-white/30">~45 sec</span>
+                            </div>
+                            <h3 className="font-bold text-lg mb-4">"The Honest One"</h3>
+                            <div className="text-sm text-white/70 space-y-3 italic">
+                                <p>"Look, I'm not going to pretend AI is going to take your job tomorrow.</p>
+                                <p>But something did change. And most people haven't caught up yet.</p>
+                                <p>For the past four months, we've been giving away free toolkits. Thousands of people used them.</p>
+                                <p>Now we're doing something different.</p>
+                                <p>February 26th. One room. 40 people. Three hours.</p>
+                                <p>Me, Roland, Ján — everything we've learned building with AI daily. No theory. No hype. Just what actually works.</p>
+                                <p>It's called THE SHIFT.</p>
+                                <p>40 seats. Link's in bio."</p>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
+                                Tone: Calm confidence. No urgency tricks.
+                            </div>
+                        </div>
+
+                        {/* Option 2 */}
+                        <div className="p-6 border border-white/20 bg-white/5">
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] font-bold tracking-widest text-white/40">OPTION 2</span>
+                                <span className="text-[10px] text-white/30">~35 sec</span>
+                            </div>
+                            <h3 className="font-bold text-lg mb-4">"The Direct One"</h3>
+                            <div className="text-sm text-white/70 space-y-3 italic">
+                                <p>"Three questions.</p>
+                                <p>Do you use AI? Probably.</p>
+                                <p>Do you feel like you're getting everything out of it? Probably not.</p>
+                                <p>Do you have three hours on February 26th?</p>
+                                <p>That's it. That's the pitch.</p>
+                                <p>40 people. One room. Three of us who build with this stuff every day.</p>
+                                <p>We're calling it THE SHIFT.</p>
+                                <p>Not a course. Not a webinar. Just clarity on what changed and how to use it.</p>
+                                <p>Link's below. 40 seats."</p>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
+                                Tone: Punchy. No wasted words.
+                            </div>
+                        </div>
+
+                        {/* Option 3 */}
+                        <div className="p-6 border-2 border-[#0047BB] bg-[#0047BB]/20">
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] font-bold tracking-widest text-[#0047BB]">OPTION 3 — RECOMMENDED</span>
+                                <span className="text-[10px] text-white/30">~50 sec</span>
+                            </div>
+                            <h3 className="font-bold text-lg mb-4">"The Real Talk One"</h3>
+                            <div className="text-sm text-white/70 space-y-3 italic">
+                                <p>"I've been making AI toolkits for four months now.</p>
+                                <p>Free. Every month. Thousands of downloads.</p>
+                                <p>And the question I keep getting is: 'This is great, but... can you just show me how YOU use it?'</p>
+                                <p>So that's what we're doing.</p>
+                                <p>February 26th. Me, Roland, Ján. Three hours. 40 people in a room.</p>
+                                <p>Roland on taste — what separates good from forgettable.<br/>
+                                Ján on leverage — what one person can build now.<br/>
+                                Me on clarity — how to think when everything moves.</p>
+                                <p>No slides. No theory. Just how we actually work.</p>
+                                <p>It's called THE SHIFT. Link's in bio."</p>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
+                                Tone: Personal. Origin story energy.
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Filming Notes */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="p-6 border border-white/10">
+                            <h4 className="text-[10px] font-bold tracking-widest text-white/40 mb-4">FILMING NOTES</h4>
+                            <div className="space-y-2 text-sm text-white/60">
+                                <div className="flex items-start gap-2"><span className="text-white/30">→</span> Phone camera. Eye level. Vertical for reels, horizontal for LinkedIn.</div>
+                                <div className="flex items-start gap-2"><span className="text-white/30">→</span> Face the window. Natural light. No ring light plastic look.</div>
+                                <div className="flex items-start gap-2"><span className="text-white/30">→</span> Quiet room. No music. Your voice only.</div>
+                                <div className="flex items-start gap-2"><span className="text-white/30">→</span> Minimal edit. Jump cuts okay. Don't over-polish.</div>
+                                <div className="flex items-start gap-2"><span className="text-white/30">→</span> Always end with "40 seats" + "link in bio"</div>
+                            </div>
+                        </div>
+
+                        <div className="p-6 border border-white/10">
+                            <h4 className="text-[10px] font-bold tracking-widest text-white/40 mb-4">WHAT ROLAND & JÁN DO</h4>
+                            <div className="space-y-4 text-sm text-white/60">
+                                <div>
+                                    <div className="text-white/80 font-medium mb-1">Reshare Roman's video:</div>
+                                    <div className="text-xs italic">"This is going to be fun. See you there." — Roland</div>
+                                    <div className="text-xs italic">"Been building toward this for months. 40 seats." — Ján</div>
+                                </div>
+                                <div>
+                                    <div className="text-white/80 font-medium mb-1">Keep posting their own content:</div>
+                                    <div className="text-xs">Roland: Process videos, creative work</div>
+                                    <div className="text-xs">Ján: Technical builds, frameworks</div>
+                                </div>
+                                <div>
+                                    <div className="text-white/80 font-medium">DM warm leads personally</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

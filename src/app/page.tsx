@@ -405,6 +405,170 @@ export default function HomePage() {
                 </motion.div>
             </section>
 
+            {/* Video Invite Scripts */}
+            <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0a0a0a] text-white border-b border-white/10">
+                <div className="max-w-5xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-white/40">
+                            {lang === 'en' ? 'VIDEO INVITE SCRIPTS' : 'SCENÁRE PRE VIDEO POZVÁNKU'}
+                        </span>
+                        <h2 className="font-serif-instrument text-3xl md:text-4xl italic mt-2 mb-8">
+                            {lang === 'en' ? 'Roman records. Roland & Ján reshare.' : 'Roman natočí. Roland & Ján zdieľajú.'}
+                        </h2>
+                    </motion.div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="p-6 border border-white/20 bg-white/5"
+                        >
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] font-bold tracking-widest text-white/40">
+                                    {lang === 'en' ? 'OPTION 1' : 'MOŽNOSŤ 1'}
+                                </span>
+                                <span className="text-[10px] text-white/30">~45 sec</span>
+                            </div>
+                            <h3 className="font-bold text-lg mb-4">{lang === 'en' ? '"The Honest One"' : '"Úprimná"'}</h3>
+                            <div className="text-sm text-white/70 space-y-3 italic">
+                                <p>{lang === 'en' 
+                                    ? "\"Look, I'm not going to pretend AI is going to take your job tomorrow." 
+                                    : "\"Pozrite, nebudem predstierať, že AI vám zajtra vezme prácu."}</p>
+                                <p>{lang === 'en' 
+                                    ? "But something did change. And most people haven't caught up yet." 
+                                    : "Ale niečo sa zmenilo. A väčšina ľudí to ešte nedohonila."}</p>
+                                <p>{lang === 'en' 
+                                    ? "February 26th. One room. 40 people. Three hours." 
+                                    : "26. február. Jedna miestnosť. 40 ľudí. Tri hodiny."}</p>
+                                <p>{lang === 'en' 
+                                    ? "It's called THE SHIFT. 40 seats. Link's in bio.\"" 
+                                    : "Volá sa to THE SHIFT. 40 miest. Link v bio.\""}</p>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
+                                {lang === 'en' ? 'Tone: Calm confidence.' : 'Tón: Pokojná sebadôvera.'}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="p-6 border border-white/20 bg-white/5"
+                        >
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] font-bold tracking-widest text-white/40">
+                                    {lang === 'en' ? 'OPTION 2' : 'MOŽNOSŤ 2'}
+                                </span>
+                                <span className="text-[10px] text-white/30">~35 sec</span>
+                            </div>
+                            <h3 className="font-bold text-lg mb-4">{lang === 'en' ? '"The Direct One"' : '"Priama"'}</h3>
+                            <div className="text-sm text-white/70 space-y-3 italic">
+                                <p>{lang === 'en' ? "\"Three questions." : "\"Tri otázky."}</p>
+                                <p>{lang === 'en' 
+                                    ? "Do you use AI? Probably. Do you feel like you're getting everything out of it? Probably not." 
+                                    : "Používate AI? Asi áno. Máte pocit, že z toho vyťažíte všetko? Asi nie."}</p>
+                                <p>{lang === 'en' 
+                                    ? "Do you have three hours on February 26th?" 
+                                    : "Máte tri hodiny 26. februára?"}</p>
+                                <p>{lang === 'en' 
+                                    ? "That's it. That's the pitch. Link's below. 40 seats.\"" 
+                                    : "To je všetko. To je pitch. Link nižšie. 40 miest.\""}</p>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
+                                {lang === 'en' ? 'Tone: Punchy. No wasted words.' : 'Tón: Rázna. Žiadne zbytočné slová.'}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="p-6 border-2 border-[#0047BB] bg-[#0047BB]/20"
+                        >
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] font-bold tracking-widest text-[#0047BB]">
+                                    {lang === 'en' ? 'OPTION 3 — RECOMMENDED' : 'MOŽNOSŤ 3 — ODPORÚČANÁ'}
+                                </span>
+                                <span className="text-[10px] text-white/30">~50 sec</span>
+                            </div>
+                            <h3 className="font-bold text-lg mb-4">{lang === 'en' ? '"The Real Talk One"' : '"Osobná"'}</h3>
+                            <div className="text-sm text-white/70 space-y-3 italic">
+                                <p>{lang === 'en' 
+                                    ? "\"I've been making AI toolkits for four months now. Free. Every month. Thousands of downloads." 
+                                    : "\"Štyri mesiace robím AI toolkity. Zadarmo. Každý mesiac. Tisíce stiahnutí."}</p>
+                                <p>{lang === 'en' 
+                                    ? "And the question I keep getting is: 'Can you just show me how YOU use it?'" 
+                                    : "A otázka, ktorú stále dostávam: 'Môžeš mi ukázať, ako to používaš TY?'"}</p>
+                                <p>{lang === 'en' 
+                                    ? "So that's what we're doing. February 26th. Me, Roland, Ján." 
+                                    : "Takže to je to, čo robíme. 26. február. Ja, Roland, Ján."}</p>
+                                <p>{lang === 'en' 
+                                    ? "No slides. No theory. Just how we actually work. It's called THE SHIFT. Link's in bio.\"" 
+                                    : "Žiadne slajdy. Žiadna teória. Len ako naozaj pracujeme. Volá sa to THE SHIFT. Link v bio.\""}</p>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
+                                {lang === 'en' ? 'Tone: Personal. Origin story energy.' : 'Tón: Osobná. Energia príbehu.'}
+                            </div>
+                        </motion.div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="p-6 border border-white/10">
+                            <h4 className="text-[10px] font-bold tracking-widest text-white/40 mb-4">
+                                {lang === 'en' ? 'FILMING NOTES' : 'POZNÁMKY K NATÁČANIU'}
+                            </h4>
+                            <div className="space-y-2 text-sm text-white/60">
+                                <div className="flex items-start gap-2">
+                                    <span className="text-white/30">→</span>
+                                    <span>{lang === 'en' ? 'Phone camera. Eye level. Vertical for reels.' : 'Kamera telefónu. Na úrovni očí. Vertikálne pre reels.'}</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span className="text-white/30">→</span>
+                                    <span>{lang === 'en' ? 'Face the window. Natural light.' : 'Tvárou k oknu. Prirodzené svetlo.'}</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span className="text-white/30">→</span>
+                                    <span>{lang === 'en' ? 'Quiet room. No music. Your voice only.' : 'Tichá miestnosť. Žiadna hudba. Len váš hlas.'}</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span className="text-white/30">→</span>
+                                    <span>{lang === 'en' ? 'Minimal edit. Don\'t over-polish.' : 'Minimálny strih. Nepreháňajte to.'}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="p-6 border border-white/10">
+                            <h4 className="text-[10px] font-bold tracking-widest text-white/40 mb-4">
+                                {lang === 'en' ? 'WHAT ROLAND & JÁN DO' : 'ČO ROBIA ROLAND & JÁN'}
+                            </h4>
+                            <div className="space-y-4 text-sm text-white/60">
+                                <div>
+                                    <div className="text-white/80 font-medium mb-1">
+                                        {lang === 'en' ? "Reshare Roman's video:" : 'Zdieľajú Romanovo video:'}
+                                    </div>
+                                    <div className="text-xs italic">"This is going to be fun. See you there." — Roland</div>
+                                    <div className="text-xs italic">"Been building toward this for months. 40 seats." — Ján</div>
+                                </div>
+                                <div>
+                                    <div className="text-white/80 font-medium mb-1">
+                                        {lang === 'en' ? 'Keep posting their own content:' : 'Pokračujú vo vlastnom obsahu:'}
+                                    </div>
+                                    <div className="text-xs">{lang === 'en' ? 'Roland: Process videos, creative work' : 'Roland: Procesné videá, kreatívna práca'}</div>
+                                    <div className="text-xs">{lang === 'en' ? 'Ján: Technical builds, frameworks' : 'Ján: Technické buildy, frameworky'}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Proof Stats */}
             <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10">
                 <motion.div

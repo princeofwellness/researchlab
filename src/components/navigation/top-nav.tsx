@@ -19,7 +19,7 @@ export function TopNav({
         { name: "Public", href: "/public" },
         { name: "Corporate", href: "/corporate" },
         { name: "Curriculum", href: "/curriculum" },
-        { name: "Game Plan", href: "/gameplan" },
+        { name: "Marketing", href: "/marketing" },
         { name: "Projections", href: "/projections" },
     ]
 

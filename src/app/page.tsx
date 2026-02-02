@@ -219,7 +219,7 @@ export default function HomePage() {
             } />
 
             {/* Hero */}
-            <section className="min-h-[80vh] flex flex-col justify-center px-6 md:px-12 pt-20 border-b border-black relative overflow-hidden">
+            <section className="min-h-[80vh] flex flex-col justify-center px-6 md:px-12 pt-20 border-b border-black/10 relative overflow-hidden">
                 <div className="absolute inset-0 blueprint-grid opacity-20" />
                 <div className="max-w-5xl mx-auto w-full relative z-10">
                     <motion.div

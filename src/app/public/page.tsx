@@ -10,6 +10,12 @@ export default function PublicSessionsPage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
     const [faqOpen, setFaqOpen] = useState<number | null>(null)
 
+    const partners = [
+        { name: "EYERIM", highlight: true },
+        { name: "SUDOLABS", highlight: false },
+        { name: "SORRYWECAN", highlight: false }
+    ]
+
     const content = {
         en: {
             hero: {
@@ -21,70 +27,52 @@ export default function PublicSessionsPage() {
                 description: "3 hours with people who build with AI daily. No hype. No tutorials. Just clarity on where we are, what's possible, and what you're going to do about it.",
                 price: "99",
                 duration: "3 hours",
-                nextSession: "February 2025",
-                spots: "Limited seats",
+                date: "February 26, 2026",
+                spots: "40 seats",
                 cta: "I'm In"
             },
-
             session: {
                 title: "Taste. Leverage. Clarity.",
-                subtitle: "Three hours. One shift.",
+                subtitle: "Three minds. One shift.",
                 parts: [
                     { 
                         num: "01", 
                         title: "Taste", 
                         time: "50 min", 
-                        desc: "The highest form of creative work in this new era. What separates good from unforgettable. Roland opens with live work — what's possible when taste meets technology.",
+                        desc: "What separates good from unforgettable. Roland opens with live work — what's possible when taste meets technology.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Leverage", 
                         time: "50 min", 
-                        desc: "What one person can build now. The new math of small teams and unlimited output. Jan shows the builder's reality — what actually ships, where business is going, and the opportunity for those who see it first.",
+                        desc: "What one person can build now. Ján shows the builder's reality — what actually ships, and the opportunity for those who see it first.",
                         lead: "Ján"
                     },
                     { 
                         num: "03", 
                         title: "Clarity", 
                         time: "40 min", 
-                        desc: "How to think when everything moves. Not 50 tools to try — the questions that matter. Roman gives you the framework for every AI decision going forward. What to focus on. What to ignore.",
+                        desc: "How to think when everything moves. Roman gives you the framework for every AI decision. What to focus on. What to ignore.",
                         lead: "Roman"
                     },
                     { 
                         num: "04", 
                         title: "Your Questions", 
                         time: "40 min", 
-                        desc: "Your field. Your reality. The things you're actually wondering about. No script — just honest answers from people who build successful businesses with it daily.",
+                        desc: "Your field. Your reality. No script — just honest answers from people who build with AI daily.",
                         lead: "All"
                     }
                 ]
             },
             outcome: {
-                title: "You Leave With Your Eyes Open.",
+                title: "You Leave With",
                 items: [
-                    { title: "Clarity", desc: "Where we are. Where it's going. What that means for you." },
+                    { title: "Clarity", desc: "Where we are. Where it's going. What it means for you." },
                     { title: "Conviction", desc: "You've seen what's possible. You're not waiting anymore." },
-                    { title: "Direction", desc: "Not a to-do list. A question you're going to answer. Something to build or change." },
-                    { title: "Community", desc: "Access to others on the same path. Future sessions. You're not alone." }
+                    { title: "Direction", desc: "Not a to-do list. Something to build or change." },
+                    { title: "Community", desc: "Access to others on the same path." }
                 ]
-            },
-            who: {
-                title: "For People Ready To Move.",
-                profiles: [
-                    "Creatives exploring what AI actually enables",
-                    "Founders who want to move faster with smaller teams",
-                    "Designers tired of generic AI output",
-                    "Anyone building something — and tired of the noise"
-                ],
-                not: {
-                    title: "Not For.",
-                    items: [
-                        "People expecting magic without effort",
-                        "Complete beginners (you should know what ChatGPT is)",
-                        "Spectators"
-                    ]
-                }
             },
             founders: {
                 title: "Three Minds.",
@@ -93,69 +81,47 @@ export default function PublicSessionsPage() {
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
-                        company: "CEO/Founder SORRYWECAN", 
-                        brings: "Runs an award-winning creative studio. Opens with what's possible — and what separates real work from generic output."
+                        company: "SORRYWECAN", 
+                        tagline: "Sets taste. Ignites what's possible."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
-                        company: "CPO/Co-founder SUDOLABS", 
-                        brings: "Built products for US clients, €5M+ revenue. Shows what actually ships — and what one person can do now."
+                        company: "SUDOLABS", 
+                        tagline: "Builds what ships. Systems that run."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Strategic clarity. The framework for deciding what to focus on and what to ignore."
+                        tagline: "Clarity in chaos. Decisions that stick."
                     }
                 ]
             },
             faq: {
                 title: "Questions.",
                 items: [
-                    { 
-                        q: "Do I need technical skills?", 
-                        a: "No. If you can use a browser, you can do this." 
-                    },
-                    { 
-                        q: "What should I bring?", 
-                        a: "Laptop. Internet. That's it." 
-                    },
-                    { 
-                        q: "Why so cheap?", 
-                        a: "We want this accessible. Best marketing is people telling friends." 
-                    },
-                    { 
-                        q: "What makes this different?", 
-                        a: "We're not teaching from slides. We build with AI daily. You'll see real work, not theory." 
-                    },
-                    { 
-                        q: "Can I expense this?", 
-                        a: "Yes. Proper invoices. Most companies approve €99 without questions." 
-                    },
-                    { 
-                        q: "What language is the session in?", 
-                        a: "Slovak primarily. English materials. We adapt." 
-                    },
-                    { 
-                        q: "What if I want more after?", 
-                        a: "Good. That's what the corporate workshops are for. Or join again." 
-                    }
-                ]
-            },
-            logistics: {
-                title: "Details.",
-                items: [
-                    { label: "Where", value: "Bratislava (venue TBA)" },
-                    { label: "When", value: "February 2025" },
-                    { label: "Duration", value: "~3 hours" },
-                    { label: "Size", value: "Limited seats" },
-                    { label: "Price", value: "€99 + VAT" }
-                ]
+                    { q: "Do I need technical skills?", a: "No. If you can use a browser, you can do this." },
+                    { q: "What should I bring?", a: "Laptop. Internet. That's it." },
+                    { q: "Why €99?", a: "We want this accessible. Best marketing is people telling friends." },
+                    { q: "What makes this different?", a: "We're not teaching from slides. We build with AI daily. Real work, not theory." },
+                    { q: "Can I expense this?", a: "Yes. Proper invoices. Most companies approve €99 without questions." },
+                    { q: "What language?", a: "Slovak primarily. English materials. We adapt." },
+                    { q: "What if I want more after?", a: "Good. Corporate workshops for teams. Or join again." }
+                ],
+                details: {
+                    title: "Details",
+                    items: [
+                        { label: "Where", value: "Bratislava" },
+                        { label: "When", value: "February 26, 2026" },
+                        { label: "Duration", value: "3 hours" },
+                        { label: "Price", value: "€99 + VAT" }
+                    ]
+                }
             },
             cta: {
                 headline: "Ready?",
-                description: "First session February 2025. Limited seats.",
+                subline: "40 seats. February 26.",
                 button: "I'm In",
                 note: "Want this for your team?",
                 corporate: "Corporate Workshop"
@@ -171,70 +137,52 @@ export default function PublicSessionsPage() {
                 description: "3 hodiny s ľuďmi, ktorí s AI pracujú denne. Žiadny hype. Žiadne tutoriály. Len jasnosť o tom, kde sme, čo je možné, a čo s tým urobíš.",
                 price: "99",
                 duration: "3 hodiny",
-                nextSession: "Február 2025",
-                spots: "Limitované miesta",
+                date: "26. februára 2026",
+                spots: "40 miest",
                 cta: "Idem Do Toho"
             },
-
             session: {
                 title: "Vkus. Páka. Jasnosť.",
-                subtitle: "Tri hodiny. Jeden posun.",
+                subtitle: "Tri mysle. Jeden posun.",
                 parts: [
                     { 
                         num: "01", 
                         title: "Vkus", 
                         time: "50 min", 
-                        desc: "Najvyššia forma kreatívnej práce v tejto novej ére. Čo odlišuje dobré od nezabudnuteľného. Roland otvára živou prácou — čo je možné, keď sa vkus stretne s technológiou.",
+                        desc: "Čo odlišuje dobré od nezabudnuteľného. Roland otvára živou prácou — čo je možné, keď sa vkus stretne s technológiou.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Páka", 
                         time: "50 min", 
-                        desc: "Čo jeden človek dokáže postaviť dnes. Nová matematika malých tímov a neobmedzeného výstupu. Jan ukáže realitu buildera — čo sa reálne dodáva, kam smeruje biznis, a príležitosť pre tých, čo to vidia prví.",
+                        desc: "Čo jeden človek dokáže postaviť dnes. Ján ukáže realitu buildera — čo sa reálne dodáva, a príležitosť pre tých, čo to vidia prví.",
                         lead: "Ján"
                     },
                     { 
                         num: "03", 
                         title: "Jasnosť", 
                         time: "40 min", 
-                        desc: "Ako myslieť, keď sa všetko hýbe. Nie 50 nástrojov na vyskúšanie — otázky, ktoré záležia. Roman ti dá framework pre každé AI rozhodnutie. Na čo sa sústrediť. Čo ignorovať.",
+                        desc: "Ako myslieť, keď sa všetko hýbe. Roman ti dá framework pre každé AI rozhodnutie. Na čo sa sústrediť. Čo ignorovať.",
                         lead: "Roman"
                     },
                     { 
                         num: "04", 
                         title: "Tvoje Otázky", 
                         time: "40 min", 
-                        desc: "Tvoj odbor. Tvoja realita. Veci, nad ktorými naozaj premýšľaš. Žiadny skript — len úprimné odpovede od ľudí, ktorí s tým denne budujú úspešné biznisy.",
+                        desc: "Tvoj odbor. Tvoja realita. Žiadny skript — len úprimné odpovede od ľudí, čo s AI budujú denne.",
                         lead: "Všetci"
                     }
                 ]
             },
             outcome: {
-                title: "Odídeš S Otvorenými Očami.",
+                title: "Odídeš S",
                 items: [
                     { title: "Jasnosť", desc: "Kde sme. Kam to smeruje. Čo to znamená pre teba." },
                     { title: "Presvedčenie", desc: "Videl si, čo je možné. Už nečakáš." },
-                    { title: "Smer", desc: "Nie to-do list. Otázka, na ktorú budeš hľadať odpoveď. Niečo, čo postavíš alebo zmeníš." },
-                    { title: "Komunita", desc: "Prístup k ostatným na tej istej ceste. Budúce sessions. Nie si v tom sám." }
+                    { title: "Smer", desc: "Nie to-do list. Niečo, čo postavíš alebo zmeníš." },
+                    { title: "Komunita", desc: "Prístup k ostatným na tej istej ceste." }
                 ]
-            },
-            who: {
-                title: "Pre Ľudí Pripravených Ísť Ďalej.",
-                profiles: [
-                    "Kreatívci skúmajúci, čo AI naozaj umožňuje",
-                    "Zakladatelia, čo chcú ísť rýchlejšie s menšími tímami",
-                    "Dizajnéri unavení z generického AI výstupu",
-                    "Ktokoľvek, kto niečo buduje — a je unavený zo šumu"
-                ],
-                not: {
-                    title: "Nie Pre.",
-                    items: [
-                        "Ľudí čakajúcich mágiu bez námahy",
-                        "Úplných začiatočníkov (vedz, čo je ChatGPT)",
-                        "Divákov"
-                    ]
-                }
             },
             founders: {
                 title: "Tri Mysle.",
@@ -243,69 +191,47 @@ export default function PublicSessionsPage() {
                     { 
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
-                        company: "CEO/Zakladateľ SORRYWECAN", 
-                        brings: "Vedie ocenené kreatívne štúdio. Otvára tým, čo je možné — a čo odlišuje skutočnú prácu od generického výstupu."
+                        company: "SORRYWECAN", 
+                        tagline: "Nastavuje vkus. Zapaľuje možnosti."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "Architekt", 
-                        company: "CPO/Spoluzakladateľ SUDOLABS", 
-                        brings: "Budoval produkty pre US klientov, €5M+ tržby. Ukáže, čo sa reálne dodáva — a čo dnes zvládne jeden človek."
+                        company: "SUDOLABS", 
+                        tagline: "Stavia, čo beží. Systémy, čo fungujú."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "Navigátor", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        brings: "Strategická jasnosť. Framework na rozhodovanie, na čo sa sústrediť a čo ignorovať."
+                        tagline: "Jasnosť v chaose. Rozhodnutia, čo držia."
                     }
                 ]
             },
             faq: {
                 title: "Otázky.",
                 items: [
-                    { 
-                        q: "Potrebujem technické zručnosti?", 
-                        a: "Nie. Ak vieš používať prehliadač, zvládneš to." 
-                    },
-                    { 
-                        q: "Čo si mám priniesť?", 
-                        a: "Laptop. Internet. To je všetko." 
-                    },
-                    { 
-                        q: "Prečo tak lacno?", 
-                        a: "Chceme, aby to bolo dostupné. Najlepší marketing je, keď ľudia povedia kamarátom." 
-                    },
-                    { 
-                        q: "Čo je na tom iné?", 
-                        a: "Neučíme zo slajdov. S AI pracujeme denne. Uvidíš reálnu prácu, nie teóriu." 
-                    },
-                    { 
-                        q: "Môžem si to preplatiť?", 
-                        a: "Áno. Riadne faktúry. Väčšina firiem schváli €99 bez otázok." 
-                    },
-                    { 
-                        q: "V akom jazyku je session?", 
-                        a: "Primárne slovensky. Anglické materiály. Prispôsobíme sa." 
-                    },
-                    { 
-                        q: "Čo ak budem chcieť viac?", 
-                        a: "Dobre. Na to sú firemné workshopy. Alebo príď znova." 
-                    }
-                ]
-            },
-            logistics: {
-                title: "Detaily.",
-                items: [
-                    { label: "Kde", value: "Bratislava (miesto bude upresnené)" },
-                    { label: "Kedy", value: "Február 2025" },
-                    { label: "Trvanie", value: "~3 hodiny" },
-                    { label: "Veľkosť", value: "Limitované miesta" },
-                    { label: "Cena", value: "€99 + DPH" }
-                ]
+                    { q: "Potrebujem technické zručnosti?", a: "Nie. Ak vieš používať prehliadač, zvládneš to." },
+                    { q: "Čo si mám priniesť?", a: "Laptop. Internet. To je všetko." },
+                    { q: "Prečo €99?", a: "Chceme, aby to bolo dostupné. Najlepší marketing je, keď ľudia povedia kamarátom." },
+                    { q: "Čo je na tom iné?", a: "Neučíme zo slajdov. S AI pracujeme denne. Reálna práca, nie teória." },
+                    { q: "Môžem si to preplatiť?", a: "Áno. Riadne faktúry. Väčšina firiem schváli €99 bez otázok." },
+                    { q: "V akom jazyku?", a: "Primárne slovensky. Anglické materiály. Prispôsobíme sa." },
+                    { q: "Čo ak budem chcieť viac?", a: "Dobre. Firemné workshopy pre tímy. Alebo príď znova." }
+                ],
+                details: {
+                    title: "Detaily",
+                    items: [
+                        { label: "Kde", value: "Bratislava" },
+                        { label: "Kedy", value: "26. februára 2026" },
+                        { label: "Trvanie", value: "3 hodiny" },
+                        { label: "Cena", value: "€99 + DPH" }
+                    ]
+                }
             },
             cta: {
                 headline: "Pripravený?",
-                description: "Prvá session február 2025. Limitované miesta.",
+                subline: "40 miest. 26. február.",
                 button: "Idem Do Toho",
                 note: "Chceš toto pre svoj tím?",
                 corporate: "Firemný Workshop"
@@ -326,14 +252,13 @@ export default function PublicSessionsPage() {
                 </button>
             } />
 
-            {/* Hero */}
-            <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-20 border-b border-black relative overflow-hidden">
-                <div className="absolute inset-0 blueprint-grid opacity-20" />
+            <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-20 relative overflow-hidden">
+                <div className="absolute inset-0 blueprint-grid opacity-10" />
                 <div className="max-w-5xl mx-auto w-full relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="mb-8"
+                        className="mb-6"
                     >
                         <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB]">
                             {t.hero.label}
@@ -344,9 +269,9 @@ export default function PublicSessionsPage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif-instrument text-[13vw] md:text-[9vw] leading-[0.9] tracking-tighter mb-10"
+                        className="font-serif-instrument text-[13vw] md:text-[9vw] leading-[0.9] tracking-tighter mb-8"
                     >
-                        {t.hero.title.line1} <br />
+                        {t.hero.title.line1}<br />
                         <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
                     </motion.h1>
 
@@ -354,7 +279,7 @@ export default function PublicSessionsPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="text-lg md:text-xl font-inter leading-relaxed text-black/60 max-w-2xl mb-12"
+                        className="text-lg md:text-xl leading-relaxed text-black/60 max-w-2xl mb-10"
                     >
                         {t.hero.description}
                     </motion.p>
@@ -374,185 +299,127 @@ export default function PublicSessionsPage() {
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                             <a 
                                 href="mailto:hello@sorrywecan.com?subject=THE SHIFT - I'm In"
-                                className="bg-[#0047BB] text-white px-10 py-5 font-inter font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
+                                className="bg-[#0047BB] text-white px-10 py-5 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
                             >
                                 {t.hero.cta}
                             </a>
                             <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
-                                <span className="text-[#0047BB]">{t.hero.nextSession}</span>
+                                <span className="text-[#0047BB]">{t.hero.date}</span>
                                 <span className="text-black/30">|</span>
                                 <span className="text-black/40">{t.hero.spots}</span>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-6 pt-4">
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">
+                                Trusted by
+                            </span>
+                            <div className="flex items-center gap-4">
+                                {partners.map((partner) => (
+                                    <span 
+                                        key={partner.name}
+                                        className={cn(
+                                            "text-xs font-bold tracking-wide",
+                                            partner.highlight ? "text-[#0047BB]" : "text-black/30"
+                                        )}
+                                    >
+                                        {partner.name}
+                                    </span>
+                                ))}
                             </div>
                         </div>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Session Structure */}
-            <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10 bg-white">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-5xl mx-auto"
-                >
-                    <div className="mb-16 text-center">
-                        <h2 className="font-serif-instrument text-5xl md:text-6xl italic">
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-white border-b border-black/10">
+                <div className="max-w-5xl mx-auto">
+                    <div className="mb-12 text-center">
+                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic">
                             {t.session.title}
                         </h2>
-                        <p className="font-serif-instrument text-3xl md:text-4xl italic text-[#0047BB] mt-2">
-                            {t.session.subtitle}
-                        </p>
+                        <p className="text-lg text-[#0047BB] mt-2">{t.session.subtitle}</p>
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                         {t.session.parts.map((part: any, i: number) => (
                             <motion.div 
                                 key={i}
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
+                                transition={{ delay: i * 0.05 }}
                                 className={cn(
-                                    "flex flex-col md:flex-row gap-6 p-6 md:p-8 border transition-all",
+                                    "flex flex-col md:flex-row gap-4 p-5 md:p-6 border transition-all",
                                     i === 0 
                                         ? "border-[#0047BB] bg-[#0047BB]/5" 
                                         : "border-black/10 hover:border-[#0047BB]/30"
                                 )}
                             >
-                                <div className="flex md:flex-col items-center md:items-start gap-4 md:gap-2 md:w-24 shrink-0">
+                                <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-20 shrink-0">
                                     <span className="text-[10px] font-bold text-[#0047BB]">{part.num}</span>
                                     <span className="text-[10px] text-black/30">{part.time}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <h4 className="text-xl md:text-2xl font-serif-instrument italic mb-3">{part.title}</h4>
-                                    <p className="text-black/60 leading-relaxed">{part.desc}</p>
+                                    <h4 className="text-lg font-serif-instrument italic mb-2">{part.title}</h4>
+                                    <p className="text-sm text-black/60 leading-relaxed">{part.desc}</p>
                                 </div>
-                                <div className="md:w-24 shrink-0 md:text-right">
+                                <div className="md:w-20 shrink-0 md:text-right">
                                     <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">{part.lead}</span>
                                 </div>
                             </motion.div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
             </section>
 
-            {/* What You Leave With */}
-            <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10 bg-black text-white">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-5xl mx-auto"
-                >
-                    <h2 className="font-serif-instrument text-4xl md:text-5xl italic text-center mb-16">
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-black text-white">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="font-serif-instrument text-3xl md:text-4xl italic text-center mb-12">
                         {t.outcome.title}
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {t.outcome.items.map((item: any, i: number) => (
-                            <motion.div 
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="p-8 border border-white/10 hover:border-[#0047BB]/50 transition-all"
-                            >
-                                <h4 className="text-2xl font-serif-instrument italic text-[#0047BB] mb-3">{item.title}</h4>
-                                <p className="text-white/60 leading-relaxed">{item.desc}</p>
-                            </motion.div>
+                            <div key={i} className="p-5 border border-white/10 hover:border-[#0047BB]/50 transition-all">
+                                <h4 className="text-lg font-serif-instrument italic text-[#0047BB] mb-2">{item.title}</h4>
+                                <p className="text-sm text-white/50">{item.desc}</p>
+                            </div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
             </section>
 
-            {/* Who It's For */}
-            <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-5xl mx-auto"
-                >
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="font-serif-instrument text-3xl md:text-4xl italic mb-8">{t.who.title}</h3>
-                            <div className="space-y-4">
-                                {t.who.profiles.map((profile: string, i: number) => (
-                                    <div key={i} className="flex items-start gap-4">
-                                        <div className="w-2 h-2 rounded-full bg-[#0047BB] mt-2 shrink-0" />
-                                        <span className="text-lg text-black/70">{profile}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="p-8 border border-black/20 bg-black/5">
-                            <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-red-600 mb-6">{t.who.not.title}</h3>
-                            <div className="space-y-4">
-                                {t.who.not.items.map((item: string, i: number) => (
-                                    <div key={i} className="flex items-start gap-4">
-                                        <span className="text-red-500 font-bold mt-0.5">✕</span>
-                                        <span className="text-black/60">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-            </section>
-
-            {/* Three Minds */}
-            <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0047BB] text-white border-b border-white/10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-5xl mx-auto"
-                >
-                    <div className="text-center mb-16">
-                        <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">{t.founders.title}</h2>
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-[#0047BB] text-white">
+                <div className="max-w-5xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic mb-2">{t.founders.title}</h2>
                         <p className="text-white/60">{t.founders.subtitle}</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {t.founders.cards.map((card: any, i: number) => (
-                            <motion.div 
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="p-6 border border-white/20 bg-white/5 space-y-4 hover:bg-white/10 transition-all"
-                            >
-                                <div>
-                                    <h4 className="text-xl font-serif-instrument italic">{card.name}</h4>
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-white/60 mt-1">{card.role}</p>
-                                    <p className="text-[10px] text-white/40">{card.company}</p>
-                                </div>
-                                <p className="text-sm text-white/70 leading-relaxed">{card.brings}</p>
-                            </motion.div>
+                            <div key={i} className="p-6 border border-white/20 bg-white/5 hover:bg-white/10 transition-all">
+                                <h4 className="text-xl font-serif-instrument italic">{card.name}</h4>
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1">{card.role}</p>
+                                <p className="text-[10px] text-white/30 mb-3">{card.company}</p>
+                                <p className="text-sm text-white/70 italic">"{card.tagline}"</p>
+                            </div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
             </section>
 
-            {/* FAQ */}
-            <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10 bg-white">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-3xl mx-auto"
-                >
-                    <h2 className="font-serif-instrument text-3xl italic text-center mb-12">{t.faq.title}</h2>
-                    <div className="space-y-3">
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-white">
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="font-serif-instrument text-3xl italic text-center mb-10">{t.faq.title}</h2>
+                    <div className="space-y-2 mb-12">
                         {t.faq.items.map((item: any, i: number) => (
                             <div key={i} className="border border-black/10">
                                 <button
                                     onClick={() => setFaqOpen(faqOpen === i ? null : i)}
-                                    className="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-black/5 transition-colors"
+                                    className="w-full px-5 py-4 flex justify-between items-center text-left hover:bg-black/5 transition-colors"
                                 >
-                                    <span className="font-medium pr-4">{item.q}</span>
-                                    <span className={cn("text-[#0047BB] font-bold text-xl transition-transform", faqOpen === i && "rotate-45")}>+</span>
+                                    <span className="font-medium text-sm pr-4">{item.q}</span>
+                                    <span className={cn("text-[#0047BB] font-bold transition-transform", faqOpen === i && "rotate-45")}>+</span>
                                 </button>
                                 <AnimatePresence>
                                     {faqOpen === i && (
@@ -562,69 +429,50 @@ export default function PublicSessionsPage() {
                                             exit={{ height: 0, opacity: 0 }}
                                             className="overflow-hidden"
                                         >
-                                            <p className="px-6 pb-5 text-black/60 leading-relaxed">{item.a}</p>
+                                            <p className="px-5 pb-4 text-sm text-black/60">{item.a}</p>
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
                             </div>
                         ))}
                     </div>
-                </motion.div>
-            </section>
 
-            {/* Logistics */}
-            <section className="py-16 px-6 md:px-12 border-b border-black/10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-3xl mx-auto"
-                >
-                    <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB] mb-8 text-center">{t.logistics.title}</h3>
-                    <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-                        {t.logistics.items.map((item: any, i: number) => (
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 p-6 bg-black/5 border border-black/10">
+                        {t.faq.details.items.map((item: any, i: number) => (
                             <div key={i} className="text-center">
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-1">{item.label}</p>
-                                <p className="font-medium">{item.value}</p>
+                                <p className="text-sm font-medium">{item.value}</p>
                             </div>
                         ))}
                     </div>
-                </motion.div>
-            </section>
-
-            {/* Final CTA */}
-            <section className="py-32 bg-black text-white text-center">
-                <div className="max-w-2xl mx-auto px-6">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    >
-                        <h2 className="font-serif-instrument text-6xl md:text-7xl italic mb-6">{t.cta.headline}</h2>
-                        <p className="text-lg text-white/50 mb-10">{t.cta.description}</p>
-                        <a
-                            href="mailto:hello@sorrywecan.com?subject=THE SHIFT - I'm In"
-                            className="bg-[#0047BB] text-white px-12 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
-                        >
-                            {t.cta.button}
-                        </a>
-                        <div className="mt-10 flex items-center justify-center gap-3">
-                            <span className="text-sm text-white/40">{t.cta.note}</span>
-                            <Link 
-                                href="/corporate" 
-                                className="text-sm font-bold text-[#0047BB] hover:text-white transition-colors"
-                            >
-                                {t.cta.corporate} →
-                            </Link>
-                        </div>
-                    </motion.div>
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="py-12 text-center border-t border-black/10">
+            <section className="py-24 md:py-32 bg-black text-white text-center">
+                <div className="max-w-2xl mx-auto px-6">
+                    <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">{t.cta.headline}</h2>
+                    <p className="text-lg text-white/50 mb-8">{t.cta.subline}</p>
+                    <a
+                        href="mailto:hello@sorrywecan.com?subject=THE SHIFT - I'm In"
+                        className="bg-[#0047BB] text-white px-12 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
+                    >
+                        {t.cta.button}
+                    </a>
+                    <div className="mt-8 flex items-center justify-center gap-3">
+                        <span className="text-sm text-white/40">{t.cta.note}</span>
+                        <Link 
+                            href="/corporate" 
+                            className="text-sm font-bold text-[#0047BB] hover:text-white transition-colors"
+                        >
+                            {t.cta.corporate} →
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <footer className="py-10 text-center border-t border-black/10">
                 <p className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-20">
-                    SORRYWECAN // RESEARCH LAB // 2025
+                    SORRYWECAN // RESEARCH LAB // 2026
                 </p>
             </footer>
         </div>

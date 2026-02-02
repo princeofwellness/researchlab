@@ -21,6 +21,7 @@ export function TopNav({
         { name: "Curriculum", href: "/curriculum" },
         { name: "Marketing", href: "/marketing" },
         { name: "Projections", href: "/projections" },
+        { name: "Feedbacks", href: "/enhancements" },
     ]
 
     const isDark = variant === "dark"

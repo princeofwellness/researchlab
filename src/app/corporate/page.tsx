@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
 
@@ -10,7 +11,14 @@ export default function CorporatePage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
     const [faqOpen, setFaqOpen] = useState<number | null>(null)
 
-    const partners = ["TATRA BANKA", "META", "SENNHEISER", "SAMSUNG"]
+    const partners = [
+        { name: "Meta", logo: "/logos/meta.png" },
+        { name: "Tatra Banka", logo: "/logos/tatrabanka.jpg" },
+        { name: "VUB Banka", logo: "/logos/vub.png" },
+        { name: "Sennheiser", logo: "/logos/sennheiser.png" },
+        { name: "Forbes", logo: "/logos/forbes.png" },
+        { name: "Audi", logo: "/logos/audi.svg" }
+    ]
 
     const content = {
         en: {
@@ -322,18 +330,25 @@ export default function CorporatePage() {
                             <span className="text-[10px] font-bold uppercase tracking-widest text-black/40">{t.hero.capacity}</span>
                         </div>
 
-                        <div className="flex items-center gap-6 pt-4">
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6">
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 shrink-0">
                                 {lang === 'en' ? 'Trusted by' : 'Dôverujú nám'}
                             </span>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-8 flex-wrap">
                                 {partners.map((partner) => (
-                                    <span 
-                                        key={partner}
-                                        className="text-[11px] font-bold tracking-[0.15em] text-black/40 hover:text-black/70 transition-colors"
+                                    <div 
+                                        key={partner.name}
+                                        className="relative h-6 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                                     >
-                                        {partner}
-                                    </span>
+                                        <Image
+                                            src={partner.logo}
+                                            alt={partner.name}
+                                            height={24}
+                                            width={100}
+                                            className="h-6 w-auto object-contain"
+                                            style={{ maxWidth: '100px' }}
+                                        />
+                                    </div>
                                 ))}
                             </div>
                         </div>

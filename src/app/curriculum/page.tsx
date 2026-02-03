@@ -22,7 +22,7 @@ export default function CurriculumPage() {
                 corporate: {
                     label: "DEEP DIVE",
                     subtitle: "Corporate Workshop",
-                    price: "€6,900",
+                    price: "€5,900",
                     duration: "4-5 hours"
                 }
             },
@@ -187,7 +187,7 @@ export default function CurriculumPage() {
                         { label: "Duration", value: "4-5 hours" },
                         { label: "Location", value: "Your office or our space" },
                         { label: "Includes", value: "Materials, follow-up session, community access" },
-                        { label: "Investment", value: "€6,900 + VAT" }
+                        { label: "Investment", value: "€5,900 + VAT" }
                     ]
                 },
                 guides: {
@@ -232,7 +232,7 @@ export default function CurriculumPage() {
                 corporate: {
                     label: "DEEP DIVE",
                     subtitle: "Firemný Workshop",
-                    price: "€6 900",
+                    price: "€5 900",
                     duration: "4-5 hodín"
                 }
             },
@@ -397,7 +397,7 @@ export default function CurriculumPage() {
                         { label: "Trvanie", value: "4-5 hodín" },
                         { label: "Miesto", value: "Vaša kancelária alebo náš priestor" },
                         { label: "Zahŕňa", value: "Materiály, follow-up session, prístup ku komunite" },
-                        { label: "Investícia", value: "€6 900 + DPH" }
+                        { label: "Investícia", value: "€5 900 + DPH" }
                     ]
                 },
                 guides: {

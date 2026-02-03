@@ -92,7 +92,7 @@ export default function ProjectionsPage() {
     const [marketing, setMarketing] = useState(200)
 
     const [publicPrice, setPublicPrice] = useState(99)
-    const [corporatePrice, setCorporatePrice] = useState(6900)
+    const [corporatePrice, setCorporatePrice] = useState(5900)
 
     const [pessPublicSessions, setPessPublicSessions] = useState(1)
     const [pessPublicAttendees, setPessPublicAttendees] = useState(25)

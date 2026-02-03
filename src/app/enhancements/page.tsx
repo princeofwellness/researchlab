@@ -255,7 +255,7 @@ export default function EnhancementsPage() {
 
                                         <div className="p-6 border border-white/10">
                                             <h4 className="text-lg font-bold mb-3">Corporate Workshop</h4>
-                                            <p className="text-white/60">Bring it to your whole team. €6,900 + VAT.</p>
+                                            <p className="text-white/60">Bring it to your whole team. €5,900 + VAT.</p>
                                             <p className="text-xs text-white/30 mt-2">Already exists → link to /corporate</p>
                                         </div>
 
@@ -422,7 +422,7 @@ export default function EnhancementsPage() {
                                     </div>
                                     <div className="p-8 border border-[#0047BB] bg-[#0047BB]/10">
                                         <span className="text-[10px] font-bold tracking-widest text-[#0047BB]">CORPORATE WORKSHOP</span>
-                                        <p className="text-5xl font-serif-instrument mt-2">€6,900</p>
+                                        <p className="text-5xl font-serif-instrument mt-2">€5,900</p>
                                         <p className="text-sm text-white/50 mt-2">+ VAT / 10-15 people / 4-5 hours</p>
                                         <p className="text-xs text-[#0047BB] mt-4">Current price - keeping for now</p>
                                     </div>
@@ -444,7 +444,7 @@ export default function EnhancementsPage() {
                                             </div>
                                             <div className="p-4 border border-[#0047BB] bg-[#0047BB]/10">
                                                 <p className="text-[10px] font-bold tracking-widest text-[#0047BB]">STANDARD</p>
-                                                <p className="text-2xl font-serif-instrument mt-2">€6,900</p>
+                                                <p className="text-2xl font-serif-instrument mt-2">€5,900</p>
                                                 <p className="text-xs text-white/40 mt-2">10-15 people / 5 hours / 3 facilitators</p>
                                             </div>
                                             <div className="p-4 border border-white/10">

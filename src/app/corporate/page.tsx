@@ -21,7 +21,7 @@ export default function CorporatePage() {
                     line2: "New Operating System."
                 },
                 description: "Three practitioners. Three lenses. Your challenges. We don't present — we think together, live, on the problems keeping you stuck.",
-                price: "6,900",
+                price: "5,900",
                 duration: "4-5 hours",
                 capacity: "10-15 people",
                 cta: "Book Discovery Call"
@@ -122,7 +122,7 @@ export default function CorporatePage() {
                         { label: "Duration", value: "4-5 hours" },
                         { label: "Team size", value: "10-15 people" },
                         { label: "Location", value: "We come to you" },
-                        { label: "Investment", value: "€6,900 + VAT" }
+                        { label: "Investment", value: "€5,900 + VAT" }
                     ]
                 }
             },
@@ -141,7 +141,7 @@ export default function CorporatePage() {
                     line2: "Nový Operačný Systém."
                 },
                 description: "Traja praktici. Tri pohľady. Vaše výzvy. Neprezentujeme — myslíme spolu, naživo, nad problémami, ktoré vás brzdia.",
-                price: "6 900",
+                price: "5 900",
                 duration: "4-5 hodín",
                 capacity: "10-15 ľudí",
                 cta: "Rezervovať Discovery Call"
@@ -242,7 +242,7 @@ export default function CorporatePage() {
                         { label: "Trvanie", value: "4-5 hodín" },
                         { label: "Veľkosť tímu", value: "10-15 ľudí" },
                         { label: "Miesto", value: "Prídeme k vám" },
-                        { label: "Investícia", value: "€6 900 + DPH" }
+                        { label: "Investícia", value: "€5 900 + DPH" }
                     ]
                 }
             },

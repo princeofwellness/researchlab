@@ -114,9 +114,9 @@ export default function HomePage() {
                 </button>
             } />
 
-            <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-20 relative overflow-hidden">
+            <section className="min-h-[100vh] flex flex-col justify-between px-6 md:px-12 pt-24 pb-12 relative overflow-hidden">
                 <div className="absolute inset-0 blueprint-grid opacity-10" />
-                <div className="max-w-5xl mx-auto w-full relative z-10">
+                <div className="max-w-5xl mx-auto w-full relative z-10 flex-1 flex flex-col justify-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -135,12 +135,14 @@ export default function HomePage() {
                     >
                         {t.hero.subline}
                     </motion.p>
+                </div>
 
+                <div className="max-w-5xl mx-auto w-full relative z-10">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="mt-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8"
+                        className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8"
                     >
                         <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 shrink-0">
                             {t.trust.label}

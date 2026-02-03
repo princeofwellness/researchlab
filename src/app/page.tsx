@@ -17,7 +17,8 @@ export default function HomePage() {
                 title: {
                     line1: "One Session.",
                     line2: "New Operating System."
-                }
+                },
+                subline: "What changed. What's possible. What's next."
             },
             trust: {
                 label: "Trusted by"
@@ -56,7 +57,8 @@ export default function HomePage() {
                 title: {
                     line1: "Jedna Session.",
                     line2: "Nový Operačný Systém."
-                }
+                },
+                subline: "Čo sa zmenilo. Čo je možné. Čo ďalej."
             },
             trust: {
                 label: "Dôverujú nám"
@@ -134,6 +136,15 @@ export default function HomePage() {
                         {t.hero.title.line1}<br />
                         <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
                     </motion.h1>
+
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                        className="mt-8 text-lg md:text-xl text-black/60 tracking-wide"
+                    >
+                        {t.hero.subline}
+                    </motion.p>
 
                     <motion.div
                         initial={{ opacity: 0 }}

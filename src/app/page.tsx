@@ -13,7 +13,6 @@ export default function HomePage() {
     const content = {
         en: {
             hero: {
-                eyebrow: "The world shifted. Most haven't noticed.",
                 title: {
                     line1: "One Session.",
                     line2: "New Operating System."
@@ -53,7 +52,6 @@ export default function HomePage() {
         },
         sk: {
             hero: {
-                eyebrow: "Svet sa zmenil. Väčšina si to nevšimla.",
                 title: {
                     line1: "Jedna Session.",
                     line2: "Nový Operačný Systém."
@@ -119,14 +117,6 @@ export default function HomePage() {
             <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 pt-20 relative overflow-hidden">
                 <div className="absolute inset-0 blueprint-grid opacity-10" />
                 <div className="max-w-5xl mx-auto w-full relative z-10">
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-sm md:text-base text-black/40 mb-4"
-                    >
-                        {t.hero.eyebrow}
-                    </motion.p>
-
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}

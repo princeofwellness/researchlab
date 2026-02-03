@@ -122,7 +122,7 @@ export default function HomePage() {
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-sm md:text-base text-black/50 mb-6 max-w-md"
+                        className="text-sm md:text-base text-black/40 mb-4"
                     >
                         {t.hero.eyebrow}
                     </motion.p>
@@ -131,17 +131,17 @@ export default function HomePage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif-instrument text-[15vw] md:text-[11vw] leading-[0.85] tracking-tighter"
+                        className="font-serif-instrument text-[13vw] md:text-[9vw] leading-[0.9] tracking-tighter"
                     >
                         {t.hero.title.line1}<br />
                         <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
                     </motion.h1>
 
                     <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="mt-8 text-lg md:text-xl text-black/60 tracking-wide"
+                        className="mt-6 text-xl md:text-2xl text-black/70 font-light"
                     >
                         {t.hero.subline}
                     </motion.p>

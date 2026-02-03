@@ -10,11 +10,7 @@ export default function CorporatePage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
     const [faqOpen, setFaqOpen] = useState<number | null>(null)
 
-    const partners = [
-        { name: "EYERIM", highlight: true },
-        { name: "SUDOLABS", highlight: false },
-        { name: "SORRYWECAN", highlight: false }
-    ]
+    const partners = ["TATRA BANKA", "META", "SENNHEISER", "SAMSUNG"]
 
     const content = {
         en: {
@@ -82,34 +78,34 @@ export default function CorporatePage() {
                 ]
             },
             founders: {
-                title: "Three Minds.",
-                subtitle: "Not consultants. Practitioners who built what they teach.",
+                title: "Three Lenses.",
+                subtitle: "Not consultants. Practitioners who think together on your problems.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
-                        role: "The Creative", 
+                        role: "TASTE", 
                         company: "SORRYWECAN", 
-                        tagline: "Sets taste. Ignites what's possible."
+                        tagline: "What separates good from generic. Why your output looks like everyone else's."
                     },
                     { 
                         name: "Ján Koscelanský", 
-                        role: "The Architect", 
+                        role: "LEVERAGE", 
                         company: "SUDOLABS", 
-                        tagline: "Builds what ships. Systems that run."
+                        tagline: "What to build, what to skip. What one person can do now."
                     },
                     { 
                         name: "Roman Pii Wagner", 
-                        role: "The Navigator", 
+                        role: "CLARITY", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        tagline: "Clarity in chaos. Decisions that stick."
+                        tagline: "How to prioritize when everything feels urgent. The decision framework."
                     }
                 ]
             },
             proof: {
                 stats: [
-                    { value: "4+", label: "hours saved per person weekly" },
-                    { value: "30", label: "days to measurable change" },
-                    { value: "94%", label: "would recommend to peers" }
+                    { value: "3", label: "practitioners thinking together" },
+                    { value: "90+", label: "minutes on YOUR challenges" },
+                    { value: "30", label: "day follow-up included" }
                 ]
             },
             faq: {
@@ -202,34 +198,34 @@ export default function CorporatePage() {
                 ]
             },
             founders: {
-                title: "Tri Mysle.",
-                subtitle: "Nie konzultanti. Praktici, ktorí postavili to, čo učia.",
+                title: "Tri Pohľady.",
+                subtitle: "Nie konzultanti. Praktici, ktorí myslia spolu nad vašimi problémami.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
-                        role: "Kreatívec", 
+                        role: "VKUS", 
                         company: "SORRYWECAN", 
-                        tagline: "Nastavuje vkus. Zapaľuje možnosti."
+                        tagline: "Čo odlišuje dobré od generického. Prečo váš výstup vyzerá ako u všetkých."
                     },
                     { 
                         name: "Ján Koscelanský", 
-                        role: "Architekt", 
+                        role: "PÁKA", 
                         company: "SUDOLABS", 
-                        tagline: "Stavia, čo beží. Systémy, čo fungujú."
+                        tagline: "Čo stavať, čo preskočiť. Čo jeden človek zvládne dnes."
                     },
                     { 
                         name: "Roman Pii Wagner", 
-                        role: "Navigátor", 
+                        role: "JASNOSŤ", 
                         company: "TRANSFORMATIONAL DESIGN", 
-                        tagline: "Jasnosť v chaose. Rozhodnutia, čo držia."
+                        tagline: "Ako prioritizovať, keď všetko pôsobí urgentne. Rozhodovací framework."
                     }
                 ]
             },
             proof: {
                 stats: [
-                    { value: "4+", label: "hodiny ušetrené na osobu týždenne" },
-                    { value: "30", label: "dní do merateľnej zmeny" },
-                    { value: "94%", label: "by odporučilo kolegom" }
+                    { value: "3", label: "praktici myslia spolu" },
+                    { value: "90+", label: "minút na VAŠE výzvy" },
+                    { value: "30", label: "dňový follow-up v cene" }
                 ]
             },
             faq: {
@@ -328,18 +324,15 @@ export default function CorporatePage() {
 
                         <div className="flex items-center gap-6 pt-4">
                             <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">
-                                Trusted by
+                                {lang === 'en' ? 'Trusted by' : 'Dôverujú nám'}
                             </span>
-                            <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-6">
                                 {partners.map((partner) => (
                                     <span 
-                                        key={partner.name}
-                                        className={cn(
-                                            "text-xs font-bold tracking-wide",
-                                            partner.highlight ? "text-[#0047BB]" : "text-black/30"
-                                        )}
+                                        key={partner}
+                                        className="text-[11px] font-bold tracking-[0.15em] text-black/40 hover:text-black/70 transition-colors"
                                     >
-                                        {partner.name}
+                                        {partner}
                                     </span>
                                 ))}
                             </div>
@@ -362,6 +355,17 @@ export default function CorporatePage() {
                             ))}
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="py-12 px-6 md:px-12 bg-[#0047BB]/5 border-y border-[#0047BB]/20">
+                <div className="max-w-3xl mx-auto text-center">
+                    <p className="text-lg md:text-xl font-serif-instrument italic text-black/70 leading-relaxed">
+                        {lang === 'en' 
+                            ? "One consultant gives you one perspective. We give you three — live, in the room, thinking together on YOUR problem. That's where insights happen that no single expert could see alone."
+                            : "Jeden konzultant vám dá jednu perspektívu. My vám dáme tri — naživo, v miestnosti, myslíme spolu nad VAŠÍM problémom. Tam vznikajú insights, ktoré žiaden jednotlivý expert nevidí sám."
+                        }
+                    </p>
                 </div>
             </section>
 

@@ -24,7 +24,7 @@ export default function CorporatePage() {
                     line1: "Your Team.",
                     line2: "New Operating System."
                 },
-                description: "We work through YOUR challenges together. Not a presentation — a facilitated session that turns problems into working frameworks.",
+                description: "Three practitioners. Three lenses. Your challenges. We don't present — we think together, live, on the problems keeping you stuck.",
                 price: "6,900",
                 duration: "4-5 hours",
                 capacity: "10-15 people",
@@ -40,45 +40,45 @@ export default function CorporatePage() {
                 ]
             },
             framework: {
-                title: "Three Phases. One Transformation.",
-                subtitle: "We facilitate. You create.",
+                title: "Three Lenses. One Session.",
+                subtitle: "We think together. You leave clear.",
                 phases: [
                     { 
                         num: "01", 
-                        title: "Vision", 
-                        time: "60 min",
-                        desc: "Where we are, where it's going, how to see what others don't. Taste over templates.",
-                        lead: "Roland"
+                        title: "The Shift", 
+                        time: "30 min",
+                        desc: "The world changed. Here's what we're seeing — in your industry, in creative work, in what's possible now. All three of us. Short. Sharp. Uncomfortable.",
+                        lead: "All"
                     },
                     { 
                         num: "02", 
-                        title: "Direction", 
-                        time: "60 min",
-                        desc: "Where AI creates leverage, where it creates noise. Decision rules you can use.",
-                        lead: "Roman"
+                        title: "The Frameworks", 
+                        time: "60-75 min",
+                        desc: "Taste: what separates good from generic. Leverage: what to build, what to skip. Clarity: how to prioritize when everything feels urgent.",
+                        lead: "Roland → Ján → Roman"
                     },
                     { 
                         num: "03", 
-                        title: "Integration", 
-                        time: "90 min",
-                        desc: "Design the workflow, build the system, ship something that runs.",
-                        lead: "Ján"
+                        title: "Your Reality", 
+                        time: "90-120 min",
+                        desc: "Your challenges. Three perspectives. We look at the same problem through different lenses — live. This is where insights happen that prevent six-figure mistakes.",
+                        lead: "Facilitated"
                     }
                 ],
                 closing: {
-                    title: "Commitment",
-                    time: "50 min",
-                    desc: "Lock it in. Roles, standards, next steps. The change sticks.",
+                    title: "The Clarity",
+                    time: "30 min",
+                    desc: "Each of us shares what we saw. What to prioritize. What to ignore. You leave knowing what to do.",
                     lead: "All"
                 }
             },
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "Personal AI Stack", desc: "Configured. Working. Ready for Monday." },
-                    { title: "Automation Blueprints", desc: "3+ workflows for your actual processes." },
-                    { title: "Thinking Frameworks", desc: "Mental models for any problem." },
-                    { title: "30-Day Action Plan", desc: "Concrete next steps. Follow-up call included." }
+                    { title: "Shared Vision", desc: "Your team aligned on what AI means for your business." },
+                    { title: "Priorities Mapped", desc: "What to build, what to skip, where to start first." },
+                    { title: "Decision Framework", desc: "How to evaluate every AI opportunity going forward." },
+                    { title: "30-Day Follow-up", desc: "We check in. Digital toolkit included. You're not alone." }
                 ]
             },
             founders: {
@@ -115,10 +115,10 @@ export default function CorporatePage() {
             faq: {
                 title: "Questions.",
                 items: [
-                    { q: "Is this just prompt training?", a: "No. Prompting is maybe 15%. This is about thinking, tools, automation, and imagination. We teach you to work with AI, not just talk to it." },
-                    { q: "Our industry is specific. Will it apply?", a: "Yes. The principles are universal. We've worked across creative, tech, finance, telco. Application differs, fundamentals don't." },
-                    { q: "Why half a day, not longer?", a: "Focus beats duration. People can't stay sharp for 8 hours. A tight session creates more change than a full day of diminishing attention." },
-                    { q: "What's the ROI?", a: "Conservative: 4+ hours saved per person weekly. For a 15-person team, that's €100k+ annually. Plus better decisions, faster execution." }
+                    { q: "Is this just prompt training?", a: "No. Prompting is maybe 10%. This is about seeing differently — what to build, what to skip, how to prioritize. Three perspectives on your actual challenges." },
+                    { q: "Our industry is specific. Will it apply?", a: "The problems are more similar than you think. We've worked across creative, tech, finance, telco. The frameworks are universal. The application is yours." },
+                    { q: "Why half a day, not longer?", a: "Focus beats duration. We're not here to fill time — we're here to shift how you see. That happens in hours, not days." },
+                    { q: "What's the ROI?", a: "Hard to measure in hours saved. Easier to see in wrong paths avoided, right priorities found, and decisions your team can finally make with confidence." }
                 ],
                 details: {
                     title: "Details",
@@ -144,7 +144,7 @@ export default function CorporatePage() {
                     line1: "Váš Tím.",
                     line2: "Nový Operačný Systém."
                 },
-                description: "Pracujeme na VAŠICH výzvach spolu. Nie prezentácia — facilitovaná session, ktorá premení vaše problémy na fungujúce frameworky.",
+                description: "Traja praktici. Tri pohľady. Vaše výzvy. Neprezentujeme — myslíme spolu, naživo, nad problémami, ktoré vás brzdia.",
                 price: "6 900",
                 duration: "4-5 hodín",
                 capacity: "10-15 ľudí",
@@ -160,45 +160,45 @@ export default function CorporatePage() {
                 ]
             },
             framework: {
-                title: "Tri Fázy. Jedna Transformácia.",
-                subtitle: "My facilitujeme. Vy tvoríte.",
+                title: "Tri Pohľady. Jedna Session.",
+                subtitle: "Myslíme spolu. Odídete s jasnosťou.",
                 phases: [
                     { 
                         num: "01", 
-                        title: "Vízia", 
-                        time: "60 min",
-                        desc: "Kde sme, kam to smeruje, ako vidieť to, čo ostatní nevidia. Vkus nad šablónami.",
-                        lead: "Roland"
+                        title: "The Shift", 
+                        time: "30 min",
+                        desc: "Svet sa zmenil. Tu je, čo vidíme — vo vašom odvetví, v kreatívnej práci, v tom, čo je teraz možné. Všetci traja. Krátko. Ostro. Nepríjemne.",
+                        lead: "Všetci"
                     },
                     { 
                         num: "02", 
-                        title: "Smer", 
-                        time: "60 min",
-                        desc: "Kde AI vytvára páku, kde vytvára šum. Rozhodovacie pravidlá, ktoré použijete.",
-                        lead: "Roman"
+                        title: "Frameworky", 
+                        time: "60-75 min",
+                        desc: "Vkus: čo odlišuje dobré od generického. Páka: čo stavať, čo preskočiť. Jasnosť: ako prioritizovať, keď všetko pôsobí urgentne.",
+                        lead: "Roland → Ján → Roman"
                     },
                     { 
                         num: "03", 
-                        title: "Integrácia", 
-                        time: "90 min",
-                        desc: "Navrhnite workflow, postavte systém, dodajte niečo, čo beží.",
-                        lead: "Ján"
+                        title: "Vaša Realita", 
+                        time: "90-120 min",
+                        desc: "Vaše výzvy. Tri perspektívy. Pozeráme sa na ten istý problém cez rôzne optiky — naživo. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám.",
+                        lead: "Facilitované"
                     }
                 ],
                 closing: {
-                    title: "Záväzok",
-                    time: "50 min",
-                    desc: "Uzamknite to. Roly, štandardy, ďalšie kroky. Zmena zostane.",
+                    title: "Jasnosť",
+                    time: "30 min",
+                    desc: "Každý z nás zdieľa, čo videl. Čo prioritizovať. Čo ignorovať. Odídete s vedomím, čo robiť.",
                     lead: "Všetci"
                 }
             },
             outcome: {
                 title: "Odchádzate S",
                 items: [
-                    { title: "Osobný AI Stack", desc: "Nakonfigurovaný. Fungujúci. Pripravený na pondelok." },
-                    { title: "Blueprinty Automatizácie", desc: "3+ workflow pre vaše skutočné procesy." },
-                    { title: "Frameworky Myslenia", desc: "Mentálne modely pre akýkoľvek problém." },
-                    { title: "30-Dňový Akčný Plán", desc: "Konkrétne ďalšie kroky. Follow-up hovor zahrnutý." }
+                    { title: "Spoločná Vízia", desc: "Váš tím zladený na tom, čo AI znamená pre váš biznis." },
+                    { title: "Zmapované Priority", desc: "Čo stavať, čo preskočiť, kde začať." },
+                    { title: "Rozhodovací Framework", desc: "Ako vyhodnotiť každú AI príležitosť do budúcna." },
+                    { title: "30-Dňový Follow-up", desc: "Ozveme sa. Digitálny toolkit v cene. Nie ste v tom sami." }
                 ]
             },
             founders: {
@@ -235,10 +235,10 @@ export default function CorporatePage() {
             faq: {
                 title: "Otázky.",
                 items: [
-                    { q: "Je toto len prompt tréning?", a: "Nie. Promptovanie je možno 15%. Toto je o myslení, nástrojoch, automatizácii a imaginácii. Učíme vás pracovať s AI, nie sa len s ňou rozprávať." },
-                    { q: "Naše odvetvie je špecifické. Bude to aplikovateľné?", a: "Áno. Princípy sú univerzálne. Pracovali sme naprieč kreatívou, tech, financiami, telco. Aplikácia sa líši, fundamenty nie." },
-                    { q: "Prečo pol dňa, nie dlhšie?", a: "Fokus prekonáva trvanie. Ľudia nedokážu zostať ostrí 8 hodín. Tesná session vytvorí viac zmeny ako celý deň klesajúcej pozornosti." },
-                    { q: "Aké je ROI?", a: "Konzervatívne: 4+ hodiny ušetrené na osobu týždenne. Pre 15-členný tím je to €100k+ ročne. Plus lepšie rozhodnutia, rýchlejšia exekúcia." }
+                    { q: "Je toto len prompt tréning?", a: "Nie. Promptovanie je možno 10%. Toto je o inom pohľade — čo stavať, čo preskočiť, ako prioritizovať. Tri perspektívy na vaše skutočné výzvy." },
+                    { q: "Naše odvetvie je špecifické. Bude to aplikovateľné?", a: "Problémy sú podobnejšie, než si myslíte. Pracovali sme naprieč kreatívou, tech, financiami, telco. Frameworky sú univerzálne. Aplikácia je vaša." },
+                    { q: "Prečo pol dňa, nie dlhšie?", a: "Fokus prekonáva trvanie. Nie sme tu, aby sme vyplnili čas — sme tu, aby sme zmenili to, ako vidíte. To sa deje za hodiny, nie dni." },
+                    { q: "Aké je ROI?", a: "Ťažko merateľné v ušetrených hodinách. Ľahšie viditeľné v vyhnutých zlých cestách, nájdených správnych prioritách a rozhodnutiach, ktoré váš tím konečne dokáže spraviť s istotou." }
                 ],
                 details: {
                     title: "Detaily",

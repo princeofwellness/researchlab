@@ -121,50 +121,42 @@ export default function CurriculumPage() {
             corporate: {
                 header: {
                     label: "DEEP DIVE",
-                    title: "Your Team. Your Challenges. Real Solutions.",
-                    description: "4-5 hours with your team. We facilitate, you create. Turn your actual problems into working AI workflows. Leave with systems that run."
+                    title: "Your Team. Your Challenges. Three Perspectives.",
+                    description: "4-5 hours with your team. Three practitioners thinking together — live — on the problems keeping you stuck. Not a presentation. A session that changes how you see."
                 },
                 session: {
-                    title: "One Day. Full Transformation.",
+                    title: "Three Lenses. One Session.",
                     phases: [
                         {
                             num: "01",
-                            title: "The Wake Up",
-                            time: "45 min",
-                            lead: "Roland",
-                            desc: "Where AI actually is. What your competitors might be doing. The uncomfortable truths about what's changing. Live demonstrations that shift perspective.",
+                            title: "The Shift",
+                            time: "30 min",
+                            lead: "All",
+                            desc: "The world changed. Here's what we're seeing — in your industry, in creative work, in what's possible now. All three of us. Short. Sharp. Uncomfortable.",
                             highlight: false
                         },
                         {
                             num: "02",
-                            title: "Your Reality",
-                            time: "60 min",
-                            lead: "All",
-                            desc: "We map YOUR workflows. Your bottlenecks. Your opportunities. What's costing you time and money right now. Collaborative session — your team leads, we guide.",
-                            highlight: true
+                            title: "The Frameworks",
+                            time: "60-75 min",
+                            lead: "Roland → Ján → Roman",
+                            desc: "Taste: what separates good from generic. Leverage: what to build, what to skip. Clarity: how to prioritize when everything feels urgent. Mental models you'll use forever.",
+                            highlight: false
                         },
                         {
                             num: "03",
-                            title: "The Build",
-                            time: "90 min",
-                            lead: "Ján",
-                            desc: "Hands-on implementation. We build real solutions together. Your team learns by doing. Personal AI stacks configured. Workflows automated. Not demos — your actual work.",
+                            title: "Your Reality",
+                            time: "90-120 min",
+                            lead: "Facilitated",
+                            desc: "Your challenges. Three perspectives. We look at the same problem through different lenses — live. This is where insights happen that prevent six-figure mistakes.",
                             highlight: true
                         },
                         {
                             num: "04",
-                            title: "The Framework",
-                            time: "45 min",
-                            lead: "Roman",
-                            desc: "Decision frameworks for the future. How to evaluate new tools. When to automate, when not to. The questions your team should ask before any AI decision.",
-                            highlight: false
-                        },
-                        {
-                            num: "05",
-                            title: "Action Plan",
+                            title: "The Clarity",
                             time: "30 min",
                             lead: "All",
-                            desc: "30-day roadmap. Who does what. Measurable goals. Follow-up session scheduled. You leave with clarity and commitment.",
+                            desc: "Each of us shares what we saw. What to prioritize. What to ignore. You leave knowing what to do — not confused about what comes next.",
                             highlight: false
                         }
                     ]
@@ -172,20 +164,20 @@ export default function CurriculumPage() {
                 outcome: {
                     title: "Your Team Leaves With.",
                     items: [
-                        { title: "Working Systems", desc: "Not concepts — actual workflows running on your problems." },
-                        { title: "Shared Language", desc: "Your team aligned on AI strategy. No more confusion." },
-                        { title: "Personal Stacks", desc: "Each person equipped with tools configured for their role." },
-                        { title: "30-Day Plan", desc: "Clear roadmap with owners, deadlines, and measurable outcomes." },
-                        { title: "Follow-Up", desc: "30-day check-in session included. We ensure it sticks." }
+                        { title: "Shared Vision", desc: "Your team aligned on what AI means for your business. Same language. Same priorities." },
+                        { title: "Priorities Mapped", desc: "What to build, what to skip, where to start. The paths not worth taking — identified." },
+                        { title: "Decision Framework", desc: "How to evaluate every AI opportunity going forward. Not just today — for years." },
+                        { title: "Digital Toolkit", desc: "Frameworks, prompts, resources. Keeps updating. You're not abandoned." },
+                        { title: "30-Day Follow-Up", desc: "We check in. See what stuck. Answer what's new. You're not alone." }
                     ]
                 },
                 who: {
-                    title: "Built For Teams Who Want To Move.",
+                    title: "Built For Teams Who Need Clarity.",
                     profiles: [
-                        "Marketing teams automating content workflows",
-                        "Product teams integrating AI into development",
-                        "Operations teams eliminating manual processes",
-                        "Leadership teams building AI-first culture"
+                        "Leadership teams who know AI matters but not where to start",
+                        "Creative teams whose output is becoming generic",
+                        "Operations teams drowning in tools that don't connect",
+                        "Any team that's busy with AI but not seeing results"
                     ]
                 },
                 details: {
@@ -200,25 +192,25 @@ export default function CurriculumPage() {
                 },
                 guides: {
                     title: "Your Facilitators.",
-                    subtitle: "Same three minds. Deeper dive.",
+                    subtitle: "Three practitioners. Three lenses. One session.",
                     cards: [
                         {
                             name: "Roland Vraník",
                             role: "The Creative",
                             company: "CEO/Founder SORRYWECAN",
-                            focus: "Opens minds. Shows what's possible. Sets the bar for quality."
+                            focus: "The TASTE lens. What separates good from generic. Why your output looks like everyone else's — and what to do about it."
                         },
                         {
                             name: "Ján Koscelanský",
                             role: "The Architect",
                             company: "CPO/Co-founder SUDOLABS",
-                            focus: "Leads the build. Makes it real. Ensures everyone leaves with working tools."
+                            focus: "The LEVERAGE lens. What to build, what to skip. What one person can do now that took teams of ten before."
                         },
                         {
                             name: "Roman Pii Wagner",
                             role: "The Navigator",
                             company: "TRANSFORMATIONAL DESIGN",
-                            focus: "Creates the framework. Ensures decisions stick beyond the workshop."
+                            focus: "The CLARITY lens. How to prioritize when everything feels urgent. The decision framework for every AI choice."
                         }
                     ]
                 },
@@ -339,50 +331,42 @@ export default function CurriculumPage() {
             corporate: {
                 header: {
                     label: "DEEP DIVE",
-                    title: "Tvoj Tím. Tvoje Výzvy. Skutočné Riešenia.",
-                    description: "4-5 hodín s tvojím tímom. My facilitujeme, vy tvoríte. Premeňte vaše skutočné problémy na fungujúce AI workflow. Odídete so systémami, ktoré bežia."
+                    title: "Váš Tím. Vaše Výzvy. Tri Perspektívy.",
+                    description: "4-5 hodín s vaším tímom. Traja praktici myslia spolu — naživo — nad problémami, ktoré vás brzdia. Nie prezentácia. Session, ktorá zmení to, ako vidíte."
                 },
                 session: {
-                    title: "Jeden Deň. Plná Transformácia.",
+                    title: "Tri Pohľady. Jedna Session.",
                     phases: [
                         {
                             num: "01",
-                            title: "Prebudenie",
-                            time: "45 min",
-                            lead: "Roland",
-                            desc: "Kde AI naozaj je. Čo možno robia vaši konkurenti. Nepríjemné pravdy o tom, čo sa mení. Živé ukážky, ktoré posunú perspektívu.",
+                            title: "The Shift",
+                            time: "30 min",
+                            lead: "Všetci",
+                            desc: "Svet sa zmenil. Tu je, čo vidíme — vo vašom odvetví, v kreatívnej práci, v tom, čo je teraz možné. Všetci traja. Krátko. Ostro. Nepríjemne.",
                             highlight: false
                         },
                         {
                             num: "02",
-                            title: "Vaša Realita",
-                            time: "60 min",
-                            lead: "Všetci",
-                            desc: "Mapujeme VAŠE workflow. Vaše úzke miesta. Vaše príležitosti. Čo vás práve stojí čas a peniaze. Kolaboratívna session — váš tím vedie, my navigujeme.",
-                            highlight: true
+                            title: "Frameworky",
+                            time: "60-75 min",
+                            lead: "Roland → Ján → Roman",
+                            desc: "Vkus: čo odlišuje dobré od generického. Páka: čo stavať, čo preskočiť. Jasnosť: ako prioritizovať, keď všetko pôsobí urgentne. Mentálne modely, ktoré použijete navždy.",
+                            highlight: false
                         },
                         {
                             num: "03",
-                            title: "Stavba",
-                            time: "90 min",
-                            lead: "Ján",
-                            desc: "Hands-on implementácia. Staviame skutočné riešenia spolu. Váš tím sa učí praxou. Osobné AI stacky nakonfigurované. Workflow zautomatizované. Nie demá — vaša skutočná práca.",
+                            title: "Vaša Realita",
+                            time: "90-120 min",
+                            lead: "Facilitované",
+                            desc: "Vaše výzvy. Tri perspektívy. Pozeráme sa na ten istý problém cez rôzne optiky — naživo. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám.",
                             highlight: true
                         },
                         {
                             num: "04",
-                            title: "Framework",
-                            time: "45 min",
-                            lead: "Roman",
-                            desc: "Rozhodovacie rámce pre budúcnosť. Ako hodnotiť nové nástroje. Kedy automatizovať, kedy nie. Otázky, ktoré by váš tím mal klásť pred každým AI rozhodnutím.",
-                            highlight: false
-                        },
-                        {
-                            num: "05",
-                            title: "Akčný Plán",
+                            title: "Jasnosť",
                             time: "30 min",
                             lead: "Všetci",
-                            desc: "30-dňová roadmapa. Kto čo robí. Merateľné ciele. Naplánovaná follow-up session. Odchádzate s jasnosťou a záväzkom.",
+                            desc: "Každý z nás zdieľa, čo videl. Čo prioritizovať. Čo ignorovať. Odídete s vedomím, čo robiť — nie zmätení, čo bude ďalej.",
                             highlight: false
                         }
                     ]
@@ -390,20 +374,20 @@ export default function CurriculumPage() {
                 outcome: {
                     title: "Váš Tím Odíde S.",
                     items: [
-                        { title: "Fungujúce Systémy", desc: "Nie koncepty — skutočné workflow bežiace na vašich problémoch." },
-                        { title: "Spoločný Jazyk", desc: "Váš tím zladený na AI stratégii. Žiadne ďalšie zmätky." },
-                        { title: "Osobné Stacky", desc: "Každý vybavený nástrojmi nakonfigurovanými pre jeho rolu." },
-                        { title: "30-Dňový Plán", desc: "Jasná roadmapa s vlastníkmi, deadlinami a merateľnými výsledkami." },
-                        { title: "Follow-Up", desc: "30-dňová check-in session v cene. Zabezpečíme, že to zostane." }
+                        { title: "Spoločná Vízia", desc: "Váš tím zladený na tom, čo AI znamená pre váš biznis. Spoločný jazyk. Spoločné priority." },
+                        { title: "Zmapované Priority", desc: "Čo stavať, čo preskočiť, kde začať. Cesty, ktoré nestoja za to — identifikované." },
+                        { title: "Rozhodovací Framework", desc: "Ako vyhodnotiť každú AI príležitosť do budúcna. Nie len dnes — na roky." },
+                        { title: "Digitálny Toolkit", desc: "Frameworky, prompty, zdroje. Priebežne sa aktualizuje. Nie ste opustení." },
+                        { title: "30-Dňový Follow-Up", desc: "Ozveme sa. Pozrieme, čo zostalo. Odpovieme na nové otázky. Nie ste v tom sami." }
                     ]
                 },
                 who: {
-                    title: "Pre Tímy, Ktoré Chcú Ísť Ďalej.",
+                    title: "Pre Tímy, Ktoré Potrebujú Jasnosť.",
                     profiles: [
-                        "Marketingové tímy automatizujúce content workflow",
-                        "Produktové tímy integrujúce AI do vývoja",
-                        "Operačné tímy eliminujúce manuálne procesy",
-                        "Leadership tímy budujúce AI-first kultúru"
+                        "Leadership tímy, ktoré vedia, že AI je dôležité, ale nevedia kde začať",
+                        "Kreatívne tímy, ktorých výstup sa stáva generickým",
+                        "Operačné tímy topiace sa v nástrojoch, ktoré sa neprepájajú",
+                        "Akýkoľvek tím zaneprázdnený s AI, ale bez viditeľných výsledkov"
                     ]
                 },
                 details: {
@@ -418,25 +402,25 @@ export default function CurriculumPage() {
                 },
                 guides: {
                     title: "Vaši Facilitátori.",
-                    subtitle: "Tie isté tri mysle. Hlbší ponor.",
+                    subtitle: "Traja praktici. Tri pohľady. Jedna session.",
                     cards: [
                         {
                             name: "Roland Vraník",
                             role: "Kreatívec",
                             company: "CEO/Zakladateľ SORRYWECAN",
-                            focus: "Otvára mysle. Ukazuje, čo je možné. Nastavuje latku kvality."
+                            focus: "Optika VKUSU. Čo odlišuje dobré od generického. Prečo váš výstup vyzerá ako všetci ostatní — a čo s tým."
                         },
                         {
                             name: "Ján Koscelanský",
                             role: "Architekt",
                             company: "CPO/Spoluzakladateľ SUDOLABS",
-                            focus: "Vedie stavbu. Robí to skutočným. Zabezpečí, že každý odíde s fungujúcimi nástrojmi."
+                            focus: "Optika PÁKY. Čo stavať, čo preskočiť. Čo jeden človek zvládne dnes, na čo predtým treba tím desiatich."
                         },
                         {
                             name: "Roman Pii Wagner",
                             role: "Navigátor",
                             company: "TRANSFORMATIONAL DESIGN",
-                            focus: "Vytvára framework. Zabezpečí, že rozhodnutia vydržia aj po workshope."
+                            focus: "Optika JASNOSTI. Ako prioritizovať, keď všetko pôsobí urgentne. Rozhodovací framework pre každú AI voľbu."
                         }
                     ]
                 },

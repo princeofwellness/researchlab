@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
 
@@ -93,9 +94,13 @@ export default function HomePage() {
     const t = content[lang]
 
     const partners = [
-        { name: "EYERIM", highlight: true },
-        { name: "SUDOLABS", highlight: false },
-        { name: "SORRYWECAN", highlight: false }
+        { name: "Meta", logo: "/logos/meta.png" },
+        { name: "Tatra Banka", logo: "/logos/tatrabanka.jpg" },
+        { name: "Raiffeisen", logo: "/logos/raiffeisen.png" },
+        { name: "VUB Banka", logo: "/logos/vub.png" },
+        { name: "Sennheiser", logo: "/logos/sennheiser.png" },
+        { name: "Forbes", logo: "/logos/forbes.png" },
+        { name: "Audi", logo: "/logos/audi.svg" }
     ]
 
     return (
@@ -134,22 +139,26 @@ export default function HomePage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="mt-16 flex items-center gap-8"
+                        className="mt-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8"
                     >
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 shrink-0">
                             {t.trust.label}
                         </span>
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-6 flex-wrap">
                             {partners.map((partner) => (
-                                <span 
+                                <div 
                                     key={partner.name}
-                                    className={cn(
-                                        "text-sm font-bold tracking-wide",
-                                        partner.highlight ? "text-[#0047BB]" : "text-black/30"
-                                    )}
+                                    className="relative h-5 w-auto grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                                 >
-                                    {partner.name}
-                                </span>
+                                    <Image
+                                        src={partner.logo}
+                                        alt={partner.name}
+                                        height={20}
+                                        width={80}
+                                        className="h-5 w-auto object-contain"
+                                        style={{ maxWidth: '80px' }}
+                                    />
+                                </div>
                             ))}
                         </div>
                     </motion.div>

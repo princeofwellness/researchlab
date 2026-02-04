@@ -272,11 +272,11 @@ export default function PublicOnePager() {
                         </div>
                         <div className="grid grid-cols-4 gap-4">
                             {t.session.parts.map((part, i) => (
-                                <div key={i} className={`p-6 border-2 ${i === 0 ? 'border-[#0047BB] bg-[#0047BB]/5' : 'border-black/10'}`}>
+                                <div key={i} className={`p-6 border-2 flex flex-col h-full ${i === 0 ? 'border-[#0047BB] bg-[#0047BB]/5' : 'border-black/10'}`}>
                                     <p className="text-[12px] font-bold text-black/30">{part.num}</p>
                                     <p className="font-serif text-[32px] italic mt-1">{part.title}</p>
                                     <p className="text-[12px] text-black/40 mt-1">{part.time}</p>
-                                    <p className="text-[14px] text-black/60 mt-4 leading-relaxed">{part.desc}</p>
+                                    <p className="text-[14px] text-black/60 mt-4 leading-relaxed flex-grow">{part.desc}</p>
                                     <p className="text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mt-4">{part.lead}</p>
                                 </div>
                             ))}

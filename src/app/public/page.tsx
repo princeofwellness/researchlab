@@ -122,7 +122,7 @@ export default function PublicSessionsPage() {
                         { label: "Where", value: "SORRYWECAN Studio", subvalue: "Pečnianska 7, Bratislava" },
                         { label: "When", value: "February 26, 2026", subvalue: "Wednesday" },
                         { label: "Duration", value: "3 hours", subvalue: "9:00 — 12:00" },
-                        { label: "Price", value: "€99", subvalue: "+ VAT" }
+                        { label: "Price", value: "from €99", subvalue: "per person" }
                     ]
                 }
             },
@@ -245,7 +245,7 @@ export default function PublicSessionsPage() {
                         { label: "Kde", value: "SORRYWECAN Studio", subvalue: "Pečnianska 7, Bratislava" },
                         { label: "Kedy", value: "26. februára 2026", subvalue: "Streda" },
                         { label: "Trvanie", value: "3 hodiny", subvalue: "9:00 — 12:00" },
-                        { label: "Cena", value: "€99", subvalue: "+ DPH" }
+                        { label: "Cena", value: "od €99", subvalue: "na osobu" }
                     ]
                 }
             },

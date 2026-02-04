@@ -19,10 +19,7 @@ export function TopNav({
     const navItems = [
         { name: "Public", href: "/public" },
         { name: "Corporate", href: "/corporate" },
-        { name: "Curriculum", href: "/curriculum" },
-        { name: "Marketing", href: "/marketing" },
-        { name: "Projections", href: "/projections" },
-        { name: "Feedbacks", href: "/enhancements" },
+        { name: "Lab", href: "/lab" },
     ]
 
     const isDark = variant === "dark"

@@ -23,10 +23,11 @@ export default function HomePage() {
                 label: "Trusted by"
             },
             shift: {
-                headline: "AI is everywhere. Clarity isn't.",
+                headline: "Technology is available to everyone. The difference is how you think, decide, and work.",
                 stats: [
                     { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
                     { value: "22%", label: "will fundamentally change by 2030", source: "WEF 2025" },
+                    { value: "41%", label: "of companies planning workforce reductions", source: "McKinsey 2025" },
                     { value: "1%", label: "of organizations consider themselves ready", source: "McKinsey 2025" }
                 ]
             },
@@ -70,10 +71,11 @@ export default function HomePage() {
                 label: "Dôverujú nám"
             },
             shift: {
-                headline: "AI má každý. Jasnosť málokto.",
+                headline: "Technológia je dostupná všetkým. Rozdiel robí spôsob myslenia, rozhodovania a práce.",
                 stats: [
                     { value: "40%", label: "pracovných pozícií je vystavených vplyvu AI", source: "IMF 2024" },
                     { value: "22%", label: "pracovných miest sa do 2030 zásadne zmení", source: "WEF 2025" },
+                    { value: "41%", label: "firiem plánuje znižovanie počtu zamestnancov", source: "McKinsey 2025" },
                     { value: "1%", label: "organizácií považuje svoje využívanie AI za zrelé", source: "McKinsey 2025" }
                 ]
             },
@@ -194,7 +196,7 @@ export default function HomePage() {
                     >
                         {t.shift.headline}
                     </motion.p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                         {t.shift.stats.map((stat: { value: string; label: string; source: string }, i: number) => (
                             <motion.div
                                 key={i}

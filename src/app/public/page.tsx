@@ -59,6 +59,15 @@ export default function PublicSessionsPage() {
                     }
                 ]
             },
+            problem: {
+                title: "The Problem",
+                points: [
+                    "AI speeds up outputs — but increases uncertainty in decisions",
+                    "Generation is no longer the issue. Quality control is. Taste, selection, framing.",
+                    "Organizations adopt AI tools without changing how they work, decide, or organize",
+                    "They know where they want to go — but lack translation to daily practice"
+                ]
+            },
             outcome: {
                 title: "You Leave With",
                 items: [
@@ -171,6 +180,15 @@ export default function PublicSessionsPage() {
                         desc: "Tvoj odbor. Tvoja realita. Žiadny skript — len úprimné odpovede od ľudí, čo s AI budujú denne.",
                         lead: "Všetci"
                     }
+                ]
+            },
+            problem: {
+                title: "Problém",
+                points: [
+                    "AI zrýchľuje výstupy — no zvyšuje neistotu v rozhodovaní",
+                    "Generovanie prestáva byť problém. Kritické je riadenie kvality. Vkus, výber, rámcovanie.",
+                    "Organizácie zavádzajú AI nástroje bez zmeny spôsobu práce, rolí a rozhodovania",
+                    "Vedia kam chcú smerovať — no chýba im jasný preklad do každodennej praxe"
                 ]
             },
             outcome: {
@@ -313,6 +331,34 @@ export default function PublicSessionsPage() {
                         </div>
 
                     </motion.div>
+                </div>
+            </section>
+
+            {/* The Problem */}
+            <section className="py-16 md:py-20 px-6 md:px-12 border-b border-black/10">
+                <div className="max-w-4xl mx-auto">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/40 mb-8"
+                    >
+                        {t.problem.title}
+                    </motion.h2>
+                    <div className="space-y-4">
+                        {t.problem.points.map((point: string, i: number) => (
+                            <motion.p
+                                key={i}
+                                initial={{ opacity: 0, x: -10 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="text-lg md:text-xl text-black/70 pl-4 border-l-2 border-[#0047BB]/30"
+                            >
+                                {point}
+                            </motion.p>
+                        ))}
+                    </div>
                 </div>
             </section>
 

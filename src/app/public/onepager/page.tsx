@@ -150,22 +150,11 @@ export default function PublicOnePager() {
 
     const t = content[lang]
 
-    const pageClass = "w-[297mm] h-[210mm] bg-white relative flex flex-col justify-center items-center p-12 print:p-8"
-    const pageBreak = "print:break-after-page"
+    const pageClass = "page-slide w-[297mm] h-[210mm] bg-white relative flex flex-col justify-center items-center p-12 print:p-8"
 
     return (
         <>
             <style jsx global>{`
-                @media print {
-                    @page {
-                        size: A4 landscape;
-                        margin: 0;
-                    }
-                    body {
-                        -webkit-print-color-adjust: exact;
-                        print-color-adjust: exact;
-                    }
-                }
                 .page-container {
                     display: flex;
                     flex-direction: column;
@@ -174,11 +163,34 @@ export default function PublicOnePager() {
                     padding: 2rem;
                     background: #e5e5e5;
                 }
+                .page-slide {
+                    box-sizing: border-box;
+                }
                 @media print {
+                    @page {
+                        size: 297mm 210mm;
+                        margin: 0;
+                    }
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                        -webkit-print-color-adjust: exact;
+                        print-color-adjust: exact;
+                    }
                     .page-container {
                         padding: 0;
                         gap: 0;
                         background: white;
+                    }
+                    .page-slide {
+                        page-break-after: always;
+                        page-break-inside: avoid;
+                        break-after: page;
+                        break-inside: avoid;
+                    }
+                    .page-slide:last-child {
+                        page-break-after: avoid;
+                        break-after: avoid;
                     }
                 }
             `}</style>
@@ -201,7 +213,7 @@ export default function PublicOnePager() {
             <div className="page-container font-mono text-[#0a0a0a]">
                 
                 {/* Page 1: Hero */}
-                <div className={`${pageClass} ${pageBreak}`}>
+                <div className={pageClass}>
                     <div className="text-center max-w-4xl">
                         <p className="text-[12px] font-bold uppercase tracking-[0.4em] text-[#0047BB] mb-6">{t.hero.label}</p>
                         <h1 className="font-serif text-[72px] leading-[0.95] tracking-tight">
@@ -215,7 +227,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 2: Stats */}
-                <div className={`${pageClass} ${pageBreak} bg-black/[0.02]`}>
+                <div className={`${pageClass} bg-black/[0.02]`}>
                     <div className="text-center max-w-4xl">
                         <h2 className="font-serif text-[48px] italic leading-tight">{t.stats.headline}</h2>
                         <p className="text-[24px] text-black/50 mt-2">{t.stats.subline}</p>
@@ -232,7 +244,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 3: Problem */}
-                <div className={`${pageClass} ${pageBreak}`}>
+                <div className={pageClass}>
                     <div className="text-center max-w-4xl">
                         <h2 className="font-serif text-[56px] italic mb-12">{t.problem.title}</h2>
                         <div className="grid grid-cols-2 gap-6">
@@ -247,7 +259,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 4: Session */}
-                <div className={`${pageClass} ${pageBreak}`}>
+                <div className={pageClass}>
                     <div className="max-w-5xl w-full">
                         <div className="text-center mb-10">
                             <h2 className="font-serif text-[56px] italic">{t.session.title}</h2>
@@ -268,7 +280,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 5: Outcomes */}
-                <div className={`${pageClass} ${pageBreak} bg-[#0047BB] text-white`}>
+                <div className={`${pageClass} bg-[#0047BB] text-white`}>
                     <div className="max-w-5xl w-full">
                         <h2 className="font-serif text-[56px] italic text-center mb-12">{t.outcome.title}</h2>
                         <div className="grid grid-cols-5 gap-4">
@@ -283,7 +295,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 6: Founders */}
-                <div className={`${pageClass} ${pageBreak}`}>
+                <div className={pageClass}>
                     <div className="max-w-5xl w-full">
                         <div className="text-center mb-10">
                             <h2 className="font-serif text-[48px] italic">{t.founders.title}</h2>

@@ -165,6 +165,7 @@ export default function PublicOnePager() {
                 }
                 .page-slide {
                     box-sizing: border-box;
+                    overflow: hidden;
                 }
                 @media print {
                     @page {
@@ -280,7 +281,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 5: Outcomes */}
-                <div className={`${pageClass} bg-[#0047BB] text-white`}>
+                <div className={pageClass} style={{ backgroundColor: '#0047BB', color: 'white', WebkitPrintColorAdjust: 'exact', printColorAdjust: 'exact' } as React.CSSProperties}>
                     <div className="max-w-5xl w-full">
                         <h2 className="font-serif text-[56px] italic text-center mb-12">{t.outcome.title}</h2>
                         <div className="grid grid-cols-5 gap-4">
@@ -315,7 +316,7 @@ export default function PublicOnePager() {
                 </div>
 
                 {/* Page 7: Details + CTA */}
-                <div className={`${pageClass} bg-black text-white`}>
+                <div className={pageClass} style={{ backgroundColor: '#000000', color: 'white', WebkitPrintColorAdjust: 'exact', printColorAdjust: 'exact' } as React.CSSProperties}>
                     <div className="max-w-4xl w-full text-center">
                         <h2 className="font-serif text-[72px] italic mb-4">{t.cta.headline}</h2>
                         <p className="text-[20px] text-white/50 mb-12">{t.cta.subline}</p>

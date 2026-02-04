@@ -19,7 +19,7 @@ export default function CorporatePage() {
                     line1: "Your Team.",
                     line2: "New Operating System."
                 },
-                description: "Three practitioners. Three lenses. Your challenges. We don't present — we think together, live, on the problems keeping you stuck.",
+                description: "Three founders. Three lenses. Your challenges. We don't present — we think together, live, on the problems keeping you stuck.",
                 price: "5,900",
                 duration: "4-5 hours",
                 capacity: "10-15 people",
@@ -142,7 +142,7 @@ export default function CorporatePage() {
                     line1: "Váš Tím.",
                     line2: "Nový Operačný Systém."
                 },
-                description: "Traja praktici. Tri pohľady. Vaše výzvy. Neprezentujeme — myslíme spolu, naživo, nad problémami, ktoré vás brzdia.",
+                description: "Traja zakladatelia. Tri pohľady. Vaše výzvy. Neprezentujeme — myslíme spolu, naživo, nad problémami, ktoré vás brzdia.",
                 price: "5 900",
                 duration: "4-5 hodín",
                 capacity: "10-15 ľudí",

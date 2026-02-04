@@ -260,7 +260,7 @@ export default function HomePage() {
                         >
                             <Link 
                                 href="/corporate"
-                                className="block h-full p-8 md:p-12 border-2 border-[#0047BB] bg-[#0047BB]/5 hover:bg-[#0047BB]/10 transition-all group"
+                                className="block h-full p-8 md:p-12 border-2 border-black/10 bg-white hover:border-[#0047BB] transition-all group"
                             >
                                 <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                                     {t.paths.team.label}

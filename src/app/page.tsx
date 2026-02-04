@@ -163,19 +163,19 @@ export default function HomePage() {
                         <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 shrink-0">
                             {t.trust.label}
                         </span>
-                        <div className="flex items-center gap-6 flex-wrap">
+                        <div className="flex items-center gap-10 md:gap-12 flex-wrap">
                             {partners.map((partner) => (
                                 <div 
                                     key={partner.name}
-                                    className="relative h-5 w-auto grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                                    className="relative h-6 md:h-7 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                                 >
                                     <Image
                                         src={partner.logo}
                                         alt={partner.name}
-                                        height={20}
-                                        width={80}
-                                        className="h-5 w-auto object-contain"
-                                        style={{ maxWidth: '80px' }}
+                                        height={28}
+                                        width={100}
+                                        className="h-6 md:h-7 w-auto object-contain"
+                                        style={{ maxWidth: '100px' }}
                                     />
                                 </div>
                             ))}

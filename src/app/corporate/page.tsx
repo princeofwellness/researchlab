@@ -197,7 +197,7 @@ export default function CorporatePage() {
                     { title: "Vaša Výhoda", desc: "Príležitosti, ktoré konkurencia premešká. Vy nie." },
                     { title: "Debaty → Rozhodnutia", desc: "Spoločný jazyk. Spoločné priority. Koniec nekonečných diskusií." },
                     { title: "Chyby Zachytené", desc: "Tri pohľady zachytia, čo jeden prehliadne. Nákladné omyly — predídené." },
-                    { title: "Nekončí To Tu", desc: "30-dňový follow-up. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete v pondelok." }
+                    { title: "Zostane S Vami", desc: "30-dňový follow-up. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete v pondelok." }
                 ]
             },
             founders: {

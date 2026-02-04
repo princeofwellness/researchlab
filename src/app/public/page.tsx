@@ -119,10 +119,10 @@ export default function PublicSessionsPage() {
                 details: {
                     title: "Details",
                     items: [
-                        { label: "Where", value: "SORRYWECAN Studio, Pečnianska 7, Bratislava" },
-                        { label: "When", value: "February 26, 2026" },
-                        { label: "Duration", value: "3 hours" },
-                        { label: "Price", value: "€99 + VAT" }
+                        { label: "Where", value: "SORRYWECAN Studio", subvalue: "Pečnianska 7, Bratislava" },
+                        { label: "When", value: "February 26, 2026", subvalue: "Wednesday" },
+                        { label: "Duration", value: "3 hours", subvalue: "9:00 — 12:00" },
+                        { label: "Price", value: "€99", subvalue: "+ VAT" }
                     ]
                 }
             },
@@ -242,10 +242,10 @@ export default function PublicSessionsPage() {
                 details: {
                     title: "Detaily",
                     items: [
-                        { label: "Kde", value: "SORRYWECAN Studio, Pečnianska 7, Bratislava" },
-                        { label: "Kedy", value: "26. februára 2026" },
-                        { label: "Trvanie", value: "3 hodiny" },
-                        { label: "Cena", value: "€99 + DPH" }
+                        { label: "Kde", value: "SORRYWECAN Studio", subvalue: "Pečnianska 7, Bratislava" },
+                        { label: "Kedy", value: "26. februára 2026", subvalue: "Streda" },
+                        { label: "Trvanie", value: "3 hodiny", subvalue: "9:00 — 12:00" },
+                        { label: "Cena", value: "€99", subvalue: "+ DPH" }
                     ]
                 }
             },
@@ -468,11 +468,12 @@ export default function PublicSessionsPage() {
                         ))}
                     </div>
 
-                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 p-6 bg-black/5 border border-black/10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 md:p-8 bg-black/5 border border-black/10">
                         {t.faq.details.items.map((item: any, i: number) => (
                             <div key={i} className="text-center">
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-1">{item.label}</p>
-                                <p className="text-sm font-medium">{item.value}</p>
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-2">{item.label}</p>
+                                <p className="text-base font-medium">{item.value}</p>
+                                <p className="text-sm text-black/50">{item.subvalue}</p>
                             </div>
                         ))}
                     </div>

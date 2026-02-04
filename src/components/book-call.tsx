@@ -14,8 +14,8 @@ import { cn } from "@/lib/utils"
  *   eventSlug = "discovery-call"
  */
 const CAL_CONFIG = {
-    username: "YOUR_USERNAME",
-    eventSlug: "discovery-call",
+    username: "researchlabsorrywecan",
+    eventSlug: "30min",
     get bookingUrl() {
         return `https://cal.com/${this.username}/${this.eventSlug}`
     }

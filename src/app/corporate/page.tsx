@@ -77,31 +77,34 @@ export default function CorporatePage() {
             },
             founders: {
                 title: "Three Lenses.",
-                subtitle: "Not consultants. Practitioners who think together on your problems.",
+                subtitle: "Not consultants. Founders who think together on your problems.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "TASTE", 
-                        company: "SORRYWECAN", 
-                        tagline: "What separates good from generic. Why your output looks like everyone else's."
+                        company: "CEO / Founder, SORRYWECAN", 
+                        tagline: "What separates good from generic. Why your output looks like everyone else's.",
+                        bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "LEVERAGE", 
-                        company: "SUDOLABS", 
-                        tagline: "What to build, what to skip. What one person can do now."
+                        company: "CPO / Co-founder, SUDOLABS", 
+                        tagline: "What to build, what to skip. What one person can do now.",
+                        bio: "Product leader with years of experience designing and scaling digital products, teams and processes. Focused on the practical side — what makes sense to build, how to deliver it, and where individuals have the biggest real impact today."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "CLARITY", 
-                        company: "TRANSFORMATIONAL DESIGN", 
-                        tagline: "How to prioritize when everything feels urgent. The decision framework."
+                        company: "Transformational Design", 
+                        tagline: "How to prioritize when everything feels urgent. The decision framework.",
+                        bio: "Works in transformational design, strategic thinking and complex organizational change. Helps leaders and teams navigate uncertainty, set decision-making frameworks, and distinguish between what matters and what's just noise."
                     }
                 ]
             },
             proof: {
                 stats: [
-                    { value: "3", label: "practitioners thinking together" },
+                    { value: "3", label: "founders thinking together" },
                     { value: "90+", label: "minutes on YOUR challenges" },
                     { value: "30", label: "day follow-up included" }
                 ]
@@ -196,31 +199,34 @@ export default function CorporatePage() {
             },
             founders: {
                 title: "Tri Pohľady.",
-                subtitle: "Nie konzultanti. Praktici, ktorí myslia spolu nad vašimi problémami.",
+                subtitle: "Nie konzultanti. Zakladatelia, ktorí myslia spolu nad vašimi problémami.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "VKUS", 
-                        company: "SORRYWECAN", 
-                        tagline: "Čo odlišuje dobré od generického. Prečo váš výstup vyzerá ako u všetkých."
+                        company: "CEO / Zakladateľ, SORRYWECAN", 
+                        tagline: "Čo odlišuje dobré od generického. Prečo váš výstup vyzerá ako u všetkých.",
+                        bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "PÁKA", 
-                        company: "SUDOLABS", 
-                        tagline: "Čo stavať, čo preskočiť. Čo jeden človek zvládne dnes."
+                        company: "CPO / Spoluzakladateľ, SUDOLABS", 
+                        tagline: "Čo stavať, čo preskočiť. Čo jeden človek zvládne dnes.",
+                        bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na praktickú stránku — čo má zmysel stavať, ako to doručiť, a kde má dnes jednotlivec najväčší reálny dopad."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "JASNOSŤ", 
-                        company: "TRANSFORMATIONAL DESIGN", 
-                        tagline: "Ako prioritizovať, keď všetko pôsobí urgentne. Rozhodovací framework."
+                        company: "Transformational Design", 
+                        tagline: "Ako prioritizovať, keď všetko pôsobí urgentne. Rozhodovací framework.",
+                        bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami v organizáciách. Pomáha lídrom a tímom orientovať sa v neistote, nastavovať rozhodovacie rámce a rozlišovať medzi tým, čo je dôležité, a čo len vytvára šum."
                     }
                 ]
             },
             proof: {
                 stats: [
-                    { value: "3", label: "praktici myslia spolu" },
+                    { value: "3", label: "zakladatelia myslia spolu" },
                     { value: "90+", label: "minút na VAŠE výzvy" },
                     { value: "30", label: "dňový follow-up v cene" }
                 ]
@@ -437,8 +443,9 @@ export default function CorporatePage() {
                             <div key={i} className="p-6 border border-white/20 bg-white/5 hover:bg-white/10 transition-all">
                                 <h4 className="text-xl font-serif-instrument italic">{card.name}</h4>
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1">{card.role}</p>
-                                <p className="text-[10px] text-white/30 mb-3">{card.company}</p>
-                                <p className="text-sm text-white/70 italic">"{card.tagline}"</p>
+                                <p className="text-[10px] text-white/30 mb-4">{card.company}</p>
+                                <p className="text-sm text-white/60 mb-3">{card.bio}</p>
+                                <p className="text-sm text-white/80 italic border-t border-white/10 pt-3">"{card.tagline}"</p>
                             </div>
                         ))}
                     </div>

@@ -18,7 +18,7 @@ export default function PublicSessionsPage() {
                     line1: "The World Changed.",
                     line2: "Most Haven't Noticed."
                 },
-                description: "3 hours with people who build with AI daily. No hype. No tutorials. Just clarity on where we are, what's possible, and what you're going to do about it.",
+                description: "3 hours with founders who build with AI daily. Clarity on where we are, what's possible, and what you're going to do about it.",
                 price: "99",
                 duration: "3 hours",
                 date: "February 26, 2026",
@@ -132,7 +132,7 @@ export default function PublicSessionsPage() {
                     line1: "Svet Sa Zmenil.",
                     line2: "Väčšina Si To Nevšimla."
                 },
-                description: "3 hodiny s ľuďmi, ktorí s AI pracujú denne. Žiadny hype. Žiadne tutoriály. Len jasnosť o tom, kde sme, čo je možné, a čo s tým urobíš.",
+                description: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne. Jasnosť o tom, kde sme, čo je možné, a čo s tým urobíš.",
                 price: "99",
                 duration: "3 hodiny",
                 date: "26. februára 2026",

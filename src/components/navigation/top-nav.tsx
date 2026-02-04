@@ -19,6 +19,7 @@ export function TopNav({
     const navItems = [
         { name: "Public", href: "/public" },
         { name: "Corporate", href: "/corporate" },
+        { name: "One-Pager", href: "/public/onepager" },
         { name: "Lab", href: "/lab" },
     ]
 

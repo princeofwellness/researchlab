@@ -280,22 +280,7 @@ export default function PublicOnePager() {
                     </div>
                 </div>
 
-                {/* Page 5: Outcomes */}
-                <div className={pageClass} style={{ backgroundColor: '#0047BB', color: 'white', WebkitPrintColorAdjust: 'exact', printColorAdjust: 'exact' } as React.CSSProperties}>
-                    <div className="max-w-5xl w-full">
-                        <h2 className="font-serif text-[56px] italic text-center mb-12">{t.outcome.title}</h2>
-                        <div className="grid grid-cols-5 gap-4">
-                            {t.outcome.items.map((item, i) => (
-                                <div key={i} className="p-5 border border-white/20">
-                                    <p className="text-[18px] font-medium">{item.title}</p>
-                                    <p className="text-[13px] text-white/60 mt-2 leading-relaxed">{item.desc}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                {/* Page 6: Founders */}
+                {/* Page 5: Founders */}
                 <div className={pageClass}>
                     <div className="max-w-5xl w-full">
                         <div className="text-center mb-10">
@@ -315,27 +300,42 @@ export default function PublicOnePager() {
                     </div>
                 </div>
 
+                {/* Page 6: Outcomes */}
+                <div className={pageClass}>
+                    <div className="max-w-5xl w-full">
+                        <h2 className="font-serif text-[56px] italic text-center mb-12">{t.outcome.title}</h2>
+                        <div className="grid grid-cols-5 gap-4">
+                            {t.outcome.items.map((item, i) => (
+                                <div key={i} className="p-5 border border-black/10">
+                                    <p className="text-[18px] font-medium">{item.title}</p>
+                                    <p className="text-[13px] text-black/50 mt-2 leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
                 {/* Page 7: Details + CTA */}
-                <div className={pageClass} style={{ backgroundColor: '#000000', color: 'white', WebkitPrintColorAdjust: 'exact', printColorAdjust: 'exact' } as React.CSSProperties}>
+                <div className={pageClass}>
                     <div className="max-w-4xl w-full text-center">
                         <h2 className="font-serif text-[72px] italic mb-4">{t.cta.headline}</h2>
-                        <p className="text-[20px] text-white/50 mb-12">{t.cta.subline}</p>
+                        <p className="text-[20px] text-black/50 mb-12">{t.cta.subline}</p>
                         
                         <div className="grid grid-cols-4 gap-8 mb-12">
                             {t.details.items.map((item, i) => (
                                 <div key={i} className="text-center">
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-white/40">{item.label}</p>
+                                    <p className="text-[10px] font-bold uppercase tracking-widest text-black/40">{item.label}</p>
                                     <p className="text-[20px] font-medium mt-2">{item.value}</p>
-                                    <p className="text-[14px] text-white/50">{item.sub}</p>
+                                    <p className="text-[14px] text-black/50">{item.sub}</p>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="inline-block bg-[#0047BB] px-12 py-5">
-                            <p className="text-[14px] font-bold uppercase tracking-widest">{t.cta.email}</p>
+                        <div className="inline-block bg-[#0047BB] px-8 py-4">
+                            <p className="text-[14px] font-bold uppercase tracking-widest text-white">{t.cta.email}</p>
                         </div>
                         
-                        <p className="text-[10px] uppercase tracking-[0.3em] text-white/30 mt-12">SORRYWECAN // RESEARCH LAB // 2026</p>
+                        <p className="text-[10px] uppercase tracking-[0.3em] text-black/30 mt-12">SORRYWECAN // RESEARCH LAB // 2026</p>
                     </div>
                 </div>
 

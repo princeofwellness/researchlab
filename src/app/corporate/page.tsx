@@ -3,23 +3,12 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
-import Image from "next/image"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
 
 export default function CorporatePage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
     const [faqOpen, setFaqOpen] = useState<number | null>(null)
-
-    const partners = [
-        { name: "Meta", logo: "/logos/meta.png" },
-        { name: "Tatra Banka", logo: "/logos/tatrabanka.jpg" },
-        { name: "Raiffeisen", logo: "/logos/raiffeisen.png" },
-        { name: "VUB Banka", logo: "/logos/vub.png" },
-        { name: "Sennheiser", logo: "/logos/sennheiser.png" },
-        { name: "Forbes", logo: "/logos/forbes.png" },
-        { name: "Audi", logo: "/logos/audi.svg" }
-    ]
 
     const content = {
         en: {
@@ -130,8 +119,7 @@ export default function CorporatePage() {
                     items: [
                         { label: "Duration", value: "4-5 hours" },
                         { label: "Team size", value: "10-15 people" },
-                        { label: "Location", value: "We come to you" },
-                        { label: "Investment", value: "€5,900 + VAT" }
+                        { label: "Location", value: "We come to you" }
                     ]
                 }
             },
@@ -250,8 +238,7 @@ export default function CorporatePage() {
                     items: [
                         { label: "Trvanie", value: "4-5 hodín" },
                         { label: "Veľkosť tímu", value: "10-15 ľudí" },
-                        { label: "Miesto", value: "Prídeme k vám" },
-                        { label: "Investícia", value: "€5 900 + DPH" }
+                        { label: "Miesto", value: "Prídeme k vám" }
                     ]
                 }
             },
@@ -315,44 +302,20 @@ export default function CorporatePage() {
                         transition={{ delay: 0.3 }}
                         className="space-y-6"
                     >
-                        <div className="flex items-baseline gap-3">
-                            <span className="text-6xl font-serif-instrument">{t.hero.price}</span>
-                            <span className="text-2xl opacity-40">EUR</span>
-                            <span className="text-sm text-black/40 ml-2">/ {t.hero.duration}</span>
-                        </div>
-
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                             <a 
-                                href="mailto:hello@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
+                                href="mailto:andrea@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
                                 className="bg-[#0047BB] text-white px-8 py-4 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
                             >
                                 {t.hero.cta}
                             </a>
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/40">{t.hero.capacity}</span>
-                        </div>
-
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6">
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 shrink-0">
-                                {lang === 'en' ? 'Trusted by' : 'Dôverujú nám'}
-                            </span>
-                            <div className="flex items-center gap-8 flex-wrap">
-                                {partners.map((partner) => (
-                                    <div 
-                                        key={partner.name}
-                                        className="relative h-6 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                                    >
-                                        <Image
-                                            src={partner.logo}
-                                            alt={partner.name}
-                                            height={24}
-                                            width={100}
-                                            className="h-6 w-auto object-contain"
-                                            style={{ maxWidth: '100px' }}
-                                        />
-                                    </div>
-                                ))}
+                            <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-black/40">
+                                <span>{t.hero.duration}</span>
+                                <span className="text-black/20">|</span>
+                                <span>{t.hero.capacity}</span>
                             </div>
                         </div>
+
                     </motion.div>
                 </div>
             </section>
@@ -527,7 +490,7 @@ export default function CorporatePage() {
                     <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-6">{t.cta.subline}</p>
                     <a
-                        href="mailto:hello@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
+                        href="mailto:andrea@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
                         className="bg-[#0047BB] text-white px-12 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
                     >
                         {t.cta.button}

@@ -22,6 +22,14 @@ export default function HomePage() {
             trust: {
                 label: "Trusted by"
             },
+            shift: {
+                headline: "AI is everywhere. Clarity isn't.",
+                stats: [
+                    { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
+                    { value: "22%", label: "will fundamentally change by 2030", source: "WEF 2025" },
+                    { value: "1%", label: "of organizations consider themselves ready", source: "McKinsey 2025" }
+                ]
+            },
             paths: {
                 title: "Two Ways In.",
                 individual: {
@@ -60,6 +68,14 @@ export default function HomePage() {
             },
             trust: {
                 label: "Dôverujú nám"
+            },
+            shift: {
+                headline: "AI má každý. Jasnosť málokto.",
+                stats: [
+                    { value: "40%", label: "pracovných pozícií je vystavených vplyvu AI", source: "IMF 2024" },
+                    { value: "22%", label: "pracovných miest sa do 2030 zásadne zmení", source: "WEF 2025" },
+                    { value: "1%", label: "organizácií považuje svoje využívanie AI za zrelé", source: "McKinsey 2025" }
+                ]
             },
             paths: {
                 title: "Dva Spôsoby.",
@@ -165,6 +181,35 @@ export default function HomePage() {
                             ))}
                         </div>
                     </motion.div>
+                </div>
+            </section>
+
+            <section className="py-16 md:py-20 px-6 md:px-12 border-t border-black/10">
+                <div className="max-w-4xl mx-auto">
+                    <motion.p
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center text-xl md:text-2xl font-serif-instrument italic text-black/70 mb-12"
+                    >
+                        {t.shift.headline}
+                    </motion.p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                        {t.shift.stats.map((stat: { value: string; label: string; source: string }, i: number) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="text-center"
+                            >
+                                <span className="text-4xl md:text-5xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
+                                <p className="text-sm text-black/60 mt-2 mb-1">{stat.label}</p>
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
 

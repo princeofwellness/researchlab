@@ -10,12 +10,6 @@ export default function PublicSessionsPage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
     const [faqOpen, setFaqOpen] = useState<number | null>(null)
 
-    const partners = [
-        { name: "EYERIM", highlight: true },
-        { name: "SUDOLABS", highlight: false },
-        { name: "SORRYWECAN", highlight: false }
-    ]
-
     const content = {
         en: {
             hero: {
@@ -68,10 +62,11 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "Clarity", desc: "Where we are. Where it's going. What it means for you." },
-                    { title: "Conviction", desc: "You've seen what's possible. You're not waiting anymore." },
-                    { title: "Direction", desc: "Not a to-do list. Something to build or change." },
-                    { title: "Community", desc: "Access to others on the same path." }
+                    { title: "Clarity in Action", desc: "A clearer way of working and deciding when AI is part of everything." },
+                    { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness — even when everyone has the same tools." },
+                    { title: "From Reactive to Intentional", desc: "A shift from random AI use to consciously designed operation." },
+                    { title: "Less Noise", desc: "Lower mental load. Less decision fatigue. No more AI FOMO." },
+                    { title: "Frameworks That Travel", desc: "Mental models you'll use across projects, teams, and roles." }
                 ]
             },
             founders: {
@@ -81,20 +76,23 @@ export default function PublicSessionsPage() {
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
-                        company: "SORRYWECAN", 
-                        tagline: "Sets taste. Ignites what's possible."
+                        company: "CEO / Founder, SORRYWECAN", 
+                        tagline: "Opens with what's possible — and what separates real creative work from generic output.",
+                        bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
-                        company: "SUDOLABS", 
-                        tagline: "Builds what ships. Systems that run."
+                        company: "CPO / Co-founder, SUDOLABS", 
+                        tagline: "Shows what actually ships — and what one person can build now.",
+                        bio: "Product leader with years of experience designing and scaling digital products, teams and processes. Focused on the practical side — what makes sense to build, how to deliver it, and where individuals have the biggest real impact today."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
-                        company: "TRANSFORMATIONAL DESIGN", 
-                        tagline: "Clarity in chaos. Decisions that stick."
+                        company: "Transformational Design", 
+                        tagline: "The framework for deciding what to focus on and what to ignore.",
+                        bio: "Works in transformational design, strategic thinking and complex organizational change. Helps leaders and teams navigate uncertainty, set decision-making frameworks, and distinguish between what matters and what's just noise."
                     }
                 ]
             },
@@ -112,7 +110,7 @@ export default function PublicSessionsPage() {
                 details: {
                     title: "Details",
                     items: [
-                        { label: "Where", value: "Bratislava" },
+                        { label: "Where", value: "SORRYWECAN Studio, Pečnianska 7, Bratislava" },
                         { label: "When", value: "February 26, 2026" },
                         { label: "Duration", value: "3 hours" },
                         { label: "Price", value: "€99 + VAT" }
@@ -178,10 +176,11 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "Odídeš S",
                 items: [
-                    { title: "Jasnosť", desc: "Kde sme. Kam to smeruje. Čo to znamená pre teba." },
-                    { title: "Presvedčenie", desc: "Videl si, čo je možné. Už nečakáš." },
-                    { title: "Smer", desc: "Nie to-do list. Niečo, čo postavíš alebo zmeníš." },
-                    { title: "Komunita", desc: "Prístup k ostatným na tej istej ceste." }
+                    { title: "Jasnosť v Praxi", desc: "Jasnejší spôsob práce a rozhodovania v realite, kde je AI bežnou súčasťou." },
+                    { title: "Tvoja Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť — aj keď má každý tie isté nástroje." },
+                    { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
+                    { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
+                    { title: "Frameworky, Čo Cestujú", desc: "Mentálne modely použiteľné naprieč projektmi, tímami a rolami." }
                 ]
             },
             founders: {
@@ -191,20 +190,23 @@ export default function PublicSessionsPage() {
                     { 
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
-                        company: "SORRYWECAN", 
-                        tagline: "Nastavuje vkus. Zapaľuje možnosti."
+                        company: "CEO / Zakladateľ, SORRYWECAN", 
+                        tagline: "Otvára tým, čo je možné — a čo odlišuje skutočnú kreatívnu prácu od generického výstupu.",
+                        bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "Architekt", 
-                        company: "SUDOLABS", 
-                        tagline: "Stavia, čo beží. Systémy, čo fungujú."
+                        company: "CPO / Spoluzakladateľ, SUDOLABS", 
+                        tagline: "Ukáže, čo sa reálne dodáva — a čo dnes zvládne jeden človek.",
+                        bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na praktickú stránku — čo má zmysel stavať, ako to doručiť, a kde má dnes jednotlivec najväčší reálny dopad."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "Navigátor", 
-                        company: "TRANSFORMATIONAL DESIGN", 
-                        tagline: "Jasnosť v chaose. Rozhodnutia, čo držia."
+                        company: "Transformational Design", 
+                        tagline: "Framework na rozhodovanie, na čo sa sústrediť a čo ignorovať.",
+                        bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami v organizáciách. Pomáha lídrom a tímom orientovať sa v neistote, nastavovať rozhodovacie rámce a rozlišovať medzi tým, čo je dôležité, a čo len vytvára šum."
                     }
                 ]
             },
@@ -222,7 +224,7 @@ export default function PublicSessionsPage() {
                 details: {
                     title: "Detaily",
                     items: [
-                        { label: "Kde", value: "Bratislava" },
+                        { label: "Kde", value: "SORRYWECAN Studio, Pečnianska 7, Bratislava" },
                         { label: "Kedy", value: "26. februára 2026" },
                         { label: "Trvanie", value: "3 hodiny" },
                         { label: "Cena", value: "€99 + DPH" }
@@ -298,7 +300,7 @@ export default function PublicSessionsPage() {
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                             <a 
-                                href="mailto:hello@sorrywecan.com?subject=THE SHIFT - I'm In"
+                                href="mailto:andrea@sorrywecan.com?subject=THE SHIFT - I'm In"
                                 className="bg-[#0047BB] text-white px-10 py-5 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
                             >
                                 {t.hero.cta}
@@ -310,24 +312,6 @@ export default function PublicSessionsPage() {
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-6 pt-4">
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">
-                                Trusted by
-                            </span>
-                            <div className="flex items-center gap-4">
-                                {partners.map((partner) => (
-                                    <span 
-                                        key={partner.name}
-                                        className={cn(
-                                            "text-xs font-bold tracking-wide",
-                                            partner.highlight ? "text-[#0047BB]" : "text-black/30"
-                                        )}
-                                    >
-                                        {partner.name}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -400,8 +384,9 @@ export default function PublicSessionsPage() {
                             <div key={i} className="p-6 border border-white/20 bg-white/5 hover:bg-white/10 transition-all">
                                 <h4 className="text-xl font-serif-instrument italic">{card.name}</h4>
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1">{card.role}</p>
-                                <p className="text-[10px] text-white/30 mb-3">{card.company}</p>
-                                <p className="text-sm text-white/70 italic">"{card.tagline}"</p>
+                                <p className="text-[10px] text-white/30 mb-4">{card.company}</p>
+                                <p className="text-sm text-white/60 mb-3">{card.bio}</p>
+                                <p className="text-sm text-white/80 italic border-t border-white/10 pt-3">"{card.tagline}"</p>
                             </div>
                         ))}
                     </div>
@@ -453,7 +438,7 @@ export default function PublicSessionsPage() {
                     <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-8">{t.cta.subline}</p>
                     <a
-                        href="mailto:hello@sorrywecan.com?subject=THE SHIFT - I'm In"
+                        href="mailto:andrea@sorrywecan.com?subject=THE SHIFT - I'm In"
                         className="bg-[#0047BB] text-white px-12 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
                     >
                         {t.cta.button}

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
+import { CAL_CONFIG } from "@/components/book-call"
 
 export default function CorporatePage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
@@ -69,10 +70,11 @@ export default function CorporatePage() {
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "Shared Vision", desc: "Your team aligned on what AI means for your business." },
-                    { title: "Priorities Mapped", desc: "What to build, what to skip, where to start first." },
-                    { title: "Decision Framework", desc: "How to evaluate every AI opportunity going forward." },
-                    { title: "30-Day Follow-up", desc: "We check in. Digital toolkit included. You're not alone." }
+                    { title: "The Wake-Up", desc: "Your team sees what 99% don't. The shift that's already here — and what it means for you." },
+                    { title: "The Edge", desc: "The opportunities your competitors will miss. You won't." },
+                    { title: "Debates → Decisions", desc: "Same language. Same priorities. The endless loops end here." },
+                    { title: "Mistakes Avoided", desc: "Three lenses catch what one can't. Costly wrong turns — prevented." },
+                    { title: "It Sticks", desc: "30-day follow-up. Toolkit that evolves. Not another workshop you forget Monday." }
                 ]
             },
             founders: {
@@ -191,10 +193,11 @@ export default function CorporatePage() {
             outcome: {
                 title: "Odchádzate S",
                 items: [
-                    { title: "Spoločná Vízia", desc: "Váš tím zladený na tom, čo AI znamená pre váš biznis." },
-                    { title: "Zmapované Priority", desc: "Čo stavať, čo preskočiť, kde začať." },
-                    { title: "Rozhodovací Framework", desc: "Ako vyhodnotiť každú AI príležitosť do budúcna." },
-                    { title: "30-Dňový Follow-up", desc: "Ozveme sa. Digitálny toolkit v cene. Nie ste v tom sami." }
+                    { title: "Prebudenie", desc: "Váš tím uvidí, čo 99% nevidí. Zmena, ktorá už prebieha — a čo to znamená pre vás." },
+                    { title: "Vaša Výhoda", desc: "Príležitosti, ktoré konkurencia premešká. Vy nie." },
+                    { title: "Debaty → Rozhodnutia", desc: "Spoločný jazyk. Spoločné priority. Koniec nekonečných diskusií." },
+                    { title: "Chyby Zachytené", desc: "Tri pohľady zachytia, čo jeden prehliadne. Nákladné omyly — predídené." },
+                    { title: "Zostáva To", desc: "30-dňový follow-up. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete v pondelok." }
                 ]
             },
             founders: {
@@ -310,7 +313,9 @@ export default function CorporatePage() {
                     >
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                             <a 
-                                href="mailto:andrea@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
+                                href={CAL_CONFIG.bookingUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-[#0047BB] text-white px-8 py-4 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
                             >
                                 {t.hero.cta}
@@ -497,7 +502,9 @@ export default function CorporatePage() {
                     <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-6">{t.cta.subline}</p>
                     <a
-                        href="mailto:andrea@sorrywecan.com?subject=Corporate Workshop - Discovery Call"
+                        href={CAL_CONFIG.bookingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[#0047BB] text-white px-12 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
                     >
                         {t.cta.button}

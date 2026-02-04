@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import React from "react"
+import { CAL_CONFIG } from "@/components/book-call"
 
 export function TopNav({ 
     customAction, 
@@ -59,7 +60,9 @@ export function TopNav({
             <div className="flex items-center gap-4">
                 {customAction}
                 <a
-                    href="mailto:hello@sorrywecan.com"
+                    href={CAL_CONFIG.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={cn(
                         "px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition-colors",
                         isDark 
@@ -67,7 +70,7 @@ export function TopNav({
                             : "bg-black text-white hover:bg-[#0047BB]"
                     )}
                 >
-                    Contact
+                    Book a Call
                 </a>
             </div>
         </nav>

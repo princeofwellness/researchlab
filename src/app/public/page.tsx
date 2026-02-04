@@ -62,10 +62,10 @@ export default function PublicSessionsPage() {
             problem: {
                 title: "Sound Familiar?",
                 cards: [
-                    { headline: "Faster outputs.", subline: "More uncertainty." },
-                    { headline: "Generation solved.", subline: "Quality isn't." },
-                    { headline: "New tools.", subline: "Same ways of working." },
-                    { headline: "Clear direction.", subline: "Unclear daily practice." }
+                    { headline: "Faster output.", subline: "But less certainty in what's good." },
+                    { headline: "Generation is easy.", subline: "Taste is the hard part." },
+                    { headline: "You have the tools.", subline: "Your habits haven't caught up." },
+                    { headline: "You know where to go.", subline: "Daily practice is still fog." }
                 ]
             },
             outcome: {
@@ -185,10 +185,10 @@ export default function PublicSessionsPage() {
             problem: {
                 title: "Znie Povedome?",
                 cards: [
-                    { headline: "Rýchlejšie výstupy.", subline: "Väčšia neistota." },
-                    { headline: "Generovanie vyriešené.", subline: "Kvalita nie." },
-                    { headline: "Nové nástroje.", subline: "Staré spôsoby práce." },
-                    { headline: "Jasný smer.", subline: "Nejasná denná prax." }
+                    { headline: "Rýchlejší výstup.", subline: "Ale menšia istota, čo je dobré." },
+                    { headline: "Generovať je ľahké.", subline: "Vkus je to ťažké." },
+                    { headline: "Nástroje máte.", subline: "Návyky ešte nie." },
+                    { headline: "Viete kam.", subline: "Denná prax je stále hmla." }
                 ]
             },
             outcome: {

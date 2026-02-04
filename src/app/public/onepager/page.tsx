@@ -26,10 +26,12 @@ export default function PublicOnePager() {
             problem: {
                 title: "Sound Familiar?",
                 cards: [
-                    { headline: "Faster output.", subline: "But less certainty in what's good." },
+                    { headline: "Faster output.", subline: "Less certainty in what's good." },
                     { headline: "Generation is easy.", subline: "Taste is the hard part." },
                     { headline: "You have the tools.", subline: "Your habits haven't caught up." },
-                    { headline: "You know where to go.", subline: "Daily practice is still fog." }
+                    { headline: "You know where to go.", subline: "Daily practice is still fog." },
+                    { headline: "You've tried 20 tools.", subline: "Still not sure which one matters." },
+                    { headline: "Everyone seems to get it.", subline: "You're still figuring it out." }
                 ]
             },
             session: {
@@ -96,10 +98,12 @@ export default function PublicOnePager() {
             problem: {
                 title: "Znie Povedome?",
                 cards: [
-                    { headline: "Rýchlejší výstup.", subline: "Ale menšia istota, čo je dobré." },
+                    { headline: "Rýchlejší výstup.", subline: "Menšia istota, čo je dobré." },
                     { headline: "Generovať je ľahké.", subline: "Vkus je to ťažké." },
                     { headline: "Nástroje máte.", subline: "Návyky ešte nie." },
-                    { headline: "Viete kam.", subline: "Denná prax je stále hmla." }
+                    { headline: "Viete kam.", subline: "Denná prax je stále hmla." },
+                    { headline: "Vyskúšali ste 20 nástrojov.", subline: "Stále neviete, na ktorom záleží." },
+                    { headline: "Všetci to už vedia.", subline: "Vy to stále riešite." }
                 ]
             },
             session: {
@@ -246,13 +250,13 @@ export default function PublicOnePager() {
 
                 {/* Page 3: Problem */}
                 <div className={pageClass}>
-                    <div className="text-center max-w-4xl">
-                        <h2 className="font-serif text-[56px] italic mb-12">{t.problem.title}</h2>
-                        <div className="grid grid-cols-2 gap-6">
+                    <div className="text-center max-w-5xl w-full">
+                        <h2 className="font-serif text-[48px] italic mb-8">{t.problem.title}</h2>
+                        <div className="grid grid-cols-3 gap-4">
                             {t.problem.cards.map((card, i) => (
-                                <div key={i} className="p-8 border-2 border-black/10 text-left">
-                                    <p className="text-[28px] font-medium">{card.headline}</p>
-                                    <p className="text-[24px] text-black/40 mt-1">{card.subline}</p>
+                                <div key={i} className="p-5 border-2 border-black/10 text-left">
+                                    <p className="text-[20px] font-medium leading-tight">{card.headline}</p>
+                                    <p className="text-[16px] text-black/40 mt-1 leading-snug">{card.subline}</p>
                                 </div>
                             ))}
                         </div>

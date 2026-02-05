@@ -38,9 +38,9 @@ export default function PublicOnePager() {
                 title: "Taste. Leverage. Clarity.",
                 subtitle: "3 hours. 3 founders. 1 shift.",
                 parts: [
-                    { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. What's possible when taste meets technology." },
-                    { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can build now. The new math of small teams and unlimited output." },
-                    { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "How to decide when everything moves. The framework for every AI choice." },
+                    { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Decades of experience in creativity and technology — everyone has the same tools, the difference is taste, curation, and the eye for detail." },
+                    { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can do today. Workflows, automations, and real demos — what to build, what to skip, and how to design products that work." },
+                    { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "What stays human and what to delegate to AI. When to automate, when to stop — a decision framework you'll actually use." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "All", desc: "Your field. Your reality. Honest answers from people who build with AI daily." }
                 ]
             },
@@ -58,7 +58,7 @@ export default function PublicOnePager() {
                 title: "Three Founders",
                 subtitle: "Not trainers. Builders who do this daily.",
                 cards: [
-                    { name: "Roland Vraník", role: "The Creative", company: "CEO / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling." },
+                    { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling." },
                     { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
                     { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Works in transformational design, strategic thinking and complex organizational change." }
                 ]
@@ -110,9 +110,9 @@ export default function PublicOnePager() {
                 title: "Vkus. Páka. Jasnosť.",
                 subtitle: "3 hodiny. 3 zakladatelia. 1 posun.",
                 parts: [
-                    { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Čo je možné, keď sa vkus stretne s technológiou." },
-                    { num: "02", title: "Páka", time: "50 min", lead: "Ján", desc: "Čo jeden človek dokáže postaviť dnes. Nová matematika malých tímov." },
-                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Ako sa rozhodovať, keď sa všetko hýbe. Framework pre každé AI rozhodnutie." },
+                    { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Dekády skúseností v kreativite a technológii — rovnaké nástroje má každý, rozdiel robí vkus, kurátorstvo a oko pre detail." },
+                    { num: "02", title: "Páka", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek v dnešnej dobe. Workflowy, automatizácie a reálne ukážky toho, čo stavať, čo preskočiť a ako navrhovať produkty, ktoré fungujú." },
+                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať, kedy zastaviť — rozhodovací rámec, ktorý reálne použiješ." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoj odbor. Tvoja realita. Úprimné odpovede od ľudí, čo s AI budujú denne." }
                 ]
             },
@@ -130,7 +130,7 @@ export default function PublicOnePager() {
                 title: "Traja Zakladatelia",
                 subtitle: "Nie tréneri. Builderi, čo toto robia denne.",
                 cards: [
-                    { name: "Roland Vraník", role: "Kreatívec", company: "CEO / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania." },
+                    { name: "Roland Vraník", role: "Kreatívec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania." },
                     { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },
                     { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami." }
                 ]

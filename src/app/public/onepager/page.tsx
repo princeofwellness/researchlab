@@ -39,7 +39,7 @@ export default function PublicOnePager() {
                 subtitle: "",
                 parts: [
                     { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Decades of experience in creativity and technology — everyone has the same tools, the difference is taste, curation, and the eye for detail." },
-                    { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can do today. Workflows, automations, and real demos — what to build, what to skip, and how to design products that work." },
+                    { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can build today. New businesses, new ways to operate — what to build, what to skip, and how to think about products in this new reality." },
                     { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "What stays human and what to delegate to AI. When to automate, when to stop — a decision framework you'll actually use." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "All", desc: "Your field. Your reality. Honest answers from people who build with AI daily." }
                 ]
@@ -111,7 +111,7 @@ export default function PublicOnePager() {
                 subtitle: "",
                 parts: [
                     { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Dekády skúseností v kreativite a technológii — rovnaké nástroje má každý, rozdiel robí vkus, kurátorstvo a oko pre detail." },
-                    { num: "02", title: "Páka", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek v dnešnej dobe. Workflowy, automatizácie a reálne ukážky toho, čo stavať, čo preskočiť a ako navrhovať produkty, ktoré fungujú." },
+                    { num: "02", title: "Páka", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek postaviť dnes. Nové biznisy, nové spôsoby fungovania — čo stavať, čo preskočiť a ako premýšľať o produktoch v tejto novej realite." },
                     { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať, kedy zastaviť — rozhodovací rámec, ktorý reálne použiješ." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoj odbor. Tvoja realita. Úprimné odpovede od ľudí, čo s AI budujú denne." }
                 ]

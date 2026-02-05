@@ -11,6 +11,7 @@ export default function LabPage() {
     ]
 
     const pages = [
+        { name: "Marketing Sync", href: "/archive/marketing-sync", desc: "The only 5 things that matter. Everything else is noise." },
         { name: "Marketing", href: "/marketing", desc: "Marketing strategy and materials" },
         { name: "Projections", href: "/projections", desc: "Business projections and models" },
         { name: "Feedbacks", href: "/enhancements", desc: "Collected feedback and enhancements" },

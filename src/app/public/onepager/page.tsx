@@ -61,7 +61,7 @@ export default function PublicOnePager() {
                 cards: [
                     { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual experience." },
                     { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
-                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Works in transformational design, strategic thinking and complex organizational change." }
+                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps leaders and teams navigate uncertainty and distinguish between what matters and what's noise." }
                 ]
             },
             details: {
@@ -134,7 +134,7 @@ export default function PublicOnePager() {
                 cards: [
                     { name: "Roland Vraník", role: "Kreatívec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov." },
                     { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },
-                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami." }
+                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha lídrom a tímom orientovať sa v neistote a rozlíšiť, na čom záleží." }
                 ]
             },
             details: {

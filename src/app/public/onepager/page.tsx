@@ -51,7 +51,7 @@ export default function PublicOnePager() {
                     { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness." },
                     { title: "From Reactive to Intentional", desc: "A shift from random AI use to consciously designed operation." },
                     { title: "Less Noise", desc: "Lower mental load. Less decision fatigue. No more AI FOMO." },
-                    { title: "Frameworks That Travel", desc: "Mental models you'll use across projects, teams, and roles." }
+                    { title: "30-Day Follow-Up", desc: "A short check-in to anchor what works, what doesn't, and what to adjust." }
                 ]
             },
             founders: {
@@ -123,7 +123,7 @@ export default function PublicOnePager() {
                     { title: "Vaša Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť." },
                     { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
                     { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
-                    { title: "Frameworky, Čo Cestujú", desc: "Mentálne modely použiteľné naprieč projektmi, tímami a rolami." }
+                    { title: "Follow-up po 30 Dňoch", desc: "Krátke zhodnotenie a ukotvenie v praxi — čo funguje, čo nie a čo upraviť." }
                 ]
             },
             founders: {

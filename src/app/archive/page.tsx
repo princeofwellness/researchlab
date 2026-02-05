@@ -3,6 +3,12 @@ import { TopNav } from "@/components/navigation/top-nav"
 
 const archiveEntries = [
   {
+    title: "Marketing Sync — The Only Things That Matter",
+    route: "/archive/marketing-sync",
+    type: "Strategy",
+    summary: "Stripped-down marketing plan. 5 things that move tickets. Everything else is noise.",
+  },
+  {
     title: "Education Blueprint v0.2",
     route: "/ai-education-blueprint",
     type: "Research",

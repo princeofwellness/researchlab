@@ -36,7 +36,7 @@ export default function PublicOnePager() {
             },
             session: {
                 title: "Taste. Leverage. Clarity.",
-                subtitle: "3 hours. 3 founders. 1 shift.",
+                subtitle: "",
                 parts: [
                     { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Decades of experience in creativity and technology — everyone has the same tools, the difference is taste, curation, and the eye for detail." },
                     { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can do today. Workflows, automations, and real demos — what to build, what to skip, and how to design products that work." },
@@ -56,7 +56,7 @@ export default function PublicOnePager() {
             },
             founders: {
                 title: "Three Founders",
-                subtitle: "Not trainers. Builders who do this daily.",
+                subtitle: "Built companies worth millions. Clients on four continents.",
                 cards: [
                     { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling." },
                     { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
@@ -108,7 +108,7 @@ export default function PublicOnePager() {
             },
             session: {
                 title: "Vkus. Páka. Jasnosť.",
-                subtitle: "3 hodiny. 3 zakladatelia. 1 posun.",
+                subtitle: "",
                 parts: [
                     { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Dekády skúseností v kreativite a technológii — rovnaké nástroje má každý, rozdiel robí vkus, kurátorstvo a oko pre detail." },
                     { num: "02", title: "Páka", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek v dnešnej dobe. Workflowy, automatizácie a reálne ukážky toho, čo stavať, čo preskočiť a ako navrhovať produkty, ktoré fungujú." },
@@ -128,7 +128,7 @@ export default function PublicOnePager() {
             },
             founders: {
                 title: "Traja Zakladatelia",
-                subtitle: "Nie tréneri. Builderi, čo toto robia denne.",
+                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch.",
                 cards: [
                     { name: "Roland Vraník", role: "Kreatívec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania." },
                     { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },
@@ -278,7 +278,7 @@ export default function PublicOnePager() {
                     <div className="max-w-5xl w-full px-4">
                         <div className="text-center mb-6 md:mb-10">
                             <h2 className="font-serif text-[36px] md:text-[56px] italic">{t.session.title}</h2>
-                            <p className="text-[14px] md:text-[18px] text-[#0047BB] mt-2">{t.session.subtitle}</p>
+                            {t.session.subtitle && <p className="text-[14px] md:text-[18px] text-[#0047BB] mt-2">{t.session.subtitle}</p>}
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
                             {t.session.parts.map((part, i) => (

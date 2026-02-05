@@ -39,18 +39,18 @@ export default function CorporateOnePager() {
                 subtitle: "We think together. You leave clear.",
                 parts: [
                     { num: "01", title: "The Shift", time: "30 min", lead: "All", desc: "The world changed. Here's what we're seeing — in your industry, in creative work, in what's possible now." },
-                    { num: "02", title: "Frameworks", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Taste: good vs generic. Leverage: build vs skip. Clarity: prioritize when everything feels urgent." },
+                    { num: "02", title: "Frameworks", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Taste: decades of experience in creativity and technology — the difference is curation and the eye for detail. Leverage: workflows, automations, and real demos — what to build, what to skip. Clarity: what stays human and what to delegate — a decision framework you'll actually use." },
                     { num: "03", title: "Your Reality", time: "90-120 min", lead: "Facilitated", desc: "Your challenges. Three perspectives. Live. This is where insights happen that prevent six-figure mistakes." },
                     { num: "04", title: "The Clarity", time: "30 min", lead: "All", desc: "Each of us shares what we saw. What to prioritize. What to ignore. You leave knowing what to do." }
                 ]
             },
             founders: {
                 title: "Three Founders.",
-                subtitle: "Not consultants. Not trainers. Founders who think together on your problems.",
+                subtitle: "Built companies worth millions. Clients on four continents. They think together on your problems.",
                 cards: [
-                    { name: "Roland Vraník", role: "TASTE", company: "CEO / Founder, SORRYWECAN", tagline: "What separates good from generic.", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling." },
-                    { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "What to build, what to skip.", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
-                    { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "How to prioritize when everything feels urgent.", bio: "Works in transformational design, strategic thinking and complex organizational change." }
+                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Everyone has the same tools. The difference is taste, curation, and the eye for detail.", bio: "Director and creative lead with decades of experience connecting aesthetics with technology, exploring new forms of visual storytelling." },
+                    { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "What one person can do today. What to build, what to skip, and how to design products that work.", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
+                    { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "What stays human and what to delegate. A decision framework you'll actually use.", bio: "Works in transformational design, strategic thinking and complex organizational change." }
                 ]
             },
             outcome: {
@@ -111,18 +111,18 @@ export default function CorporateOnePager() {
                 subtitle: "Myslíme spolu. Odídete s jasnosťou.",
                 parts: [
                     { num: "01", title: "The Shift", time: "30 min", lead: "Všetci", desc: "Svet sa zmenil. Tu je, čo vidíme — vo vašom odvetví, v kreatívnej práci, v tom, čo je teraz možné." },
-                    { num: "02", title: "Frameworky", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Vkus: dobré vs generické. Páka: stavať vs preskočiť. Jasnosť: prioritizovať, keď všetko pôsobí urgentne." },
+                    { num: "02", title: "Frameworky", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Vkus: dekády skúseností v kreativite a technológii — rozdiel robí kurátorstvo a oko pre detail. Páka: workflowy, automatizácie a reálne ukážky — čo stavať, čo preskočiť. Jasnosť: čo zostáva ľudské a čo delegovať — rozhodovací rámec, ktorý reálne použijete." },
                     { num: "03", title: "Vaša Realita", time: "90-120 min", lead: "Facilitované", desc: "Vaše výzvy. Tri perspektívy. Naživo. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám." },
                     { num: "04", title: "Jasnosť", time: "30 min", lead: "Všetci", desc: "Každý z nás zdieľa, čo videl. Čo prioritizovať. Čo ignorovať. Odídete s vedomím, čo robiť." }
                 ]
             },
             founders: {
                 title: "Traja Zakladatelia.",
-                subtitle: "Nie konzultanti. Nie tréneri. Zakladatelia, ktorí myslia spolu nad vašimi problémami.",
+                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch. Myslia spolu nad vašimi problémami.",
                 cards: [
-                    { name: "Roland Vraník", role: "VKUS", company: "CEO / Zakladateľ, SORRYWECAN", tagline: "Čo odlišuje dobré od generického.", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania." },
-                    { name: "Ján Koscelanský", role: "PÁKA", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Čo stavať, čo preskočiť.", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },
-                    { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformational Design", tagline: "Ako prioritizovať, keď všetko pôsobí urgentne.", bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami." }
+                    { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail.", bio: "Režisér a kreatívny riaditeľ s dekádami skúseností prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania." },
+                    { name: "Ján Koscelanský", role: "PÁKA", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Čo dokáže jeden človek dnes. Čo stavať, čo preskočiť a ako navrhovať produkty, ktoré fungujú.", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },
+                    { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformational Design", tagline: "Čo zostáva ľudské a čo delegovať. Rozhodovací rámec, ktorý reálne použijete.", bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami." }
                 ]
             },
             outcome: {

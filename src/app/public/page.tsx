@@ -80,12 +80,12 @@ export default function PublicSessionsPage() {
             },
             founders: {
                 title: "Three Minds.",
-                subtitle: "Not trainers. Builders who do this daily.",
+                subtitle: "Built companies worth millions. Clients on four continents.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
-                        company: "CEO / Founder, SORRYWECAN", 
+                        company: "Creative Director / Founder, SORRYWECAN", 
                         tagline: "Opens with what's possible — and what separates real creative work from generic output.",
                         bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
                     },
@@ -203,12 +203,12 @@ export default function PublicSessionsPage() {
             },
             founders: {
                 title: "Tri Mysle.",
-                subtitle: "Nie tréneri. Builderi, čo toto robia denne.",
+                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
-                        company: "CEO / Zakladateľ, SORRYWECAN", 
+                        company: "Creative Director / Zakladateľ, SORRYWECAN", 
                         tagline: "Otvára tým, čo je možné — a čo odlišuje skutočnú kreatívnu prácu od generického výstupu.",
                         bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
                     },

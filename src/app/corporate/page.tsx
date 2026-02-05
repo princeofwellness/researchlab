@@ -79,12 +79,12 @@ export default function CorporatePage() {
             },
             founders: {
                 title: "Three Lenses.",
-                subtitle: "Not consultants. Founders who think together on your problems.",
+                subtitle: "Built companies worth millions. Clients on four continents. They think together on your problems.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "TASTE", 
-                        company: "CEO / Founder, SORRYWECAN", 
+                        company: "Creative Director / Founder, SORRYWECAN", 
                         tagline: "What separates good from generic. Why your output looks like everyone else's.",
                         bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
                     },
@@ -202,12 +202,12 @@ export default function CorporatePage() {
             },
             founders: {
                 title: "Tri Pohľady.",
-                subtitle: "Nie konzultanti. Zakladatelia, ktorí myslia spolu nad vašimi problémami.",
+                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch. Myslia spolu nad vašimi problémami.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "VKUS", 
-                        company: "CEO / Zakladateľ, SORRYWECAN", 
+                        company: "Creative Director / Zakladateľ, SORRYWECAN", 
                         tagline: "Čo odlišuje dobré od generického. Prečo váš výstup vyzerá ako u všetkých.",
                         bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
                     },

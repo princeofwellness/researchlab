@@ -111,7 +111,7 @@ export default function PublicOnePager() {
                 subtitle: "",
                 parts: [
                     { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý — rozdiel robí vkus, kurátorstvo a oko pre detail." },
-                    { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek postaviť dnes. Nové biznisy, nové spôsoby fungovania — čo stavať, čo preskočiť a ako premýšľať o produktoch v tomto svete." },
+                    { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek postaviť dnes. Nové biznisy, nové spôsoby fungovania — na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete." },
                     { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať, kedy zastaviť — rozhodovací rámec, ktorý reálne použiješ." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoj odbor. Tvoja realita. Úprimné odpovede od ľudí, čo s AI budujú denne." }
                 ]

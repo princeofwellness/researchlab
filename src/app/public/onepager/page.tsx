@@ -26,12 +26,12 @@ export default function PublicOnePager() {
             problem: {
                 title: "Sound Familiar?",
                 cards: [
-                    { headline: "Faster output.", subline: "Less certainty in what's good." },
-                    { headline: "Generation is easy.", subline: "Taste is the hard part." },
-                    { headline: "You have the tools.", subline: "Your habits haven't caught up." },
-                    { headline: "You know where to go.", subline: "Daily practice is still fog." },
-                    { headline: "You've tried 20 tools.", subline: "Still not sure which one matters." },
-                    { headline: "Everyone seems to get it.", subline: "You're still figuring it out." }
+                    { headline: "Generation is easy now.", subline: "Recognizing quality is harder." },
+                    { headline: "Tools keep multiplying.", subline: "Habits can't keep up." },
+                    { headline: "The direction is clear.", subline: "Daily practice in it isn't." },
+                    { headline: "Everything moves faster.", subline: "But what should I actually create?" },
+                    { headline: "I've tried dozens of tools.", subline: "Still don't know which one to use." },
+                    { headline: "Everyone talks about AI.", subline: "Few know what to actually do with it." }
                 ]
             },
             session: {
@@ -98,12 +98,12 @@ export default function PublicOnePager() {
             problem: {
                 title: "Znie Povedome?",
                 cards: [
-                    { headline: "Rýchlejší výstup.", subline: "Menšia istota, čo je dobré." },
-                    { headline: "Generovať je ľahké.", subline: "Vkus je to ťažké." },
-                    { headline: "Nástroje máte.", subline: "Návyky ešte nie." },
-                    { headline: "Viete kam.", subline: "Denná prax je stále hmla." },
-                    { headline: "Vyskúšali ste 20 nástrojov.", subline: "Stále neviete, na ktorom záleží." },
-                    { headline: "Všetci to už vedia.", subline: "Vy to stále riešite." }
+                    { headline: "Generovať je dnes jednoduché.", subline: "Rozlíšiť kvalitu je ťažšie." },
+                    { headline: "Nástroje pribúdajú.", subline: "Návyky nestíhajú." },
+                    { headline: "Smer je zrejmý.", subline: "Každodenná prax v ňom nie." },
+                    { headline: "Všetko ide rýchlejšie.", subline: "Ale čo mám vlastne tvoriť?" },
+                    { headline: "Vyskúšal som desiatky nástrojov.", subline: "Stále neviem, ktorý použiť." },
+                    { headline: "Všetci o AI hovoria.", subline: "Málokto vie, čo s tým robiť." }
                 ]
             },
             session: {

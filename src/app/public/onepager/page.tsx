@@ -51,6 +51,7 @@ export default function PublicOnePager() {
                     { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness." },
                     { title: "From Reactive to Intentional", desc: "A shift from random AI use to consciously designed operation." },
                     { title: "Less Noise", desc: "Lower mental load. Less decision fatigue. No more AI FOMO." },
+                    { title: "What's Possible", desc: "A clear picture of what you can do today. And the confidence that it's within reach." },
                     { title: "30-Day Follow-Up", desc: "A short check-in to anchor what works, what doesn't, and what to adjust." }
                 ]
             },
@@ -123,6 +124,7 @@ export default function PublicOnePager() {
                     { title: "Vaša Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť." },
                     { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
                     { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
+                    { title: "Čo Je Možné", desc: "Jasný obraz toho, čo je dnes možné. A pocit, že je to na dosah." },
                     { title: "Follow-up po 30 Dňoch", desc: "Krátke zhodnotenie a ukotvenie v praxi. Čo funguje, čo nie a čo upraviť." }
                 ]
             },
@@ -318,7 +320,7 @@ export default function PublicOnePager() {
                 <div className={pageClass}>
                     <div className="max-w-5xl w-full px-4">
                         <h2 className="font-serif text-[32px] md:text-[56px] italic text-center mb-6 md:mb-12">{t.outcome.title}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
                             {t.outcome.items.map((item, i) => (
                                 <div key={i} className="p-4 md:p-5 border border-black/10">
                                     <p className="text-[16px] md:text-[18px] font-medium">{item.title}</p>

@@ -97,7 +97,7 @@ export default function PublicOnePager() {
                 ]
             },
             problem: {
-                title: "Znie Povedome?",
+                title: "Poznáte To?",
                 cards: [
                     { headline: "Generovať je dnes jednoduché.", subline: "Rozlíšiť kvalitu je ťažšie." },
                     { headline: "Nástroje pribúdajú.", subline: "Návyky nestíhajú." },

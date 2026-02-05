@@ -38,9 +38,9 @@ export default function PublicOnePager() {
                 title: "Taste. Leverage. Clarity.",
                 subtitle: "",
                 parts: [
-                    { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Everyone has the same tools — the difference is taste, curation, and the eye for detail." },
-                    { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can build today. New businesses, new ways to operate — what to build, what to skip, and how to think about products in this new reality." },
-                    { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "What stays human and what to delegate to AI. When to automate, when to stop — a decision framework you'll actually use." },
+                    { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Everyone has the same tools. The difference is taste, curation, and the eye for detail." },
+                    { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can build today. New businesses, new ways to operate. What to build, what to skip, and how to think about products in this new reality." },
+                    { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "What stays human and what to delegate to AI. When to automate, when to stop. A decision framework you'll actually use." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "All", desc: "Your field. Your reality. Honest answers from people who build with AI daily." }
                 ]
             },
@@ -110,9 +110,9 @@ export default function PublicOnePager() {
                 title: "Vkus. Využitie. Jasnosť.",
                 subtitle: "",
                 parts: [
-                    { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý — rozdiel robí vkus, kurátorstvo a oko pre detail." },
-                    { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek vytvoriť dnes. Nové biznisy, nové spôsoby fungovania — na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete." },
-                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať, kedy zastaviť — rozhodovací rámec, ktorý reálne použiješ." },
+                    { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail." },
+                    { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek vytvoriť dnes. Nové biznisy, nové spôsoby fungovania. Na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete." },
+                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať, kedy zastaviť. Rozhodovací rámec, ktorý reálne použiješ." },
                     { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoj odbor. Tvoja realita. Úprimné odpovede od ľudí, čo s AI budujú denne." }
                 ]
             },
@@ -123,7 +123,7 @@ export default function PublicOnePager() {
                     { title: "Vaša Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť." },
                     { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
                     { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
-                    { title: "Follow-up po 30 Dňoch", desc: "Krátke zhodnotenie a ukotvenie v praxi — čo funguje, čo nie a čo upraviť." }
+                    { title: "Follow-up po 30 Dňoch", desc: "Krátke zhodnotenie a ukotvenie v praxi. Čo funguje, čo nie a čo upraviť." }
                 ]
             },
             founders: {

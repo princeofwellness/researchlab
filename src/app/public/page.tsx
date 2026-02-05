@@ -33,14 +33,14 @@ export default function PublicSessionsPage() {
                         num: "01", 
                         title: "Taste", 
                         time: "50 min", 
-                        desc: "What separates good from unforgettable. Roland opens with live work — what's possible when taste meets technology.",
+                        desc: "What separates good from unforgettable. Roland opens with live work. What's possible when taste meets technology.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Leverage", 
                         time: "50 min", 
-                        desc: "What one person can build now. Ján shows the builder's reality — what actually ships, and the opportunity for those who see it first.",
+                        desc: "What one person can build now. Ján shows the builder's reality. What actually ships, and the opportunity for those who see it first.",
                         lead: "Ján"
                     },
                     { 
@@ -54,7 +54,7 @@ export default function PublicSessionsPage() {
                         num: "04", 
                         title: "Your Questions", 
                         time: "40 min", 
-                        desc: "Your field. Your reality. No script — just honest answers from people who build with AI daily.",
+                        desc: "Your field. Your reality. No script. Just honest answers from people who build with AI daily.",
                         lead: "All"
                     }
                 ]
@@ -72,7 +72,7 @@ export default function PublicSessionsPage() {
                 title: "You Leave With",
                 items: [
                     { title: "Clarity in Action", desc: "A clearer way of working and deciding when AI is part of everything." },
-                    { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness — even when everyone has the same tools." },
+                    { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness. Even when everyone has the same tools." },
                     { title: "From Reactive to Intentional", desc: "A shift from random AI use to consciously designed operation." },
                     { title: "Less Noise", desc: "Lower mental load. Less decision fatigue. No more AI FOMO." },
                     { title: "Frameworks That Travel", desc: "Mental models you'll use across projects, teams, and roles." }
@@ -86,15 +86,15 @@ export default function PublicSessionsPage() {
                         name: "Roland Vraník", 
                         role: "The Creative", 
                         company: "Creative Director / Founder, SORRYWECAN", 
-                        tagline: "Opens with what's possible — and what separates real creative work from generic output.",
+                        tagline: "Opens with what's possible. What separates real creative work from generic output.",
                         bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
                         company: "CPO / Co-founder, SUDOLABS", 
-                        tagline: "Shows what actually ships — and what one person can build now.",
-                        bio: "Product leader with years of experience designing and scaling digital products, teams and processes. Focused on the practical side — what makes sense to build, how to deliver it, and where individuals have the biggest real impact today."
+                        tagline: "Shows what actually ships. What one person can build now.",
+                        bio: "Product leader with years of experience designing and scaling digital products, teams and processes. Focused on the practical side. What makes sense to build, how to deliver it, and where individuals have the biggest real impact today."
                     },
                     { 
                         name: "Roman Pii Wagner", 
@@ -156,14 +156,14 @@ export default function PublicSessionsPage() {
                         num: "01", 
                         title: "Vkus", 
                         time: "50 min", 
-                        desc: "Čo odlišuje dobré od nezabudnuteľného. Roland otvára živou prácou — čo je možné, keď sa vkus stretne s technológiou.",
+                        desc: "Čo odlišuje dobré od nezabudnuteľného. Roland otvára živou prácou. Čo je možné, keď sa vkus stretne s technológiou.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Páka", 
                         time: "50 min", 
-                        desc: "Čo jeden človek dokáže postaviť dnes. Ján ukáže realitu buildera — čo sa reálne dodáva, a príležitosť pre tých, čo to vidia prví.",
+                        desc: "Čo jeden človek dokáže postaviť dnes. Ján ukáže realitu buildera. Čo sa reálne dodáva, a príležitosť pre tých, čo to vidia prví.",
                         lead: "Ján"
                     },
                     { 
@@ -177,7 +177,7 @@ export default function PublicSessionsPage() {
                         num: "04", 
                         title: "Tvoje Otázky", 
                         time: "40 min", 
-                        desc: "Tvoj odbor. Tvoja realita. Žiadny skript — len úprimné odpovede od ľudí, čo s AI budujú denne.",
+                        desc: "Tvoj odbor. Tvoja realita. Žiadny skript. Len úprimné odpovede od ľudí, čo s AI budujú denne.",
                         lead: "Všetci"
                     }
                 ]
@@ -195,7 +195,7 @@ export default function PublicSessionsPage() {
                 title: "Odídeš S",
                 items: [
                     { title: "Jasnosť v Praxi", desc: "Jasnejší spôsob práce a rozhodovania v realite, kde je AI bežnou súčasťou." },
-                    { title: "Tvoja Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť — aj keď má každý tie isté nástroje." },
+                    { title: "Tvoja Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť. Aj keď má každý tie isté nástroje." },
                     { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
                     { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
                     { title: "Frameworky, Čo Cestujú", desc: "Mentálne modely použiteľné naprieč projektmi, tímami a rolami." }
@@ -209,15 +209,15 @@ export default function PublicSessionsPage() {
                         name: "Roland Vraník", 
                         role: "Kreatívec", 
                         company: "Creative Director / Zakladateľ, SORRYWECAN", 
-                        tagline: "Otvára tým, čo je možné — a čo odlišuje skutočnú kreatívnu prácu od generického výstupu.",
+                        tagline: "Otvára tým, čo je možné. Čo odlišuje skutočnú kreatívnu prácu od generického výstupu.",
                         bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "Architekt", 
                         company: "CPO / Spoluzakladateľ, SUDOLABS", 
-                        tagline: "Ukáže, čo sa reálne dodáva — a čo dnes zvládne jeden človek.",
-                        bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na praktickú stránku — čo má zmysel stavať, ako to doručiť, a kde má dnes jednotlivec najväčší reálny dopad."
+                        tagline: "Ukáže, čo sa reálne dodáva. Čo dnes zvládne jeden človek.",
+                        bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na praktickú stránku. Čo má zmysel stavať, ako to doručiť, a kde má dnes jednotlivec najväčší reálny dopad."
                     },
                     { 
                         name: "Roman Pii Wagner", 

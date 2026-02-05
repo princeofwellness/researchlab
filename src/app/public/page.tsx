@@ -80,7 +80,7 @@ export default function PublicSessionsPage() {
             },
             founders: {
                 title: "Three Minds.",
-                subtitle: "Built companies worth millions. Clients on four continents.",
+                subtitle: "Successful companies. Portfolio and clients worldwide.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
@@ -203,7 +203,7 @@ export default function PublicSessionsPage() {
             },
             founders: {
                 title: "Tri Mysle.",
-                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch.",
+                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete.",
                 cards: [
                     { 
                         name: "Roland Vraník", 

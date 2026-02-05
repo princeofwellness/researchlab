@@ -79,7 +79,7 @@ export default function CorporatePage() {
             },
             founders: {
                 title: "Three Lenses.",
-                subtitle: "Built companies worth millions. Clients on four continents. They think together on your problems.",
+                subtitle: "Successful companies. Portfolio and clients worldwide. They think together on your problems.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
@@ -202,7 +202,7 @@ export default function CorporatePage() {
             },
             founders: {
                 title: "Tri Pohľady.",
-                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch. Myslia spolu nad vašimi problémami.",
+                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete. Myslia spolu nad vašimi problémami.",
                 cards: [
                     { 
                         name: "Roland Vraník", 

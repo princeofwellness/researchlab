@@ -46,7 +46,7 @@ export default function CorporateOnePager() {
             },
             founders: {
                 title: "Three Founders.",
-                subtitle: "Built companies worth millions. Clients on four continents. They think together on your problems.",
+                subtitle: "Successful companies. Portfolio and clients worldwide. They think together on your problems.",
                 cards: [
                     { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Everyone has the same tools. The difference is taste, curation, and the eye for detail.", bio: "Director and creative lead with decades of experience connecting aesthetics with technology, exploring new forms of visual storytelling." },
                     { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "What one person can do today. What to build, what to skip, and how to design products that work.", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
@@ -118,7 +118,7 @@ export default function CorporateOnePager() {
             },
             founders: {
                 title: "Traja Zakladatelia.",
-                subtitle: "Postavili firmy za milióny. Klienti na štyroch kontinentoch. Myslia spolu nad vašimi problémami.",
+                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete. Myslia spolu nad vašimi problémami.",
                 cards: [
                     { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail.", bio: "Režisér a kreatívny riaditeľ s dekádami skúseností prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania." },
                     { name: "Ján Koscelanský", role: "PÁKA", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Čo dokáže jeden človek dnes. Čo stavať, čo preskočiť a ako navrhovať produkty, ktoré fungujú.", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },

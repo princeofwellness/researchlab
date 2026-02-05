@@ -67,12 +67,19 @@ export default function MarketingSyncPage() {
                             </div>
                             <p className="text-xl font-serif text-[#0047BB]">~10-15</p>
                         </div>
+                        <div className="flex justify-between items-center border-b border-black/10 pb-3">
+                            <div>
+                                <p className="font-bold">SORRYWECAN clients + partners</p>
+                                <p className="text-black/40">B2B relationships → group tickets</p>
+                            </div>
+                            <p className="text-xl font-serif text-[#0047BB]">~10-20</p>
+                        </div>
                         <div className="flex justify-between items-center pt-2">
                             <p className="font-bold">Realistic total</p>
-                            <p className="text-xl font-bold text-[#0047BB]">40-60 seats reachable</p>
+                            <p className="text-xl font-bold text-[#0047BB]">50-80 seats reachable</p>
                         </div>
                     </div>
-                    <p className="text-sm text-black/40 mt-4 italic">You can fill this from existing assets alone. No audience-building needed. Just activation.</p>
+                    <p className="text-sm text-black/40 mt-4 italic">You can overfill this. The question isn't "can we sell 40?" — it's "should we add a second session?"</p>
                 </section>
 
                 <section className="mb-16">
@@ -174,12 +181,36 @@ export default function MarketingSyncPage() {
                                 <p className="text-[#0047BB] font-bold mt-2">Stories over Feed. Personal over Produced.</p>
                             </div>
 
-                            <div className="bg-black/[0.03] p-4 text-sm">
+                            <div className="bg-black/[0.03] p-4 mb-4 text-sm">
                                 <p className="font-bold mb-2">Channel 4: SORRYWECAN Reputation</p>
                                 <p className="text-black/60 mb-1">Cross-post from SORRYWECAN accounts.</p>
                                 <p className="text-black/60">Ask 5 respected people for a 1-line endorsement of the founders.</p>
                                 <p className="text-black/60 mt-1">Put on landing page. Screenshot for stories.</p>
                                 <p className="text-[#0047BB] font-bold mt-2">Borrowed trust is the fastest shortcut from "what is this?" to "I'm in."</p>
+                            </div>
+
+                            <div className="bg-[#0047BB]/5 border border-[#0047BB]/20 p-4 text-sm">
+                                <p className="font-bold text-[#0047BB] mb-2">Channel 5: SORRYWECAN Clients + Partners (the multiplier)</p>
+                                <p className="text-black/60 mb-3">This is the most underused asset. SORRYWECAN has real B2B relationships — clients, partners, vendors. Each one is two things at once:</p>
+                                
+                                <div className="ml-4 mb-3 space-y-3">
+                                    <div>
+                                        <p className="font-bold text-black">A) A corporate workshop lead</p>
+                                        <p className="text-black/60">"Máme niečo nové — workshop pre tímy. Myslíš, že by to dávalo zmysel pre vás?" Send the corporate one-pager. Plant the seed. Even if not now, it's on their radar.</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-bold text-black">B) A ticket multiplier for THE SHIFT</p>
+                                        <p className="text-black/60">"Povedz to ľuďom vo firme — €99, 3 hodiny, 26. februára." Partners send their employees. One conversation = 3-5 tickets. Group dynamic: "Ideme tam celý tím."</p>
+                                    </div>
+                                </div>
+
+                                <div className="bg-white/80 p-3 mb-3">
+                                    <p className="font-bold text-black mb-1">The ask (simple, two-part):</p>
+                                    <p className="text-black/60 italic">"Hey, robíme dve veci — verejnú session za €99 (26. feb, 40 miest) a firemné workshopy. Ak poznáš niekoho koho by to bavilo, pošli im link. A ak by to dávalo zmysel pre tvoj tím, radi sa stretneme na 20 min call."</p>
+                                </div>
+
+                                <p className="text-[#0047BB] font-bold">One message, two pipelines. Public tickets now, corporate leads for later.</p>
+                                <p className="text-black/40 mt-2">List every SORRYWECAN client/partner from last 2 years. Each founder takes a third. Personal message, not mass email.</p>
                             </div>
                         </div>
 
@@ -330,6 +361,10 @@ export default function MarketingSyncPage() {
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">6.</span>
+                            <p className="text-black/70"><span className="font-bold text-black">SORRYWECAN client/partner list</span> — who are they? Split among founders. Personal outreach this week.</p>
+                        </div>
+                        <div className="flex gap-3">
+                            <span className="font-bold text-[#0047BB] shrink-0">7.</span>
                             <p className="text-black/70"><span className="font-bold text-black">Shared tracking</span> — who owns the sheet? (One person, updated daily)</p>
                         </div>
                     </div>

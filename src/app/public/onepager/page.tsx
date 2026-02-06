@@ -57,8 +57,8 @@ export default function PublicOnePager() {
                 ]
             },
             founders: {
-                title: "Three Founders",
-                subtitle: "Successful companies. Portfolio and clients worldwide.",
+                title: "Three Perspectives",
+                subtitle: "Art. Product. Transformation.",
                 cards: [
                     { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual experience.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes.", url: "https://sudolabs.com/" },
@@ -132,8 +132,8 @@ export default function PublicOnePager() {
                 ]
             },
             founders: {
-                title: "Traja Zakladatelia",
-                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete.",
+                title: "Tri Perspektívy",
+                subtitle: "Umenie. Produkt. Transformácia.",
                 cards: [
                     { name: "Roland Vraník", role: "Umelec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov.", url: "https://sudolabs.com/" },

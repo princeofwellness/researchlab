@@ -77,7 +77,7 @@ export default function PublicOnePager() {
             cta: {
                 headline: "Ready?",
                 subline: "40 seats. First session February 26.",
-                email: "andrea@sorrywecan.com",
+                email: "Reserve Your Seat",
                 contact: "For questions write to: researchlab@sorrywecan.com"
             }
         },
@@ -90,7 +90,7 @@ export default function PublicOnePager() {
                 info: "BRATISLAVA \u00b7 26.2. \u00b7 od 99 eur"
             },
             stats: {
-                headline: "Svet sa mení rýchlejšie, než si myslíš.",
+                headline: "Svet sa mení rýchlejšie, než si myslíte.",
                 subline: "",
                 items: [
                     { value: "40%", label: "pracovných pozícií vystavených vplyvu AI", source: "IMF 2024" },
@@ -116,8 +116,8 @@ export default function PublicOnePager() {
                 parts: [
                     { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail." },
                     { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek vytvoriť dnes. Nové biznisy, nové spôsoby fungovania. Na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete." },
-                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať a kedy sa vedome zastaviť. Rozhodovacie rámce, ktoré vieš reálne používať." },
-                    { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoje otázky. Tvoja realita. Otvorené a úprimné odpovede od ľudí, ktorí s AI pracujú denne." }
+                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať a kedy sa vedome zastaviť. Rozhodovacie rámce, ktoré viete reálne používať." },
+                    { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Vaše otázky. Vaša realita. Otvorené a úprimné odpovede od ľudí, ktorí s AI pracujú denne." }
                 ]
             },
             outcome: {
@@ -152,8 +152,8 @@ export default function PublicOnePager() {
             cta: {
                 headline: "Pripravený?",
                 subline: "40 miest. Prvá session 26. februára.",
-                email: "andrea@sorrywecan.com",
-                contact: "V prípade otázok píš na: researchlab@sorrywecan.com"
+                email: "Rezervovať Miesto",
+                contact: "V prípade otázok píšte na: researchlab@sorrywecan.com"
             }
         }
     }

@@ -135,7 +135,7 @@ export default function PublicOnePager() {
                 title: "Traja Zakladatelia",
                 subtitle: "Úspešné firmy. Portfólio a klienti po celom svete.",
                 cards: [
-                    { name: "Roland Vraník", role: "Kreatívec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov.", url: "https://sorrywecan.com/" },
+                    { name: "Roland Vraník", role: "Umelec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov.", url: "https://sudolabs.com/" },
                     { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha lídrom a tímom orientovať sa v neistote a rozlíšiť, na čom záleží.", url: "" }
                 ]

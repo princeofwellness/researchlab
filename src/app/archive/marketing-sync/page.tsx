@@ -33,12 +33,12 @@ export default function MarketingSyncPage() {
                             <p className="text-xs text-black/50 mt-1">Emails sent</p>
                         </div>
                         <div className="bg-white border border-red-200 p-4 text-center">
-                            <p className="text-3xl font-serif text-red-600">No</p>
-                            <p className="text-xs text-black/50 mt-1">Proof video</p>
+                            <p className="text-3xl font-serif text-amber-600">?</p>
+                            <p className="text-xs text-black/50 mt-1">Payment link live</p>
                         </div>
                         <div className="bg-white border border-red-200 p-4 text-center">
                             <p className="text-3xl font-serif text-amber-600">?</p>
-                            <p className="text-xs text-black/50 mt-1">Payment link live</p>
+                            <p className="text-xs text-black/50 mt-1">One-pager approved</p>
                         </div>
                         <div className="bg-white border border-red-200 p-4 text-center">
                             <p className="text-3xl font-serif text-[#0047BB]">20</p>
@@ -60,9 +60,9 @@ export default function MarketingSyncPage() {
                             </div>
                             <div className="space-y-1 text-sm text-white/70">
                                 <p>☐ Write list of 30 people to personally invite</p>
-                                <p>☐ Record proof video (Option 3 "Real Talk" — script is ready)</p>
                                 <p>☐ Sync with Andrea on Email #1 copy</p>
                                 <p>☐ Confirm payment link is live and working</p>
+                                <p>☐ Start personal DMs — 10/day from Monday</p>
                             </div>
                         </div>
 
@@ -104,13 +104,38 @@ export default function MarketingSyncPage() {
 
                         <div className="bg-white/10 border border-white/20 p-4">
                             <div className="flex items-center justify-between mb-2">
-                                <p className="font-bold">Branyo</p>
+                                <p className="font-bold">Tepi</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">ONGOING</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
+                                <p>☐ Organize + curate the entire experience with Andrea and Sasha</p>
+                                <p>☐ Personal outreach — write to own network (not speaking, but selling)</p>
+                                <p>☐ Coordinate all moving parts between founders, SWC team, and ops</p>
+                                <p>☐ One-pager public + corporate — finalize and approve for launch</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">SWC Team — Edo, Tibor</p>
                                 <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
                             </div>
                             <div className="space-y-1 text-sm text-white/70">
-                                <p>☐ Edit proof video (add English subtitles)</p>
+                                <p>☐ Pull SORRYWECAN email/partner database — years of contacts</p>
+                                <p>☐ Identify warm B2B leads for both public tickets + corporate workshop pipeline</p>
+                                <p>☐ Personal outreach to SWC clients and collaborators</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">Brano</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
                                 <p>☐ Create 1 reusable IG story template (one font, one logo, replicate weekly)</p>
                                 <p>☐ Review Adam's Notion structure — adapt for Research Lab</p>
+                                <p>☐ Support daily story posting once content starts flowing</p>
                             </div>
                         </div>
                     </div>
@@ -119,16 +144,17 @@ export default function MarketingSyncPage() {
                         <p className="font-bold mb-2">Monday Feb 10 — Launch Day</p>
                         <div className="space-y-1 text-sm text-white/70">
                             <p>→ Email #1 goes out to 350 list</p>
-                            <p>→ Proof video goes live on founders' profiles</p>
-                            <p>→ Each founder starts sending personal DMs — 10/day minimum</p>
                             <p>→ One-pager goes public</p>
+                            <p>→ Each founder starts sending personal DMs — 10/day minimum</p>
+                            <p>→ SWC team activates partner/client outreach</p>
+                            <p>→ Tepi + Andrea + Sasha coordinate all ops</p>
                         </div>
                     </div>
                 </section>
 
                 <section className="mb-16 bg-black/[0.03] p-6">
                     <h2 className="font-serif text-2xl italic mb-2">From the Call: Key Decisions</h2>
-                    <p className="text-sm text-black/40 mb-6">Feb 6 team call — Roman, Andrea, Sasha, Adam, Branyo.</p>
+                    <p className="text-sm text-black/40 mb-6">Feb 6 team call — Roman, Andrea, Sasha, Adam, Brano.</p>
                     
                     <div className="space-y-4 text-sm">
                         <div className="border-l-2 border-[#0047BB] pl-4 py-1">
@@ -144,8 +170,8 @@ export default function MarketingSyncPage() {
                             <p className="text-black/50">SWC + Vilco finishing first AI commercial for Tatrabanka. Short breakdown video (1 min) — which tools, which prompts, multi-prompt workflow. Great Research Lab content. AFTER Feb 26.</p>
                         </div>
                         <div className="border-l-2 border-[#0047BB] pl-4 py-1">
-                            <p className="font-bold text-black">Branyo: 40-50h/week available for SWC + Research Lab</p>
-                            <p className="text-black/50">Priority for next 2 weeks: video editing, IG story templates, daily story posting. Not strategy. Execution support.</p>
+                            <p className="font-bold text-black">Brano: 40-50h/week available for SWC + Research Lab</p>
+                            <p className="text-black/50">Priority for next 2 weeks: IG story templates, daily story posting. Not strategy. Execution support.</p>
                         </div>
                         <div className="border-l-2 border-[#0047BB] pl-4 py-1">
                             <p className="font-bold text-black">Adam: shared Notion template for content structure</p>
@@ -157,7 +183,7 @@ export default function MarketingSyncPage() {
                         </div>
                         <div className="border-l-2 border-[#0047BB] pl-4 py-1">
                             <p className="font-bold text-black">Content templates: 1 design per content type, replicate</p>
-                            <p className="text-black/50">Branyo's insight: the most time-consuming thing is creating from zero every time. Make one template per segment, replicate weekly. His dance profile: 1 concept, 1100 followers in 90 days, 400K+ views, 80% non-followers.</p>
+                            <p className="text-black/50">Brano's insight: the most time-consuming thing is creating from zero every time. Make one template per segment, replicate weekly. His dance profile: 1 concept, 1100 followers in 90 days, 400K+ views, 80% non-followers.</p>
                         </div>
                         <div className="border-l-2 border-amber-500 pl-4 py-1">
                             <p className="font-bold text-amber-700">Roland was not on the call</p>
@@ -168,7 +194,7 @@ export default function MarketingSyncPage() {
 
                 <section className="mb-16 border-2 border-black/10 p-6">
                     <div className="flex items-center gap-3 mb-4">
-                        <h2 className="font-serif text-2xl italic">Branyo's Role</h2>
+                        <h2 className="font-serif text-2xl italic">Brano's Role</h2>
                         <span className="text-[9px] font-bold tracking-widest px-2 py-1 bg-green-100 text-green-700">40-50H/WEEK</span>
                     </div>
                     <p className="text-sm text-black/50 mb-4">Clear deliverables, not "help with socials." He's execution, not strategy.</p>
@@ -177,29 +203,29 @@ export default function MarketingSyncPage() {
                         <div className="flex items-start gap-3 text-sm">
                             <span className="font-bold text-[#0047BB] shrink-0 w-6">1.</span>
                             <div>
-                                <p className="font-bold">Edit Roman's proof video</p>
-                                <p className="text-black/40">Add English subtitles. Keep it raw. Don't over-produce.</p>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-3 text-sm">
-                            <span className="font-bold text-[#0047BB] shrink-0 w-6">2.</span>
-                            <div>
                                 <p className="font-bold">Create reusable IG story templates</p>
                                 <p className="text-black/40">One font, one logo, one format per content type. Replicate weekly. No reinventing every post.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3 text-sm">
-                            <span className="font-bold text-[#0047BB] shrink-0 w-6">3.</span>
+                            <span className="font-bold text-[#0047BB] shrink-0 w-6">2.</span>
                             <div>
                                 <p className="font-bold">Post daily stories for next 2 weeks</p>
-                                <p className="text-black/40">Founders provide the raw content (photos, videos, text). Branyo formats and posts.</p>
+                                <p className="text-black/40">Founders provide the raw content (photos, videos, text). Brano formats and posts.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 text-sm">
+                            <span className="font-bold text-[#0047BB] shrink-0 w-6">3.</span>
+                            <div>
+                                <p className="font-bold">Adapt Adam's Notion content structure</p>
+                                <p className="text-black/40">Review what Brand New uses. Find what fits Research Lab. Present back to team.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3 text-sm">
                             <span className="font-bold text-[#0047BB] shrink-0 w-6">4.</span>
                             <div>
-                                <p className="font-bold">Adapt Adam's Notion content structure</p>
-                                <p className="text-black/40">Review what Brand New uses. Find what fits Research Lab. Present back to team.</p>
+                                <p className="font-bold">Video editing when content is ready</p>
+                                <p className="text-black/40">Reels, subtitles, short clips. On-demand when founders produce raw material.</p>
                             </div>
                         </div>
                     </div>
@@ -223,12 +249,22 @@ export default function MarketingSyncPage() {
                         <div className="border border-black/10 p-4">
                             <p className="text-3xl font-serif text-[#0047BB]">3</p>
                             <p className="text-sm text-black/50 mt-1">Founders' networks</p>
-                            <p className="text-xs text-black/30">Friends, partners, warm leads</p>
+                            <p className="text-xs text-black/30">Roland, Jan, Roman — personal contacts</p>
+                        </div>
+                        <div className="border-2 border-[#0047BB] p-4 bg-[#0047BB]/5">
+                            <p className="text-3xl font-serif text-[#0047BB]">SWC</p>
+                            <p className="text-sm text-black/50 mt-1">Edo, Tibor — partner database</p>
+                            <p className="text-xs text-black/30">Years of client emails + B2B contacts</p>
                         </div>
                         <div className="border border-black/10 p-4">
                             <p className="text-3xl font-serif text-[#0047BB]">1</p>
                             <p className="text-sm text-black/50 mt-1">SORRYWECAN brand</p>
                             <p className="text-xs text-black/30">Existing reputation + credibility</p>
+                        </div>
+                        <div className="border border-black/10 p-4">
+                            <p className="text-3xl font-serif text-[#0047BB]">Tepi</p>
+                            <p className="text-sm text-black/50 mt-1">Curator + organizer</p>
+                            <p className="text-xs text-black/30">With Andrea + Sasha — running ops</p>
                         </div>
                     </div>
                 </section>
@@ -333,12 +369,12 @@ export default function MarketingSyncPage() {
 
                         <div className="border-l-2 border-[#0047BB] pl-6">
                             <p className="text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mb-2">02</p>
-                            <h3 className="text-xl font-bold mb-3">One Proof Asset</h3>
+                            <h3 className="text-xl font-bold mb-3">One-Pagers Are The Proof</h3>
                             <p className="text-black/60 leading-relaxed mb-4">Not a content calendar. Not 40 hooks. One thing that makes people go "I need to be there."</p>
-                            <p className="text-black/60 leading-relaxed mb-3"><span className="font-bold text-black">What:</span> 2-4 minute video. Screen recording + founder voice. Show one workflow that feels like magic but is repeatable. Before → after. Real work, not slides.</p>
-                            <p className="text-black/60 leading-relaxed mb-3"><span className="font-bold text-black">Language:</span> Slovak spoken. English subtitles. Post natively on IG + LinkedIn.</p>
-                            <p className="text-black/60 leading-relaxed mb-3"><span className="font-bold text-black">Why:</span> Proof collapses skepticism faster than any amount of "content." People don't buy promises. They buy demonstrations.</p>
-                            <p className="text-sm text-black/40">Record within 48 hours. This is the anchor everything else links to.</p>
+                            <p className="text-black/60 leading-relaxed mb-3"><span className="font-bold text-black">What we have:</span> Public one-pager + corporate one-pager. Clean, credible, bilingual. These are the assets we send in every DM, every email, every conversation.</p>
+                            <p className="text-black/60 leading-relaxed mb-3"><span className="font-bold text-black">How to use:</span> DM someone → send one-pager link. Email the list → link to one-pager. Partner asks "what is this?" → one-pager. It answers every question before they ask.</p>
+                            <p className="text-black/60 leading-relaxed mb-3"><span className="font-bold text-black">Why:</span> Proof collapses skepticism faster than any amount of "content." A clear, professional page with real names, real companies, and a clear offer does the selling for you.</p>
+                            <p className="text-sm text-black/40">Finalize and approve both versions. Then share everywhere.</p>
                         </div>
 
                         <div className="border-l-2 border-[#0047BB] pl-6">
@@ -469,11 +505,11 @@ export default function MarketingSyncPage() {
                             <p className="text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mb-3">Week 0 — Now (2 days)</p>
                             <div className="space-y-2 text-sm text-black/60">
                                 <p>☐ Lock the one-sentence positioning (EN + SK)</p>
-                                <p>☐ Record the proof video (one take, Slovak, English subs)</p>
+                                <p>☐ Finalize + approve one-pagers (public + corporate)</p>
                                 <p>☐ Each founder: list 25-30 people to personally invite</p>
-                                <p>☐ Ask 5 respected peers for endorsement quotes</p>
-                                <p>☐ Put quotes on landing page</p>
+                                <p>☐ SWC team (Edo, Tibor): pull partner/client email database</p>
                                 <p>☐ Prepare the one email (Slovak, short, personal)</p>
+                                <p>☐ Confirm payment link works</p>
                             </div>
                         </div>
 
@@ -481,8 +517,9 @@ export default function MarketingSyncPage() {
                             <p className="text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mb-3">Week 1 — Activate (days 3-9)</p>
                             <div className="space-y-2 text-sm text-black/60">
                                 <p>☐ Send Email #1 to 350 list</p>
-                                <p>☐ Post proof video on IG + founders' LinkedIn</p>
+                                <p>☐ Share one-pager link publicly</p>
                                 <p>☐ Each founder: send personal DMs (all 25-30)</p>
+                                <p>☐ SWC team: outreach to client/partner database</p>
                                 <p>☐ Daily IG stories (Slovak, raw, behind-scenes)</p>
                                 <p>☐ Cross-post from SORRYWECAN accounts</p>
                                 <p>☐ Track replies in shared sheet</p>
@@ -590,11 +627,11 @@ export default function MarketingSyncPage() {
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">4.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Proof video status</span> — Recorded? Edited? Subtitles done? When does it go live?</p>
+                            <p className="text-black/70"><span className="font-bold text-black">SWC contacts</span> — Edo, Tibor: how many emails/partners in the database? Who reaches out to whom?</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">5.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">SORRYWECAN client list</span> — Andrea: how many contacts? Split among founders for personal outreach.</p>
+                            <p className="text-black/70"><span className="font-bold text-black">One-pager status</span> — Public + corporate versions approved? Ready to share in outreach?</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">6.</span>
@@ -611,7 +648,7 @@ export default function MarketingSyncPage() {
                     <h2 className="font-serif text-2xl italic mb-4">The Uncomfortable Truth</h2>
                     <div className="space-y-4 text-sm text-white/70">
                         <p>We've built a beautiful one-pager, a corporate one-pager, a full marketing page with interactive elements, an 899-line execution algorithm, DM templates, email sequences, video scripts, and multiple internal strategy pages.</p>
-                        <p>We haven't sent a single email. We haven't sent personal DMs. We haven't recorded the proof video. We may not have a working payment link.</p>
+                        <p>We haven't sent a single email to the list. We haven't sent personal DMs to warm leads. We may not have a working payment link.</p>
                         <p className="text-white font-bold text-lg">We are over-engineered and under-executed.</p>
                         <p className="text-white/50 italic">This page literally said "Planning feels like progress. It's not." And then we had a 45-minute call that was 95% planning.</p>
                         <p>The fix is simple: stop building tools and start having conversations with humans who might buy tickets.</p>

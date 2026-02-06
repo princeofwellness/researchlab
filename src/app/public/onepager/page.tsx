@@ -121,7 +121,7 @@ export default function PublicOnePager() {
                 ]
             },
             outcome: {
-                title: "S Čím Odchádzaš",
+                title: "S Čím Odchádzate",
                 items: [
                     { title: "Jasnosť v Praxi", desc: "Jasnejší spôsob práce a rozhodovania, keď je AI všade." },
                     { title: "Vaša Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť." },

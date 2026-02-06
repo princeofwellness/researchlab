@@ -289,7 +289,7 @@ export default function PublicOnePager() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
                             {t.session.parts.map((part, i) => (
-                                <div key={i} className={`p-4 md:p-6 border-2 flex flex-col ${i === 0 ? 'border-[#0047BB] bg-[#0047BB]/5' : 'border-black/10'}`}>
+                                <div key={i} className="p-4 md:p-6 border-2 border-black/10 flex flex-col">
                                     <p className="text-[11px] md:text-[12px] font-code-brand font-bold text-black/30">{part.num}</p>
                                     <p className="font-bold text-[24px] md:text-[32px] mt-1">{part.title}</p>
                                     <p className="text-[11px] md:text-[12px] font-code-brand text-black/40 mt-1">{part.time}</p>

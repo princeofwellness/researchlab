@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import { Instrument_Serif, Inter, Space_Mono, Syne, Source_Sans_3, Source_Code_Pro } from "next/font/google"
+import { Instrument_Serif, Inter, Space_Mono, Syne, Source_Code_Pro } from "next/font/google"
+import localFont from "next/font/local"
 import "./globals.css"
 
 const inter = Inter({
@@ -25,9 +26,14 @@ const syne = Syne({
   variable: "--font-syne",
 })
 
-const sourceSans = Source_Sans_3({
-  subsets: ["latin"],
-  variable: "--font-source-sans",
+const proximaNova = localFont({
+  src: [
+    { path: "../fonts/ProximaNova-Regular.otf", weight: "400", style: "normal" },
+    { path: "../fonts/ProximaNova-Semibold.otf", weight: "600", style: "normal" },
+    { path: "../fonts/ProximaNova-Bold.otf", weight: "700", style: "normal" },
+    { path: "../fonts/ProximaNova-BoldItalic.otf", weight: "700", style: "italic" },
+  ],
+  variable: "--font-proxima-nova",
 })
 
 const sourceCode = Source_Code_Pro({
@@ -46,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} ${spaceMono.variable} ${syne.variable} ${sourceSans.variable} ${sourceCode.variable}`}>
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} ${spaceMono.variable} ${syne.variable} ${proximaNova.variable} ${sourceCode.variable}`}>
       <body className="antialiased font-mono">{children}</body>
     </html>
   )

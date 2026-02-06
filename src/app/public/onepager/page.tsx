@@ -180,7 +180,7 @@ export default function PublicOnePager() {
                     .page-container {
                         gap: 2rem;
                         padding: 2rem;
-                        background: #e5e5e5;
+                        background: #e8e1da;
                     }
                     .page-slide {
                         overflow: hidden;

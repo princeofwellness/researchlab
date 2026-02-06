@@ -11,11 +11,12 @@ export default function PublicOnePager() {
                 label: "THE SHIFT",
                 title: { line1: "One Session.", line2: "New Operating System." },
                 subline: "What changed. What's possible. What's next.",
-                desc: "3 hours with founders who build with AI daily."
+                desc: "3 hours with founders who build with AI daily.",
+                info: "BRATISLAVA \u00b7 FEB 26 \u00b7 from \u20ac99"
             },
             stats: {
-                headline: "Technology is available to everyone.",
-                subline: "The difference is how you think, decide, and work.",
+                headline: "Everyone has AI tools today.",
+                subline: "The way you think makes the difference.",
                 items: [
                     { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
                     { value: "22%", label: "will fundamentally change by 2030", source: "WEF 2025" },
@@ -40,8 +41,8 @@ export default function PublicOnePager() {
                 parts: [
                     { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Everyone has the same tools. The difference is taste, curation, and the eye for detail." },
                     { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can build today. New businesses, new ways to operate. What to build, what to skip, and how to think about products in this new reality." },
-                    { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "What stays human and what to delegate to AI. When to automate, when to stop. A decision framework you'll actually use." },
-                    { num: "04", title: "Q&A", time: "40 min", lead: "All", desc: "Your field. Your reality. Honest answers from people who build with AI daily." }
+                    { num: "03", title: "Clarity", time: "40 min", lead: "Roman", desc: "What stays human and what to delegate to AI. When to automate and when to consciously stop. Decision frameworks you'll actually use." },
+                    { num: "04", title: "Q&A", time: "40 min", lead: "All", desc: "Your questions. Your reality. Open and honest answers from people who work with AI daily." }
                 ]
             },
             outcome: {
@@ -59,9 +60,9 @@ export default function PublicOnePager() {
                 title: "Three Founders",
                 subtitle: "Successful companies. Portfolio and clients worldwide.",
                 cards: [
-                    { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual experience." },
-                    { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes." },
-                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps leaders and teams navigate uncertainty and distinguish between what matters and what's noise." }
+                    { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual experience.", url: "https://sorrywecan.com/" },
+                    { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes.", url: "https://sudolabs.com/" },
+                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps leaders and teams navigate uncertainty and distinguish between what matters and what's noise.", url: "" }
                 ]
             },
             details: {
@@ -69,14 +70,15 @@ export default function PublicOnePager() {
                 items: [
                     { label: "Where", value: "SORRYWECAN Studio", sub: "Pečnianska 7, Bratislava" },
                     { label: "When", value: "February 26, 2026", sub: "Wednesday" },
-                    { label: "Time", value: "17:30 — 20:30", sub: "3 hours" },
+                    { label: "Time", value: "17:00 — 20:30", sub: "3.5 hours" },
                     { label: "Price", value: "from €99", sub: "per person" }
                 ]
             },
             cta: {
                 headline: "Ready?",
                 subline: "40 seats. First session February 26.",
-                email: "andrea@sorrywecan.com"
+                email: "andrea@sorrywecan.com",
+                contact: "For questions write to: researchlab@sorrywecan.com"
             }
         },
         sk: {
@@ -84,11 +86,12 @@ export default function PublicOnePager() {
                 label: "THE SHIFT",
                 title: { line1: "Jedna Session.", line2: "Nový Operačný Systém." },
                 subline: "Čo sa zmenilo. Čo je možné. Čo ďalej.",
-                desc: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne."
+                desc: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
+                info: "BRATISLAVA \u00b7 26.2. \u00b7 od 99 eur"
             },
             stats: {
-                headline: "Technológia je dostupná všetkým.",
-                subline: "Rozdiel robí spôsob myslenia, rozhodovania a práce.",
+                headline: "AI nástroje má dnes každý.",
+                subline: "Rozhoduje spôsob myslenia.",
                 items: [
                     { value: "40%", label: "pracovných pozícií vystavených vplyvu AI", source: "IMF 2024" },
                     { value: "22%", label: "pracovných miest sa do 2030 zásadne zmení", source: "WEF 2025" },
@@ -113,12 +116,12 @@ export default function PublicOnePager() {
                 parts: [
                     { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail." },
                     { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek vytvoriť dnes. Nové biznisy, nové spôsoby fungovania. Na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete." },
-                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať, kedy zastaviť. Rozhodovací rámec, ktorý reálne použiješ." },
-                    { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoj odbor. Tvoja realita. Úprimné odpovede od ľudí, čo s AI budujú denne." }
+                    { num: "03", title: "Jasnosť", time: "40 min", lead: "Roman", desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať a kedy sa vedome zastaviť. Rozhodovacie rámce, ktoré vieš reálne používať." },
+                    { num: "04", title: "Q&A", time: "40 min", lead: "Všetci", desc: "Tvoje otázky. Tvoja realita. Otvorené a úprimné odpovede od ľudí, ktorí s AI pracujú denne." }
                 ]
             },
             outcome: {
-                title: "Odídete S",
+                title: "S Čím Odchádzaš",
                 items: [
                     { title: "Jasnosť v Praxi", desc: "Jasnejší spôsob práce a rozhodovania, keď je AI všade." },
                     { title: "Vaša Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť." },
@@ -132,9 +135,9 @@ export default function PublicOnePager() {
                 title: "Traja Zakladatelia",
                 subtitle: "Úspešné firmy. Portfólio a klienti po celom svete.",
                 cards: [
-                    { name: "Roland Vraník", role: "Kreatívec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov." },
-                    { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov." },
-                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha lídrom a tímom orientovať sa v neistote a rozlíšiť, na čom záleží." }
+                    { name: "Roland Vraník", role: "Kreatívec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov.", url: "https://sorrywecan.com/" },
+                    { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov.", url: "https://sudolabs.com/" },
+                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha lídrom a tímom orientovať sa v neistote a rozlíšiť, na čom záleží.", url: "" }
                 ]
             },
             details: {
@@ -142,14 +145,15 @@ export default function PublicOnePager() {
                 items: [
                     { label: "Kde", value: "SORRYWECAN Studio", sub: "Pečnianska 7, Bratislava" },
                     { label: "Kedy", value: "26. februára 2026", sub: "Streda" },
-                    { label: "Čas", value: "17:30 — 20:30", sub: "3 hodiny" },
+                    { label: "Čas", value: "17:00 — 20:30", sub: "3.5 hodiny" },
                     { label: "Cena", value: "od €99", sub: "na osobu" }
                 ]
             },
             cta: {
                 headline: "Pripravený?",
                 subline: "40 miest. Prvá session 26. februára.",
-                email: "andrea@sorrywecan.com"
+                email: "andrea@sorrywecan.com",
+                contact: "V prípade otázok píš na: researchlab@sorrywecan.com"
             }
         }
     }
@@ -239,6 +243,7 @@ export default function PublicOnePager() {
                         </h1>
                         <p className="text-[16px] md:text-[24px] text-black/50 mt-4 md:mt-8">{t.hero.subline}</p>
                         <p className="text-[14px] md:text-[16px] text-black/40 mt-2 md:mt-4">{t.hero.desc}</p>
+                        <p className="text-[11px] md:text-[13px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-[#0047BB] mt-4 md:mt-6">{t.hero.info}</p>
                     </div>
                     <p className="absolute bottom-4 md:bottom-8 text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/20">SORRYWECAN // RESEARCH LAB</p>
                 </div>
@@ -310,6 +315,11 @@ export default function PublicOnePager() {
                                     <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mt-2">{card.role}</p>
                                     <p className="text-[11px] md:text-[12px] text-black/40 mt-1">{card.company}</p>
                                     <p className="text-[13px] md:text-[14px] text-black/60 mt-3 md:mt-4 leading-relaxed">{card.bio}</p>
+                                    {card.url && (
+                                        <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mt-3 hover:underline">
+                                            {card.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                                        </a>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -351,7 +361,8 @@ export default function PublicOnePager() {
                             <p className="text-[12px] md:text-[14px] font-bold uppercase tracking-widest text-white">{t.cta.email}</p>
                         </div>
                         
-                        <p className="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/30 mt-8 md:mt-12">SORRYWECAN // RESEARCH LAB // 2026</p>
+                        <p className="text-[11px] md:text-[13px] text-black/40 mt-6 md:mt-8">{t.cta.contact}</p>
+                        <p className="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/30 mt-6 md:mt-8">SORRYWECAN // RESEARCH LAB // 2026</p>
                     </div>
                 </div>
 

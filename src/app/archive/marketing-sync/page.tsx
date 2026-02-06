@@ -10,11 +10,201 @@ export default function MarketingSyncPage() {
             <article className="max-w-2xl mx-auto pt-32 pb-24 px-6">
 
                 <header className="mb-16">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-black/30 mb-4">Marketing Sync</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-black/30 mb-4">Marketing Sync — Post-Call Update</p>
                     <h1 className="font-serif text-4xl md:text-5xl italic leading-tight">The Only Things That Matter</h1>
                     <p className="text-lg text-black/50 mt-4">20 days. 40 seats. No ad budget. Go.</p>
-                    <p className="text-sm text-black/40 mt-2">Stop planning. Start doing.</p>
+                    <p className="text-sm text-black/40 mt-2">Updated Feb 6 after team call.</p>
                 </header>
+
+                <section className="mb-16 bg-red-50 border-2 border-red-200 p-6">
+                    <h2 className="font-serif text-2xl italic mb-2 text-red-900">Status: Feb 6</h2>
+                    <p className="text-sm text-red-700/60 mb-6">Honest snapshot. No sugar coating.</p>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div className="bg-white border border-red-200 p-4 text-center">
+                            <p className="text-3xl font-serif text-red-600">0</p>
+                            <p className="text-xs text-black/50 mt-1">Tickets sold</p>
+                        </div>
+                        <div className="bg-white border border-red-200 p-4 text-center">
+                            <p className="text-3xl font-serif text-red-600">0</p>
+                            <p className="text-xs text-black/50 mt-1">DMs sent</p>
+                        </div>
+                        <div className="bg-white border border-red-200 p-4 text-center">
+                            <p className="text-3xl font-serif text-red-600">0</p>
+                            <p className="text-xs text-black/50 mt-1">Emails sent</p>
+                        </div>
+                        <div className="bg-white border border-red-200 p-4 text-center">
+                            <p className="text-3xl font-serif text-red-600">No</p>
+                            <p className="text-xs text-black/50 mt-1">Proof video</p>
+                        </div>
+                        <div className="bg-white border border-red-200 p-4 text-center">
+                            <p className="text-3xl font-serif text-amber-600">?</p>
+                            <p className="text-xs text-black/50 mt-1">Payment link live</p>
+                        </div>
+                        <div className="bg-white border border-red-200 p-4 text-center">
+                            <p className="text-3xl font-serif text-[#0047BB]">20</p>
+                            <p className="text-xs text-black/50 mt-1">Days left</p>
+                        </div>
+                    </div>
+                    <p className="text-sm text-red-700/50 mt-4 italic">We have great material. We have not started selling. That changes now.</p>
+                </section>
+
+                <section className="mb-16 bg-[#0047BB] text-white p-6">
+                    <h2 className="font-serif text-2xl italic mb-2">This Week: Non-Negotiables</h2>
+                    <p className="text-sm text-white/50 mb-6">No discussion. No "let's sync." Do these or we don't sell 40 seats.</p>
+                    
+                    <div className="space-y-4">
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">Roman</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
+                                <p>☐ Write list of 30 people to personally invite</p>
+                                <p>☐ Record proof video (Option 3 "Real Talk" — script is ready)</p>
+                                <p>☐ Sync with Andrea on Email #1 copy</p>
+                                <p>☐ Confirm payment link is live and working</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">Roland</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
+                                <p>☐ Write list of 30 people to personally invite</p>
+                                <p>☐ Approve one-pager for public launch</p>
+                                <p>☐ Commit to 10 personal DMs/day starting Monday</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">Jan</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
+                                <p>☐ Write list of 30 people to personally invite</p>
+                                <p>☐ Commit to 10 personal DMs/day starting Monday</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">Andrea</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
+                                <p>☐ Prepare Email #1 — ready to send Monday</p>
+                                <p>☐ SORRYWECAN client/partner list from last 2 years</p>
+                                <p>☐ Leverage personal contacts — who to DM, who to call</p>
+                                <p>☐ List past free tour/event attendees for direct outreach</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white/10 border border-white/20 p-4">
+                            <div className="flex items-center justify-between mb-2">
+                                <p className="font-bold">Branyo</p>
+                                <p className="text-[10px] font-bold tracking-widest text-white/40">BY SUNDAY FEB 9</p>
+                            </div>
+                            <div className="space-y-1 text-sm text-white/70">
+                                <p>☐ Edit proof video (add English subtitles)</p>
+                                <p>☐ Create 1 reusable IG story template (one font, one logo, replicate weekly)</p>
+                                <p>☐ Review Adam's Notion structure — adapt for Research Lab</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-6 bg-white/20 p-4 border border-white/30">
+                        <p className="font-bold mb-2">Monday Feb 10 — Launch Day</p>
+                        <div className="space-y-1 text-sm text-white/70">
+                            <p>→ Email #1 goes out to 350 list</p>
+                            <p>→ Proof video goes live on founders' profiles</p>
+                            <p>→ Each founder starts sending personal DMs — 10/day minimum</p>
+                            <p>→ One-pager goes public</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="mb-16 bg-black/[0.03] p-6">
+                    <h2 className="font-serif text-2xl italic mb-2">From the Call: Key Decisions</h2>
+                    <p className="text-sm text-black/40 mb-6">Feb 6 team call — Roman, Andrea, Sasha, Adam, Branyo.</p>
+                    
+                    <div className="space-y-4 text-sm">
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">70% of tickets will come from personal outreach</p>
+                            <p className="text-black/50">Social media will do ~20-30%. The real engine is DMs, calls, personal invitations. This is a personal sales job, not a brand campaign.</p>
+                        </div>
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">SORRYWECAN = front end, Research Lab = back end</p>
+                            <p className="text-black/50">SWC does the cool shows, exhibits, activations. Research Lab explains how it's done, educates, breaks things down. SWC builds the brand, RL gives people a reason to follow.</p>
+                        </div>
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">Tatrabanka AI commercial = potential case study content</p>
+                            <p className="text-black/50">SWC + Vilco finishing first AI commercial for Tatrabanka. Short breakdown video (1 min) — which tools, which prompts, multi-prompt workflow. Great Research Lab content. AFTER Feb 26.</p>
+                        </div>
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">Branyo: 40-50h/week available for SWC + Research Lab</p>
+                            <p className="text-black/50">Priority for next 2 weeks: video editing, IG story templates, daily story posting. Not strategy. Execution support.</p>
+                        </div>
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">Adam: shared Notion template for content structure</p>
+                            <p className="text-black/50">Brand New uses a content planning structure in Notion. Adam will share it as reference. Adapt, don't copy — find what works for Research Lab.</p>
+                        </div>
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">One chat, all people, all context</p>
+                            <p className="text-black/50">Create one shared group. Left hand knows what the right hand is doing. Comments and decisions in documents, not buried in messages.</p>
+                        </div>
+                        <div className="border-l-2 border-[#0047BB] pl-4 py-1">
+                            <p className="font-bold text-black">Content templates: 1 design per content type, replicate</p>
+                            <p className="text-black/50">Branyo's insight: the most time-consuming thing is creating from zero every time. Make one template per segment, replicate weekly. His dance profile: 1 concept, 1100 followers in 90 days, 400K+ views, 80% non-followers.</p>
+                        </div>
+                        <div className="border-l-2 border-amber-500 pl-4 py-1">
+                            <p className="font-bold text-amber-700">Roland was not on the call</p>
+                            <p className="text-black/50">Needs to be synced separately. Key question: Does he commit to personal outreach (DMs) for 2 weeks? His network is the most valuable asset for ticket sales.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="mb-16 border-2 border-black/10 p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                        <h2 className="font-serif text-2xl italic">Branyo's Role</h2>
+                        <span className="text-[9px] font-bold tracking-widest px-2 py-1 bg-green-100 text-green-700">40-50H/WEEK</span>
+                    </div>
+                    <p className="text-sm text-black/50 mb-4">Clear deliverables, not "help with socials." He's execution, not strategy.</p>
+                    
+                    <div className="space-y-3">
+                        <div className="flex items-start gap-3 text-sm">
+                            <span className="font-bold text-[#0047BB] shrink-0 w-6">1.</span>
+                            <div>
+                                <p className="font-bold">Edit Roman's proof video</p>
+                                <p className="text-black/40">Add English subtitles. Keep it raw. Don't over-produce.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 text-sm">
+                            <span className="font-bold text-[#0047BB] shrink-0 w-6">2.</span>
+                            <div>
+                                <p className="font-bold">Create reusable IG story templates</p>
+                                <p className="text-black/40">One font, one logo, one format per content type. Replicate weekly. No reinventing every post.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 text-sm">
+                            <span className="font-bold text-[#0047BB] shrink-0 w-6">3.</span>
+                            <div>
+                                <p className="font-bold">Post daily stories for next 2 weeks</p>
+                                <p className="text-black/40">Founders provide the raw content (photos, videos, text). Branyo formats and posts.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 text-sm">
+                            <span className="font-bold text-[#0047BB] shrink-0 w-6">4.</span>
+                            <div>
+                                <p className="font-bold">Adapt Adam's Notion content structure</p>
+                                <p className="text-black/40">Review what Brand New uses. Find what fits Research Lab. Present back to team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="text-sm text-black/40 mt-4 italic">Friction-free: we give you ideas + raw material. You make it publishable.</p>
+                </section>
 
                 <section className="mb-16 bg-black/[0.03] p-6">
                     <h2 className="font-serif text-2xl italic mb-6">What We Actually Have</h2>
@@ -336,37 +526,95 @@ export default function MarketingSyncPage() {
                     <p className="text-sm text-black/50 mt-4 italic">The flywheel starts with one successful session. Not with content.</p>
                 </section>
 
+                <section className="mb-16 bg-amber-50 border border-amber-200 p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                        <h2 className="font-serif text-2xl italic text-amber-900">Parked Until March</h2>
+                        <span className="text-[9px] font-bold tracking-widest px-2 py-1 bg-amber-200 text-amber-800">NOT NOW</span>
+                    </div>
+                    <p className="text-sm text-amber-700/60 mb-4">Important discussions. Wrong timing. Revisit after Feb 26 when we have a successful session under our belt.</p>
+                    
+                    <div className="space-y-3 text-sm">
+                        <div className="flex items-start gap-3 py-2 border-b border-amber-200">
+                            <span className="text-amber-400 font-bold shrink-0">||</span>
+                            <div>
+                                <p className="font-bold text-amber-900">SORRYWECAN vs Research Lab content split</p>
+                                <p className="text-amber-700/60">Which content goes where, left hand vs right hand. Real discussion — but zero impact on selling 40 seats in 20 days.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 py-2 border-b border-amber-200">
+                            <span className="text-amber-400 font-bold shrink-0">||</span>
+                            <div>
+                                <p className="font-bold text-amber-900">Long-term marketing strategy</p>
+                                <p className="text-amber-700/60">Content pillars, posting cadence, growth strategy, platform prioritization. Needs clarity on vision first, which needs Roland in the room.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 py-2 border-b border-amber-200">
+                            <span className="text-amber-400 font-bold shrink-0">||</span>
+                            <div>
+                                <p className="font-bold text-amber-900">Tatrabanka AI commercial case study</p>
+                                <p className="text-amber-700/60">Brilliant content idea. 1-min breakdown video: which tools, which prompts, multi-prompt workflow. Will be great for Research Lab profile growth. Not for ticket sales.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 py-2 border-b border-amber-200">
+                            <span className="text-amber-400 font-bold shrink-0">||</span>
+                            <div>
+                                <p className="font-bold text-amber-900">Research Lab as educational backend for SWC</p>
+                                <p className="text-amber-700/60">RL explains how SWC does cool things. Case studies, breakdowns, behind-the-scenes education. Great long-term follower growth play. Discuss when we have the workshop flywheel running.</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3 py-2">
+                            <span className="text-amber-400 font-bold shrink-0">||</span>
+                            <div>
+                                <p className="font-bold text-amber-900">Digital products / platform / toolkit monetization</p>
+                                <p className="text-amber-700/60">Future revenue streams beyond workshops. Important for the "where are we going" conversation. Not for this month.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="mb-16 bg-black/[0.03] p-6">
-                    <h2 className="font-serif text-2xl italic mb-6">Meeting Decisions</h2>
+                    <h2 className="font-serif text-2xl italic mb-6">Next Call Agenda</h2>
+                    <p className="text-sm text-black/40 mb-4">Only discuss these. Everything else waits.</p>
                     <div className="space-y-4 text-sm">
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">1.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Language confirmation</span> — Slovak-first on IG/email/stories. English on LinkedIn. Yes?</p>
+                            <p className="text-black/70"><span className="font-bold text-black">Status check</span> — How many DMs sent? How many responses? Payment link working? Any tickets sold?</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">2.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Proof video</span> — who records, what workflow, when? (48h deadline)</p>
+                            <p className="text-black/70"><span className="font-bold text-black">Roland sync</span> — Was he briefed? Is he committed to personal outreach? His 30-person list ready?</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">3.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Each founder's DM list</span> — 25-30 real names each. Ready by tomorrow.</p>
+                            <p className="text-black/70"><span className="font-bold text-black">Email #1 review</span> — Final copy check before Monday send. Who presses the button?</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">4.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Email #1 to 350 list</span> — who writes it, when does it send?</p>
+                            <p className="text-black/70"><span className="font-bold text-black">Proof video status</span> — Recorded? Edited? Subtitles done? When does it go live?</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">5.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Live preview date</span> — Feb 17 or 18?</p>
+                            <p className="text-black/70"><span className="font-bold text-black">SORRYWECAN client list</span> — Andrea: how many contacts? Split among founders for personal outreach.</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">6.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">SORRYWECAN client/partner list</span> — who are they? Split among founders. Personal outreach this week.</p>
+                            <p className="text-black/70"><span className="font-bold text-black">Shared group chat</span> — Is it set up? Everyone in? One place for all coordination.</p>
                         </div>
                         <div className="flex gap-3">
                             <span className="font-bold text-[#0047BB] shrink-0">7.</span>
-                            <p className="text-black/70"><span className="font-bold text-black">Shared tracking</span> — who owns the sheet? (One person, updated daily)</p>
+                            <p className="text-black/70"><span className="font-bold text-black">Live preview session</span> — Confirm date: Feb 17 or 18? Format: IG Live or Zoom?</p>
                         </div>
+                    </div>
+                </section>
+
+                <section className="mb-16 bg-black text-white p-6">
+                    <h2 className="font-serif text-2xl italic mb-4">The Uncomfortable Truth</h2>
+                    <div className="space-y-4 text-sm text-white/70">
+                        <p>We've built a beautiful one-pager, a corporate one-pager, a full marketing page with interactive elements, an 899-line execution algorithm, DM templates, email sequences, video scripts, and multiple internal strategy pages.</p>
+                        <p>We haven't sent a single email. We haven't sent personal DMs. We haven't recorded the proof video. We may not have a working payment link.</p>
+                        <p className="text-white font-bold text-lg">We are over-engineered and under-executed.</p>
+                        <p className="text-white/50 italic">This page literally said "Planning feels like progress. It's not." And then we had a 45-minute call that was 95% planning.</p>
+                        <p>The fix is simple: stop building tools and start having conversations with humans who might buy tickets.</p>
                     </div>
                 </section>
 

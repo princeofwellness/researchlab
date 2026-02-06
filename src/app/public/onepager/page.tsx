@@ -236,7 +236,7 @@ export default function PublicOnePager() {
                 {/* Page 1: Hero */}
                 <div className={pageClass}>
                     <div className="text-center max-w-4xl px-4">
-                        <p className="text-[13px] md:text-[16px] font-code-brand font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB] mb-4 md:mb-6">{t.hero.label}</p>
+                        <p className="text-[13px] md:text-[16px] font-code-brand font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB] mb-8 md:mb-12">{t.hero.label}</p>
                         <h1 className="font-bold text-[36px] md:text-[72px] leading-[0.95] tracking-tight">
                             {t.hero.title.line1}<br />
                             <span className="text-[#0047BB]">{t.hero.title.line2}<span className="text-black/20">*</span></span>

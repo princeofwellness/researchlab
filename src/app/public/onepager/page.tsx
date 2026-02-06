@@ -9,14 +9,14 @@ export default function PublicOnePager() {
         en: {
             hero: {
                 label: "THE SHIFT",
-                title: { line1: "One Session.", line2: "New Operating System." },
+                title: { line1: "Everyone has AI tools.", line2: "Thinking makes the difference." },
                 subline: "What changed. What's possible. What's next.",
                 desc: "3 hours with founders who build with AI daily.",
                 info: "BRATISLAVA \u00b7 FEB 26 \u00b7 from \u20ac99"
             },
             stats: {
-                headline: "Everyone has AI tools today.",
-                subline: "The way you think makes the difference.",
+                headline: "Technology is available to everyone.",
+                subline: "The difference is how you think, decide, and work.",
                 items: [
                     { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
                     { value: "22%", label: "will fundamentally change by 2030", source: "WEF 2025" },
@@ -84,14 +84,14 @@ export default function PublicOnePager() {
         sk: {
             hero: {
                 label: "THE SHIFT",
-                title: { line1: "Jedna Session.", line2: "Nový Operačný Systém." },
+                title: { line1: "AI nástroje má dnes každý.", line2: "Rozhoduje spôsob myslenia." },
                 subline: "Čo sa zmenilo. Čo je možné. Čo ďalej.",
                 desc: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
                 info: "BRATISLAVA \u00b7 26.2. \u00b7 od 99 eur"
             },
             stats: {
-                headline: "AI nástroje má dnes každý.",
-                subline: "Rozhoduje spôsob myslenia.",
+                headline: "Technológia je dostupná všetkým.",
+                subline: "Rozdiel robí spôsob myslenia, rozhodovania a práce.",
                 items: [
                     { value: "40%", label: "pracovných pozícií vystavených vplyvu AI", source: "IMF 2024" },
                     { value: "22%", label: "pracovných miest sa do 2030 zásadne zmení", source: "WEF 2025" },

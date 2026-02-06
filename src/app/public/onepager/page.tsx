@@ -78,7 +78,7 @@ export default function PublicOnePager() {
                 headline: "Ready?",
                 subline: "40 seats. First session February 26.",
                 email: "Reserve Your Seat",
-                contact: "For questions write to: researchlab@sorrywecan.com"
+                contact: "For questions write to: andrea@sorrywecan.com"
             }
         },
         sk: {
@@ -153,7 +153,7 @@ export default function PublicOnePager() {
                 headline: "Pripravený?",
                 subline: "40 miest. Prvá session 26. februára.",
                 email: "Rezervovať Miesto",
-                contact: "V prípade otázok píšte na: researchlab@sorrywecan.com"
+                contact: "V prípade otázok píšte na: andrea@sorrywecan.com"
             }
         }
     }

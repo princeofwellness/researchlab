@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Instrument_Serif, Inter, Space_Mono, Syne } from "next/font/google"
+import { Instrument_Serif, Inter, Space_Mono, Syne, Source_Sans_3, Source_Code_Pro } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({
@@ -25,6 +25,16 @@ const syne = Syne({
   variable: "--font-syne",
 })
 
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-source-sans",
+})
+
+const sourceCode = Source_Code_Pro({
+  subsets: ["latin"],
+  variable: "--font-source-code",
+})
+
 export const metadata: Metadata = {
   title: "Research Lab // Human Edge",
   description: "Restoring the Human Edge in an AI World",
@@ -36,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} ${spaceMono.variable} ${syne.variable}`}>
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} ${spaceMono.variable} ${syne.variable} ${sourceSans.variable} ${sourceCode.variable}`}>
       <body className="antialiased font-mono">{children}</body>
     </html>
   )

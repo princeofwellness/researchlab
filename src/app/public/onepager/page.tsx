@@ -219,33 +219,33 @@ export default function PublicOnePager() {
             <div className="fixed top-4 right-4 z-50 print:hidden flex gap-2">
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}
-                    className="text-[10px] font-bold uppercase tracking-widest px-3 md:px-4 py-2 bg-white shadow hover:bg-black hover:text-white transition-colors"
+                    className="text-[10px] font-code-brand font-bold uppercase tracking-widest px-3 md:px-4 py-2 bg-white shadow hover:bg-black hover:text-white transition-colors"
                 >
                     {lang === 'en' ? 'SK' : 'EN'}
                 </button>
                 <button 
                     onClick={() => window.print()}
-                    className="hidden md:block text-[10px] font-bold uppercase tracking-widest px-4 py-2 bg-[#0047BB] text-white shadow hover:bg-black transition-colors"
+                    className="hidden md:block text-[10px] font-code-brand font-bold uppercase tracking-widest px-4 py-2 bg-[#0047BB] text-white shadow hover:bg-black transition-colors"
                 >
                     Export PDF
                 </button>
             </div>
 
-            <div className="page-container font-mono text-[#0a0a0a]">
+            <div className="page-container font-sans-brand text-[#0a0a0a]">
                 
                 {/* Page 1: Hero */}
                 <div className={pageClass}>
                     <div className="text-center max-w-4xl px-4">
-                        <p className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB] mb-4 md:mb-6">{t.hero.label}</p>
+                        <p className="text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB] mb-4 md:mb-6">{t.hero.label}</p>
                         <h1 className="font-serif text-[36px] md:text-[72px] leading-[0.95] tracking-tight">
                             {t.hero.title.line1}<br />
-                            <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
+                            <span className="text-[#0047BB] italic">{t.hero.title.line2}<span className="text-black/20">*</span></span>
                         </h1>
                         <p className="text-[16px] md:text-[24px] text-black/50 mt-4 md:mt-8">{t.hero.subline}</p>
                         <p className="text-[14px] md:text-[16px] text-black/40 mt-2 md:mt-4">{t.hero.desc}</p>
-                        <p className="text-[11px] md:text-[13px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-[#0047BB] mt-4 md:mt-6">{t.hero.info}</p>
+                        <p className="text-[11px] md:text-[13px] font-code-brand font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-[#0047BB] mt-4 md:mt-6">{t.hero.info}</p>
                     </div>
-                    <p className="absolute bottom-4 md:bottom-8 text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/20">SORRYWECAN // RESEARCH LAB</p>
+                    <p className="absolute bottom-4 md:bottom-8 text-[8px] md:text-[10px] font-code-brand uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/20">SORRYWECAN // RESEARCH LAB</p>
                 </div>
 
                 {/* Page 2: Stats */}
@@ -258,7 +258,7 @@ export default function PublicOnePager() {
                                 <div key={i} className="text-center">
                                     <span className="text-[40px] md:text-[64px] font-serif text-[#0047BB]">{stat.value}</span>
                                     <p className="text-[12px] md:text-[14px] text-black/60 mt-2">{stat.label}</p>
-                                    <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-black/30 mt-1">{stat.source}</p>
+                                    <p className="text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30 mt-1">{stat.source}</p>
                                 </div>
                             ))}
                         </div>
@@ -290,11 +290,11 @@ export default function PublicOnePager() {
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
                             {t.session.parts.map((part, i) => (
                                 <div key={i} className={`p-4 md:p-6 border-2 flex flex-col ${i === 0 ? 'border-[#0047BB] bg-[#0047BB]/5' : 'border-black/10'}`}>
-                                    <p className="text-[11px] md:text-[12px] font-bold text-black/30">{part.num}</p>
+                                    <p className="text-[11px] md:text-[12px] font-code-brand font-bold text-black/30">{part.num}</p>
                                     <p className="font-serif text-[24px] md:text-[32px] italic mt-1">{part.title}</p>
-                                    <p className="text-[11px] md:text-[12px] text-black/40 mt-1">{part.time}</p>
+                                    <p className="text-[11px] md:text-[12px] font-code-brand text-black/40 mt-1">{part.time}</p>
                                     <p className="text-[13px] md:text-[14px] text-black/60 mt-3 md:mt-4 leading-relaxed md:flex-grow">{part.desc}</p>
-                                    <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mt-3 md:mt-4">{part.lead}</p>
+                                    <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mt-3 md:mt-4">{part.lead}</p>
                                 </div>
                             ))}
                         </div>
@@ -312,11 +312,11 @@ export default function PublicOnePager() {
                             {t.founders.cards.map((card, i) => (
                                 <div key={i} className="text-center p-4 md:p-6 border border-black/10">
                                     <p className="font-serif text-[22px] md:text-[28px] italic">{card.name}</p>
-                                    <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mt-2">{card.role}</p>
+                                    <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mt-2">{card.role}</p>
                                     <p className="text-[11px] md:text-[12px] text-black/40 mt-1">{card.company}</p>
                                     <p className="text-[13px] md:text-[14px] text-black/60 mt-3 md:mt-4 leading-relaxed">{card.bio}</p>
                                     {card.url && (
-                                        <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-[#0047BB] mt-3 hover:underline">
+                                        <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mt-3 hover:underline">
                                             {card.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                                         </a>
                                     )}
@@ -350,7 +350,7 @@ export default function PublicOnePager() {
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-8 md:mb-12">
                             {t.details.items.map((item, i) => (
                                 <div key={i} className="text-center">
-                                    <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-black/40">{item.label}</p>
+                                    <p className="text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40">{item.label}</p>
                                     <p className="text-[16px] md:text-[20px] font-medium mt-1 md:mt-2">{item.value}</p>
                                     <p className="text-[12px] md:text-[14px] text-black/50">{item.sub}</p>
                                 </div>
@@ -358,11 +358,11 @@ export default function PublicOnePager() {
                         </div>
 
                         <div className="inline-block bg-[#0047BB] px-6 md:px-8 py-3 md:py-4">
-                            <p className="text-[12px] md:text-[14px] font-bold uppercase tracking-widest text-white">{t.cta.email}</p>
+                            <p className="text-[12px] md:text-[14px] font-code-brand font-bold uppercase tracking-widest text-white">{t.cta.email}</p>
                         </div>
                         
                         <p className="text-[11px] md:text-[13px] text-black/40 mt-6 md:mt-8">{t.cta.contact}</p>
-                        <p className="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/30 mt-6 md:mt-8">SORRYWECAN // RESEARCH LAB // 2026</p>
+                        <p className="text-[8px] md:text-[10px] font-code-brand uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/30 mt-6 md:mt-8">SORRYWECAN // RESEARCH LAB // 2026</p>
                     </div>
                 </div>
 

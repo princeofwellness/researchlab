@@ -585,7 +585,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
     ]
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
             <TopNav />
 
             {/* Hero */}
@@ -1279,7 +1279,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                                 </div>
                             </div>
                             
-                            <div className="p-6 bg-[#f5f5f3] border-l-4 border-[#0047BB] font-mono text-sm whitespace-pre-wrap max-h-[500px] overflow-y-auto">
+                            <div className="p-6 bg-[#e8e1da] border-l-4 border-[#0047BB] font-mono text-sm whitespace-pre-wrap max-h-[500px] overflow-y-auto">
                                 {emails[expandedEmail].body}
                             </div>
                         </motion.div>

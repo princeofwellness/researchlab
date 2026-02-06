@@ -403,7 +403,7 @@ export default function GamePlanPage() {
     const criticalTasks = categories.reduce((acc, cat) => acc + cat.tasks.filter(t => t.priority === "critical" && t.status !== "completed").length, 0)
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
             <TopNav />
 
             {/* Hero */}
@@ -701,7 +701,7 @@ export default function GamePlanPage() {
             </section>
 
             {/* Marketing & Ads Strategy */}
-            <section className="py-24 px-6 md:px-20 bg-[#f5f5f3] border-t border-black/10">
+            <section className="py-24 px-6 md:px-20 bg-[#e8e1da] border-t border-black/10">
                 <div className="max-w-6xl mx-auto">
                     <div className="mb-16">
                         <div className="flex items-center gap-4 mb-4">
@@ -908,7 +908,7 @@ export default function GamePlanPage() {
             </section>
 
             {/* Things to Consider - Expanded */}
-            <section className="py-24 px-6 md:px-20 border-t border-black/10 bg-[#f5f5f3]">
+            <section className="py-24 px-6 md:px-20 border-t border-black/10 bg-[#e8e1da]">
                 <div className="max-w-6xl mx-auto">
                     <div className="mb-16">
                         <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#0047BB] block mb-4">05</span>
@@ -1089,7 +1089,7 @@ export default function GamePlanPage() {
             </section>
 
             {/* Footer */}
-            <footer className="py-12 px-6 border-t border-black/10 text-center bg-[#f5f5f3]">
+            <footer className="py-12 px-6 border-t border-black/10 text-center bg-[#e8e1da]">
                 <p className="text-[10px] font-bold uppercase tracking-[0.5em] opacity-20">
                     SORRYWECAN // GAME PLAN // UPDATED DAILY
                 </p>

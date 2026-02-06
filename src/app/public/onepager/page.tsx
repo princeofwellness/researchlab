@@ -160,7 +160,7 @@ export default function PublicOnePager() {
 
     const t = content[lang]
 
-    const pageClass = "page-slide w-full md:w-[297mm] min-h-screen md:h-[210mm] bg-white relative flex flex-col justify-center items-center p-6 md:p-12 print:w-[297mm] print:h-[210mm] print:p-8"
+    const pageClass = "page-slide w-full md:w-[297mm] min-h-screen md:h-[210mm] bg-[#f4ede6] relative flex flex-col justify-center items-center p-6 md:p-12 print:w-[297mm] print:h-[210mm] print:p-8"
 
     return (
         <>

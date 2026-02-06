@@ -372,7 +372,7 @@ export default function ProtocolPage() {
     const t = content[lang]
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
             <TopNav customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}

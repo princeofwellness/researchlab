@@ -11,7 +11,7 @@ export default function CurriculumPage() {
     }, [router])
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] flex items-center justify-center">
+        <div className="min-h-screen bg-[#e8e1da] flex items-center justify-center">
             <p className="text-black/40 text-sm">Redirecting...</p>
         </div>
     )

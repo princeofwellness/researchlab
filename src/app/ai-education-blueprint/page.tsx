@@ -56,7 +56,7 @@ export default function AiEducationBlueprintPage() {
     }, [])
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20 overflow-x-hidden">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20 overflow-x-hidden">
             <TopNav />
 
             {/* Scroll Progress */}
@@ -124,7 +124,7 @@ export default function AiEducationBlueprintPage() {
             </section>
 
             {/* Sticky Sub-Navigation */}
-            <div className="sticky top-[64px] z-40 bg-[#f5f5f3]/90 backdrop-blur-md border-b border-black overflow-x-auto no-scrollbar">
+            <div className="sticky top-[64px] z-40 bg-[#e8e1da]/90 backdrop-blur-md border-b border-black overflow-x-auto no-scrollbar">
                 <div className="max-w-7xl mx-auto px-6 md:px-20 h-16 flex items-center gap-8 whitespace-nowrap">
                     <NavAnchor id="philosophy" active={activeSection === "philosophy"}>00 PHILOSOPHY</NavAnchor>
                     <NavAnchor id="market" active={activeSection === "market"}>01 MARKET</NavAnchor>

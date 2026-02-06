@@ -25,7 +25,7 @@ export default function LabPage() {
     ]
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono">
             <TopNav />
 
             <section className="pt-32 pb-20 px-6 md:px-12">

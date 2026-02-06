@@ -559,7 +559,7 @@ export default function SorrywecanResearchLab() {
     const t = content[lang]
 
     return (
-        <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20 overflow-x-hidden">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20 overflow-x-hidden">
             <TopNav customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}
@@ -937,7 +937,7 @@ export default function SorrywecanResearchLab() {
 
                     <TierCarousel content={t.tiers} />
 
-                    <div className="mt-20 bg-[#f5f5f3] border border-black/10 p-12 md:p-24 relative overflow-hidden">
+                    <div className="mt-20 bg-[#e8e1da] border border-black/10 p-12 md:p-24 relative overflow-hidden">
                         <div className="max-w-5xl mx-auto text-center relative z-10">
                             <h3 className="font-serif-instrument text-6xl italic mb-10 text-black">{t.roi.title}</h3>
                             <p className="text-2xl font-serif-instrument italic opacity-70 mb-16 leading-relaxed max-w-3xl mx-auto text-black">

@@ -30,7 +30,7 @@ const archiveEntries = [
 
 export default function ArchivePage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f3] text-[#0a0a0a]">
+    <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a]">
       <TopNav />
 
       <main className="pt-32 pb-24 px-6 md:px-20 space-y-16">

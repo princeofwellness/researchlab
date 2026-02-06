@@ -15,8 +15,8 @@ export default function PublicOnePager() {
                 info: "BRATISLAVA \u00b7 FEB 26 \u00b7 from \u20ac99"
             },
             stats: {
-                headline: "Technology is available to everyone.",
-                subline: "The difference is how you think, decide, and work.",
+                headline: "The world is shifting faster than you think.",
+                subline: "",
                 items: [
                     { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
                     { value: "22%", label: "will fundamentally change by 2030", source: "WEF 2025" },
@@ -90,8 +90,8 @@ export default function PublicOnePager() {
                 info: "BRATISLAVA \u00b7 26.2. \u00b7 od 99 eur"
             },
             stats: {
-                headline: "Technológia je dostupná všetkým.",
-                subline: "Rozdiel robí spôsob myslenia, rozhodovania a práce.",
+                headline: "Svet sa mení rýchlejšie, než si myslíš.",
+                subline: "",
                 items: [
                     { value: "40%", label: "pracovných pozícií vystavených vplyvu AI", source: "IMF 2024" },
                     { value: "22%", label: "pracovných miest sa do 2030 zásadne zmení", source: "WEF 2025" },

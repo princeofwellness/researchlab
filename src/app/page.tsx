@@ -25,10 +25,11 @@ export default function HomePage() {
             shift: {
                 headline: "Technology is available to everyone. The difference is how you think, decide, and work.",
                 stats: [
-                    { value: "40%", label: "of jobs globally exposed to AI", source: "IMF 2024" },
-                    { value: "22%", label: "will fundamentally change by 2030", source: "WEF 2025" },
-                    { value: "41%", label: "of companies planning workforce reductions", source: "McKinsey 2025" },
-                    { value: "1%", label: "of organizations consider themselves ready", source: "McKinsey 2025" }
+                    { value: "300M", label: "jobs automatable worldwide", source: "Goldman Sachs" },
+                    { value: "16%", label: "employment drop, workers aged 22–25 in AI-exposed roles", source: "Stanford / ADP 2025" },
+                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2025" },
+                    { value: "1%", label: "of organizations consider themselves AI-ready", source: "McKinsey 2025" },
+                    { value: "18mo", label: "AI's job elimination cycle vs. 4–5 years before", source: "World Bank" }
                 ]
             },
             paths: {
@@ -73,10 +74,11 @@ export default function HomePage() {
             shift: {
                 headline: "Technológia je dostupná všetkým. Rozdiel robí spôsob myslenia, rozhodovania a práce.",
                 stats: [
-                    { value: "40%", label: "pracovných pozícií je vystavených vplyvu AI", source: "IMF 2024" },
-                    { value: "22%", label: "pracovných miest sa do 2030 zásadne zmení", source: "WEF 2025" },
-                    { value: "41%", label: "firiem plánuje znižovanie počtu zamestnancov", source: "McKinsey 2025" },
-                    { value: "1%", label: "organizácií považuje svoje využívanie AI za zrelé", source: "McKinsey 2025" }
+                    { value: "300M", label: "automatizovateľných pracovných miest na svete", source: "Goldman Sachs" },
+                    { value: "16%", label: "pokles zamestnanosti, pracovníci 22–25 rokov v AI-exponovaných pozíciách", source: "Stanford / ADP 2025" },
+                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2025" },
+                    { value: "1%", label: "organizácií považuje svoje využívanie AI za zrelé", source: "McKinsey 2025" },
+                    { value: "18mo", label: "cyklus eliminácie pracovných miest AI vs. 4–5 rokov predtým", source: "World Bank" }
                 ]
             },
             paths: {
@@ -196,7 +198,7 @@ export default function HomePage() {
                     >
                         {t.shift.headline}
                     </motion.p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
                         {t.shift.stats.map((stat: { value: string; label: string; source: string }, i: number) => (
                             <motion.div
                                 key={i}

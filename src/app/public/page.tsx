@@ -26,8 +26,8 @@ export default function PublicSessionsPage() {
                 cta: "I'm In"
             },
             session: {
-                title: "Taste. Leverage. Clarity.",
-                subtitle: "Three minds. One shift.",
+                title: "What separates the 1%.",
+                subtitle: "Taste. Leverage. Clarity.",
                 parts: [
                     { 
                         num: "01", 
@@ -149,8 +149,8 @@ export default function PublicSessionsPage() {
                 cta: "Idem Do Toho"
             },
             session: {
-                title: "Vkus. Páka. Jasnosť.",
-                subtitle: "Tri mysle. Jeden posun.",
+                title: "Čo odlišuje to 1%.",
+                subtitle: "Vkus. Páka. Jasnosť.",
                 parts: [
                     { 
                         num: "01", 

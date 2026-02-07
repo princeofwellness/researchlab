@@ -189,7 +189,7 @@ export default function HomePage() {
             </section>
 
             <section className="py-16 md:py-20 px-6 md:px-12 border-t border-black/10">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -198,7 +198,7 @@ export default function HomePage() {
                     >
                         {t.shift.headline}
                     </motion.p>
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
                         {t.shift.stats.map((stat: { value: string; label: string; source: string }, i: number) => (
                             <motion.div
                                 key={i}
@@ -208,7 +208,7 @@ export default function HomePage() {
                                 transition={{ delay: i * 0.1 }}
                                 className="text-center"
                             >
-                                <span className="text-4xl md:text-5xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
+                                <span className="text-3xl md:text-4xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
                                 <p className="text-sm text-black/60 mt-2 mb-1">{stat.label}</p>
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
                             </motion.div>

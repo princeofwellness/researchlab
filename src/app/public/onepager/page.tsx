@@ -255,10 +255,10 @@ export default function PublicOnePager() {
                     <div className="text-center max-w-4xl px-4">
                         <h2 className="font-bold text-[28px] md:text-[48px] leading-tight">{t.stats.headline}</h2>
                         <p className="text-[16px] md:text-[24px] text-black/50 mt-2">{t.stats.subline}</p>
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mt-8 md:mt-16">
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 mt-8 md:mt-16">
                             {t.stats.items.map((stat, i) => (
                                 <div key={i} className="text-center">
-                                    <span className="text-[40px] md:text-[64px] font-bold text-[#0047BB]">{stat.value}</span>
+                                    <span className="text-[32px] md:text-[48px] font-bold text-[#0047BB]">{stat.value}</span>
                                     <p className="text-[12px] md:text-[14px] text-black/60 mt-2">{stat.label}</p>
                                     <p className="text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30 mt-1">{stat.source}</p>
                                 </div>

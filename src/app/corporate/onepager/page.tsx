@@ -93,8 +93,8 @@ export default function CorporateOnePager() {
                     { value: "300M", label: "automatizovateľných pracovných miest na svete", source: "Goldman Sachs" },
                     { value: "16%", label: "pokles zamestnanosti, pracovníci 22–25 rokov v AI-exponovaných pozíciách", source: "Stanford / ADP 2025" },
                     { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2025" },
-                    { value: "1%", label: "organizácií považuje svoje využívanie AI za zrelé", source: "McKinsey 2025" },
-                    { value: "3×", label: "rýchlejšie než akýkoľvek technologický posun predtým", source: "World Bank" }
+                    { value: "1%", label: "organizácií sa považuje za pripravených na AI", source: "McKinsey 2025" },
+                    { value: "3×", label: "rýchlejšie než čokoľvek pred tým", source: "World Bank" }
                 ]
             },
             problem: {

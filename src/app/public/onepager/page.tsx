@@ -22,7 +22,7 @@ export default function PublicOnePager() {
                     { value: "16%", label: "employment drop, workers aged 22–25 in AI-exposed roles", source: "Stanford / ADP 2025" },
                     { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2025" },
                     { value: "1%", label: "of organizations consider themselves AI-ready", source: "McKinsey 2025" },
-                    { value: "18mo", label: "AI's job elimination cycle vs. 4–5 years before", source: "World Bank" }
+                    { value: "3×", label: "faster than any technology shift before", source: "World Bank" }
                 ]
             },
             problem: {
@@ -98,7 +98,7 @@ export default function PublicOnePager() {
                     { value: "16%", label: "pokles zamestnanosti, pracovníci 22–25 rokov v AI-exponovaných pozíciách", source: "Stanford / ADP 2025" },
                     { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2025" },
                     { value: "1%", label: "organizácií považuje svoje využívanie AI za zrelé", source: "McKinsey 2025" },
-                    { value: "18mo", label: "cyklus eliminácie pracovných miest AI vs. 4–5 rokov predtým", source: "World Bank" }
+                    { value: "3×", label: "rýchlejšie než akýkoľvek technologický posun predtým", source: "World Bank" }
                 ]
             },
             problem: {

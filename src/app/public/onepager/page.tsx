@@ -31,9 +31,9 @@ export default function PublicOnePager() {
                     { headline: "Generation is easy now.", subline: "Recognizing quality is harder." },
                     { headline: "Tools keep multiplying.", subline: "Habits can't keep up." },
                     { headline: "The direction is clear.", subline: "Daily practice in it isn't." },
-                    { headline: "Everything moves faster.", subline: "But what should I actually create?" },
-                    { headline: "I've tried dozens of tools.", subline: "Still don't know which one to use." },
-                    { headline: "Everyone talks about AI.", subline: "But I don't know what to do with it." }
+                    { headline: "Everything moves faster.", subline: "But what's actually worth creating?" },
+                    { headline: "AI gave everyone the same power.", subline: "So what's your edge now?" },
+                    { headline: "AI won't replace you.", subline: "Someone using it better will." }
                 ]
             },
             session: {
@@ -107,9 +107,9 @@ export default function PublicOnePager() {
                     { headline: "Generovať je dnes jednoduché.", subline: "Rozlíšiť kvalitu je ťažšie." },
                     { headline: "Nástroje pribúdajú.", subline: "Návyky nestíhajú." },
                     { headline: "Smer je zrejmý.", subline: "Každodenná prax v ňom nie." },
-                    { headline: "Všetko ide rýchlejšie.", subline: "Ale čo mám vlastne tvoriť?" },
-                    { headline: "Vyskúšal som desiatky nástrojov.", subline: "Stále neviem, ktorý použiť." },
-                    { headline: "Všetci o AI hovoria.", subline: "Ale neviem, čo s tým." }
+                    { headline: "Všetko ide rýchlejšie.", subline: "Ale čo sa naozaj oplatí tvoriť?" },
+                    { headline: "AI dalo všetkým rovnaké možnosti.", subline: "Tak čo je teraz tvoja výhoda?" },
+                    { headline: "AI ťa nenahradí.", subline: "Niekto, kto ho používa lepšie, áno." }
                 ]
             },
             session: {

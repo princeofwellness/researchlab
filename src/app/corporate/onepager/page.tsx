@@ -10,13 +10,13 @@ export default function CorporateOnePager() {
             hero: {
                 label: "CORPORATE WORKSHOP",
                 title: { line1: "Your Team.", line2: "New Operating System." },
-                subline: "Three founders. Three lenses. Your challenges.",
-                desc: "We don't present — we think together, live, on the problems keeping you stuck.",
+                subline: "Three founders. Three perspectives. Your real problems.",
+                desc: "We don't present. We think with you, live, about the decisions you're actually facing.",
                 info: "HALF DAY · 10-15 PEOPLE · €5,900"
             },
             stats: {
-                headline: "Technology is available to everyone.",
-                subline: "The difference is how you think, decide, and work.",
+                headline: "Having tools is not the same as knowing what to do with them.",
+                subline: "The companies that win are the ones that figure this out first.",
                 items: [
                     { value: "300M", label: "jobs automatable worldwide", source: "Goldman Sachs" },
                     { value: "16%", label: "employment drop, workers aged 22–25 in AI-exposed roles", source: "Stanford / ADP 2025" },
@@ -32,41 +32,41 @@ export default function CorporateOnePager() {
                     { headline: "Output looks generic.", subline: "Like everyone else's." },
                     { headline: "Tools multiply.", subline: "Clarity doesn't." },
                     { headline: "Speed went up.", subline: "Quality went sideways." },
-                    { headline: "Everyone has AI.", subline: "Few know how to use it." },
+                    { headline: "AI budget approved.", subline: "Nobody owns the direction." },
                     { headline: "You need alignment.", subline: "You get endless debates." }
                 ]
             },
             session: {
-                title: "Three Lenses. One Session.",
-                subtitle: "We think together. You leave clear.",
+                title: "One Session. Three Perspectives.",
+                subtitle: "We think with you. You leave clear.",
                 parts: [
-                    { num: "01", title: "The Shift", time: "30 min", lead: "All", desc: "The world changed. Here's what we're seeing — in your industry, in creative work, in what's possible now." },
-                    { num: "02", title: "Frameworks", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Taste: decades of experience in creativity and technology — the difference is curation and the eye for detail. Leverage: workflows, automations, and real demos — what to build, what to skip. Clarity: what stays human and what to delegate — a decision framework you'll actually use." },
-                    { num: "03", title: "Your Reality", time: "90-120 min", lead: "Facilitated", desc: "Your challenges. Three perspectives. Live. This is where insights happen that prevent six-figure mistakes." },
-                    { num: "04", title: "The Clarity", time: "30 min", lead: "All", desc: "Each of us shares what we saw. What to prioritize. What to ignore. You leave knowing what to do." }
+                    { num: "01", title: "The Shift", time: "30 min", lead: "All", desc: "What changed and what most companies are getting wrong. Not theory. What we see working across industries right now." },
+                    { num: "02", title: "Frameworks", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Roland: how he thinks about campaigns worth millions, and mistakes that cost six figures. Ján: what a small team can build and ship today that departments couldn't a year ago. Roman: how to prioritize when everything feels urgent." },
+                    { num: "03", title: "Your Reality", time: "90-120 min", lead: "Facilitated", desc: "Your actual problems. Your blind spots. Three people who've seen this before, looking at your situation from angles you haven't considered. New products, better processes, what to stop doing." },
+                    { num: "04", title: "The Clarity", time: "30 min", lead: "All", desc: "What we each saw. What to do first. What to drop. Your team leaves with a shared direction and the confidence to act on it Monday." }
                 ]
             },
             founders: {
-                title: "Three Founders.",
-                subtitle: "Successful companies. Portfolio and clients worldwide. They think together on your problems.",
+                title: "Who's in the Room.",
+                subtitle: "Builders, not consultants. Companies and clients across Europe. They work on your problems together.",
                 cards: [
-                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Everyone has the same tools. The difference is taste, curation, and the eye for detail.", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling.", url: "https://sorrywecan.com/" },
-                    { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "What one person can do today. What to build, what to skip, and how to design products that work.", bio: "Product leader with years of experience designing and scaling digital products, teams and processes.", url: "https://sudolabs.com/" },
-                    { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "What stays human and what to delegate. A decision framework you'll actually use.", bio: "Works in transformational design, strategic thinking and complex organizational change.", url: "" }
+                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "How he thinks about campaigns worth millions. The six-figure mistakes and what they cost beyond money. What a creative team produces today vs. two years ago.", bio: "Director and creative lead. Decades at the intersection of aesthetics and technology. Has run campaigns for global brands, made expensive mistakes, and now builds with AI daily.", url: "https://sorrywecan.com/" },
+                    { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "What a small team ships today that a department couldn't last year. Where to start. What to skip.", bio: "Product leader. Years of designing and scaling digital products, teams and processes. Focused on what actually ships, how fast you can go from idea to product, and what's worth building right now.", url: "https://sudolabs.com/" },
+                    { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "How to decide when everything feels urgent. What stays human. What doesn't need to.", bio: "Transformational designer. Helps leadership teams cut through noise, set priorities that hold, and figure out what to stop doing.", url: "" }
                 ]
             },
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "The Wake-Up", desc: "Your team sees what 99% don't. The shift that's already here." },
+                    { title: "Shared Understanding", desc: "Your team sees what's actually happening. Not hype. Not fear. The reality." },
                     { title: "The Edge", desc: "Opportunities your competitors will miss. You won't." },
                     { title: "Debates → Decisions", desc: "Same language. Same priorities. The endless loops end." },
-                    { title: "Mistakes Avoided", desc: "Three lenses catch what one can't. Costly wrong turns — prevented." },
+                    { title: "Costly Mistakes, Caught", desc: "Three perspectives catch what one person can't. Wrong turns spotted before they cost you." },
                     { title: "It Sticks", desc: "30-day follow-up. Toolkit that evolves. Not another workshop you forget." }
                 ],
                 proof: [
-                    { value: "3", label: "founders thinking together" },
-                    { value: "90+", label: "minutes on YOUR challenges" },
+                    { value: "3", label: "founders in the room with you" },
+                    { value: "90+", label: "minutes on YOUR problems" },
                     { value: "30", label: "day follow-up included" }
                 ]
             },
@@ -91,13 +91,13 @@ export default function CorporateOnePager() {
             hero: {
                 label: "FIREMNÝ WORKSHOP",
                 title: { line1: "Váš Tím.", line2: "Nový Operačný Systém." },
-                subline: "Traja zakladatelia. Tri pohľady. Vaše výzvy.",
-                desc: "Neprezentujeme — myslíme spolu, naživo, nad problémami, ktoré vás brzdia.",
+                subline: "Traja zakladatelia. Tri perspektívy. Vaše skutočné problémy.",
+                desc: "Neprezentujeme. Myslíme s vami, naživo, nad rozhodnutiami, ktoré práve riešite.",
                 info: "POL DŇA · 10-15 ĽUDÍ · €5 900"
             },
             stats: {
-                headline: "Technológia je dostupná všetkým.",
-                subline: "Rozdiel robí spôsob myslenia, rozhodovania a práce.",
+                headline: "Mať nástroje nie je to isté ako vedieť, čo s nimi.",
+                subline: "Vyhrávajú firmy, ktoré na to prídu prvé.",
                 items: [
                     { value: "300M", label: "automatizovateľných pracovných miest na svete", source: "Goldman Sachs" },
                     { value: "16%", label: "pokles zamestnanosti, pracovníci 22–25 rokov v AI-exponovaných pozíciách", source: "Stanford / ADP 2025" },
@@ -113,41 +113,41 @@ export default function CorporateOnePager() {
                     { headline: "Výstup je generický.", subline: "Ako u všetkých ostatných." },
                     { headline: "Nástroje pribúdajú.", subline: "Jasnosť nie." },
                     { headline: "Rýchlosť stúpla.", subline: "Kvalita stagnuje." },
-                    { headline: "Každý má AI.", subline: "Málokto vie, ako ju používať." },
-                    { headline: "Potrebujete alignment.", subline: "Máte nekonečné debaty." }
+                    { headline: "AI rozpočet schválený.", subline: "Nikto nedrží smer." },
+                    { headline: "Potrebujete spoločný smer.", subline: "Máte nekonečné debaty." }
                 ]
             },
             session: {
-                title: "Tri Pohľady. Jedna Session.",
-                subtitle: "Myslíme spolu. Odídete s jasnosťou.",
+                title: "Jedna Session. Tri Perspektívy.",
+                subtitle: "Myslíme s vami. Odídete s jasnosťou.",
                 parts: [
-                    { num: "01", title: "The Shift", time: "30 min", lead: "Všetci", desc: "Svet sa zmenil. Tu je, čo vidíme — vo vašom odvetví, v kreatívnej práci, v tom, čo je teraz možné." },
-                    { num: "02", title: "Frameworky", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Vkus: dekády skúseností v kreativite a technológii — rozdiel robí kurátorstvo a oko pre detail. Páka: workflowy, automatizácie a reálne ukážky — čo stavať, čo preskočiť. Jasnosť: čo zostáva ľudské a čo delegovať — rozhodovací rámec, ktorý reálne použijete." },
-                    { num: "03", title: "Vaša Realita", time: "90-120 min", lead: "Facilitované", desc: "Vaše výzvy. Tri perspektívy. Naživo. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám." },
-                    { num: "04", title: "Jasnosť", time: "30 min", lead: "Všetci", desc: "Každý z nás zdieľa, čo videl. Čo prioritizovať. Čo ignorovať. Odídete s vedomím, čo robiť." }
+                    { num: "01", title: "The Shift", time: "30 min", lead: "Všetci", desc: "Čo sa zmenilo a v čom sa väčšina firiem mýli. Nie teória. To, čo vidíme fungovať naprieč odvetviami práve teraz." },
+                    { num: "02", title: "Frameworky", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Roland: ako premýšľa nad kampaňami za milióny a chybami za šesťciferné sumy. Ján: čo dnes malý tím postaví a dodá, čo pred rokom nezvládlo celé oddelenie. Roman: ako sa rozhodovať, keď všetko pôsobí urgentne." },
+                    { num: "03", title: "Vaša Realita", time: "90-120 min", lead: "Facilitované", desc: "Vaše reálne problémy. Vaše slepé miesta. Traja ľudia, ktorí to už videli, pozerajú sa na vašu situáciu z uhlov, na ktoré ste nemysleli. Nové produkty, lepšie procesy, čo prestať robiť." },
+                    { num: "04", title: "Jasnosť", time: "30 min", lead: "Všetci", desc: "Čo sme každý videli. Čo riešiť najskôr. Čo pustiť. Váš tím odchádza so spoločným smerom a odhodlaním konať od pondelka." }
                 ]
             },
             founders: {
-                title: "Traja Zakladatelia.",
-                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete. Myslia spolu nad vašimi problémami.",
+                title: "Kto Je V Miestnosti.",
+                subtitle: "Budovatelia, nie konzultanti. Firmy a klienti naprieč Európou. Pracujú na vašich problémoch spoločne.",
                 cards: [
-                    { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail.", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania.", url: "https://sorrywecan.com/" },
-                    { name: "Ján Koscelanský", role: "PÁKA", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Čo dokáže jeden človek dnes. Čo stavať, čo preskočiť a ako navrhovať produkty, ktoré fungujú.", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov.", url: "https://sudolabs.com/" },
-                    { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformational Design", tagline: "Čo zostáva ľudské a čo delegovať. Rozhodovací rámec, ktorý reálne použijete.", bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami.", url: "" }
+                    { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Ako premýšľa nad kampaňami za milióny. Chyby za šesťciferné sumy a čo stáli okrem peňazí. Čo kreatívny tím vyprodukuje dnes oproti dvom rokom dozadu.", bio: "Režisér a kreatívny riaditeľ. Dekády na priesečníku estetiky a technológie. Viedol kampane pre globálne značky, urobil drahé chyby, dnes buduje s AI denne.", url: "https://sorrywecan.com/" },
+                    { name: "Ján Koscelanský", role: "PÁKA", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Čo dnes malý tím dodá, na čo pred rokom potrebovali celé oddelenie. Kde začať. Čo preskočiť.", bio: "Produktový líder. Roky skúseností s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na to, čo sa reálne dodá, ako rýchlo ísť od nápadu k produktu a čo sa teraz oplatí stavať.", url: "https://sudolabs.com/" },
+                    { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformational Design", tagline: "Ako sa rozhodovať, keď všetko pôsobí urgentne. Čo zostáva ľudské. Čo už nemusí.", bio: "Transformačný dizajnér. Pomáha vedeniu tímov prerezať šum, nastaviť priority, ktoré vydržia, a zistiť, čo prestať robiť.", url: "" }
                 ]
             },
             outcome: {
                 title: "Odchádzate S",
                 items: [
-                    { title: "Prebudenie", desc: "Váš tím uvidí, čo 99% nevidí. Zmena, ktorá už prebieha." },
+                    { title: "Spoločné Porozumenie", desc: "Váš tím vidí, čo sa naozaj deje. Nie hype. Nie strach. Realita." },
                     { title: "Vaša Výhoda", desc: "Príležitosti, ktoré konkurencia premešká. Vy nie." },
                     { title: "Debaty → Rozhodnutia", desc: "Spoločný jazyk. Spoločné priority. Koniec nekonečných diskusií." },
-                    { title: "Chyby Zachytené", desc: "Tri pohľady zachytia, čo jeden prehliadne. Nákladné omyly — predídené." },
+                    { title: "Nákladné Chyby, Zachytené", desc: "Tri perspektívy zachytia, čo jeden človek prehliadne. Zlé odbočky odhalené skôr, než vás stoja." },
                     { title: "Zostane S Vami", desc: "30-dňový follow-up. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete." }
                 ],
                 proof: [
-                    { value: "3", label: "zakladatelia myslia spolu" },
-                    { value: "90+", label: "minút na VAŠE výzvy" },
+                    { value: "3", label: "zakladatelia v miestnosti s vami" },
+                    { value: "90+", label: "minút na VAŠE problémy" },
                     { value: "30", label: "dňový follow-up v cene" }
                 ]
             },
@@ -155,7 +155,7 @@ export default function CorporateOnePager() {
                 title: "Detaily",
                 items: [
                     { label: "Trvanie", value: "4-5 hodín", sub: "Pol dňa" },
-                    { label: "Veľkosť tímu", value: "10-15 ľudí", sub: "Leadership / kľúčový tím" },
+                    { label: "Veľkosť tímu", value: "10-15 ľudí", sub: "Vedenie / kľúčový tím" },
                     { label: "Miesto", value: "Prídeme k vám", sub: "Vaša kancelária" },
                     { label: "Follow-up", value: "30 dní", sub: "V cene" }
                 ]

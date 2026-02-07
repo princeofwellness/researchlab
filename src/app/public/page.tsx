@@ -27,7 +27,7 @@ export default function PublicSessionsPage() {
             },
             session: {
                 title: "What separates the 1%.",
-                subtitle: "Taste. Leverage. Clarity.",
+                subtitle: "",
                 parts: [
                     { 
                         num: "01", 
@@ -150,7 +150,7 @@ export default function PublicSessionsPage() {
             },
             session: {
                 title: "Čo odlišuje to 1%.",
-                subtitle: "Vkus. Páka. Jasnosť.",
+                subtitle: "",
                 parts: [
                     { 
                         num: "01", 

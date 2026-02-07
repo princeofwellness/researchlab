@@ -38,7 +38,7 @@ export default function PublicOnePager() {
             },
             session: {
                 title: "What separates the 1%.",
-                subtitle: "Taste. Leverage. Clarity.",
+                subtitle: "",
                 parts: [
                     { num: "01", title: "Taste", time: "50 min", lead: "Roland", desc: "What separates good from unforgettable. Everyone has the same tools. The difference is taste, curation, and the eye for detail." },
                     { num: "02", title: "Leverage", time: "50 min", lead: "Ján", desc: "What one person can build today. New businesses, new ways to operate. What to build, what to skip, and how to think about products in this new reality." },
@@ -114,7 +114,7 @@ export default function PublicOnePager() {
             },
             session: {
                 title: "Čo odlišuje to 1%.",
-                subtitle: "Vkus. Využitie. Jasnosť.",
+                subtitle: "",
                 parts: [
                     { num: "01", title: "Vkus", time: "50 min", lead: "Roland", desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail." },
                     { num: "02", title: "Využitie", time: "50 min", lead: "Ján", desc: "Čo dokáže jeden človek vytvoriť dnes. Nové biznisy, nové spôsoby fungovania. Na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete." },

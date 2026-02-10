@@ -15,15 +15,26 @@ export default function PublicSessionsPage() {
             hero: {
                 label: "THE SHIFT",
                 title: {
-                    line1: "The World Changed.",
-                    line2: "Most Haven't Noticed."
+                    line1: "Everyone has AI tools.",
+                    line2: "Thinking makes the difference."
                 },
-                description: "3 hours with founders who build with AI daily. Clarity on where we are, what's possible, and what you're going to do about it.",
+                subline: "What changed. What's possible. What's next.",
+                description: "3 hours with founders who build with AI daily.",
                 price: "99",
                 duration: "3 hours",
                 date: "February 26, 2026",
                 spots: "40 seats",
                 cta: "I'm In"
+            },
+            stats: {
+                headline: "The world is shifting faster than you think.",
+                items: [
+                    { value: "39%", label: "of your current skills will change by 2030", source: "WEF 2025" },
+                    { value: "75%", label: "of knowledge workers already use AI", source: "Microsoft 2024" },
+                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2024" },
+                    { value: "56%", label: "of companies see no return on AI investment yet", source: "PwC 2026" },
+                    { value: "88%", label: "of organizations now use AI in at least one function", source: "McKinsey 2025" }
+                ]
             },
             session: {
                 title: "What separates the 1%.",
@@ -33,28 +44,28 @@ export default function PublicSessionsPage() {
                         num: "01", 
                         title: "Taste", 
                         time: "50 min", 
-                        desc: "What separates good from unforgettable. Roland opens with live work. What's possible when taste meets technology.",
+                        desc: "What separates good from unforgettable. Everyone has the same tools. The difference is taste, curation, and the eye for detail.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
                         title: "Leverage", 
                         time: "50 min", 
-                        desc: "What one person can build now. Ján shows the builder's reality. What actually ships, and the opportunity for those who see it first.",
+                        desc: "What one person can build today. New businesses, new ways to operate. What to build, what to skip, and how to think about products in this new reality.",
                         lead: "Ján"
                     },
                     { 
                         num: "03", 
                         title: "Clarity", 
                         time: "40 min", 
-                        desc: "How to think when everything moves. Roman gives you the framework for every AI decision. What to focus on. What to ignore.",
+                        desc: "What stays human and what to delegate to AI. When to automate and when to consciously stop. Decision frameworks you'll actually use.",
                         lead: "Roman"
                     },
                     { 
                         num: "04", 
-                        title: "Your Questions", 
+                        title: "Q&A", 
                         time: "40 min", 
-                        desc: "Your field. Your reality. No script. Just honest answers from people who build with AI daily.",
+                        desc: "Your questions. Your reality. Open and honest answers from people who work with AI daily.",
                         lead: "All"
                     }
                 ]
@@ -62,10 +73,10 @@ export default function PublicSessionsPage() {
             problem: {
                 title: "Sound Familiar?",
                 cards: [
-                    { headline: "Faster output.", subline: "But less certainty in what's good." },
-                    { headline: "Generation is easy.", subline: "Taste is the hard part." },
-                    { headline: "You have the tools.", subline: "Your habits haven't caught up." },
-                    { headline: "You know where to go.", subline: "Daily practice is still fog." }
+                    { headline: "Generation is easy now.", subline: "Recognizing quality is harder." },
+                    { headline: "Tools keep multiplying.", subline: "Habits can't keep up." },
+                    { headline: "Everything moves faster.", subline: "But what's actually worth creating?" },
+                    { headline: "AI gave everyone the same power.", subline: "So what's your edge now?" }
                 ]
             },
             outcome: {
@@ -87,21 +98,24 @@ export default function PublicSessionsPage() {
                         role: "The Creative", 
                         company: "Creative Director / Founder, SORRYWECAN", 
                         tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.",
-                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks."
+                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.",
+                        url: "https://sorrywecan.com/"
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
                         company: "CPO / Co-founder, SUDOLABS", 
                         tagline: "Knows exactly where teams waste months building what one person could ship in a week.",
-                        bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build."
+                        bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.",
+                        url: "https://sudolabs.com/"
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "Transformational Design", 
                         tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.",
-                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure."
+                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.",
+                        url: ""
                     }
                 ]
             },
@@ -121,14 +135,14 @@ export default function PublicSessionsPage() {
                     items: [
                         { label: "Where", value: "SORRYWECAN Studio", subvalue: "Pečnianska 7, Bratislava" },
                         { label: "When", value: "February 26, 2026", subvalue: "Wednesday" },
-                        { label: "Duration", value: "3 hours", subvalue: "17:30 — 20:30" },
+                        { label: "Time", value: "17:00 – 20:30", subvalue: "3.5 hours" },
                         { label: "Price", value: "from €99", subvalue: "per person" }
                     ]
                 }
             },
             cta: {
                 headline: "I'm In.",
-                subline: "40 seats. February 26.",
+                subline: "40 seats. First session February 26.",
                 button: "I'm In",
                 note: "Want this for your team?",
                 corporate: "Corporate Workshop"
@@ -138,15 +152,26 @@ export default function PublicSessionsPage() {
             hero: {
                 label: "THE SHIFT",
                 title: {
-                    line1: "Svet Sa Zmenil.",
-                    line2: "Väčšina Si To Nevšimla."
+                    line1: "AI nástroje má dnes každý.",
+                    line2: "Rozhoduje spôsob myslenia."
                 },
-                description: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne. Jasnosť o tom, kde sme, čo je možné, a čo s tým urobíš.",
+                subline: "Čo sa zmenilo. Čo je možné. Čo ďalej.",
+                description: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
                 price: "99",
                 duration: "3 hodiny",
                 date: "26. februára 2026",
                 spots: "40 miest",
                 cta: "Idem Do Toho"
+            },
+            stats: {
+                headline: "Svet sa mení rýchlejšie, než si myslíte.",
+                items: [
+                    { value: "39%", label: "vašich súčasných zručností sa zmení do 2030", source: "WEF 2025" },
+                    { value: "75%", label: "knowledge workers už používa AI", source: "Microsoft 2024" },
+                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2024" },
+                    { value: "56%", label: "firiem nevidí návratnosť investícií do AI", source: "PwC 2026" },
+                    { value: "88%", label: "organizácií už používa AI aspoň v jednej oblasti", source: "McKinsey 2025" }
+                ]
             },
             session: {
                 title: "Čo odlišuje to 1%.",
@@ -156,39 +181,39 @@ export default function PublicSessionsPage() {
                         num: "01", 
                         title: "Vkus", 
                         time: "50 min", 
-                        desc: "Čo odlišuje dobré od nezabudnuteľného. Roland otvára živou prácou. Čo je možné, keď sa vkus stretne s technológiou.",
+                        desc: "Čo odlišuje dobré od nezabudnuteľného. Rovnaké nástroje má každý. Rozdiel robí vkus, kurátorstvo a oko pre detail.",
                         lead: "Roland"
                     },
                     { 
                         num: "02", 
-                        title: "Páka", 
+                        title: "Využitie", 
                         time: "50 min", 
-                        desc: "Čo jeden človek dokáže postaviť dnes. Ján ukáže realitu buildera. Čo sa reálne dodáva, a príležitosť pre tých, čo to vidia prví.",
+                        desc: "Čo dokáže jeden človek vytvoriť dnes. Nové biznisy, nové spôsoby fungovania. Na čo sa sústrediť, čo tvoriť a ako premýšľať o produktoch v tomto svete.",
                         lead: "Ján"
                     },
                     { 
                         num: "03", 
                         title: "Jasnosť", 
                         time: "40 min", 
-                        desc: "Ako myslieť, keď sa všetko hýbe. Roman ti dá framework pre každé AI rozhodnutie. Na čo sa sústrediť. Čo ignorovať.",
+                        desc: "Čo zostáva ľudské a čo delegovať na AI. Kedy automatizovať a kedy sa vedome zastaviť. Rozhodovacie rámce, ktoré viete reálne používať.",
                         lead: "Roman"
                     },
                     { 
                         num: "04", 
-                        title: "Tvoje Otázky", 
+                        title: "Q&A", 
                         time: "40 min", 
-                        desc: "Tvoj odbor. Tvoja realita. Žiadny skript. Len úprimné odpovede od ľudí, čo s AI budujú denne.",
+                        desc: "Vaše otázky. Vaša realita. Otvorené a úprimné odpovede od ľudí, ktorí s AI pracujú denne.",
                         lead: "Všetci"
                     }
                 ]
             },
             problem: {
-                title: "Znie Povedome?",
+                title: "Poznáte To?",
                 cards: [
-                    { headline: "Rýchlejší výstup.", subline: "Ale menšia istota, čo je dobré." },
-                    { headline: "Generovať je ľahké.", subline: "Vkus je to ťažké." },
-                    { headline: "Nástroje máte.", subline: "Návyky ešte nie." },
-                    { headline: "Viete kam.", subline: "Denná prax je stále hmla." }
+                    { headline: "Generovať je dnes jednoduché.", subline: "Rozlíšiť kvalitu je ťažšie." },
+                    { headline: "Nástroje pribúdajú.", subline: "Návyky nestíhajú." },
+                    { headline: "Všetko ide rýchlejšie.", subline: "Ale čo sa naozaj oplatí tvoriť?" },
+                    { headline: "AI dalo všetkým rovnaké možnosti.", subline: "Tak čo je teraz tvoja výhoda?" }
                 ]
             },
              outcome: {
@@ -210,21 +235,24 @@ export default function PublicSessionsPage() {
                          role: "Umelec", 
                          company: "Creative Director / Zakladateľ, SORRYWECAN", 
                          tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
-                         bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne."
+                         bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.",
+                         url: "https://sorrywecan.com/"
                      },
                      { 
                          name: "Ján Koscelanský", 
                          role: "Architekt", 
                          company: "CPO / Spoluzakladateľ, SUDOLABS", 
                          tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
-                         bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli."
+                         bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.",
+                         url: "https://sudolabs.com/"
                      },
                      { 
                          name: "Roman Pii Wagner", 
                          role: "Navigátor", 
                          company: "Transformational Design", 
                          tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
-                         bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom."
+                         bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
+                         url: ""
                      }
                  ]
              },
@@ -244,14 +272,14 @@ export default function PublicSessionsPage() {
                     items: [
                         { label: "Kde", value: "SORRYWECAN Studio", subvalue: "Pečnianska 7, Bratislava" },
                         { label: "Kedy", value: "26. februára 2026", subvalue: "Streda" },
-                        { label: "Trvanie", value: "3 hodiny", subvalue: "17:30 — 20:30" },
+                        { label: "Čas", value: "17:00 – 20:30", subvalue: "3.5 hodiny" },
                         { label: "Cena", value: "od €99", subvalue: "na osobu" }
                     ]
                 }
             },
              cta: {
                  headline: "Idem Do Toho.",
-                 subline: "40 miest. 26. február.",
+                 subline: "40 miest. Prvá session 26. februára.",
                  button: "Idem Do Toho",
                  note: "Chceš toto pre svoj tím?",
                  corporate: "Firemný Workshop"
@@ -298,6 +326,15 @@ export default function PublicSessionsPage() {
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
+                        transition={{ delay: 0.15 }}
+                        className="text-lg md:text-xl text-black/40 mt-4"
+                    >
+                        {t.hero.subline}
+                    </motion.p>
+
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                         className="text-lg md:text-xl leading-relaxed text-black/60 max-w-2xl mb-10"
                     >
@@ -331,6 +368,35 @@ export default function PublicSessionsPage() {
                         </div>
 
                     </motion.div>
+                </div>
+            </section>
+
+            <section className="py-16 md:py-20 px-6 md:px-12 border-b border-black/10">
+                <div className="max-w-5xl mx-auto">
+                    <motion.p
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center text-xl md:text-2xl font-bold text-black/70 mb-12"
+                    >
+                        {t.stats.headline}
+                    </motion.p>
+                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 md:gap-12">
+                        {t.stats.items.map((stat: { value: string; label: string; source: string }, i: number) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="text-center"
+                            >
+                                <span className="text-3xl md:text-4xl font-bold text-[#0047BB]">{stat.value}</span>
+                                <p className="text-sm text-black/60 mt-2 mb-1">{stat.label}</p>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -432,6 +498,11 @@ export default function PublicSessionsPage() {
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1 font-code-brand">{card.role}</p>
                                 <p className="text-[10px] text-white/30 mb-4 font-code-brand">{card.company}</p>
                                 <p className="text-sm text-white/60 mb-3">{card.bio}</p>
+                                {card.url && (
+                                    <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] font-code-brand font-bold uppercase tracking-widest text-white/50 hover:text-white mt-2">
+                                        {card.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                                    </a>
+                                )}
                                 <p className="text-sm text-white/80 italic border-t border-white/10 pt-3">"{card.tagline}"</p>
                             </div>
                         ))}

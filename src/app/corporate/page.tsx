@@ -19,53 +19,42 @@ export default function CorporatePage() {
                     line1: "Your Team.",
                     line2: "New Operating System."
                 },
-                description: "Three founders. Three lenses. Your challenges. We don't present — we think together, live, on the problems keeping you stuck.",
+                subline: "Creativity. Product. Transformation. Applied to your reality.",
+                description: "We don't present. We think with you, live, about the decisions you're actually facing.",
                 price: "5,900",
                 duration: "4-5 hours",
                 capacity: "10-15 people",
                 cta: "Book Discovery Call"
             },
-            problem: {
-                headline: "The Reality Right Now.",
-                points: [
-                    "Your team prompts without strategy",
-                    "AI budget approved. Nobody owns the direction.",
-                    "Tools multiply, clarity doesn't",
-                    "Speed went up, quality went sideways"
+            stats: {
+                headline: "Having tools is not the same as knowing what to do with them.",
+                subline: "The companies that win are the ones that figure this out first.",
+                items: [
+                    { value: "300M", label: "jobs exposed to AI automation worldwide", source: "Goldman Sachs" },
+                    { value: "56%", label: "of CEOs see no return on AI investment yet", source: "PwC CEO Survey 2026" },
+                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2024" },
+                    { value: "1%", label: "of organizations consider themselves AI-mature", source: "McKinsey 2025" },
+                    { value: "3×", label: "faster than any technology shift before", source: "World Bank" }
                 ]
             },
-            framework: {
+            problem: {
+                title: "The Reality Right Now.",
+                cards: [
+                    { headline: "Your team prompts.", subline: "Without strategy." },
+                    { headline: "Tools multiply.", subline: "Clarity doesn't." },
+                    { headline: "AI budget approved.", subline: "Nobody owns the direction." },
+                    { headline: "Speed went up.", subline: "Quality went sideways." }
+                ]
+            },
+            session: {
                 title: "Three Perspectives. One Direction.",
                 subtitle: "We don't present. We think with you on what's holding you back.",
-                phases: [
-                    { 
-                        num: "01", 
-                        title: "The Shift", 
-                        time: "30 min",
-                        desc: "What changed and what most companies are getting wrong. Not theory. What we see working across industries right now.",
-                        lead: "All"
-                    },
-                    { 
-                        num: "02", 
-                        title: "The Frameworks", 
-                        time: "60-75 min",
-                        desc: "How taste separates forgettable from iconic. What a small team ships today vs. a department last year. How to decide fast when nothing feels certain.",
-                        lead: "Roland → Ján → Roman"
-                    },
-                    { 
-                        num: "03", 
-                        title: "Your Reality", 
-                        time: "90-120 min",
-                        desc: "We stop talking about the market and start talking about you. Your blind spots, your bottlenecks, looked at from angles you haven't considered. This is where insights happen that prevent six-figure mistakes.",
-                        lead: "Facilitated"
-                    }
-                ],
-                closing: {
-                    title: "The Clarity",
-                    time: "30 min",
-                    desc: "What we each saw. What to do first. What to drop. Your team leaves with a shared direction and the confidence to act on it Monday.",
-                    lead: "All"
-                }
+                parts: [
+                    { num: "01", title: "The Shift", time: "30 min", lead: "All", desc: "What changed and what most companies are getting wrong. Not theory. What we see working across industries right now." },
+                    { num: "02", title: "Frameworks", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "How taste separates forgettable from iconic. What a small team ships today vs. a department last year. How to decide fast when nothing feels certain." },
+                    { num: "03", title: "Your Reality", time: "90-120 min", lead: "Facilitated", desc: "We stop talking about the market and start talking about you. Your blind spots, your bottlenecks, looked at from angles you haven't considered. This is where insights happen that prevent six-figure mistakes." },
+                    { num: "04", title: "The Clarity", time: "30 min", lead: "All", desc: "What we each saw. What to do first. What to drop. Your team leaves with a shared direction and the confidence to act on it Monday." }
+                ]
             },
             outcome: {
                 title: "You Leave With",
@@ -86,27 +75,30 @@ export default function CorporatePage() {
                         role: "TASTE", 
                         company: "Creative Director / Founder, SORRYWECAN", 
                         tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.",
-                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks."
+                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.",
+                        url: "https://sorrywecan.com/"
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "LEVERAGE", 
                         company: "CPO / Co-founder, SUDOLABS", 
                         tagline: "Knows exactly where teams waste months building what one person could ship in a week.",
-                        bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build."
+                        bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.",
+                        url: "https://sudolabs.com/"
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "CLARITY", 
                         company: "Transformational Design", 
                         tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.",
-                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure."
+                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.",
+                        url: ""
                     }
                 ]
             },
             proof: {
                 stats: [
-                    { value: "3", label: "founders thinking together" },
+                    { value: "3", label: "founders in the room with you" },
                     { value: "90+", label: "minutes on YOUR challenges" },
                     { value: "30", label: "day follow-up included" }
                 ]
@@ -122,9 +114,10 @@ export default function CorporatePage() {
                 details: {
                     title: "Details",
                     items: [
-                        { label: "Duration", value: "4-5 hours" },
-                        { label: "Team size", value: "10-15 people" },
-                        { label: "Location", value: "We come to you" }
+                        { label: "Duration", value: "4-5 hours", subvalue: "Half day" },
+                        { label: "Team Size", value: "10-15 people", subvalue: "Leadership / key team" },
+                        { label: "Location", value: "We come to you", subvalue: "Your office" },
+                        { label: "Follow-up", value: "30 days", subvalue: "Included" }
                     ]
                 }
             },
@@ -132,7 +125,8 @@ export default function CorporatePage() {
                 headline: "Next Move.",
                 subline: "20-minute discovery call. No commitment.",
                 button: "Book Discovery Call",
-                guarantee: "If it's not the right fit, we'll tell you. And point you somewhere better."
+                guarantee: "If it's not the right fit, we'll tell you. And point you somewhere better.",
+                contact: "andrea@sorrywecan.com"
             }
         },
         sk: {
@@ -142,53 +136,42 @@ export default function CorporatePage() {
                     line1: "Váš Tím.",
                     line2: "Nový Operačný Systém."
                 },
-                description: "Traja zakladatelia. Tri pohľady. Vaše výzvy. Neprezentujeme — myslíme spolu, naživo, nad problémami, ktoré vás brzdia.",
+                subline: "Kreativita. Produkt. Transformácia. Aplikované na vašu realitu.",
+                description: "Neprezentujeme. Myslíme s vami, naživo, nad rozhodnutiami, ktoré práve riešite.",
                 price: "5 900",
                 duration: "4-5 hodín",
                 capacity: "10-15 ľudí",
                 cta: "Rezervovať Discovery Call"
             },
-            problem: {
-                headline: "Realita Práve Teraz.",
-                points: [
-                    "Váš tím promptuje bez stratégie",
-                    "AI rozpočet schválený. Nikto nedrží smer.",
-                    "Nástroje pribúdajú, jasnosť nie",
-                    "Rýchlosť stúpla, kvalita stagnuje"
+            stats: {
+                headline: "Mať nástroje nie je to isté ako vedieť, čo s nimi.",
+                subline: "Vyhrávajú firmy, ktoré na to prídu prvé.",
+                items: [
+                    { value: "300M", label: "pracovných miest vystavených AI automatizácii", source: "Goldman Sachs" },
+                    { value: "56%", label: "CEO nevidí návratnosť investícií do AI", source: "PwC CEO Survey 2026" },
+                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2024" },
+                    { value: "1%", label: "organizácií sa považuje za AI-zrelých", source: "McKinsey 2025" },
+                    { value: "3×", label: "rýchlejšie než čokoľvek pred tým", source: "World Bank" }
                 ]
             },
-            framework: {
+            problem: {
+                title: "Realita Práve Teraz.",
+                cards: [
+                    { headline: "Váš tím promptuje.", subline: "Bez stratégie." },
+                    { headline: "Nástroje pribúdajú.", subline: "Jasnosť nie." },
+                    { headline: "AI rozpočet schválený.", subline: "Nikto nedrží smer." },
+                    { headline: "Rýchlosť stúpla.", subline: "Kvalita stagnuje." }
+                ]
+            },
+            session: {
                 title: "Tri Pohľady. Jeden Smer.",
                 subtitle: "Neprezentujeme. Myslíme s vami nad tým, čo vás brzdí.",
-                phases: [
-                    { 
-                        num: "01", 
-                        title: "The Shift", 
-                        time: "30 min",
-                        desc: "Čo sa zmenilo a v čom sa väčšina firiem mýli. Nie teória. To, čo vidíme fungovať naprieč odvetviami práve teraz.",
-                        lead: "Všetci"
-                    },
-                    { 
-                        num: "02", 
-                        title: "Frameworky", 
-                        time: "60-75 min",
-                        desc: "Čo odlišuje zabudnuteľnú prácu od ikonickej. Čo malý tím dnes dodá vs. celé oddelenie pred rokom. Ako sa rozhodovať rýchlo, keď nič nie je isté.",
-                        lead: "Roland → Ján → Roman"
-                    },
-                    { 
-                        num: "03", 
-                        title: "Vaša Realita", 
-                        time: "90-120 min",
-                        desc: "Prestaneme hovoriť o trhu a začneme hovoriť o vás. Vaše slepé miesta, vaše brzdy, pozerané z uhlov, na ktoré ste nemysleli. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám.",
-                        lead: "Facilitované"
-                    }
-                ],
-                closing: {
-                    title: "Jasnosť",
-                    time: "30 min",
-                    desc: "Čo sme každý videli. Čo riešiť najskôr. Čo pustiť. Váš tím odchádza so spoločným smerom a odhodlaním konať od pondelka.",
-                    lead: "Všetci"
-                }
+                parts: [
+                    { num: "01", title: "The Shift", time: "30 min", lead: "Všetci", desc: "Čo sa zmenilo a v čom sa väčšina firiem mýli. Nie teória. To, čo vidíme fungovať naprieč odvetviami práve teraz." },
+                    { num: "02", title: "Frameworky", time: "60-75 min", lead: "Roland → Ján → Roman", desc: "Čo odlišuje zabudnuteľnú prácu od ikonickej. Čo malý tím dnes dodá vs. celé oddelenie pred rokom. Ako sa rozhodovať rýchlo, keď nič nie je isté." },
+                    { num: "03", title: "Vaša Realita", time: "90-120 min", lead: "Facilitované", desc: "Prestaneme hovoriť o trhu a začneme hovoriť o vás. Vaše slepé miesta, vaše brzdy, pozerané z uhlov, na ktoré ste nemysleli. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám." },
+                    { num: "04", title: "Jasnosť", time: "30 min", lead: "Všetci", desc: "Čo sme každý videli. Čo riešiť najskôr. Čo pustiť. Váš tím odchádza so spoločným smerom a odhodlaním konať od pondelka." }
+                ]
             },
             outcome: {
                 title: "S Čím Odchádzate",
@@ -209,28 +192,31 @@ export default function CorporatePage() {
                         role: "VKUS", 
                         company: "Creative Director / Zakladateľ, SORRYWECAN", 
                         tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
-                        bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne."
+                        bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.",
+                        url: "https://sorrywecan.com/"
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "PÁKA", 
                         company: "CPO / Spoluzakladateľ, SUDOLABS", 
                         tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
-                        bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli."
+                        bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.",
+                        url: "https://sudolabs.com/"
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "JASNOSŤ", 
                         company: "Transformational Design", 
                         tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
-                        bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom."
+                        bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
+                        url: ""
                     }
                 ]
             },
             proof: {
                 stats: [
-                    { value: "3", label: "zakladatelia myslia spolu" },
-                    { value: "90+", label: "minút na VAŠE výzvy" },
+                    { value: "3", label: "zakladatelia v miestnosti s vami" },
+                    { value: "90+", label: "minút na VAŠE problémy" },
                     { value: "30", label: "dňový follow-up v cene" }
                 ]
             },
@@ -245,9 +231,10 @@ export default function CorporatePage() {
                 details: {
                     title: "Detaily",
                     items: [
-                        { label: "Trvanie", value: "4-5 hodín" },
-                        { label: "Veľkosť tímu", value: "10-15 ľudí" },
-                        { label: "Miesto", value: "Prídeme k vám" }
+                        { label: "Trvanie", value: "4-5 hodín", subvalue: "Pol dňa" },
+                        { label: "Veľkosť tímu", value: "10-15 ľudí", subvalue: "Vedenie / kľúčový tím" },
+                        { label: "Miesto", value: "Prídeme k vám", subvalue: "Vaša kancelária" },
+                        { label: "Follow-up", value: "30 dní", subvalue: "V cene" }
                     ]
                 }
             },
@@ -255,7 +242,8 @@ export default function CorporatePage() {
                 headline: "Ďalší Krok.",
                 subline: "20-minútový discovery call. Žiadny záväzok.",
                 button: "Rezervovať Discovery Call",
-                guarantee: "Ak to pre vás nie je, povieme vám to. A nasmerujeme vás lepšie."
+                guarantee: "Ak to pre vás nie je, povieme vám to. A nasmerujeme vás lepšie.",
+                contact: "andrea@sorrywecan.com"
             }
         }
     }
@@ -299,6 +287,15 @@ export default function CorporatePage() {
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
+                        transition={{ delay: 0.15 }}
+                        className="text-lg md:text-xl text-black/40 mt-2"
+                    >
+                        {t.hero.subline}
+                    </motion.p>
+
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                         className="text-lg md:text-xl leading-relaxed text-black/60 max-w-2xl mb-10"
                     >
@@ -331,31 +328,61 @@ export default function CorporatePage() {
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
+            <section className="py-16 md:py-20 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                    <h2 className="font-bold text-3xl md:text-4xl leading-tight">
-                        {t.problem.headline}
-                    </h2>
-                        <div className="grid grid-cols-2 gap-3">
-                            {t.problem.points.map((point: string, i: number) => (
-                                <div key={i} className="p-4 border border-black/10 bg-white">
-                                    <span className="text-sm text-black/70">{point}</span>
-                                </div>
-                            ))}
-                        </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-12"
+                    >
+                        <p className="text-xl md:text-2xl font-bold text-black/70">{t.stats.headline}</p>
+                        {t.stats.subline && <p className="text-lg text-black/40 mt-2">{t.stats.subline}</p>}
+                    </motion.div>
+                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 md:gap-12">
+                        {t.stats.items.map((stat: { value: string; label: string; source: string }, i: number) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="text-center"
+                            >
+                                <span className="text-3xl md:text-4xl font-bold text-[#0047BB]">{stat.value}</span>
+                                <p className="text-sm text-black/60 mt-2 mb-1">{stat.label}</p>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
 
-            <section className="py-12 px-6 md:px-12 bg-[#0047BB]/5 border-y border-[#0047BB]/20">
-                <div className="max-w-3xl mx-auto text-center">
-                    <p className="text-lg md:text-xl font-bold text-black/70 leading-relaxed">
-                        {lang === 'en' 
-                            ? "One consultant gives you one perspective. We give you three — live, in the room, thinking together on YOUR problem. That's where insights happen that no single expert could see alone."
-                            : "Jeden konzultant vám dá jednu perspektívu. My vám dáme tri — naživo, v miestnosti, myslíme spolu nad VAŠÍM problémom. Tam vznikajú insights, ktoré žiaden jednotlivý expert nevidí sám."
-                        }
-                    </p>
+            <section className="py-16 md:py-20 px-6 md:px-12 border-b border-black/10">
+                <div className="max-w-4xl mx-auto">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="font-bold text-2xl md:text-3xl text-center mb-10"
+                    >
+                        {t.problem.title}
+                    </motion.h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {t.problem.cards.map((card: { headline: string; subline: string }, i: number) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="p-6 border border-black/10 bg-white"
+                            >
+                                <p className="text-lg md:text-xl font-medium text-black">{card.headline}</p>
+                                <p className="text-lg md:text-xl text-black/40">{card.subline}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -363,14 +390,18 @@ export default function CorporatePage() {
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="font-bold text-4xl md:text-5xl mb-2">
-                            {t.framework.title}
+                            {t.session.title}
                         </h2>
-                        <p className="text-lg text-[#0047BB]">{t.framework.subtitle}</p>
+                        <p className="text-lg text-[#0047BB]">{t.session.subtitle}</p>
                     </div>
                     <div className="space-y-3">
-                        {t.framework.phases.map((phase: any, i: number) => (
-                            <div 
+                        {t.session.parts.map((part: any, i: number) => (
+                            <motion.div
                                 key={i} 
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.05 }}
                                 className={cn(
                                     "flex flex-col md:flex-row gap-4 p-5 md:p-6 border transition-all",
                                     i === 2 
@@ -379,34 +410,18 @@ export default function CorporatePage() {
                                 )}
                             >
                                 <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-20 shrink-0">
-                                    <span className="text-[10px] font-bold text-[#0047BB] font-code-brand">{phase.num}</span>
-                                    <span className="text-[10px] text-black/30 font-code-brand">{phase.time}</span>
+                                    <span className="text-[10px] font-bold text-[#0047BB] font-code-brand">{part.num}</span>
+                                    <span className="text-[10px] text-black/30 font-code-brand">{part.time}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <h4 className="text-lg font-bold mb-1">{phase.title}</h4>
-                                    <p className="text-sm text-black/60">{phase.desc}</p>
+                                    <h4 className="text-lg font-bold mb-1">{part.title}</h4>
+                                    <p className="text-sm text-black/60">{part.desc}</p>
                                 </div>
                                 <div className="md:w-20 shrink-0 md:text-right">
-                                    <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 font-code-brand">{phase.lead}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 font-code-brand">{part.lead}</span>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
-                        
-                        <div className="p-5 md:p-6 bg-black text-white">
-                            <div className="flex flex-col md:flex-row gap-4">
-                                <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-20 shrink-0">
-                                    <span className="text-[10px] font-bold text-[#0047BB] font-code-brand">CLOSE</span>
-                                    <span className="text-[10px] text-white/30 font-code-brand">{t.framework.closing.time}</span>
-                                </div>
-                                <div className="flex-1">
-                                    <h4 className="text-lg font-bold mb-1">{t.framework.closing.title}</h4>
-                                    <p className="text-sm text-white/60">{t.framework.closing.desc}</p>
-                                </div>
-                                <div className="md:w-20 shrink-0 md:text-right">
-                                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30 font-code-brand">{t.framework.closing.lead}</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -450,6 +465,11 @@ export default function CorporatePage() {
                                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1 font-code-brand">{card.role}</p>
                                  <p className="text-[10px] text-white/30 mb-4 font-code-brand">{card.company}</p>
                                 <p className="text-sm text-white/60 mb-3">{card.bio}</p>
+                                {card.url && (
+                                    <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] font-code-brand font-bold uppercase tracking-widest text-white/50 hover:text-white mt-2">
+                                        {card.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                                    </a>
+                                )}
                                 <p className="text-sm text-white/80 italic border-t border-white/10 pt-3">"{card.tagline}"</p>
                             </div>
                         ))}
@@ -494,6 +514,7 @@ export default function CorporatePage() {
                             <div key={i} className="text-center">
                                  <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-1 font-code-brand">{item.label}</p>
                                 <p className="text-sm font-medium">{item.value}</p>
+                                {item.subvalue && <p className="text-xs text-black/40">{item.subvalue}</p>}
                             </div>
                         ))}
                     </div>
@@ -513,6 +534,7 @@ export default function CorporatePage() {
                         {t.cta.button}
                     </a>
                     <p className="text-sm text-white/40 mt-6">{t.cta.guarantee}</p>
+                    {t.cta.contact && <p className="text-xs text-white/30 mt-2">{t.cta.contact}</p>}
                     <div className="mt-8 flex items-center justify-center gap-3">
                         <span className="text-sm text-white/40">{lang === 'en' ? "Want to try first?" : "Chceš najprv vyskúšať?"}</span>
                         <Link 

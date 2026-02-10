@@ -263,7 +263,7 @@ export default function PublicSessionsPage() {
 
     return (
         <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20">
-            <TopNav customAction={
+            <TopNav lang={lang} customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}
                     className="text-xs font-bold uppercase tracking-widest px-4 py-2 hover:bg-black/5 transition-colors"

@@ -9,10 +9,12 @@ import { CAL_CONFIG } from "@/components/book-call"
 
 export function TopNav({ 
     customAction, 
-    variant = "light" 
+    variant = "light",
+    lang = "en"
 }: { 
     customAction?: React.ReactNode,
-    variant?: "light" | "dark"
+    variant?: "light" | "dark",
+    lang?: "en" | "sk"
 }) {
     const pathname = usePathname()
 
@@ -68,7 +70,7 @@ export function TopNav({
                             : "bg-black text-white hover:bg-[#0047BB]"
                     )}
                 >
-                    Book a Call
+                    {lang === 'sk' ? 'Rezervovať Hovor' : 'Book a Call'}
                 </a>
             </div>
         </nav>

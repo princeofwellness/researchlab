@@ -25,11 +25,9 @@ export default function HomePage() {
             shift: {
                 headline: "Technology is available to everyone. The difference is how you think, decide, and work.",
                 stats: [
-                    { value: "300M", label: "jobs automatable worldwide", source: "Goldman Sachs" },
-                    { value: "16%", label: "employment drop, workers aged 22–25 in AI-exposed roles", source: "Stanford / ADP 2025" },
-                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2025" },
-                    { value: "1%", label: "of organizations consider themselves AI-ready", source: "McKinsey 2025" },
-                    { value: "3×", label: "faster than any technology shift before", source: "World Bank" }
+                    { value: "75%", label: "of knowledge workers already use AI", source: "Microsoft 2024" },
+                    { value: "39%", label: "of current skills will change by 2030", source: "WEF 2025" },
+                    { value: "1%", label: "of organizations consider themselves AI-mature", source: "McKinsey 2025" }
                 ]
             },
             paths: {
@@ -38,25 +36,25 @@ export default function HomePage() {
                     label: "For Individuals",
                     name: "THE SHIFT",
                     line1: "40 people. 3 hours.",
-                    line2: "See what's possible.",
-                    line3: "Leave different.",
-                    cta: "I'm ready"
+                    line2: "Three founders. Three lenses.",
+                    line3: "Leave with clarity.",
+                    cta: "I'm In"
                 },
                 team: {
                     label: "For Teams",
                     name: "Corporate Workshop",
                     line1: "Your team. Your challenges.",
-                    line2: "We facilitate.",
-                    line3: "You transform.",
-                    cta: "Book a call"
+                    line2: "Three perspectives on your reality.",
+                    line3: "Leave with direction.",
+                    cta: "Book Discovery Call"
                 }
             },
             cta: {
-                headline: "Ready?",
+                headline: "Your Move.",
                 subline: "First session: February 26. Limited seats.",
                 buttons: {
                     public: "Join THE SHIFT",
-                    corporate: "Book Corporate"
+                    corporate: "Corporate Workshop"
                 }
             }
         },
@@ -74,11 +72,9 @@ export default function HomePage() {
             shift: {
                 headline: "Technológia je dostupná všetkým. Rozdiel robí spôsob myslenia, rozhodovania a práce.",
                 stats: [
-                    { value: "300M", label: "automatizovateľných pracovných miest na svete", source: "Goldman Sachs" },
-                    { value: "16%", label: "pokles zamestnanosti, pracovníci 22–25 rokov v AI-exponovaných pozíciách", source: "Stanford / ADP 2025" },
-                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2025" },
-                    { value: "1%", label: "organizácií sa považuje za pripravených na AI", source: "McKinsey 2025" },
-                    { value: "3×", label: "rýchlejšie než čokoľvek pred tým", source: "World Bank" }
+                    { value: "75%", label: "knowledge workers už používa AI", source: "Microsoft 2024" },
+                    { value: "39%", label: "súčasných zručností sa zmení do 2030", source: "WEF 2025" },
+                    { value: "1%", label: "organizácií sa považuje za AI-zrelých", source: "McKinsey 2025" }
                 ]
             },
             paths: {
@@ -87,25 +83,25 @@ export default function HomePage() {
                     label: "Pre Jednotlivcov",
                     name: "THE SHIFT",
                     line1: "40 ľudí. 3 hodiny.",
-                    line2: "Pozri, čo je možné.",
-                    line3: "Odíď iný.",
-                    cta: "Idem do toho"
+                    line2: "Traja zakladatelia. Tri pohľady.",
+                    line3: "Odíďte s jasnosťou.",
+                    cta: "Idem Do Toho"
                 },
                 team: {
                     label: "Pre Tímy",
                     name: "Firemný Workshop",
                     line1: "Váš tím. Vaše výzvy.",
-                    line2: "My facilitujeme.",
-                    line3: "Vy transformujete.",
-                    cta: "Rezervovať hovor"
+                    line2: "Tri perspektívy na vašu realitu.",
+                    line3: "Odíďte so smerom.",
+                    cta: "Rezervovať Discovery Call"
                 }
             },
             cta: {
-                headline: "Pripravení?",
+                headline: "Váš Ťah.",
                 subline: "Prvá session: 26. február. Limitované miesta.",
                 buttons: {
                     public: "Pridať sa na THE SHIFT",
-                    corporate: "Rezervovať Corporate"
+                    corporate: "Firemný Workshop"
                 }
             }
         }
@@ -151,7 +147,7 @@ export default function HomePage() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="mt-6 text-xl md:text-2xl text-black/70 font-light"
+                        className="mt-6 text-lg md:text-xl leading-relaxed text-black/60"
                     >
                         {t.hero.subline}
                     </motion.p>
@@ -198,7 +194,7 @@ export default function HomePage() {
                     >
                         {t.shift.headline}
                     </motion.p>
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-16">
                         {t.shift.stats.map((stat: { value: string; label: string; source: string }, i: number) => (
                             <motion.div
                                 key={i}
@@ -208,7 +204,7 @@ export default function HomePage() {
                                 transition={{ delay: i * 0.1 }}
                                 className="text-center"
                             >
-                                <span className="text-3xl md:text-4xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
+                                <span className="text-4xl md:text-5xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
                                 <p className="text-sm text-black/60 mt-2 mb-1">{stat.label}</p>
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
                             </motion.div>
@@ -249,7 +245,7 @@ export default function HomePage() {
                                     <p>{t.paths.individual.line2}</p>
                                     <p className="font-medium text-black">{t.paths.individual.line3}</p>
                                 </div>
-                                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-[#0047BB] group-hover:gap-4 transition-all">
+                                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-[#0047BB] group-hover:gap-4 transition-all">
                                     {t.paths.individual.cta}
                                     <span className="text-lg">→</span>
                                 </span>
@@ -277,7 +273,7 @@ export default function HomePage() {
                                     <p>{t.paths.team.line2}</p>
                                     <p className="font-medium text-black">{t.paths.team.line3}</p>
                                 </div>
-                                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-[#0047BB] group-hover:gap-4 transition-all">
+                                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-[#0047BB] group-hover:gap-4 transition-all">
                                     {t.paths.team.cta}
                                     <span className="text-lg">→</span>
                                 </span>
@@ -294,7 +290,7 @@ export default function HomePage() {
                     viewport={{ once: true }}
                     className="max-w-2xl mx-auto px-6"
                 >
-                    <h2 className="font-serif-instrument text-6xl md:text-7xl italic mb-4">
+                    <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">
                         {t.cta.headline}
                     </h2>
                     <p className="text-lg text-white/50 mb-10">
@@ -303,13 +299,13 @@ export default function HomePage() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href="/public"
-                            className="bg-[#0047BB] text-white px-10 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+                            className="bg-[#0047BB] text-white px-10 py-5 font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all"
                         >
                             {t.cta.buttons.public}
                         </Link>
                         <Link
                             href="/corporate"
-                            className="border-2 border-white text-white px-10 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+                            className="border-2 border-white text-white px-10 py-5 font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all"
                         >
                             {t.cta.buttons.corporate}
                         </Link>

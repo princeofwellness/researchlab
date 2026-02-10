@@ -120,7 +120,7 @@ export default function HomePage() {
     ]
 
     return (
-        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20">
             <TopNav customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}
@@ -137,10 +137,10 @@ export default function HomePage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif-instrument text-[13vw] md:text-[9vw] leading-[0.9] tracking-tighter"
+                        className="font-bold text-[13vw] md:text-[9vw] leading-[0.9] tracking-tighter"
                     >
                         {t.hero.title.line1}<br />
-                        <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
+                        <span className="text-[#0047BB]">{t.hero.title.line2}</span>
                     </motion.h1>
 
                     <motion.p
@@ -160,7 +160,7 @@ export default function HomePage() {
                         transition={{ delay: 0.3 }}
                         className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8"
                     >
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 shrink-0">
+                        <span className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30 shrink-0">
                             {t.trust.label}
                         </span>
                         <div className="flex items-center gap-10 md:gap-12 flex-wrap">
@@ -190,7 +190,7 @@ export default function HomePage() {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-center text-xl md:text-2xl font-serif-instrument italic text-black/70 mb-12"
+                        className="text-center text-xl md:text-2xl font-bold text-black/70 mb-12"
                     >
                         {t.shift.headline}
                     </motion.p>
@@ -204,9 +204,9 @@ export default function HomePage() {
                                 transition={{ delay: i * 0.1 }}
                                 className="text-center"
                             >
-                                <span className="text-4xl md:text-5xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
+                                <span className="text-4xl md:text-5xl font-bold text-[#0047BB]">{stat.value}</span>
                                 <p className="text-sm text-black/60 mt-2 mb-1">{stat.label}</p>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30">{stat.source}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -219,7 +219,7 @@ export default function HomePage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="font-serif-instrument text-4xl md:text-5xl italic text-center mb-16"
+                        className="font-bold text-4xl md:text-5xl text-center mb-16"
                     >
                         {t.paths.title}
                     </motion.h2>
@@ -234,10 +234,10 @@ export default function HomePage() {
                                 href="/public"
                                 className="block h-full p-8 md:p-12 border-2 border-black/10 bg-white hover:border-[#0047BB] transition-all group"
                             >
-                                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">
+                                <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                                     {t.paths.individual.label}
                                 </span>
-                                <h3 className="font-serif-instrument text-4xl md:text-5xl italic mt-4 mb-8 group-hover:text-[#0047BB] transition-colors">
+                                <h3 className="font-bold text-4xl md:text-5xl mt-4 mb-8 group-hover:text-[#0047BB] transition-colors">
                                     {t.paths.individual.name}
                                 </h3>
                                 <div className="space-y-1 text-black/60 mb-8">
@@ -245,7 +245,7 @@ export default function HomePage() {
                                     <p>{t.paths.individual.line2}</p>
                                     <p className="font-medium text-black">{t.paths.individual.line3}</p>
                                 </div>
-                                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-[#0047BB] group-hover:gap-4 transition-all">
+                                <span className="inline-flex items-center gap-2 text-[11px] font-code-brand font-bold uppercase tracking-[0.2em] text-[#0047BB] group-hover:gap-4 transition-all">
                                     {t.paths.individual.cta}
                                     <span className="text-lg">→</span>
                                 </span>
@@ -262,10 +262,10 @@ export default function HomePage() {
                                 href="/corporate"
                                 className="block h-full p-8 md:p-12 border-2 border-black/10 bg-white hover:border-[#0047BB] transition-all group"
                             >
-                                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB]">
+                                <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                                     {t.paths.team.label}
                                 </span>
-                                <h3 className="font-serif-instrument text-4xl md:text-5xl italic mt-4 mb-8 group-hover:text-[#0047BB] transition-colors">
+                                <h3 className="font-bold text-4xl md:text-5xl mt-4 mb-8 group-hover:text-[#0047BB] transition-colors">
                                     {t.paths.team.name}
                                 </h3>
                                 <div className="space-y-1 text-black/60 mb-8">
@@ -273,7 +273,7 @@ export default function HomePage() {
                                     <p>{t.paths.team.line2}</p>
                                     <p className="font-medium text-black">{t.paths.team.line3}</p>
                                 </div>
-                                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-[#0047BB] group-hover:gap-4 transition-all">
+                                <span className="inline-flex items-center gap-2 text-[11px] font-code-brand font-bold uppercase tracking-[0.2em] text-[#0047BB] group-hover:gap-4 transition-all">
                                     {t.paths.team.cta}
                                     <span className="text-lg">→</span>
                                 </span>
@@ -290,7 +290,7 @@ export default function HomePage() {
                     viewport={{ once: true }}
                     className="max-w-2xl mx-auto px-6"
                 >
-                    <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">
+                    <h2 className="font-bold text-5xl md:text-6xl mb-4">
                         {t.cta.headline}
                     </h2>
                     <p className="text-lg text-white/50 mb-10">
@@ -299,13 +299,13 @@ export default function HomePage() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href="/public"
-                            className="bg-[#0047BB] text-white px-10 py-5 font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all"
+                            className="bg-[#0047BB] text-white px-10 py-5 font-code-brand font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all"
                         >
                             {t.cta.buttons.public}
                         </Link>
                         <Link
                             href="/corporate"
-                            className="border-2 border-white text-white px-10 py-5 font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all"
+                            className="border-2 border-white text-white px-10 py-5 font-code-brand font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all"
                         >
                             {t.cta.buttons.corporate}
                         </Link>
@@ -314,7 +314,7 @@ export default function HomePage() {
             </section>
 
             <footer className="py-12 text-center border-t border-black/10">
-                <p className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-20">
+                <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.4em] opacity-20">
                     SORRYWECAN // RESEARCH LAB // 2026
                 </p>
             </footer>

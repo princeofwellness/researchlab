@@ -263,7 +263,7 @@ export default function CorporatePage() {
     const t = content[lang]
 
     return (
-        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono selection:bg-[#0047BB]/20">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20">
             <TopNav customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}
@@ -281,7 +281,7 @@ export default function CorporatePage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="mb-6"
                     >
-                        <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB]">
+                        <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0047BB] font-code-brand">
                             {t.hero.label}
                         </span>
                     </motion.div>
@@ -290,10 +290,10 @@ export default function CorporatePage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif-instrument text-[12vw] md:text-[8vw] leading-[0.9] tracking-tighter mb-8"
+                        className="font-bold text-[12vw] md:text-[8vw] leading-[0.9] tracking-tighter mb-8"
                     >
                         {t.hero.title.line1}<br />
-                        <span className="text-[#0047BB] italic">{t.hero.title.line2}</span>
+                        <span className="text-[#0047BB]">{t.hero.title.line2}</span>
                     </motion.h1>
 
                     <motion.p
@@ -316,11 +316,11 @@ export default function CorporatePage() {
                                 href={CAL_CONFIG.bookingUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-[#0047BB] text-white px-8 py-4 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all"
+                                className="bg-[#0047BB] text-white px-8 py-4 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all font-code-brand"
                             >
                                 {t.hero.cta}
                             </a>
-                            <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-black/40 font-code-brand">
                                 <span>{t.hero.duration}</span>
                                 <span className="text-black/20">|</span>
                                 <span>{t.hero.capacity}</span>
@@ -334,9 +334,9 @@ export default function CorporatePage() {
             <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                        <h2 className="font-serif-instrument text-3xl md:text-4xl italic leading-tight">
-                            {t.problem.headline}
-                        </h2>
+                    <h2 className="font-bold text-3xl md:text-4xl leading-tight">
+                        {t.problem.headline}
+                    </h2>
                         <div className="grid grid-cols-2 gap-3">
                             {t.problem.points.map((point: string, i: number) => (
                                 <div key={i} className="p-4 border border-black/10 bg-white">
@@ -350,7 +350,7 @@ export default function CorporatePage() {
 
             <section className="py-12 px-6 md:px-12 bg-[#0047BB]/5 border-y border-[#0047BB]/20">
                 <div className="max-w-3xl mx-auto text-center">
-                    <p className="text-lg md:text-xl font-serif-instrument italic text-black/70 leading-relaxed">
+                    <p className="text-lg md:text-xl font-bold text-black/70 leading-relaxed">
                         {lang === 'en' 
                             ? "One consultant gives you one perspective. We give you three — live, in the room, thinking together on YOUR problem. That's where insights happen that no single expert could see alone."
                             : "Jeden konzultant vám dá jednu perspektívu. My vám dáme tri — naživo, v miestnosti, myslíme spolu nad VAŠÍM problémom. Tam vznikajú insights, ktoré žiaden jednotlivý expert nevidí sám."
@@ -362,7 +362,7 @@ export default function CorporatePage() {
             <section className="py-20 md:py-28 px-6 md:px-12 bg-white border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic mb-2">
+                        <h2 className="font-bold text-4xl md:text-5xl mb-2">
                             {t.framework.title}
                         </h2>
                         <p className="text-lg text-[#0047BB]">{t.framework.subtitle}</p>
@@ -379,15 +379,15 @@ export default function CorporatePage() {
                                 )}
                             >
                                 <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-20 shrink-0">
-                                    <span className="text-[10px] font-bold text-[#0047BB]">{phase.num}</span>
-                                    <span className="text-[10px] text-black/30">{phase.time}</span>
+                                    <span className="text-[10px] font-bold text-[#0047BB] font-code-brand">{phase.num}</span>
+                                    <span className="text-[10px] text-black/30 font-code-brand">{phase.time}</span>
                                 </div>
                                 <div className="flex-1">
                                     <h4 className="text-lg font-bold mb-1">{phase.title}</h4>
                                     <p className="text-sm text-black/60">{phase.desc}</p>
                                 </div>
                                 <div className="md:w-20 shrink-0 md:text-right">
-                                    <span className="text-[10px] font-bold uppercase tracking-widest text-black/30">{phase.lead}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-widest text-black/30 font-code-brand">{phase.lead}</span>
                                 </div>
                             </div>
                         ))}
@@ -395,15 +395,15 @@ export default function CorporatePage() {
                         <div className="p-5 md:p-6 bg-black text-white">
                             <div className="flex flex-col md:flex-row gap-4">
                                 <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-20 shrink-0">
-                                    <span className="text-[10px] font-bold text-[#0047BB]">CLOSE</span>
-                                    <span className="text-[10px] text-white/30">{t.framework.closing.time}</span>
+                                    <span className="text-[10px] font-bold text-[#0047BB] font-code-brand">CLOSE</span>
+                                    <span className="text-[10px] text-white/30 font-code-brand">{t.framework.closing.time}</span>
                                 </div>
                                 <div className="flex-1">
                                     <h4 className="text-lg font-bold mb-1">{t.framework.closing.title}</h4>
                                     <p className="text-sm text-white/60">{t.framework.closing.desc}</p>
                                 </div>
                                 <div className="md:w-20 shrink-0 md:text-right">
-                                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t.framework.closing.lead}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30 font-code-brand">{t.framework.closing.lead}</span>
                                 </div>
                             </div>
                         </div>
@@ -413,11 +413,11 @@ export default function CorporatePage() {
 
             <section className="py-20 md:py-28 px-6 md:px-12 bg-black text-white">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="font-serif-instrument text-3xl md:text-4xl italic text-center mb-12">{t.outcome.title}</h2>
+                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {t.outcome.items.map((item: any, i: number) => (
                             <div key={i} className="p-5 border border-white/10">
-                                <span className="w-7 h-7 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs mb-3">
+                                <span className="w-7 h-7 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs mb-3 font-code-brand">
                                     {i + 1}
                                 </span>
                                 <h4 className="font-bold text-sm mb-1">{item.title}</h4>
@@ -429,8 +429,8 @@ export default function CorporatePage() {
                     <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-white/10">
                         {t.proof.stats.map((stat: any, i: number) => (
                             <div key={i} className="text-center">
-                                <span className="text-4xl md:text-5xl font-serif-instrument text-[#0047BB]">{stat.value}</span>
-                                <p className="text-xs text-white/40 mt-2">{stat.label}</p>
+                                <span className="text-4xl md:text-5xl font-bold text-[#0047BB]">{stat.value}</span>
+                                <p className="text-xs text-white/40 mt-2 font-code-brand">{stat.label}</p>
                             </div>
                         ))}
                     </div>
@@ -440,15 +440,15 @@ export default function CorporatePage() {
             <section className="py-20 md:py-28 px-6 md:px-12 bg-[#0047BB] text-white">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="font-serif-instrument text-4xl md:text-5xl italic mb-2">{t.founders.title}</h2>
+                        <h2 className="font-bold text-4xl md:text-5xl mb-2">{t.founders.title}</h2>
                         <p className="text-white/60">{t.founders.subtitle}</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {t.founders.cards.map((card: any, i: number) => (
                             <div key={i} className="p-6 border border-white/20 bg-white/5 hover:bg-white/10 transition-all">
-                                <h4 className="text-xl font-serif-instrument italic">{card.name}</h4>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1">{card.role}</p>
-                                <p className="text-[10px] text-white/30 mb-4">{card.company}</p>
+                                 <h4 className="text-xl font-bold">{card.name}</h4>
+                                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1 font-code-brand">{card.role}</p>
+                                 <p className="text-[10px] text-white/30 mb-4 font-code-brand">{card.company}</p>
                                 <p className="text-sm text-white/60 mb-3">{card.bio}</p>
                                 <p className="text-sm text-white/80 italic border-t border-white/10 pt-3">"{card.tagline}"</p>
                             </div>
@@ -459,7 +459,7 @@ export default function CorporatePage() {
 
             <section className="py-20 md:py-28 px-6 md:px-12 bg-white">
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="font-serif-instrument text-3xl italic text-center mb-10">{t.faq.title}</h2>
+                    <h2 className="font-bold text-3xl text-center mb-10">{t.faq.title}</h2>
                     <div className="space-y-2 mb-12">
                         {t.faq.items.map((item: any, i: number) => (
                             <div key={i} className="border border-black/10">
@@ -489,7 +489,7 @@ export default function CorporatePage() {
                     <div className="flex flex-wrap justify-center gap-6 md:gap-10 p-6 bg-black/5 border border-black/10">
                         {t.faq.details.items.map((item: any, i: number) => (
                             <div key={i} className="text-center">
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-1">{item.label}</p>
+                                 <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-1 font-code-brand">{item.label}</p>
                                 <p className="text-sm font-medium">{item.value}</p>
                             </div>
                         ))}
@@ -499,13 +499,13 @@ export default function CorporatePage() {
 
             <section className="py-24 md:py-32 bg-black text-white text-center">
                 <div className="max-w-2xl mx-auto px-6">
-                    <h2 className="font-serif-instrument text-5xl md:text-6xl italic mb-4">{t.cta.headline}</h2>
+                    <h2 className="font-bold text-5xl md:text-6xl mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-6">{t.cta.subline}</p>
                     <a
                         href={CAL_CONFIG.bookingUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#0047BB] text-white px-12 py-5 font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
+                        className="bg-[#0047BB] text-white px-12 py-5 font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all inline-block font-code-brand"
                     >
                         {t.cta.button}
                     </a>
@@ -514,7 +514,7 @@ export default function CorporatePage() {
                         <span className="text-sm text-white/40">{lang === 'en' ? "Want to try first?" : "Chceš najprv vyskúšať?"}</span>
                         <Link 
                             href="/public" 
-                            className="text-sm font-bold text-[#0047BB] hover:text-white transition-colors"
+                            className="text-sm font-bold text-[#0047BB] hover:text-white transition-colors font-code-brand"
                         >
                             {lang === 'en' ? "THE SHIFT €99" : "THE SHIFT €99"} →
                         </Link>
@@ -523,7 +523,7 @@ export default function CorporatePage() {
             </section>
 
             <footer className="py-10 text-center border-t border-black/10">
-                <p className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-20">
+                <p className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-20 font-code-brand">
                     SORRYWECAN // RESEARCH LAB // 2026
                 </p>
             </footer>

@@ -46,10 +46,10 @@ export default function CorporateOnePager() {
             },
             founders: {
                 title: "Who's in the Room.",
-                subtitle: "Builders, not consultants. Running companies, not advising from the side.",
+                subtitle: "Entrepreneurs, not consultants. Running their own companies, innovating every day.",
                 trust: "From the creators of campaigns for Meta, Audi, Forbes, and Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.", bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily — does in hours what used to take weeks.", url: "https://sorrywecan.com/" },
+                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.", bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "Knows exactly where teams waste months building what one person could ship in a week.", bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.", url: "https://sudolabs.com/" },
                     { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.", bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.", url: "" }
                 ]
@@ -59,8 +59,8 @@ export default function CorporateOnePager() {
                 items: [
                     { title: "The Edge", desc: "Opportunities your competitors will miss. You won't." },
                     { title: "Debates → Decisions", desc: "Same language. Same priorities. The endless loops end." },
-                    { title: "Blind Spots, Found", desc: "Different angles reveal what one perspective can't. Wrong turns spotted before they cost you." },
-                    { title: "It Doesn't End Here", desc: "30-day follow-up. Toolkit that evolves. Not another workshop you forget." }
+                    { title: "What You're Missing", desc: "Three perspectives reveal what one can't. Wrong turns spotted before they cost you." },
+                    { title: "30 Days After", desc: "Follow-up included. Toolkit that evolves. Not another workshop you forget." }
                 ],
                 proof: [
                     { value: "3", label: "founders in the room with you" },
@@ -81,7 +81,7 @@ export default function CorporateOnePager() {
                 headline: "Next Move.",
                 subline: "20-minute discovery call. No commitment.",
                 button: "Book Discovery Call",
-                guarantee: "If it's not the right fit, we'll tell you — and point you somewhere better.",
+                guarantee: "If it's not the right fit, we'll tell you. And point you somewhere better.",
                 contact: "andrea@sorrywecan.com"
             }
         },
@@ -125,21 +125,21 @@ export default function CorporateOnePager() {
             },
             founders: {
                 title: "Kto Je V Miestnosti.",
-                subtitle: "Budovatelia, nie konzultanti. Vedú vlastné firmy, nie radia z bočnej čiary.",
+                subtitle: "Podnikatelia, nie konzultanti. Vedú vlastné firmy a inovujú každý deň.",
                 trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne — robí za hodiny, čo kedysi trvalo týždne.", url: "https://sorrywecan.com/" },
+                    { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "PÁKA", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.", bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.", url: "https://sudolabs.com/" },
                     { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformational Design", tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.", bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.", url: "" }
                 ]
             },
             outcome: {
-                title: "Odchádzate S",
+                title: "S Čím Odchádzate",
                 items: [
                     { title: "Vaša Výhoda", desc: "Príležitosti, ktoré konkurencia premešká. Vy nie." },
                     { title: "Debaty → Rozhodnutia", desc: "Spoločný jazyk. Spoločné priority. Koniec nekonečných diskusií." },
-                    { title: "Slepé Miesta, Nájdené", desc: "Rôzne uhly pohľadu odhalia, čo jeden človek prehliadne. Zlé odbočky odhalené skôr, než vás stoja." },
-                    { title: "Nekončí To Tu", desc: "30-dňový follow-up. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete." }
+                    { title: "Čo Vám Uniká", desc: "Tri pohľady odhalia, čo jeden nevidí. Zlé odbočky odhalené skôr, než vás stoja." },
+                    { title: "30 Dní Potom", desc: "Follow-up v cene. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete." }
                 ],
                 proof: [
                     { value: "3", label: "zakladatelia v miestnosti s vami" },
@@ -160,7 +160,7 @@ export default function CorporateOnePager() {
                 headline: "Ďalší Krok.",
                 subline: "20-minútový discovery call. Žiadny záväzok.",
                 button: "Rezervovať Discovery Call",
-                guarantee: "Ak to pre vás nie je, povieme vám to — a nasmerujeme vás lepšie.",
+                guarantee: "Ak to pre vás nie je, povieme vám to. A nasmerujeme vás lepšie.",
                 contact: "andrea@sorrywecan.com"
             }
         }

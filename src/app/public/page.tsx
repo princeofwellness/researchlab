@@ -71,37 +71,37 @@ export default function PublicSessionsPage() {
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "Clarity in Action", desc: "A clearer way of working and deciding when AI is part of everything." },
-                    { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness. Even when everyone has the same tools." },
-                    { title: "From Reactive to Intentional", desc: "A shift from random AI use to consciously designed operation." },
-                    { title: "Less Noise", desc: "Lower mental load. Less decision fatigue. No more AI FOMO." },
-                    { title: "Frameworks That Travel", desc: "Mental models you'll use across projects, teams, and roles." }
+                    { title: "A Working System", desc: "Not tips. Not theory. A way of working with AI you'll actually use Monday morning." },
+                    { title: "Less Noise, More Signal", desc: "Lower mental load. No more AI FOMO. You stop chasing tools and start choosing the right ones." },
+                    { title: "Your Edge", desc: "Everyone has the same tools. You'll know what they don't. How to see, decide, and create differently." },
+                    { title: "The Community", desc: "Access to the people who showed up. Monthly toolkit updates. A place to stay connected and keep growing." }
                 ]
             },
             founders: {
-                title: "Three Minds.",
-                subtitle: "Successful companies. Portfolio and clients worldwide.",
+                title: "Three Perspectives",
+                subtitle: "Art. Product. Transformation.",
+                trust: "From the creators of campaigns for Meta, Audi, Forbes, and Samsung.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "The Creative", 
                         company: "Creative Director / Founder, SORRYWECAN", 
-                        tagline: "Opens with what's possible. What separates real creative work from generic output.",
-                        bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
+                        tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.",
+                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "The Architect", 
                         company: "CPO / Co-founder, SUDOLABS", 
-                        tagline: "Shows what actually ships. What one person can build now.",
-                        bio: "Product leader with years of experience designing and scaling digital products, teams and processes. Focused on the practical side. What makes sense to build, how to deliver it, and where individuals have the biggest real impact today."
+                        tagline: "Knows exactly where teams waste months building what one person could ship in a week.",
+                        bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "Transformational Design", 
-                        tagline: "The framework for deciding what to focus on and what to ignore.",
-                        bio: "Works in transformational design, strategic thinking and complex organizational change. Helps leaders and teams navigate uncertainty, set decision-making frameworks, and distinguish between what matters and what's just noise."
+                        tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.",
+                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure."
                     }
                 ]
             },
@@ -127,7 +127,7 @@ export default function PublicSessionsPage() {
                 }
             },
             cta: {
-                headline: "Ready?",
+                headline: "I'm In.",
                 subline: "40 seats. February 26.",
                 button: "I'm In",
                 note: "Want this for your team?",
@@ -191,43 +191,43 @@ export default function PublicSessionsPage() {
                     { headline: "Viete kam.", subline: "Denná prax je stále hmla." }
                 ]
             },
-            outcome: {
-                title: "Odídeš S",
-                items: [
-                    { title: "Jasnosť v Praxi", desc: "Jasnejší spôsob práce a rozhodovania v realite, kde je AI bežnou súčasťou." },
-                    { title: "Tvoja Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť. Aj keď má každý tie isté nástroje." },
-                    { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
-                    { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
-                    { title: "Frameworky, Čo Cestujú", desc: "Mentálne modely použiteľné naprieč projektmi, tímami a rolami." }
-                ]
-            },
-            founders: {
-                title: "Tri Mysle.",
-                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete.",
-                cards: [
-                    { 
-                        name: "Roland Vraník", 
-                        role: "Kreatívec", 
-                        company: "Creative Director / Zakladateľ, SORRYWECAN", 
-                        tagline: "Otvára tým, čo je možné. Čo odlišuje skutočnú kreatívnu prácu od generického výstupu.",
-                        bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
-                    },
-                    { 
-                        name: "Ján Koscelanský", 
-                        role: "Architekt", 
-                        company: "CPO / Spoluzakladateľ, SUDOLABS", 
-                        tagline: "Ukáže, čo sa reálne dodáva. Čo dnes zvládne jeden človek.",
-                        bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na praktickú stránku. Čo má zmysel stavať, ako to doručiť, a kde má dnes jednotlivec najväčší reálny dopad."
-                    },
-                    { 
-                        name: "Roman Pii Wagner", 
-                        role: "Navigátor", 
-                        company: "Transformational Design", 
-                        tagline: "Framework na rozhodovanie, na čo sa sústrediť a čo ignorovať.",
-                        bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami v organizáciách. Pomáha lídrom a tímom orientovať sa v neistote, nastavovať rozhodovacie rámce a rozlišovať medzi tým, čo je dôležité, a čo len vytvára šum."
-                    }
-                ]
-            },
+             outcome: {
+                 title: "S Čím Odchádzate",
+                 items: [
+                     { title: "Funkčný Systém", desc: "Nie tipy. Nie teória. Spôsob práce s AI, ktorý reálne použijete v pondelok ráno." },
+                     { title: "Menej Šumu, Viac Signálu", desc: "Nižšia mentálna záťaž. Koniec AI FOMO. Prestanete naháňať nástroje a začnete vyberať tie správne." },
+                     { title: "Vaša Výhoda", desc: "Rovnaké nástroje má každý. Vy budete vedieť, čo ostatní nie. Ako vidieť, rozhodovať a tvoriť inak." },
+                     { title: "Komunita", desc: "Prístup ku ľuďom, ktorí prišli. Mesačné toolkit updaty. Miesto, kde zostanete prepojení a rastete ďalej." }
+                 ]
+             },
+             founders: {
+                 title: "Tri Perspektívy",
+                 subtitle: "Umenie. Produkt. Transformácia.",
+                 trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
+                 cards: [
+                     { 
+                         name: "Roland Vraník", 
+                         role: "Umelec", 
+                         company: "Creative Director / Zakladateľ, SORRYWECAN", 
+                         tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
+                         bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne."
+                     },
+                     { 
+                         name: "Ján Koscelanský", 
+                         role: "Architekt", 
+                         company: "CPO / Spoluzakladateľ, SUDOLABS", 
+                         tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
+                         bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli."
+                     },
+                     { 
+                         name: "Roman Pii Wagner", 
+                         role: "Navigátor", 
+                         company: "Transformational Design", 
+                         tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
+                         bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom."
+                     }
+                 ]
+             },
             faq: {
                 title: "Otázky.",
                 items: [
@@ -249,13 +249,13 @@ export default function PublicSessionsPage() {
                     ]
                 }
             },
-            cta: {
-                headline: "Pripravený?",
-                subline: "40 miest. 26. február.",
-                button: "Idem Do Toho",
-                note: "Chceš toto pre svoj tím?",
-                corporate: "Firemný Workshop"
-            }
+             cta: {
+                 headline: "Idem Do Toho.",
+                 subline: "40 miest. 26. február.",
+                 button: "Idem Do Toho",
+                 note: "Chceš toto pre svoj tím?",
+                 corporate: "Firemný Workshop"
+             }
         }
     }
 
@@ -436,6 +436,9 @@ export default function PublicSessionsPage() {
                             </div>
                         ))}
                     </div>
+                    {t.founders.trust && (
+                        <p className="text-center text-[11px] font-code-brand text-white/40 mt-6">{t.founders.trust}</p>
+                    )}
                 </div>
             </section>
 

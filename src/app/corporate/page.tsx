@@ -26,81 +26,81 @@ export default function CorporatePage() {
                 cta: "Book Discovery Call"
             },
             problem: {
-                headline: "Everyone has AI. Few know how to use it.",
+                headline: "The Reality Right Now.",
                 points: [
                     "Your team prompts without strategy",
-                    "Output looks like everyone else's",
+                    "AI budget approved. Nobody owns the direction.",
                     "Tools multiply, clarity doesn't",
                     "Speed went up, quality went sideways"
                 ]
             },
             framework: {
-                title: "Three Lenses. One Session.",
-                subtitle: "We think together. You leave clear.",
+                title: "Three Perspectives. One Direction.",
+                subtitle: "We don't present. We think with you on what's holding you back.",
                 phases: [
                     { 
                         num: "01", 
                         title: "The Shift", 
                         time: "30 min",
-                        desc: "The world changed. Here's what we're seeing — in your industry, in creative work, in what's possible now. All three of us. Short. Sharp. Uncomfortable.",
+                        desc: "What changed and what most companies are getting wrong. Not theory. What we see working across industries right now.",
                         lead: "All"
                     },
                     { 
                         num: "02", 
                         title: "The Frameworks", 
                         time: "60-75 min",
-                        desc: "Taste: what separates good from generic. Leverage: what to build, what to skip. Clarity: how to prioritize when everything feels urgent.",
+                        desc: "How taste separates forgettable from iconic. What a small team ships today vs. a department last year. How to decide fast when nothing feels certain.",
                         lead: "Roland → Ján → Roman"
                     },
                     { 
                         num: "03", 
                         title: "Your Reality", 
                         time: "90-120 min",
-                        desc: "Your challenges. Three perspectives. We look at the same problem through different lenses — live. This is where insights happen that prevent six-figure mistakes.",
+                        desc: "We stop talking about the market and start talking about you. Your blind spots, your bottlenecks, looked at from angles you haven't considered. This is where insights happen that prevent six-figure mistakes.",
                         lead: "Facilitated"
                     }
                 ],
                 closing: {
                     title: "The Clarity",
                     time: "30 min",
-                    desc: "Each of us shares what we saw. What to prioritize. What to ignore. You leave knowing what to do.",
+                    desc: "What we each saw. What to do first. What to drop. Your team leaves with a shared direction and the confidence to act on it Monday.",
                     lead: "All"
                 }
             },
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "The Wake-Up", desc: "Your team sees what 99% don't. The shift that's already here — and what it means for you." },
-                    { title: "The Edge", desc: "The opportunities your competitors will miss. You won't." },
-                    { title: "Debates → Decisions", desc: "Same language. Same priorities. The endless loops end here." },
-                    { title: "Mistakes Avoided", desc: "Three lenses catch what one can't. Costly wrong turns — prevented." },
-                    { title: "It Sticks", desc: "30-day follow-up. Toolkit that evolves. Not another workshop you forget Monday." }
+                    { title: "The Edge", desc: "Opportunities your competitors will miss. You won't." },
+                    { title: "Debates → Decisions", desc: "Same language. Same priorities. The endless loops end." },
+                    { title: "What You're Missing", desc: "Three perspectives reveal what one can't. Wrong turns spotted before they cost you." },
+                    { title: "30 Days After", desc: "Follow-up included. Toolkit that evolves. Not another workshop you forget." }
                 ]
             },
             founders: {
-                title: "Three Lenses.",
-                subtitle: "Successful companies. Portfolio and clients worldwide. They think together on your problems.",
+                title: "Who's in the Room.",
+                subtitle: "Entrepreneurs, not consultants. Running their own companies, innovating every day.",
+                trust: "From the creators of campaigns for Meta, Audi, Forbes, and Samsung.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "TASTE", 
                         company: "Creative Director / Founder, SORRYWECAN", 
-                        tagline: "What separates good from generic. Why your output looks like everyone else's.",
-                        bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual storytelling. His work examines how AI can expand human creativity and perception of reality."
+                        tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.",
+                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "LEVERAGE", 
                         company: "CPO / Co-founder, SUDOLABS", 
-                        tagline: "What to build, what to skip. What one person can do now.",
-                        bio: "Product leader with years of experience designing and scaling digital products, teams and processes. Focused on the practical side — what makes sense to build, how to deliver it, and where individuals have the biggest real impact today."
+                        tagline: "Knows exactly where teams waste months building what one person could ship in a week.",
+                        bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "CLARITY", 
                         company: "Transformational Design", 
-                        tagline: "How to prioritize when everything feels urgent. The decision framework.",
-                        bio: "Works in transformational design, strategic thinking and complex organizational change. Helps leaders and teams navigate uncertainty, set decision-making frameworks, and distinguish between what matters and what's just noise."
+                        tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.",
+                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure."
                     }
                 ]
             },
@@ -129,10 +129,10 @@ export default function CorporatePage() {
                 }
             },
             cta: {
-                headline: "Ready?",
+                headline: "Next Move.",
                 subline: "20-minute discovery call. No commitment.",
                 button: "Book Discovery Call",
-                guarantee: "Not the right fit? We'll know in the first 30 minutes. No hard feelings, no invoice."
+                guarantee: "If it's not the right fit, we'll tell you. And point you somewhere better."
             }
         },
         sk: {
@@ -149,81 +149,81 @@ export default function CorporatePage() {
                 cta: "Rezervovať Discovery Call"
             },
             problem: {
-                headline: "Každý má AI. Málokto vie, ako ju používať.",
+                headline: "Realita Práve Teraz.",
                 points: [
                     "Váš tím promptuje bez stratégie",
-                    "Výstup vyzerá ako u všetkých ostatných",
+                    "AI rozpočet schválený. Nikto nedrží smer.",
                     "Nástroje pribúdajú, jasnosť nie",
                     "Rýchlosť stúpla, kvalita stagnuje"
                 ]
             },
             framework: {
-                title: "Tri Pohľady. Jedna Session.",
-                subtitle: "Myslíme spolu. Odídete s jasnosťou.",
+                title: "Tri Pohľady. Jeden Smer.",
+                subtitle: "Neprezentujeme. Myslíme s vami nad tým, čo vás brzdí.",
                 phases: [
                     { 
                         num: "01", 
                         title: "The Shift", 
                         time: "30 min",
-                        desc: "Svet sa zmenil. Tu je, čo vidíme — vo vašom odvetví, v kreatívnej práci, v tom, čo je teraz možné. Všetci traja. Krátko. Ostro. Nepríjemne.",
+                        desc: "Čo sa zmenilo a v čom sa väčšina firiem mýli. Nie teória. To, čo vidíme fungovať naprieč odvetviami práve teraz.",
                         lead: "Všetci"
                     },
                     { 
                         num: "02", 
                         title: "Frameworky", 
                         time: "60-75 min",
-                        desc: "Vkus: čo odlišuje dobré od generického. Páka: čo stavať, čo preskočiť. Jasnosť: ako prioritizovať, keď všetko pôsobí urgentne.",
+                        desc: "Čo odlišuje zabudnuteľnú prácu od ikonickej. Čo malý tím dnes dodá vs. celé oddelenie pred rokom. Ako sa rozhodovať rýchlo, keď nič nie je isté.",
                         lead: "Roland → Ján → Roman"
                     },
                     { 
                         num: "03", 
                         title: "Vaša Realita", 
                         time: "90-120 min",
-                        desc: "Vaše výzvy. Tri perspektívy. Pozeráme sa na ten istý problém cez rôzne optiky — naživo. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám.",
+                        desc: "Prestaneme hovoriť o trhu a začneme hovoriť o vás. Vaše slepé miesta, vaše brzdy, pozerané z uhlov, na ktoré ste nemysleli. Tu vznikajú insights, ktoré zabraňujú šesťcifrovým chybám.",
                         lead: "Facilitované"
                     }
                 ],
                 closing: {
                     title: "Jasnosť",
                     time: "30 min",
-                    desc: "Každý z nás zdieľa, čo videl. Čo prioritizovať. Čo ignorovať. Odídete s vedomím, čo robiť.",
+                    desc: "Čo sme každý videli. Čo riešiť najskôr. Čo pustiť. Váš tím odchádza so spoločným smerom a odhodlaním konať od pondelka.",
                     lead: "Všetci"
                 }
             },
             outcome: {
-                title: "Odchádzate S",
+                title: "S Čím Odchádzate",
                 items: [
-                    { title: "Prebudenie", desc: "Váš tím uvidí, čo 99% nevidí. Zmena, ktorá už prebieha — a čo to znamená pre vás." },
                     { title: "Vaša Výhoda", desc: "Príležitosti, ktoré konkurencia premešká. Vy nie." },
                     { title: "Debaty → Rozhodnutia", desc: "Spoločný jazyk. Spoločné priority. Koniec nekonečných diskusií." },
-                    { title: "Chyby Zachytené", desc: "Tri pohľady zachytia, čo jeden prehliadne. Nákladné omyly — predídené." },
-                    { title: "Zostane S Vami", desc: "30-dňový follow-up. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete v pondelok." }
+                    { title: "Čo Vám Uniká", desc: "Tri pohľady odhalia, čo jeden nevidí. Zlé odbočky odhalené skôr, než vás stoja." },
+                    { title: "30 Dní Potom", desc: "Follow-up v cene. Toolkit, ktorý sa vyvíja. Nie ďalší workshop, na ktorý zabudnete." }
                 ]
             },
             founders: {
-                title: "Tri Pohľady.",
-                subtitle: "Úspešné firmy. Portfólio a klienti po celom svete. Myslia spolu nad vašimi problémami.",
+                title: "Kto Je V Miestnosti.",
+                subtitle: "Podnikatelia, nie konzultanti. Vedú vlastné firmy a inovujú každý deň.",
+                trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
                 cards: [
                     { 
                         name: "Roland Vraník", 
                         role: "VKUS", 
                         company: "Creative Director / Zakladateľ, SORRYWECAN", 
-                        tagline: "Čo odlišuje dobré od generického. Prečo váš výstup vyzerá ako u všetkých.",
-                        bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálneho rozprávania. Skúma, ako môže AI rozšíriť ľudskú kreativitu a vnímanie reality."
+                        tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
+                        bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne."
                     },
                     { 
                         name: "Ján Koscelanský", 
                         role: "PÁKA", 
                         company: "CPO / Spoluzakladateľ, SUDOLABS", 
-                        tagline: "Čo stavať, čo preskočiť. Čo jeden človek zvládne dnes.",
-                        bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov, tímov a procesov. Zameriava sa na praktickú stránku — čo má zmysel stavať, ako to doručiť, a kde má dnes jednotlivec najväčší reálny dopad."
+                        tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
+                        bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli."
                     },
                     { 
                         name: "Roman Pii Wagner", 
                         role: "JASNOSŤ", 
                         company: "Transformational Design", 
-                        tagline: "Ako prioritizovať, keď všetko pôsobí urgentne. Rozhodovací framework.",
-                        bio: "Venuje sa transformačnému dizajnu, strategickému mysleniu a práci s komplexnými zmenami v organizáciách. Pomáha lídrom a tímom orientovať sa v neistote, nastavovať rozhodovacie rámce a rozlišovať medzi tým, čo je dôležité, a čo len vytvára šum."
+                        tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
+                        bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom."
                     }
                 ]
             },
@@ -252,10 +252,10 @@ export default function CorporatePage() {
                 }
             },
             cta: {
-                headline: "Pripravení?",
+                headline: "Ďalší Krok.",
                 subline: "20-minútový discovery call. Žiadny záväzok.",
                 button: "Rezervovať Discovery Call",
-                guarantee: "Nie je to pre vás? Zistíme to do 30 minút. Bez problémov, bez faktúry."
+                guarantee: "Ak to pre vás nie je, povieme vám to. A nasmerujeme vás lepšie."
             }
         }
     }
@@ -454,6 +454,9 @@ export default function CorporatePage() {
                             </div>
                         ))}
                     </div>
+                    {t.founders.trust && (
+                        <p className="text-center text-[11px] font-code-brand text-white/40 mt-6">{t.founders.trust}</p>
+                    )}
                 </div>
             </section>
 

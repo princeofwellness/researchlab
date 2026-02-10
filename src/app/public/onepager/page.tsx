@@ -18,11 +18,11 @@ export default function PublicOnePager() {
                 headline: "The world is shifting faster than you think.",
                 subline: "",
                 items: [
-                    { value: "300M", label: "jobs automatable worldwide", source: "Goldman Sachs" },
-                    { value: "16%", label: "employment drop, workers aged 22–25 in AI-exposed roles", source: "Stanford / ADP 2025" },
-                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2025" },
-                    { value: "1%", label: "of organizations consider themselves AI-ready", source: "McKinsey 2025" },
-                    { value: "3×", label: "faster than any technology shift before", source: "World Bank" }
+                    { value: "39%", label: "of your current skills will change by 2030", source: "WEF 2025" },
+                    { value: "75%", label: "of knowledge workers already use AI", source: "Microsoft 2024" },
+                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2024" },
+                    { value: "56%", label: "of companies see no return on AI investment yet", source: "PwC 2026" },
+                    { value: "88%", label: "of organizations now use AI in at least one function", source: "McKinsey 2025" }
                 ]
             },
             problem: {
@@ -30,10 +30,8 @@ export default function PublicOnePager() {
                 cards: [
                     { headline: "Generation is easy now.", subline: "Recognizing quality is harder." },
                     { headline: "Tools keep multiplying.", subline: "Habits can't keep up." },
-                    { headline: "The direction is clear.", subline: "Daily practice in it isn't." },
                     { headline: "Everything moves faster.", subline: "But what's actually worth creating?" },
-                    { headline: "AI gave everyone the same power.", subline: "So what's your edge now?" },
-                    { headline: "AI won't replace you.", subline: "Someone using it better will." }
+                    { headline: "AI gave everyone the same power.", subline: "So what's your edge now?" }
                 ]
             },
             session: {
@@ -49,21 +47,20 @@ export default function PublicOnePager() {
             outcome: {
                 title: "You Leave With",
                 items: [
-                    { title: "Clarity in Action", desc: "A clearer way of working and deciding when AI is part of everything." },
-                    { title: "Your Edge", desc: "The ability to maintain quality, identity, and distinctiveness." },
-                    { title: "From Reactive to Intentional", desc: "A shift from random AI use to consciously designed operation." },
-                    { title: "Less Noise", desc: "Lower mental load. Less decision fatigue. No more AI FOMO." },
-                    { title: "What's Possible", desc: "A clear picture of what you can do today. And the confidence that it's within reach." },
-                    { title: "30-Day Follow-Up", desc: "A short check-in to anchor what works, what doesn't, and what to adjust." }
+                    { title: "A Working System", desc: "Not tips. Not theory. A way of working with AI you'll actually use Monday morning." },
+                    { title: "Less Noise, More Signal", desc: "Lower mental load. No more AI FOMO. You stop chasing tools and start choosing the right ones." },
+                    { title: "Your Edge", desc: "Everyone has the same tools. You'll know what they don't. How to see, decide, and create differently." },
+                    { title: "The Community", desc: "Access to the people who showed up. Monthly toolkit updates. A place to stay connected and keep growing." }
                 ]
             },
             founders: {
                 title: "Three Perspectives",
                 subtitle: "Art. Product. Transformation.",
+                trust: "From the creators of campaigns for Meta, Audi, Forbes, and Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Director and creative lead connecting aesthetics with technology, exploring new forms of visual experience.", url: "https://sorrywecan.com/" },
-                    { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Product leader with years of experience designing and scaling digital products, teams and processes.", url: "https://sudolabs.com/" },
-                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps leaders and teams navigate uncertainty and distinguish between what matters and what's noise.", url: "" }
+                    { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.", tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.", url: "https://sorrywecan.com/" },
+                    { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.", tagline: "Knows exactly where teams waste months building what one person could ship in a week.", url: "https://sudolabs.com/" },
+                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.", tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.", url: "" }
                 ]
             },
             details: {
@@ -71,12 +68,12 @@ export default function PublicOnePager() {
                 items: [
                     { label: "Where", value: "SORRYWECAN Studio", sub: "Pečnianska 7, Bratislava" },
                     { label: "When", value: "February 26, 2026", sub: "Wednesday" },
-                    { label: "Time", value: "17:00 — 20:30", sub: "3.5 hours" },
+                    { label: "Time", value: "17:00 – 20:30", sub: "3.5 hours" },
                     { label: "Price", value: "from €99", sub: "per person" }
                 ]
             },
             cta: {
-                headline: "Ready?",
+                headline: "I'm In.",
                 subline: "40 seats. First session February 26.",
                 email: "Reserve Your Seat",
                 contact: "For questions write to: andrea@sorrywecan.com"
@@ -94,11 +91,11 @@ export default function PublicOnePager() {
                 headline: "Svet sa mení rýchlejšie, než si myslíte.",
                 subline: "",
                 items: [
-                    { value: "300M", label: "automatizovateľných pracovných miest na svete", source: "Goldman Sachs" },
-                    { value: "16%", label: "pokles zamestnanosti, pracovníci 22–25 rokov v AI-exponovaných pozíciách", source: "Stanford / ADP 2025" },
-                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2025" },
-                    { value: "1%", label: "organizácií sa považuje za pripravených na AI", source: "McKinsey 2025" },
-                    { value: "3×", label: "rýchlejšie než čokoľvek pred tým", source: "World Bank" }
+                    { value: "39%", label: "vašich súčasných zručností sa zmení do 2030", source: "WEF 2025" },
+                    { value: "75%", label: "knowledge workers už používa AI", source: "Microsoft 2024" },
+                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2024" },
+                    { value: "56%", label: "firiem nevidí návratnosť investícií do AI", source: "PwC 2026" },
+                    { value: "88%", label: "organizácií už používa AI aspoň v jednej oblasti", source: "McKinsey 2025" }
                 ]
             },
             problem: {
@@ -106,10 +103,8 @@ export default function PublicOnePager() {
                 cards: [
                     { headline: "Generovať je dnes jednoduché.", subline: "Rozlíšiť kvalitu je ťažšie." },
                     { headline: "Nástroje pribúdajú.", subline: "Návyky nestíhajú." },
-                    { headline: "Smer je zrejmý.", subline: "Každodenná prax v ňom nie." },
                     { headline: "Všetko ide rýchlejšie.", subline: "Ale čo sa naozaj oplatí tvoriť?" },
-                    { headline: "AI dalo všetkým rovnaké možnosti.", subline: "Tak čo je teraz tvoja výhoda?" },
-                    { headline: "AI ťa nenahradí.", subline: "Niekto, kto ho používa lepšie, áno." }
+                    { headline: "AI dalo všetkým rovnaké možnosti.", subline: "Tak čo je teraz tvoja výhoda?" }
                 ]
             },
             session: {
@@ -125,21 +120,20 @@ export default function PublicOnePager() {
             outcome: {
                 title: "S Čím Odchádzate",
                 items: [
-                    { title: "Jasnosť v Praxi", desc: "Jasnejší spôsob práce a rozhodovania, keď je AI všade." },
-                    { title: "Vaša Výhoda", desc: "Schopnosť udržať kvalitu, identitu a rozlíšiteľnosť." },
-                    { title: "Od Reaktívneho k Vedomému", desc: "Prechod od náhodného používania AI k vedome navrhnutému fungovaniu." },
-                    { title: "Menej Šumu", desc: "Nižšia mentálna záťaž. Menej rozhodovacej neistoty. Koniec AI FOMO." },
-                    { title: "Čo Je Možné", desc: "Jasný obraz toho, čo je dnes možné. A pocit, že je to na dosah." },
-                    { title: "Follow-up po 30 Dňoch", desc: "Krátke zhodnotenie a ukotvenie v praxi. Čo funguje, čo nie a čo upraviť." }
+                    { title: "Funkčný Systém", desc: "Nie tipy. Nie teória. Spôsob práce s AI, ktorý reálne použijete v pondelok ráno." },
+                    { title: "Menej Šumu, Viac Signálu", desc: "Nižšia mentálna záťaž. Koniec AI FOMO. Prestanete naháňať nástroje a začnete vyberať tie správne." },
+                    { title: "Vaša Výhoda", desc: "Rovnaké nástroje má každý. Vy budete vedieť, čo ostatní nie. Ako vidieť, rozhodovať a tvoriť inak." },
+                    { title: "Komunita", desc: "Prístup ku ľuďom, ktorí prišli. Mesačné toolkit updaty. Miesto, kde zostanete prepojení a rastete ďalej." }
                 ]
             },
             founders: {
                 title: "Tri Perspektívy",
                 subtitle: "Umenie. Produkt. Transformácia.",
+                trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "Umelec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Režisér a kreatívny riaditeľ prepájajúci estetiku s technológiou, hľadajúci nové formy vizuálnych zážitkov.", url: "https://sorrywecan.com/" },
-                    { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Produktový líder s dlhoročnými skúsenosťami s návrhom a škálovaním digitálnych produktov.", url: "https://sudolabs.com/" },
-                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha lídrom a tímom orientovať sa v neistote a rozlíšiť, na čom záleží.", url: "" }
+                    { name: "Roland Vraník", role: "Umelec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.", tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.", url: "https://sorrywecan.com/" },
+                    { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.", tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.", url: "https://sudolabs.com/" },
+                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.", tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.", url: "" }
                 ]
             },
             details: {
@@ -147,12 +141,12 @@ export default function PublicOnePager() {
                 items: [
                     { label: "Kde", value: "SORRYWECAN Studio", sub: "Pečnianska 7, Bratislava" },
                     { label: "Kedy", value: "26. februára 2026", sub: "Streda" },
-                    { label: "Čas", value: "17:00 — 20:30", sub: "3.5 hodiny" },
+                    { label: "Čas", value: "17:00 – 20:30", sub: "3.5 hodiny" },
                     { label: "Cena", value: "od €99", sub: "na osobu" }
                 ]
             },
             cta: {
-                headline: "Pripravený?",
+                headline: "Idem Do Toho.",
                 subline: "40 miest. Prvá session 26. februára.",
                 email: "Rezervovať Miesto",
                 contact: "V prípade otázok píšte na: andrea@sorrywecan.com"
@@ -271,7 +265,7 @@ export default function PublicOnePager() {
                 <div className={pageClass}>
                     <div className="text-center max-w-5xl w-full px-4">
                         <h2 className="font-bold text-[32px] md:text-[48px] mb-6 md:mb-8">{t.problem.title}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                             {t.problem.cards.map((card, i) => (
                                 <div key={i} className="p-4 md:p-5 border-2 border-black/10 text-left">
                                     <p className="text-[16px] md:text-[20px] font-medium leading-tight">{card.headline}</p>
@@ -322,9 +316,15 @@ export default function PublicOnePager() {
                                             {card.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                                         </a>
                                     )}
+                                    {card.tagline && (
+                                        <p className="text-[12px] md:text-[13px] text-black/80 italic mt-3 pt-3 border-t border-black/10">&ldquo;{card.tagline}&rdquo;</p>
+                                    )}
                                 </div>
                             ))}
                         </div>
+                        {t.founders.trust && (
+                            <p className="text-center text-[11px] md:text-[13px] font-code-brand text-black/40 mt-6 md:mt-8">{t.founders.trust}</p>
+                        )}
                     </div>
                 </div>
 
@@ -332,7 +332,7 @@ export default function PublicOnePager() {
                 <div className={pageClass}>
                     <div className="max-w-5xl w-full px-4">
                         <h2 className="font-bold text-[32px] md:text-[56px] text-center mb-6 md:mb-12">{t.outcome.title}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                             {t.outcome.items.map((item, i) => (
                                 <div key={i} className="p-4 md:p-5 border border-black/10">
                                     <p className="text-[16px] md:text-[18px] font-medium">{item.title}</p>

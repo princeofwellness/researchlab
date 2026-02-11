@@ -137,7 +137,7 @@ export default function HomePage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-bold text-[13vw] md:text-[9vw] leading-[0.9] tracking-tighter"
+                        className="font-bold text-[10vw] md:text-[6.5vw] leading-[0.9] tracking-tighter"
                     >
                         {t.hero.title.line1}<br />
                         <span className="text-[#0047BB]">{t.hero.title.line2}</span>

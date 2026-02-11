@@ -38,7 +38,9 @@ export default function MarketingSyncPage() {
                         </div>
                         {[
                             ["Tepi", "Product, website, creative media, speaker deals, marketing sync"],
-                            ["Andrea / Sasha", "Partner comms, email ops, group coordination, logistics"],
+                            ["Sasha", "Research publishing, digital toolkit, structured newsletter, social posting copy"],
+                            ["Andrea", "Partner comms, email ops, grants, media communication, news/PR"],
+                            ["Adam", "Social media, marketing support"],
                             ["Roland", "Warm leads (opener), pitch materials, personal network"],
                             ["Ján", "Personal outreach, session delivery"],
                             ["Roman", "Personal outreach, session delivery, email copy"],

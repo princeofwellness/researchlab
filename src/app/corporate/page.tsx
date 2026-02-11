@@ -30,11 +30,11 @@ export default function CorporatePage() {
                 headline: "Having tools is not the same as knowing what to do with them.",
                 subline: "The companies that win are the ones that figure this out first.",
                 items: [
-                    { value: "300M", label: "jobs exposed to AI automation worldwide", source: "Goldman Sachs" },
-                    { value: "56%", label: "of CEOs see no return on AI investment yet", source: "PwC CEO Survey 2026" },
-                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2024" },
-                    { value: "1%", label: "of organizations consider themselves AI-mature", source: "McKinsey 2025" },
-                    { value: "3×", label: "faster than any technology shift before", source: "World Bank" }
+                    { value: "300M", label: "jobs exposed to AI automation worldwide", source: "Goldman Sachs 2023" },
+                    { value: "56%", label: "of CEOs see no financial benefit from AI yet", source: "PwC 2026" },
+                    { value: "92%", label: "of companies plan to increase AI investment", source: "McKinsey 2025" },
+                    { value: ">80%", label: "report no enterprise EBIT impact from GenAI", source: "McKinsey 2025" },
+                    { value: "12%", label: "of CEOs saw both cost and revenue gains", source: "PwC 2026" }
                 ]
             },
             problem: {
@@ -147,11 +147,11 @@ export default function CorporatePage() {
                 headline: "Mať nástroje nie je to isté ako vedieť, čo s nimi.",
                 subline: "Vyhrávajú firmy, ktoré na to prídu prvé.",
                 items: [
-                    { value: "300M", label: "pracovných miest vystavených AI automatizácii", source: "Goldman Sachs" },
-                    { value: "56%", label: "CEO nevidí návratnosť investícií do AI", source: "PwC CEO Survey 2026" },
-                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2024" },
-                    { value: "1%", label: "organizácií sa považuje za AI-zrelých", source: "McKinsey 2025" },
-                    { value: "3×", label: "rýchlejšie než čokoľvek pred tým", source: "World Bank" }
+                    { value: "300M", label: "pracovných miest vystavených AI automatizácii", source: "Goldman Sachs 2023" },
+                    { value: "56%", label: "CEO nevidí finančný prínos z AI", source: "PwC 2026" },
+                    { value: "92%", label: "firiem plánuje zvýšiť investície do AI", source: "McKinsey 2025" },
+                    { value: ">80%", label: "nevidí dopad GenAI na podnikový EBIT", source: "McKinsey 2025" },
+                    { value: "12%", label: "CEO zaznamenalo prínosy v nákladoch aj tržbách", source: "PwC 2026" }
                 ]
             },
             problem: {

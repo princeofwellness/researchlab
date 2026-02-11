@@ -20,9 +20,9 @@ export default function PublicOnePager() {
                 items: [
                     { value: "39%", label: "of your current skills will change by 2030", source: "WEF 2025" },
                     { value: "75%", label: "of knowledge workers already use AI", source: "Microsoft 2024" },
-                    { value: "2.5×", label: "revenue growth in AI-led companies vs. laggards", source: "Accenture 2024" },
-                    { value: "56%", label: "of companies see no return on AI investment yet", source: "PwC 2026" },
-                    { value: "88%", label: "of organizations now use AI in at least one function", source: "McKinsey 2025" }
+                    { value: "78%", label: "of companies use AI in at least one function", source: "McKinsey 2025" },
+                    { value: "9×", label: "surge in GenAI-skill job vacancies since 2022", source: "World Bank 2025" },
+                    { value: "56%", label: "of companies see no return on AI investment yet", source: "PwC 2026" }
                 ]
             },
             problem: {
@@ -93,9 +93,9 @@ export default function PublicOnePager() {
                 items: [
                     { value: "39%", label: "vašich súčasných zručností sa zmení do 2030", source: "WEF 2025" },
                     { value: "75%", label: "knowledge workers už používa AI", source: "Microsoft 2024" },
-                    { value: "2.5×", label: "rast tržieb firiem s AI vs. ostatní", source: "Accenture 2024" },
-                    { value: "56%", label: "firiem nevidí návratnosť investícií do AI", source: "PwC 2026" },
-                    { value: "88%", label: "organizácií už používa AI aspoň v jednej oblasti", source: "McKinsey 2025" }
+                    { value: "78%", label: "firiem používa AI aspoň v jednej oblasti", source: "McKinsey 2025" },
+                    { value: "9×", label: "nárast pracovných ponúk vyžadujúcich GenAI zručnosti od 2022", source: "World Bank 2025" },
+                    { value: "56%", label: "firiem nevidí návratnosť investícií do AI", source: "PwC 2026" }
                 ]
             },
             problem: {

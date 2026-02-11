@@ -14,8 +14,8 @@ export default function HomePage() {
         en: {
             hero: {
                 title: {
-                    line1: "One Session.",
-                    line2: "New Operating System."
+                    line1: "The Tools Are Ready.",
+                    line2: "We're Not. Yet."
                 },
                 subline: "What changed. What's possible. What's next."
             },
@@ -25,8 +25,8 @@ export default function HomePage() {
             shift: {
                 headline: "Technology is available to everyone. The difference is how you think, decide, and work.",
                 stats: [
-                    { value: "75%", label: "of knowledge workers already use AI", source: "Microsoft 2024" },
-                    { value: "39%", label: "of current skills will change by 2030", source: "WEF 2025" },
+                    { value: "22%", label: "of today's jobs will be disrupted by 2030", source: "WEF 2025" },
+                    { value: "59/100", label: "workers will need training by 2030", source: "WEF 2025" },
                     { value: "1%", label: "of organizations consider themselves AI-mature", source: "McKinsey 2025" }
                 ]
             },
@@ -61,8 +61,8 @@ export default function HomePage() {
         sk: {
             hero: {
                 title: {
-                    line1: "Jedna Session.",
-                    line2: "Nový Operačný Systém."
+                    line1: "Nástroje Sú Pripravené.",
+                    line2: "My Ešte Nie."
                 },
                 subline: "Čo sa zmenilo. Čo je možné. Čo ďalej."
             },
@@ -72,8 +72,8 @@ export default function HomePage() {
             shift: {
                 headline: "Technológia je dostupná všetkým. Rozdiel robí spôsob myslenia, rozhodovania a práce.",
                 stats: [
-                    { value: "75%", label: "knowledge workers už používa AI", source: "Microsoft 2024" },
-                    { value: "39%", label: "súčasných zručností sa zmení do 2030", source: "WEF 2025" },
+                    { value: "22%", label: "dnešných pracovných miest bude narušených do 2030", source: "WEF 2025" },
+                    { value: "59/100", label: "pracovníkov bude potrebovať školenie do 2030", source: "WEF 2025" },
                     { value: "1%", label: "organizácií sa považuje za AI-zrelých", source: "McKinsey 2025" }
                 ]
             },

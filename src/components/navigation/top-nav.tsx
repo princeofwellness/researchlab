@@ -23,6 +23,7 @@ export function TopNav({
         { name: "Corporate", href: "/corporate" },
         { name: "One-Pager", href: "/public/onepager" },
         { name: "Lab", href: "/lab" },
+        { name: "Sync", href: "/marketing-sync" },
     ]
 
     const isDark = variant === "dark"

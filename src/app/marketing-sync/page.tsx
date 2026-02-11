@@ -90,13 +90,13 @@ export default function MarketingSyncPage() {
                         letter="B" 
                         title="WEBSITE" 
                         owner="Tepi" 
-                        deadline="Fri Feb 14"
+                        deadline="Fri Feb 13"
                         items={[
                             "Add real photos — founders, workshop environment, the feel",
                             "Payment system — Stripe link, Revolut, or bank transfer for EUR 99",
                             "Booking flow — working end-to-end",
                             "Seat counter — live count of 40",
-                            "Migrate to lab.sorrywecan.com — target Friday"
+                            "Migrate to lab.sorrywecan.com — target Fri Feb 13"
                         ]}
                     />
 
@@ -106,11 +106,11 @@ export default function MarketingSyncPage() {
                         owner="Andrea/Sasha" 
                         deadline="ongoing"
                         items={[
-                            "Marketing strategy alignment with partners",
+                            "Collect all email addresses — partners, past contacts, networks",
+                            "List potential partners and influencers for outreach",
+                            "Prepare outreach — simple marketing copy, ready to send",
                             "Partner communication — activate SWC referral network",
-                            "Pull all emails from partners and past contacts",
                             "Speaker logistics — brief Roland, Jan, Roman",
-                            "3 helpers briefed — roles for event day",
                             "Endorsement quotes — ask 5 respected people, put on landing page"
                         ]}
                     />

@@ -278,7 +278,7 @@ export default function CorporatePage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-bold text-[12vw] md:text-[8vw] leading-[0.9] tracking-tighter mb-8"
+                        className="font-bold text-[10vw] md:text-[6.5vw] leading-[0.9] tracking-tighter mb-8"
                     >
                         {t.hero.title.line1}<br />
                         <span className="text-[#0047BB]">{t.hero.title.line2}</span>
@@ -376,7 +376,7 @@ export default function CorporatePage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="p-6 border border-black/10 bg-white"
+                                className="p-6 border border-black/10 bg-black/[0.03]"
                             >
                                 <p className="text-lg md:text-xl font-medium text-black">{card.headline}</p>
                                 <p className="text-lg md:text-xl text-black/40">{card.subline}</p>
@@ -386,10 +386,10 @@ export default function CorporatePage() {
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-white border-b border-black/10">
+            <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="font-bold text-4xl md:text-5xl mb-2">
+                        <h2 className="font-bold text-3xl md:text-4xl mb-2">
                             {t.session.title}
                         </h2>
                         <p className="text-lg text-[#0047BB]">{t.session.subtitle}</p>
@@ -405,8 +405,8 @@ export default function CorporatePage() {
                                 className={cn(
                                     "flex flex-col md:flex-row gap-4 p-5 md:p-6 border transition-all",
                                     i === 2 
-                                        ? "border-[#0047BB] bg-[#0047BB]/5" 
-                                        : "border-black/10 hover:border-[#0047BB]/30"
+                                        ? "border-[#0047BB]/30 bg-black/[0.03]" 
+                                        : "border-black/[0.06] hover:border-[#0047BB]/20"
                                 )}
                             >
                                 <div className="flex md:flex-col items-center md:items-start gap-3 md:gap-1 md:w-20 shrink-0">
@@ -426,66 +426,66 @@ export default function CorporatePage() {
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-black text-white">
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {t.outcome.items.map((item: any, i: number) => (
-                            <div key={i} className="p-5 border border-white/10">
+                            <div key={i} className="p-5 border border-black/10">
                                 <span className="w-7 h-7 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs mb-3 font-code-brand">
                                     {i + 1}
                                 </span>
                                 <h4 className="font-bold text-sm mb-1">{item.title}</h4>
-                                <p className="text-xs text-white/50">{item.desc}</p>
+                                <p className="text-xs text-black/50">{item.desc}</p>
                             </div>
                         ))}
                     </div>
 
-                    <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-white/10">
+                    <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-black/10">
                         {t.proof.stats.map((stat: any, i: number) => (
                             <div key={i} className="text-center">
                                 <span className="text-4xl md:text-5xl font-bold text-[#0047BB]">{stat.value}</span>
-                                <p className="text-xs text-white/40 mt-2 font-code-brand">{stat.label}</p>
+                                <p className="text-xs text-black/40 mt-2 font-code-brand">{stat.label}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-[#0047BB] text-white">
+            <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="font-bold text-4xl md:text-5xl mb-2">{t.founders.title}</h2>
-                        <p className="text-white/60">{t.founders.subtitle}</p>
+                        <h2 className="font-bold text-3xl md:text-4xl mb-2">{t.founders.title}</h2>
+                        <p className="text-black/50">{t.founders.subtitle}</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {t.founders.cards.map((card: any, i: number) => (
-                            <div key={i} className="p-6 border border-white/20 bg-white/5 hover:bg-white/10 transition-all">
+                            <div key={i} className="p-6 border border-black/10 text-center">
                                  <h4 className="text-xl font-bold">{card.name}</h4>
-                                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mt-1 font-code-brand">{card.role}</p>
-                                 <p className="text-[10px] text-white/30 mb-4 font-code-brand">{card.company}</p>
-                                <p className="text-sm text-white/60 mb-3">{card.bio}</p>
+                                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#0047BB] mt-1 font-code-brand">{card.role}</p>
+                                 <p className="text-[10px] text-black/30 mb-4 font-code-brand">{card.company}</p>
+                                <p className="text-sm text-black/60 mb-3">{card.bio}</p>
                                 {card.url && (
-                                    <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] font-code-brand font-bold uppercase tracking-widest text-white/50 hover:text-white mt-2">
+                                    <a href={card.url} target="_blank" rel="noopener noreferrer" className="inline-block text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] hover:underline mt-2">
                                         {card.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                                     </a>
                                 )}
-                                <p className="text-sm text-white/80 italic border-t border-white/10 pt-3">"{card.tagline}"</p>
+                                <p className="text-sm text-black/80 italic border-t border-black/10 pt-3">"{card.tagline}"</p>
                             </div>
                         ))}
                     </div>
                     {t.founders.trust && (
-                        <p className="text-center text-[11px] font-code-brand text-white/40 mt-6">{t.founders.trust}</p>
+                        <p className="text-center text-[11px] font-code-brand text-black/40 mt-6">{t.founders.trust}</p>
                     )}
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-white">
+            <section className="py-20 md:py-28 px-6 md:px-12">
                 <div className="max-w-3xl mx-auto">
                     <h2 className="font-bold text-3xl text-center mb-10">{t.faq.title}</h2>
                     <div className="space-y-2 mb-12">
                         {t.faq.items.map((item: any, i: number) => (
-                            <div key={i} className="border border-black/10">
+                            <div key={i} className="border border-black/[0.06]">
                                 <button
                                     onClick={() => setFaqOpen(faqOpen === i ? null : i)}
                                     className="w-full px-5 py-4 flex justify-between items-center text-left hover:bg-black/5 transition-colors"
@@ -509,7 +509,7 @@ export default function CorporatePage() {
                         ))}
                     </div>
 
-                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 p-6 bg-black/5 border border-black/10">
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 p-6 bg-black/[0.02] border border-black/[0.06]">
                         {t.faq.details.items.map((item: any, i: number) => (
                             <div key={i} className="text-center">
                                  <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-1 font-code-brand">{item.label}</p>

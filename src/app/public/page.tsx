@@ -99,7 +99,8 @@ export default function PublicSessionsPage() {
                         company: "Creative Director / Founder, SORRYWECAN", 
                         tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.",
                         bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.",
-                        url: "https://sorrywecan.com/"
+                        url: "https://sorrywecan.com/",
+                        image: "/founders/roland.jpg"
                     },
                     { 
                         name: "Ján Koscelanský", 
@@ -107,7 +108,8 @@ export default function PublicSessionsPage() {
                         company: "CPO / Co-founder, SUDOLABS", 
                         tagline: "Knows exactly where teams waste months building what one person could ship in a week.",
                         bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.",
-                        url: "https://sudolabs.com/"
+                        url: "https://sudolabs.com/",
+                        image: ""
                     },
                     { 
                         name: "Roman Pii Wagner", 
@@ -115,7 +117,8 @@ export default function PublicSessionsPage() {
                         company: "Transformational Design", 
                         tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.",
                         bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.",
-                        url: ""
+                        url: "",
+                        image: "/founders/roman.jpg"
                     }
                 ]
             },
@@ -225,37 +228,40 @@ export default function PublicSessionsPage() {
                      { title: "Komunita", desc: "Prístup ku ľuďom, ktorí prišli. Mesačné toolkit updaty. Miesto, kde zostanete prepojení a rastete ďalej." }
                  ]
              },
-             founders: {
-                 title: "Tri Perspektívy",
-                 subtitle: "Umenie. Produkt. Transformácia.",
-                 trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
-                 cards: [
-                     { 
-                         name: "Roland Vraník", 
-                         role: "Umelec", 
-                         company: "Creative Director / Zakladateľ, SORRYWECAN", 
-                         tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
-                         bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.",
-                         url: "https://sorrywecan.com/"
-                     },
-                     { 
-                         name: "Ján Koscelanský", 
-                         role: "Architekt", 
-                         company: "CPO / Spoluzakladateľ, SUDOLABS", 
-                         tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
-                         bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.",
-                         url: "https://sudolabs.com/"
-                     },
-                     { 
-                         name: "Roman Pii Wagner", 
-                         role: "Navigátor", 
-                         company: "Transformational Design", 
-                         tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
-                         bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
-                         url: ""
-                     }
-                 ]
-             },
+              founders: {
+                  title: "Tri Perspektívy",
+                  subtitle: "Umenie. Produkt. Transformácia.",
+                  trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
+                  cards: [
+                      { 
+                          name: "Roland Vraník", 
+                          role: "Umelec", 
+                          company: "Creative Director / Zakladateľ, SORRYWECAN", 
+                          tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
+                          bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.",
+                          url: "https://sorrywecan.com/",
+                          image: "/founders/roland.jpg"
+                      },
+                      { 
+                          name: "Ján Koscelanský", 
+                          role: "Architekt", 
+                          company: "CPO / Spoluzakladateľ, SUDOLABS", 
+                          tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
+                          bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.",
+                          url: "https://sudolabs.com/",
+                          image: ""
+                      },
+                      { 
+                          name: "Roman Pii Wagner", 
+                          role: "Navigátor", 
+                          company: "Transformational Design", 
+                          tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
+                          bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
+                          url: "",
+                          image: "/founders/roman.jpg"
+                      }
+                  ]
+              },
             faq: {
                 title: "Otázky.",
                 items: [
@@ -492,9 +498,14 @@ export default function PublicSessionsPage() {
                         <p className="text-black/50">{t.founders.subtitle}</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {t.founders.cards.map((card: any, i: number) => (
-                            <div key={i} className="p-6 border border-black/10 text-center">
-                                <h4 className="text-xl font-bold">{card.name}</h4>
+                         {t.founders.cards.map((card: any, i: number) => (
+                             <div key={i} className="p-6 border border-black/10 text-center">
+                                 {card.image && (
+                                     <div className="w-20 h-20 rounded-full overflow-hidden mb-4 mx-auto border-2 border-white/20">
+                                         <img src={card.image} alt={card.name} className="w-full h-full object-cover" />
+                                     </div>
+                                 )}
+                                 <h4 className="text-xl font-bold">{card.name}</h4>
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#0047BB] mt-1 font-code-brand">{card.role}</p>
                                 <p className="text-[10px] text-black/30 mb-4 font-code-brand">{card.company}</p>
                                 <p className="text-sm text-black/60 mb-3">{card.bio}</p>

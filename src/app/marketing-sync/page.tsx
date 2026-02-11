@@ -77,30 +77,25 @@ export default function MarketingSyncPage() {
                         owner="Tepi" 
                         deadline="Feb 12"
                         items={[
-                            "Confirm speakers (Roland, Jan, Roman) — finalize deal, confirm they're in",
-                            "Define what speakers get (fee, coverage, conditions)",
+                            "Finalize speaker deals — confirm Roland, Jan, Roman are in, what they get",
                             "Confirm panel covers costs for speakers + 3 helpers",
-                            "Lock session structure: 3x50min (Taste / Leverage / Clarity)",
-                            "Confirm venue (Blue Room or alt), capacity 40",
-                            "Lock pricing: EUR 99 public, EUR 5,900 corporate",
                             "Corporate deliverables list — what companies actually get",
                             "Public deliverables — what attendees leave with"
                         ]}
+                        note="Venue: our studio. Session structure: locked. Pricing: locked."
                     />
 
                     <ChecklistSection 
                         letter="B" 
                         title="WEBSITE" 
                         owner="Tepi" 
-                        deadline="Feb 14"
+                        deadline="Fri Feb 14"
                         items={[
                             "Add real photos — founders, workshop environment, the feel",
                             "Payment system — Stripe link, Revolut, or bank transfer for EUR 99",
-                            "Fix booking flow — BookCall component working end-to-end",
-                            "Booking confirmation — pay then get email confirmation then event details",
-                            "Seat counter — know how many of 40 are sold",
-                            "Migrate homepage + /public + /corporate to lab.sorrywecan.com",
-                            "Target: mid-Feb (~Feb 15) for domain migration"
+                            "Booking flow — working end-to-end",
+                            "Seat counter — live count of 40",
+                            "Migrate to lab.sorrywecan.com — target Friday"
                         ]}
                     />
 
@@ -110,11 +105,11 @@ export default function MarketingSyncPage() {
                         owner="Andrea/Sasha" 
                         deadline="ongoing"
                         items={[
-                            "Speaker logistics — brief Roland, Jan, Roman on schedule, prep needs",
-                            "Partner outreach — activate SWC referral network",
-                            "Partner email templates — ready to send",
+                            "Marketing strategy alignment with partners",
+                            "Partner communication — activate SWC referral network",
+                            "Pull all emails from partners and past contacts",
+                            "Speaker logistics — brief Roland, Jan, Roman",
                             "3 helpers briefed — roles for event day",
-                            "Attendee list management — confirmations, day-of communication",
                             "Endorsement quotes — ask 5 respected people, put on landing page"
                         ]}
                     />
@@ -139,30 +134,26 @@ export default function MarketingSyncPage() {
                         letter="E" 
                         title="OUTREACH" 
                         owner="Everyone" 
-                        deadline="Feb 10-25"
+                        deadline="full attack by Feb 16"
                         items={[
                             "Each founder: list 25-30 people to personally invite",
-                            "Personal DMs — 7-10/day per founder during announce phase",
+                            "Personal DMs — 7-10/day per founder, start this week",
                             "SWC team: outreach to client/partner database (two asks per contact)",
                             "Follow up on non-responses: Day 3, Day 7, Day 14",
                             "Track everything in one shared sheet",
                             "Close every open conversation personally in final week"
                         ]}
-                        note="Total reachable: 50-80 seats. We only need 40."
+                        note="Full attack mode. 50-80 seats reachable. We only need 40."
                     />
 
                     <ChecklistSection 
                         letter="F" 
-                        title="CREATIVE & CONTENT" 
+                        title="CREATIVE" 
                         owner="Tepi + Brano" 
-                        deadline="Feb 10-25"
+                        deadline="weekend / Mon"
                         items={[
-                            "Proof video — 2-4 min demo showing real AI workflow (anchor for everything)",
-                            "Summary promo film — short event promo",
-                            "Daily IG stories — Slovak, raw, behind-scenes (Brano posts, founders provide raw)",
-                            "Founders post from personal LinkedIn/IG",
-                            "Cross-post from SORRYWECAN channels",
-                            "Live preview session — Feb 17-18, 30-45 min free preview + Q&A"
+                            "Website + social content — start during weekend, live by Monday",
+                            "Live preview session — Feb 17-18, 30-45 min free Q&A (keep this)"
                         ]}
                     />
 
@@ -170,12 +161,12 @@ export default function MarketingSyncPage() {
                         letter="G" 
                         title="PAYMENT & BOOKING" 
                         owner="Tepi" 
-                        deadline="Feb 12"
+                        deadline="this week"
                         items={[
-                            "Payment link for EUR 99 — must work today for launch",
-                            "Invoice system for corporate EUR 5,900",
-                            "Confirmation flow — pay then confirmation email then event details",
-                            "Seat tracking — live count of sold/remaining"
+                            "Payment link for EUR 99 — must work for launch",
+                            "Booking flow — seamless end-to-end",
+                            "Seat counter — live tracking of sold/remaining",
+                            "Invoice system for corporate EUR 5,900"
                         ]}
                     />
 
@@ -185,13 +176,12 @@ export default function MarketingSyncPage() {
                         owner="Andrea + Tepi" 
                         deadline="Feb 24"
                         items={[
-                            "Venue booked and confirmed",
                             "AV: projector, sound, mics",
                             "Check-in process",
-                            "Video capture: someone recording b-roll + testimonials",
-                            "Testimonial questions prepared (5 questions)",
-                            "Post-session: attendee follow-up email same day"
+                            "Video capture: b-roll + testimonials",
+                            "Post-session: follow-up email same day"
                         ]}
+                        note="Venue: our studio. Confirmed."
                     />
                 </div>
 
@@ -203,18 +193,16 @@ export default function MarketingSyncPage() {
                             <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">What</div>
                         </div>
                         {[
-                            ["Feb 10", "LAUNCH. Email #1 sends. Video drops. DMs start. One-pagers go public."],
-                            ["Feb 11", "'X seats in 24h' story. Track momentum."],
-                            ["Feb 12", "Email #2. Products finalized. Payment confirmed working."],
-                            ["Feb 13-14", "Website migration starts. Engage + answer questions."],
-                            ["Feb 15", "Site live on lab.sorrywecan.com. '20 seats left' update."],
-                            ["Feb 17-18", "Free live preview session (30-45 min)."],
+                            ["Feb 10-12", "Products finalized. Payment working. Email #1 sends. Outreach starts."],
+                            ["Feb 12", "Email #2. Speaker deals closed. Contact list compiled."],
+                            ["Feb 13-14", "Website + migration to lab.sorrywecan.com. Target: Friday."],
+                            ["Feb 15-16", "Website + social content live. Weekend push."],
+                            ["Feb 16", "Full attack outreach mode. All channels active."],
+                            ["Feb 17-18", "Live preview session (30-45 min Q&A)."],
                             ["Feb 19", "Email #3 — final call."],
-                            ["Feb 20-23", "Urgency: '10 seats left' then '5 seats left' then 'Last chance'"],
-                            ["Feb 24", "Final logistics check."],
-                            ["Feb 25", "'Tomorrow. Last chance.'"],
-                            ["Feb 26", "SESSION DAY — deliver, capture, collect testimonials"],
-                            ["Feb 27+", "Post UGC. Open Session #2. Corporate pipeline from attendees."]
+                            ["Feb 20-25", "Close everything. Urgency. Last seats."],
+                            ["Feb 26", "SESSION DAY — deliver, capture, collect testimonials."],
+                            ["Feb 27+", "Post UGC. Open Session #2. Corporate pipeline."]
                         ].map(([date, what], i) => (
                             <div key={i} className="grid grid-cols-[100px_1fr] border-b border-black/10 last:border-0 text-sm">
                                 <div className="p-3 font-bold border-r border-black/10 bg-black/[0.01] text-[#0047BB]">{date}</div>
@@ -228,13 +216,14 @@ export default function MarketingSyncPage() {
                     <h2 className="font-serif text-2xl italic mb-4 text-black">Done</h2>
                     <ul className="space-y-2">
                         {[
+                            "Venue — our studio, confirmed",
+                            "Session structure locked (Taste / Leverage / Clarity)",
+                            "Pricing locked (EUR 99 / EUR 5,900)",
                             "Website pages (homepage, /public, /corporate, one-pagers)",
                             "Copy polished, bilingual EN/SK",
                             "Email templates written (3 launch + DM templates)",
                             "Partner logos on site",
                             "Email collection on lab.sorrywecan.com",
-                            "Session structure (Taste / Leverage / Clarity)",
-                            "Pricing set (EUR 99 / EUR 5,900)",
                             "Objection handling scripts",
                             "One-sentence positioning locked (EN + SK)"
                         ].map((item, i) => (
@@ -255,13 +244,12 @@ export default function MarketingSyncPage() {
                             <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">Fix By</div>
                         </div>
                         {[
-                            ["No payment link", "Can't sell", "Feb 10"],
+                            ["No payment link", "Can't sell", "this week"],
                             ["No photos on site", "Doesn't feel real", "Feb 14"],
-                            ["No proof video", "No anchor for launch", "Feb 11"],
-                            ["Not on official domain", "People can't find it", "Feb 15"],
-                            ["Email #1 not sent", "Behind schedule", "TODAY"],
-                            ["Contact list not compiled", "Can't outreach", "Feb 11"],
-                            ["Speaker deals not closed", "Risk", "Feb 12"]
+                            ["Not on official domain", "People can't find it", "Fri"],
+                            ["Email #1 not sent", "Behind schedule", "NOW"],
+                            ["Contact list not compiled", "Can't outreach", "this week"],
+                            ["Outreach not started", "No momentum", "this week"]
                         ].map(([gap, impact, fix], i) => (
                             <div key={i} className="grid grid-cols-[1fr_1fr_80px] border-b border-black/10 last:border-0 text-sm">
                                 <div className="p-3 font-bold border-r border-black/10 text-black">{gap}</div>

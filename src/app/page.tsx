@@ -232,7 +232,7 @@ export default function HomePage() {
                         >
                             <Link 
                                 href="/public"
-                                className="block h-full p-8 md:p-12 border-2 border-black/10 bg-white hover:border-[#0047BB] transition-all group"
+                                className="block h-full p-8 md:p-12 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all group"
                             >
                                 <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                                     {t.paths.individual.label}
@@ -260,7 +260,7 @@ export default function HomePage() {
                         >
                             <Link 
                                 href="/corporate"
-                                className="block h-full p-8 md:p-12 border-2 border-black/10 bg-white hover:border-[#0047BB] transition-all group"
+                                className="block h-full p-8 md:p-12 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all group"
                             >
                                 <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                                     {t.paths.team.label}

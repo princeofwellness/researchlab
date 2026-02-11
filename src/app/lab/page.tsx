@@ -11,7 +11,7 @@ export default function LabPage() {
     ]
 
     const pages = [
-        { name: "Marketing Sync", href: "/archive/marketing-sync", desc: "The only 5 things that matter. Everything else is noise." },
+        { name: "Marketing Sync", href: "/marketing-sync", desc: "The only 5 things that matter. Everything else is noise." },
         { name: "Marketing", href: "/marketing", desc: "Marketing strategy and materials" },
         { name: "Projections", href: "/projections", desc: "Business projections and models" },
         { name: "Feedbacks", href: "/enhancements", desc: "Collected feedback and enhancements" },
@@ -25,7 +25,7 @@ export default function LabPage() {
     ]
 
     return (
-        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-mono">
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand">
             <TopNav />
 
             <section className="pt-32 pb-20 px-6 md:px-12">
@@ -38,7 +38,7 @@ export default function LabPage() {
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/40">
                             Internal
                         </span>
-                        <h1 className="font-serif-instrument text-5xl md:text-6xl italic mt-2">
+                        <h1 className="font-bold text-5xl md:text-6xl mt-2">
                             Lab
                         </h1>
                         <p className="text-black/50 mt-4">

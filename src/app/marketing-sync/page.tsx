@@ -77,12 +77,13 @@ export default function MarketingSyncPage() {
                         owner="Tepi" 
                         deadline="Feb 12"
                         items={[
-                            "Finalize speaker deals — confirm Roland, Jan, Roman are in, what they get",
+                            "Call each speaker personally — confirm conditions, confirm they're in",
+                            "Set up online meetings with speakers before Feb 12",
                             "Confirm panel covers costs for speakers + 3 helpers",
                             "Corporate deliverables list — what companies actually get",
                             "Public deliverables — what attendees leave with"
                         ]}
-                        note="Venue: our studio. Session structure: locked. Pricing: locked."
+                        note="Venue: our studio. Session structure: locked. Pricing: locked. Speakers: should be ok, but must be confirmed ASAP."
                     />
 
                     <ChecklistSection 
@@ -244,6 +245,7 @@ export default function MarketingSyncPage() {
                             <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">Fix By</div>
                         </div>
                         {[
+                            ["Speaker deals not confirmed", "Can't run session", "Feb 12"],
                             ["No payment link", "Can't sell", "this week"],
                             ["No photos on site", "Doesn't feel real", "Feb 14"],
                             ["Not on official domain", "People can't find it", "Fri"],

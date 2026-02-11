@@ -1,7 +1,6 @@
 "use client"
 
 import { TopNav } from "@/components/navigation/top-nav"
-import { cn } from "@/lib/utils"
 
 export default function MarketingSyncPage() {
     return (
@@ -54,21 +53,21 @@ export default function MarketingSyncPage() {
                     </div>
                 </section>
 
-                <section className="mb-16 bg-red-50 border-2 border-red-100 p-6 rounded-sm">
+                <section className="mb-16 border border-black/10 p-6">
                     <div className="flex items-center justify-between mb-6">
-                        <h2 className="font-serif text-2xl italic text-red-900">Status: Feb 10</h2>
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-red-600 bg-red-100 px-2 py-1">Launch Day</span>
+                        <h2 className="font-serif text-2xl italic text-black">Status: Feb 10</h2>
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-white bg-black px-2 py-1">Launch Day</span>
                     </div>
                     
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                        <MetricCard value="0" label="Tickets sold" color="red" />
-                        <MetricCard value="0" label="DMs sent" color="red" />
-                        <MetricCard value="0" label="Emails sent" color="red" />
-                        <MetricCard value="?" label="Payment link live" color="amber" />
-                        <MetricCard value="DONE" label="One-pagers approved" color="green" />
-                        <MetricCard value="16" label="Days left" color="blue" />
+                        <MetricCard value="0" label="Tickets sold" />
+                        <MetricCard value="0" label="DMs sent" />
+                        <MetricCard value="0" label="Emails sent" />
+                        <MetricCard value="?" label="Payment link live" />
+                        <MetricCard value="DONE" label="One-pagers approved" />
+                        <MetricCard value="16" label="Days left" />
                     </div>
-                    <p className="text-sm text-red-800/60 italic text-center font-serif">"Today is launch day. Phase 2 (ANNOUNCE) starts now."</p>
+                    <p className="text-sm text-black/40 italic text-center font-serif">Today is launch day. Phase 2 (ANNOUNCE) starts now.</p>
                 </section>
 
                 <div className="space-y-12 mb-16">
@@ -225,8 +224,8 @@ export default function MarketingSyncPage() {
                     </div>
                 </section>
 
-                <section className="mb-16 bg-green-50 border border-green-100 p-6 rounded-sm">
-                    <h2 className="font-serif text-2xl italic mb-4 text-green-900">Done</h2>
+                <section className="mb-16 bg-black/[0.02] border border-black/10 p-6">
+                    <h2 className="font-serif text-2xl italic mb-4 text-black">Done</h2>
                     <ul className="space-y-2">
                         {[
                             "Website pages (homepage, /public, /corporate, one-pagers)",
@@ -239,8 +238,8 @@ export default function MarketingSyncPage() {
                             "Objection handling scripts",
                             "One-sentence positioning locked (EN + SK)"
                         ].map((item, i) => (
-                            <li key={i} className="flex items-start gap-3 text-sm text-green-800/80">
-                                <span className="text-green-600 font-bold">✓</span>
+                            <li key={i} className="flex items-start gap-3 text-sm text-black/60">
+                                <span className="text-[#0047BB] font-bold">done</span>
                                 {item}
                             </li>
                         ))}
@@ -248,12 +247,12 @@ export default function MarketingSyncPage() {
                 </section>
 
                 <section className="mb-16">
-                    <h2 className="font-serif text-2xl italic mb-6 text-red-600">Gaps (Urgent)</h2>
-                    <div className="border border-red-200 rounded-sm overflow-hidden">
-                        <div className="grid grid-cols-[1fr_1fr_80px] border-b border-red-200 bg-red-50">
-                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-red-900/40 border-r border-red-200">Gap</div>
-                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-red-900/40 border-r border-red-200">Impact</div>
-                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-red-900/40">Fix By</div>
+                    <h2 className="font-serif text-2xl italic mb-6 text-black">Gaps</h2>
+                    <div className="border border-black/10 overflow-hidden">
+                        <div className="grid grid-cols-[1fr_1fr_80px] border-b border-black/10 bg-black/[0.02]">
+                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40 border-r border-black/10">Gap</div>
+                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40 border-r border-black/10">Impact</div>
+                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">Fix By</div>
                         </div>
                         {[
                             ["No payment link", "Can't sell", "Feb 10"],
@@ -264,19 +263,19 @@ export default function MarketingSyncPage() {
                             ["Contact list not compiled", "Can't outreach", "Feb 11"],
                             ["Speaker deals not closed", "Risk", "Feb 12"]
                         ].map(([gap, impact, fix], i) => (
-                            <div key={i} className="grid grid-cols-[1fr_1fr_80px] border-b border-red-100 last:border-0 text-sm bg-red-50/30">
-                                <div className="p-3 font-bold border-r border-red-100 text-red-900">{gap}</div>
-                                <div className="p-3 text-red-800/70 border-r border-red-100">{impact}</div>
-                                <div className="p-3 font-bold text-red-600">{fix}</div>
+                            <div key={i} className="grid grid-cols-[1fr_1fr_80px] border-b border-black/10 last:border-0 text-sm">
+                                <div className="p-3 font-bold border-r border-black/10 text-black">{gap}</div>
+                                <div className="p-3 text-black/50 border-r border-black/10">{impact}</div>
+                                <div className="p-3 font-bold text-[#0047BB]">{fix}</div>
                             </div>
                         ))}
                     </div>
                 </section>
 
-                <section className="mb-16 bg-amber-50 border border-amber-200 p-6 rounded-sm">
+                <section className="mb-16 bg-black/[0.02] border border-black/10 p-6">
                     <div className="flex items-center gap-3 mb-4">
-                        <h2 className="font-serif text-2xl italic text-amber-900">After Feb 26 (Parked)</h2>
-                        <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-1 bg-amber-200 text-amber-800">NOT NOW</span>
+                        <h2 className="font-serif text-2xl italic text-black">After Feb 26</h2>
+                        <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-1 bg-black/5 text-black/40">Parked</span>
                     </div>
                     <ul className="space-y-2 mb-6">
                         {[
@@ -290,14 +289,14 @@ export default function MarketingSyncPage() {
                             "Digital products / toolkit monetization",
                             "Tatrabanka AI case study video"
                         ].map((item, i) => (
-                            <li key={i} className="flex items-start gap-3 text-sm text-amber-800/70">
-                                <span className="text-amber-400 font-bold">||</span>
+                            <li key={i} className="flex items-start gap-3 text-sm text-black/40">
+                                <span className="text-black/20 font-bold">||</span>
                                 {item}
                             </li>
                         ))}
                     </ul>
-                    <p className="text-sm text-amber-900/60 italic font-serif border-t border-amber-200 pt-4">
-                        "None of this matters until 40 seats are sold and the session is delivered."
+                    <p className="text-sm text-black/30 italic font-serif border-t border-black/10 pt-4">
+                        None of this matters until 40 seats are sold and the session is delivered.
                     </p>
                 </section>
 
@@ -324,18 +323,11 @@ export default function MarketingSyncPage() {
     )
 }
 
-function MetricCard({ value, label, color }: { value: string, label: string, color: "red" | "amber" | "blue" | "green" }) {
-    const colors = {
-        red: "text-red-600",
-        amber: "text-amber-600",
-        blue: "text-[#0047BB]",
-        green: "text-green-600"
-    }
-    
+function MetricCard({ value, label }: { value: string, label: string }) {
     return (
-        <div className="bg-white border border-black/5 p-4 text-center shadow-sm">
-            <p className={cn("text-3xl font-serif", colors[color])}>{value}</p>
-            <p className="text-xs text-black/50 mt-1 uppercase tracking-wider">{label}</p>
+        <div className="border border-black/10 p-4 text-center">
+            <p className="text-3xl font-serif text-[#0047BB]">{value}</p>
+            <p className="text-xs text-black/40 mt-1 uppercase tracking-wider">{label}</p>
         </div>
     )
 }

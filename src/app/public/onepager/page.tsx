@@ -6,9 +6,9 @@ export default function PublicOnePager() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
 
     const content = {
-        en: {
-            hero: {
-                label: "THE SHIFT",
+         en: {
+             hero: {
+                 label: "THE MINDSHIFT",
                 title: { line1: "Everyone has AI tools.", line2: "Thinking makes the difference." },
                 subline: "What changed. What's possible. What's next.",
                 desc: "3 hours with founders who build with AI daily.",
@@ -58,9 +58,9 @@ export default function PublicOnePager() {
                 subtitle: "Art. Product. Transformation.",
                 trust: "From the creators of campaigns for Meta, Audi, Forbes, and Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.", tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.", url: "https://sorrywecan.com/" },
+                     { name: "Roland Vraník", role: "The Creative", company: "Creative Director / Founder, SORRYWECAN", bio: "Creative director behind award-winning campaigns for Tatra banka, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.", tagline: "Made decisions that came at a high price. Now sees what creative teams often miss.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "The Architect", company: "CPO / Co-founder, SUDOLABS", bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.", tagline: "Knows exactly where teams waste months building what one person could ship in a week.", url: "https://sudolabs.com/" },
-                    { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.", tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.", url: "" }
+                     { name: "Roman Pii Wagner", role: "The Navigator", company: "Transformational Design", bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.", tagline: "Turns confusion into priorities and priorities into concrete decisions.", url: "" }
                 ]
             },
             details: {
@@ -72,16 +72,16 @@ export default function PublicOnePager() {
                     { label: "Price", value: "from €99", sub: "per person" }
                 ]
             },
-            cta: {
-                headline: "I'm In.",
-                subline: "40 seats. First session February 26.",
-                email: "Reserve Your Seat",
-                contact: "For questions write to: andrea@sorrywecan.com"
-            }
+             cta: {
+                 headline: "I'm In.",
+                 subline: "First session February 26.",
+                 email: "Reserve Your Seat",
+                 contact: "For questions write to: andrea@sorrywecan.com"
+             }
         },
-        sk: {
-            hero: {
-                label: "THE SHIFT",
+         sk: {
+             hero: {
+                 label: "THE MINDSHIFT",
                 title: { line1: "AI nástroje má dnes každý.", line2: "Rozhoduje spôsob myslenia." },
                 subline: "Čo sa zmenilo. Čo je možné. Čo ďalej.",
                 desc: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
@@ -131,9 +131,9 @@ export default function PublicOnePager() {
                 subtitle: "Umenie. Produkt. Transformácia.",
                 trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "Umelec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.", tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.", url: "https://sorrywecan.com/" },
+                     { name: "Roland Vraník", role: "Umelec", company: "Creative Director / Zakladateľ, SORRYWECAN", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Tatra banku, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.", tagline: "Prešiel si rozhodnutiami, ktoré mali vysokú cenu. Dnes vidí to, čo kreatívnym tímom často uniká.", url: "https://sorrywecan.com/" },
                     { name: "Ján Koscelanský", role: "Architekt", company: "CPO / Spoluzakladateľ, SUDOLABS", bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.", tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.", url: "https://sudolabs.com/" },
-                    { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.", tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.", url: "" }
+                     { name: "Roman Pii Wagner", role: "Navigátor", company: "Transformational Design", bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.", tagline: "Mení zmätok na priority a priority na konkrétne rozhodnutia.", url: "" }
                 ]
             },
             details: {
@@ -145,12 +145,12 @@ export default function PublicOnePager() {
                     { label: "Cena", value: "od €99", sub: "na osobu" }
                 ]
             },
-            cta: {
-                headline: "Idem Do Toho.",
-                subline: "40 miest. Prvá session 26. februára.",
-                email: "Rezervovať Miesto",
-                contact: "V prípade otázok píšte na: andrea@sorrywecan.com"
-            }
+             cta: {
+                 headline: "Idem Do Toho.",
+                 subline: "Prvá session 26. februára.",
+                 email: "Rezervovať Miesto",
+                 contact: "V prípade otázok píšte na: andrea@sorrywecan.com"
+             }
         }
     }
 

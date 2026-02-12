@@ -21,9 +21,9 @@ export default function PublicSessionsPage() {
                     line2: "Thinking makes the difference."
                 },
                 subline: "What changed. What's possible. What's next.",
-                description: "3 hours with founders who build with AI daily.",
+                description: "3.5 hours with founders who build with AI daily.",
                 price: "99",
-                duration: "3 hours",
+                duration: "3.5 hours",
                 date: "February 26, 2026",
                 spots: "40 seats",
                 cta: "I'm In"
@@ -161,9 +161,9 @@ export default function PublicSessionsPage() {
                     line2: "Rozhoduje spôsob myslenia."
                 },
                 subline: "Čo sa zmenilo. Čo je možné. Čo ďalej.",
-                description: "3 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
+                description: "3.5 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
                 price: "99",
-                duration: "3 hodiny",
+                duration: "3.5 hodiny",
                 date: "26. februára 2026",
                 spots: "40 miest",
                 cta: "Idem Do Toho"

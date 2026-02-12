@@ -88,7 +88,11 @@ export function SeatCounter({
 
     if (variant === "hero") {
         return (
-            <div className={cn("flex items-center gap-4", className)}>
+            <div className={cn("flex items-center gap-3", className)}>
+                <div className={cn(
+                    "w-2 h-2 rounded-full",
+                    isSoldOut ? "bg-red-600" : isCritical ? "bg-red-500 animate-pulse" : isLow ? "bg-orange-500 animate-pulse" : "bg-emerald-500"
+                )} />
                 <AnimatePresence mode="wait">
                     <motion.span
                         key={seatsLeft}
@@ -96,54 +100,45 @@ export function SeatCounter({
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         className={cn(
-                            "text-[10px] font-bold uppercase tracking-widest font-code-brand",
-                            isSoldOut ? "text-red-600" : isCritical ? "text-red-600" : isLow ? "text-orange-600" : "text-[#0047BB]"
+                            "text-[11px] font-bold uppercase tracking-[0.15em] font-code-brand",
+                            isSoldOut ? "text-red-600" : isCritical ? "text-red-600" : isLow ? "text-orange-600" : "text-black/60"
                         )}
                     >
-                        {isSoldOut ? t.soldOut : `${seatsLeft} ${t.seatsLeft}`}
+                        {isSoldOut ? t.soldOut : `${seatsLeft} / ${total} ${t.seatsLeft}`}
                     </motion.span>
                 </AnimatePresence>
-                {isLow && !isSoldOut && (
-                    <motion.span
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className="text-[10px] text-red-500/60 font-code-brand uppercase tracking-widest"
-                    >
-                        {t.lastSeats}
-                    </motion.span>
-                )}
             </div>
         )
     }
 
     return (
-        <div className={cn("space-y-2", className)}>
-            <div className="flex items-center justify-between">
+        <div className={cn("space-y-3", className)}>
+            <div className="flex items-center justify-center gap-3">
+                <div className={cn(
+                    "w-1.5 h-1.5 rounded-full",
+                    isSoldOut ? "bg-red-600" : isCritical ? "bg-red-500 animate-pulse" : isLow ? "bg-orange-500 animate-pulse" : "bg-emerald-500"
+                )} />
                 <AnimatePresence mode="wait">
                     <motion.span
                         key={seatsLeft}
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        className={cn(
-                            "text-sm font-bold",
-                            isSoldOut ? "text-red-600" : isCritical ? "text-red-600" : isLow ? "text-orange-600" : "text-black/70"
-                        )}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        className="text-[11px] font-bold uppercase tracking-[0.2em] font-code-brand"
                     >
-                        {isSoldOut ? t.soldOut : `${seatsLeft} ${t.seatsLeft}`}
+                        {isSoldOut ? t.soldOut : `${seatsLeft} / ${total} ${t.seatsLeft}`}
                     </motion.span>
                 </AnimatePresence>
-                <span className="text-[10px] text-black/30 font-code-brand">{total} total</span>
             </div>
-            <div className="h-1 bg-black/5 overflow-hidden">
+            <div className="h-[2px] bg-white/10 overflow-hidden rounded-full">
                 <motion.div
                     className={cn(
-                        "h-full",
-                        isSoldOut ? "bg-red-600" : isCritical ? "bg-red-500" : isLow ? "bg-orange-500" : "bg-[#0047BB]"
+                        "h-full rounded-full",
+                        isSoldOut ? "bg-red-500" : isCritical ? "bg-red-400" : isLow ? "bg-orange-400" : "bg-[#0047BB]"
                     )}
                     initial={{ width: 0 }}
                     animate={{ width: `${fillPercent}%` }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                    transition={{ duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] }}
                 />
             </div>
         </div>

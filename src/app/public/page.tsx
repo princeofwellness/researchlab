@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
+import { TheShiftBookButton } from "@/components/book-call"
+import { SeatCounter } from "@/components/seat-counter"
 
 export default function PublicSessionsPage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
@@ -360,16 +362,13 @@ export default function PublicSessionsPage() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                            <a 
-                                href="mailto:andrea@sorrywecan.com?subject=THE SHIFT - I'm In"
-                                className="bg-[#0047BB] text-white px-10 py-5 font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-black transition-all font-code-brand"
-                            >
+                            <TheShiftBookButton>
                                 {t.hero.cta}
-                            </a>
+                            </TheShiftBookButton>
                             <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest font-code-brand">
                                 <span className="text-[#0047BB]">{t.hero.date}</span>
                                 <span className="text-black/30">|</span>
-                                <span className="text-black/40">{t.hero.spots}</span>
+                                <SeatCounter variant="hero" lang={lang} />
                             </div>
                         </div>
 
@@ -568,13 +567,11 @@ export default function PublicSessionsPage() {
             <section className="py-24 md:py-32 bg-black text-white text-center">
                 <div className="max-w-2xl mx-auto px-6">
                     <h2 className="font-bold text-5xl md:text-6xl mb-4">{t.cta.headline}</h2>
-                    <p className="text-lg text-white/50 mb-8">{t.cta.subline}</p>
-                    <a
-                        href="mailto:andrea@sorrywecan.com?subject=THE SHIFT - I'm In"
-                        className="bg-[#0047BB] text-white px-12 py-5 font-bold text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all inline-block font-code-brand"
-                    >
+                    <p className="text-lg text-white/50 mb-4">{t.cta.subline}</p>
+                    <SeatCounter variant="default" lang={lang} className="max-w-xs mx-auto mb-8 [&_span]:text-white/70 [&_.text-black\/30]:text-white/20 [&_.text-black\/5]:bg-white/10" />
+                    <TheShiftBookButton variant="secondary">
                         {t.cta.button}
-                    </a>
+                    </TheShiftBookButton>
                     <div className="mt-8 flex items-center justify-center gap-3">
                         <span className="text-sm text-white/40">{t.cta.note}</span>
                         <Link 

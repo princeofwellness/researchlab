@@ -6,7 +6,7 @@ import Link from "next/link"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
 import { TheShiftBookButton } from "@/components/book-call"
-import { SeatCounter } from "@/components/seat-counter"
+
 
 export default function PublicSessionsPage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
@@ -559,7 +559,6 @@ export default function PublicSessionsPage() {
                 <div className="max-w-2xl mx-auto px-6">
                     <h2 className="font-bold text-5xl md:text-6xl mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-4">{t.cta.subline}</p>
-                    <SeatCounter variant="default" lang={lang} className="max-w-xs mx-auto mb-8" />
                     <TheShiftBookButton variant="secondary">
                         {t.cta.button}
                     </TheShiftBookButton>

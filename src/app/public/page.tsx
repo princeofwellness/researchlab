@@ -465,22 +465,6 @@ export default function PublicSessionsPage() {
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
-                <div className="max-w-5xl mx-auto">
-                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">
-                        {t.outcome.title}
-                    </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {t.outcome.items.map((item: any, i: number) => (
-                            <div key={i} className="p-5 border border-black/10">
-                                <h4 className="text-lg font-bold text-[#0047BB] mb-2">{item.title}</h4>
-                                <p className="text-sm text-black/50">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
@@ -511,6 +495,22 @@ export default function PublicSessionsPage() {
                     {t.founders.trust && (
                         <p className="text-center text-[11px] font-code-brand text-black/40 mt-6">{t.founders.trust}</p>
                     )}
+                </div>
+            </section>
+
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">
+                        {t.outcome.title}
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {t.outcome.items.map((item: any, i: number) => (
+                            <div key={i} className="p-5 border border-black/10">
+                                <h4 className="text-lg font-bold text-[#0047BB] mb-2">{item.title}</h4>
+                                <p className="text-sm text-black/50">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 

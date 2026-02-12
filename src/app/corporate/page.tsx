@@ -432,32 +432,6 @@ export default function CorporatePage() {
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
-                <div className="max-w-5xl mx-auto">
-                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {t.outcome.items.map((item: any, i: number) => (
-                            <div key={i} className="p-5 border border-black/10">
-                                <span className="w-7 h-7 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs mb-3 font-code-brand">
-                                    {i + 1}
-                                </span>
-                                <h4 className="font-bold text-sm mb-1">{item.title}</h4>
-                                <p className="text-xs text-black/50">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-black/10">
-                        {t.proof.stats.map((stat: any, i: number) => (
-                            <div key={i} className="text-center">
-                                <span className="text-4xl md:text-5xl font-bold text-[#0047BB]">{stat.value}</span>
-                                <p className="text-xs text-black/40 mt-2 font-code-brand">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
@@ -488,6 +462,32 @@ export default function CorporatePage() {
                     {t.founders.trust && (
                         <p className="text-center text-[11px] font-code-brand text-black/40 mt-6">{t.founders.trust}</p>
                     )}
+                </div>
+            </section>
+
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {t.outcome.items.map((item: any, i: number) => (
+                            <div key={i} className="p-5 border border-black/10">
+                                <span className="w-7 h-7 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs mb-3 font-code-brand">
+                                    {i + 1}
+                                </span>
+                                <h4 className="font-bold text-sm mb-1">{item.title}</h4>
+                                <p className="text-xs text-black/50">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-black/10">
+                        {t.proof.stats.map((stat: any, i: number) => (
+                            <div key={i} className="text-center">
+                                <span className="text-4xl md:text-5xl font-bold text-[#0047BB]">{stat.value}</span>
+                                <p className="text-xs text-black/40 mt-2 font-code-brand">{stat.label}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 

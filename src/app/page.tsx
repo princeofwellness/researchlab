@@ -14,8 +14,8 @@ export default function HomePage() {
         en: {
             hero: {
                 title: {
-                    line1: "The Tools Are Ready.",
-                    line2: "We're Not. Yet."
+                line1: "Everyone Has AI Tools.",
+                line2: "Thinking Makes the Difference."
                 },
                 subline: "What changed. What's possible. What's next."
             },
@@ -61,10 +61,10 @@ export default function HomePage() {
         sk: {
             hero: {
                 title: {
-                    line1: "Nástroje Sú Pripravené.",
-                    line2: "My Ešte Nie."
+                line1: "AI Nástroje Má Dnes Každý.",
+                line2: "Rozhoduje Spôsob Myslenia."
                 },
-                subline: "Čo sa zmenilo. Čo je možné. Čo ďalej."
+                subline: "Čo sa zmenilo. Čo je možné. Čo s tým."
             },
             trust: {
                 label: "Dôverujú nám"

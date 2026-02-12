@@ -17,11 +17,10 @@ export default function PublicSessionsPage() {
             hero: {
                 label: "THE SHIFT",
                 title: {
-                    line1: "Everyone has AI tools.",
-                    line2: "Thinking makes the difference."
-                },
-                subline: "What changed. What's possible. What's next.",
-                description: "3.5 hours with founders who build with AI daily.",
+                line1: "In 3 Hours, You'll See",
+                line2: "What Took Us Years to Learn."
+            },
+            subline: "One evening. A new way to think, decide, and create with AI.",
                 price: "99",
                 duration: "3.5 hours",
                 date: "February 26, 2026",
@@ -157,11 +156,10 @@ export default function PublicSessionsPage() {
             hero: {
                 label: "THE SHIFT",
                 title: {
-                    line1: "AI nástroje má dnes každý.",
-                    line2: "Rozhoduje spôsob myslenia."
-                },
-                subline: "Čo sa zmenilo. Čo je možné. Čo ďalej.",
-                description: "3.5 hodiny so zakladateľmi, ktorí s AI pracujú denne.",
+                line1: "Za 3 Hodiny Uvidíte To,",
+                line2: "Čo Nám Trvalo Roky Pochopiť."
+            },
+            subline: "Jeden večer. Nový spôsob, ako myslieť, rozhodovať a tvoriť s AI.",
                 price: "99",
                 duration: "3.5 hodiny",
                 date: "26. februára 2026",
@@ -340,14 +338,7 @@ export default function PublicSessionsPage() {
                         {t.hero.subline}
                     </motion.p>
 
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        className="text-lg md:text-xl leading-relaxed text-black/60 max-w-2xl mb-10"
-                    >
-                        {t.hero.description}
-                    </motion.p>
+                    <div className="mb-10" />
 
                     <motion.div
                         initial={{ opacity: 0 }}

@@ -83,7 +83,7 @@ export default function CorporatePage() {
                          name: "Ján Koscelanský", 
                          role: "LEVERAGE", 
                          company: "CPO / Co-founder, SUDOLABS", 
-                         tagline: "Knows exactly where teams waste months building what one person could ship in a week.",
+                         tagline: "Years of building products showed him exactly where teams lose months on what can now be done many times faster.",
                          bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.",
                          url: "https://sudolabs.com/",
                          image: ""
@@ -203,7 +203,7 @@ export default function CorporatePage() {
                          name: "Ján Koscelanský", 
                          role: "PÁKA", 
                          company: "CPO / Spoluzakladateľ, SUDOLABS", 
-                         tagline: "Presne vie, kde tímy strácajú mesiace nad niečím, čo jeden človek dodá za týždeň.",
+                         tagline: "Po rokoch v developmente presne vie, kde tímy trávia mesiace nad niečím, čo sa dnes dá zvládnuť mnohonásobne rýchlejšie.",
                          bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.",
                          url: "https://sudolabs.com/",
                          image: ""

@@ -11,17 +11,12 @@ export default function LabPage() {
     ]
 
     const pages = [
-        { name: "Marketing Sync", href: "/marketing-sync", desc: "The only 5 things that matter. Everything else is noise." },
-        { name: "Marketing", href: "/marketing", desc: "Marketing strategy and materials" },
-        { name: "Projections", href: "/projections", desc: "Business projections and models" },
-        { name: "Feedbacks", href: "/enhancements", desc: "Collected feedback and enhancements" },
-        { name: "Gameplan", href: "/gameplan", desc: "Strategic gameplan" },
-        { name: "Founders Pay", href: "/founders-pay", desc: "Founder compensation models" },
-        { name: "AI Market Intelligence", href: "/ai-market-intelligence", desc: "Market research and insights" },
-        { name: "AI Education Blueprint", href: "/ai-education-blueprint", desc: "Education framework" },
-        { name: "Journey", href: "/journey", desc: "Customer journey mapping" },
-        { name: "Protocol", href: "/protocol", desc: "Operational protocols" },
-        { name: "Archive", href: "/archive", desc: "Archived materials" },
+        { name: "The Playbook", href: "/gameplan", desc: "Growth architecture: how to build, scale, and lead in AI education." },
+        { name: "Marketing Sync", href: "/marketing-sync", desc: "THE SHIFT operational hub. Ownership, status, timeline." },
+    ]
+
+    const archivePages = [
+        { name: "Archive", href: "/archive", desc: "All previous research, blueprints, and working documents." },
     ]
 
     return (
@@ -75,7 +70,7 @@ export default function LabPage() {
                         </div>
                     </div>
 
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-3">Working Documents</p>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-3">Active</p>
                     <div className="space-y-2">
                         {pages.map((page, i) => (
                             <motion.div
@@ -100,6 +95,35 @@ export default function LabPage() {
                                 </Link>
                             </motion.div>
                         ))}
+                    </div>
+
+                    <div className="mt-12">
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-black/30 mb-3">Previous Work</p>
+                        <div className="space-y-2">
+                            {archivePages.map((page, i) => (
+                                <motion.div
+                                    key={page.href}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: i * 0.05 + 0.3 }}
+                                >
+                                    <Link
+                                        href={page.href}
+                                        className="flex items-center justify-between p-4 border border-black/5 bg-black/[0.02] hover:border-black/20 transition-all group"
+                                    >
+                                        <div>
+                                            <span className="font-medium text-black/50 group-hover:text-black/70 transition-colors">
+                                                {page.name}
+                                            </span>
+                                            <p className="text-sm text-black/30 mt-0.5">{page.desc}</p>
+                                        </div>
+                                        <span className="text-black/10 group-hover:text-black/30 group-hover:translate-x-1 transition-all">
+                                            →
+                                        </span>
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

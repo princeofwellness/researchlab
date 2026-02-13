@@ -15,7 +15,7 @@ export default function PublicSessionsPage() {
     const content = {
         en: {
             hero: {
-                label: "THE SHIFT",
+                label: "THE MINDSHIFT",
                 title: {
                 line1: "In 3 Hours, You'll See",
                 line2: "What Took Us Years to Learn."
@@ -24,7 +24,7 @@ export default function PublicSessionsPage() {
                 price: "99",
                 duration: "3.5 hours",
                 date: "February 26, 2026",
-                spots: "40 seats",
+                location: "Bratislava, Slovakia",
                 cta: "I'm In"
             },
             stats: {
@@ -98,8 +98,8 @@ export default function PublicSessionsPage() {
                         name: "Roland Vraník", 
                         role: "The Creative", 
                         company: "Creative Director / Founder, SORRYWECAN", 
-                        tagline: "Made mistakes that cost more than money. Sees what most creative teams miss.",
-                        bio: "Creative director behind award-winning campaigns for Forbes, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.",
+                        tagline: "Made decisions that came at a high price. Now sees what creative teams often miss.",
+                        bio: "Creative director behind award-winning campaigns for Tatra banka, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.",
                         url: "https://sorrywecan.com/",
                         image: "/founders/roland.jpg"
                     },
@@ -116,7 +116,7 @@ export default function PublicSessionsPage() {
                         name: "Roman Pii Wagner", 
                         role: "The Navigator", 
                         company: "Transformational Design", 
-                        tagline: "Turns confusion into priorities. Turns priorities into Monday decisions.",
+                        tagline: "Turns confusion into priorities and priorities into concrete decisions.",
                         bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.",
                         url: "",
                         image: "/founders/roman.jpg"
@@ -127,12 +127,12 @@ export default function PublicSessionsPage() {
                 title: "Questions.",
                 items: [
                     { q: "Do I need technical skills?", a: "No. If you can use a browser, you can do this." },
-                    { q: "What should I bring?", a: "Laptop. Internet. That's it." },
-                    { q: "Why €99?", a: "We want this accessible. Best marketing is people telling friends." },
-                    { q: "What makes this different?", a: "We're not teaching from slides. We build with AI daily. Real work, not theory." },
-                    { q: "Can I expense this?", a: "Yes. Proper invoices. Most companies approve €99 without questions." },
-                    { q: "What language?", a: "Slovak primarily. English materials. We adapt." },
-                    { q: "What if I want more after?", a: "Good. Corporate workshops for teams. Or join again." }
+                    { q: "What should I bring?", a: "A laptop. That's it." },
+                    { q: "Why €99?", a: "We're creating a format that's truly accessible." },
+                    { q: "What makes this different?", a: "We don't just teach AI. We show how we actually work with it every day — and how you can too." },
+                    { q: "Can my employer cover this?", a: "Yes, we can prepare an invoice for your employer." },
+                    { q: "What language is the workshop in?", a: "The workshop is in Slovak. Materials are often in English as well." },
+                    { q: "What if I want more after?", a: "Want to bring your whole team or go deeper into the topic? Get in touch." }
                 ],
                 details: {
                     title: "Details",
@@ -146,7 +146,7 @@ export default function PublicSessionsPage() {
             },
             cta: {
                 headline: "I'm In.",
-                subline: "40 seats. First session February 26.",
+                subline: "First session February 26.",
                 button: "I'm In",
                 note: "Want this for your team?",
                 corporate: "Corporate Workshop"
@@ -154,7 +154,7 @@ export default function PublicSessionsPage() {
         },
         sk: {
             hero: {
-                label: "THE SHIFT",
+                label: "THE MINDSHIFT",
                 title: {
                 line1: "Za 3 Hodiny Uvidíte To,",
                 line2: "Čo Nám Trvalo Roky Pochopiť."
@@ -163,7 +163,7 @@ export default function PublicSessionsPage() {
                 price: "99",
                 duration: "3.5 hodiny",
                 date: "26. februára 2026",
-                spots: "40 miest",
+                location: "Bratislava, Slovensko",
                 cta: "Idem Do Toho"
             },
             stats: {
@@ -237,8 +237,8 @@ export default function PublicSessionsPage() {
                           name: "Roland Vraník", 
                           role: "Umelec", 
                           company: "Creative Director / Zakladateľ, SORRYWECAN", 
-                          tagline: "Urobil chyby, ktoré stáli viac než peniaze. Vidí, čo väčšine kreatívnych tímov uniká.",
-                          bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Forbes, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.",
+                          tagline: "Prešiel si rozhodnutiami, ktoré mali vysokú cenu. Dnes vidí to, čo kreatívnym tímom často uniká.",
+                          bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Tatra banku, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.",
                           url: "https://sorrywecan.com/",
                           image: "/founders/roland.jpg"
                       },
@@ -255,7 +255,7 @@ export default function PublicSessionsPage() {
                           name: "Roman Pii Wagner", 
                           role: "Navigátor", 
                           company: "Transformational Design", 
-                          tagline: "Mení zmätok na priority. Mení priority na pondelkové rozhodnutia.",
+                          tagline: "Mení zmätok na priority a priority na konkrétne rozhodnutia.",
                           bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
                           url: "",
                           image: "/founders/roman.jpg"
@@ -266,12 +266,12 @@ export default function PublicSessionsPage() {
                 title: "Otázky.",
                 items: [
                     { q: "Potrebujem technické zručnosti?", a: "Nie. Ak vieš používať prehliadač, zvládneš to." },
-                    { q: "Čo si mám priniesť?", a: "Laptop. Internet. To je všetko." },
-                    { q: "Prečo €99?", a: "Chceme, aby to bolo dostupné. Najlepší marketing je, keď ľudia povedia kamarátom." },
-                    { q: "Čo je na tom iné?", a: "Neučíme zo slajdov. S AI pracujeme denne. Reálna práca, nie teória." },
-                    { q: "Môžem si to preplatiť?", a: "Áno. Riadne faktúry. Väčšina firiem schváli €99 bez otázok." },
-                    { q: "V akom jazyku?", a: "Primárne slovensky. Anglické materiály. Prispôsobíme sa." },
-                    { q: "Čo ak budem chcieť viac?", a: "Dobre. Firemné workshopy pre tímy. Alebo príď znova." }
+                    { q: "Čo si mám priniesť?", a: "Stačí laptop." },
+                    { q: "Prečo €99?", a: "Vytvárame formát, ktorý je naozaj dostupný." },
+                    { q: "Čo je na tom iné?", a: "Neučíme len AI. Ukazujeme, ako s ňou reálne pracujeme každý deň a ako môžete vy." },
+                    { q: "Je možné dať kurz preplatiť?", a: "Áno, vieme pripraviť faktúru aj pre tvojho zamestnávateľa." },
+                    { q: "V akom jazyku prebieha workshop?", a: "Workshop prebieha v slovenčine, zaslané materiály sú často aj v angličtine." },
+                    { q: "Čo ak budem chcieť viac?", a: "Chceš prísť na workshop s celým tvojim tímom alebo sa do témy ponoriť viac? Ozvi sa nám." }
                 ],
                 details: {
                     title: "Detaily",
@@ -285,7 +285,7 @@ export default function PublicSessionsPage() {
             },
              cta: {
                  headline: "Idem Do Toho.",
-                 subline: "40 miest. Prvá session 26. februára.",
+                 subline: "Prvá session 26. februára.",
                  button: "Idem Do Toho",
                  note: "Chceš toto pre svoj tím?",
                  corporate: "Firemný Workshop"
@@ -356,10 +356,10 @@ export default function PublicSessionsPage() {
                             <TheShiftBookButton>
                                 {t.hero.cta}
                             </TheShiftBookButton>
-                            <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest font-code-brand">
-                                <span className="text-[#0047BB]">{t.hero.date}</span>
-                                <span className="text-black/30">|</span>
-                                <SeatCounter variant="hero" lang={lang} />
+                            <div className="flex items-center gap-4 font-bold uppercase tracking-widest font-code-brand">
+                                <span className="text-sm text-[#0047BB]">{t.hero.date}</span>
+                                <span className="text-sm text-black/30">|</span>
+                                <span className="text-sm text-black/50">{t.hero.location}</span>
                             </div>
                         </div>
 

@@ -112,7 +112,8 @@ export default function CorporatePage() {
                     { q: "Is this just prompt training?", a: "No. Prompting is just a small part. We work on how you think and make decisions." },
                     { q: "Our industry is specific. Will it apply?", a: "Yes. Industries differ. Decision-making doesn't. We work with universal frameworks that we apply to your specific reality." },
                     { q: "Why half a day?", a: "Because focus beats duration. It's about intensity and clarity, not filling time." },
-                    { q: "What's the ROI?", a: "It's not just about hours saved. ROI shows in the decisions you avoid, the priorities you set right, and the confidence your team acts with." }
+                    { q: "What's the ROI?", a: "It's not just about hours saved. ROI shows in the decisions you avoid, the priorities you set right, and the confidence your team acts with." },
+                    { q: "Who should be in the room?", a: "Leadership, C-level, key people across departments. But also anyone who genuinely cares. Interest matters as much as title. At 10-15 people we go deep. With smaller companies, it gets even more personal." }
                 ],
                 details: {
                     title: "Details",
@@ -232,7 +233,8 @@ export default function CorporatePage() {
                     { q: "Je toto len prompt tréning?", a: "Nie. Promptovanie je len malá časť. My riešime spôsob myslenia a rozhodovania." },
                     { q: "Naše odvetvie je špecifické. Bude to aplikovateľné?", a: "Áno. Odvetvia sa líšia. Rozhodovanie nie. Pracujeme s univerzálnymi rámcami, ktoré aplikujeme na vašu konkrétnu realitu." },
                     { q: "Prečo pol dňa?", a: "Pretože fokus prekonáva trvanie. Ide o intenzitu a jasnosť, nie o vyplnenie času." },
-                    { q: "Aké je ROI?", a: "Nejde len o ušetrené hodiny. ROI sa prejaví v rozhodnutiach, ktorým sa vyhnete, v prioritách, ktoré nastavíte správne, a v istote, s akou váš tím koná." }
+                    { q: "Aké je ROI?", a: "Nejde len o ušetrené hodiny. ROI sa prejaví v rozhodnutiach, ktorým sa vyhnete, v prioritách, ktoré nastavíte správne, a v istote, s akou váš tím koná." },
+                    { q: "Kto by mal byť v miestnosti?", a: "Vedenie, C-level, kľúčoví ľudia naprieč oddeleniami. Ale aj ktokoľvek, komu na tom naozaj záleží. Záujem je rovnako dôležitý ako pozícia. Pri 10-15 ľuďoch ideme do hĺbky. Pri menších firmách to býva ešte osobnejšie." }
                 ],
                 details: {
                     title: "Detaily",

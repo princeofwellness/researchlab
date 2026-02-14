@@ -1,58 +1,33 @@
 "use client"
 
-import React, { useRef } from "react"
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import React from "react"
+import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
-import { cn } from "@/lib/utils"
 import { 
     ArrowRight, 
     Users, 
     Mail, 
     Zap, 
     Target, 
-    TrendingUp, 
     Award, 
     Layers, 
     Mic, 
-    Video, 
-    PenTool, 
     Share2, 
     BarChart3, 
-    Globe, 
-    Shield, 
     CheckCircle2,
     Play,
     Instagram,
     Linkedin,
     Cpu,
-    Palette,
-    Lightbulb,
     RefreshCw
 } from "lucide-react"
 
 export default function GameplanPage() {
-    const { scrollYProgress } = useScroll()
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-    })
-
     return (
-        <div className="min-h-screen bg-black text-white font-sans selection:bg-[#0047BB]/30 overflow-x-hidden">
-            <TopNav variant="dark" />
-            
-            <motion.div
-                className="fixed top-[64px] left-0 right-0 h-1 bg-[#0047BB] origin-left z-50"
-                style={{ scaleX }}
-            />
+        <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB] selection:text-white">
+            <TopNav />
 
-            <div className="fixed inset-0 pointer-events-none z-0 opacity-20">
-                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-            </div>
-
-            <main className="relative z-10">
+            <main>
                 <HeroSection />
                 <TrustEngineSection />
                 <MainCharacterSection />
@@ -63,50 +38,48 @@ export default function GameplanPage() {
                 <KeyInsightsSection />
                 <TheNicheSection />
                 <MetricsSection />
-                <FooterSection />
             </main>
+
+            <footer className="py-12 text-center border-t border-black/10 bg-[#e8e1da]">
+                <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.4em] opacity-20">
+                    SORRYWECAN // RESEARCH LAB // 2026
+                </p>
+            </footer>
         </div>
     )
 }
 
 function HeroSection() {
     return (
-        <section className="min-h-[90vh] flex flex-col justify-center items-center px-6 relative overflow-hidden border-b border-white/10">
-            <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-black pointer-events-none" />
+        <section className="min-h-[85vh] flex flex-col justify-center px-6 md:px-12 pt-24 pb-12 relative overflow-hidden">
+            {/* Background Grid */}
+            <div className="absolute inset-0 blueprint-grid opacity-40 pointer-events-none" />
             
-            <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-center space-y-8 max-w-5xl mx-auto relative z-10"
-            >
-                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#0047BB]/30 bg-[#0047BB]/10 backdrop-blur-sm">
-                    <div className="w-2 h-2 rounded-full bg-[#0047BB] animate-pulse" />
-                    <span className="text-xs font-mono tracking-[0.2em] text-blue-300 uppercase">Growth Architecture // 2025-2026</span>
-                </div>
-
-                <h1 className="text-7xl md:text-9xl font-serif-instrument italic tracking-tight leading-[0.9]">
-                    THE <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40 not-italic font-sans font-bold tracking-tighter">PLAYBOOK</span>
-                </h1>
-
-                <p className="text-xl md:text-2xl font-syne font-light text-white/60 max-w-2xl mx-auto">
-                    How to build, grow, and lead in AI education.
-                </p>
-
-                <div className="pt-12">
-                    <p className="text-sm font-mono text-[#0047BB] tracking-widest uppercase">
-                        You are the main character. This is the system.
-                    </p>
-                </div>
-            </motion.div>
-
-            <div className="absolute bottom-12 left-0 right-0 flex justify-center">
-                <motion.div 
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ repeat: Infinity, duration: 2 }}
-                    className="text-white/20"
+            <div className="max-w-5xl mx-auto w-full flex-1 flex flex-col justify-center relative z-10">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="space-y-8"
                 >
-                    <ArrowRight className="rotate-90 w-6 h-6" />
+                    <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
+                        Growth Architecture // 2025-2026
+                    </span>
+
+                    <h1 className="font-syne font-bold text-[10vw] md:text-[6.5vw] leading-[0.9] tracking-tighter">
+                        THE<br />
+                        <span className="text-[#0047BB]">PLAYBOOK</span>
+                    </h1>
+
+                    <p className="text-lg md:text-xl text-black/60 max-w-2xl font-sans-brand leading-relaxed">
+                        How to build, grow, and lead in AI education.
+                    </p>
+
+                    <div className="pt-4 border-t border-black/10 w-full max-w-md">
+                        <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">
+                            You are the main character. This is the system.
+                        </p>
+                    </div>
                 </motion.div>
             </div>
         </section>
@@ -125,12 +98,12 @@ function TrustEngineSection() {
     ]
 
     return (
-        <section className="py-32 px-6 border-b border-white/10 bg-black/50">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-16 md:py-20 px-6 md:px-12 border-t border-black/10 bg-[#f4ede6]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="THE TRUST ENGINE" subtitle="Systematic Authority Building" />
                 
                 <div className="relative">
-                    <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#0047BB]/50 to-transparent -translate-y-1/2 hidden md:block" />
+                    <div className="absolute top-1/2 left-0 right-0 h-px bg-black/10 -translate-y-1/2 hidden md:block" />
                     
                     <div className="grid grid-cols-1 md:grid-cols-7 gap-6 relative z-10">
                         {steps.map((step, i) => (
@@ -139,19 +112,19 @@ function TrustEngineSection() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="group relative flex flex-col items-center text-center space-y-4"
+                                transition={{ delay: i * 0.08 }}
+                                className="group flex flex-col items-center text-center space-y-4"
                             >
-                                <div className="w-16 h-16 rounded-2xl bg-[#0a0a0a] border border-white/10 group-hover:border-[#0047BB] transition-colors flex items-center justify-center relative z-10 shadow-2xl">
-                                    <step.icon className="w-6 h-6 text-white/60 group-hover:text-[#0047BB] transition-colors" />
+                                <div className="w-14 h-14 border border-black/[0.06] bg-white hover:border-[#0047BB]/30 transition-all duration-300 flex items-center justify-center shadow-sm">
+                                    <step.icon className="w-5 h-5 text-black/40 group-hover:text-[#0047BB] transition-colors" />
                                 </div>
-                                <div className="space-y-1">
-                                    <h3 className="text-xs font-bold tracking-widest uppercase text-white">{step.title}</h3>
-                                    <p className="text-[10px] font-mono text-white/40">{step.desc}</p>
+                                <div className="space-y-2 bg-[#f4ede6] px-2">
+                                    <h3 className="text-[10px] font-code-brand font-bold tracking-widest uppercase text-[#0a0a0a]">{step.title}</h3>
+                                    <p className="text-[10px] font-code-brand text-black/40 leading-tight">{step.desc}</p>
                                 </div>
                                 
                                 {i !== steps.length - 1 && (
-                                    <ArrowRight className="md:hidden w-4 h-4 text-white/20 rotate-90 my-2" />
+                                    <ArrowRight className="md:hidden w-4 h-4 text-black/20 rotate-90 my-1" />
                                 )}
                             </motion.div>
                         ))}
@@ -171,25 +144,25 @@ function MainCharacterSection() {
     ]
 
     return (
-        <section className="py-32 px-6 border-b border-white/10">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-t border-black/10 bg-[#e8e1da]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="BECOME THE MAIN CHARACTER" subtitle="Personal Brand Strategy" />
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {roles.map((role, i) => (
                         <motion.div
                             key={i}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className="p-8 rounded-3xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] transition-colors space-y-6 group"
+                            transition={{ delay: i * 0.08 }}
+                            className="p-8 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all group flex flex-col h-full"
                         >
-                            <div className="w-12 h-12 rounded-full bg-[#0047BB]/10 flex items-center justify-center text-[#0047BB] group-hover:scale-110 transition-transform">
-                                <role.icon size={24} />
+                            <div className="w-10 h-10 border border-black/[0.06] bg-white flex items-center justify-center text-[#0047BB] mb-6 shadow-sm">
+                                <role.icon size={20} strokeWidth={1.5} />
                             </div>
-                            <h3 className="text-2xl font-serif-instrument italic">{role.title}</h3>
-                            <p className="text-sm text-white/60 leading-relaxed font-light">{role.desc}</p>
+                            <h3 className="text-xl font-syne font-bold mb-4">{role.title}</h3>
+                            <p className="text-sm text-black/60 leading-relaxed font-sans-brand flex-1">{role.desc}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -209,43 +182,42 @@ function ContentMachineSection() {
     ]
 
     return (
-        <section className="py-32 px-6 border-b border-white/10 bg-white/[0.02]">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-16 md:py-20 px-6 md:px-12 border-t border-black/10 bg-[#f4ede6]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="CONTENT MACHINE" subtitle="Production Schedule" />
                 
-                <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12">
-                    <div className="border border-white/10 rounded-2xl overflow-hidden">
+                <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
+                    <div className="border border-black/[0.06] overflow-hidden bg-white/40">
                         <table className="w-full text-left">
-                            <thead className="bg-white/5 text-xs font-mono uppercase tracking-widest text-white/40">
+                            <thead className="bg-black/[0.03] text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 border-b border-black/[0.06]">
                                 <tr>
-                                    <th className="p-6 font-normal">Type</th>
-                                    <th className="p-6 font-normal hidden md:table-cell">Format</th>
-                                    <th className="p-6 font-normal hidden md:table-cell">Platform</th>
-                                    <th className="p-6 font-normal text-right">Freq</th>
+                                    <th className="p-5 font-normal">Type</th>
+                                    <th className="p-5 font-normal hidden md:table-cell">Format</th>
+                                    <th className="p-5 font-normal hidden md:table-cell">Platform</th>
+                                    <th className="p-5 font-normal text-right">Freq</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-white/5">
+                            <tbody className="divide-y divide-black/[0.06]">
                                 {content.map((row, i) => (
-                                    <tr key={i} className="hover:bg-white/5 transition-colors">
-                                        <td className="p-6 font-bold text-white">{row.type}</td>
-                                        <td className="p-6 text-white/60 text-sm hidden md:table-cell">{row.format}</td>
-                                        <td className="p-6 text-white/60 text-sm hidden md:table-cell">{row.platform}</td>
-                                        <td className="p-6 text-[#0047BB] font-mono text-right">{row.freq}</td>
+                                    <tr key={i} className="hover:bg-black/[0.02] transition-colors">
+                                        <td className="p-5 font-bold font-syne text-sm">{row.type}</td>
+                                        <td className="p-5 text-black/60 text-sm hidden md:table-cell font-sans-brand">{row.format}</td>
+                                        <td className="p-5 text-black/60 text-sm hidden md:table-cell font-sans-brand">{row.platform}</td>
+                                        <td className="p-5 text-[#0047BB] font-code-brand text-xs font-bold text-right">{row.freq}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
 
-                    <div className="p-8 rounded-2xl bg-[#0047BB] text-white flex flex-col justify-center space-y-6 relative overflow-hidden">
-                        <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
-                        <h3 className="text-3xl font-serif-instrument italic relative z-10">The 1 → 10 Rule</h3>
-                        <p className="text-white/80 leading-relaxed relative z-10">
+                    <div className="p-8 border border-black/[0.06] bg-black/[0.03] flex flex-col justify-center space-y-6">
+                        <h3 className="text-2xl font-syne font-bold">The 1 → 10 Rule</h3>
+                        <p className="text-black/60 leading-relaxed font-serif-instrument italic text-lg">
                             Every piece becomes 10. <br/>
                             Anchor → clips → email → community thread → case study.
                         </p>
-                        <div className="h-px w-full bg-white/20" />
-                        <p className="text-xs font-mono uppercase tracking-widest opacity-60">Maximize Leverage</p>
+                        <div className="h-px w-full bg-black/10" />
+                        <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30">Maximize Leverage</p>
                     </div>
                 </div>
             </div>
@@ -255,50 +227,50 @@ function ContentMachineSection() {
 
 function SocialPlaybookSection() {
     return (
-        <section className="py-32 px-6 border-b border-white/10">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-t border-black/10 bg-[#e8e1da]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="SOCIAL PLAYBOOK" subtitle="Platform Strategy" />
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="p-10 rounded-[40px] border border-white/10 bg-[#0077b5]/5 hover:bg-[#0077b5]/10 transition-colors space-y-8">
-                        <div className="flex items-center gap-4">
-                            <Linkedin className="w-8 h-8 text-[#0077b5]" />
-                            <h3 className="text-2xl font-bold tracking-tight">LinkedIn <span className="text-sm font-normal text-white/40 ml-2">(Primary)</span></h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="p-8 md:p-10 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all space-y-8">
+                        <div className="flex items-center gap-4 border-b border-black/5 pb-6">
+                            <Linkedin className="w-6 h-6 text-[#0047BB]" />
+                            <h3 className="text-xl font-syne font-bold">LinkedIn <span className="text-sm font-sans-brand font-normal text-black/40 ml-1">(Primary)</span></h3>
                         </div>
                         <ul className="space-y-4">
                             {["Long-form posts with strong hooks", "'Art meets tech' positioning", "Build-in-public threads", "Workflow teardowns with screenshots", "Comment engagement (reply to everyone)"].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-white/70">
-                                    <CheckCircle2 className="w-5 h-5 text-[#0077b5] shrink-0" />
-                                    <span>{item}</span>
+                                <li key={i} className="flex items-start gap-3 text-black/60">
+                                    <CheckCircle2 className="w-4 h-4 text-[#0047BB] shrink-0 mt-0.5" />
+                                    <span className="text-sm font-sans-brand">{item}</span>
                                 </li>
                             ))}
                         </ul>
-                        <div className="pt-4 border-t border-white/10">
-                            <p className="text-xs font-mono uppercase tracking-widest text-[#0077b5]">Goal: Thought Leadership + Email Capture</p>
+                        <div className="pt-6 border-t border-black/10">
+                            <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.2em] text-[#0047BB]">Goal: Thought Leadership + Email Capture</p>
                         </div>
                     </div>
 
-                    <div className="p-10 rounded-[40px] border border-white/10 bg-[#E1306C]/5 hover:bg-[#E1306C]/10 transition-colors space-y-8">
-                        <div className="flex items-center gap-4">
-                            <Instagram className="w-8 h-8 text-[#E1306C]" />
-                            <h3 className="text-2xl font-bold tracking-tight">Instagram <span className="text-sm font-normal text-white/40 ml-2">(Secondary)</span></h3>
+                    <div className="p-8 md:p-10 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all space-y-8">
+                        <div className="flex items-center gap-4 border-b border-black/5 pb-6">
+                            <Instagram className="w-6 h-6 text-[#0047BB]" />
+                            <h3 className="text-xl font-syne font-bold">Instagram <span className="text-sm font-sans-brand font-normal text-black/40 ml-1">(Secondary)</span></h3>
                         </div>
                         <ul className="space-y-4">
                             {["Reels: quick AI demos, before/after", "Stories: daily, raw, behind-scenes", "Carousels: frameworks, comparisons", "Visual aesthetic focus", "Direct Message engagement"].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-white/70">
-                                    <CheckCircle2 className="w-5 h-5 text-[#E1306C] shrink-0" />
-                                    <span>{item}</span>
+                                <li key={i} className="flex items-start gap-3 text-black/60">
+                                    <CheckCircle2 className="w-4 h-4 text-[#0047BB] shrink-0 mt-0.5" />
+                                    <span className="text-sm font-sans-brand">{item}</span>
                                 </li>
                             ))}
                         </ul>
-                        <div className="pt-4 border-t border-white/10">
-                            <p className="text-xs font-mono uppercase tracking-widest text-[#E1306C]">Goal: Reach + Personality + Younger Audience</p>
+                        <div className="pt-6 border-t border-black/10">
+                            <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.2em] text-[#0047BB]">Goal: Reach + Personality + Younger Audience</p>
                         </div>
                     </div>
                 </div>
 
                 <div className="text-center">
-                    <p className="inline-block px-6 py-3 rounded-full border border-white/10 bg-white/5 text-sm font-mono text-white/60">
+                    <p className="inline-block px-8 py-4 border border-black/[0.06] bg-white/50 text-sm text-black/60 font-code-brand tracking-wide">
                         Platform = Discovery. Email = Ownership. Community = Moat.
                     </p>
                 </div>
@@ -316,24 +288,24 @@ function CommunityArcSection() {
     ]
 
     return (
-        <section className="py-32 px-6 border-b border-white/10 bg-white/[0.02]">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-16 md:py-20 px-6 md:px-12 border-t border-black/10 bg-[#f4ede6]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="THE COMMUNITY ARC" subtitle="Growth Timeline" />
                 
-                <div className="relative border-l-2 border-white/10 ml-4 md:ml-0 md:border-l-0 md:border-t-2 md:grid md:grid-cols-4 md:gap-8">
+                <div className="relative border-l-2 border-black/10 ml-4 md:ml-0 md:border-l-0 md:border-t-2 md:grid md:grid-cols-4 md:gap-8">
                     {phases.map((phase, i) => (
                         <div key={i} className="pl-8 pb-12 md:pl-0 md:pb-0 md:pt-8 relative">
-                            <div className="absolute left-[-5px] top-0 w-3 h-3 rounded-full bg-[#0047BB] md:top-[-7px] md:left-0" />
+                            <div className="absolute left-[-5px] top-0 w-3 h-3 rounded-full bg-[#0047BB] md:top-[-7px] md:left-0 ring-4 ring-[#f4ede6]" />
                             
                             <div className="space-y-4">
-                                <div className="space-y-1">
-                                    <span className="text-xs font-mono text-[#0047BB] uppercase tracking-widest">{phase.time}</span>
-                                    <h3 className="text-xl font-bold">{phase.title}</h3>
+                                <div className="space-y-2">
+                                    <span className="text-[10px] font-code-brand font-bold text-[#0047BB] uppercase tracking-[0.2em] block">{phase.time}</span>
+                                    <h3 className="text-lg font-syne font-bold leading-tight">{phase.title}</h3>
                                 </div>
                                 <ul className="space-y-2">
                                     {phase.items.map((item, j) => (
-                                        <li key={j} className="text-sm text-white/60 flex items-start gap-2">
-                                            <span className="text-white/20">•</span>
+                                        <li key={j} className="text-sm text-black/60 flex items-start gap-2 font-sans-brand">
+                                            <span className="text-black/20 mt-1">•</span>
                                             {item}
                                         </li>
                                     ))}
@@ -349,49 +321,49 @@ function CommunityArcSection() {
 
 function EmailArchitectureSection() {
     return (
-        <section className="py-32 px-6 border-b border-white/10">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-t border-black/10 bg-[#e8e1da]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="EMAIL ARCHITECTURE" subtitle="The Sequences" />
                 
-                <div className="flex flex-col items-center space-y-8 max-w-4xl mx-auto">
-                    <div className="px-8 py-4 rounded-full border border-white/20 bg-white/5 text-center">
-                        <span className="font-bold">New Subscriber</span>
+                <div className="flex flex-col items-center space-y-6 max-w-3xl mx-auto">
+                    <div className="px-8 py-4 border border-black/[0.06] bg-white text-center shadow-sm">
+                        <span className="font-bold font-syne">New Subscriber</span>
                     </div>
                     
-                    <div className="h-8 w-px bg-white/20" />
+                    <div className="h-8 w-px bg-black/10" />
                     
-                    <div className="p-6 rounded-2xl border border-[#0047BB] bg-[#0047BB]/10 text-center w-full max-w-md">
-                        <h4 className="font-bold text-[#0047BB]">Welcome Series</h4>
-                        <p className="text-xs text-white/60 mt-1">5 emails, 14 days • Value first, ask later</p>
+                    <div className="p-6 border-2 border-[#0047BB]/30 bg-[#0047BB]/5 text-center w-full max-w-md">
+                        <h4 className="font-bold text-[#0047BB] font-syne text-lg">Welcome Series</h4>
+                        <p className="text-[10px] font-code-brand text-black/40 mt-2 uppercase tracking-wider">5 emails, 14 days • Value first, ask later</p>
                     </div>
 
-                    <div className="h-8 w-px bg-white/20" />
+                    <div className="h-8 w-px bg-black/10" />
 
-                    <div className="grid grid-cols-3 gap-4 w-full">
+                    <div className="grid grid-cols-3 gap-3 w-full">
                         {["Track A: AI Beginner", "Track B: AI Operator", "Track C: AI Builder"].map((track, i) => (
-                            <div key={i} className="p-4 rounded-xl border border-white/10 bg-white/[0.02] text-center text-sm hover:border-white/30 transition-colors">
+                            <div key={i} className="p-4 border border-black/[0.06] bg-black/[0.03] text-center text-sm hover:border-[#0047BB]/30 transition-colors font-sans-brand">
                                 {track}
                             </div>
                         ))}
                     </div>
 
-                    <div className="h-8 w-px bg-white/20" />
+                    <div className="h-8 w-px bg-black/10" />
 
-                    <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] text-center space-y-2">
-                            <Mail className="w-6 h-6 mx-auto text-white/40" />
-                            <h4 className="font-bold">Weekly Newsletter</h4>
-                            <p className="text-xs text-white/40">Ongoing value</p>
+                    <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="p-6 border border-black/[0.06] bg-black/[0.03] text-center space-y-3 hover:border-[#0047BB]/30 transition-colors">
+                            <Mail className="w-5 h-5 mx-auto text-black/30" />
+                            <h4 className="font-bold font-syne">Weekly Newsletter</h4>
+                            <p className="text-[10px] font-code-brand text-black/30 uppercase tracking-wider">Ongoing value</p>
                         </div>
-                        <div className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] text-center space-y-2">
-                            <RocketIcon className="w-6 h-6 mx-auto text-white/40" />
-                            <h4 className="font-bold">Launch Sequence</h4>
-                            <p className="text-xs text-white/40">When product opens</p>
+                        <div className="p-6 border border-black/[0.06] bg-black/[0.03] text-center space-y-3 hover:border-[#0047BB]/30 transition-colors">
+                            <RocketIcon className="w-5 h-5 mx-auto text-black/30" />
+                            <h4 className="font-bold font-syne">Launch Sequence</h4>
+                            <p className="text-[10px] font-code-brand text-black/30 uppercase tracking-wider">When product opens</p>
                         </div>
-                        <div className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] text-center space-y-2">
-                            <RefreshCw className="w-6 h-6 mx-auto text-white/40" />
-                            <h4 className="font-bold">Re-engagement</h4>
-                            <p className="text-xs text-white/40">If inactive 30 days</p>
+                        <div className="p-6 border border-black/[0.06] bg-black/[0.03] text-center space-y-3 hover:border-[#0047BB]/30 transition-colors">
+                            <RefreshCw className="w-5 h-5 mx-auto text-black/30" />
+                            <h4 className="font-bold font-syne">Re-engagement</h4>
+                            <p className="text-[10px] font-code-brand text-black/30 uppercase tracking-wider">If inactive 30 days</p>
                         </div>
                     </div>
                 </div>
@@ -413,16 +385,23 @@ function KeyInsightsSection() {
     ]
 
     return (
-        <section className="py-32 px-6 border-b border-white/10 bg-white/[0.02]">
-            <div className="max-w-7xl mx-auto space-y-20">
+        <section className="py-16 md:py-20 px-6 md:px-12 border-t border-black/10 bg-[#f4ede6]">
+            <div className="max-w-5xl mx-auto space-y-16">
                 <SectionHeader title="WHAT WORKS IN 2025-2026" subtitle="Key Insights" />
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {insights.map((insight, i) => (
-                        <div key={i} className="p-6 rounded-2xl border border-white/5 bg-black hover:border-[#0047BB]/50 transition-colors group">
-                            <h4 className="text-lg font-bold mb-3 group-hover:text-[#0047BB] transition-colors">{insight.title}</h4>
-                            <p className="text-sm text-white/50 leading-relaxed">{insight.desc}</p>
-                        </div>
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: i * 0.05 }}
+                            className="p-6 border border-black/[0.06] bg-white/50 hover:border-[#0047BB]/30 transition-colors group"
+                        >
+                            <h4 className="font-bold mb-3 group-hover:text-[#0047BB] transition-colors font-syne leading-tight">{insight.title}</h4>
+                            <p className="text-sm text-black/50 leading-relaxed font-sans-brand">{insight.desc}</p>
+                        </motion.div>
                     ))}
                 </div>
             </div>
@@ -432,33 +411,35 @@ function KeyInsightsSection() {
 
 function TheNicheSection() {
     return (
-        <section className="py-40 px-6 border-b border-white/10 overflow-hidden relative">
-            <div className="max-w-7xl mx-auto text-center space-y-16 relative z-10">
-                <div className="space-y-4">
-                    <h2 className="text-5xl md:text-7xl font-serif-instrument italic">Where Art Meets Technology</h2>
-                    <p className="text-xl text-white/60 max-w-2xl mx-auto">
+        <section className="py-24 md:py-32 px-6 md:px-12 border-t border-black/10 bg-[#e8e1da]">
+            <div className="max-w-5xl mx-auto space-y-16">
+                <div className="max-w-3xl mx-auto text-center space-y-8">
+                    <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
+                        The Niche
+                    </span>
+                    <h2 className="font-syne font-bold text-4xl md:text-5xl tracking-tighter">
+                        Where Art Meets Technology
+                    </h2>
+                    <p className="text-lg text-black/60 font-serif-instrument italic">
                         Most AI education is technical. Most creative education ignores AI. <br/>
-                        <span className="text-white font-bold">You sit at the intersection.</span>
+                        <span className="text-[#0a0a0a] font-bold not-italic font-sans-brand">You sit at the intersection.</span>
                     </p>
                 </div>
 
-                <div className="relative h-[400px] w-full max-w-2xl mx-auto flex items-center justify-center">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-64 h-64 rounded-full border-2 border-[#0047BB] bg-[#0047BB]/10 mix-blend-screen flex items-center justify-center">
-                        <span className="font-bold tracking-widest text-[#0047BB] -mt-20">TASTE</span>
-                    </div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full border-2 border-purple-500 bg-purple-500/10 mix-blend-screen flex items-center justify-center">
-                        <span className="font-bold tracking-widest text-purple-500 mt-20 mr-10">LEVERAGE</span>
-                    </div>
-                    <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full border-2 border-emerald-500 bg-emerald-500/10 mix-blend-screen flex items-center justify-center">
-                        <span className="font-bold tracking-widest text-emerald-500 mt-20 ml-10">CLARITY</span>
-                    </div>
-                    
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-xl tracking-widest z-20 drop-shadow-lg">
-                        YOU
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+                    {[
+                        { label: "TASTE", desc: "The creative eye. Design thinking. Aesthetic sensibility." },
+                        { label: "LEVERAGE", desc: "AI tools. Automation. Systems that scale your output." },
+                        { label: "CLARITY", desc: "Strategy. Communication. Making complexity simple." },
+                    ].map((item, i) => (
+                        <div key={i} className="text-center space-y-4 p-8 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-colors">
+                            <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB] block">{item.label}</span>
+                            <p className="text-sm text-black/50 font-sans-brand leading-relaxed">{item.desc}</p>
+                        </div>
+                    ))}
                 </div>
 
-                <p className="text-sm font-mono text-white/40 uppercase tracking-widest">
+                <p className="text-center text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30">
                     This intersection is the brand. Everything flows from here.
                 </p>
             </div>
@@ -468,56 +449,49 @@ function TheNicheSection() {
 
 function MetricsSection() {
     return (
-        <section className="py-32 px-6 border-b border-white/10">
-            <div className="max-w-7xl mx-auto space-y-20">
-                <SectionHeader title="METRICS THAT MATTER" subtitle="Dashboard Preview" />
+        <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0a0a0a] text-white">
+            <div className="max-w-5xl mx-auto space-y-16">
+                <div className="space-y-2 border-l-2 border-[#0047BB] pl-6">
+                    <h2 className="text-4xl md:text-5xl font-syne font-bold tracking-tighter">METRICS THAT MATTER</h2>
+                    <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40">Dashboard Preview</p>
+                </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <MetricCard title="Attention" kpis={["Reach", "Saves", "Shares", "Watch completion"]} icon={Play} />
                     <MetricCard title="List" kpis={["Subs/day", "Click rate", "Reply rate", "Unsub rate"]} icon={Mail} />
                     <MetricCard title="Community" kpis={["Activation rate", "WAU/MAU", "Contributions", "Peer help"]} icon={Users} />
                     <MetricCard title="Revenue" kpis={["Free→Buyer conv.", "LTV", "Churn", "Referral %"]} icon={BarChart3} />
+                </div>
+
+                <div className="text-center pt-12">
+                    <p className="text-3xl md:text-4xl font-syne font-bold text-white/90">
+                        "Stop planning. Start shipping. Proof compounds."
+                    </p>
                 </div>
             </div>
         </section>
     )
 }
 
-function FooterSection() {
-    return (
-        <footer className="py-40 px-6 text-center bg-black">
-            <div className="space-y-8">
-                <h2 className="text-4xl md:text-6xl font-serif-instrument italic text-white/80">
-                    "Stop planning. Start shipping. Proof compounds."
-                </h2>
-                <div className="w-20 h-1 bg-[#0047BB] mx-auto" />
-                <p className="text-xs font-mono text-white/30 uppercase tracking-[0.3em]">
-                    Research Lab // Growth Gameplan
-                </p>
-            </div>
-        </footer>
-    )
-}
-
 function SectionHeader({ title, subtitle }: { title: string, subtitle: string }) {
     return (
         <div className="space-y-2 border-l-2 border-[#0047BB] pl-6">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter">{title}</h2>
-            <p className="text-lg font-mono text-white/40 uppercase tracking-widest">{subtitle}</p>
+            <h2 className="text-4xl md:text-5xl font-syne font-bold tracking-tighter">{title}</h2>
+            <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{subtitle}</p>
         </div>
     )
 }
 
-function MetricCard({ title, kpis, icon: Icon }: { title: string, kpis: string[], icon: any }) {
+function MetricCard({ title, kpis, icon: Icon }: { title: string, kpis: string[], icon: React.ComponentType<{ size?: string | number }> }) {
     return (
-        <div className="p-8 rounded-3xl border border-white/10 bg-white/[0.02] space-y-6">
+        <div className="p-8 border border-white/10 space-y-6 bg-white/[0.02] hover:bg-white/[0.05] transition-colors">
             <div className="flex items-center gap-3 text-[#0047BB]">
-                <Icon size={20} />
-                <h3 className="font-bold tracking-widest uppercase">{title}</h3>
+                <Icon size={18} />
+                <h3 className="text-[10px] font-code-brand font-bold tracking-[0.2em] uppercase">{title}</h3>
             </div>
             <ul className="space-y-3">
                 {kpis.map((kpi, i) => (
-                    <li key={i} className="text-sm text-white/60 border-b border-white/5 pb-2 last:border-0">
+                    <li key={i} className="text-sm text-white/60 border-b border-white/5 pb-2 last:border-0 font-mono">
                         {kpi}
                     </li>
                 ))}
@@ -526,7 +500,7 @@ function MetricCard({ title, kpis, icon: Icon }: { title: string, kpis: string[]
     )
 }
 
-function RocketIcon(props: any) {
+function RocketIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}

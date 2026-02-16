@@ -303,13 +303,13 @@ export default function HomePage() {
     const t = content[lang]
 
     const partners = [
-        { name: "Meta", logo: "/logos/meta.png", size: "h-6 md:h-7" },
-        { name: "Tatra Banka", logo: "/logos/tatrabanka.png", size: "h-10 md:h-12" },
-        { name: "Raiffeisen", logo: "/logos/raiffeisen.png", size: "h-10 md:h-12" },
-        { name: "VUB Banka", logo: "/logos/vub.png", size: "h-6 md:h-7" },
-        { name: "Sennheiser", logo: "/logos/sennheiser.png", size: "h-10 md:h-12" },
-        { name: "Forbes", logo: "/logos/forbes.png", size: "h-6 md:h-7" },
-        { name: "Audi", logo: "/logos/audi.svg", size: "h-6 md:h-7" }
+        { name: "Meta", logo: "/logos/meta.png", size: "h-5 md:h-6" },
+        { name: "Tatra Banka", logo: "/logos/tatrabanka.png", size: "h-8 md:h-9" },
+        { name: "Raiffeisen", logo: "/logos/raiffeisen.png", size: "h-8 md:h-9" },
+        { name: "VUB Banka", logo: "/logos/vub.png", size: "h-5 md:h-6" },
+        { name: "Sennheiser", logo: "/logos/sennheiser.png", size: "h-8 md:h-9" },
+        { name: "Forbes", logo: "/logos/forbes.png", size: "h-5 md:h-6" },
+        { name: "Audi", logo: "/logos/audi.svg", size: "h-5 md:h-6" }
     ]
 
     return (
@@ -393,7 +393,7 @@ export default function HomePage() {
                         <span className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30 shrink-0">
                             {t.trust.label}
                         </span>
-                        <div className="flex items-center gap-10 md:gap-12 flex-wrap">
+                        <div className="flex items-center gap-8 md:gap-10 flex-wrap">
                             {partners.map((partner) => (
                                 <div 
                                     key={partner.name}

@@ -19,7 +19,7 @@ export default function CorporatePage() {
                     line1: "Your Team.",
                     line2: "New Operating System."
                 },
-                subline: "Creativity. Product. Transformation. Applied to your reality.",
+                subline: "",
                 description: "We don't come with ready-made answers. We think with you about the decisions ahead of you.",
                 price: "5,900",
                 duration: "4-5 hours",
@@ -140,7 +140,7 @@ export default function CorporatePage() {
                     line1: "Váš Tím.",
                     line2: "Nový Operačný Systém."
                 },
-                subline: "Kreativita. Produkt. Transformácia. Aplikované na vašu realitu.",
+                subline: "",
                 description: "Neprichádzame s hotovými odpoveďami, premýšľame s vami nad rozhodnutiami, ktoré sú pred vami.",
                 price: "5 900",
                 duration: "4-5 hodín",
@@ -292,14 +292,16 @@ export default function CorporatePage() {
                         <span className="text-[#0047BB]">{t.hero.title.line2}</span>
                     </motion.h1>
 
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.15 }}
-                        className="text-lg md:text-xl text-black/40 mt-2"
-                    >
-                        {t.hero.subline}
-                    </motion.p>
+                    {t.hero.subline && (
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.15 }}
+                            className="text-lg md:text-xl text-black/40 mt-2"
+                        >
+                            {t.hero.subline}
+                        </motion.p>
+                    )}
 
                     <motion.p
                         initial={{ opacity: 0 }}

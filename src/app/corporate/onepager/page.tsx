@@ -10,7 +10,7 @@ export default function CorporateOnePager() {
             hero: {
                 label: "CORPORATE WORKSHOP",
                 title: { line1: "Your Team.", line2: "New Operating System." },
-                subline: "Creativity. Product. Transformation. Applied to your reality.",
+                subline: "",
                 desc: "We don't come with ready-made answers. We think with you about the decisions ahead of you.",
                 info: "HALF DAY · 10-15 PEOPLE · €5,900"
             },
@@ -89,7 +89,7 @@ export default function CorporateOnePager() {
             hero: {
                 label: "FIREMNÝ WORKSHOP",
                 title: { line1: "Váš Tím.", line2: "Nový Operačný Systém." },
-                subline: "Kreativita. Produkt. Transformácia. Aplikované na vašu realitu.",
+                subline: "",
                 desc: "Neprichádzame s hotovými odpoveďami, premýšľame s vami nad rozhodnutiami, ktoré sú pred vami.",
                 info: "POL DŇA · 10-15 ĽUDÍ · €5 900"
             },

@@ -1,9 +1,43 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useRef, useCallback } from "react"
+import { toPng } from "html-to-image"
 
 export default function StoriesPage() {
     const [lang, setLang] = useState<'en' | 'sk'>('en')
+    const [downloading, setDownloading] = useState<number | null>(null)
+    const slideRefs = useRef<(HTMLDivElement | null)[]>([])
+
+    const downloadSlide = useCallback(async (index: number, slideType: string) => {
+        const node = slideRefs.current[index]
+        if (!node) return
+
+        setDownloading(index)
+        try {
+            // Target 1080x1920 (IG story resolution)
+            const scale = 1080 / node.offsetWidth
+            const dataUrl = await toPng(node, {
+                width: node.offsetWidth,
+                height: node.offsetHeight,
+                pixelRatio: scale,
+                filter: (domNode) => {
+                    // Hide download buttons in export
+                    if (domNode instanceof HTMLElement && domNode.dataset.downloadBtn) return false
+                    return true
+                },
+                cacheBust: true,
+            })
+
+            const link = document.createElement("a")
+            link.download = `mindshift-${lang}-${String(index + 1).padStart(2, "0")}-${slideType}.png`
+            link.href = dataUrl
+            link.click()
+        } catch (err) {
+            console.error("Failed to export slide:", err)
+        } finally {
+            setDownloading(null)
+        }
+    }, [lang])
 
     const content = {
         en: {
@@ -376,8 +410,22 @@ export default function StoriesPage() {
 
             <div className="stories-container font-sans-brand text-[#0a0a0a]">
                 {t.slides.map((slide: any, i: number) => (
-                    <div key={i} className={`${slideClass} story-slide`}>
+                    <div key={i} ref={el => { slideRefs.current[i] = el }} className={`${slideClass} story-slide`}>
                         
+                        <button
+                            data-download-btn="true"
+                            onClick={() => downloadSlide(i, slide.type)}
+                            disabled={downloading === i}
+                            className="absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center bg-black/5 hover:bg-[#0047BB] hover:text-white text-black/30 rounded-full transition-colors print:hidden text-[13px]"
+                            title="Download as PNG"
+                        >
+                            {downloading === i ? (
+                                <svg className="animate-spin w-4 h-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>
+                            ) : (
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            )}
+                        </button>
+
                         <div className="flex-grow flex flex-col justify-center">
                             
                             {slide.type === 'title' && (

@@ -8,6 +8,7 @@ export default function LabPage() {
     const onepagers = [
         { name: "Public One-Pager", href: "/public/onepager", desc: "THE MINDSHIFT session deck (PDF export)" },
         { name: "Corporate One-Pager", href: "/corporate/onepager", desc: "Corporate workshop deck (PDF export)" },
+        { name: "Instagram Stories", href: "/public/stories", desc: "22 story slides for Instagram (EN/SK, screenshot-ready)" },
     ]
 
     const pages = [

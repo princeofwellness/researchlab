@@ -242,22 +242,22 @@ export default function MarketingSyncPage() {
 
                 {/* ==================== CONTENT READY TO POST ==================== */}
                 <section className="mb-16">
-                    <h2 className="font-serif text-2xl md:text-3xl italic mb-2 text-black">Content: Ready to Post</h2>
-                    <p className="text-sm text-black/40 mb-8">Three LinkedIn posts drafted. Copy-paste and go.</p>
+                    <h2 className="font-serif text-2xl md:text-3xl italic mb-2 text-black">Content: Drafts to Edit</h2>
+                    <p className="text-sm text-black/40 mb-8">Starting points. [FILL IN] = needs real numbers from you before posting.</p>
 
                     <div className="space-y-8">
                         <ContentDraft
                             num="1"
                             format="Long Format — Personal Story"
-                            platform="LinkedIn"
-                            when="Post TODAY (Feb 16)"
+                            platform="LinkedIn (Roman / Tibor)"
+                            when="This week"
                             body={`Something changed in how work gets done. Most people haven't caught up.
 
-For four months, we've been giving away free AI toolkits. Thousands of downloads. No catch.
+For the past [FILL IN] months, we've been [FILL IN — what you've actually been doing: toolkits? consulting? building?].
 
-And the same question kept coming back: "This is great, but can you just show me how YOU actually use it?"
+And the same question kept coming back: "Can you just show me how YOU actually use it?"
 
-Fair question. Toolkits give you the what. But the real value is in the how — the judgment calls, the taste, the knowing when NOT to use AI.
+Fair question. [FILL IN] gives you the what. But the real value is in the how — the judgment calls, the taste, the knowing when NOT to use AI.
 
 Three things we've learned building with AI daily:
 
@@ -271,7 +271,7 @@ So we're doing something about it. Feb 26. One room. 40 people. Three hours.
 
 Not a course. Not slides. Not theory. Just how we actually work.
 
-Roland on taste. Jan on leverage. Me on clarity.
+Roland on taste. Jan on leverage. Roman on clarity.
 
 If you use AI at work and feel like you're leaving potential on the table — this is for you.
 
@@ -281,7 +281,7 @@ If you use AI at work and feel like you're leaving potential on the table — th
                         <ContentDraft
                             num="2"
                             format="Short Format — Punchy / Contrarian"
-                            platform="LinkedIn"
+                            platform="LinkedIn (Roman / Tibor)"
                             when="Feb 18-19"
                             body={`You don't need to learn prompting.
 
@@ -298,10 +298,10 @@ Link below.`}
 
                         <ContentDraft
                             num="3"
-                            format="Medium Format — Proof / Numbers"
-                            platform="LinkedIn"
+                            format="Medium Format — Real Proof"
+                            platform="LinkedIn (Roman / Tibor)"
                             when="Feb 21-22"
-                            body={`3 founders. 4 months of free toolkits. 10,000+ downloads.
+                            body={`3 founders. [FILL IN — what's the real proof? months of toolkits? number of downloads? client projects?]
 
 One question kept coming up:
 
@@ -317,7 +317,7 @@ Clarity — how to think when everything moves (Roman)
 
 Not a webinar. Not a course. 40 seats, and we want to talk to every person in the room.
 
-Last spots available. Link in comments.`}
+[FILL IN — how many seats left?] spots remaining. Link in comments.`}
                         />
                     </div>
                 </section>
@@ -357,37 +357,84 @@ Last spots available. Link in comments.`}
                     </div>
                 </section>
 
-                {/* ==================== OUTREACH ENGINE ==================== */}
+                {/* ==================== CHANNEL MAP ==================== */}
                 <section className="mb-16">
-                    <h2 className="font-serif text-2xl italic mb-6 text-black">Outreach Engine</h2>
-                    <p className="text-sm text-black/40 mb-6">70% of tickets come from personal outreach. This IS the channel.</p>
+                    <h2 className="font-serif text-2xl italic mb-6 text-black">Channel Map — Who Posts Where</h2>
+                    <p className="text-sm text-black/40 mb-6">Specific assignments. No ambiguity.</p>
                     
                     <div className="border border-black/10 overflow-hidden mb-6">
-                        <div className="grid grid-cols-[100px_1fr_80px] border-b border-black/10 bg-black/[0.02]">
-                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40 border-r border-black/10">Channel</div>
-                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40 border-r border-black/10">Action</div>
-                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">Target</div>
+                        <div className="grid grid-cols-[120px_1fr] border-b border-black/10 bg-black/[0.02]">
+                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40 border-r border-black/10">Who</div>
+                            <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">Where + What</div>
                         </div>
                         {[
-                            ["DMs", "Each founder: 10/day personal messages to warm leads", "15-20"],
-                            ["Email list", "3 emails to 350 subscribers (Slovak, short, link to buy)", "15-35"],
-                            ["SWC B2B", "Edo/Tibor: client/partner database outreach", "10-20"],
-                            ["IG", "Daily stories (BTS, countdown, polls) + founders' personal", "5-10"],
-                            ["LinkedIn", "3 posts from founders' personal profiles (EN)", "3-5"],
-                            ["Preview", "Free 30-45 min session Feb 17-18 — convert to tickets", "5-10"],
-                        ].map(([channel, action, target], i) => (
-                            <div key={i} className="grid grid-cols-[100px_1fr_80px] border-b border-black/10 last:border-0 text-sm">
-                                <div className="p-3 font-bold border-r border-black/10 bg-black/[0.01]">{channel}</div>
-                                <div className="p-3 text-black/70 border-r border-black/10">{action}</div>
-                                <div className="p-3 font-bold text-[#0047BB] text-center">{target}</div>
+                            ["Roland", "IG (personal) + Telegram group — share, story, personal invite"],
+                            ["Tibor", "LinkedIn — post about THE MINDSHIFT from his profile"],
+                            ["Roman", "LinkedIn — post about THE MINDSHIFT from his profile"],
+                            ["SWC", "Story reshare of Research Lab posts — amplification"],
+                            ["SWC + RL", "Collab post (joint post from both accounts)"],
+                            ["Research Lab", "IG feed + stories — the main brand channel"],
+                            ["Research Lab", "Emails to subscriber list (~350 people)"],
+                            ["Research Lab", "Prepare LinkedIn posts for founders to publish"],
+                            ["Eduard", "Partner outreach — prepared template PDFs (public + corporate) + message to send"],
+                            ["Everyone", "Private DMs — personal messages from own networks"],
+                            ["Everyone", "Personal shares — forward to friends, colleagues, groups"],
+                        ].map(([who, what], i) => (
+                            <div key={i} className="grid grid-cols-[120px_1fr] border-b border-black/10 last:border-0 text-sm">
+                                <div className="p-3 font-bold border-r border-black/10 bg-black/[0.01]">{who}</div>
+                                <div className="p-3 text-black/70">{what}</div>
                             </div>
                         ))}
                     </div>
 
+                    <div className="bg-black/[0.03] p-4 text-sm mb-6">
+                        <p className="font-bold mb-1">Eduard{"'"}s Partner Kit</p>
+                        <p className="text-black/60">Prepare for Eduard: public one-pager PDF + corporate one-pager PDF + a short message template he can forward to partners. Make it easy — one forward, done.</p>
+                    </div>
+
                     <div className="bg-black/[0.03] p-4 text-sm">
-                        <p className="font-bold mb-1">The Math (unchanged)</p>
-                        <p className="text-black/60">3 founders x 25 DMs = 75 warm touches at 20% = 15 seats. Email 350 x 10% = 35. SWC partners = 10-20. Total reachable: 50-80. We need 40.</p>
-                        <p className="font-bold text-[#0047BB] mt-2">The math works. The question is execution.</p>
+                        <p className="font-bold mb-1">IG Note</p>
+                        <p className="text-black/60">Research Lab has some fanbase on IG. But personal accounts (Roland, Roman, etc.) reach more people for direct conversion. IG feed = awareness, personal DMs = sales.</p>
+                    </div>
+                </section>
+
+                {/* ==================== OPEN QUESTIONS ==================== */}
+                <section className="mb-16 border-2 border-amber-300 bg-amber-50 p-6">
+                    <h2 className="font-serif text-2xl italic mb-2 text-amber-900">Open Questions — Team Decides</h2>
+                    <p className="text-sm text-amber-700/60 mb-6">These need a decision. Not assumptions.</p>
+
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: "Free discovery webinar / live preview — do we do it?",
+                                context: "Original plan had a 30-45 min free preview session for Feb 17-18. Is this still happening, or skip it for this round and do it for the next session?",
+                            },
+                            {
+                                q: "Invitation-style posts / reels — do we create them?",
+                                context: "Short video reels, carousel invitations for IG. Takes effort from Brano. Worth the time for remaining 10 days, or focus on DMs and stories instead?",
+                            },
+                            {
+                                q: "How many toolkit downloads do we actually have?",
+                                context: "Need real number for LinkedIn posts. [FILL IN] in content drafts above.",
+                            },
+                            {
+                                q: "How many emails on the list — is it still ~350?",
+                                context: "Need to confirm before sending. May have grown since last check.",
+                            },
+                            {
+                                q: "Tickets sold so far — what's the real number?",
+                                context: "Everything depends on this. If 0, we're in catch-up. If 10+, different conversation.",
+                            },
+                            {
+                                q: "Did any emails send yet? (Email #1, #2)",
+                                context: "If not, we compress the sequence. If yes, what were the open/click rates?",
+                            },
+                        ].map((item, i) => (
+                            <div key={i} className="bg-white border border-amber-200 p-4">
+                                <p className="font-bold text-sm text-amber-900">{item.q}</p>
+                                <p className="text-sm text-amber-700/60 mt-1">{item.context}</p>
+                            </div>
+                        ))}
                     </div>
                 </section>
 
@@ -400,14 +447,16 @@ Last spots available. Link in comments.`}
                             <div className="p-3 text-[10px] font-bold uppercase tracking-widest text-black/40">Owns</div>
                         </div>
                         {[
-                            ["Tepi", "Website verified, payment working, creative/content coordination, LinkedIn posts, marketing sync"],
-                            ["Sasha", "Research publishing, structured newsletter send, social copy"],
-                            ["Andrea", "Partner comms, email ops to 350 list, SWC network activation"],
-                            ["Roland", "10 DMs/day, warm lead opener, personal LinkedIn post"],
-                            ["Jan", "10 DMs/day, session prep, personal outreach"],
-                            ["Roman", "10 DMs/day, session prep, email copy review, live preview"],
-                            ["Brano", "Daily IG stories, countdown templates, video editing"],
-                            ["Edo, Tibor", "SWC client/partner database outreach, B2B pipeline"],
+                            ["Tepi", "Website verified, payment working, creative coordination, prepare LinkedIn drafts for founders, marketing sync"],
+                            ["Sasha", "Research publishing, structured newsletter send, social copy for RL accounts"],
+                            ["Andrea", "Partner comms, email ops to subscriber list, SWC network activation"],
+                            ["Roland", "Personal DMs, IG posts/stories, Telegram group share, personal network"],
+                            ["Roman", "Personal DMs, LinkedIn posts, session prep, email copy review"],
+                            ["Tibor", "LinkedIn posts from personal profile, SWC client/partner outreach"],
+                            ["Eduard", "Partner outreach with prepared PDFs (public + corporate) + message template"],
+                            ["Brano", "Daily IG stories for Research Lab, templates, video editing"],
+                            ["SWC accs", "Story reshare of Research Lab content, collab post with RL"],
+                            ["Research Lab", "IG feed + stories, emails to list, prepare content for everyone above"],
                         ].map(([person, owns], i) => (
                             <div key={i} className="grid grid-cols-[120px_1fr] border-b border-black/10 last:border-0 text-sm">
                                 <div className="p-3 font-bold border-r border-black/10 bg-black/[0.01]">{person}</div>

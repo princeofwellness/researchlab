@@ -378,17 +378,17 @@ export default function HomePage() {
             </section>
 
             {/* Stats */}
-            <section className="py-16 md:py-20 px-6 md:px-12 border-b border-black/10">
+            <section className="py-24 md:py-32 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-center text-xl md:text-2xl font-bold text-black/70 mb-12"
+                        className="text-center text-xl md:text-2xl font-bold text-black/70 mb-16"
                     >
                         {t.stats.headline}
                     </motion.p>
-                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 md:gap-12">
+                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-12 md:gap-16">
                         {t.stats.items.map((stat: { value: string; label: string; source: string }, i: number) => (
                             <motion.div
                                 key={i}
@@ -533,13 +533,14 @@ export default function HomePage() {
                     <TheShiftBookButton variant="secondary">
                         {t.cta.button}
                     </TheShiftBookButton>
-                    <div className="mt-8 flex items-center justify-center gap-3">
-                        <span className="text-sm text-white/40">{t.cta.note}</span>
+                    <div className="mt-12 pt-10 border-t border-white/10">
+                        <p className="text-base text-white/50 mb-4">{t.cta.note}</p>
                         <Link 
                             href="/corporate" 
-                            className="text-sm font-bold text-[#0047BB] hover:text-white transition-colors font-code-brand"
+                            className="inline-flex items-center gap-3 text-base font-bold text-white border border-white/20 px-8 py-4 hover:bg-white hover:text-black transition-all font-code-brand uppercase tracking-widest text-[11px]"
                         >
-                            {t.cta.corporate} →
+                            {t.cta.corporate}
+                            <span className="text-lg">→</span>
                         </Link>
                     </div>
                 </div>

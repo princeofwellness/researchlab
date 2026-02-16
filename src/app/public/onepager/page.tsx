@@ -261,43 +261,7 @@ export default function PublicOnePager() {
                     </div>
                 </div>
 
-                {/* Page 3: Problem */}
-                <div className={pageClass}>
-                    <div className="text-center max-w-5xl w-full px-4">
-                        <h2 className="font-bold text-[32px] md:text-[48px] mb-6 md:mb-8">{t.problem.title}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                            {t.problem.cards.map((card, i) => (
-                                <div key={i} className="p-4 md:p-5 border-2 border-black/10 text-left">
-                                    <p className="text-[16px] md:text-[20px] font-medium leading-tight">{card.headline}</p>
-                                    <p className="text-[14px] md:text-[16px] text-black/40 mt-1 leading-snug">{card.subline}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                {/* Page 4: Session */}
-                <div className={pageClass}>
-                    <div className="max-w-5xl w-full px-4">
-                        <div className="text-center mb-6 md:mb-10">
-                            <h2 className="font-bold text-[36px] md:text-[56px]">{t.session.title}</h2>
-                            {t.session.subtitle && <p className="text-[14px] md:text-[18px] text-[#0047BB] mt-2">{t.session.subtitle}</p>}
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
-                            {t.session.parts.map((part, i) => (
-                                <div key={i} className="p-4 md:p-6 border-2 border-black/10 flex flex-col">
-                                    <p className="text-[11px] md:text-[12px] font-code-brand font-bold text-black/30">{part.num}</p>
-                                    <p className="font-bold text-[24px] md:text-[32px] mt-1">{part.title}</p>
-                                    <p className="text-[11px] md:text-[12px] font-code-brand text-black/40 mt-1">{part.time}</p>
-                                    <p className="text-[13px] md:text-[14px] text-black/60 mt-3 md:mt-4 leading-relaxed md:flex-grow">{part.desc}</p>
-                                    <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mt-3 md:mt-4">{part.lead}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                {/* Page 5: Founders */}
+                {/* Page 3: Founders */}
                 <div className={pageClass}>
                     <div className="max-w-5xl w-full px-4">
                         <div className="text-center mb-6 md:mb-10">
@@ -333,7 +297,28 @@ export default function PublicOnePager() {
                     </div>
                 </div>
 
-                {/* Page 6: Outcomes */}
+                {/* Page 4: Session */}
+                <div className={pageClass}>
+                    <div className="max-w-5xl w-full px-4">
+                        <div className="text-center mb-6 md:mb-10">
+                            <h2 className="font-bold text-[36px] md:text-[56px]">{t.session.title}</h2>
+                            {t.session.subtitle && <p className="text-[14px] md:text-[18px] text-[#0047BB] mt-2">{t.session.subtitle}</p>}
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
+                            {t.session.parts.map((part, i) => (
+                                <div key={i} className="p-4 md:p-6 border-2 border-black/10 flex flex-col">
+                                    <p className="text-[11px] md:text-[12px] font-code-brand font-bold text-black/30">{part.num}</p>
+                                    <p className="font-bold text-[24px] md:text-[32px] mt-1">{part.title}</p>
+                                    <p className="text-[11px] md:text-[12px] font-code-brand text-black/40 mt-1">{part.time}</p>
+                                    <p className="text-[13px] md:text-[14px] text-black/60 mt-3 md:mt-4 leading-relaxed md:flex-grow">{part.desc}</p>
+                                    <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mt-3 md:mt-4">{part.lead}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Page 5: Outcomes */}
                 <div className={pageClass}>
                     <div className="max-w-5xl w-full px-4">
                         <h2 className="font-bold text-[32px] md:text-[56px] text-center mb-6 md:mb-12">{t.outcome.title}</h2>
@@ -342,6 +327,21 @@ export default function PublicOnePager() {
                                 <div key={i} className="p-4 md:p-5 border border-black/10">
                                     <p className="text-[16px] md:text-[18px] font-medium">{item.title}</p>
                                     <p className="text-[13px] text-black/50 mt-2 leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Page 6: Sound Familiar? (last nudge) */}
+                <div className={pageClass}>
+                    <div className="text-center max-w-5xl w-full px-4">
+                        <h2 className="font-bold text-[32px] md:text-[48px] mb-6 md:mb-8">{t.problem.title}</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                            {t.problem.cards.map((card, i) => (
+                                <div key={i} className="p-4 md:p-5 border-2 border-black/10 text-left">
+                                    <p className="text-[16px] md:text-[20px] font-medium leading-tight">{card.headline}</p>
+                                    <p className="text-[14px] md:text-[16px] text-black/40 mt-1 leading-snug">{card.subline}</p>
                                 </div>
                             ))}
                         </div>

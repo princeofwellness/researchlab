@@ -201,18 +201,23 @@ const popupContent = {
 
 export function MindshiftPopup({ lang = 'en' }: { lang?: 'en' | 'sk' }) {
     const [visible, setVisible] = useState(false)
+    const [show, setShow] = useState(false)
     const t = popupContent[lang]
 
     useEffect(() => {
         if (typeof window === 'undefined') return
         const dismissed = localStorage.getItem('mindshift-popup-dismissed')
         if (dismissed) return
-        const timer = setTimeout(() => setVisible(true), 2500)
+        const timer = setTimeout(() => {
+            setVisible(true)
+            requestAnimationFrame(() => setShow(true))
+        }, 2500)
         return () => clearTimeout(timer)
     }, [])
 
     const dismiss = () => {
-        setVisible(false)
+        setShow(false)
+        setTimeout(() => setVisible(false), 300)
         localStorage.setItem('mindshift-popup-dismissed', 'true')
     }
 
@@ -220,10 +225,14 @@ export function MindshiftPopup({ lang = 'en' }: { lang?: 'en' | 'sk' }) {
 
     return (
         <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 animate-in fade-in"
+            className="fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-300"
+            style={{ backgroundColor: 'rgba(0,0,0,0.4)', opacity: show ? 1 : 0 }}
             onClick={(e) => { if (e.target === e.currentTarget) dismiss() }}
         >
-            <div className="relative bg-[#e8e1da] border-2 border-[#0047BB] mx-5 max-w-[480px] w-full px-6 py-12 md:px-12 md:py-16">
+            <div
+                className="relative bg-[#e8e1da] border-2 border-[#0047BB] mx-5 max-w-[480px] w-full px-6 py-12 md:px-12 md:py-16 transition-all duration-300"
+                style={{ transform: show ? 'scale(1)' : 'scale(0.95)', opacity: show ? 1 : 0 }}
+            >
                 <button
                     onClick={dismiss}
                     className="absolute top-4 right-4 text-[#0047BB] text-2xl leading-none hover:opacity-60 transition-opacity"

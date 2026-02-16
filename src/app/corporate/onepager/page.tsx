@@ -49,9 +49,9 @@ export default function CorporateOnePager() {
                  subtitle: "Creators, not theorists. Building their own companies and innovating every day.",
                 trust: "From the creators of campaigns for Meta, Audi, Forbes, and Samsung.",
                 cards: [
-                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Made decisions that came at a high price. Now sees what creative teams often miss.", bio: "Creative director behind award-winning campaigns for Tatra banka, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.", url: "https://sorrywecan.com/" },
-                    { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "Years of building products showed him exactly where teams lose months on what can now be done many times faster.", bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.", url: "https://sudolabs.com/" },
-                     { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "Turns confusion into priorities and priorities into concrete decisions.", bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.", url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk" }
+                    { name: "Roland Vraník", role: "TASTE", company: "Creative Director / Founder, SORRYWECAN", tagline: "Made decisions that came at a high price. Now sees what creative teams often miss.", bio: "Creative director behind award-winning campaigns for Tatra banka, Meta, Audi, and Samsung. Decades connecting aesthetics with technology. Now builds with AI daily. Does in hours what used to take weeks.", url: "https://sorrywecan.com/", image: "/founders/roland.jpg" },
+                    { name: "Ján Koscelanský", role: "LEVERAGE", company: "CPO / Co-founder, SUDOLABS", tagline: "Years of building products showed him exactly where teams lose months on what can now be done many times faster.", bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.", url: "https://sudolabs.com/", image: "/founders/jan.jpg" },
+                     { name: "Roman Pii Wagner", role: "CLARITY", company: "Transformational Design", tagline: "Turns confusion into priorities and priorities into concrete decisions.", bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.", url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk", image: "/founders/roman.jpg" }
                 ]
             },
              outcome: {
@@ -128,9 +128,9 @@ export default function CorporateOnePager() {
                  subtitle: "Tvorcovia, nie teoretici. Budujú vlastné firmy a inovujú každý deň.",
                 trust: "Od tvorcov kampaní pre Meta, Audi, Forbes a Samsung.",
                 cards: [
-                     { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Prešiel si rozhodnutiami, ktoré mali vysokú cenu. Dnes vidí to, čo kreatívnym tímom často uniká.", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Tatra banku, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.", url: "https://sorrywecan.com/" },
-                     { name: "Ján Koscelanský", role: "VYUŽITIE", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Po rokoch v developmente presne vie, kde tímy trávia mesiace nad niečím, čo sa dnes dá zvládnuť mnohonásobne rýchlejšie.", bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.", url: "https://sudolabs.com/" },
-                      { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformačný dizajnér", tagline: "Mení zmätok na priority a priority na konkrétne rozhodnutia.", bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.", url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk" }
+                     { name: "Roland Vraník", role: "VKUS", company: "Creative Director / Zakladateľ, SORRYWECAN", tagline: "Prešiel si rozhodnutiami, ktoré mali vysokú cenu. Dnes vidí to, čo kreatívnym tímom často uniká.", bio: "Kreatívny riaditeľ za oceňovanými kampaňami pre Tatra banku, Meta, Audi a Samsung. Dekády na priesečníku estetiky a technológie. Dnes buduje s AI denne. Robí za hodiny, čo kedysi trvalo týždne.", url: "https://sorrywecan.com/", image: "/founders/roland.jpg" },
+                     { name: "Ján Koscelanský", role: "VYUŽITIE", company: "CPO / Spoluzakladateľ, SUDOLABS", tagline: "Po rokoch v developmente presne vie, kde tímy trávia mesiace nad niečím, čo sa dnes dá zvládnuť mnohonásobne rýchlejšie.", bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.", url: "https://sudolabs.com/", image: "/founders/jan.jpg" },
+                      { name: "Roman Pii Wagner", role: "JASNOSŤ", company: "Transformačný dizajnér", tagline: "Mení zmätok na priority a priority na konkrétne rozhodnutia.", bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.", url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk", image: "/founders/roman.jpg" }
                 ]
             },
              outcome: {
@@ -319,6 +319,11 @@ export default function CorporateOnePager() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                             {t.founders.cards.map((card, i) => (
                                 <div key={i} className="text-center p-4 md:p-6 border border-black/10">
+                                    {card.image && (
+                                        <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mb-3 md:mb-4 mx-auto border-2 border-black/10">
+                                            <img src={card.image} alt={card.name} className="w-full h-full object-cover" />
+                                        </div>
+                                    )}
                                     <p className="font-bold text-[22px] md:text-[28px]">{card.name}</p>
                                     <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mt-2">{card.role}</p>
                                     <p className="text-[11px] md:text-[12px] text-black/40 mt-1">{card.company}</p>

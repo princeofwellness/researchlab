@@ -184,36 +184,71 @@ export function TheShiftBookButton({
     )
 }
 
-export function TheShiftAutoPopup() {
-    const [isOpen, setIsOpen] = useState(false)
+const popupContent = {
+    en: {
+        label: "February 26 · Bratislava",
+        headline: "Mindshift is happening.",
+        subline: "In 3 hours, you'll see what took us years to learn.",
+        cta: "Learn More"
+    },
+    sk: {
+        label: "26. februára · Bratislava",
+        headline: "Mindshift prichádza.",
+        subline: "Za 3 hodiny uvidíte to, čo nám trvalo roky pochopiť.",
+        cta: "Zistiť viac"
+    }
+}
+
+export function MindshiftPopup({ lang = 'en' }: { lang?: 'en' | 'sk' }) {
+    const [visible, setVisible] = useState(false)
+    const t = popupContent[lang]
 
     useEffect(() => {
-        const timer = setTimeout(() => setIsOpen(true), 1500)
+        if (typeof window === 'undefined') return
+        const dismissed = localStorage.getItem('mindshift-popup-dismissed')
+        if (dismissed) return
+        const timer = setTimeout(() => setVisible(true), 2500)
         return () => clearTimeout(timer)
     }, [])
 
-    if (!isOpen) return null
+    const dismiss = () => {
+        setVisible(false)
+        localStorage.setItem('mindshift-popup-dismissed', 'true')
+    }
+
+    if (!visible) return null
 
     return (
         <div
-            className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
-            onClick={() => setIsOpen(false)}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 animate-in fade-in"
+            onClick={(e) => { if (e.target === e.currentTarget) dismiss() }}
         >
-            <div
-                className="relative w-full max-w-2xl h-[80vh] bg-white rounded-lg overflow-hidden"
-                onClick={(e) => e.stopPropagation()}
-            >
+            <div className="relative bg-[#e8e1da] border-2 border-[#0047BB] mx-5 max-w-[480px] w-full px-6 py-12 md:px-12 md:py-16">
                 <button
-                    onClick={() => setIsOpen(false)}
-                    className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center bg-black/10 hover:bg-black/20 rounded-full transition-colors"
+                    onClick={dismiss}
+                    className="absolute top-4 right-4 text-[#0047BB] text-2xl leading-none hover:opacity-60 transition-opacity"
                 >
-                    <span className="text-xl leading-none">&times;</span>
+                    &times;
                 </button>
-                <iframe
-                    src={`${CAL_SHIFT_CONFIG.bookingUrl}?embed=true&theme=light`}
-                    className="w-full h-full border-0"
-                    title="Book THE MINDSHIFT"
-                />
+                <div className="flex flex-col items-center text-center text-[#0047BB]">
+                    <span className="font-code-brand text-[10px] font-bold uppercase tracking-[0.3em]">
+                        {t.label}
+                    </span>
+                    <h2 className="mt-4 text-[28px] md:text-[36px] font-bold uppercase leading-tight font-sans-brand">
+                        {t.headline}
+                    </h2>
+                    <p className="mt-3 text-[14px] md:text-[16px] leading-relaxed font-sans-brand">
+                        {t.subline}
+                    </p>
+                    <a href="/">
+                        <button
+                            onClick={dismiss}
+                            className="mt-8 border-[#0047BB] border-2 text-[16px] font-medium px-10 py-3 bg-[#0047BB] text-white hover:bg-transparent hover:text-[#0047BB] transition-colors duration-300 uppercase tracking-wider"
+                        >
+                            {t.cta}
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     )

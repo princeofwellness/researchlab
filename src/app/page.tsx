@@ -530,14 +530,14 @@ export default function HomePage() {
                 <div className="max-w-2xl mx-auto px-6">
                     <h2 className="font-bold text-5xl md:text-6xl mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-4">{t.cta.subline}</p>
-                    <TheShiftBookButton variant="secondary">
+                    <TheShiftBookButton className="bg-[#0047BB] hover:bg-white hover:text-black">
                         {t.cta.button}
                     </TheShiftBookButton>
                     <div className="mt-12 pt-10 border-t border-white/10">
                         <p className="text-base text-white/50 mb-4">{t.cta.note}</p>
                         <Link 
                             href="/corporate" 
-                            className="inline-flex items-center gap-3 text-base font-bold text-white border border-white/20 px-8 py-4 hover:bg-white hover:text-black transition-all font-code-brand uppercase tracking-widest text-[11px]"
+                            className="inline-flex items-center gap-3 font-bold border-2 border-[#0047BB] text-[#0047BB] px-8 py-4 hover:bg-[#0047BB] hover:text-white transition-all font-code-brand uppercase tracking-widest text-[11px]"
                         >
                             {t.cta.corporate}
                             <span className="text-lg">→</span>

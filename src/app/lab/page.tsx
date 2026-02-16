@@ -13,7 +13,7 @@ export default function LabPage() {
     const pages = [
         { name: "Growth Plan", href: "/growth-plan", desc: "Living roadmap: phases, initiatives, metrics. Updated as we grow." },
         { name: "The Playbook", href: "/gameplan", desc: "Growth architecture: how to build, scale, and lead in AI education." },
-        { name: "Marketing Sync", href: "/marketing-sync", desc: "THE SHIFT operational hub. Ownership, status, timeline." },
+        { name: "Marketing Sync", href: "/marketing-sync", desc: "THE MINDSHIFT operational hub. Ownership, status, timeline." },
     ]
 
     const archivePages = [

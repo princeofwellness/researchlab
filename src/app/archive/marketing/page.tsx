@@ -61,7 +61,7 @@ export default function MarketingStrategyPage() {
                 dates: "Jan 27 - Feb 9",
                 status: "current",
                 color: "#0047BB",
-                focus: "Start mentioning THE SHIFT. Naturally.",
+                focus: "Start mentioning THE MINDSHIFT. Naturally.",
                 actions: [
                     "Continue toolkit value (don't stop)",
                     "Behind-scenes: 'We're building something...'",
@@ -289,7 +289,7 @@ export default function MarketingStrategyPage() {
 
 Quick one — we're doing a thing on Feb 26. 
 
-THE SHIFT. 3-hour AI workshop. 40 people. €99.
+THE MINDSHIFT. 3-hour AI workshop. 40 people. €99.
 
 Roland, Ján, and me. Everything we've learned building with AI.
 
@@ -321,7 +321,7 @@ No pitch. Just curious about your situation.`
 
 Need a favor.
 
-We're launching THE SHIFT — AI workshop, Feb 26, 40 people.
+We're launching THE MINDSHIFT — AI workshop, Feb 26, 40 people.
 
 Would you be open to resharing my announcement when it drops? Just a quick story or repost.
 
@@ -349,7 +349,7 @@ No pressure either way. Just wanted to put it on your radar.`
             situation: "They showed interest before",
             script: `Hey [Name],
 
-Following up — you mentioned you might be interested in THE SHIFT.
+Following up — you mentioned you might be interested in THE MINDSHIFT.
 
 Quick update: 20 seats left. Filling faster than expected.
 
@@ -365,7 +365,7 @@ No pressure — just didn't want you to miss it if you actually wanted to come.`
             situation: "Ask for the sale",
             script: `Hey [Name],
 
-Last ping on this — THE SHIFT is down to final 10 seats.
+Last ping on this — THE MINDSHIFT is down to final 10 seats.
 
 You seemed interested when we talked. 
 
@@ -394,7 +394,7 @@ So that's what we're doing.
 
 ---
 
-THE SHIFT
+THE MINDSHIFT
 February 26, 2026
 3 hours. 40 people. One room.
 
@@ -432,7 +432,7 @@ P.S. — If you've been downloading our toolkits, this is the live version. The 
         {
             name: "Email #2: Momentum",
             timing: "Day 2-3",
-            subjects: ["20 seats gone in 24 hours", "Quick update on THE SHIFT"],
+            subjects: ["20 seats gone in 24 hours", "Quick update on THE MINDSHIFT"],
             body: `Quick update:
 
 20 seats filled in the first 24 hours.
@@ -471,7 +471,7 @@ P.S. — Roland's section on "taste" is the thing I'm most excited about. How do
             subjects: ["Last 10 seats — then we focus on delivery", "Closing registration tomorrow"],
             body: `Last email about this. Promise.
 
-10 seats left for THE SHIFT (Feb 26).
+10 seats left for THE MINDSHIFT (Feb 26).
 
 If you've been thinking about it, now's the time.
 
@@ -554,7 +554,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
             hook: "Same prompt. Different result.",
             concept: "Show generic output → refined output",
             punchline: "The difference? 3 hours of learning how to see.",
-            cta: "THE SHIFT. Feb 26."
+            cta: "THE MINDSHIFT. Feb 26."
         }
     ]
 
@@ -882,7 +882,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div className="p-6 border border-black/10">
                             <h3 className="font-bold mb-2">Behind Scenes</h3>
-                            <p className="text-xs text-black/50 mb-4">Show the making of THE SHIFT</p>
+                            <p className="text-xs text-black/50 mb-4">Show the making of THE MINDSHIFT</p>
                             <div className="space-y-1 text-[10px] text-black/40">
                                 <div>• Prep videos</div>
                                 <div>• Speaker discussions</div>
@@ -908,7 +908,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                             </div>
                         </div>
                         <div className="p-6 border border-[#0047BB] bg-[#0047BB]/5">
-                            <h3 className="font-bold mb-2 text-[#0047BB]">THE SHIFT Posts</h3>
+                            <h3 className="font-bold mb-2 text-[#0047BB]">THE MINDSHIFT Posts</h3>
                             <p className="text-xs text-black/50 mb-4">Direct promotion (20% of content)</p>
                             <div className="space-y-1 text-[10px] text-black/40">
                                 <div>• Announcement</div>
@@ -962,7 +962,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                                 </tr>
                                 <tr className="border-b border-black/5">
                                     <td className="py-3 px-4 font-bold">Fri</td>
-                                    <td className="py-3 px-4 text-[#0047BB]">THE SHIFT mention</td>
+                                    <td className="py-3 px-4 text-[#0047BB]">THE MINDSHIFT mention</td>
                                     <td className="py-3 px-4 text-black/60">Reel: Show work</td>
                                     <td className="py-3 px-4 text-black/40">—</td>
                                 </tr>
@@ -999,7 +999,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                                 <p>Now we're doing something different.</p>
                                 <p>February 26th. One room. 40 people. Three hours.</p>
                                 <p>Me, Roland, Ján — everything we've learned building with AI daily. No theory. No hype. Just what actually works.</p>
-                                <p>It's called THE SHIFT.</p>
+                                <p>It's called THE MINDSHIFT.</p>
                                 <p>40 seats. Link's in bio."</p>
                             </div>
                             <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
@@ -1021,7 +1021,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                                 <p>Do you have three hours on February 26th?</p>
                                 <p>That's it. That's the pitch.</p>
                                 <p>40 people. One room. Three of us who build with this stuff every day.</p>
-                                <p>We're calling it THE SHIFT.</p>
+                                <p>We're calling it THE MINDSHIFT.</p>
                                 <p>Not a course. Not a webinar. Just clarity on what changed and how to use it.</p>
                                 <p>Link's below. 40 seats."</p>
                             </div>
@@ -1047,7 +1047,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
                                 Ján on leverage — what one person can build now.<br/>
                                 Me on clarity — how to think when everything moves.</p>
                                 <p>No slides. No theory. Just how we actually work.</p>
-                                <p>It's called THE SHIFT. Link's in bio."</p>
+                                <p>It's called THE MINDSHIFT. Link's in bio."</p>
                             </div>
                             <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/40">
                                 Tone: Personal. Origin story energy.
@@ -1487,7 +1487,7 @@ P.S. — If €99 is genuinely a blocker and you really want to come, reply to t
             <footer className="py-12 text-center border-t border-black/10">
                 <div className="flex justify-center gap-4 mb-8">
                     <Link href="/public" className="px-6 py-3 bg-[#0047BB] text-white text-xs font-bold uppercase tracking-widest hover:bg-black transition-all">
-                        View THE SHIFT
+                        View THE MINDSHIFT
                     </Link>
                     <Link href="/corporate" className="px-6 py-3 border border-black/20 text-xs font-bold uppercase tracking-widest hover:bg-black/5 transition-all">
                         View Corporate

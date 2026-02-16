@@ -193,7 +193,7 @@ export default function EnhancementsPage() {
                                         <div className="space-y-4">
                                             <div className="p-4 border border-dashed border-white/20">
                                                 <p className="text-sm text-white/40">Placeholder: Creative Agency Head</p>
-                                                <p className="text-xs text-white/20 mt-1">After THE SHIFT session → collect testimonial</p>
+                                                <p className="text-xs text-white/20 mt-1">After THE MINDSHIFT session → collect testimonial</p>
                                             </div>
                                             <div className="p-4 border border-dashed border-white/20">
                                                 <p className="text-sm text-white/40">Placeholder: Tech Startup CEO</p>
@@ -229,7 +229,7 @@ export default function EnhancementsPage() {
                         >
                             <div>
                                 <h2 className="text-3xl font-serif-instrument italic mb-2">Part II / Follow-up Path</h2>
-                                <p className="text-white/50 mb-8">After THE SHIFT or Corporate Workshop, what's next? Roman Wagner handles this.</p>
+                                <p className="text-white/50 mb-8">After THE MINDSHIFT or Corporate Workshop, what's next? Roman Wagner handles this.</p>
                                 
                                 <div className="p-8 border border-white/10 bg-white/5">
                                     <h3 className="text-[10px] font-bold tracking-widest text-white/40 mb-6">PROPOSED SECTION: "WHAT'S NEXT"</h3>
@@ -240,7 +240,7 @@ export default function EnhancementsPage() {
                                                 <span className="w-8 h-8 bg-[#8b5cf6] text-white flex items-center justify-center font-bold text-sm">II</span>
                                                 <h4 className="text-xl font-bold">Part II: Deep Dive</h4>
                                             </div>
-                                            <p className="text-white/60 mb-4">For those who want to go deeper after THE SHIFT.</p>
+                                            <p className="text-white/60 mb-4">For those who want to go deeper after THE MINDSHIFT.</p>
                                             <div className="grid grid-cols-2 gap-4 text-sm">
                                                 <div>
                                                     <p className="text-[10px] font-bold tracking-widest text-white/40 mb-1">LED BY</p>

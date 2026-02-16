@@ -14,7 +14,7 @@ export default function MarketingSyncPage() {
                         <div>
                             <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#0047BB] mb-4">Internal Master Sync</p>
                             <h1 className="font-serif text-4xl md:text-6xl italic leading-tight text-black">
-                                THE SHIFT
+                                THE MINDSHIFT
                             </h1>
                         </div>
                         <div className="text-right">

@@ -19,7 +19,7 @@ export function TopNav({
     const pathname = usePathname()
 
     const navItems = [
-        { name: "Public", href: "/public" },
+        { name: "THE MINDSHIFT", href: "/" },
         { name: "Corporate", href: "/corporate" },
         { name: "Lab", href: "/lab" },
     ]

@@ -40,7 +40,7 @@ const phases = [
     owner: "Everyone",
     status: "active",
     items: [
-      "Deliver THE SHIFT Feb 26 — fill 40 seats",
+      "Deliver THE MINDSHIFT Feb 26 — fill 40 seats",
       "Capture testimonials + video from first session",
       "Launch THE SIGNAL newsletter (biweekly, Slovak)",
       "Instagram content system: 3x/week minimum",
@@ -97,7 +97,7 @@ const phases = [
 ]
 
 const initiatives = [
-  { name: "THE SHIFT — Feb 26 session", owner: "Everyone", status: "active", priority: "high" },
+  { name: "THE MINDSHIFT — Feb 26 session", owner: "Everyone", status: "active", priority: "high" },
   { name: "THE SIGNAL — biweekly newsletter", owner: "Sasha + Roman", status: "planned", priority: "high" },
   { name: "Instagram content system (3x/week)", owner: "Brano + Sasha", status: "planned", priority: "high" },
   { name: "Post-workshop email sequence", owner: "Andrea + Tepi", status: "planned", priority: "high" },

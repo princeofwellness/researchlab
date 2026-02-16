@@ -359,10 +359,10 @@ export default function MarketingSyncPage() {
                             <h3 className="text-xl font-bold mb-3">One Sentence</h3>
                             <p className="text-black/60 leading-relaxed mb-4">If you can't say it in one line, you don't understand it.</p>
                             <blockquote className="border-l-2 border-black/10 pl-4 text-black/80 italic mb-3">
-                                "THE SHIFT is 3 hours with 3 founders who build with AI daily — you leave with clarity on how to actually work with it."
+                                "THE MINDSHIFT is 3 hours with 3 founders who build with AI daily — you leave with clarity on how to actually work with it."
                             </blockquote>
                             <blockquote className="border-l-2 border-black/10 pl-4 text-black/60 italic text-sm">
-                                "THE SHIFT — 3 hodiny s 3 zakladateľmi, ktorí s AI pracujú denne. Odídete s jasnosťou, ako s tým reálne pracovať."
+                                "THE MINDSHIFT — 3 hodiny s 3 zakladateľmi, ktorí s AI pracujú denne. Odídete s jasnosťou, ako s tým reálne pracovať."
                             </blockquote>
                             <p className="text-sm text-black/40 mt-3">Lock both versions. No more messaging debates.</p>
                         </div>
@@ -425,7 +425,7 @@ export default function MarketingSyncPage() {
                                         <p className="text-black/60">"Máme niečo nové — workshop pre tímy. Myslíš, že by to dávalo zmysel pre vás?" Send the corporate one-pager. Plant the seed. Even if not now, it's on their radar.</p>
                                     </div>
                                     <div>
-                                        <p className="font-bold text-black">B) A ticket multiplier for THE SHIFT</p>
+                                        <p className="font-bold text-black">B) A ticket multiplier for THE MINDSHIFT</p>
                                         <p className="text-black/60">"Povedz to ľuďom vo firme — €99, 3 hodiny, 26. februára." Partners send their employees. One conversation = 3-5 tickets. Group dynamic: "Ideme tam celý tím."</p>
                                     </div>
                                 </div>
@@ -445,7 +445,7 @@ export default function MarketingSyncPage() {
                             <h3 className="text-xl font-bold mb-3">One Public Moment</h3>
                             <p className="text-black/60 leading-relaxed mb-4">7-10 days before Feb 26: run a free 30-45 min live session.</p>
                             <ul className="space-y-2 text-sm text-black/60">
-                                <li>→ "THE SHIFT Preview" — the demo + Q&A</li>
+                                <li>→ "THE MINDSHIFT Preview" — the demo + Q&A</li>
                                 <li>→ IG Live or Zoom — wherever your audience is</li>
                                 <li>→ Slovak. Intimate. Show what the session will feel like.</li>
                                 <li>→ Record it — becomes content for final push</li>

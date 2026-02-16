@@ -21,7 +21,7 @@ export default function CorporateOnePager() {
                     { value: "300M", label: "jobs exposed to AI automation worldwide", source: "Goldman Sachs 2023" },
                     { value: "56%", label: "of CEOs see no financial benefit from AI yet", source: "PwC 2026" },
                     { value: "92%", label: "of companies plan to increase AI investment", source: "McKinsey 2025" },
-                    { value: ">80%", label: "report no enterprise EBIT impact from GenAI", source: "McKinsey 2025" },
+                    { value: "66%", label: "of firms have not scaled AI enterprise-wide", source: "McKinsey 2025" },
                     { value: "12%", label: "of CEOs saw both cost and revenue gains", source: "PwC 2026" }
                 ]
             },
@@ -100,7 +100,7 @@ export default function CorporateOnePager() {
                     { value: "300M", label: "pracovných miest vystavených AI automatizácii", source: "Goldman Sachs 2023" },
                     { value: "56%", label: "CEO nevidí finančný prínos z AI", source: "PwC 2026" },
                     { value: "92%", label: "firiem plánuje zvýšiť investície do AI", source: "McKinsey 2025" },
-                    { value: ">80%", label: "nevidí dopad GenAI na podnikový EBIT", source: "McKinsey 2025" },
+                    { value: "66%", label: "firiem nedokázalo škálovať AI celofiremne", source: "McKinsey 2025" },
                     { value: "12%", label: "CEO zaznamenalo prínosy v nákladoch aj tržbách", source: "PwC 2026" }
                 ]
             },

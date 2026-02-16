@@ -90,7 +90,7 @@ export default function HomePage() {
                     { title: "A Working System", desc: "Not tips. Not theory. A way of working with AI you'll actually use Monday morning." },
                     { title: "Less Noise, More Signal", desc: "Lower mental load. No more AI FOMO. You stop chasing tools and start choosing the right ones." },
                     { title: "Your Edge", desc: "Everyone has the same tools. You'll know what they don't. How to see, decide, and create differently." },
-                    { title: "Confidence, Not Just Knowledge", desc: "The difference between knowing AI exists and knowing what to do with it. That gap closes here." }
+                    { title: "A New Lens", desc: "You won't leave with new tools. You'll leave with a different way of looking at what you already have." }
                 ]
             },
             founders: {
@@ -232,7 +232,7 @@ export default function HomePage() {
                     { title: "Funkčný Systém", desc: "Nie tipy. Nie teória. Spôsob práce s AI, ktorý reálne použijete v pondelok ráno." },
                     { title: "Menej Šumu, Viac Signálu", desc: "Nižšia mentálna záťaž. Koniec AI FOMO. Prestanete naháňať nástroje a začnete vyberať tie správne." },
                     { title: "Vaša Výhoda", desc: "Rovnaké nástroje má každý. Vy budete vedieť, čo ostatní nie. Ako vidieť, rozhodovať a tvoriť inak." },
-                    { title: "Istota, Nie Len Vedomosti", desc: "Rozdiel medzi tým, že o AI viete, a tým, že viete, čo s ním. Ten rozdiel sa uzavrie tu." }
+                    { title: "Nová Optika", desc: "Neodídete s novými nástrojmi. Odídete s iným pohľadom na to, čo už máte." }
                 ]
             },
             founders: {
@@ -544,9 +544,9 @@ export default function HomePage() {
             </section>
 
             {/* You Leave With */}
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
-                <div className="max-w-5xl mx-auto">
-                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
+            <section className="py-28 md:py-36 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-16">{t.outcome.title}</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
                         {t.outcome.items.map((item: any, i: number) => (
                             <motion.div

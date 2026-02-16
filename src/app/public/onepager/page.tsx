@@ -50,7 +50,7 @@ export default function PublicOnePager() {
                     { title: "A Working System", desc: "Not tips. Not theory. A way of working with AI you'll actually use Monday morning." },
                     { title: "Less Noise, More Signal", desc: "Lower mental load. No more AI FOMO. You stop chasing tools and start choosing the right ones." },
                     { title: "Your Edge", desc: "Everyone has the same tools. You'll know what they don't. How to see, decide, and create differently." },
-                    { title: "Confidence, Not Just Knowledge", desc: "The difference between knowing AI exists and knowing what to do with it. That gap closes here." }
+                    { title: "A New Lens", desc: "You won't leave with new tools. You'll leave with a different way of looking at what you already have." }
                 ]
             },
             founders: {
@@ -123,7 +123,7 @@ export default function PublicOnePager() {
                     { title: "Funkčný Systém", desc: "Nie tipy. Nie teória. Spôsob práce s AI, ktorý reálne použijete v pondelok ráno." },
                     { title: "Menej Šumu, Viac Signálu", desc: "Nižšia mentálna záťaž. Koniec AI FOMO. Prestanete naháňať nástroje a začnete vyberať tie správne." },
                     { title: "Vaša Výhoda", desc: "Rovnaké nástroje má každý. Vy budete vedieť, čo ostatní nie. Ako vidieť, rozhodovať a tvoriť inak." },
-                    { title: "Istota, Nie Len Vedomosti", desc: "Rozdiel medzi tým, že o AI viete, a tým, že viete, čo s ním. Ten rozdiel sa uzavrie tu." }
+                    { title: "Nová Optika", desc: "Neodídete s novými nástrojmi. Odídete s iným pohľadom na to, čo už máte." }
                 ]
             },
             founders: {

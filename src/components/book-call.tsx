@@ -184,4 +184,39 @@ export function TheShiftBookButton({
     )
 }
 
+export function TheShiftAutoPopup() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => setIsOpen(true), 1500)
+        return () => clearTimeout(timer)
+    }, [])
+
+    if (!isOpen) return null
+
+    return (
+        <div
+            className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+            onClick={() => setIsOpen(false)}
+        >
+            <div
+                className="relative w-full max-w-2xl h-[80vh] bg-white rounded-lg overflow-hidden"
+                onClick={(e) => e.stopPropagation()}
+            >
+                <button
+                    onClick={() => setIsOpen(false)}
+                    className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center bg-black/10 hover:bg-black/20 rounded-full transition-colors"
+                >
+                    <span className="text-xl leading-none">&times;</span>
+                </button>
+                <iframe
+                    src={`${CAL_SHIFT_CONFIG.bookingUrl}?embed=true&theme=light`}
+                    className="w-full h-full border-0"
+                    title="Book THE MINDSHIFT"
+                />
+            </div>
+        </div>
+    )
+}
+
 export { CAL_CONFIG, CAL_SHIFT_CONFIG }

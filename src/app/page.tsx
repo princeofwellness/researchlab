@@ -6,7 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
-import { TheShiftBookButton } from "@/components/book-call"
+import { TheShiftBookButton, TheShiftAutoPopup } from "@/components/book-call"
 
 
 export default function HomePage() {
@@ -314,6 +314,7 @@ export default function HomePage() {
 
     return (
         <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20">
+            <TheShiftAutoPopup />
             <TopNav lang={lang} customAction={
                 <button 
                     onClick={() => setLang(lang === 'en' ? 'sk' : 'en')}

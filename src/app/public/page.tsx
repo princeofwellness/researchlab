@@ -112,15 +112,15 @@ export default function PublicSessionsPage() {
                         url: "https://sudolabs.com/",
                         image: ""
                     },
-                    { 
-                        name: "Roman Pii Wagner", 
-                        role: "The Navigator", 
-                        company: "Transformational Design", 
-                        tagline: "Turns confusion into priorities and priorities into concrete decisions.",
-                        bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.",
-                        url: "",
-                        image: "/founders/roman.jpg"
-                    }
+                     { 
+                         name: "Roman Pii Wagner", 
+                         role: "The Navigator", 
+                         company: "Transformational Design", 
+                         tagline: "Turns confusion into priorities and priorities into concrete decisions.",
+                         bio: "Transformational designer. Helps organizations figure out what to focus on, what to let go of, and how to make decisions that hold under pressure.",
+                         url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk",
+                         image: "/founders/roman.jpg"
+                     }
                 ]
             },
             faq: {
@@ -251,15 +251,15 @@ export default function PublicSessionsPage() {
                           url: "https://sudolabs.com/",
                           image: ""
                       },
-                      { 
-                          name: "Roman Pii Wagner", 
-                          role: "Navigátor", 
-                          company: "Transformational Design", 
-                          tagline: "Mení zmätok na priority a priority na konkrétne rozhodnutia.",
-                          bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
-                          url: "",
-                          image: "/founders/roman.jpg"
-                      }
+                       { 
+                           name: "Roman Pii Wagner", 
+                           role: "Navigátor", 
+                           company: "Transformačný dizajnér", 
+                           tagline: "Mení zmätok na priority a priority na konkrétne rozhodnutia.",
+                           bio: "Transformačný dizajnér. Pomáha organizáciám zistiť, na čo sa sústrediť, čo pustiť a ako robiť rozhodnutia, ktoré vydržia pod tlakom.",
+                           url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk",
+                           image: "/founders/roman.jpg"
+                       }
                   ]
               },
             faq: {

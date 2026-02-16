@@ -31,10 +31,10 @@ export default function LabPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="mb-16"
                     >
-                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/40">
+                        <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">
                             Internal
                         </span>
-                        <h1 className="font-bold text-5xl md:text-6xl mt-2">
+                        <h1 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter mt-2">
                             Lab
                         </h1>
                         <p className="text-black/50 mt-4">
@@ -43,7 +43,7 @@ export default function LabPage() {
                     </motion.div>
 
                     <div className="mb-12">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-[#0047BB] mb-3">One-Pagers</p>
+                        <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-3">One-Pagers</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {onepagers.map((page, i) => (
                                 <motion.div
@@ -71,7 +71,7 @@ export default function LabPage() {
                         </div>
                     </div>
 
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-black/40 mb-3">Active</p>
+                    <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">Active</p>
                     <div className="space-y-2">
                         {pages.map((page, i) => (
                             <motion.div
@@ -99,7 +99,7 @@ export default function LabPage() {
                     </div>
 
                     <div className="mt-12">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-black/30 mb-3">Previous Work</p>
+                        <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30 mb-3">Previous Work</p>
                         <div className="space-y-2">
                             {archivePages.map((page, i) => (
                                 <motion.div
@@ -130,7 +130,7 @@ export default function LabPage() {
             </section>
 
             <footer className="py-12 text-center border-t border-black/10">
-                <p className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-20">
+                <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.4em] opacity-20">
                     SORRYWECAN // RESEARCH LAB // 2026
                 </p>
             </footer>

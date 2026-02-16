@@ -304,7 +304,7 @@ export default function HomePage() {
 
     const partners = [
         { name: "Meta", logo: "/logos/meta.png" },
-        { name: "Tatra Banka", logo: "/logos/tatrabanka.jpg" },
+        { name: "Tatra Banka", logo: "/logos/tatrabanka.png" },
         { name: "Raiffeisen", logo: "/logos/raiffeisen.png" },
         { name: "VUB Banka", logo: "/logos/vub.png" },
         { name: "Sennheiser", logo: "/logos/sennheiser.png" },

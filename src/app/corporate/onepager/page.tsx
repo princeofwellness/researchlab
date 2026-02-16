@@ -73,7 +73,7 @@ export default function CorporateOnePager() {
                 items: [
                     { label: "Duration", value: "4-5 hours", sub: "Half day" },
                     { label: "Team Size", value: "10-15 people", sub: "Leadership / key team" },
-                    { label: "Location", value: "We come to you", sub: "Your office" },
+                    { label: "Location", value: "Our studio or yours", sub: "Studio / your office" },
                     { label: "Follow-up", value: "30 days", sub: "Included" }
                 ]
             },
@@ -81,7 +81,7 @@ export default function CorporateOnePager() {
                 headline: "Next Move.",
                 subline: "20-minute discovery call. No commitment.",
                 button: "Book Discovery Call",
-                guarantee: "If it's not the right fit, we'll tell you. And point you somewhere better.",
+                guarantee: "No commitment. If it's not a fit, we'll say so.",
                 contact: "andrea@sorrywecan.com"
             }
         },
@@ -152,7 +152,7 @@ export default function CorporateOnePager() {
                 items: [
                     { label: "Trvanie", value: "4-5 hodín", sub: "Pol dňa" },
                     { label: "Veľkosť tímu", value: "10-15 ľudí", sub: "Vedenie / kľúčový tím" },
-                    { label: "Miesto", value: "Prídeme k vám", sub: "Vaša kancelária" },
+                    { label: "Miesto", value: "U nás v štúdiu alebo u vás", sub: "Štúdio / vaša kancelária" },
                     { label: "Follow-up", value: "30 dní", sub: "V cene" }
                 ]
             },
@@ -160,7 +160,7 @@ export default function CorporateOnePager() {
                 headline: "Ďalší Krok.",
                 subline: "20-minútový discovery call. Žiadny záväzok.",
                 button: "Rezervovať Discovery Call",
-                guarantee: "Ak to pre vás nie je, povieme vám to. A nasmerujeme vás lepšie.",
+                guarantee: "Žiadny záväzok. Ak to nebude fit, povieme priamo.",
                 contact: "andrea@sorrywecan.com"
             }
         }
@@ -382,12 +382,17 @@ export default function CorporateOnePager() {
                             ))}
                         </div>
 
-                        <div className="inline-block bg-[#0047BB] px-6 md:px-8 py-3 md:py-4">
+                        <a 
+                            href="https://cal.com/researchlabsorrywecan/30min" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-block bg-[#0047BB] px-6 md:px-8 py-3 md:py-4 hover:bg-black transition-colors cursor-pointer"
+                        >
                             <p className="text-[12px] md:text-[14px] font-code-brand font-bold uppercase tracking-widest text-white">{t.cta.button}</p>
-                        </div>
+                        </a>
                         
                         <p className="text-[12px] md:text-[14px] text-black/40 mt-6 md:mt-8">{t.cta.guarantee}</p>
-                        <p className="text-[11px] md:text-[13px] text-black/40 mt-2">{t.cta.contact}</p>
+                        <a href={`mailto:${t.cta.contact}`} className="inline-block text-[11px] md:text-[13px] text-[#0047BB] mt-2 hover:underline">{t.cta.contact}</a>
                         <p className="text-[8px] md:text-[10px] font-code-brand uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/30 mt-6 md:mt-8">SORRYWECAN // RESEARCH LAB // 2026</p>
                     </div>
                 </div>

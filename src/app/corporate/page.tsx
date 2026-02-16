@@ -86,7 +86,7 @@ export default function CorporatePage() {
                          tagline: "Years of building products showed him exactly where teams lose months on what can now be done many times faster.",
                          bio: "Co-founded SUDOLABS. Years shipping digital products across fintech, health, and enterprise. Sees the gap between what companies build and what they could build.",
                          url: "https://sudolabs.com/",
-                         image: ""
+                         image: "/founders/jan.jpg"
                      },
                     { 
                           name: "Roman Pii Wagner", 
@@ -207,7 +207,7 @@ export default function CorporatePage() {
                          tagline: "Po rokoch v developmente presne vie, kde tímy trávia mesiace nad niečím, čo sa dnes dá zvládnuť mnohonásobne rýchlejšie.",
                          bio: "Spoluzakladateľ SUDOLABS. Roky dodávania digitálnych produktov naprieč fintechom, zdravotníctvom a enterprise. Vidí priepasť medzi tým, čo firmy stavajú a čo by stavať mohli.",
                          url: "https://sudolabs.com/",
-                         image: ""
+                         image: "/founders/jan.jpg"
                      },
                      { 
                           name: "Roman Pii Wagner", 
@@ -467,26 +467,26 @@ export default function CorporatePage() {
                 </div>
             </section>
 
-            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
-                <div className="max-w-5xl mx-auto">
-                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <section className="py-28 md:py-36 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-16">{t.outcome.title}</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
                         {t.outcome.items.map((item: any, i: number) => (
-                            <div key={i} className="p-5 border border-black/10">
-                                <span className="w-7 h-7 bg-[#0047BB] text-white flex items-center justify-center font-bold text-xs mb-3 font-code-brand">
+                            <div key={i} className="p-6 md:p-8 border border-black/10">
+                                <span className="w-8 h-8 bg-[#0047BB] text-white flex items-center justify-center font-bold text-sm mb-4 font-code-brand">
                                     {i + 1}
                                 </span>
-                                <h4 className="font-bold text-sm mb-1">{item.title}</h4>
-                                <p className="text-xs text-black/50">{item.desc}</p>
+                                <h4 className="font-bold text-base mb-2">{item.title}</h4>
+                                <p className="text-sm text-black/50">{item.desc}</p>
                             </div>
                         ))}
                     </div>
 
-                    <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-black/10">
+                    <div className="grid grid-cols-3 gap-6 mt-16 pt-16 border-t border-black/10">
                         {t.proof.stats.map((stat: any, i: number) => (
                             <div key={i} className="text-center">
                                 <span className="text-4xl md:text-5xl font-bold text-[#0047BB]">{stat.value}</span>
-                                <p className="text-xs text-black/40 mt-2 font-code-brand">{stat.label}</p>
+                                <p className="text-sm text-black/40 mt-2 font-code-brand">{stat.label}</p>
                             </div>
                         ))}
                     </div>
@@ -551,7 +551,7 @@ export default function CorporatePage() {
                     <div className="mt-8 flex items-center justify-center gap-3">
                         <span className="text-sm text-white/40">{lang === 'en' ? "Want to try first?" : "Chceš najprv vyskúšať?"}</span>
                         <Link 
-                            href="/public" 
+                            href="/" 
                             className="text-sm font-bold text-[#0047BB] hover:text-white transition-colors font-code-brand"
                         >
                             {lang === 'en' ? "THE MINDSHIFT €99" : "THE MINDSHIFT €99"} →

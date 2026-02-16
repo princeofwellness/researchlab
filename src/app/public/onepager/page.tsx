@@ -364,9 +364,14 @@ export default function PublicOnePager() {
                             ))}
                         </div>
 
-                        <div className="inline-block bg-[#0047BB] px-6 md:px-8 py-3 md:py-4">
+                        <a 
+                            href="https://cal.com/researchlabsorrywecan/theshift" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-block bg-[#0047BB] px-6 md:px-8 py-3 md:py-4 hover:bg-black transition-colors cursor-pointer"
+                        >
                             <p className="text-[12px] md:text-[14px] font-code-brand font-bold uppercase tracking-widest text-white">{t.cta.email}</p>
-                        </div>
+                        </a>
                         
                         <p className="text-[11px] md:text-[13px] text-black/40 mt-6 md:mt-8">{t.cta.contact}</p>
                         <p className="text-[8px] md:text-[10px] font-code-brand uppercase tracking-[0.2em] md:tracking-[0.3em] text-black/30 mt-6 md:mt-8">SORRYWECAN // RESEARCH LAB // 2026</p>

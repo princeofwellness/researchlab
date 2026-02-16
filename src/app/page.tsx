@@ -41,6 +41,15 @@ export default function HomePage() {
                     { value: "56%", label: "of companies see no return on AI investment yet", source: "PwC 2026" }
                 ]
             },
+            problem: {
+                title: "Sound Familiar?",
+                cards: [
+                    { headline: "Generation is easy now.", subline: "Recognizing quality is harder." },
+                    { headline: "Tools keep multiplying.", subline: "Habits can't keep up." },
+                    { headline: "Everything moves faster.", subline: "But what's actually worth creating?" },
+                    { headline: "AI gave everyone the same power.", subline: "So what's your edge now?" }
+                ]
+            },
             session: {
                 title: "What separates the 1%.",
                 subtitle: "",
@@ -73,6 +82,15 @@ export default function HomePage() {
                         desc: "Your questions. Your reality. Open and honest answers from people who work with AI daily.",
                         lead: "All"
                     }
+                ]
+            },
+            outcome: {
+                title: "You Leave With",
+                items: [
+                    { title: "A Working System", desc: "Not tips. Not theory. A way of working with AI you'll actually use Monday morning." },
+                    { title: "Less Noise, More Signal", desc: "Lower mental load. No more AI FOMO. You stop chasing tools and start choosing the right ones." },
+                    { title: "Your Edge", desc: "Everyone has the same tools. You'll know what they don't. How to see, decide, and create differently." },
+                    { title: "The Community", desc: "Access to the people who showed up. Monthly toolkit updates. A place to stay connected and keep growing." }
                 ]
             },
             founders: {
@@ -165,6 +183,15 @@ export default function HomePage() {
                     { value: "56%", label: "firiem nevidí návratnosť investícií do AI", source: "PwC 2026" }
                 ]
             },
+            problem: {
+                title: "Poznáte To?",
+                cards: [
+                    { headline: "Generovať je dnes jednoduché.", subline: "Rozlíšiť kvalitu je ťažšie." },
+                    { headline: "Nástroje pribúdajú.", subline: "Návyky nestíhajú." },
+                    { headline: "Všetko ide rýchlejšie.", subline: "Ale čo sa naozaj oplatí tvoriť?" },
+                    { headline: "AI dalo všetkým rovnaké možnosti.", subline: "Tak čo je teraz tvoja výhoda?" }
+                ]
+            },
             session: {
                 title: "Čo odlišuje to 1%.",
                 subtitle: "",
@@ -197,6 +224,15 @@ export default function HomePage() {
                         desc: "Vaše otázky. Vaša realita. Otvorené a úprimné odpovede od ľudí, ktorí s AI pracujú denne.",
                         lead: "Všetci"
                     }
+                ]
+            },
+            outcome: {
+                title: "S Čím Odchádzate",
+                items: [
+                    { title: "Funkčný Systém", desc: "Nie tipy. Nie teória. Spôsob práce s AI, ktorý reálne použijete v pondelok ráno." },
+                    { title: "Menej Šumu, Viac Signálu", desc: "Nižšia mentálna záťaž. Koniec AI FOMO. Prestanete naháňať nástroje a začnete vyberať tie správne." },
+                    { title: "Vaša Výhoda", desc: "Rovnaké nástroje má každý. Vy budete vedieť, čo ostatní nie. Ako vidieť, rozhodovať a tvoriť inak." },
+                    { title: "Komunita", desc: "Prístup ku ľuďom, ktorí prišli. Mesačné toolkit updaty. Miesto, kde zostanete prepojení a rastete ďalej." }
                 ]
             },
             founders: {
@@ -407,6 +443,30 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Sound Familiar? */}
+            <section className="py-16 md:py-20 px-6 md:px-12 border-b border-black/10">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="font-bold text-2xl md:text-3xl text-center mb-10">
+                        {t.problem.title}
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {t.problem.cards.map((card: any, i: number) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 15 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.08 }}
+                                className="p-6 border border-black/10 bg-black/[0.03]"
+                            >
+                                <p className="text-lg md:text-xl font-medium text-black">{card.headline}</p>
+                                <p className="text-lg md:text-xl text-black/40">{card.subline}</p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Session Breakdown */}
             <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black/10">
                 <div className="max-w-5xl mx-auto">
@@ -480,6 +540,31 @@ export default function HomePage() {
                     {t.founders.trust && (
                         <p className="text-center text-[11px] font-code-brand text-black/40 mt-6">{t.founders.trust}</p>
                     )}
+                </div>
+            </section>
+
+            {/* You Leave With */}
+            <section className="py-20 md:py-28 px-6 md:px-12 bg-black/[0.02] border-b border-black/10">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="font-bold text-3xl md:text-4xl text-center mb-12">{t.outcome.title}</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
+                        {t.outcome.items.map((item: any, i: number) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 15 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.08 }}
+                                className="p-6 md:p-8 border border-black/10"
+                            >
+                                <span className="w-8 h-8 bg-[#0047BB] text-white flex items-center justify-center font-bold text-sm mb-4 font-code-brand">
+                                    {i + 1}
+                                </span>
+                                <h4 className="font-bold text-base mb-2">{item.title}</h4>
+                                <p className="text-sm text-black/50">{item.desc}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
 

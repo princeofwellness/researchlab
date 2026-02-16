@@ -303,13 +303,13 @@ export default function HomePage() {
     const t = content[lang]
 
     const partners = [
-        { name: "Meta", logo: "/logos/meta.png" },
-        { name: "Tatra Banka", logo: "/logos/tatrabanka.png" },
-        { name: "Raiffeisen", logo: "/logos/raiffeisen.png" },
-        { name: "VUB Banka", logo: "/logos/vub.png" },
-        { name: "Sennheiser", logo: "/logos/sennheiser.png" },
-        { name: "Forbes", logo: "/logos/forbes.png" },
-        { name: "Audi", logo: "/logos/audi.svg" }
+        { name: "Meta", logo: "/logos/meta.png", size: "h-6 md:h-7" },
+        { name: "Tatra Banka", logo: "/logos/tatrabanka.png", size: "h-8 md:h-9" },
+        { name: "Raiffeisen", logo: "/logos/raiffeisen.png", size: "h-8 md:h-9" },
+        { name: "VUB Banka", logo: "/logos/vub.png", size: "h-6 md:h-7" },
+        { name: "Sennheiser", logo: "/logos/sennheiser.png", size: "h-8 md:h-9" },
+        { name: "Forbes", logo: "/logos/forbes.png", size: "h-6 md:h-7" },
+        { name: "Audi", logo: "/logos/audi.svg", size: "h-6 md:h-7" }
     ]
 
     return (
@@ -396,15 +396,15 @@ export default function HomePage() {
                             {partners.map((partner) => (
                                 <div 
                                     key={partner.name}
-                                    className="relative h-6 md:h-7 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                                    className={cn("relative w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300", partner.size)}
                                 >
                                     <Image
                                         src={partner.logo}
                                         alt={partner.name}
-                                        height={28}
-                                        width={100}
-                                        className="h-6 md:h-7 w-auto object-contain"
-                                        style={{ maxWidth: '100px' }}
+                                        height={36}
+                                        width={120}
+                                        className={cn("w-auto object-contain", partner.size)}
+                                        style={{ maxWidth: '120px' }}
                                     />
                                 </div>
                             ))}

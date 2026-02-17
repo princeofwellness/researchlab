@@ -134,7 +134,7 @@ export default function HomePage() {
                     { q: "What should I bring?", a: "A laptop. That's it." },
                     { q: "Why €99?", a: "We're creating a format that's truly accessible." },
                     { q: "What makes this different?", a: "We don't just teach AI. We show how we actually work with it every day — and how you can too." },
-                    { q: "Can my employer cover this?", a: "Yes, we can prepare an invoice for your employer." },
+                    { q: "Can my employer cover this?", a: "Yes. Book your seat, then email invoice@sorrywecan.com with your company name, address, and ID number (ICO/DIC). We'll issue a proper invoice from SORRYWECAN s.r.o. to your company." },
                     { q: "What language is the workshop in?", a: "The workshop is in Slovak. Materials are often in English as well." },
                     { q: "What if I want more after?", a: "Want to bring your whole team or go deeper into the topic? Get in touch." }
                 ],
@@ -276,7 +276,7 @@ export default function HomePage() {
                     { q: "Čo si mám priniesť?", a: "Stačí laptop." },
                     { q: "Prečo €99?", a: "Vytvárame formát, ktorý je naozaj dostupný." },
                     { q: "Čo je na tom iné?", a: "Neučíme len AI. Ukazujeme, ako s ňou reálne pracujeme každý deň a ako môžete vy." },
-                    { q: "Je možné dať kurz preplatiť?", a: "Áno, vieme pripraviť faktúru aj pre tvojho zamestnávateľa." },
+                    { q: "Je možné dať kurz preplatiť?", a: "Áno. Zarezervuj si miesto, potom nám napíš na invoice@sorrywecan.com s názvom firmy, adresou a IČO/DIČ. Vystavíme faktúru zo SORRYWECAN s.r.o. na tvoju firmu." },
                     { q: "V akom jazyku prebieha workshop?", a: "Workshop prebieha v slovenčine, zaslané materiály sú často aj v angličtine." },
                     { q: "Čo ak budem chcieť viac?", a: "Chceš prísť na workshop s celým tvojim tímom alebo sa do témy ponoriť viac? Ozvi sa nám." }
                 ],

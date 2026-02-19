@@ -210,7 +210,7 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Univerzálna",
                 audience: "Ktokoľvek z tvojho okolia",
-                message: "Čau [meno], 26.2. robíme v Bratislave jednu vec — THE MINDSHIFT. 40 ľudí, jeden večer, AI ale nie pre začiatočníkov. Napadlo ma, že by ťa to mohlo zaujať. Ak jo, hodím ti viac info. Ak nie, žiadny stres.",
+                message: "Čau [meno], 26.2. robíme v Bratislave jednu vec — THE MINDSHIFT. 40 ľudí, jeden večer — o tom, ako reálne myslieť a pracovať s AI v tejto dobe. Napadlo ma, že by ťa to mohlo zaujať. Ak jo, hodím ti viac info. Ak nie, žiadny stres.",
             },
             {
                 label: "Kreatívci",
@@ -264,7 +264,7 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Voice note / DM tip",
                 audience: "Keď radšej pošleš hlasovku",
-                message: "Čau [meno], len krátko — 26.2. robíme v Bratislave AI workshop, 40 ľudí, jeden večer. Nie pre začiatočníkov, skôr pre ľudí, čo už s tým pracujú. Napadlo ma, že by ťa to mohlo zaujať. Keby jo, hodím ti link. Keby nie, pohoda.",
+                message: "Čau [meno], len krátko — 26.2. robíme v Bratislave AI workshop, 40 ľudí, jeden večer. Pre ľudí, čo s AI už pracujú, aj pre tých, čo sú zvedaví a chcú začať. Napadlo ma, že by ťa to mohlo zaujať. Keby jo, hodím ti link. Keby nie, pohoda.",
             },
         ],
     },

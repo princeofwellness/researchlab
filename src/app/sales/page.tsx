@@ -210,7 +210,7 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Univerzálna",
                 audience: "Ktokoľvek z tvojho okolia",
-                message: "Čau [meno], 26.2. robíme v Bratislave THE MINDSHIFT — jeden večer, 40 ľudí, traja founders z troch rôznych svetov (kreativa, produkt, transformácia). Každý prináša iný pohľad na to, ako dnes reálne myslieť a pracovať s AI. Napadlo ma, že by ti to mohlo dať zaujímavé insighty do práce. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], 26.2. robíme v Bratislave THE MINDSHIFT — jeden večer, 40 ľudí, traja founders z troch rôznych svetov (kreativa, digitálne produkty, transformácia). Každý prináša iný pohľad na to, ako dnes reálne myslieť a pracovať s AI. Napadlo ma, že by ti to mohlo dať zaujímavé insighty do práce. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Kreatívci",
@@ -232,12 +232,12 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Osobná správa",
                 audience: "Človek ktorého poznáš z biznisu",
-                message: "Ahoj [meno], organizujeme 26.2. v Bratislave THE MINDSHIFT — AI workshop pre 40 ľudí. Traja founders z kreativy, produktu a transformácie — každý prináša iný pohľad na to, ako s AI reálne pracovať a priniesť nové insighty do svojej práce. Myslím, že by to mohlo byť niečo pre teba. Viac tu: https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Ahoj [meno], organizujeme 26.2. v Bratislave THE MINDSHIFT — AI workshop pre 40 ľudí. Traja founders z kreativy, digitálnych produktov a transformácie — každý prináša iný pohľad na to, ako s AI reálne pracovať a priniesť nové insighty do svojej práce. Myslím, že by to mohlo byť niečo pre teba. Viac tu: https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Pre tím / firmu",
                 audience: "HR, team lead, CEO — keď chceš aby poslali ľudí",
-                message: "Ahoj [meno], 26.2. robíme v BA workshop THE MINDSHIFT — 40 miest, jeden večer. Tri perspektívy z kreativy, produktu a transformácie. Pre ľudí, ktorí chcú lepšie pochopiť, ako AI reálne využiť vo svojej práci. Akákoľvek pozícia, akékoľvek odvetvie. Myslím, že by to mohlo byť zaujímavé pre váš tím. https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Ahoj [meno], 26.2. robíme v BA workshop THE MINDSHIFT — 40 miest, jeden večer. Tri perspektívy z kreativy, digitálnych produktov a transformácie. Pre ľudí, ktorí chcú lepšie pochopiť, ako AI reálne využiť vo svojej práci. Akákoľvek pozícia, akékoľvek odvetvie. Myslím, že by to mohlo byť zaujímavé pre váš tím. https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Kreatívna agentúra",
@@ -254,7 +254,7 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Firma — všeobecne",
                 audience: "Nový kontakt, firma ktorú nepoznáš",
-                message: "Dobrý deň, 26. februára organizujeme v Bratislave workshop THE MINDSHIFT — 40 ľudí, jeden večer. Traja founders z kreativy, produktu a transformácie ukážu, ako s AI reálne pracovať a priniesť nové pohľady do vašej práce. Pre kohokoľvek zvedavého, bez ohľadu na pozíciu či odvetvie. Viac info: https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Dobrý deň, 26. februára organizujeme v Bratislave workshop THE MINDSHIFT — 40 ľudí, jeden večer. Traja founders z kreativy, digitálnych produktov a transformácie ukážu, ako s AI reálne pracovať a priniesť nové pohľady do vašej práce. Pre kohokoľvek zvedavého, bez ohľadu na pozíciu či odvetvie. Viac info: https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Kreatívny priemysel",
@@ -264,7 +264,7 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Voice note / DM",
                 audience: "Keď radšej pošleš hlasovku",
-                message: "Čau [meno], len krátko — 26.2. robíme v BA THE MINDSHIFT. 40 ľudí, jeden večer, traja founders z troch rôznych svetov. Každý prináša iný pohľad na to, ako dnes pracovať s AI. Pre ľudí, čo s tým už robia, aj pre tých, čo sú zvedaví a chcú začať. Napadlo ma, že by ti to mohlo dať niečo do práce. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], len krátko — 26.2. robíme v BA THE MINDSHIFT. 40 ľudí, jeden večer, traja founders z troch rôznych svetov (kreativa, digitálne produkty, transformácia). Každý prináša iný pohľad na to, ako dnes pracovať s AI. Pre ľudí, čo s tým už robia, aj pre tých, čo sú zvedaví a chcú začať. Napadlo ma, že by ti to mohlo dať niečo do práce. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
             },
         ],
     },

@@ -270,6 +270,16 @@ const OUTREACH_TEMPLATES = [
     },
 ]
 
+const INTERNAL_TEAM_MESSAGE = `Čau všetci,
+
+Krátka vec — 26.2. robíme THE MINDSHIFT a pomaly dopĺňame miesta.
+
+Ak vám napadne ktokoľvek z vášho okolia — kamarát, známy, bývalý kolega, klient — kto by mohol mať záujem, stačí nám hodiť meno alebo kontakt. Nemusíte nikomu písať, to urobíme my. Proste len: "hej, skús osloviť tohto človeka" a my sa postaráme o zvyšok.
+
+Môže to byť ktokoľvek zvedavý — nezáleží na pozícii ani odvetví. Stačí, že ho/ju téma AI a to, ako s ním pracovať, aspoň trochu zaujíma.
+
+Ďakujeme za akýkoľvek tip.`
+
 const PARTNER_TARGETS = [
     { sector: "Marketing Agencies", why: "Their teams ARE the target audience. AI is transforming their workflows.", examples: "Digital studios, performance agencies, creative shops", approach: "Team development angle. Group discount for 3+." },
     { sector: "Tech Companies", why: "AI-forward teams. Engineers, PMs, designers already using tools.", examples: "SaaS companies, dev shops, tech consultancies", approach: "Skill upgrade angle. 'Stay ahead of your competition.'" },
@@ -659,6 +669,20 @@ export default function SalesStrategyPage() {
                             Vždy uprav meno a detail. Nikdy nepošli generickú správu. 
                             Lepšie 5 osobných správ ako 50 copy-paste.
                         </p>
+                    </div>
+                </section>
+
+                {/* ── Internal Team Message ── */}
+                <section className="mb-16 bg-[#0047BB] text-white p-6 md:p-8">
+                    <div className="flex items-center justify-between mb-6">
+                        <h2 className="font-serif text-2xl md:text-3xl italic">Interná správa pre tím</h2>
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Copy &amp; Paste</span>
+                    </div>
+                    <p className="text-sm text-white/50 mb-6">
+                        Poslať do interného chatu SORRYWECAN. Cieľ: využiť sieť celého tímu bez toho, aby museli komukoľvek písať sami.
+                    </p>
+                    <div className="bg-white/10 border border-white/20 p-5">
+                        <p className="text-sm text-white/90 leading-relaxed whitespace-pre-wrap">{INTERNAL_TEAM_MESSAGE}</p>
                     </div>
                 </section>
 

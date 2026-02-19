@@ -130,6 +130,7 @@ export default function HomePage() {
             faq: {
                 title: "Questions.",
                 items: [
+                    { q: "Who is this for?", a: "For people who already work with AI and want more. And for those who haven't started yet but feel it's time. Entrepreneurs, creatives, managers, developers — title doesn't matter. Curiosity does." },
                     { q: "Do I need technical skills?", a: "No. If you can use a browser, you can do this." },
                     { q: "What should I bring?", a: "A laptop. That's it." },
                     { q: "Why €99?", a: "We're creating a format that's truly accessible." },
@@ -272,6 +273,7 @@ export default function HomePage() {
             faq: {
                 title: "Otázky.",
                 items: [
+                    { q: "Pre koho je to?", a: "Pre ľudí, ktorí s AI už pracujú a chcú viac. Aj pre tých, ktorí ešte nezačali, ale cítia, že je čas. Podnikatelia, kreatívci, manažéri, vývojári — nezáleží na pozícii. Záleží na zvedavosti." },
                     { q: "Potrebujem technické zručnosti?", a: "Nie. Ak vieš používať prehliadač, zvládneš to." },
                     { q: "Čo si mám priniesť?", a: "Stačí laptop." },
                     { q: "Prečo €99?", a: "Vytvárame formát, ktorý je naozaj dostupný." },

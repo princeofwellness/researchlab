@@ -201,6 +201,75 @@ const OUTREACH_TRACKER_TEMPLATE = [
     { name: "[Contact Name]", segment: "Executive", channel: "Email", owner: "Andrea", status: "No response", response: "—", followUp: "Feb 22", notes: "Head of innovation, bank" },
 ]
 
+const OUTREACH_TEMPLATES = [
+    {
+        tier: "Kamaráti",
+        tierEn: "Friends & Inner Circle",
+        tone: "Tykanie. Osobné. Ako keby si písal kamarátovi.",
+        templates: [
+            {
+                label: "Univerzálna",
+                audience: "Ktokoľvek z tvojho okolia",
+                message: "Čau [meno], 26.2. robíme v Bratislave jednu vec — THE MINDSHIFT. 40 ľudí, jeden večer, AI ale nie pre začiatočníkov. Napadlo ma, že by ťa to mohlo zaujať. Ak jo, hodím ti viac info. Ak nie, žiadny stres.",
+            },
+            {
+                label: "Kreatívci",
+                audience: "Dizajnéri, marketéri, content ľudia",
+                message: "Čau [meno], 26.2. robíme THE MINDSHIFT — AI workshop pre 40 ľudí v BA. Roland tam bude hovoriť o vkuse a o tom, čo odlišuje dobrú prácu od priemernej, keď nástroje má každý. Myslím, že presne tvoja téma. Prídeš?",
+            },
+            {
+                label: "Biznis / Founders",
+                audience: "Podnikatelia, manažéri, lídri",
+                message: "Čau [meno], 26.2. robíme prvý live event — THE MINDSHIFT. 40 ľudí, 3.5h, žiadne básičky. Ako reálne pracovať s AI, rozhodovať sa rýchlejšie a nestratiť sa v tom. Daj vedieť, ak chceš miesto.",
+            },
+        ],
+    },
+    {
+        tier: "Network",
+        tierEn: "Partners & Colleagues",
+        tone: "Tykanie alebo vykanie podľa vzťahu. Teplý ale profesionálny.",
+        templates: [
+            {
+                label: "Osobná správa",
+                audience: "Človek ktorého poznáš z biznisu",
+                message: "Ahoj [meno], organizujeme 26.2. v Bratislave THE MINDSHIFT — AI workshop pre 40 ľudí. Nie teória, nie prompty. Praktický pohľad na to, ako s AI reálne pracovať a rozhodovať sa lepšie. Myslím, že by ťa to mohlo zaujať. Pošlem ti viac, ak chceš.",
+            },
+            {
+                label: "Pre tím / firmu",
+                audience: "HR, team lead, CEO — keď chceš aby poslali ľudí",
+                message: "Ahoj [meno], 26.2. robíme v BA workshop THE MINDSHIFT — 40 miest, 3.5 hodiny. Pre ľudí, ktorí už s AI pracujú a chcú z toho vyťažiť viac. Akákoľvek pozícia, akékoľvek odvetvie. Myslím, že by to mohlo byť zaujímavé pre váš tím. Ak áno, rád poviem viac.",
+            },
+            {
+                label: "Kreatívna agentúra",
+                audience: "Agentúry, štúdiá, produkcie",
+                message: "Ahoj [meno], robíme 26.2. v BA workshop THE MINDSHIFT. 40 ľudí, jeden večer — o tom, čo odlišuje dobrú prácu od priemernej, keď AI nástroje má každý. Roland, Ján a Roman — traja ľudia, čo s tým denne pracujú. Myslím, že pre vás super relevantné. Daj vedieť.",
+            },
+        ],
+    },
+    {
+        tier: "Nový kontakt",
+        tierEn: "Cold Outreach",
+        tone: "Vykanie. Rešpekt. Žiadny push — len ponuka informácie.",
+        templates: [
+            {
+                label: "Firma — všeobecne",
+                audience: "Nový kontakt, firma ktorú nepoznáš",
+                message: "Dobrý deň, organizujeme 26. februára v Bratislave workshop THE MINDSHIFT. 40 ľudí, 3.5 hodiny — praktický AI workshop pre ľudí, ktorí s AI už pracujú a chcú z toho vyťažiť viac. Pre akúkoľvek pozíciu, akékoľvek odvetvie. Ak je to téma, ktorú riešite, radi pošleme viac informácií.",
+            },
+            {
+                label: "Kreatívny priemysel",
+                audience: "Agentúra, štúdio, produkcia — cold",
+                message: "Dobrý deň, sledujeme, čo robíte, a páči sa nám to. 26.2. robíme v Bratislave THE MINDSHIFT — AI workshop pre 40 ľudí. Nie školenie na prompty. O vkuse, rozhodovaní a o tom, čo odlišuje dobrú prácu od priemernej v dobe AI. Ak vás to zaujme — radi povieme viac.",
+            },
+            {
+                label: "Voice note / DM tip",
+                audience: "Keď radšej pošleš hlasovku",
+                message: "Čau [meno], len krátko — 26.2. robíme v Bratislave AI workshop, 40 ľudí, jeden večer. Nie pre začiatočníkov, skôr pre ľudí, čo už s tým pracujú. Napadlo ma, že by ťa to mohlo zaujať. Keby jo, hodím ti link. Keby nie, pohoda.",
+            },
+        ],
+    },
+]
+
 const PARTNER_TARGETS = [
     { sector: "Marketing Agencies", why: "Their teams ARE the target audience. AI is transforming their workflows.", examples: "Digital studios, performance agencies, creative shops", approach: "Team development angle. Group discount for 3+." },
     { sector: "Tech Companies", why: "AI-forward teams. Engineers, PMs, designers already using tools.", examples: "SaaS companies, dev shops, tech consultancies", approach: "Skill upgrade angle. 'Stay ahead of your competition.'" },
@@ -543,6 +612,53 @@ export default function SalesStrategyPage() {
                                 <div className="p-3 text-black/60 italic">{row.example}</div>
                             </div>
                         ))}
+                    </div>
+                </section>
+
+                {/* ── Outreach Templates ── */}
+                <section className="mb-16">
+                    <SectionLabel>Outreach Templates — Skopíruj &amp; Pošli</SectionLabel>
+                    <p className="text-sm text-black/40 mb-6">
+                        Správy v slovenčine. Podľa vzťahu a segmentu. Skopíruj, uprav meno, pošli.
+                    </p>
+
+                    <div className="space-y-8">
+                        {OUTREACH_TEMPLATES.map((tier, ti) => (
+                            <div key={ti}>
+                                <div className="flex items-baseline gap-3 mb-4">
+                                    <span className="w-8 h-8 flex items-center justify-center bg-[#0047BB] text-white text-sm font-bold">
+                                        {ti + 1}
+                                    </span>
+                                    <div>
+                                        <span className="font-bold text-lg">{tier.tier}</span>
+                                        <span className="text-sm text-black/40 ml-2">{tier.tierEn}</span>
+                                    </div>
+                                </div>
+                                <p className="text-xs text-black/40 italic mb-3 ml-11">{tier.tone}</p>
+
+                                <div className="space-y-3 ml-11">
+                                    {tier.templates.map((tmpl, i) => (
+                                        <div key={i} className="border border-black/10 overflow-hidden">
+                                            <div className="bg-black/[0.02] px-4 py-2 flex items-center justify-between border-b border-black/10">
+                                                <span className="font-bold text-sm">{tmpl.label}</span>
+                                                <span className="text-[10px] font-bold tracking-widest text-black/30">{tmpl.audience}</span>
+                                            </div>
+                                            <div className="p-4 bg-white">
+                                                <p className="text-sm text-black/80 leading-relaxed whitespace-pre-wrap">{tmpl.message}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="mt-6 bg-amber-50 border border-amber-200 p-4 text-sm">
+                        <p className="font-bold text-amber-800 mb-1">Pravidlo #1</p>
+                        <p className="text-amber-700/70">
+                            Vždy uprav meno a detail. Nikdy nepošli generickú správu. 
+                            Lepšie 5 osobných správ ako 50 copy-paste.
+                        </p>
                     </div>
                 </section>
 

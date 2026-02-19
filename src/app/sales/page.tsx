@@ -215,12 +215,12 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Kreatívci",
                 audience: "Dizajnéri, marketéri, content ľudia",
-                message: "Čau [meno], 26.2. robíme v BA THE MINDSHIFT — 40 ľudí, jeden večer. Roland Vraník (kampane pre Meta, Audi, Samsung), Ján zo SUDOLABS a Roman Wagner — tri perspektívy na to, čo odlišuje výnimočnú prácu od priemernej, keď AI nástroje má každý. Myslím, že presne tvoja téma. https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], 26.2. robíme v BA THE MINDSHIFT — 40 ľudí, jeden večer. Roland Vraník (kampane pre Meta, Audi, Samsung), Ján zo SUDOLABS a Roman Wagner — tri perspektívy na to, čo odlišuje výnimočnú prácu od priemernej, keď AI nástroje má každý. Myslím, že by ťa to mohlo zaujať. https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Biznis / Founders",
                 audience: "Podnikatelia, manažéri, lídri",
-                message: "Čau [meno], 26.2. robíme THE MINDSHIFT — AI workshop v BA pre 40 ľudí. Traja ľudia z troch rôznych oblastí ti za jeden večer ukážu, ako myslieť a rozhodovať sa inak. Reálne veci, čo fungujú. Daj vedieť, ak chceš miesto. https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], 26.2. robíme THE MINDSHIFT — AI workshop v BA pre 40 ľudí. Traja zakladatelia z troch rôznych oblastí, ktorí s AI denne pracujú. Jeden večer, reálne skúsenosti, žiadna teória. Daj vedieť, ak chceš miesto. https://research-lab-vert.vercel.app/sk/mindshift",
             },
         ],
     },

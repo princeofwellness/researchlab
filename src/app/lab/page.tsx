@@ -13,7 +13,7 @@ export default function LabPage() {
 
     const pages = [
         { name: "Sales Strategy", href: "/sales", desc: "Outreach architecture, pipeline tracker, buyer portraits. Fill the room." },
-        { name: "Prospect Database", href: "/prospects", desc: "100 Bratislava companies researched. Tiered by fit. Email templates ready." },
+        { name: "Prospect Database", href: "/prospects", desc: "145 Bratislava companies across 10 sectors. Tiered by fit. Email templates ready." },
         { name: "Growth Plan", href: "/growth-plan", desc: "Living roadmap: phases, initiatives, metrics. Updated as we grow." },
         { name: "The Playbook", href: "/gameplan", desc: "Growth architecture: how to build, scale, and lead in AI education." },
         { name: "Marketing Sync", href: "/marketing-sync", desc: "THE MINDSHIFT operational hub. Ownership, status, timeline." },

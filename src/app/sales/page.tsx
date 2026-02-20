@@ -264,7 +264,7 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Voice note / DM",
                 audience: "Keď radšej pošleš hlasovku",
-                message: "Čau [meno], len krátko — robíme 26.2. v BA live AI večer, THE MINDSHIFT. Pre ľudí, čo s AI už pracujú, aj pre tých, čo sú zvedaví a chcú začať. Napadlo ma, že by ti to mohlo dať niečo do práce. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], len krátko — robíme 26.2. v BA live AI večer, THE MINDSHIFT. Pre ľudí, čo s AI už pracujú, aj pre tých, čo sú zvedaví a chcú začať. Napadlo ma, že by ťa to mohlo zaujať. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
             },
         ],
     },

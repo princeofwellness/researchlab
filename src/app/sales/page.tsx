@@ -210,17 +210,17 @@ const OUTREACH_TEMPLATES = [
             {
                 label: "Univerzálna",
                 audience: "Ktokoľvek z tvojho okolia",
-                message: "Čau [meno], robíme 26.2. v BA live AI večer — THE MINDSHIFT. Napadlo ma, že by ťa to bavilo. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], robíme 26.2. v BA live AI večer — THE MINDSHIFT. Napadlo ma, že by ťa to mohlo zaujať. Kúkni: https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Kreatívci",
                 audience: "Dizajnéri, marketéri, content ľudia",
-                message: "Čau [meno], robíme 26.2. v BA niečo, čo sme dlho chceli — live večer o tom, čo odlišuje výnimočnú prácu od priemernej v dobe AI. Myslím, že by ťa to bavilo. https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], robíme 26.2. v BA niečo, čo sme dlho chceli — live večer o tom, čo odlišuje výnimočnú prácu od priemernej v dobe AI. Myslím, že by to mohlo byť niečo pre teba. https://research-lab-vert.vercel.app/sk/mindshift",
             },
             {
                 label: "Biznis / Founders",
                 audience: "Podnikatelia, manažéri, lídri",
-                message: "Čau [meno], 26.2. robíme v BA live AI večer — THE MINDSHIFT. Traja zakladatelia, reálne skúsenosti, žiadna teória. Myslím, že by ti to sadlo. https://research-lab-vert.vercel.app/sk/mindshift",
+                message: "Čau [meno], 26.2. robíme v BA live AI večer — THE MINDSHIFT. Traja zakladatelia, reálne skúsenosti, žiadna teória. Myslím, že by to mohol byť pre teba dobrý fit. https://research-lab-vert.vercel.app/sk/mindshift",
             },
         ],
     },

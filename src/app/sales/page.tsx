@@ -357,8 +357,37 @@ export default function SalesStrategyPage() {
                     </p>
                 </header>
 
+                {/* ── Table of Contents ── */}
+                <nav className="mb-16 border border-black/10 p-5 bg-black/[0.02]">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/40 mb-4">Contents</p>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                        {[
+                            { id: "pipeline", label: "Pipeline Status" },
+                            { id: "buyers", label: "Buyer Portraits" },
+                            { id: "activation", label: "Activation Architecture" },
+                            { id: "network", label: "Network Map" },
+                            { id: "friend-play", label: "The Friend Play" },
+                            { id: "playbook", label: "Non-Pushy Playbook" },
+                            { id: "templates", label: "Outreach Templates" },
+                            { id: "internal", label: "Interná správa pre tím" },
+                            { id: "partners", label: "Partner Targets" },
+                            { id: "tracker", label: "Outreach Tracker" },
+                            { id: "activate-now", label: "What to Activate Now" },
+                            { id: "feedback", label: "Feedback Loop" },
+                        ].map((item) => (
+                            <a
+                                key={item.id}
+                                href={`#${item.id}`}
+                                className="text-sm text-black/60 hover:text-[#0047BB] hover:bg-[#0047BB]/5 px-3 py-2 border border-transparent hover:border-[#0047BB]/20 transition-all"
+                            >
+                                {item.label}
+                            </a>
+                        ))}
+                    </div>
+                </nav>
+
                 {/* ── Pipeline Dashboard ── */}
-                <section className="mb-16">
+                <section id="pipeline" className="mb-16 scroll-mt-24">
                     <SectionLabel>Pipeline Status</SectionLabel>
 
                     <div className="grid grid-cols-4 gap-4 mb-6">
@@ -406,7 +435,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Buyer Portraits ── */}
-                <section className="mb-16">
+                <section id="buyers" className="mb-16 scroll-mt-24">
                     <SectionLabel>Who We{"'"}re Selling To</SectionLabel>
                     <p className="text-sm text-black/40 mb-6">
                         Not beginners. People who already work with AI and want to get meaningfully better. 
@@ -446,7 +475,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Activation Architecture ── */}
-                <section className="mb-16">
+                <section id="activation" className="mb-16 scroll-mt-24">
                     <SectionLabel>Activation Architecture</SectionLabel>
                     <p className="text-sm text-black/40 mb-2">
                         Five layers. Inner circle first (highest conversion), then expand outward.
@@ -532,7 +561,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Network Map ── */}
-                <section className="mb-16">
+                <section id="network" className="mb-16 scroll-mt-24">
                     <SectionLabel>Network Map — Who Does What</SectionLabel>
                     <p className="text-sm text-black/40 mb-6">
                         Not all Roland{"'"}s. Not all Roman{"'"}s. Everyone has a network. This is the combined view.
@@ -561,7 +590,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── The Friend Play ── */}
-                <section className="mb-16 bg-[#0047BB] text-white p-6 md:p-8">
+                <section id="friend-play" className="mb-16 bg-[#0047BB] text-white p-6 md:p-8 scroll-mt-24">
                     <div className="flex items-center justify-between mb-6">
                         <h2 className="font-serif text-2xl md:text-3xl italic">The Friend Play</h2>
                         <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">High Leverage</span>
@@ -603,7 +632,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Tone / Anti-Pushy Playbook ── */}
-                <section className="mb-16">
+                <section id="playbook" className="mb-16 scroll-mt-24">
                     <SectionLabel>The Non-Pushy Playbook</SectionLabel>
                     <p className="text-sm text-black/40 mb-6">
                         How we talk about this. Not sales scripts. Conversations.
@@ -626,7 +655,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Outreach Templates ── */}
-                <section className="mb-16">
+                <section id="templates" className="mb-16 scroll-mt-24">
                     <SectionLabel>Outreach Templates — Skopíruj &amp; Pošli</SectionLabel>
                     <p className="text-sm text-black/40 mb-6">
                         Správy v slovenčine. Podľa vzťahu a segmentu. Skopíruj, uprav meno, pošli.
@@ -673,7 +702,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Internal Team Message ── */}
-                <section className="mb-16 bg-[#0047BB] text-white p-6 md:p-8">
+                <section id="internal" className="mb-16 bg-[#0047BB] text-white p-6 md:p-8 scroll-mt-24">
                     <div className="flex items-center justify-between mb-6">
                         <h2 className="font-serif text-2xl md:text-3xl italic">Interná správa pre tím</h2>
                         <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Copy &amp; Paste</span>
@@ -687,7 +716,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Partner Company Outreach ── */}
-                <section className="mb-16">
+                <section id="partners" className="mb-16 scroll-mt-24">
                     <SectionLabel>Partner Company Targets</SectionLabel>
                     <p className="text-sm text-black/40 mb-6">
                         Companies from different sectors. Their teams = our audience. Think team development, not event ticket.
@@ -722,7 +751,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Outreach Tracker ── */}
-                <section className="mb-16">
+                <section id="tracker" className="mb-16 scroll-mt-24">
                     <SectionLabel>Outreach Tracker — Template</SectionLabel>
                     <p className="text-sm text-black/40 mb-2">
                         Track every DM, call, and email. Who was reached, what they said, what{"'"}s next.
@@ -775,7 +804,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── What to Activate Now ── */}
-                <section className="mb-16 bg-black text-white p-6 md:p-8">
+                <section id="activate-now" className="mb-16 bg-black text-white p-6 md:p-8 scroll-mt-24">
                     <h2 className="font-serif text-2xl md:text-3xl italic mb-2">What to Activate — Right Now</h2>
                     <p className="text-sm text-white/40 mb-8">High-level action plan. Not daily tasks — strategic levers.</p>
 
@@ -848,7 +877,7 @@ export default function SalesStrategyPage() {
                 </section>
 
                 {/* ── Feedback Loop ── */}
-                <section className="mb-16 bg-[#0047BB]/5 border border-[#0047BB]/20 p-6">
+                <section id="feedback" className="mb-16 bg-[#0047BB]/5 border border-[#0047BB]/20 p-6 scroll-mt-24">
                     <h2 className="font-serif text-2xl italic text-[#0047BB] mb-4">Feedback Loop</h2>
                     <p className="text-sm text-black/50 mb-6">
                         Every conversation is data. Track patterns, adjust approach.

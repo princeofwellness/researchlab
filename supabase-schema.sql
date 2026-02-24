@@ -27,6 +27,7 @@ create table if not exists bookings (
     event_id uuid references events(id) not null,
     email text not null,
     name text,
+    attendance_type text not null default 'in_person' check (attendance_type in ('in_person', 'online')),  -- in_person or online (livestream)
     cal_booking_uid text unique,  -- Cal.com booking UID (for deduplication)
     status text not null default 'confirmed' check (status in ('confirmed', 'cancelled', 'refunded')),
     amount_cents integer not null,
@@ -34,6 +35,9 @@ create table if not exists bookings (
     paid_at timestamptz default now(),
     created_at timestamptz default now()
 );
+
+-- MIGRATION: Add attendance type tracking (run this if table already exists)
+-- ALTER TABLE bookings ADD COLUMN attendance_type text NOT NULL DEFAULT 'in_person' CHECK (attendance_type IN ('in_person', 'online'));
 
 -- WEBHOOK LOG (for debugging + idempotency)
 create table if not exists webhook_log (

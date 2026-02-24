@@ -3,6 +3,7 @@ import crypto from "crypto"
 import { createServiceClient } from "@/lib/supabase"
 
 const EVENT_SLUG = "the-shift-feb-26"
+const ONLINE_EVENT_SLUGS = ["theshiftonline"]  // Cal.com event slugs that count as online
 
 function verifySignature(payload: string, signature: string | null, secret: string): boolean {
     if (!signature || !secret) return !secret
@@ -36,6 +37,10 @@ export async function POST(request: NextRequest) {
         const attendeeName = payload?.attendees?.[0]?.name || payload?.responses?.name?.value || ""
         const amountCents = payload?.price ? Math.round(payload.price * 100) : 9900
 
+        // Detect online vs in-person from Cal.com event type slug
+        const calEventSlug = payload?.eventType?.slug || payload?.type?.slug || ""
+        const attendanceType = ONLINE_EVENT_SLUGS.some(s => calEventSlug.includes(s)) ? "online" : "in_person"
+
         const { data: existing } = await supabase
             .from("bookings")
             .select("id")
@@ -68,6 +73,7 @@ export async function POST(request: NextRequest) {
             status: "confirmed",
             amount_cents: amountCents,
             currency: "EUR",
+            attendance_type: attendanceType,
         })
 
         await supabase

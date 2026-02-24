@@ -6,7 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
-import { TheShiftBookButton, MindshiftPopup } from "@/components/book-call"
+import { TheShiftChoiceButton, MindshiftPopup } from "@/components/book-call"
 
 
 export default function HomePage() {
@@ -26,7 +26,8 @@ export default function HomePage() {
                 duration: "3.5 hours",
                 date: "February 26, 2026",
                 location: "Bratislava, Slovakia",
-                cta: "I'm In"
+                cta: "I'm In",
+                onlineLabel: "Prefer online? Livestream"
             },
             trust: {
                 label: "Trusted by"
@@ -153,6 +154,7 @@ export default function HomePage() {
                 headline: "Your Move.",
                 subline: "First session February 26.",
                 button: "I'm In",
+                onlineLabel: "Prefer online? Livestream",
                 note: "Want this for your team?",
                 corporate: "Corporate Workshop"
             }
@@ -169,7 +171,8 @@ export default function HomePage() {
                 duration: "3.5 hodiny",
                 date: "26. februára 2026",
                 location: "Bratislava, Slovensko",
-                cta: "Idem Do Toho"
+                cta: "Idem Do Toho",
+                onlineLabel: "Radšej online? Livestream"
             },
             trust: {
                 label: "Dôverujú nám"
@@ -296,6 +299,7 @@ export default function HomePage() {
                 headline: "Váš Ťah.",
                 subline: "Prvá session 26. februára.",
                 button: "Idem Do Toho",
+                onlineLabel: "Radšej online? Livestream",
                 note: "Chceš toto pre svoj tím?",
                 corporate: "Firemný Workshop"
             }
@@ -374,9 +378,9 @@ export default function HomePage() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                            <TheShiftBookButton>
+                            <TheShiftChoiceButton lang={lang}>
                                 {t.hero.cta}
-                            </TheShiftBookButton>
+                            </TheShiftChoiceButton>
                             <div className="flex items-center gap-4 font-bold uppercase tracking-widest font-code-brand">
                                 <span className="text-sm text-[#0047BB]">{t.hero.date}</span>
                                 <span className="text-sm text-black/30">|</span>
@@ -384,7 +388,6 @@ export default function HomePage() {
                             </div>
                         </div>
                     </motion.div>
-
                     {/* Trusted by */}
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -618,9 +621,9 @@ export default function HomePage() {
                 <div className="max-w-2xl mx-auto px-6">
                     <h2 className="font-bold text-5xl md:text-6xl mb-4">{t.cta.headline}</h2>
                     <p className="text-lg text-white/50 mb-4">{t.cta.subline}</p>
-                    <TheShiftBookButton className="bg-[#0047BB] hover:bg-white hover:text-black">
+                    <TheShiftChoiceButton lang={lang} className="bg-[#0047BB] hover:bg-white hover:text-black">
                         {t.cta.button}
-                    </TheShiftBookButton>
+                    </TheShiftChoiceButton>
                     <div className="mt-12 pt-10 border-t border-white/10">
                         <p className="text-base text-white/50 mb-4">{t.cta.note}</p>
                         <Link 

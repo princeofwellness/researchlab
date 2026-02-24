@@ -264,7 +264,7 @@ export function TheShiftChoiceButton({
     lang = "sk",
 }: BookCallButtonProps & { lang?: "en" | "sk" }) {
     const [step, setStep] = useState<"closed" | "choose" | "booking">("closed")
-    const [bookingConfig, setBookingConfig] = useState(CAL_SHIFT_CONFIG)
+    const [attendanceType, setAttendanceType] = useState<"in_person" | "online">("in_person")
     const [isLoaded, setIsLoaded] = useState(false)
 
     useEffect(() => {
@@ -277,8 +277,8 @@ export function TheShiftChoiceButton({
         }
     }, [step, isLoaded])
 
-    const handleChoice = (type: "inperson" | "online") => {
-        setBookingConfig(type === "online" ? CAL_SHIFT_ONLINE_CONFIG : CAL_SHIFT_CONFIG)
+    const handleChoice = (type: "in_person" | "online") => {
+        setAttendanceType(type)
         setStep("booking")
     }
 
@@ -339,7 +339,7 @@ export function TheShiftChoiceButton({
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <button
-                                onClick={() => handleChoice("inperson")}
+                                onClick={() => handleChoice("in_person")}
                                 className="group p-6 border-2 border-black/10 hover:border-[#0047BB] bg-white/50 hover:bg-white transition-all text-left cursor-pointer"
                             >
                                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#0047BB] font-code-brand">
@@ -383,7 +383,7 @@ export function TheShiftChoiceButton({
                             <span className="text-xl leading-none">&times;</span>
                         </button>
                         <iframe
-                            src={`${bookingConfig.bookingUrl}?embed=true&theme=light`}
+                            src={`${CAL_SHIFT_CONFIG.bookingUrl}?embed=true&theme=light&metadata[attendance_type]=${attendanceType}`}
                             className="w-full h-full border-0"
                             title="Book THE MINDSHIFT"
                         />

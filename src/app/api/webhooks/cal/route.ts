@@ -37,9 +37,13 @@ export async function POST(request: NextRequest) {
         const attendeeName = payload?.attendees?.[0]?.name || payload?.responses?.name?.value || ""
         const amountCents = payload?.price ? Math.round(payload.price * 100) : 9900
 
-        // Detect online vs in-person from Cal.com event type slug
+        // Detect online vs in-person: check metadata first (from CTA choice modal), fallback to event slug
+        const metadataAttendance = payload?.metadata?.attendance_type
         const calEventSlug = payload?.eventType?.slug || payload?.type?.slug || ""
-        const attendanceType = ONLINE_EVENT_SLUGS.some(s => calEventSlug.includes(s)) ? "online" : "in_person"
+        const attendanceType = metadataAttendance === "online" ? "online"
+            : metadataAttendance === "in_person" ? "in_person"
+            : ONLINE_EVENT_SLUGS.some(s => calEventSlug.includes(s)) ? "online"
+            : "in_person"
 
         const { data: existing } = await supabase
             .from("bookings")

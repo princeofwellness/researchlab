@@ -35,9 +35,9 @@ export default function CurriculumPage() {
                     <motion.div {...fade(0.1)} className="mt-8 grid grid-cols-2 md:grid-cols-5 gap-4 p-5 border border-black/10 bg-white/40">
                         {[
                             { label: "Date", value: "26. feb 2026", sub: "Streda" },
-                            { label: "Time", value: "17:00 – 20:10", sub: "~3h 10min" },
+                            { label: "Time", value: "17:00 – 20:20", sub: "~3h 30min" },
                             { label: "Venue", value: "SORRYWECAN Studio", sub: "Pečnianska 7, BA" },
-                            { label: "Format", value: "3 Keynotes", sub: "+ Slido Q&A + Hot Seat" },
+                            { label: "Format", value: "3 Keynotes", sub: "+ Slido Q&A + Hot Seat + Break" },
                             { label: "Price", value: "€99", sub: "Osobne / Online" },
                         ].map((m) => (
                             <div key={m.label} className="text-center">
@@ -116,7 +116,7 @@ export default function CurriculumPage() {
                         {/* ROLAND */}
                         <TimeBlock
                             time="17:05"
-                            duration="35–40 min"
+                            duration="40 min"
                             num="01"
                             title="Taste — Vkus"
                             speaker="Roland Vraník"
@@ -175,7 +175,7 @@ export default function CurriculumPage() {
                         {/* JÁN */}
                         <TimeBlock
                             time="17:57"
-                            duration="35–40 min"
+                            duration="40 min"
                             num="02"
                             title="Leverage — Využitie"
                             speaker="Ján Koscelanský"
@@ -231,11 +231,11 @@ export default function CurriculumPage() {
                             <div className="flex items-center justify-center gap-4">
                                 <span className="text-sm font-bold font-code-brand text-[#0047BB]">18:47</span>
                                 <span className="text-lg font-bold">Break</span>
-                                <span className="text-[10px] text-black/30 font-code-brand">10 min</span>
+                                <span className="text-[10px] text-black/30 font-code-brand">15 min</span>
                             </div>
                             <p className="text-sm text-black/40 mt-2">
-                                People need to breathe, process, check their phones. Natural midpoint.
-                                Let them talk to each other — builds energy for the second half.
+                                Extended break. People are coming from a work day — they need to breathe, process, move around.
+                                Let them talk to each other. Organic conversations here build energy for Roman&apos;s section.
                             </p>
                         </motion.div>
 
@@ -247,8 +247,8 @@ export default function CurriculumPage() {
 
                         {/* ROMAN */}
                         <TimeBlock
-                            time="18:59"
-                            duration="30–35 min"
+                            time="19:04"
+                            duration="35–40 min"
                             num="03"
                             title="Clarity — Jasnosť"
                             speaker="Roman Pii Wagner"
@@ -266,10 +266,15 @@ export default function CurriculumPage() {
                                 "The future of societies, companies, corporates — zoomed out, long-term, meaningful.",
                             ]} />
                             <Note>
-                                This is the emotional peak. Trust &gt; tools is the most unique and memorable thesis
-                                in the whole evening. Lead with it. Let it breathe. Close with meaning, not hype.
+                                ⚡ ENERGY ALERT: Roman speaks after a 15-minute break, but the audience has been sitting for 2+ hours after a full work day.
+                                This slot demands the highest energy of the entire evening. Trust &gt; tools is the most unique and memorable thesis
+                                — lead with it HARD. Open with a story that makes the room go silent, then build momentum.
+                                {"\n\n"}
+                                FORMAT: Shorter sentences. Strategic pauses. Questions to the room ("Show of hands — who here trusts a brand more than a product?").
+                                Move on stage. Change rhythm every 5-7 minutes. If the room feels flat, break pattern — tell a personal story, ask a provocative question.
+                                {"\n\n"}
+                                This is the emotional peak of the evening. Don&apos;t lecture — perform. Close with meaning, not hype.
                                 Ties into Ján&apos;s investing/VC section — business models, how companies evolve.
-                                Tell your best story — one moment about trust that makes the room go quiet.
                             </Note>
                             <LaneGuard>
                                 Stay in the human/organizational/meaning lane. No product demos, no creative process.
@@ -279,7 +284,7 @@ export default function CurriculumPage() {
 
                         {/* ROMAN Q&A */}
                         <TimeBlock
-                            time="19:34"
+                            time="19:44"
                             duration="10 min"
                             num=""
                             title="Q&A — Roman"
@@ -300,8 +305,8 @@ export default function CurriculumPage() {
 
                         {/* HOT SEAT */}
                         <TimeBlock
-                            time="19:44"
-                            duration="15 min"
+                            time="19:54"
+                            duration="20 min"
                             num="04"
                             title="Hot Seat"
                             speaker="All three + Prince (moderator)"
@@ -322,8 +327,8 @@ export default function CurriculumPage() {
 
                         {/* CLOSING */}
                         <TimeBlock
-                            time="19:59"
-                            duration="5 min"
+                            time="20:14"
+                            duration="6 min"
                             num=""
                             title="Closing"
                             speaker="Prince"
@@ -341,7 +346,7 @@ export default function CurriculumPage() {
 
                         {/* NETWORKING */}
                         <TimeBlock
-                            time="20:05"
+                            time="20:20"
                             duration="Open"
                             num=""
                             title="Networking"
@@ -452,12 +457,12 @@ export default function CurriculumPage() {
                                 { flag: "Intro", note: "3–5 minutes max. One sentence that hits, introduce Roland, go. Save the \"why\" for the closing when they already felt it." },
                                 { flag: "Slido", note: "Set up Slido event before the workshop. Share QR code at the start. Questions get upvoted — Prince picks top-voted. Works for all Q&As and Hot Seat." },
                                 { flag: "Planted Qs", note: "2–3 ready per speaker in case the first round is slow. Written above in each Q&A block. Deliver them naturally if needed." },
-                                { flag: "Break", note: "10 minutes after Ján's Q&A (~18:47). Non-negotiable. People need to process, breathe, talk to each other. Builds energy for Roman." },
-                                { flag: "Timing", note: "Total runtime ~3h 10min. Need a strict timekeeper. Signal system for speakers — 5 min warning, 1 min warning." },
+                                { flag: "Break", note: "15 minutes after Ján's Q&A (~18:47). Extended break — people are coming from a full work day. They need to move, breathe, process. Organic conversations here build energy for the second half." },
+                                { flag: "Timing", note: "Total runtime ~3h 20min + open networking = ~3h 30min. Need a strict timekeeper. Signal system for speakers — 5 min warning, 1 min warning." },
                                 { flag: "Transitions", note: "Don't just say \"next up is...\" Use 2-minute bridges to connect themes. Makes it ONE story, not three separate talks." },
                                 { flag: "Ján's Scope", note: "Broadest range. Coach him: pick your 3 best stories. Tell them well. That's the talk. Depth over breadth." },
-                                { flag: "Roman's Energy", note: "He speaks last when energy is lowest. Needs to be dynamic — shorter sentences, pauses, questions to the room. Not a 35-min lecture." },
-                                { flag: "Hot Seat", note: "All three standing. Fast. 15 min max. Any speaker grabs any question. Way more energy than a seated panel." },
+                                { flag: "Roman's Energy", note: "⚡ CRITICAL. He speaks after break, after a full work day. Highest energy demand of the evening. Shorter sentences, strategic pauses, questions to the room ('show of hands'), move on stage. Change rhythm every 5-7 min. Open with a story that makes the room go quiet, then build. Don't lecture — perform." },
+                                { flag: "Hot Seat", note: "All three standing. Fast. 20 min. Any speaker grabs any question. Way more energy than a seated panel. Extended from 15 to give more breathing room." },
                                 { flag: "Recording", note: "Record the full event. This is the foundation for the personalized toolkit. Audio at minimum, video ideal." },
                                 { flag: "Toolkit", note: "10-day delivery. Built from recording + Slido data + capture form. Recording tells you what resonated. Form tells you who needs what." },
                                 { flag: "First Edition", note: "Frame it right: \"Edition 01. Every future edition builds on what we learn tonight — including from you.\" Collaborative, not apologetic." },

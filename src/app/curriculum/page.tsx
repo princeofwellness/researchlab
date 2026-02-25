@@ -57,13 +57,13 @@ export default function CurriculumPage() {
                         <SectionLabel>Narrative Arc</SectionLabel>
                         <p className="text-sm text-black/60 mt-2 max-w-2xl">
                             Three acts, one story. Each speaker builds on the previous one.
-                            The audience moves from <strong>seeing</strong> to <strong>building</strong> to <strong>navigating</strong>.
+                            The audience moves from <strong>taste</strong> to <strong>leverage</strong> to <strong>clarity</strong>.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             {[
-                                { act: "Act 1", title: "OKO", subtitle: "The Eye", speaker: "Roland", theme: "Why what you SEE matters more than what you USE" },
-                                { act: "Act 2", title: "RUKA", subtitle: "The Hand", speaker: "Ján", theme: "How to BUILD in this new reality" },
-                                { act: "Act 3", title: "KOMPAS", subtitle: "The Compass", speaker: "Roman", theme: "WHERE this is all going — and what stays human" },
+                                { act: "Act 1", title: "TASTE", subtitle: "Vkus", speaker: "Roland", theme: "What separates good from unforgettable. Everyone has the same tools. The difference is taste." },
+                                { act: "Act 2", title: "LEVERAGE", subtitle: "Využitie", speaker: "Ján", theme: "What one person can build today. New businesses, new ways to operate." },
+                                { act: "Act 3", title: "CLARITY", subtitle: "Jasnosť", speaker: "Roman", theme: "What stays human and what to delegate. Decision frameworks you'll actually use." },
                             ].map((a, i) => (
                                 <motion.div
                                     key={a.act}
@@ -119,7 +119,7 @@ export default function CurriculumPage() {
                             time="17:10"
                             duration="35–40 min"
                             num="01"
-                            title="Oko — Vkus"
+                            title="Taste — Vkus"
                             speaker="Roland Vraník"
                             role="Creative Director / Founder, SORRYWECAN"
                             type="keynote"
@@ -167,7 +167,7 @@ export default function CurriculumPage() {
                             time="18:05"
                             duration="35–40 min"
                             num="02"
-                            title="Ruka — Využitie"
+                            title="Leverage — Využitie"
                             speaker="Ján Koscelanský"
                             role="CPO / Co-founder, SUDOLABS"
                             type="keynote"
@@ -216,7 +216,7 @@ export default function CurriculumPage() {
                             time="19:00"
                             duration="30–35 min"
                             num="03"
-                            title="Kompas — Jasnosť"
+                            title="Clarity — Jasnosť"
                             speaker="Roman Pii Wagner"
                             role="Transformational Design"
                             type="keynote"

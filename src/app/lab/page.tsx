@@ -17,6 +17,7 @@ export default function LabPage() {
         { name: "Growth Plan", href: "/growth-plan", desc: "Living roadmap: phases, initiatives, metrics. Updated as we grow." },
         { name: "The Playbook", href: "/gameplan", desc: "Growth architecture: how to build, scale, and lead in AI education." },
         { name: "Marketing Sync", href: "/marketing-sync", desc: "THE MINDSHIFT operational hub. Ownership, status, timeline." },
+        { name: "Workshop Curriculum", href: "/curriculum", desc: "THE MINDSHIFT full structure: speakers, topics, timing, narrative arc. Living document." },
     ]
 
     const archivePages = [

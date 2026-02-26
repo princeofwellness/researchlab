@@ -1041,9 +1041,11 @@ export default function CurriculumPage() {
                             <Note>
                                 {t.timeline.roman.notes}
                             </Note>
-                            <LaneGuard>
-                                {t.timeline.roman.laneGuard}
-                            </LaneGuard>
+                            {t.timeline.roman.laneGuard && (
+                                <LaneGuard>
+                                    {t.timeline.roman.laneGuard}
+                                </LaneGuard>
+                            )}
                         </TimeBlock>
 
                         {/* ROMAN Q&A */}

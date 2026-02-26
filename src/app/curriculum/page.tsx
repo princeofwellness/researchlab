@@ -303,9 +303,8 @@ export default function CurriculumPage() {
                         "The future of societies, companies, corporates — zoomed out, long-term, meaningful.",
                     ],
                     notes:
-                        "⚡ ENERGY ALERT: Roman speaks after a 15-minute break, but the audience has been sitting for 2+ hours after a full work day. This slot demands the highest energy of the entire evening. Trust > tools is the most unique and memorable thesis — lead with it HARD. Open with a story that makes the room go silent, then build momentum. FORMAT: Shorter sentences. Strategic pauses. Questions to the room (\"Show of hands — who here trusts a brand more than a product?\"). Move on stage. Change rhythm every 5-7 minutes. If the room feels flat, break pattern — tell a personal story, ask a provocative question. This is the emotional peak of the evening. Don't lecture — perform. Close with meaning, not hype. Ties into Ján's investing/VC section — business models, how companies evolve.",
-                    laneGuard:
-                        "Stay in the human/organizational/meaning lane. No product demos, no creative process. You're the compass. Where this is all going, and what stays human.",
+                        "⚡ Hardest slot of the evening. Post-break, post-work-day. Trust > tools is the thesis — lead with it hard. Open with a story that silences the room. Shorter sentences. Pauses. Move on stage. Questions to the room. Change rhythm every 5-7 min. Don't lecture — perform. Close with meaning, not hype. Stay in the human/org/meaning lane. No product demos, no creative process. You're the compass.",
+                    laneGuard: undefined,
                 },
                 romanQa: {
                     time: "19:44",
@@ -664,9 +663,8 @@ export default function CurriculumPage() {
                         "Budúcnosť spoločností, firiem, korporátov — nadhľad, dlhodobosť, zmysel.",
                     ],
                     notes:
-                        "⚡ ENERGY ALERT: Roman ide po 15-minútovej pauze, ale publikum už sedí 2+ hodiny po celom pracovnom dni. Tento slot potrebuje najvyššiu energiu večera. Trust > tools je najunikátnejšia a najzapamätateľnejšia téza — začni tým tvrdo. Otvor príbehom, po ktorom miestnosť stíchne, potom buduj momentum. FORMÁT: Kratšie vety. Strategické pauzy. Otázky do miestnosti (\"Kto tu viac dôveruje značke než produktu?\"). Pohybuj sa po pódiu. Každých 5-7 minút zmeň rytmus. Keď energia padá, prelom pattern — osobný príbeh alebo provokatívna otázka. Toto je emočný vrchol večera. Neprednášaj — performuj. Zavri to významom, nie hypeom. Napája sa to na Jánovu VC/investing časť — biznis modely a evolúcia firiem.",
-                    laneGuard:
-                        "Drž lane človek/organizácia/zmysel. Bez produktových dem, bez kreatívneho procesu. Ty si kompas. Kam to celé ide a čo zostáva ľudské.",
+                        "⚡ Najťažší slot večera. Po pauze, po pracovnom dni. Trust > tools je téza — začni tým tvrdo. Otvor príbehom, po ktorom miestnosť stíchne. Kratšie vety. Pauzy. Pohybuj sa po pódiu. Otázky do sály. Každých 5-7 min zmeň rytmus. Neprednášaj — performuj. Zavri významom, nie hypeom. Lane: človek/organizácia/zmysel. Bez produktových dem, bez kreatívneho procesu. Ty si kompas.",
+                    laneGuard: undefined,
                 },
                 romanQa: {
                     time: "19:44",

@@ -9,6 +9,7 @@ export default function LabPage() {
         { name: "Public One-Pager", href: "/public/onepager", desc: "THE MINDSHIFT session deck (PDF export)" },
         { name: "Corporate One-Pager", href: "/corporate/onepager", desc: "Corporate workshop deck (PDF export)" },
         { name: "Instagram Stories", href: "/public/stories", desc: "22 story slides for Instagram (EN/SK, screenshot-ready)" },
+        { name: "Mindshift Toolkit", href: "/shift", desc: "Edition 01 toolkit: 3 speakers distilled. Landscape, PDF-ready (EN/SK)" },
     ]
 
     const pages = [

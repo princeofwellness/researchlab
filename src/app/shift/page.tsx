@@ -221,6 +221,8 @@ export default function ShiftToolkitPage() {
                         items: [
                             { tool: "Cursor", note: "The ultimate AI IDE for serious implementation" },
                             { tool: "Claude Code", note: "Go-to agent for end-to-end app builds in terminal" },
+                            { tool: "OpenCode", note: "Orchestrator for complex AI coding agents" },
+                            { tool: "Ghostty", note: "Lightning-fast terminal for macOS and iOS" },
                             { tool: "v0 / Lovable", note: "Instant UI generation and component prototyping" },
                         ],
                     },
@@ -531,6 +533,8 @@ export default function ShiftToolkitPage() {
                         items: [
                             { tool: "Cursor", note: "Ultimátne AI IDE pre serióznu implementáciu" },
                             { tool: "Claude Code", note: "Go-to agent na end-to-end appky v termináli" },
+                            { tool: "OpenCode", note: "Orchestrátor AI agentov na komplexné kódovanie" },
+                            { tool: "Ghostty", note: "Bleskový terminál pre macOS a iOS" },
                             { tool: "v0 / Lovable", note: "Okamžité generovanie UI a prototypovanie komponentov" },
                         ],
                     },

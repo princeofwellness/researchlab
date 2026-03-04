@@ -42,7 +42,7 @@ export default function ShiftToolkitPage() {
             },
             thesis: {
                 label: "THE THESIS",
-                quote: "The most significant organizational shift of this decade is the transformation of the 'knower' into the 'doer'.",
+                quote: "The most significant organizational shift of this decade is the transformation of the knower into the doer.",
                 sub: "In the agentic AI era, everybody can build.",
                 commoditization: {
                     title: "Intelligence Commoditization",
@@ -219,34 +219,33 @@ export default function ShiftToolkitPage() {
                     {
                         name: "Building",
                         items: [
-                            { tool: "Claude Code", note: "Go-to for end-to-end app builds" },
-                            { tool: "Cursor", note: "AI IDE for serious implementation" },
-                            { tool: "Gemini Pro", note: "Strong frontend support and visual quality" },
-                            { tool: "Vercel", note: "Fast deployment loop for product testing" },
+                            { tool: "Cursor", note: "The ultimate AI IDE for serious implementation" },
+                            { tool: "Claude Code", note: "Go-to agent for end-to-end app builds in terminal" },
+                            { tool: "v0 / Lovable", note: "Instant UI generation and component prototyping" },
                         ],
                     },
                     {
                         name: "Creating",
                         items: [
                             { tool: "Midjourney", note: "Image generation and aesthetic exploration" },
-                            { tool: "Kling", note: "Video model with strong motion results" },
-                            { tool: "Nano Banana", note: "Experimental format play and prototyping" },
+                            { tool: "Google AI Studio", note: "Testing raw Gemini models with massive context" },
+                            { tool: "Nano Banana", note: "Experimental format play and prototyping from Google" },
                         ],
                     },
                     {
-                        name: "Thinking",
+                        name: "Thinking & Research",
                         items: [
-                            { tool: "Obsidian", note: "Knowledge architecture and synthesis" },
+                            { tool: "NotebookLM", note: "Parsing huge documents, podcasts, and synthesis" },
+                            { tool: "Deep Research", note: "Agentic deep-dives into complex web topics (OpenAI/Gemini)" },
+                            { tool: "ChatGPT (o3-mini)", note: "Advanced reasoning for complex logic and math" },
+                        ],
+                    },
+                    {
+                        name: "Co-Working",
+                        items: [
+                            { tool: "Claude (Projects)", note: "Maintaining context and generating interactive artifacts" },
                             { tool: "Personal AI (Solas)", note: "Reflection, journaling, planning companion" },
                             { tool: "X / Twitter", note: "Real-time research and frontier discovery" },
-                        ],
-                    },
-                    {
-                        name: "Ops",
-                        items: [
-                            { tool: "Notion", note: "Execution memory and team rituals" },
-                            { tool: "Zapier / Make", note: "Workflow automation between systems" },
-                            { tool: "Linear", note: "High-signal product shipping cadence" },
                         ],
                     },
                 ],
@@ -351,13 +350,13 @@ export default function ShiftToolkitPage() {
                 title: "Rise of the Builders",
                 edition: "Edition 01 · Február 2026",
                 subtitle: "3,5 hodiny insightov, destilovaných do toho podstatného.",
-                note: "Toolkit od spíkrov pre ľudí, ktorí stavajú.",
+                note: "Toolkit od spíkrov pre ľudí, ktorí tvoria.",
                 railHint: "Tak ako železnice skomoditizovali dopravu, AI komoditizuje inteligenciu.",
             },
             thesis: {
                 label: "TÉZA",
-                quote: "Najvýznamnejší organizačný posun tejto dekády je premena 'toho, kto vie' na 'toho, kto robí'.",
-                sub: "V ére agentického AI môže stavať každý.",
+                quote: "Najvýznamnejší organizačný posun tejto dekády je premena toho, kto vie na toho, kto robí.",
+                sub: "V ére agentického AI môže tvoriť každý.",
                 commoditization: {
                     title: "Komoditizácia inteligencie",
                     body: "Prvá priemyselná revolúcia násobila fyzickú silu. Táto násobí kognitívnu silu. Inteligencia sa stáva infraštruktúrou.",
@@ -366,7 +365,7 @@ export default function ShiftToolkitPage() {
                 },
                 pillars: [
                     { num: "01", title: "Vkus", speaker: "Roland", desc: "Čo oddeľuje dobré od nezabudnuteľného." },
-                    { num: "02", title: "Využitie", speaker: "Ján", desc: "Čo dnes dokáže postaviť jeden človek." },
+                    { num: "02", title: "Využitie", speaker: "Ján", desc: "Čo dnes dokáže vytvoriť jeden človek." },
                     { num: "03", title: "Jasnosť", speaker: "Roman", desc: "Čo zostáva ľudské. Čo delegovať." },
                 ],
             },
@@ -389,17 +388,17 @@ export default function ShiftToolkitPage() {
                         desc: "Nolanov look. Dalího textúra. Diela veľkých autorov sa stávajú živou referenčnou knižnicou.",
                     },
                     {
-                        title: "Stavaj, aby si sa naučil",
-                        desc: "Choď do Midjourney. Spracuj. Strihaj. Skús znova. Neexistuje rýchlejší spôsob učenia než stavanie.",
+                        title: "Tvor, aby si sa naučil",
+                        desc: "Choď do Midjourney. Spracuj. Strihaj. Skús znova. Neexistuje rýchlejší spôsob učenia než tvorba.",
                     },
                 ],
-                pullQuote: "Najlepší spôsob učenia vždy bol - stavať.",
+                pullQuote: "Najlepší spôsob učenia vždy bol - tvoriť.",
             },
             leverage: {
                 label: "AKT 2",
                 title: "Využitie",
                 speaker: "Ján Koscelanský · CPO & Co-founder, SUDOLABS",
-                insight: "To, čo sa kedysi neoplatilo stavať alebo bolo príliš drahé, je dnes realizovateľné. A tím sa pritom učí rýchlejšie.",
+                insight: "To, čo sa kedysi neoplatilo budovať alebo bolo príliš drahé, je dnes realizovateľné. A tím sa pritom učí rýchlejšie.",
                 points: [
                     {
                         title: "Gutenbergov moment",
@@ -415,10 +414,10 @@ export default function ShiftToolkitPage() {
                     },
                     {
                         title: "Osobná AI",
-                        desc: "Postav si AI partnera. Pravidlá, pamäť, identita. Vzťah je násobič.",
+                        desc: "Vybuduj si AI partnera. Pravidlá, pamäť, identita. Vzťah je násobič.",
                     },
                 ],
-                pullQuote: "Coding je vyriešený. 90% generované. Otázka je: čo sa oplatí stavať?",
+                pullQuote: "Coding je vyriešený. 90% generované. Otázka je: čo sa oplatí budovať?",
                 gutenberg: {
                     leftTitle: "Tlačiarenský lis",
                     leftDesc: "Znalosti sa dali kopírovať. Autorita sa decentralizovala.",
@@ -430,7 +429,7 @@ export default function ShiftToolkitPage() {
                 label: "AKT 3",
                 title: "Jasnosť",
                 speaker: "Roman Pii Wagner · Transformational Design",
-                insight: "Ak môžeme robiť čokoľvek, čo vlastne chceme robiť? Robenie je ľahšie než kedykoľvek predtým. Náročné je vedieť, čo postaviť.",
+                insight: "Ak môžeme robiť čokoľvek, čo vlastne chceme robiť? Robenie je ľahšie než kedykoľvek predtým. Náročné je vedieť, čo vytvoriť.",
                 points: [
                     {
                         title: "Paralýza možností",
@@ -450,7 +449,7 @@ export default function ShiftToolkitPage() {
                     },
                     {
                         title: "AI-first paradox",
-                        desc: "Ak chceš byť AI-first, najprv musíš vedieť stavať s ľuďmi a pre ľudí.",
+                        desc: "Ak chceš byť AI-first, najprv musíš vedieť tvoriť s ľuďmi a pre ľudí.",
                     },
                 ],
                 pullQuote: "Myslenie je diferenciátor. Nie nástroje.",
@@ -516,10 +515,10 @@ export default function ShiftToolkitPage() {
                 items: [
                     { from: "Špecialista", to: "Generalista", note: "V ranej AI-natívnej exekúcii vyhráva šírka." },
                     { from: "Informácie", to: "Intuícia a vkus", note: "Prístup má každý. Rozlišovanie málokto." },
-                    { from: "Tí, čo vedia", to: "Tí, čo stavajú", note: "Vedenie je lacné. Dodanie je edge." },
+                    { from: "Tí, čo vedia", to: "Tí, čo tvoria", note: "Vedenie je lacné. Dodanie je edge." },
                     { from: "Najlepší model", to: "Hlboký kontext", note: "Kvalita promptu je funkcia kvality kontextu." },
-                    { from: "Učiť sa o", to: "Učiť sa robením", note: "Postav artefakt. Postav porozumenie." },
-                    { from: "Obávať sa", to: "Stavať", note: "Aj zastaraný výstup buduje trvalú schopnosť." },
+                    { from: "Učiť sa o", to: "Učiť sa robením", note: "Vytvor artefakt. Vybuduj porozumenie." },
+                    { from: "Obávať sa", to: "Tvoriť", note: "Aj zastaraný výstup buduje trvalú schopnosť." },
                 ],
             },
             tools: {
@@ -528,36 +527,35 @@ export default function ShiftToolkitPage() {
                 subtitle: "Nemusí to byť najlepší model. Musí to byť správny experiment.",
                 categories: [
                     {
-                        name: "Stavanie",
+                        name: "Budovanie",
                         items: [
-                            { tool: "Claude Code", note: "Go-to nástroj na end-to-end appky" },
-                            { tool: "Cursor", note: "AI IDE pre serióznu implementáciu" },
-                            { tool: "Gemini Pro", note: "Silná podpora frontendu a vizuálnej kvality" },
-                            { tool: "Vercel", note: "Rýchly deployment loop pre testovanie produktu" },
+                            { tool: "Cursor", note: "Ultimátne AI IDE pre serióznu implementáciu" },
+                            { tool: "Claude Code", note: "Go-to agent na end-to-end appky v termináli" },
+                            { tool: "v0 / Lovable", note: "Okamžité generovanie UI a prototypovanie komponentov" },
                         ],
                     },
                     {
                         name: "Tvorba",
                         items: [
                             { tool: "Midjourney", note: "Generovanie obrazu a explorácia estetiky" },
-                            { tool: "Kling", note: "Video model so silným motion outputom" },
-                            { tool: "Nano Banana", note: "Experimenty s formátom a prototypovanie" },
+                            { tool: "Google AI Studio", note: "Testovanie surových Gemini modelov s masívnym kontextom" },
+                            { tool: "Nano Banana", note: "Experimenty s formátom a prototypovanie od Googlu" },
                         ],
                     },
                     {
-                        name: "Myslenie",
+                        name: "Myslenie a Rešerš",
                         items: [
-                            { tool: "Obsidian", note: "Architektúra poznania a syntéza" },
+                            { tool: "NotebookLM", note: "Spracovanie obrovských dokumentov, podcasty a syntéza" },
+                            { tool: "Deep Research", note: "Agentický hĺbkový výskum komplexných tém (OpenAI/Gemini)" },
+                            { tool: "ChatGPT (o3-mini)", note: "Pokročilé uvažovanie pre komplexnú logiku a matematiku" },
+                        ],
+                    },
+                    {
+                        name: "Spolupráca (Co-Work)",
+                        items: [
+                            { tool: "Claude (Projects)", note: "Udržiavanie kontextu a tvorba interaktívnych artefaktov" },
                             { tool: "Osobná AI (Solas)", note: "Partner pre reflexiu, journaling a plánovanie" },
                             { tool: "X / Twitter", note: "Realtime research a objavovanie frontieru" },
-                        ],
-                    },
-                    {
-                        name: "Prevádzka",
-                        items: [
-                            { tool: "Notion", note: "Pamäť exekúcie a tímové rituály" },
-                            { tool: "Zapier / Make", note: "Automatizácia workflowov medzi systémami" },
-                            { tool: "Linear", note: "Vysokosignálový cadence pre shipovanie" },
                         ],
                     },
                 ],
@@ -568,7 +566,7 @@ export default function ShiftToolkitPage() {
                 items: [
                     {
                         num: "01",
-                        title: "Najprv stavaj, uč sa stavaním",
+                        title: "Najprv tvor, uč sa tvorbou",
                         desc: "Najrýchlejšie učenie je exekúcia a iterácia na reálnom výsledku.",
                     },
                     {
@@ -627,7 +625,7 @@ export default function ShiftToolkitPage() {
                     },
                     {
                         domain: "Ak začínaš",
-                        action: "Vyber jednu myšlienku a postav ju hneď. Bez dokonalej prípravnej fázy.",
+                        action: "Vyber jednu myšlienku a vytvor ju hneď. Bez dokonalej prípravnej fázy.",
                     },
                 ],
                 paths: {
@@ -648,11 +646,11 @@ export default function ShiftToolkitPage() {
                 ],
                 stat: "1 schopnosť vybudovaná tento týždeň má väčšiu hodnotu než 100 uložených odkazov.",
                 qr: "Naskenuj pre aktualizácie",
-                closing: "Toto bola Edition 01. Ďalšie edície budú spolu-vytvorené tým, čo komunita postaví ďalej.",
+                closing: "Toto bola Edition 01. Ďalšie edície budú spolu-vytvorené tým, čo komunita vytvorí ďalej.",
                 footer: "MINDSHIFT TOOLKIT · EDITION 01 · FEBRUÁR 2026 · SORRYWECAN × SUDOLABS",
             },
             backCover: {
-                statement: "Robenie je teraz ľahká časť. Otázka je: čo sa oplatí postaviť?",
+                statement: "Robenie je teraz ľahká časť. Otázka je: čo sa oplatí vytvoriť?",
                 edition: "Edition 01 · 2026",
             },
         },
@@ -713,7 +711,7 @@ export default function ShiftToolkitPage() {
             <ToolkitPage num="02" id="thesis">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <motion.p {...fade()} className={kickerClass}>{c.thesis.label}</motion.p>
-                    <motion.blockquote {...fade(0.06)} className="mt-6 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">&ldquo;{c.thesis.quote}&rdquo;</motion.blockquote>
+                    <motion.blockquote {...fade(0.06)} className="mt-6 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.thesis.quote}</motion.blockquote>
                     <motion.p {...fade(0.1)} className="mt-6 text-[18px] md:text-[24px] font-bold text-[#0047BB]">{c.thesis.sub}</motion.p>
                     <motion.div {...fade(0.14)} className="mt-10 border-t border-black/10 pt-8">
                         <h3 className="text-[24px] md:text-[32px] font-bold tracking-tight">{c.thesis.commoditization.title}</h3>
@@ -759,7 +757,7 @@ export default function ShiftToolkitPage() {
                             </motion.div>
                         ))}
                     </div>
-                    <motion.p {...fade(0.24)} className="mt-10 text-[32px] md:text-[56px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">&ldquo;{c.taste.pullQuote}&rdquo;</motion.p>
+                    <motion.p {...fade(0.24)} className="mt-10 text-[32px] md:text-[56px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</motion.p>
                 </div>
             </ToolkitPage>
 
@@ -814,7 +812,7 @@ export default function ShiftToolkitPage() {
                         </div>
                     </div>
 
-                    <motion.p {...fade(0.32)} className="mt-8 text-[30px] md:text-[48px] font-bold tracking-tight leading-[0.95] max-w-4xl">&ldquo;{c.leverage.pullQuote}&rdquo;</motion.p>
+                    <motion.p {...fade(0.32)} className="mt-8 text-[30px] md:text-[48px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</motion.p>
                 </div>
             </ToolkitPage>
 
@@ -824,7 +822,7 @@ export default function ShiftToolkitPage() {
                     <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.clarity.title}</motion.h2>
                     <motion.p {...fade(0.08)} className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.clarity.speaker}</motion.p>
                     <motion.p {...fade(0.11)} className="mt-7 text-[18px] md:text-[24px] text-black/65 leading-relaxed max-w-5xl">{c.clarity.insight}</motion.p>
-                    <motion.p {...fade(0.15)} className="mt-8 text-[34px] md:text-[58px] font-bold leading-[0.95] tracking-tight max-w-5xl">&ldquo;{c.clarity.pullQuote}&rdquo;</motion.p>
+                    <motion.p {...fade(0.15)} className="mt-8 text-[34px] md:text-[58px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.clarity.pullQuote}</motion.p>
 
                     <div className="mt-10 border-t border-black/10 pt-8 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
                         <motion.div {...fade(0.18)} className="md:col-span-6 p-7 border-b md:border-b-0 md:border-r border-black/10">

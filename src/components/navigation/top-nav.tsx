@@ -37,7 +37,13 @@ export function TopNav({
 
     const navItems = [
         { name: "Corporate", href: "/corporate" },
-        { name: "Lab", href: "/lab" },
+        { 
+            name: "Lab", 
+            href: "/lab",
+            children: [
+                { name: "Mindshift Toolkit", href: "/shift" }
+            ]
+        },
     ]
 
     const isDark = variant === "dark"
@@ -57,18 +63,43 @@ export function TopNav({
                     
                     <div className="hidden md:flex items-center gap-6">
                         {navItems.map((item) => (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                className={cn(
-                                    "text-[10px] font-bold uppercase tracking-widest transition-colors hover:text-[#0047BB]",
-                                    pathname === item.href 
-                                        ? (isDark ? "text-blue-400" : "text-[#0047BB]") 
-                                        : (isDark ? "text-white/40" : "text-black/40")
+                            <div key={item.href} className="relative group flex items-center h-16">
+                                <Link
+                                    href={item.href}
+                                    className={cn(
+                                        "text-[10px] font-bold uppercase tracking-widest transition-colors hover:text-[#0047BB]",
+                                        pathname === item.href || (item.children && pathname.startsWith(item.children[0].href)) 
+                                            ? (isDark ? "text-blue-400" : "text-[#0047BB]") 
+                                            : (isDark ? "text-white/40" : "text-black/40")
+                                    )}
+                                >
+                                    {item.name}
+                                </Link>
+
+                                {item.children && (
+                                    <div className="absolute top-full left-0 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200">
+                                        <div className={cn(
+                                            "backdrop-blur-md border p-1 flex flex-col min-w-[180px] shadow-xl",
+                                            isDark ? "bg-black/90 border-white/10" : "bg-white/95 border-black/10"
+                                        )}>
+                                            {item.children.map(child => (
+                                                <Link 
+                                                    key={child.href} 
+                                                    href={child.href} 
+                                                    className={cn(
+                                                        "text-[10px] font-bold uppercase tracking-widest p-3 transition-colors text-left",
+                                                        pathname === child.href 
+                                                            ? (isDark ? "text-blue-400 bg-white/5" : "text-[#0047BB] bg-black/5") 
+                                                            : (isDark ? "text-white/60 hover:text-white hover:bg-white/5" : "text-black/60 hover:text-black hover:bg-black/5")
+                                                    )}
+                                                >
+                                                    {child.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
                                 )}
-                            >
-                                {item.name}
-                            </Link>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -120,19 +151,40 @@ export function TopNav({
                     >
                         <div className="flex flex-col items-center gap-8 w-full max-w-sm">
                             {navItems.map((item) => (
-                                <Link
-                                    key={item.href}
-                                    href={item.href}
-                                    onClick={() => setIsOpen(false)}
-                                    className={cn(
-                                        "text-2xl font-syne font-bold uppercase tracking-wide transition-colors hover:text-[#0047BB]",
-                                        pathname === item.href 
-                                            ? (isDark ? "text-blue-400" : "text-[#0047BB]") 
-                                            : (isDark ? "text-white/60" : "text-black/60")
+                                <div key={item.href} className="flex flex-col items-center gap-4">
+                                    <Link
+                                        href={item.href}
+                                        onClick={() => setIsOpen(false)}
+                                        className={cn(
+                                            "text-2xl font-syne font-bold uppercase tracking-wide transition-colors",
+                                            pathname === item.href || (item.children && pathname.startsWith(item.children[0].href))
+                                                ? (isDark ? "text-blue-400" : "text-[#0047BB]") 
+                                                : (isDark ? "text-white/60 hover:text-white" : "text-black/60 hover:text-[#0047BB]")
+                                        )}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                    
+                                    {item.children && (
+                                        <div className="flex flex-col items-center gap-3 mb-2">
+                                            {item.children.map(child => (
+                                                <Link
+                                                    key={child.href}
+                                                    href={child.href}
+                                                    onClick={() => setIsOpen(false)}
+                                                    className={cn(
+                                                        "text-xs font-bold uppercase tracking-widest transition-colors",
+                                                        pathname === child.href
+                                                            ? (isDark ? "text-blue-400" : "text-[#0047BB]")
+                                                            : (isDark ? "text-white/40 hover:text-white" : "text-black/40 hover:text-[#0047BB]")
+                                                    )}
+                                                >
+                                                    — {child.name}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     )}
-                                >
-                                    {item.name}
-                                </Link>
+                                </div>
                             ))}
                             
                             <div className="w-12 h-[1px] bg-current opacity-20 my-4" />

@@ -10,7 +10,7 @@ function ToolkitPage({ children, num, className, id }: { children: React.ReactNo
         <section
             id={id}
             className={cn(
-                "toolkit-page w-full min-h-[70vh] md:aspect-[16/10] md:min-h-0 p-8 md:p-12 lg:p-16 relative overflow-hidden border-b border-black/10 flex flex-col justify-center",
+                "toolkit-page box-border w-full md:w-[297mm] min-h-[70vh] md:h-[210mm] p-6 md:p-12 relative overflow-hidden border-b md:border border-black/10 flex flex-col justify-center mx-auto my-0 md:my-8 print:w-[297mm] print:h-[210mm] print:p-8 print:my-0 print:border-none",
                 className
             )}
         >
@@ -674,7 +674,7 @@ export default function ShiftToolkitPage() {
     const bodyClass = "text-[14px] md:text-[16px] text-black/60 leading-relaxed"
 
     return (
-        <div ref={printRef} className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20 print:bg-white">
+        <div ref={printRef} className="min-h-screen bg-[#f5f5f5] md:bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20 print:bg-white flex flex-col items-center">
             <div className="print:hidden">
                 <TopNav
                     lang={lang}

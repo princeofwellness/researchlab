@@ -36,9 +36,7 @@ export function TopNav({
     }, [isOpen])
 
     const navItems = [
-        { name: "Home", href: "/" },
         { name: "Corporate", href: "/corporate" },
-        { name: "THE MINDSHIFT", href: "/mindshift" },
         { name: "Lab", href: "/lab" },
     ]
 

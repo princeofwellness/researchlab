@@ -784,7 +784,7 @@ export default function ShiftToolkitPage() {
                             </div>
                         ))}
                     </div>
-                    <p className="mt-5 text-[26px] md:text-[40px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</p>
+                    <p className="mt-auto pt-4 text-[26px] md:text-[40px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</p>
                 </div>
             </ToolkitPage>
 

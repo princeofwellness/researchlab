@@ -10,11 +10,11 @@ function ToolkitPage({ children, num, className, id }: { children: React.ReactNo
         <section
             id={id}
             className={cn(
-                "toolkit-page box-border w-full md:w-[297mm] min-h-[70vh] md:h-[210mm] bg-[#f4ede6] p-8 md:p-12 lg:p-16 relative overflow-hidden flex flex-col justify-center mx-auto my-0 md:my-4 print:w-[297mm] print:h-[210mm] print:p-8 print:my-0 print:bg-[#f4ede6]",
+                "toolkit-page box-border w-full md:w-[297mm] min-h-[70vh] md:h-[210mm] bg-[#f4ede6] p-6 md:p-8 lg:p-10 relative overflow-hidden flex flex-col justify-center mx-auto my-0 md:my-4 print:w-[297mm] print:h-[210mm] print:p-6 print:my-0 print:bg-[#f4ede6]",
                 className
             )}
         >
-            <span className="absolute top-6 right-8 text-[10px] font-code-brand font-bold tracking-[0.3em] text-black/15 print:text-black/10">
+            <span className="absolute top-4 right-6 text-[10px] font-code-brand font-bold tracking-[0.3em] text-black/15 print:text-black/10">
                 {num}
             </span>
             {children}
@@ -663,9 +663,9 @@ export default function ShiftToolkitPage() {
     const c = t[lang]
 
 
-    const kickerClass = "text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB]"
-    const heroClass = "text-[36px] md:text-[64px] font-bold leading-[0.95] tracking-tight"
-    const bodyClass = "text-[14px] md:text-[16px] text-black/60 leading-relaxed"
+    const kickerClass = "text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB]"
+    const heroClass = "text-[28px] md:text-[48px] font-bold leading-[0.95] tracking-tight"
+    const bodyClass = "text-[13px] md:text-[14px] text-black/60 leading-relaxed"
 
     return (
         <>
@@ -725,7 +725,7 @@ export default function ShiftToolkitPage() {
             <ToolkitPage num="01" id="cover" className="pt-24 md:pt-16">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <p className={kickerClass}>{c.cover.label}</p>
-                    <h1 className="mt-6 text-[52px] md:text-[110px] font-bold leading-[0.88] tracking-tight max-w-5xl">{c.cover.title}</h1>
+                    <h1 className="mt-6 text-[44px] md:text-[96px] font-bold leading-[0.88] tracking-tight max-w-5xl">{c.cover.title}</h1>
                     <p className="mt-8 max-w-xl text-[14px] md:text-[20px] text-black/60 leading-relaxed">{c.cover.subtitle}</p>
                     <p className={`${bodyClass} mt-4 max-w-xl`}>{c.cover.note}</p>
                     <div className="mt-12 pt-5 border-t border-black/10 flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
@@ -738,22 +738,22 @@ export default function ShiftToolkitPage() {
             <ToolkitPage num="02" id="thesis">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <p className={kickerClass}>{c.thesis.label}</p>
-                    <blockquote className="mt-6 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.thesis.quote}</blockquote>
-                    <p className="mt-6 text-[18px] md:text-[24px] font-bold text-[#0047BB]">{c.thesis.sub}</p>
-                    <div className="mt-10 border-t border-black/10 pt-8">
-                        <h3 className="text-[24px] md:text-[32px] font-bold tracking-tight">{c.thesis.commoditization.title}</h3>
+                    <blockquote className="mt-4 text-[26px] md:text-[42px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.thesis.quote}</blockquote>
+                    <p className="mt-4 text-[16px] md:text-[20px] font-bold text-[#0047BB]">{c.thesis.sub}</p>
+                    <div className="mt-6 border-t border-black/10 pt-5">
+                        <h3 className="text-[20px] md:text-[26px] font-bold tracking-tight">{c.thesis.commoditization.title}</h3>
                         <p className={`${bodyClass} mt-4 max-w-4xl`}>{c.thesis.commoditization.body}</p>
                         <p className={`${bodyClass} mt-3 max-w-4xl`}>{c.thesis.commoditization.analogy}</p>
-                        <p className="mt-3 text-[12px] md:text-[14px] text-[#0047BB]">{c.thesis.commoditization.sputnik}</p>
+                        <p className="mt-2 text-[11px] md:text-[12px] text-[#0047BB]">{c.thesis.commoditization.sputnik}</p>
                     </div>
-                    <div className="mt-10 border border-black/10">
+                    <div className="mt-5 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-3">
                             {c.thesis.pillars.map((p, i) => (
-                                <div key={p.num} className={cn("p-6 md:p-8", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
-                                    <p className="text-[28px] md:text-[40px] font-bold leading-none text-[#0047BB]">{p.num}</p>
-                                    <h3 className="mt-3 text-[30px] md:text-[44px] font-bold leading-[0.95] tracking-tight">{p.title}</h3>
+                                <div key={p.num} className={cn("p-4 md:p-5", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
+                                    <p className="text-[22px] md:text-[28px] font-bold leading-none text-[#0047BB]">{p.num}</p>
+                                    <h3 className="mt-2 text-[24px] md:text-[32px] font-bold leading-[0.95] tracking-tight">{p.title}</h3>
                                     <p className="mt-3 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{p.speaker}</p>
-                                    <p className={`${bodyClass} mt-3`}>{p.desc}</p>
+                                    <p className={`${bodyClass} mt-1`}>{p.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -764,27 +764,27 @@ export default function ShiftToolkitPage() {
             <ToolkitPage num="03" id="taste">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <p className={kickerClass}>{c.taste.label}</p>
-                    <div className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+                    <div className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8">
                         <div className="md:col-span-7">
-                            <h2 className="text-[52px] md:text-[96px] font-bold leading-[0.88] tracking-tight">{c.taste.title}</h2>
+                            <h2 className="text-[40px] md:text-[72px] font-bold leading-[0.88] tracking-tight">{c.taste.title}</h2>
                             <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.taste.speaker}</p>
-                            <p className="mt-8 text-[18px] md:text-[24px] text-black/65 leading-relaxed">{c.taste.insight}</p>
+                            <p className="mt-5 text-[15px] md:text-[18px] text-black/65 leading-relaxed">{c.taste.insight}</p>
                         </div>
-                        <div className="md:col-span-5 border border-black/10 p-6 md:p-8">
+                        <div className="md:col-span-5 border border-black/10 p-5 md:p-6">
                             <p className={kickerClass}>Hero Point</p>
-                            <h3 className="mt-4 text-[28px] md:text-[40px] font-bold leading-[0.95] tracking-tight">{c.taste.points[0].title}</h3>
+                            <h3 className="mt-3 text-[22px] md:text-[28px] font-bold leading-[0.95] tracking-tight">{c.taste.points[0].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.taste.points[0].desc}</p>
                         </div>
                     </div>
-                    <div className="mt-8 border-t border-black/10 pt-8 grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10">
+                    <div className="mt-4 border border-black/10 grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10">
                         {c.taste.points.slice(1).map((point, i) => (
                             <div key={point.title} className={cn("p-6", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
-                                <h4 className="text-[20px] md:text-[28px] font-bold leading-tight tracking-tight">{point.title}</h4>
+                                <h4 className="text-[16px] md:text-[20px] font-bold leading-tight tracking-tight">{point.title}</h4>
                                 <p className={`${bodyClass} mt-3`}>{point.desc}</p>
                             </div>
                         ))}
                     </div>
-                    <p className="mt-10 text-[32px] md:text-[56px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</p>
+                    <p className="mt-5 text-[26px] md:text-[40px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</p>
                 </div>
             </ToolkitPage>
 
@@ -793,13 +793,13 @@ export default function ShiftToolkitPage() {
                     <p className={kickerClass}>{c.leverage.label}</p>
                     <h2 className={`${heroClass} mt-5`}>{c.leverage.title}</h2>
                     <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.leverage.speaker}</p>
-                    <p className={`${bodyClass} mt-6 max-w-4xl`}>{c.leverage.insight}</p>
+                    <p className={`${bodyClass} mt-2 max-w-4xl`}>{c.leverage.insight}</p>
 
-                    <div className="mt-8 border border-black/10">
+                    <div className="mt-3 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-12">
-                            <div className="md:col-span-8 p-6 md:p-8 md:border-r border-black/10 border-b md:border-b-0">
+                            <div className="md:col-span-8 p-4 md:p-5 md:border-r border-black/10 border-b md:border-b-0">
                                 <p className={kickerClass}>Team Evolution</p>
-                                <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                                <div className="mt-3 grid grid-cols-3 gap-3 text-center">
                                     {[
                                         { year: "2012", people: "100", label: "Waterfall" },
                                         { year: "2020", people: "8", label: "Agile" },
@@ -807,23 +807,23 @@ export default function ShiftToolkitPage() {
                                     ].map((era, i) => (
                                         <div key={era.year} className={cn(i > 0 && "border-l border-black/10")}>
                                             <p className="text-[10px] md:text-[12px] font-code-brand font-bold tracking-[0.2em] text-black/40">{era.year}</p>
-                                            <p className="mt-2 text-[44px] md:text-[72px] font-bold leading-none tracking-tight">{era.people}</p>
+                                            <p className="mt-1 text-[28px] md:text-[36px] font-bold leading-none tracking-tight">{era.people}</p>
                                             <p className="mt-1 text-[12px] md:text-[14px] text-black/55">{lang === "en" ? "people" : "ľudí"}</p>
                                             <p className="mt-2 text-[10px] md:text-[11px] font-code-brand uppercase tracking-[0.25em] text-[#0047BB]">{era.label}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                            <div className="md:col-span-4 p-6 md:p-8">
+                            <div className="md:col-span-4 p-4 md:p-5">
                                 <p className={kickerClass}>Gutenberg Moment</p>
-                                <div className="mt-5 space-y-5">
+                                <div className="mt-2 space-y-2">
                                     <div>
-                                        <h4 className="text-[20px] md:text-[24px] font-bold tracking-tight">{c.leverage.gutenberg.leftTitle}</h4>
+                                        <h4 className="text-[14px] md:text-[16px] font-bold tracking-tight">{c.leverage.gutenberg.leftTitle}</h4>
                                         <p className={`${bodyClass} mt-2`}>{c.leverage.gutenberg.leftDesc}</p>
                                     </div>
                                     <p className="text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">to</p>
                                     <div>
-                                        <h4 className="text-[20px] md:text-[24px] font-bold tracking-tight">{c.leverage.gutenberg.rightTitle}</h4>
+                                        <h4 className="text-[14px] md:text-[16px] font-bold tracking-tight">{c.leverage.gutenberg.rightTitle}</h4>
                                         <p className={`${bodyClass} mt-2`}>{c.leverage.gutenberg.rightDesc}</p>
                                     </div>
                                 </div>
@@ -831,15 +831,15 @@ export default function ShiftToolkitPage() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 border-t border-black/10">
                             {c.leverage.points.map((p, i) => (
-                                <div key={p.title} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.leverage.points.length - 2 && "border-b border-black/10")}>
-                                    <h4 className="text-[20px] md:text-[26px] font-bold leading-tight tracking-tight">{p.title}</h4>
-                                    <p className={`${bodyClass} mt-3`}>{p.desc}</p>
+                                <div key={p.title} className={cn("px-4 py-3", i % 2 === 0 && "md:border-r md:border-black/10", i < c.leverage.points.length - 2 && "border-b border-black/10")}>
+                                    <h4 className="text-[14px] md:text-[16px] font-bold leading-tight tracking-tight">{p.title}</h4>
+                                    <p className={`${bodyClass} mt-1`}>{p.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    <p className="mt-8 text-[30px] md:text-[48px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</p>
+                    <p className="mt-2 text-[18px] md:text-[24px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</p>
                 </div>
             </ToolkitPage>
 
@@ -848,24 +848,24 @@ export default function ShiftToolkitPage() {
                     <p className={kickerClass}>{c.clarity.label}</p>
                     <h2 className={`${heroClass} mt-5`}>{c.clarity.title}</h2>
                     <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.clarity.speaker}</p>
-                    <p className="mt-7 text-[18px] md:text-[24px] text-black/65 leading-relaxed max-w-5xl">{c.clarity.insight}</p>
-                    <p className="mt-8 text-[34px] md:text-[58px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.clarity.pullQuote}</p>
+                    <p className="mt-4 text-[15px] md:text-[18px] text-black/65 leading-relaxed max-w-5xl">{c.clarity.insight}</p>
+                    <p className="mt-4 text-[26px] md:text-[36px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.clarity.pullQuote}</p>
 
-                    <div className="mt-10 border-t border-black/10 pt-8 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
-                        <div className="md:col-span-6 p-7 border-b md:border-b-0 md:border-r border-black/10">
-                            <h3 className="text-[28px] md:text-[40px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[2].title}</h3>
+                    <div className="mt-5 border border-black/10 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
+                        <div className="md:col-span-6 p-4 border-b md:border-b-0 md:border-r border-black/10">
+                            <h3 className="text-[20px] md:text-[26px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[2].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.clarity.points[2].desc}</p>
                         </div>
-                        <div className="md:col-span-6 p-7">
-                            <h3 className="text-[28px] md:text-[40px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[3].title}</h3>
+                        <div className="md:col-span-6 p-4">
+                            <h3 className="text-[20px] md:text-[26px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[3].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.clarity.points[3].desc}</p>
                         </div>
-                        <div className="md:col-span-12 p-7 border-t border-black/10">
-                            <h3 className="text-[24px] md:text-[36px] font-bold leading-tight tracking-tight">{c.clarity.points[4].title}</h3>
+                        <div className="md:col-span-12 p-4 border-t border-black/10">
+                            <h3 className="text-[18px] md:text-[22px] font-bold leading-tight tracking-tight">{c.clarity.points[4].title}</h3>
                             <p className={`${bodyClass} mt-3 max-w-5xl`}>{c.clarity.points[4].desc}</p>
                         </div>
                     </div>
-                    <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/10">
+                    <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/10">
                         {c.clarity.points.slice(0, 2).map((point, i) => (
                             <div key={point.title} className={cn("p-6", i === 0 && "md:border-r md:border-black/10", i === 0 && "border-b md:border-b-0 border-black/10")}>
                                 <h4 className="text-[20px] md:text-[28px] font-bold tracking-tight">{point.title}</h4>
@@ -882,18 +882,18 @@ export default function ShiftToolkitPage() {
                     <h2 className={`${heroClass} mt-5`}>{c.humanEdge.title}</h2>
                     <p className={`${bodyClass} mt-6 max-w-5xl`}>{c.humanEdge.intro}</p>
 
-                    <div className="mt-9 border border-black/10">
+                    <div className="mt-5 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.humanEdge.themes.map((theme, i) => (
                                 <div key={theme.title} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.humanEdge.themes.length - 2 && "border-b border-black/10")}>
-                                    <h3 className="text-[22px] md:text-[30px] font-bold tracking-tight leading-tight">{theme.title}</h3>
+                                    <h3 className="text-[18px] md:text-[24px] font-bold tracking-tight leading-tight">{theme.title}</h3>
                                     <p className={`${bodyClass} mt-3`}>{theme.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    <div className="mt-6 border-t border-black/10 pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                         {c.humanEdge.paths.map((path, i) => (
                             <div key={path.title} className="border border-black/10 p-6">
                                 <p className={kickerClass}>{path.title}</p>
@@ -908,23 +908,23 @@ export default function ShiftToolkitPage() {
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <p className={kickerClass}>{c.timeline.label}</p>
                     <h2 className={`${heroClass} mt-5`}>{c.timeline.title}</h2>
-                    <div className="mt-9 border-t border-black/10 pt-7">
+                    <div className="mt-5 border-t border-black/10 pt-4">
                         <div className="grid grid-cols-1 md:grid-cols-5 gap-0 border border-black/10">
                             {c.timeline.events.map((evt, i) => (
-                                <div key={evt.year} className={cn("p-5 md:p-6", i < c.timeline.events.length - 1 && "md:border-r md:border-black/10", i < c.timeline.events.length - 1 && "border-b md:border-b-0 border-black/10")}>
-                                    <p className="text-[30px] md:text-[42px] font-bold tracking-tight text-[#0047BB]">{evt.year}</p>
-                                    <h4 className="mt-2 text-[18px] md:text-[22px] font-bold leading-tight">{evt.title}</h4>
-                                    <p className="mt-2 text-[13px] md:text-[14px] text-black/60 leading-relaxed">{evt.desc}</p>
+                                <div key={evt.year} className={cn("p-3 md:p-4", i < c.timeline.events.length - 1 && "md:border-r md:border-black/10", i < c.timeline.events.length - 1 && "border-b md:border-b-0 border-black/10")}>
+                                    <p className="text-[24px] md:text-[30px] font-bold tracking-tight text-[#0047BB]">{evt.year}</p>
+                                    <h4 className="mt-1 text-[15px] md:text-[17px] font-bold leading-tight">{evt.title}</h4>
+                                    <p className="mt-1 text-[12px] md:text-[13px] text-black/60 leading-relaxed">{evt.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <div className="mt-8 border border-black/10 p-6 md:p-8">
-                        <p className="text-[56px] md:text-[96px] font-bold leading-none tracking-tight">{c.timeline.stat.value}</p>
-                        <p className="mt-3 text-[20px] md:text-[32px] font-bold leading-tight max-w-4xl">{c.timeline.stat.label}</p>
+                    <div className="mt-4 border border-black/10 p-4 md:p-5">
+                        <p className="text-[44px] md:text-[56px] font-bold leading-none tracking-tight">{c.timeline.stat.value}</p>
+                        <p className="mt-2 text-[18px] md:text-[24px] font-bold leading-tight max-w-4xl">{c.timeline.stat.label}</p>
                         <p className={`${bodyClass} mt-3 max-w-4xl`}>{c.timeline.stat.sub}</p>
                     </div>
-                    <p className={`${bodyClass} mt-6 max-w-5xl`}>{c.timeline.neuro}</p>
+                    <p className={`${bodyClass} mt-3 max-w-5xl`}>{c.timeline.neuro}</p>
                 </div>
             </ToolkitPage>
 
@@ -960,17 +960,17 @@ export default function ShiftToolkitPage() {
                     <h2 className={`${heroClass} mt-5`}>{c.tools.title}</h2>
                     <p className={`${bodyClass} mt-5 max-w-3xl`}>{c.tools.subtitle}</p>
 
-                    <div className="mt-9 border border-black/10 overflow-hidden">
+                    <div className="mt-4 border border-black/10 overflow-hidden">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.tools.categories.map((cat, i) => (
                                 <div key={cat.name} className={cn("p-0", i % 2 === 0 && "md:border-r md:border-black/10", i < 2 && "border-b border-black/10")}>
-                                    <div className="p-5 md:p-6 border-b border-black/10">
-                                        <p className={`${kickerClass} !text-[9px] md:!text-[11px]`}>{cat.name}</p>
+                                    <div className="px-3 py-2 md:px-4 md:py-2 border-b border-black/10">
+                                        <p className={`${kickerClass} !text-[8px] md:!text-[10px]`}>{cat.name}</p>
                                     </div>
                                     {cat.items.map((item, itemIndex) => (
-                                        <div key={item.tool} className={cn("p-5 md:p-6", itemIndex < cat.items.length - 1 && "border-b border-black/10")}>
-                                            <p className="text-[16px] md:text-[20px] font-bold leading-tight">{item.tool}</p>
-                                            <p className="mt-1 text-[12px] md:text-[13px] text-black/50 leading-relaxed">{item.note}</p>
+                                        <div key={item.tool} className={cn("px-3 py-2 md:px-4 md:py-2", itemIndex < cat.items.length - 1 && "border-b border-black/10")}>
+                                            <p className="text-[14px] md:text-[15px] font-bold leading-tight">{item.tool}</p>
+                                            <p className="mt-0.5 text-[11px] md:text-[11px] text-black/50 leading-snug">{item.note}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -984,13 +984,13 @@ export default function ShiftToolkitPage() {
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <p className={kickerClass}>{c.principles.label}</p>
                     <h2 className={`${heroClass} mt-5`}>{c.principles.title}</h2>
-                    <div className="mt-9 border border-black/10">
+                    <div className="mt-4 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.principles.items.map((p, i) => (
-                                <div key={p.num} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.principles.items.length - 2 && "border-b border-black/10")}>
-                                    <p className="text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">{p.num}</p>
-                                    <h4 className="mt-3 text-[24px] md:text-[34px] font-bold leading-[0.95] tracking-tight">{p.title}</h4>
-                                    <p className={`${bodyClass} mt-3`}>{p.desc}</p>
+                                <div key={p.num} className={cn("p-3 md:p-4", i % 2 === 0 && "md:border-r md:border-black/10", i < c.principles.items.length - 2 && "border-b border-black/10")}>
+                                    <p className="text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">{p.num}</p>
+                                    <h4 className="mt-1 text-[18px] md:text-[22px] font-bold leading-[0.95] tracking-tight">{p.title}</h4>
+                                    <p className={`${bodyClass} mt-1`}>{p.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -1023,7 +1023,7 @@ export default function ShiftToolkitPage() {
                             <p className={`${bodyClass} mt-4`}>{c.action.paths.second}</p>
                         </div>
                     </div>
-                    <p className="mt-8 text-[34px] md:text-[56px] font-bold leading-[0.95] tracking-tight">{c.action.bottom}</p>
+                    <p className="mt-4 text-[28px] md:text-[44px] font-bold leading-[0.95] tracking-tight">{c.action.bottom}</p>
                 </div>
             </ToolkitPage>
 
@@ -1034,8 +1034,8 @@ export default function ShiftToolkitPage() {
                     <div className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
                         <div className="md:col-span-8">
                             {c.resources.links.map((link, i) => (
-                                <div key={link.name} className={cn("p-6", i < c.resources.links.length - 1 && "border-b border-black/10")}>
-                                    <p className="text-[20px] md:text-[28px] font-bold tracking-tight">{link.name}</p>
+                                <div key={link.name} className={cn("p-4", i < c.resources.links.length - 1 && "border-b border-black/10")}>
+                                    <p className="text-[16px] md:text-[20px] font-bold tracking-tight">{link.name}</p>
                                     <p className="mt-1 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">{link.url}</p>
                                     <p className="mt-2 text-[13px] md:text-[14px] text-black/60">{link.desc}</p>
                                 </div>
@@ -1045,15 +1045,15 @@ export default function ShiftToolkitPage() {
                             <p className={`${kickerClass} text-center`}>{c.resources.qr}</p>
                         </div>
                     </div>
-                    <p className="mt-8 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.resources.stat}</p>
-                    <p className="mt-6 pt-6 border-t border-black/10 text-[16px] md:text-[22px] text-black/60 leading-relaxed max-w-4xl">{c.resources.closing}</p>
-                    <p className="mt-8 text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/35">{c.resources.footer}</p>
+                    <p className="mt-5 text-[26px] md:text-[36px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.resources.stat}</p>
+                    <p className="mt-3 pt-3 border-t border-black/10 text-[14px] md:text-[16px] text-black/60 leading-relaxed max-w-4xl">{c.resources.closing}</p>
+                    <p className="mt-3 text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/35">{c.resources.footer}</p>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="13" id="back-cover">
                 <div className="relative z-10 max-w-5xl mx-auto w-full h-full flex flex-col items-center justify-center text-center">
-                    <p className="text-[36px] md:text-[64px] font-bold leading-[0.9] tracking-tight max-w-4xl">{c.backCover.statement}</p>
+                    <p className="text-[30px] md:text-[56px] font-bold leading-[0.9] tracking-tight max-w-4xl">{c.backCover.statement}</p>
                     <div className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-2">
                         <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30">SORRYWECAN × SUDOLABS</p>
                         <p className="text-[9px] md:text-[10px] font-code-brand uppercase tracking-[0.3em] text-black/20">{c.backCover.edition}</p>

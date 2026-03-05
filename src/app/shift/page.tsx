@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useRef, useState } from "react"
-import { motion } from "framer-motion"
+import React, { useState } from "react"
+
 import { TopNav } from "@/components/navigation/top-nav"
 import { cn } from "@/lib/utils"
 
@@ -24,7 +24,7 @@ function ToolkitPage({ children, num, className, id }: { children: React.ReactNo
 
 export default function ShiftToolkitPage() {
     const [lang, setLang] = useState<"en" | "sk">("en")
-    const printRef = useRef<HTMLDivElement>(null)
+
 
     const handlePrint = () => {
         window.print()
@@ -351,9 +351,9 @@ export default function ShiftToolkitPage() {
                 label: "MINDSHIFT TOOLKIT",
                 title: "Rise of the Builders",
                 edition: "Edition 01 · Február 2026",
-                subtitle: "3,5 hodiny insightov, destilovaných do toho podstatného.",
-                note: "Toolkit od spíkrov pre ľudí, ktorí tvoria.",
-                railHint: "Tak ako železnice skomoditizovali dopravu, AI komoditizuje inteligenciu.",
+                subtitle: "3,5 hodiny poznatkov, zhustených do toho podstatného.",
+                note: "Od rečníkov pre ľudí, ktorí tvoria.",
+                railHint: "Tak ako železnice zmenili dopravu na bežnú vec, AI robí to isté s inteligenciou.",
             },
             thesis: {
                 label: "TÉZA",
@@ -363,7 +363,7 @@ export default function ShiftToolkitPage() {
                     title: "Komoditizácia inteligencie",
                     body: "Prvá priemyselná revolúcia násobila fyzickú silu. Táto násobí kognitívnu silu. Inteligencia sa stáva infraštruktúrou.",
                     analogy: "Romanova analógia železníc: časom nebolo kľúčové vlastniť koľaje, ale vedieť, kam a prečo ideš.",
-                    sputnik: "Súčasná vlna AI investícií pripomína Sputnik efekt - strategická urgencia, súťaž štátov a masívna akcelerácia.",
+                    sputnik: "Súčasná vlna AI investícií pripomína Sputnik efekt — strategická naliehavosť, súťaž štátov a masívne zrýchľovanie.",
                 },
                 pillars: [
                     { num: "01", title: "Vkus", speaker: "Roland", desc: "Čo oddeľuje dobré od nezabudnuteľného." },
@@ -386,7 +386,7 @@ export default function ShiftToolkitPage() {
                         desc: "Niekto ho má prirodzene, no dá sa cielene rozvíjať. Študuj veľkých. Kurátoruj obsesívne. Všímaj si, čo iní prehliadajú.",
                     },
                     {
-                        title: "Outsourcuj inšpiráciu, nie úsudok",
+                        title: "Inšpiráciu hľadaj zvonka, úsudok si nechaj",
                         desc: "Nolanov look. Dalího textúra. Diela veľkých autorov sa stávajú živou referenčnou knižnicou.",
                     },
                     {
@@ -404,7 +404,7 @@ export default function ShiftToolkitPage() {
                 points: [
                     {
                         title: "Gutenbergov moment",
-                        desc: "Tlačiarenský lis odstránil pisárov, no vytvoril autorov. AI odstraňuje repetíciu, no vytvára builderov.",
+                        desc: "Tlačiarenský lis odstránil pisárov, no vytvoril autorov. AI odstraňuje opakovanie, no vytvára novú generáciu tvorcov.",
                     },
                     {
                         title: "Evolúcia tímu",
@@ -419,12 +419,12 @@ export default function ShiftToolkitPage() {
                         desc: "Vybuduj si AI partnera. Pravidlá, pamäť, identita. Vzťah je násobič.",
                     },
                 ],
-                pullQuote: "Coding je vyriešený. 90% generované. Otázka je: čo sa oplatí budovať?",
+                pullQuote: "Programovanie je vyriešené. 90% generované. Otázka je: čo sa oplatí budovať?",
                 gutenberg: {
                     leftTitle: "Tlačiarenský lis",
                     leftDesc: "Znalosti sa dali kopírovať. Autorita sa decentralizovala.",
                     rightTitle: "Agentické AI",
-                    rightDesc: "Exekúcia sa dá kopírovať. Schopnosť sa decentralizuje.",
+                    rightDesc: "Realizácia sa dá kopírovať. Schopnosť sa decentralizuje.",
                 },
             },
             clarity: {
@@ -454,7 +454,7 @@ export default function ShiftToolkitPage() {
                         desc: "Ak chceš byť AI-first, najprv musíš vedieť tvoriť s ľuďmi a pre ľudí.",
                     },
                 ],
-                pullQuote: "Myslenie je diferenciátor. Nie nástroje.",
+                pullQuote: "Myslenie je to, čo rozhoduje. Nie nástroje.",
             },
             humanEdge: {
                 label: "ĽUDSKÁ VÝHODA",
@@ -482,11 +482,11 @@ export default function ShiftToolkitPage() {
                 paths: [
                     {
                         title: "Cesta 1 · Druhý mozog",
-                        desc: "Buduj autonómnych agentov, ktorí rozšíria tvoj operatívny dosah. Nech softvér nesie repetitívnu kognitívnu záťaž.",
+                        desc: "Buduj autonómnych agentov, ktorí rozšíria tvoj operatívny dosah. Nech softvér nesie opakujúcu sa kognitívnu záťaž.",
                     },
                     {
                         title: "Cesta 2 · Vnútorný rozvoj",
-                        desc: "Trénuj prítomnosť, intuíciu a etické rozlišovanie. V ére lacnej exekúcie je orientácia prémiová schopnosť.",
+                        desc: "Trénuj prítomnosť, intuíciu a etické rozlišovanie. Keď je realizácia lacná, orientácia je najcennejšia schopnosť.",
                     },
                 ],
             },
@@ -495,9 +495,9 @@ export default function ShiftToolkitPage() {
                 title: "Päť rokov, ktoré zmenili všetko",
                 events: [
                     { year: "2022", title: "Inteligencia ako produkt", desc: "ChatGPT štartuje. AI sa dostáva k bežným ľuďom." },
-                    { year: "2023", title: "Reasoning je stabilný", desc: "GPT-4 sprístupňuje komplexnejšie pracovné reťazce." },
-                    { year: "2024", title: "Exekučné enginy", desc: "Objavujú sa agenti. AI už nielen odpovedá, ale vykonáva." },
-                    { year: "2025", title: "Coding je vyriešený", desc: "90% generovaného kódu sa stáva normou." },
+                    { year: "2023", title: "Uvažovanie je spoľahlivé", desc: "GPT-4 sprístupňuje komplexnejšie pracovné reťazce." },
+                    { year: "2024", title: "Realizačné enginy", desc: "Objavujú sa agenti. AI už nielen odpovedá, ale vykonáva." },
+                    { year: "2025", title: "Programovanie je vyriešené", desc: "90% generovaného kódu sa stáva normou." },
                     {
                         year: "2026",
                         title: "Prepis organizácií",
@@ -509,15 +509,15 @@ export default function ShiftToolkitPage() {
                     label: "narušenie pracovných rolí v horizonte 3-5 rokov",
                     sub: "Nejde len o prácu. Ide o prepis role, identity a zodpovednosti.",
                 },
-                neuro: "Paralelne rastie neurobiologická línia: vedomie, pozornosť a kognícia sa stávajú strategickou témou firiem.",
+                neuro: "Paralelne rastie neurobiologická línia: vedomie, pozornosť a poznávanie sa stávajú strategickou témou firiem.",
             },
             shifts: {
                 label: "PARADIGMATICKÉ ZMENY",
                 title: "Čo sa zmenilo",
                 items: [
-                    { from: "Špecialista", to: "Generalista", note: "V ranej AI-natívnej exekúcii vyhráva šírka." },
+                    { from: "Špecialista", to: "Generalista", note: "V ranom AI-natívnom svete vyhráva šírka záberov." },
                     { from: "Informácie", to: "Intuícia a vkus", note: "Prístup má každý. Rozlišovanie málokto." },
-                    { from: "Tí, čo vedia", to: "Tí, čo tvoria", note: "Vedenie je lacné. Dodanie je edge." },
+                    { from: "Tí, čo vedia", to: "Tí, čo tvoria", note: "Vedenie je lacné. Dodanie rozhoduje." },
                     { from: "Najlepší model", to: "Hlboký kontext", note: "Kvalita promptu je funkcia kvality kontextu." },
                     { from: "Učiť sa o", to: "Učiť sa robením", note: "Vytvor artefakt. Vybuduj porozumenie." },
                     { from: "Obávať sa", to: "Tvoriť", note: "Aj zastaraný výstup buduje trvalú schopnosť." },
@@ -541,7 +541,7 @@ export default function ShiftToolkitPage() {
                     {
                         name: "Tvorba",
                         items: [
-                            { tool: "Midjourney", note: "Generovanie obrazu a explorácia estetiky" },
+                            { tool: "Midjourney", note: "Generovanie obrazu a skúmanie estetiky" },
                             { tool: "Google AI Studio", note: "Testovanie surových Gemini modelov s masívnym kontextom" },
                             { tool: "Nano Banana", note: "Experimenty s formátom a prototypovanie od Googlu" },
                         ],
@@ -559,7 +559,7 @@ export default function ShiftToolkitPage() {
                         items: [
                             { tool: "Claude (Projects)", note: "Udržiavanie kontextu a tvorba interaktívnych artefaktov" },
                             { tool: "Osobná AI (Solas)", note: "Partner pre reflexiu, journaling a plánovanie" },
-                            { tool: "X / Twitter", note: "Realtime research a objavovanie frontieru" },
+                            { tool: "X / Twitter", note: "Priebežný výskum a sledovanie noviniek" },
                         ],
                     },
                 ],
@@ -571,7 +571,7 @@ export default function ShiftToolkitPage() {
                     {
                         num: "01",
                         title: "Najprv tvor, uč sa tvorbou",
-                        desc: "Najrýchlejšie učenie je exekúcia a iterácia na reálnom výsledku.",
+                        desc: "Najrýchlejšie učenie je robiť a opakovane vylepšovať na reálnom výsledku.",
                     },
                     {
                         num: "02",
@@ -590,8 +590,8 @@ export default function ShiftToolkitPage() {
                     },
                     {
                         num: "05",
-                        title: "Prestaň riešiť obsolétnosť",
-                        desc: "Aj zastarané produkty učia rozhodovanie a budujú schopnosť.",
+                        title: "Prestaň sa báť, že to zastará",
+                        desc: "Aj zastarané produkty učia rozhodovanie a budujú schopnosti.",
                     },
                     {
                         num: "06",
@@ -645,7 +645,7 @@ export default function ShiftToolkitPage() {
                 links: [
                     { name: "SORRYWECAN", url: "sorrywecan.com", desc: "Kreatívne štúdio za eventom" },
                     { name: "SUDOLABS", url: "sudolabs.com", desc: "Builder custom AI riešení" },
-                    { name: "Research Lab Newsletter", url: "research@sorrywecan.com", desc: "Čo sa učíme, staviame a shipujeme" },
+                    { name: "Research Lab Newsletter", url: "research@sorrywecan.com", desc: "Čo sa učíme, tvoríme a posúvame ďalej" },
                     { name: "X / Twitter", url: "@sorrywecan", desc: "Najrýchlejšie miesto na učenie a update kontextu" },
                 ],
                 stat: "1 schopnosť vybudovaná tento týždeň má väčšiu hodnotu než 100 uložených odkazov.",
@@ -662,19 +662,42 @@ export default function ShiftToolkitPage() {
 
     const c = t[lang]
 
-    const fade = (delay = 0) => ({
-        initial: { opacity: 0, y: 16 },
-        whileInView: { opacity: 1, y: 0 },
-        viewport: { once: true },
-        transition: { delay, duration: 0.55 },
-    })
 
     const kickerClass = "text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#0047BB]"
     const heroClass = "text-[36px] md:text-[64px] font-bold leading-[0.95] tracking-tight"
     const bodyClass = "text-[14px] md:text-[16px] text-black/60 leading-relaxed"
 
     return (
-        <div ref={printRef} className="min-h-screen bg-white md:bg-[#d6cec6] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20 print:bg-white flex flex-col items-center">
+        <>
+            <style jsx global>{`
+                @media print {
+                    @page {
+                        size: 297mm 210mm;
+                        margin: 0;
+                    }
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                        -webkit-print-color-adjust: exact;
+                        print-color-adjust: exact;
+                    }
+                    .toolkit-page {
+                        page-break-after: always;
+                        page-break-inside: avoid;
+                        break-after: page;
+                        break-inside: avoid;
+                        overflow: hidden;
+                    }
+                    .toolkit-page:last-of-type {
+                        page-break-after: avoid;
+                        break-after: avoid;
+                    }
+                    .print\:hidden {
+                        display: none !important;
+                    }
+                }
+            `}</style>
+            <div className="min-h-screen bg-white md:bg-[#d6cec6] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20 print:bg-white flex flex-col items-center">
             <div className="print:hidden">
                 <TopNav
                     lang={lang}
@@ -701,29 +724,29 @@ export default function ShiftToolkitPage() {
 
             <ToolkitPage num="01" id="cover" className="pt-24 md:pt-16">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.cover.label}</motion.p>
-                    <motion.h1 {...fade(0.06)} className="mt-6 text-[52px] md:text-[110px] font-bold leading-[0.88] tracking-tight max-w-5xl">{c.cover.title}</motion.h1>
-                    <motion.p {...fade(0.1)} className="mt-8 max-w-xl text-[14px] md:text-[20px] text-black/60 leading-relaxed">{c.cover.subtitle}</motion.p>
-                    <motion.p {...fade(0.14)} className={`${bodyClass} mt-4 max-w-xl`}>{c.cover.note}</motion.p>
-                    <motion.div {...fade(0.18)} className="mt-12 pt-5 border-t border-black/10 flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
+                    <p className={kickerClass}>{c.cover.label}</p>
+                    <h1 className="mt-6 text-[52px] md:text-[110px] font-bold leading-[0.88] tracking-tight max-w-5xl">{c.cover.title}</h1>
+                    <p className="mt-8 max-w-xl text-[14px] md:text-[20px] text-black/60 leading-relaxed">{c.cover.subtitle}</p>
+                    <p className={`${bodyClass} mt-4 max-w-xl`}>{c.cover.note}</p>
+                    <div className="mt-12 pt-5 border-t border-black/10 flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
                         <p className={`${kickerClass} !tracking-[0.3em] md:!tracking-[0.35em]`}>{c.cover.edition}</p>
                         <p className={`${bodyClass} md:ml-auto max-w-2xl`}>{c.cover.railHint}</p>
-                    </motion.div>
+                    </div>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="02" id="thesis">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.thesis.label}</motion.p>
-                    <motion.blockquote {...fade(0.06)} className="mt-6 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.thesis.quote}</motion.blockquote>
-                    <motion.p {...fade(0.1)} className="mt-6 text-[18px] md:text-[24px] font-bold text-[#0047BB]">{c.thesis.sub}</motion.p>
-                    <motion.div {...fade(0.14)} className="mt-10 border-t border-black/10 pt-8">
+                    <p className={kickerClass}>{c.thesis.label}</p>
+                    <blockquote className="mt-6 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.thesis.quote}</blockquote>
+                    <p className="mt-6 text-[18px] md:text-[24px] font-bold text-[#0047BB]">{c.thesis.sub}</p>
+                    <div className="mt-10 border-t border-black/10 pt-8">
                         <h3 className="text-[24px] md:text-[32px] font-bold tracking-tight">{c.thesis.commoditization.title}</h3>
                         <p className={`${bodyClass} mt-4 max-w-4xl`}>{c.thesis.commoditization.body}</p>
                         <p className={`${bodyClass} mt-3 max-w-4xl`}>{c.thesis.commoditization.analogy}</p>
                         <p className="mt-3 text-[12px] md:text-[14px] text-[#0047BB]">{c.thesis.commoditization.sputnik}</p>
-                    </motion.div>
-                    <motion.div {...fade(0.2)} className="mt-10 border border-black/10">
+                    </div>
+                    <div className="mt-10 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-3">
                             {c.thesis.pillars.map((p, i) => (
                                 <div key={p.num} className={cn("p-6 md:p-8", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
@@ -734,47 +757,47 @@ export default function ShiftToolkitPage() {
                                 </div>
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="03" id="taste">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.taste.label}</motion.p>
+                    <p className={kickerClass}>{c.taste.label}</p>
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
-                        <motion.div {...fade(0.05)} className="md:col-span-7">
+                        <div className="md:col-span-7">
                             <h2 className="text-[52px] md:text-[96px] font-bold leading-[0.88] tracking-tight">{c.taste.title}</h2>
                             <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.taste.speaker}</p>
                             <p className="mt-8 text-[18px] md:text-[24px] text-black/65 leading-relaxed">{c.taste.insight}</p>
-                        </motion.div>
-                        <motion.div {...fade(0.1)} className="md:col-span-5 border border-black/10 p-6 md:p-8">
+                        </div>
+                        <div className="md:col-span-5 border border-black/10 p-6 md:p-8">
                             <p className={kickerClass}>Hero Point</p>
                             <h3 className="mt-4 text-[28px] md:text-[40px] font-bold leading-[0.95] tracking-tight">{c.taste.points[0].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.taste.points[0].desc}</p>
-                        </motion.div>
+                        </div>
                     </div>
                     <div className="mt-8 border-t border-black/10 pt-8 grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10">
                         {c.taste.points.slice(1).map((point, i) => (
-                            <motion.div key={point.title} {...fade(0.14 + i * 0.04)} className={cn("p-6", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
+                            <div key={point.title} className={cn("p-6", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
                                 <h4 className="text-[20px] md:text-[28px] font-bold leading-tight tracking-tight">{point.title}</h4>
                                 <p className={`${bodyClass} mt-3`}>{point.desc}</p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
-                    <motion.p {...fade(0.24)} className="mt-10 text-[32px] md:text-[56px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</motion.p>
+                    <p className="mt-10 text-[32px] md:text-[56px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</p>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="04" id="leverage">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.leverage.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.leverage.title}</motion.h2>
-                    <motion.p {...fade(0.08)} className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.leverage.speaker}</motion.p>
-                    <motion.p {...fade(0.1)} className={`${bodyClass} mt-6 max-w-4xl`}>{c.leverage.insight}</motion.p>
+                    <p className={kickerClass}>{c.leverage.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.leverage.title}</h2>
+                    <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.leverage.speaker}</p>
+                    <p className={`${bodyClass} mt-6 max-w-4xl`}>{c.leverage.insight}</p>
 
                     <div className="mt-8 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-12">
-                            <motion.div {...fade(0.14)} className="md:col-span-8 p-6 md:p-8 md:border-r border-black/10 border-b md:border-b-0">
+                            <div className="md:col-span-8 p-6 md:p-8 md:border-r border-black/10 border-b md:border-b-0">
                                 <p className={kickerClass}>Team Evolution</p>
                                 <div className="mt-6 grid grid-cols-3 gap-4 text-center">
                                     {[
@@ -790,8 +813,8 @@ export default function ShiftToolkitPage() {
                                         </div>
                                     ))}
                                 </div>
-                            </motion.div>
-                            <motion.div {...fade(0.18)} className="md:col-span-4 p-6 md:p-8">
+                            </div>
+                            <div className="md:col-span-4 p-6 md:p-8">
                                 <p className={kickerClass}>Gutenberg Moment</p>
                                 <div className="mt-5 space-y-5">
                                     <div>
@@ -804,50 +827,50 @@ export default function ShiftToolkitPage() {
                                         <p className={`${bodyClass} mt-2`}>{c.leverage.gutenberg.rightDesc}</p>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 border-t border-black/10">
                             {c.leverage.points.map((p, i) => (
-                                <motion.div key={p.title} {...fade(0.2 + i * 0.03)} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.leverage.points.length - 2 && "border-b border-black/10")}>
+                                <div key={p.title} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.leverage.points.length - 2 && "border-b border-black/10")}>
                                     <h4 className="text-[20px] md:text-[26px] font-bold leading-tight tracking-tight">{p.title}</h4>
                                     <p className={`${bodyClass} mt-3`}>{p.desc}</p>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
 
-                    <motion.p {...fade(0.32)} className="mt-8 text-[30px] md:text-[48px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</motion.p>
+                    <p className="mt-8 text-[30px] md:text-[48px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</p>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="05" id="clarity">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.clarity.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.clarity.title}</motion.h2>
-                    <motion.p {...fade(0.08)} className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.clarity.speaker}</motion.p>
-                    <motion.p {...fade(0.11)} className="mt-7 text-[18px] md:text-[24px] text-black/65 leading-relaxed max-w-5xl">{c.clarity.insight}</motion.p>
-                    <motion.p {...fade(0.15)} className="mt-8 text-[34px] md:text-[58px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.clarity.pullQuote}</motion.p>
+                    <p className={kickerClass}>{c.clarity.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.clarity.title}</h2>
+                    <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.clarity.speaker}</p>
+                    <p className="mt-7 text-[18px] md:text-[24px] text-black/65 leading-relaxed max-w-5xl">{c.clarity.insight}</p>
+                    <p className="mt-8 text-[34px] md:text-[58px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.clarity.pullQuote}</p>
 
                     <div className="mt-10 border-t border-black/10 pt-8 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
-                        <motion.div {...fade(0.18)} className="md:col-span-6 p-7 border-b md:border-b-0 md:border-r border-black/10">
+                        <div className="md:col-span-6 p-7 border-b md:border-b-0 md:border-r border-black/10">
                             <h3 className="text-[28px] md:text-[40px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[2].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.clarity.points[2].desc}</p>
-                        </motion.div>
-                        <motion.div {...fade(0.21)} className="md:col-span-6 p-7">
+                        </div>
+                        <div className="md:col-span-6 p-7">
                             <h3 className="text-[28px] md:text-[40px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[3].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.clarity.points[3].desc}</p>
-                        </motion.div>
-                        <motion.div {...fade(0.24)} className="md:col-span-12 p-7 border-t border-black/10">
+                        </div>
+                        <div className="md:col-span-12 p-7 border-t border-black/10">
                             <h3 className="text-[24px] md:text-[36px] font-bold leading-tight tracking-tight">{c.clarity.points[4].title}</h3>
                             <p className={`${bodyClass} mt-3 max-w-5xl`}>{c.clarity.points[4].desc}</p>
-                        </motion.div>
+                        </div>
                     </div>
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/10">
                         {c.clarity.points.slice(0, 2).map((point, i) => (
-                            <motion.div key={point.title} {...fade(0.28 + i * 0.03)} className={cn("p-6", i === 0 && "md:border-r md:border-black/10", i === 0 && "border-b md:border-b-0 border-black/10")}>
+                            <div key={point.title} className={cn("p-6", i === 0 && "md:border-r md:border-black/10", i === 0 && "border-b md:border-b-0 border-black/10")}>
                                 <h4 className="text-[20px] md:text-[28px] font-bold tracking-tight">{point.title}</h4>
                                 <p className={`${bodyClass} mt-3`}>{point.desc}</p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -855,27 +878,27 @@ export default function ShiftToolkitPage() {
 
             <ToolkitPage num="06" id="human-edge">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.humanEdge.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.humanEdge.title}</motion.h2>
-                    <motion.p {...fade(0.1)} className={`${bodyClass} mt-6 max-w-5xl`}>{c.humanEdge.intro}</motion.p>
+                    <p className={kickerClass}>{c.humanEdge.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.humanEdge.title}</h2>
+                    <p className={`${bodyClass} mt-6 max-w-5xl`}>{c.humanEdge.intro}</p>
 
                     <div className="mt-9 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.humanEdge.themes.map((theme, i) => (
-                                <motion.div key={theme.title} {...fade(0.13 + i * 0.03)} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.humanEdge.themes.length - 2 && "border-b border-black/10")}>
+                                <div key={theme.title} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.humanEdge.themes.length - 2 && "border-b border-black/10")}>
                                     <h3 className="text-[22px] md:text-[30px] font-bold tracking-tight leading-tight">{theme.title}</h3>
                                     <p className={`${bodyClass} mt-3`}>{theme.desc}</p>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
 
                     <div className="mt-6 border-t border-black/10 pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
                         {c.humanEdge.paths.map((path, i) => (
-                            <motion.div key={path.title} {...fade(0.26 + i * 0.04)} className="border border-black/10 p-6">
+                            <div key={path.title} className="border border-black/10 p-6">
                                 <p className={kickerClass}>{path.title}</p>
                                 <p className={`${bodyClass} mt-4`}>{path.desc}</p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -883,36 +906,36 @@ export default function ShiftToolkitPage() {
 
             <ToolkitPage num="07" id="timeline">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.timeline.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.timeline.title}</motion.h2>
+                    <p className={kickerClass}>{c.timeline.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.timeline.title}</h2>
                     <div className="mt-9 border-t border-black/10 pt-7">
                         <div className="grid grid-cols-1 md:grid-cols-5 gap-0 border border-black/10">
                             {c.timeline.events.map((evt, i) => (
-                                <motion.div key={evt.year} {...fade(0.1 + i * 0.04)} className={cn("p-5 md:p-6", i < c.timeline.events.length - 1 && "md:border-r md:border-black/10", i < c.timeline.events.length - 1 && "border-b md:border-b-0 border-black/10")}>
+                                <div key={evt.year} className={cn("p-5 md:p-6", i < c.timeline.events.length - 1 && "md:border-r md:border-black/10", i < c.timeline.events.length - 1 && "border-b md:border-b-0 border-black/10")}>
                                     <p className="text-[30px] md:text-[42px] font-bold tracking-tight text-[#0047BB]">{evt.year}</p>
                                     <h4 className="mt-2 text-[18px] md:text-[22px] font-bold leading-tight">{evt.title}</h4>
                                     <p className="mt-2 text-[13px] md:text-[14px] text-black/60 leading-relaxed">{evt.desc}</p>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
-                    <motion.div {...fade(0.26)} className="mt-8 border border-black/10 p-6 md:p-8">
+                    <div className="mt-8 border border-black/10 p-6 md:p-8">
                         <p className="text-[56px] md:text-[96px] font-bold leading-none tracking-tight">{c.timeline.stat.value}</p>
                         <p className="mt-3 text-[20px] md:text-[32px] font-bold leading-tight max-w-4xl">{c.timeline.stat.label}</p>
                         <p className={`${bodyClass} mt-3 max-w-4xl`}>{c.timeline.stat.sub}</p>
-                    </motion.div>
-                    <motion.p {...fade(0.32)} className={`${bodyClass} mt-6 max-w-5xl`}>{c.timeline.neuro}</motion.p>
+                    </div>
+                    <p className={`${bodyClass} mt-6 max-w-5xl`}>{c.timeline.neuro}</p>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="08" id="shifts">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.shifts.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.shifts.title}</motion.h2>
+                    <p className={kickerClass}>{c.shifts.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.shifts.title}</h2>
                     <div className="mt-9 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                             {c.shifts.items.map((shift, i) => (
-                                <motion.div key={shift.from} {...fade(0.1 + i * 0.03)} className={cn(
+                                <div key={shift.from} className={cn(
                                     "p-6",
                                     i % 3 !== 2 && "lg:border-r lg:border-black/10",
                                     i % 2 === 0 && "md:border-r md:border-black/10 lg:border-r",
@@ -924,7 +947,7 @@ export default function ShiftToolkitPage() {
                                     <p className="mt-2 text-[20px] md:text-[28px] font-bold leading-tight tracking-tight">{shift.to}</p>
                                     <p className="mt-1 text-[10px] md:text-[11px] font-code-brand uppercase tracking-[0.2em] text-[#0047BB]">→</p>
                                     <p className="mt-3 text-[13px] md:text-[14px] text-black/60 leading-relaxed">{shift.note}</p>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -933,11 +956,11 @@ export default function ShiftToolkitPage() {
 
             <ToolkitPage num="09" id="tools">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.tools.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.tools.title}</motion.h2>
-                    <motion.p {...fade(0.08)} className={`${bodyClass} mt-5 max-w-3xl`}>{c.tools.subtitle}</motion.p>
+                    <p className={kickerClass}>{c.tools.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.tools.title}</h2>
+                    <p className={`${bodyClass} mt-5 max-w-3xl`}>{c.tools.subtitle}</p>
 
-                    <motion.div {...fade(0.12)} className="mt-9 border border-black/10 overflow-hidden">
+                    <div className="mt-9 border border-black/10 overflow-hidden">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.tools.categories.map((cat, i) => (
                                 <div key={cat.name} className={cn("p-0", i % 2 === 0 && "md:border-r md:border-black/10", i < 2 && "border-b border-black/10")}>
@@ -953,22 +976,22 @@ export default function ShiftToolkitPage() {
                                 </div>
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="10" id="principles">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.principles.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.principles.title}</motion.h2>
+                    <p className={kickerClass}>{c.principles.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.principles.title}</h2>
                     <div className="mt-9 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.principles.items.map((p, i) => (
-                                <motion.div key={p.num} {...fade(0.1 + i * 0.025)} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.principles.items.length - 2 && "border-b border-black/10")}>
+                                <div key={p.num} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.principles.items.length - 2 && "border-b border-black/10")}>
                                     <p className="text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">{p.num}</p>
                                     <h4 className="mt-3 text-[24px] md:text-[34px] font-bold leading-[0.95] tracking-tight">{p.title}</h4>
                                     <p className={`${bodyClass} mt-3`}>{p.desc}</p>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -977,20 +1000,20 @@ export default function ShiftToolkitPage() {
 
             <ToolkitPage num="11" id="action">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.action.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.action.title}</motion.h2>
-                    <motion.p {...fade(0.08)} className={`${bodyClass} mt-5`}>{c.action.subtitle}</motion.p>
+                    <p className={kickerClass}>{c.action.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.action.title}</h2>
+                    <p className={`${bodyClass} mt-5`}>{c.action.subtitle}</p>
                     <div className="mt-8 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.action.actions.map((a, i) => (
-                                <motion.div key={a.domain} {...fade(0.1 + i * 0.03)} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.action.actions.length - 2 && "border-b border-black/10")}>
+                                <div key={a.domain} className={cn("p-6", i % 2 === 0 && "md:border-r md:border-black/10", i < c.action.actions.length - 2 && "border-b border-black/10")}>
                                     <p className={kickerClass}>{a.domain}</p>
                                     <p className={`${bodyClass} mt-3`}>{a.action}</p>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
-                    <motion.div {...fade(0.24)} className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/10">
+                    <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/10">
                         <div className="p-6 border-b md:border-b-0 md:border-r border-black/10">
                             <p className={kickerClass}>{c.action.paths.title}</p>
                             <p className={`${bodyClass} mt-4`}>{c.action.paths.first}</p>
@@ -999,17 +1022,17 @@ export default function ShiftToolkitPage() {
                             <p className={kickerClass}>{c.action.paths.title}</p>
                             <p className={`${bodyClass} mt-4`}>{c.action.paths.second}</p>
                         </div>
-                    </motion.div>
-                    <motion.p {...fade(0.3)} className="mt-8 text-[34px] md:text-[56px] font-bold leading-[0.95] tracking-tight">{c.action.bottom}</motion.p>
+                    </div>
+                    <p className="mt-8 text-[34px] md:text-[56px] font-bold leading-[0.95] tracking-tight">{c.action.bottom}</p>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="12" id="resources">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
-                    <motion.p {...fade()} className={kickerClass}>{c.resources.label}</motion.p>
-                    <motion.h2 {...fade(0.05)} className={`${heroClass} mt-5`}>{c.resources.title}</motion.h2>
+                    <p className={kickerClass}>{c.resources.label}</p>
+                    <h2 className={`${heroClass} mt-5`}>{c.resources.title}</h2>
                     <div className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
-                        <motion.div {...fade(0.1)} className="md:col-span-8">
+                        <div className="md:col-span-8">
                             {c.resources.links.map((link, i) => (
                                 <div key={link.name} className={cn("p-6", i < c.resources.links.length - 1 && "border-b border-black/10")}>
                                     <p className="text-[20px] md:text-[28px] font-bold tracking-tight">{link.name}</p>
@@ -1017,30 +1040,31 @@ export default function ShiftToolkitPage() {
                                     <p className="mt-2 text-[13px] md:text-[14px] text-black/60">{link.desc}</p>
                                 </div>
                             ))}
-                        </motion.div>
-                        <motion.div {...fade(0.16)} className="md:col-span-4 border-t md:border-t-0 md:border-l border-black/10 p-6 flex items-center justify-center">
+                        </div>
+                        <div className="md:col-span-4 border-t md:border-t-0 md:border-l border-black/10 p-6 flex items-center justify-center">
                             <p className={`${kickerClass} text-center`}>{c.resources.qr}</p>
-                        </motion.div>
+                        </div>
                     </div>
-                    <motion.p {...fade(0.2)} className="mt-8 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.resources.stat}</motion.p>
-                    <motion.p {...fade(0.24)} className="mt-6 pt-6 border-t border-black/10 text-[16px] md:text-[22px] text-black/60 leading-relaxed max-w-4xl">{c.resources.closing}</motion.p>
-                    <motion.p {...fade(0.28)} className="mt-8 text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/35">{c.resources.footer}</motion.p>
+                    <p className="mt-8 text-[32px] md:text-[56px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.resources.stat}</p>
+                    <p className="mt-6 pt-6 border-t border-black/10 text-[16px] md:text-[22px] text-black/60 leading-relaxed max-w-4xl">{c.resources.closing}</p>
+                    <p className="mt-8 text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/35">{c.resources.footer}</p>
                 </div>
             </ToolkitPage>
 
             <ToolkitPage num="13" id="back-cover">
                 <div className="relative z-10 max-w-5xl mx-auto w-full h-full flex flex-col items-center justify-center text-center">
-                    <motion.p {...fade(0.05)} className="text-[36px] md:text-[64px] font-bold leading-[0.9] tracking-tight max-w-4xl">{c.backCover.statement}</motion.p>
-                    <motion.div {...fade(0.16)} className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-2">
+                    <p className="text-[36px] md:text-[64px] font-bold leading-[0.9] tracking-tight max-w-4xl">{c.backCover.statement}</p>
+                    <div className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-2">
                         <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30">SORRYWECAN × SUDOLABS</p>
                         <p className="text-[9px] md:text-[10px] font-code-brand uppercase tracking-[0.3em] text-black/20">{c.backCover.edition}</p>
-                    </motion.div>
+                    </div>
                 </div>
             </ToolkitPage>
 
             <footer className="py-10 text-center border-t border-black/10 print:hidden">
                 <p className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-25 font-code-brand">SORRYWECAN · RESEARCH LAB · 2026</p>
             </footer>
-        </div>
+            </div>
+        </>
     )
 }

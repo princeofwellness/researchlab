@@ -10,7 +10,7 @@ function ToolkitPage({ children, num, className, id }: { children: React.ReactNo
         <section
             id={id}
             className={cn(
-                "toolkit-page box-border w-full md:w-[297mm] min-h-[70vh] md:h-[210mm] p-6 md:p-12 relative overflow-hidden border-b md:border border-black/10 flex flex-col justify-center mx-auto my-0 md:my-8 print:w-[297mm] print:h-[210mm] print:p-8 print:my-0 print:border-none",
+                "toolkit-page box-border w-full md:w-[297mm] min-h-[70vh] md:h-[210mm] bg-[#f4ede6] p-8 md:p-12 lg:p-16 relative overflow-hidden flex flex-col justify-center mx-auto my-0 md:my-4 print:w-[297mm] print:h-[210mm] print:p-8 print:my-0 print:bg-[#f4ede6]",
                 className
             )}
         >
@@ -674,7 +674,7 @@ export default function ShiftToolkitPage() {
     const bodyClass = "text-[14px] md:text-[16px] text-black/60 leading-relaxed"
 
     return (
-        <div ref={printRef} className="min-h-screen bg-[#f5f5f5] md:bg-[#e8e1da] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20 print:bg-white flex flex-col items-center">
+        <div ref={printRef} className="min-h-screen bg-white md:bg-[#d6cec6] text-[#0a0a0a] font-sans-brand selection:bg-[#0047BB]/20 print:bg-white flex flex-col items-center">
             <div className="print:hidden">
                 <TopNav
                     lang={lang}
@@ -721,7 +721,7 @@ export default function ShiftToolkitPage() {
                         <h3 className="text-[24px] md:text-[32px] font-bold tracking-tight">{c.thesis.commoditization.title}</h3>
                         <p className={`${bodyClass} mt-4 max-w-4xl`}>{c.thesis.commoditization.body}</p>
                         <p className={`${bodyClass} mt-3 max-w-4xl`}>{c.thesis.commoditization.analogy}</p>
-                        <p className="mt-3 text-[12px] md:text-[14px] font-code-brand font-bold uppercase tracking-[0.25em] text-[#0047BB]">{c.thesis.commoditization.sputnik}</p>
+                        <p className="mt-3 text-[12px] md:text-[14px] text-[#0047BB]">{c.thesis.commoditization.sputnik}</p>
                     </motion.div>
                     <motion.div {...fade(0.2)} className="mt-10 border border-black/10">
                         <div className="grid grid-cols-1 md:grid-cols-3">
@@ -922,7 +922,7 @@ export default function ShiftToolkitPage() {
                                 )}>
                                     <p className="text-[12px] md:text-[14px] text-black/35 line-through">{shift.from}</p>
                                     <p className="mt-2 text-[20px] md:text-[28px] font-bold leading-tight tracking-tight">{shift.to}</p>
-                                    <p className="mt-1 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">Shift</p>
+                                    <p className="mt-1 text-[10px] md:text-[11px] font-code-brand uppercase tracking-[0.2em] text-[#0047BB]">→</p>
                                     <p className="mt-3 text-[13px] md:text-[14px] text-black/60 leading-relaxed">{shift.note}</p>
                                 </motion.div>
                             ))}
@@ -938,16 +938,16 @@ export default function ShiftToolkitPage() {
                     <motion.p {...fade(0.08)} className={`${bodyClass} mt-5 max-w-3xl`}>{c.tools.subtitle}</motion.p>
 
                     <motion.div {...fade(0.12)} className="mt-9 border border-black/10 overflow-hidden">
-                        <div className="grid grid-cols-1 md:grid-cols-12">
+                        <div className="grid grid-cols-1 md:grid-cols-2">
                             {c.tools.categories.map((cat, i) => (
-                                <div key={cat.name} className={cn("p-0", i === 0 ? "md:col-span-6" : "md:col-span-2", i > 0 && "md:border-l md:border-black/10", i > 0 && "border-t md:border-t-0 border-black/10")}>
-                                    <div className="p-4 md:p-5 border-b border-black/10">
+                                <div key={cat.name} className={cn("p-0", i % 2 === 0 && "md:border-r md:border-black/10", i < 2 && "border-b border-black/10")}>
+                                    <div className="p-5 md:p-6 border-b border-black/10">
                                         <p className={`${kickerClass} !text-[9px] md:!text-[11px]`}>{cat.name}</p>
                                     </div>
                                     {cat.items.map((item, itemIndex) => (
-                                        <div key={item.tool} className={cn("p-4 md:p-5", itemIndex < cat.items.length - 1 && "border-b border-black/10")}>
+                                        <div key={item.tool} className={cn("p-5 md:p-6", itemIndex < cat.items.length - 1 && "border-b border-black/10")}>
                                             <p className="text-[16px] md:text-[20px] font-bold leading-tight">{item.tool}</p>
-                                            <p className="mt-1 text-[12px] md:text-[13px] text-black/55 leading-relaxed">{item.note}</p>
+                                            <p className="mt-1 text-[12px] md:text-[13px] text-black/50 leading-relaxed">{item.note}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -1029,11 +1029,11 @@ export default function ShiftToolkitPage() {
             </ToolkitPage>
 
             <ToolkitPage num="13" id="back-cover">
-                <div className="relative z-10 max-w-5xl mx-auto w-full text-center">
-                    <motion.p {...fade(0.05)} className="text-[38px] md:text-[72px] font-bold leading-[0.9] tracking-tight">{c.backCover.statement}</motion.p>
-                    <motion.div {...fade(0.16)} className="mt-12 pt-6 border-t border-black/10 flex flex-col items-center gap-4">
-                        <p className={kickerClass}>SORRYWECAN × SUDOLABS</p>
-                        <p className="text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/35">{c.backCover.edition}</p>
+                <div className="relative z-10 max-w-5xl mx-auto w-full h-full flex flex-col items-center justify-center text-center">
+                    <motion.p {...fade(0.05)} className="text-[36px] md:text-[64px] font-bold leading-[0.9] tracking-tight max-w-4xl">{c.backCover.statement}</motion.p>
+                    <motion.div {...fade(0.16)} className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-2">
+                        <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30">SORRYWECAN × SUDOLABS</p>
+                        <p className="text-[9px] md:text-[10px] font-code-brand uppercase tracking-[0.3em] text-black/20">{c.backCover.edition}</p>
                     </motion.div>
                 </div>
             </ToolkitPage>

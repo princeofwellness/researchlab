@@ -34,7 +34,7 @@ export default function ShiftToolkitPage() {
         en: {
             cover: {
                 label: "MINDSHIFT TOOLKIT",
-                title: "Rise of the Builders",
+                title: "MINDSHIFT · Edition 01",
                 edition: "Edition 01 · February 2026",
                 subtitle: "3.5 hours of insight, distilled into what matters.",
                 note: "A toolkit from the speakers, for the builders.",
@@ -349,7 +349,7 @@ export default function ShiftToolkitPage() {
         sk: {
             cover: {
                 label: "MINDSHIFT TOOLKIT",
-                title: "Rise of the Builders",
+                title: "MINDSHIFT · Edition 01",
                 edition: "Edition 01 · Február 2026",
                 subtitle: "3,5 hodiny poznatkov, zhustených do toho podstatného.",
                 note: "Od rečníkov pre ľudí, ktorí tvoria.",

@@ -838,7 +838,7 @@ export default function ShiftToolkitPage() {
                         ))}
                     </div>
 
-                    <p className="mt-2 text-[18px] md:text-[24px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</p>
+                    <p className="mt-auto pt-3 text-[18px] md:text-[24px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</p>
                 </div>
             </ToolkitPage>
 

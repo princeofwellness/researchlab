@@ -770,15 +770,15 @@ export default function ShiftToolkitPage() {
                             <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.taste.speaker}</p>
                             <p className="mt-5 text-[15px] md:text-[18px] text-black/65 leading-relaxed">{c.taste.insight}</p>
                         </div>
-                        <div className="md:col-span-5 border border-black/10 p-5 md:p-6">
+                        <div className="md:col-span-5 border-l border-black/10 pl-5 md:pl-8">
                             <p className={kickerClass}>Hero Point</p>
                             <h3 className="mt-3 text-[22px] md:text-[28px] font-bold leading-[0.95] tracking-tight">{c.taste.points[0].title}</h3>
                             <p className={`${bodyClass} mt-4`}>{c.taste.points[0].desc}</p>
                         </div>
                     </div>
-                    <div className="mt-4 border border-black/10 grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10">
+                    <div className="mt-4 border-t border-black/10 pt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                         {c.taste.points.slice(1).map((point, i) => (
-                            <div key={point.title} className={cn("p-6", i < 2 && "md:border-r md:border-black/10", i < 2 && "border-b md:border-b-0 border-black/10") }>
+                            <div key={point.title} className={cn(i > 0 && "md:border-l md:border-black/10 md:pl-6")}>
                                 <h4 className="text-[16px] md:text-[20px] font-bold leading-tight tracking-tight">{point.title}</h4>
                                 <p className={`${bodyClass} mt-3`}>{point.desc}</p>
                             </div>
@@ -829,14 +829,14 @@ export default function ShiftToolkitPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-black/10">
-                            {c.leverage.points.map((p, i) => (
-                                <div key={p.title} className={cn("px-4 py-3", i % 2 === 0 && "md:border-r md:border-black/10", i < c.leverage.points.length - 2 && "border-b border-black/10")}>
-                                    <h4 className="text-[14px] md:text-[16px] font-bold leading-tight tracking-tight">{p.title}</h4>
-                                    <p className={`${bodyClass} mt-1`}>{p.desc}</p>
-                                </div>
-                            ))}
-                        </div>
+                    </div>
+                    <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 border-t border-black/10 pt-3">
+                        {c.leverage.points.map((p, i) => (
+                            <div key={p.title}>
+                                <h4 className="text-[14px] md:text-[16px] font-bold leading-tight tracking-tight">{p.title}</h4>
+                                <p className={`${bodyClass} mt-1`}>{p.desc}</p>
+                            </div>
+                        ))}
                     </div>
 
                     <p className="mt-2 text-[18px] md:text-[24px] font-bold tracking-tight leading-[0.95] max-w-4xl">{c.leverage.pullQuote}</p>
@@ -851,25 +851,25 @@ export default function ShiftToolkitPage() {
                     <p className="mt-4 text-[15px] md:text-[18px] text-black/65 leading-relaxed max-w-5xl">{c.clarity.insight}</p>
                     <p className="mt-4 text-[26px] md:text-[36px] font-bold leading-[0.95] tracking-tight max-w-5xl">{c.clarity.pullQuote}</p>
 
-                    <div className="mt-5 border border-black/10 grid grid-cols-1 md:grid-cols-12 gap-0 border border-black/10">
-                        <div className="md:col-span-6 p-4 border-b md:border-b-0 md:border-r border-black/10">
+                    <div className="mt-5 border-t border-black/10 pt-4 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
                             <h3 className="text-[20px] md:text-[26px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[2].title}</h3>
-                            <p className={`${bodyClass} mt-4`}>{c.clarity.points[2].desc}</p>
+                            <p className={`${bodyClass} mt-3`}>{c.clarity.points[2].desc}</p>
                         </div>
-                        <div className="md:col-span-6 p-4">
+                        <div>
                             <h3 className="text-[20px] md:text-[26px] font-bold leading-[0.95] tracking-tight">{c.clarity.points[3].title}</h3>
-                            <p className={`${bodyClass} mt-4`}>{c.clarity.points[3].desc}</p>
+                            <p className={`${bodyClass} mt-3`}>{c.clarity.points[3].desc}</p>
                         </div>
-                        <div className="md:col-span-12 p-4 border-t border-black/10">
+                        <div className="md:col-span-2 border-t border-black/10 pt-3">
                             <h3 className="text-[18px] md:text-[22px] font-bold leading-tight tracking-tight">{c.clarity.points[4].title}</h3>
-                            <p className={`${bodyClass} mt-3 max-w-5xl`}>{c.clarity.points[4].desc}</p>
+                            <p className={`${bodyClass} mt-2 max-w-5xl`}>{c.clarity.points[4].desc}</p>
                         </div>
                     </div>
-                    <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/10">
+                    <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8 border-t border-black/10 pt-3">
                         {c.clarity.points.slice(0, 2).map((point, i) => (
-                            <div key={point.title} className={cn("p-6", i === 0 && "md:border-r md:border-black/10", i === 0 && "border-b md:border-b-0 border-black/10")}>
+                            <div key={point.title} className={cn(i > 0 && "md:border-l md:border-black/10 md:pl-8")}>
                                 <h4 className="text-[20px] md:text-[28px] font-bold tracking-tight">{point.title}</h4>
-                                <p className={`${bodyClass} mt-3`}>{point.desc}</p>
+                                <p className={`${bodyClass} mt-2`}>{point.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -919,10 +919,10 @@ export default function ShiftToolkitPage() {
                             ))}
                         </div>
                     </div>
-                    <div className="mt-4 border border-black/10 p-4 md:p-5">
+                    <div className="mt-5 pt-4 border-t border-black/10">
                         <p className="text-[44px] md:text-[56px] font-bold leading-none tracking-tight">{c.timeline.stat.value}</p>
                         <p className="mt-2 text-[18px] md:text-[24px] font-bold leading-tight max-w-4xl">{c.timeline.stat.label}</p>
-                        <p className={`${bodyClass} mt-3 max-w-4xl`}>{c.timeline.stat.sub}</p>
+                        <p className={`${bodyClass} mt-2 max-w-4xl`}>{c.timeline.stat.sub}</p>
                     </div>
                     <p className={`${bodyClass} mt-3 max-w-5xl`}>{c.timeline.neuro}</p>
                 </div>

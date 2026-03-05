@@ -764,26 +764,25 @@ export default function ShiftToolkitPage() {
             <ToolkitPage num="03" id="taste">
                 <div className="relative z-10 max-w-6xl mx-auto w-full">
                     <p className={kickerClass}>{c.taste.label}</p>
-                    <div className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8">
-                        <div className="md:col-span-7">
-                            <h2 className="text-[40px] md:text-[72px] font-bold leading-[0.88] tracking-tight">{c.taste.title}</h2>
-                            <p className="mt-4 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.taste.speaker}</p>
-                            <p className="mt-5 text-[15px] md:text-[18px] text-black/65 leading-relaxed">{c.taste.insight}</p>
-                        </div>
-                        <div className="md:col-span-5 border-l border-black/10 pl-5 md:pl-8">
+                    <h2 className="mt-4 text-[40px] md:text-[72px] font-bold leading-[0.88] tracking-tight">{c.taste.title}</h2>
+                    <p className="mt-3 text-[10px] md:text-[12px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{c.taste.speaker}</p>
+                    <p className="mt-4 text-[15px] md:text-[18px] text-black/65 leading-relaxed max-w-4xl">{c.taste.insight}</p>
+                    <div className="mt-5 border-t border-black/10 pt-4 grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div className="md:col-span-5">
                             <p className={kickerClass}>Hero Point</p>
                             <h3 className="mt-3 text-[22px] md:text-[28px] font-bold leading-[0.95] tracking-tight">{c.taste.points[0].title}</h3>
-                            <p className={`${bodyClass} mt-4`}>{c.taste.points[0].desc}</p>
+                            <p className={`${bodyClass} mt-3`}>{c.taste.points[0].desc}</p>
+                        </div>
+                        <div className="md:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-5">
+                            {c.taste.points.slice(1).map((point, i) => (
+                                <div key={point.title} className={cn(i > 0 && "md:border-l md:border-black/10 md:pl-5")}>
+                                    <h4 className="text-[16px] md:text-[20px] font-bold leading-tight tracking-tight">{point.title}</h4>
+                                    <p className={`${bodyClass} mt-2`}>{point.desc}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <div className="mt-4 border-t border-black/10 pt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {c.taste.points.slice(1).map((point, i) => (
-                            <div key={point.title} className={cn(i > 0 && "md:border-l md:border-black/10 md:pl-6")}>
-                                <h4 className="text-[16px] md:text-[20px] font-bold leading-tight tracking-tight">{point.title}</h4>
-                                <p className={`${bodyClass} mt-3`}>{point.desc}</p>
-                            </div>
-                        ))}
-                    </div>
+
                     <p className="mt-auto pt-4 text-[26px] md:text-[40px] font-bold tracking-tight leading-[0.95] max-w-5xl text-[#0047BB]">{c.taste.pullQuote}</p>
                 </div>
             </ToolkitPage>

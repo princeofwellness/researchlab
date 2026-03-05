@@ -205,7 +205,7 @@ export default function ShiftToolkitPage() {
                 items: [
                     { from: "Specialist", to: "Generalist", note: "Breadth beats depth in early AI-native execution." },
                     { from: "Information", to: "Intuition & Taste", note: "Everyone has access. Few have discernment." },
-                    { from: "Knowers", to: "Builders", note: "Knowing is free. Shipping is edge." },
+                    { from: "Knowers", to: "Builders", note: "Knowledge is free. Building is the edge." },
                     { from: "Best Model", to: "Deep Context", note: "Prompting quality follows context quality." },
                     { from: "Learning About", to: "Learning By Doing", note: "Build the artifact. Build understanding." },
                     { from: "Worrying", to: "Building", note: "Even obsolete outputs create durable capability." },
@@ -333,7 +333,7 @@ export default function ShiftToolkitPage() {
                 links: [
                     { name: "SORRYWECAN", url: "sorrywecan.com", desc: "Creative studio behind the event" },
                     { name: "SUDOLABS", url: "sudolabs.com", desc: "Custom AI solution builder" },
-                    { name: "Research Lab Newsletter", url: "research@sorrywecan.com", desc: "What we are learning, building, and shipping" },
+                    { name: "Research Lab Newsletter", url: "research@sorrywecan.com", desc: "What we are learning, building, and releasing" },
                     { name: "X / Twitter", url: "@sorrywecan", desc: "The fastest place to learn and update context" },
                 ],
                 stat: "1 capability built this week beats 100 saved links.",
@@ -475,7 +475,7 @@ export default function ShiftToolkitPage() {
                         desc: "Anthropic štúdia 1,5 milióna chatov ukazuje, že ľudia rýchlo delegujú zodpovednosť na vnímané kognitívne autority.",
                     },
                     {
-                        title: "10% črta",
+                        title: "10% vlastnosť",
                         desc: "Podnikatelia prijímajú zodpovednosť aj za veci mimo svojej kontroly. Hýbu sa pred istotou. To je ľudská výhoda.",
                     },
                 ],
@@ -496,7 +496,7 @@ export default function ShiftToolkitPage() {
                 events: [
                     { year: "2022", title: "Inteligencia ako produkt", desc: "ChatGPT štartuje. AI sa dostáva k bežným ľuďom." },
                     { year: "2023", title: "Uvažovanie je spoľahlivé", desc: "GPT-4 sprístupňuje komplexnejšie pracovné reťazce." },
-                    { year: "2024", title: "Realizačné enginy", desc: "Objavujú sa agenti. AI už nielen odpovedá, ale vykonáva." },
+                    { year: "2024", title: "Exekučné enginy", desc: "Objavujú sa agenti. AI už nielen odpovedá, ale vykonáva." },
                     { year: "2025", title: "Programovanie je vyriešené", desc: "90% generovaného kódu sa stáva normou." },
                     {
                         year: "2026",
@@ -517,7 +517,7 @@ export default function ShiftToolkitPage() {
                 items: [
                     { from: "Špecialista", to: "Generalista", note: "V ranom AI-natívnom svete vyhráva šírka záberov." },
                     { from: "Informácie", to: "Intuícia a vkus", note: "Prístup má každý. Rozlišovanie málokto." },
-                    { from: "Tí, čo vedia", to: "Tí, čo tvoria", note: "Vedenie je lacné. Dodanie rozhoduje." },
+                    { from: "Tí, čo vedia", to: "Tí, čo tvoria", note: "Informácie sú lacné. Budovanie rozhoduje." },
                     { from: "Najlepší model", to: "Hlboký kontext", note: "Kvalita promptu je funkcia kvality kontextu." },
                     { from: "Učiť sa o", to: "Učiť sa robením", note: "Vytvor artefakt. Vybuduj porozumenie." },
                     { from: "Obávať sa", to: "Tvoriť", note: "Aj zastaraný výstup buduje trvalú schopnosť." },
@@ -531,9 +531,9 @@ export default function ShiftToolkitPage() {
                     {
                         name: "Budovanie",
                         items: [
-                            { tool: "Cursor", note: "Ultimátne AI IDE pre serióznu implementáciu" },
-                            { tool: "Claude Code", note: "Go-to agent na end-to-end appky v termináli" },
-                            { tool: "OpenCode", note: "Orchestrátor AI agentov na komplexné kódovanie" },
+                            { tool: "Cursor", note: "Najlepšie AI IDE na vážnu implementáciu" },
+                            { tool: "Claude Code", note: "Agent na tvorbu kompletných appiek v termináli" },
+                            { tool: "OpenCode", note: "Orchestrátor AI agentov na zložité kódovanie" },
                             { tool: "Ghostty", note: "Bleskový terminál pre macOS a iOS" },
                             { tool: "v0 / Lovable", note: "Okamžité generovanie UI a prototypovanie komponentov" },
                         ],
@@ -549,16 +549,16 @@ export default function ShiftToolkitPage() {
                     {
                         name: "Myslenie a Rešerš",
                         items: [
-                            { tool: "NotebookLM", note: "Spracovanie obrovských dokumentov, podcasty a syntéza" },
+                            { tool: "NotebookLM", note: "Spracovanie veľkých dokumentov, podcastov a syntéza" },
                             { tool: "Deep Research", note: "Agentický hĺbkový výskum komplexných tém (OpenAI/Gemini)" },
-                            { tool: "ChatGPT (o3-mini)", note: "Pokročilé uvažovanie pre komplexnú logiku a matematiku" },
+                            { tool: "ChatGPT (o3-mini)", note: "Pokročilé uvažovanie pre zložitú logiku a matematiku" },
                         ],
                     },
                     {
                         name: "Spolupráca (Co-Work)",
                         items: [
                             { tool: "Claude (Projects)", note: "Udržiavanie kontextu a tvorba interaktívnych artefaktov" },
-                            { tool: "Osobná AI (Solas)", note: "Partner pre reflexiu, journaling a plánovanie" },
+                            { tool: "Osobná AI (Solas)", note: "Partner pre reflexiu, denník a plánovanie" },
                             { tool: "X / Twitter", note: "Priebežný výskum a sledovanie noviniek" },
                         ],
                     },
@@ -601,7 +601,7 @@ export default function ShiftToolkitPage() {
                     {
                         num: "07",
                         title: "Prijmi zodpovednosť aj za to, čo nekontroluješ",
-                        desc: "10% črta: podnikatelia sa hýbu bez garancií a nesú dôsledky.",
+                        desc: "10% vlastnosť: podnikatelia sa hýbu bez garancií a nesú dôsledky.",
                     },
                     {
                         num: "08",
@@ -620,8 +620,8 @@ export default function ShiftToolkitPage() {
                         action: "Otvor Midjourney. Zrekonštruuj dielo, ktoré obdivuješ. Zapíš si, čo je stále zle - tam sa rodí tvoj vkus.",
                     },
                     {
-                        domain: "Ak si builder",
-                        action: "Vyber jeden nástroj - Claude, Cursor alebo Gemini - a tento týždeň shipni malý produkt.",
+                        domain: "Ak si tvorca",
+                        action: "Vyber jeden nástroj — Claude, Cursor alebo Gemini — a tento týždeň vytvor produkt, appku alebo automatizáciu.",
                     },
                     {
                         domain: "Ak si líder",
@@ -644,13 +644,13 @@ export default function ShiftToolkitPage() {
                 title: "Pokračuj",
                 links: [
                     { name: "SORRYWECAN", url: "sorrywecan.com", desc: "Kreatívne štúdio za eventom" },
-                    { name: "SUDOLABS", url: "sudolabs.com", desc: "Builder custom AI riešení" },
-                    { name: "Research Lab Newsletter", url: "research@sorrywecan.com", desc: "Čo sa učíme, tvoríme a posúvame ďalej" },
+                    { name: "SUDOLABS", url: "sudolabs.com", desc: "Tvorca AI riešení na mieru" },
+                    { name: "Research Lab Newsletter", url: "research@sorrywecan.com", desc: "Čo sa učíme, tvoríme a vydávame" },
                     { name: "X / Twitter", url: "@sorrywecan", desc: "Najrýchlejšie miesto na učenie a update kontextu" },
                 ],
                 stat: "1 schopnosť vybudovaná tento týždeň má väčšiu hodnotu než 100 uložených odkazov.",
-                qr: "Naskenuj pre aktualizácie",
-                closing: "Toto bola Edition 01. Ďalšie edície budú spolu-vytvorené tým, čo komunita vytvorí ďalej.",
+                qr: "Naskenuj pre novinky",
+                closing: "Toto bola Edition 01. Ďalšie edície budú spoluvytvorené tým, čo komunita vybuduje ďalej.",
                 footer: "MINDSHIFT TOOLKIT · EDITION 01 · FEBRUÁR 2026 · SORRYWECAN × SUDOLABS",
             },
             backCover: {

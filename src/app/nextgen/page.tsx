@@ -147,35 +147,16 @@ export default function NextGenPage() {
                 note: "We run inside the institution. No transport, no logistics for you. We handle facilitation. You provide the space and the people.",
             },
             team: {
-                label: "Who Runs This",
-                title: "Practitioners. Not theorists.",
-                subtitle: "THE MINDSHIFT for corporate leaders. The same frameworks — applied where they matter more.",
-                members: [
-                    {
-                        name: "Roland Vraník",
-                        role: "CREATIVE LEAD",
-                        company: "Creative Director / Founder, SORRYWECAN",
-                        bio: "Campaigns for Tatra banka, Meta, Audi, Samsung. Builds with AI daily. Creative intelligence is the skill that compounds.",
-                        url: "https://sorrywecan.com/",
-                        image: "/founders/roland.jpg",
-                    },
-                    {
-                        name: "Ján Koscelanský",
-                        role: "TECH LEAD",
-                        company: "CPO / Co-founder, SUDOLABS",
-                        bio: "Co-founded SUDOLABS. Fintech, health, enterprise. Knows exactly what to build — and what not to.",
-                        url: "https://sudolabs.com/",
-                        image: "/founders/jan.jpg",
-                    },
-                    {
-                        name: "Roman Pii Wagner",
-                        role: "FACILITATION LEAD",
-                        company: "Transformational Design",
-                        bio: "Helps people find what matters and act on it. Works equally with CEOs and 16-year-olds — same method, same results.",
-                        url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk",
-                        image: "/founders/roman.jpg",
-                    },
+                label: "The Framework",
+                title: "Built on what works.",
+                subtitle: "Every method in this program is field-tested — not designed for youth, adapted from what actually shifts behaviour in adults. Applied here because the stakes are higher.",
+                pillarsEN: [
+                    { num: "I", title: "Taste over tools", desc: "We train judgment, not just usage. Anyone can open ChatGPT. Knowing what to do with it is the skill." },
+                    { num: "II", title: "Leverage thinking", desc: "What can one person build now that previously required a team? We map that reality and work inside it." },
+                    { num: "III", title: "Decision clarity", desc: "What to focus on, what to drop, how to act fast when nothing feels certain. The framework Roman uses with organisations — adapted for 16-year-olds navigating their own lives." },
+                    { num: "IV", title: "Creative edge", desc: "AI makes execution cheap. The difference is creative intelligence — how you think, what you make, how you see. That is what we activate." },
                 ],
+                credit: "The team behind THE MINDSHIFT — Research Lab's flagship programme for corporate leaders.",
             },
             collab: {
                 label: "Build With Us",
@@ -217,7 +198,7 @@ export default function NextGenPage() {
                 title1: "AI zmenilo",
                 title2: "pravidlá.",
                 title3: "Nauč sa ich ako prvý.",
-                subtitle: "Šesť mesiacov. Skutočné AI zručnosti. Život postavený na vlastných podmienkach. Vek 14–18.",
+                subtitle: "Šesť mesiacov. Skutočné AI zručnosti. Život postavený podľa vlastných podmienok. Vek 14–18.",
                 cta: "Pozri kurz",
                 cta2: "Stať sa partnerom",
                 note: "Pre partnerské inštitúcie bezplatné. Financované cez korporátne partnerstvá.",
@@ -225,7 +206,7 @@ export default function NextGenPage() {
             urgency: {
                 label: "Okno",
                 title: "2027–2030. Najdôležitejšie okno pre generáciu.",
-                body: "Mladí, ktorí majú dnes 14 rokov, vstúpia na trh práce presne vtedy, keď AI preštruktúruje každé odvetvie. Kto je pripravený ako prvý, vyhrá. Toto je moment na budovanie zručností, ktoré sa nabaľujú.",
+                body: "Mladí, ktorí majú dnes 14 rokov, vstúpia na trh práce presne vtedy, keď AI preformuje každé odvetvie. Kto je pripravený ako prvý, vyhrá. Toto je moment na budovanie zručností, ktoré sa nabaľujú.",
                 stats: [
                     { val: "97M", label: "nových pozícií vyžadujúcich digitálnu gramotnosť", src: "WEF 2025" },
                     { val: "9×", label: "nárast voľných miest s AI zručnosťami od 2022", src: "World Bank" },
@@ -239,10 +220,10 @@ export default function NextGenPage() {
                 subtitle: "Nezaujíma ho, kde si začal. Zaujíma ho, čo dokážeš postaviť.",
                 sk_context: "Šestnásťročný so správnymi zručnosťami dnes dokáže to, čo predtým vyžadovalo tím, rozpočet a päť rokov praxe.",
                 cards: [
-                    { icon: "◈", h: "Siete sa budujú, nededí.", s: "Tvoju sieť budujeme od prvého dňa. Alumni komunita, mentori, skutočné profesionálne spojenia." },
-                    { icon: "◈", h: "Dôležité zručnosti sa zmenili.", s: "Sedemnásťročný s AI gramotnosťou je schopnejší ako absolvent bez nej. Učíme tie nové." },
-                    { icon: "◈", h: "AI urýchľuje každého, kto ju používa.", s: "Okno na získanie nástupu je otvorené teraz. Začiatok na čistom štíte nie je nevýhoda — je to výhoda." },
-                    { icon: "◈", h: "Identita formuje všetko.", s: "Vedieť, kto si vo veku 16 rokov, je strategická výhoda. Tú budujeme ako prvú." },
+                    { icon: "◈", h: "Siete sa budujú, nededia.", s: "Tvoju sieť budujeme od prvého dňa. Alumni komunita, mentori, skutočné profesionálne spojenia." },
+                    { icon: "◈", h: "Dôležité zručnosti sa zmenili.", s: "Sedemnásťročný s AI gramotnosťou predbehne absolventa bez nej. Učíme tie nové." },
+                    { icon: "◈", h: "AI urýchľuje každého, kto ju používa.", s: "Okno na získanie náskoku je otvorené teraz. Čistý štít nie je nevýhoda — je to výhoda." },
+                    { icon: "◈", h: "Identita formuje všetko.", s: "Vedieť, kto si vo veku 16, je strategická výhoda. Tú budujeme ako prvú." },
                 ],
                 compare: {
                     label_before: "Pred programom",
@@ -251,7 +232,7 @@ export default function NextGenPage() {
                         ["Žiadna skúsenosť s AI nástrojmi", "Zdatný používateľ AI + kritické myslenie"],
                         ["Žiadne digitálne portfólio", "Živé portfólio, LinkedIn, publikovaná tvorba"],
                         ["Žiadna profesionálna sieť", "Alumni komunita + mentoringové spojenia"],
-                        ["Žiadne povedomie o kybernetickej bezpečnosti", "Online suverénny — bezpečný, súkromný, bystrý"],
+                        ["Žiadne povedomie o kybernetickej bezpečnosti", "Digitálne suverénny — bezpečný, súkromný, bystrý"],
                         ["Žiadna kariérna gramotnosť", "Rozumie peniazom, práci a ako sa uplatniť"],
                     ],
                 },
@@ -259,20 +240,20 @@ export default function NextGenPage() {
             method: {
                 label: "Prístup",
                 title: "Nie charita. Architektúra.",
-                subtitle: "Tie isté frameworky, čo používame s korporátnymi lídrami. Aplikované tu, pretože tu na tom záleží viac.",
+                subtitle: "Tie isté frameworky, ktoré používame s korporátnymi lídrami. Aplikované tu, pretože tu záleží viac.",
                 principles: [
                     { num: "I", title: "Najprv identita, potom zručnosti", desc: "Kto vie, kto je, dokáže sa naučiť čokoľvek. Začíname vlastným príbehom a hodnotami — skôr než otvoríme akýkoľvek nástroj." },
-                    { num: "II", title: "Skutočné nástroje od prvého dňa", desc: "Tie isté AI nástroje, čo používajú profesionáli. Bez zjednodušovania. Plný prístup. Správny úsudok o ich použití." },
+                    { num: "II", title: "Skutočné nástroje od prvého dňa", desc: "Tie isté AI nástroje, aké používajú profesionáli. Bez zjednodušovania. Plný prístup. Správny úsudok." },
                     { num: "III", title: "Budovať, nie konzumovať", desc: "Každý modul končí niečím vytvoreným. Portfólio je dôkaz." },
-                    { num: "IV", title: "Sieť, ktorá zostáva", desc: "Vzájomné učenie. Mentori s podobnou cestou. Spojenia, ktoré nezaniknú so skončením programu." },
+                    { num: "IV", title: "Sieť, ktorá zostáva", desc: "Vzájomné učenie. Mentori s podobnou cestou. Spojenia, ktoré nekončia so programom." },
                 ],
                 pillars: [
                     { num: "01", title: "Identita a sebaarchitektúra", desc: "Vlastný príbeh, hodnoty, vnútorný kompas. Základ, na ktorom stojí všetko ostatné.", tag: "Základ" },
                     { num: "02", title: "AI gramotnosť a kritické myslenie", desc: "Myslieť s AI. Promptovanie ako kognícia. Rozpoznávanie manipulácie. AI ako páka.", tag: "Inteligencia" },
-                    { num: "03", title: "Kreatívna inteligencia", desc: "Vizuálne rozprávanie, tvorba obsahu, dizajnové myslenie. Ľudská výhoda, ktorú AI nenahradí — aktivovaná.", tag: "Vyjadrenie" },
+                    { num: "03", title: "Kreatívna inteligencia", desc: "Vizuálne rozprávanie, tvorba obsahu, dizajnové myslenie. Ľudská výhoda, ktorú AI nenahradí — prebúdzaná.", tag: "Vyjadrenie" },
                     { num: "04", title: "Kybernetická bezpečnosť a suverenita", desc: "Phishing, deepfakes, sociálne inžinierstvo, ochrana dát. Vlastni svoj digitálny život.", tag: "Ochrana" },
                     { num: "05", title: "Operačný systém reálneho sveta", desc: "Financie, komunikácia, osobná značka, networking. Nepísané pravidlá — zverejnené.", tag: "Životné zručnosti" },
-                    { num: "06", title: "Tvorba a budovanie", desc: "Od nápadu k reálnemu produktu. Web, film, aplikácia, brand. Z konzumenta na tvorcu — natrvalo.", tag: "Tvorba" },
+                    { num: "06", title: "Tvorba a budovanie", desc: "Od nápadu k reálnemu produktu. Web, film, aplikácia, brand. Z konzumenta na tvorcu — trvale.", tag: "Tvorba" },
                 ],
             },
             curriculum: {
@@ -332,35 +313,16 @@ export default function NextGenPage() {
                 note: "Realizujeme priamo v inštitúcii. Žiadna doprava, žiadna logistika pre vás. Facilitáciu máme my. Vy poskytnete priestor a ľudí.",
             },
             team: {
-                label: "Kto to vedie",
-                title: "Praktici. Nie teoretici.",
-                subtitle: "THE MINDSHIFT pre korporátnych lídrov. Tie isté frameworky — aplikované tam, kde záleží viac.",
-                members: [
-                    {
-                        name: "Roland Vraník",
-                        role: "KREATÍVNY LÍDER",
-                        company: "Creative Director / Zakladateľ, SORRYWECAN",
-                        bio: "Kampane pre Tatra banku, Meta, Audi, Samsung. Každý deň buduje s AI. Kreatívna inteligencia je zručnosť, ktorá sa nabaľuje.",
-                        url: "https://sorrywecan.com/",
-                        image: "/founders/roland.jpg",
-                    },
-                    {
-                        name: "Ján Koscelanský",
-                        role: "TECHNOLOGICKÝ LÍDER",
-                        company: "CPO / Spoluzakladateľ, SUDOLABS",
-                        bio: "Spoluzakladateľ SUDOLABS. Fintech, zdravotníctvo, enterprise. Presne vie, čo treba postaviť — a čo nie.",
-                        url: "https://sudolabs.com/",
-                        image: "/founders/jan.jpg",
-                    },
-                    {
-                        name: "Roman Pii Wagner",
-                        role: "FACILITAČNÝ LÍDER",
-                        company: "Transformačný dizajnér",
-                        bio: "Pomáha ľuďom nájsť, čo je dôležité, a konať. Funguje rovnako na CEO ako na 16-ročného — rovnaká metóda, rovnaké výsledky.",
-                        url: "https://www.linkedin.com/in/romanpiiwagner/?originalSubdomain=sk",
-                        image: "/founders/roman.jpg",
-                    },
+                label: "Metodológia",
+                title: "Postavené na tom, čo funguje.",
+                subtitle: "Každá metóda v programe je overená v praxi — nie navrhnutá pre mládež, ale prispôsobená z toho, čo skutočne mení správanie dospelých. Aplikovaná tu, pretože tu sú stávky vyššie.",
+                pillarsEN: [
+                    { num: "I", title: "Vkus nad nástrojmi", desc: "Trénujeme úsudok, nie len obsluhu. ChatGPT vie otvoriť ktokoľvek. Vedieť, čo s ním urobiť — to je zručnosť." },
+                    { num: "II", title: "Myslenie cez páku", desc: "Čo dokáže dnes jeden človek postaviť tam, kde predtým bol potrebný tím? Mapujeme túto realitu a pracujeme v nej." },
+                    { num: "III", title: "Rozhodovacia jasnosť", desc: "Na čo sa sústrediť, čo pustiť, ako konať rýchlo keď nič nie je isté. Framework, ktorý Roman používa v organizáciách — prispôsobený pre 16-ročných navigujúcich vlastný život." },
+                    { num: "IV", title: "Kreatívna výhoda", desc: "AI robí exekúciu lacnou. Rozdiel je v kreatívnej inteligencii — ako myslíš, čo vytváraš, ako vidíš. To aktivujeme." },
                 ],
+                credit: "Tím za THE MINDSHIFT — vlajkovým programom Research Lab pre korporátnych lídrov.",
             },
             collab: {
                 label: "Buduj s nami",
@@ -616,22 +578,19 @@ export default function NextGenPage() {
                         <h2 className="font-syne font-bold text-4xl md:text-5xl tracking-tighter mb-3">{c.team.title}</h2>
                         <p className="text-lg text-black/45 font-light max-w-xl">{c.team.subtitle}</p>
                     </motion.div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10">
-                        {c.team.members.map((m, i) => (
-                            <motion.a key={i} href={m.url} target="_blank" rel="noopener noreferrer"
-                                {...inView(i * 0.1)}
-                                className="bg-[#f5f5f3] hover:bg-white transition-colors p-8 block group">
-                                {/* Avatar placeholder */}
-                                <div className="w-16 h-16 rounded-full bg-black/8 mb-5 overflow-hidden">
-                                    <img src={m.image} alt={m.name} className="w-full h-full object-cover" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
-                                </div>
-                                <div className="text-[9px] font-bold uppercase tracking-widest text-[#0047BB] mb-1">{m.role}</div>
-                                <h3 className="font-syne font-bold text-lg mb-1 group-hover:text-[#0047BB] transition-colors">{m.name}</h3>
-                                <div className="text-[10px] text-black/35 mb-4">{m.company}</div>
-                                <p className="text-xs text-black/55 leading-relaxed">{m.bio}</p>
-                            </motion.a>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-black/10 mb-8">
+                        {c.team.pillarsEN.map((p, i) => (
+                            <motion.div key={i} {...inView(i * 0.07)}
+                                className="bg-[#f5f5f3] hover:bg-white transition-colors p-8">
+                                <div className="font-syne font-bold text-3xl text-black/10 mb-4">{p.num}</div>
+                                <h3 className="font-syne font-bold text-lg mb-3">{p.title}</h3>
+                                <p className="text-sm text-black/55 leading-relaxed">{p.desc}</p>
+                            </motion.div>
                         ))}
                     </div>
+                    <motion.p {...inView()} className="text-xs text-black/35 border-l-2 border-[#0047BB]/20 pl-4 italic">
+                        {c.team.credit}
+                    </motion.p>
                 </div>
             </section>
 

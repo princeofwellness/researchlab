@@ -28,30 +28,30 @@ export default function NextGenPage() {
             },
             challenge: {
                 label: "The Opportunity",
-                title: "They Are Ready to Lead.",
-                intro: "Young people leaving care systems at 14–18 carry something most of their peers don't: real-world resilience, adaptability, and an instinct for figuring things out. What they need is the architecture to channel it — the networks, the digital fluency, and the playbook of professional life. We build that with them.",
+                title: "AI as a Social Lift.",
+                intro: "In Slovakia, around 4,000–5,000 young people grow up in Centres for Children and Families. When they turn 18, they leave without the family support, guidance, and networks most of their peers rely on. AI changes that equation. For the first time, a young person with a laptop can access the same creative tools, career guidance, brainstorming partners, and feedback loops that used to require the right family, the right school, or the right city.",
                 stats: [
-                    { val: "6", label: "months to build a portfolio, digital identity, and professional network" },
+                    { val: "4–5K", label: "young people leave care in Slovakia each year — without the networks most peers take for granted" },
                     { val: "3×", label: "employment advantage for young people with structured digital skills training" },
                     { val: "45M+", label: "new roles emerging in the AI economy by 2030 — we prepare them to take them" },
-                    { val: "100%", label: "of participants leave with a real project, a public presence, and a network" },
+                    { val: "20+", label: "international programmes reviewed to build this curriculum — evidence-based from day one" },
                 ],
                 cards: [
-                    { h: "We build the network.", s: "They leave with real connections — creatives, technologists, founders — not just classmates." },
-                    { h: "We teach what actually works.", s: "Not the curriculum of yesterday. The tools, frameworks, and mindsets of 2026 and beyond." },
-                    { h: "AI creates more opportunity.", s: "For those who understand it. We make sure they are on the right side of that equation." },
-                    { h: "The moment is now.", s: "Identity and habits built at 16 shape everything that follows. That is exactly when we show up." },
+                    { h: "A creative sparring partner.", s: "Ideas can be tested, challenged, and developed — no network required." },
+                    { h: "A real feedback loop.", s: "Try, improve, refine. The iteration cycle most people get from mentors — now accessible to everyone." },
+                    { h: "A full creative studio.", s: "A laptop becomes a space for writing, design, coding, research, and storytelling. No gatekeepers." },
+                    { h: "A first project. A real portfolio.", s: "AI helps turn ideas into tangible outputs — prototypes, visuals, texts, concepts. Something real to show the world." },
                 ],
             },
             method: {
                 label: "The Approach",
                 title: "Not Charity. Architecture.",
-                subtitle: "We do not teach tools. We build people who know how to navigate any tool, any system, any shift.",
+                subtitle: "We rebuild identity, not just skills. Emotional safety comes first — young people cannot process new information until they feel safe. That is why every session is designed as a trauma-aware safety space.",
                 pillars: [
                     {
                         num: "01",
                         title: "Identity & Self-Architecture",
-                        desc: "Before any skill, we address who they believe they are. Self-narrative, values, internal compass. A young person who knows themselves can navigate any storm.",
+                        desc: "Before any skill, we address who they believe they are. We help young people develop critical thinking and regain a sense of agency — the feeling that they can influence their own reality. Through AI tools, they are not positioned as passive consumers, but as creators of their own path.",
                         tag: "Foundation",
                     },
                     {
@@ -140,9 +140,9 @@ export default function NextGenPage() {
                 title: "Research Lab Brings Something Different.",
                 points: [
                     "We are not an NGO running workshops. We are a creative and intelligence organisation that builds with AI every day. We bring that real-world practice into the room.",
-                    "The Research Lab curriculum draws on the same frameworks we use with corporate leaders — adapted for young people who are ready to use them even more boldly.",
-                    "When a 16-year-old leaves our programme, they have a portfolio, a digital identity, and a way of thinking that most adults never develop.",
-                    "Our network — creatives, technologists, founders — becomes their network. That is the social capital that accelerates everything that follows.",
+                    "Our curriculum draws on a systematic review of 20+ international programmes — including SOS YouthCan! across 41 countries, IRC REACH, First Star Academy, and UNICEF-Akelius. Evidence-based from day one.",
+                    "Emotional safety comes first. For two years, Research Lab has been studying and developing trauma-aware approaches — because young people with this life experience cannot process new information until they feel safe.",
+                    "When a 16-year-old leaves our programme, they have an AI literacy portfolio, measurable outcomes, and a way of thinking most adults never develop. Our interdisciplinary team — facilitators, psychologists, AI practitioners, entrepreneurs, and artists — is there every step of the way.",
                 ],
             },
             collab: {
@@ -186,30 +186,30 @@ export default function NextGenPage() {
             },
             challenge: {
                 label: "Príležitosť",
-                title: "Sú pripravení viesť.",
-                intro: "Mladí ľudia, ktorí opúšťajú systém starostlivosti vo veku 14–18 rokov, prinášajú niečo, čo väčšina ich rovesníkov nemá: skutočnú odolnosť, adaptabilitu a schopnosť zorientovať sa. Čo potrebujú, je architektúra, ako to využiť — siete, digitálna zručnosť a návod na profesionálny život. Ten budujeme spolu s nimi.",
+                title: "AI ako sociálny výťah.",
+                intro: "Na Slovensku vyrastá v centrách pre deti a rodiny 4 000 až 5 000 mladých ľudí. Keď dovŕšia 18 rokov, odchádzajú bez rodinnej podpory, usmerňovania a sietí kontaktov, na ktoré sa väčšina rovesníkov spolieha. AI mení túto rovnicu. Po prvýkrát môže mladý človek s laptopom získať prístup k rovnakým kreatívnym nástrojom, kariérnemu poradenstvu a spätnoväzbovým cyklom, ktoré kedysi vyžadovali správnu rodinu, správnú školu alebo správné mesto.",
                 stats: [
-                    { val: "6", label: "mesiacov na vybudovanie portfólia, digitálnej identity a profesionálnej siete" },
+                    { val: "4–5K", label: "mladých ľudí opúšťa starostlivosť na Slovensku každý rok — bez sietí kontaktov, ktoré väčšina rovesníkov považuje za samozrejmosť" },
                     { val: "3×", label: "vyššia šanca zamestnania pre mladých so štruktúrovaným digitálnym vzdelávaním" },
                     { val: "45M+", label: "nových pracovných miest v AI ekonomike do roku 2030 — pripravujeme ich zaujať ich" },
-                    { val: "100%", label: "účastníkov odchádza so skutočným projektom, verejnou prítomnosťou a sieťou kontaktov" },
+                    { val: "20+", label: "medzinárodných programov preskúmaných pri tvorbe kurzu — od prvého dňa postavený na dôkazoch" },
                 ],
                 cards: [
-                    { h: "Budujeme sieť.", s: "Odchádzajú so skutočnými kontaktmi — kreatívci, technológovia, zakladatelia — nielen spolužiaci." },
-                    { h: "Učíme to, čo naozaj funguje.", s: "Nie kurz zo včerajška. Nástroje, postupy a myslenie roka 2026 a ďalej." },
-                    { h: "AI vytvára viac príležitostí.", s: "Pre tých, ktorí jej rozumejú. Zabezpečíme, aby boli na správnej strane tejto rovnice." },
-                    { h: "Čas je teraz.", s: "Návyky a identita formovaná vo veku 16 rokov ovplyvňujú všetko, čo nasleduje. Práve vtedy prichádzame." },
+                    { h: "Kreatívny partner na rozmýšľanie.", s: "Nápady možno testovať, spochybňovať a rozvíjať — bez potreby siete kontaktov." },
+                    { h: "Skutočný spätnoväzbový cyklus.", s: "Skúšaj, zlepšuj, vylepšuj. Iteračný cyklus, ktorý väčšina ľudí dostáva od mentorov — teraz dostupný každému." },
+                    { h: "Kompletné kreatívne štúdio.", s: "Laptop sa stáva priestorom pre písanie, dizajn, kód, výskum a rozprávanie príbehov. Bez obmedzení prístupu." },
+                    { h: "Prvý projekt. Skutočné portfólio.", s: "AI pomáha premeniť nápady na hmatateľné výstupy — prototypy, vizuály, texty, koncepty. Niečo skutočné ukázať svetu." },
                 ],
             },
             method: {
                 label: "Prístup",
                 title: "Nie charita. Architektúra.",
-                subtitle: "Neučíme nástroje. Budujeme ľudí, ktorí vedia navigovať akýkoľvek nástroj, akýkoľvek systém, akúkoľvek zmenu.",
+                subtitle: "Budujeme identitu, nielen zručnosti. Emocionálna bezpečnosť je na prvom mieste — mladí ľudia nedokážu spracovávať nové informácie, kým sa necítia bezpečne. Preto každé stretnutie navrhujeme ako bezpečný priestor citlivý na traumu.",
                 pillars: [
                     {
                         num: "01",
                         title: "Identita a sebaarchitektúra",
-                        desc: "Skôr ako akákoľvek zručnosť, riešime to, kým si myslia, že sú. Vlastný príbeh, hodnoty, vnútorný kompas. Mladý človek, ktorý pozná sám seba, zvládne akúkoľvek búrku.",
+                        desc: "Skôr ako akákoľvek zručnosť, riešime to, kým si myslia, že sú. Pomáhame mladým ľuďom rozvíjať kritické myslenie a znovu získať pocit vlastnej schopnosti konať — pocit, že môžu ovplyvniť svoju vlastnú realitu. Prostredníctvom AI nástrojov nie sú postavení ako pasívni konzumenti, ale tvorcovia vlastnej cesty.",
                         tag: "Základ",
                     },
                     {
@@ -298,9 +298,9 @@ export default function NextGenPage() {
                 title: "Research Lab prináša niečo iné.",
                 points: [
                     "Nie sme mimovládka organizujúca workshopy. Sme kreatívna a inteligenčná organizácia, ktorá každý deň buduje s AI. Tú prax prinášame do miestnosti.",
-                    "Kurz Research Lab vychádza z rovnakých metód, ktoré používame s firemným vedením — prispôsobených pre mladých ľudí, ktorí sú pripravení ich využiť ešte odvážnejšie.",
-                    "Keď šestnásťročný opustí náš program, má portfólio, digitálnu identitu a spôsob myslenia, ktorý väčšina dospelých nikdy nerozvinie.",
-                    "Naša sieť — kreatívci, technológovia, zakladatelia firiem — sa stáva ich sieťou. To je sociálny kapitál, ktorý urýchľuje všetko, čo nasleduje.",
+                    "Náš kurz vychádza zo systematickej analýzy 20+ medzinárodných iniciatív — vrátane SOS YouthCan! v 41 krajinách, IRC REACH, First Star Academy a UNICEF-Akelius. Od prvého dňa postavený na dôkazoch.",
+                    "Emocionálna bezpečnosť je na prvom mieste. Dva roky Research Lab skúma a vyvíja prístupy citlivé na traumu — pretože mladí ľudia s touto životnou skúsenosťou nedokážu spracovávať nové informácie, kým sa necítia bezpečne.",
+                    "Keď šestnásťročný opustí náš program, má portfólio AI gramotnosti, merateľné výsledky a spôsob myslenia, ktorý väčšina dospelých nikdy nerozvinie. Náš interdisciplinárny tím — facilitátori, psychológovia, AI odborníci, podnikatelia a umelci — je pri nich na každom kroku.",
                 ],
             },
             collab: {

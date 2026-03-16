@@ -4,6 +4,7 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
+import { NextgenComments } from "@/components/nextgen-comments"
 
 const fade = (delay = 0) => ({
     initial: { opacity: 0, y: 16 },
@@ -618,6 +619,9 @@ export default function NextGenPage() {
                     </motion.div>
                 </div>
             </section>
+
+            {/* COMMENTS */}
+            <NextgenComments lang={lang} />
 
             {/* FOOTER */}
             <footer className="py-8 px-6 md:px-20 bg-[#0a0a0a] text-white/30">

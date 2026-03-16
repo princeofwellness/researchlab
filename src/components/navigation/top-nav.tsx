@@ -37,6 +37,7 @@ export function TopNav({
 
     const navItems = [
         { name: "Corporate", href: "/corporate" },
+        { name: "NEXT GEN", href: "/nextgen" },
         { 
             name: "Lab", 
             href: "/lab",

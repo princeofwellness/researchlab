@@ -12,6 +12,13 @@ export default function LabPage() {
         { name: "Mindshift Toolkit", href: "/shift", desc: "Edition 01 toolkit: 3 speakers distilled. Landscape, PDF-ready (EN/SK)" },
     ]
 
+    const strategyPages = [
+        { name: "The Bible", href: "/lab/context", desc: "Master context: who we are, brand system, voice, products, audience. Start here." },
+        { name: "Q2 Overview", href: "/lab/q2-overview", desc: "Holistic Q2 plan: revenue, content flywheel, platform launch, corporate pipeline." },
+        { name: "Platform & Next Steps", href: "/lab/q2-platform", desc: "Circle architecture, membership tiers, educational framework, launch sequence." },
+        { name: "Corporate Offer", href: "/lab/corporate", desc: "Two-day format, pricing, O2 pipeline, sales motion, objection handling." },
+    ]
+
     const pages = [
         { name: "Sales Strategy", href: "/sales", desc: "Outreach architecture, pipeline tracker, buyer portraits. Fill the room." },
         { name: "Prospect Database", href: "/prospects", desc: "145 Bratislava companies across 10 sectors. Tiered by fit. Email templates ready." },
@@ -56,6 +63,35 @@ export default function LabPage() {
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: i * 0.05 }}
+                                >
+                                    <Link
+                                        href={page.href}
+                                        className="flex items-center justify-between p-4 border-2 border-[#0047BB]/20 bg-[#0047BB]/5 hover:border-[#0047BB] hover:bg-[#0047BB]/10 transition-all group"
+                                    >
+                                        <div>
+                                            <span className="font-medium text-[#0047BB] group-hover:text-[#0047BB] transition-colors">
+                                                {page.name}
+                                            </span>
+                                            <p className="text-sm text-black/40 mt-0.5">{page.desc}</p>
+                                        </div>
+                                        <span className="text-[#0047BB]/40 group-hover:text-[#0047BB] group-hover:translate-x-1 transition-all">
+                                            →
+                                        </span>
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="mb-12">
+                        <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-3">Strategy — Q2 2026</p>
+                        <div className="space-y-2">
+                            {strategyPages.map((page, i) => (
+                                <motion.div
+                                    key={page.href}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: i * 0.05 + 0.05 }}
                                 >
                                     <Link
                                         href={page.href}

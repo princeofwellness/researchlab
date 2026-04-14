@@ -50,6 +50,12 @@ export default function CorporatePage() {
                         <p className="text-black/50 mt-4 max-w-xl">
                             The offer, the format, the pricing, the pipeline, and how to sell it. Updated as we learn from each delivery.
                         </p>
+                        <a
+                            href="/corporate/offer"
+                            className="inline-flex items-center gap-2 mt-6 px-5 py-3 bg-[#0047BB] text-white text-[10px] font-code-brand font-bold uppercase tracking-[0.25em] hover:bg-black transition-colors"
+                        >
+                            View Offer Document →
+                        </a>
                     </motion.div>
 
                     {/* The Insight */}

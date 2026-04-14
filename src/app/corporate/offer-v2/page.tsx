@@ -247,12 +247,12 @@ export default function CorporateOfferV2() {
                         {/* Right: session flow */}
                         <div className="flex-1 flex flex-col justify-center md:border-l border-white/[0.06] md:pl-10">
                             {(en ? [
-                                { t: "30 min", h: "Tea Opening Ceremony", d: "Sitting in a circle. Presence before performance. We open with intention." },
+                                { t: "30 min", h: "Opening Tea Ritual", d: "Sitting in a circle. Presence before performance. We open with intention." },
                                 { t: "2×30 min", h: "Two Perspectives", d: "Tiep · Roman — two lenses, one room. Short, sharp. No script." },
                                 { t: "60 min", h: "Circle Discussion", d: "Your team brings the real questions — the ones that don't get asked in meetings." },
                                 { t: "45 min", h: "Panel", d: "Open. Anything goes. Honest answers from experience, not theory." },
                             ] : [
-                                { t: "30 min", h: "Čajový Úvodný Rituál", d: "Sedenie v kruhu. Prítomnosť pred výkonom. Otvárame s úmyslom." },
+                                { t: "30 min", h: "Úvodný Čajový Rituál", d: "Sedenie v kruhu. Prítomnosť pred výkonom. Otvárame s úmyslom." },
                                 { t: "2×30 min", h: "Dve Perspektívy", d: "Tiep · Roman — dva pohľady, jedna miestnosť. Krátko, ostro. Bez scenára." },
                                 { t: "60 min", h: "Diskusia v Kruhu", d: "Váš tím prinesie skutočné otázky — tie, čo sa na poradách nepýtajú." },
                                 { t: "45 min", h: "Panel", d: "Otvorený. Čokoľvek. Úprimné odpovede zo skúsenosti, nie teórie." },

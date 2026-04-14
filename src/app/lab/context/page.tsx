@@ -52,6 +52,7 @@ function ColorSwatch({ hex, name, usage }: { hex: string; name: string; usage: s
 
 const changelog = [
     { date: "2026-04-14", note: "Initial version created. Identity, mission, brand, voice, products, audience, technology, priorities documented." },
+    { date: "2026-04-15", note: "Art direction section added to Brand. Team updated to reflect current core (Tiep/Andrea/Sasha) + extended (Roland/Roman). Partnerships & Ecosystem section added: Austrian AI collaboration + Mirka/Aj Ty v IT. Competitive intelligence added. Strategic shift documented." },
 ]
 
 export default function ContextPage() {
@@ -86,20 +87,34 @@ export default function ContextPage() {
                                 </p>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                {[
-                                    { name: "Prince of Wellness", role: "Vision, Community, Content", github: "princeofwellness" },
-                                    { name: "Ján", role: "Technology, AI Systems, Tools", github: "—" },
-                                    { name: "Roman", role: "Design, Visual Language, Brand", github: "—" },
-                                ].map((f) => (
-                                    <div key={f.name} className="p-4 border border-black/10">
-                                        <p className="font-bold text-sm">{f.name}</p>
-                                        <p className="text-xs text-[#0047BB] font-code-brand mt-1 uppercase tracking-widest">{f.role}</p>
-                                        {f.github !== "—" && (
-                                            <p className="text-xs text-black/30 mt-1">gh: {f.github}</p>
-                                        )}
-                                    </div>
-                                ))}
+                            <div className="space-y-2">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40">Core Team</p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                                    {[
+                                        { name: "Tiep Le Dinh", alias: "Prince of Wellness", role: "Vision, Output, Face, Content" },
+                                        { name: "Andrea (Atka)", alias: null, role: "Production, Structure, Deals, Community ops" },
+                                        { name: "Sasha", alias: null, role: "Content creation, Marketing, Research" },
+                                    ].map((f) => (
+                                        <div key={f.name} className="p-4 border border-black/10">
+                                            <p className="font-bold text-sm">{f.name}</p>
+                                            {f.alias && <p className="text-xs text-black/30 mt-0.5">{f.alias}</p>}
+                                            <p className="text-xs text-[#0047BB] font-code-brand mt-1 uppercase tracking-widest">{f.role}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mt-3">Extended</p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                                    {[
+                                        { name: "Roland", role: "Taste curation, SORRYWECAN network" },
+                                        { name: "Roman Pii Wagner", role: "Advisor & partner — corporate workshops + Mindshift" },
+                                        { name: "Guest speakers", role: "Outsourced per engagement" },
+                                    ].map((f) => (
+                                        <div key={f.name} className="p-4 border border-black/10 bg-black/[0.02]">
+                                            <p className="font-bold text-sm">{f.name}</p>
+                                            <p className="text-xs text-[#0047BB] font-code-brand mt-1 uppercase tracking-widest">{f.role}</p>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
                             <div className="p-6 border border-black/10 bg-black/[0.02]">
@@ -567,9 +582,78 @@ export default function ContextPage() {
 
                     <Divider />
 
-                    {/* 9. For AI Agents */}
+                    {/* 09. Partnerships & Ecosystem */}
                     <motion.div {...fade(0.1)}>
                         <Label>09</Label>
+                        <SectionTitle>Partnerships & Ecosystem</SectionTitle>
+
+                        <div className="space-y-4">
+
+                            {/* Austrian collaboration */}
+                            <div className="p-5 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
+                                <div className="flex items-start justify-between mb-2">
+                                    <p className="font-bold">Austrian AI Collaboration</p>
+                                    <span className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] border border-[#0047BB]/30 px-2 py-1 shrink-0 ml-4">Active</span>
+                                </div>
+                                <p className="text-sm text-black/60 leading-relaxed mb-3">
+                                    State-funded Austrian AI coworking and networking group seeking to expand into Bratislava. Met with their founders. Interested in merging forces: RL brings strong visual production and developer capabilities; they bring state funding, credibility, and DACH market access.
+                                </p>
+                                <div className="space-y-1 text-sm">
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Co-organize a major AI conference in Vienna — target September/October 2026</span></div>
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Next step: schedule alignment meeting to plan the Vienna event</span></div>
+                                </div>
+                            </div>
+
+                            {/* Mirka / Aj Ty v IT */}
+                            <div className="p-5 border border-black/10">
+                                <div className="flex items-start justify-between mb-2">
+                                    <div>
+                                        <p className="font-bold">Mirka — Aj Ty v IT / Women in Tech</p>
+                                        <p className="text-xs text-black/40 font-code-brand mt-0.5 uppercase tracking-widest">Educational network · Female managers, entrepreneurs, career-changers</p>
+                                    </div>
+                                    <span className="text-[10px] font-code-brand uppercase tracking-widest text-black/40 border border-black/20 px-2 py-1 shrink-0 ml-4">Follow-up pending</span>
+                                </div>
+                                <p className="text-sm text-black/60 leading-relaxed mb-3">
+                                    Mirka runs an educational network for female managers, entrepreneurs, and women transitioning into tech. Her audience has fear of technology — needs a safe, non-intimidating environment. RL delivers specialized AI training for her alumni; in exchange, Mirka refers larger corporate clients to RL.
+                                </p>
+                                <div className="space-y-1 text-sm">
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">RL angle: ideal audience for gentle-entry AI workshops, builds female professional segment</span></div>
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Next step: wait for Mirka to send proposed format and needs assessment</span></div>
+                                </div>
+                            </div>
+
+                            {/* Competitive intel */}
+                            <div className="p-5 border border-black/10 bg-black/[0.02]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">Competitive Intelligence</p>
+                                <div className="space-y-2 text-sm">
+                                    <div className="flex gap-2">
+                                        <span className="text-[#0047BB] shrink-0">—</span>
+                                        <span className="text-black/60"><strong>Tatra banka benchmark:</strong> A competitor agency charged Tatra banka €20,000 for a basic 3-day AI tools overview. RL's €600/person format delivers more depth at lower per-seat cost with a mindset-first approach. This validates pricing power and premium positioning.</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <span className="text-[#0047BB] shrink-0">—</span>
+                                        <span className="text-black/60"><strong>Action:</strong> Investigate through personal contacts exactly what that agency taught — use it to sharpen RL's differentiation and tailor the corporate pitch.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Revenue structure */}
+                            <div className="p-5 border border-black/10">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">Revenue Structure — To Define</p>
+                                <p className="text-sm text-black/60 mb-3">The internal profit split between Tiep, Roman, Andrea (Atka), and the SORRYWECAN entity has not been formally mapped. Everyone needs financial clarity and motivation.</p>
+                                <div className="flex gap-2 text-sm">
+                                    <span className="text-[#0047BB] shrink-0">—</span>
+                                    <span className="text-black/60">Action: formally define the revenue split — who gets what % per workshop, per membership, per partnership deal. Map the s.r.o. structure and billing flow.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
+                    {/* 10. For AI Agents */}
+                    <motion.div {...fade(0.1)}>
+                        <Label>10</Label>
                         <SectionTitle>For AI Agents</SectionTitle>
 
                         <div className="p-6 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03] space-y-4 text-sm">

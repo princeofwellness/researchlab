@@ -31,6 +31,7 @@ function Divider() {
 
 const changelog = [
     { date: "2026-04-14", note: "Initial version. Two-day format defined, pricing confirmed, O2 pipeline documented, sales motion and objection handling drafted." },
+    { date: "2026-04-15", note: "Competitive intelligence added (Tatra banka benchmark). Partnership channels added: Mirka/Aj Ty v IT + Austrian conference. Action items updated." },
 ]
 
 export default function CorporatePage() {
@@ -386,6 +387,82 @@ export default function CorporatePage() {
                                         <p className="text-sm text-black/70">{item}</p>
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
+                    {/* Competitive Intelligence */}
+                    <motion.div {...fade(0.05)}>
+                        <Label>08</Label>
+                        <SectionTitle>Competitive Intelligence</SectionTitle>
+
+                        <div className="space-y-4">
+                            <div className="p-5 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-2">Tatra Banka Benchmark</p>
+                                <p className="text-sm text-black/70 leading-relaxed">
+                                    A competitor agency recently charged Tatra banka <strong>€20,000 for a basic 3-day AI tools overview</strong>. This is a landmark data point — it confirms that large Slovak companies have budget and appetite for AI training at premium price points, and that the market is far from saturated with quality providers.
+                                </p>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                                <div className="p-4 border border-black/10">
+                                    <p className="font-bold mb-1">What it means for pricing</p>
+                                    <p className="text-black/60">At €600/person × 14 people = €8,400. We are <strong>significantly</strong> under-priced relative to the market. The mindset-first approach is a stronger differentiator than the competitor's tools-only overview.</p>
+                                </div>
+                                <div className="p-4 border border-black/10">
+                                    <p className="font-bold mb-1">Action item</p>
+                                    <p className="text-black/60">Investigate through personal contacts exactly what the competitor taught Tatra banka — use it to sharpen differentiation and tailor the pitch for banking and finance clients specifically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
+                    {/* Partnership Channels */}
+                    <motion.div {...fade(0.05)}>
+                        <Label>09</Label>
+                        <SectionTitle>Partnership Channels</SectionTitle>
+
+                        <div className="space-y-3">
+                            <div className="p-5 border border-black/10">
+                                <div className="flex items-start justify-between mb-3">
+                                    <div>
+                                        <p className="font-bold">Mirka — Aj Ty v IT</p>
+                                        <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 mt-1">Women in Tech · Educational network · Referral partnership</p>
+                                    </div>
+                                    <span className="text-[10px] font-code-brand uppercase tracking-widest text-black/40 border border-black/20 px-2 py-1 shrink-0 ml-4">Awaiting format doc</span>
+                                </div>
+                                <p className="text-sm text-black/60 leading-relaxed mb-3">
+                                    Mirka runs an educational network for female managers, entrepreneurs, and women transitioning into tech. Her audience needs a safe, non-intimidating introduction to AI. RL delivers specialized workshops for her community; in exchange, she refers larger corporate clients.
+                                </p>
+                                <div className="space-y-1 text-sm">
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Workshop format: gentler entry, focus on practical daily use before deep mindset</span></div>
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Next: wait for Mirka's needs assessment and proposed format</span></div>
+                                </div>
+                            </div>
+
+                            <div className="p-5 border border-black/10 bg-black/[0.02]">
+                                <div className="flex items-start justify-between mb-3">
+                                    <div>
+                                        <p className="font-bold">Austrian AI Collaboration</p>
+                                        <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 mt-1">DACH market · State-funded · Vienna conference</p>
+                                    </div>
+                                    <span className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] border border-[#0047BB]/30 px-2 py-1 shrink-0 ml-4">Sept/Oct target</span>
+                                </div>
+                                <p className="text-sm text-black/60 leading-relaxed mb-3">
+                                    State-funded Austrian AI group expanding into Bratislava. They bring funding, credibility, and DACH market access. RL brings visual production and developer capabilities. First major joint output: an immersive AI conference in Vienna.
+                                </p>
+                                <div className="flex gap-2 text-sm">
+                                    <span className="text-[#0047BB] shrink-0">—</span>
+                                    <span className="text-black/60">Next: schedule alignment meeting to plan the Vienna event format and responsibilities</span>
+                                </div>
+                            </div>
+
+                            <div className="p-4 border border-black/10">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-2">Mindshift Recording — Sell It</p>
+                                <p className="text-sm text-black/60">Send email campaign selling online access to the last Mindshift event recording — target people who couldn't attend. Offer 50% discount for students. Quick revenue activation with existing asset.</p>
                             </div>
                         </div>
                     </motion.div>

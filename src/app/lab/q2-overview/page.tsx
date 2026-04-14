@@ -707,7 +707,21 @@ export default function Q2OverviewPage() {
                             status: "To activate",
                             value: "€8,400",
                             note: "From 145-company prospect list. Tier 1 fit. Identify and reach by end of April.",
-                            action: "Pull from prospects database. Prioritise agencies and finance.",
+                            action: "Pull from prospects database. Prioritise agencies and finance. Benchmark: Tatra banka paid €20k for a basic 3-day tools overview — we are under-priced.",
+                        },
+                        {
+                            company: "Mirka — Aj Ty v IT",
+                            status: "Partnership",
+                            value: "Referral",
+                            note: "Educational network for female managers and career-changers. RL delivers AI workshops for her community; she refers corporate clients back to RL. Win-win referral structure.",
+                            action: "Wait for Mirka's format document and needs assessment before proposing workshop structure.",
+                        },
+                        {
+                            company: "Austrian AI Collaboration",
+                            status: "In discussion",
+                            value: "Vienna conf.",
+                            note: "State-funded Austrian AI group expanding into Bratislava. RL + their funding + DACH credibility = immersive AI conference in Vienna, September/October.",
+                            action: "Schedule alignment meeting. Define split of responsibilities for the Vienna event.",
                         },
                     ] : [
                         {
@@ -728,8 +742,22 @@ export default function Q2OverviewPage() {
                             company: "Cieľ #3",
                             status: "Na aktiváciu",
                             value: "€8 400",
-                            note: "Zo zoznamu 145 spoločností. Tier 1 fit. Identifikovať a osloviť do konca apríla.",
+                            note: "Zo zoznamu 145 spoločností. Tier 1 fit. Identifikovať a osloviť do konca apríla. Benchmark: Tatra banka zaplatila €20k za základný 3-dňový prehľad nástrojov.",
                             action: "Vybrať z databázy. Priorita: agentúry a financie.",
+                        },
+                        {
+                            company: "Mirka — Aj Ty v IT",
+                            status: "Partnerstvo",
+                            value: "Odporúčania",
+                            note: "Vzdelávacia sieť pre manažérky a ženy meniace kariéru. RL dodáva AI workshopy pre jej komunitu; ona posiela firemných klientov späť k RL.",
+                            action: "Počkať na Mirkin dokument s formátom a potrebami pred navrhnutím štruktúry workshopu.",
+                        },
+                        {
+                            company: "Rakúska AI Spolupráca",
+                            status: "V rokovaniach",
+                            value: "Konf. Viedeň",
+                            note: "Štátom financovaná rakúska AI skupina expandujúca do Bratislavy. RL + ich financovanie + DACH kredibilita = imerzívna AI konferencia vo Viedni, september/október.",
+                            action: "Naplánovať koordinačné stretnutie. Definovať rozdelenie zodpovedností pre viedenský event.",
                         },
                     ]).map((c, i, arr) => (
                         <motion.div key={c.company} {...fadeUp(i * 0.05)}>
@@ -867,6 +895,60 @@ export default function Q2OverviewPage() {
                 <div className="flex justify-between px-8 md:px-16 py-5">
                     <span className="text-[8px] font-code-brand uppercase tracking-[0.4em] text-white/15">SORRYWECAN</span>
                     <span className="text-[8px] font-code-brand uppercase tracking-[0.4em] text-white/15">09</span>
+                </div>
+            </section>
+
+            {/* ── 10 IMMEDIATE ACTIONS / blue ── */}
+            <section className="relative bg-[#0047BB] text-white overflow-hidden">
+                <div className="px-8 md:px-16 pt-24">
+                    <div className="flex items-center justify-between">
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">09</span>
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
+                            {en ? "Immediate Actions" : "Okamžité Kroky"}
+                        </span>
+                    </div>
+                    <div className="mt-4 h-px bg-white/10" />
+                </div>
+
+                <div className="px-8 md:px-16 py-20">
+                    <motion.div {...fadeUp(0)}>
+                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
+                            {en ? <>Do this<br /><span className="text-white/25">this week.</span></> : <>Urob toto<br /><span className="text-white/25">tento týždeň.</span></>}
+                        </h2>
+                    </motion.div>
+
+                    {(en ? [
+                        { n: "01", title: "Finalize the B2B pitch deck.", detail: "Complete the corporate offer this week. Start pitching directly." },
+                        { n: "02", title: "Investigate Tatra banka.", detail: "Use personal contacts to find out what the competitor taught for €20k. Tailor RL's pitch for banking and finance accordingly." },
+                        { n: "03", title: "Launch the Circle MVP.", detail: "Set it up within 2–3 weeks. Upload existing resources. Do not wait for it to be perfect before going live." },
+                        { n: "04", title: "Define the revenue split.", detail: "Map the business model and profit % for Tiep, Roman, Atka, and SORRYWECAN. Everyone needs financial clarity and motivation." },
+                        { n: "05", title: "Sell the Mindshift recording.", detail: "Email campaign to everyone who couldn't attend. Heavy discount for students (50%). Quick revenue from an existing asset." },
+                        { n: "06", title: "Follow up with partners.", detail: "Wait for Mirka's format doc. Schedule next meeting with Austrian group to plan the Vienna conference." },
+                    ] : [
+                        { n: "01", title: "Dokončiť B2B pitch deck.", detail: "Dokončiť firemnú ponuku tento týždeň. Začať priamo oslovovať." },
+                        { n: "02", title: "Preskúmať Tatra banku.", detail: "Cez osobné kontakty zistiť čo súper učil za €20k. Prispôsobiť pitch RL pre bankový a finančný sektor." },
+                        { n: "03", title: "Spustiť Circle MVP.", detail: "Nastaviť do 2–3 týždňov. Nahrať existujúce zdroje. Nečakať na dokonalosť." },
+                        { n: "04", title: "Definovať rozdelenie príjmov.", detail: "Zmapovať obchodný model a % pre Tiep, Roman, Atku a SORRYWECAN. Všetci potrebujú finančnú jasnosť." },
+                        { n: "05", title: "Predať nahrávku Mindsiftu.", detail: "Emailová kampaň pre tých, čo nemohli prísť. Veľká zľava pre študentov (50%). Rýchly príjem z existujúceho assetu." },
+                        { n: "06", title: "Nadviazať s partnermi.", detail: "Počkať na Mirkin dokument. Naplánovať stretnutie s rakúskou skupinou pre viedenský event." },
+                    ]).map((item, i, arr) => (
+                        <motion.div key={item.n} {...fadeUp(i * 0.04)}>
+                            <div className="flex gap-6 md:gap-10 py-7">
+                                <span className="font-syne font-bold text-[32px] md:text-[40px] text-white/10 leading-none shrink-0 w-12 md:w-16">{item.n}</span>
+                                <div className="flex-1">
+                                    <p className="font-syne font-bold text-[18px] md:text-[20px] tracking-tight text-white">{item.title}</p>
+                                    <p className="text-[14px] text-white/45 mt-2 leading-relaxed">{item.detail}</p>
+                                </div>
+                            </div>
+                            {i < arr.length - 1 && <div className="h-px bg-white/10" />}
+                        </motion.div>
+                    ))}
+                </div>
+
+                <div className="mx-8 md:mx-16 h-px bg-white/10" />
+                <div className="flex justify-between px-8 md:px-16 py-5">
+                    <span className="text-[8px] font-code-brand uppercase tracking-[0.4em] text-white/20">SORRYWECAN</span>
+                    <span className="text-[8px] font-code-brand uppercase tracking-[0.4em] text-white/20">09</span>
                 </div>
             </section>
 

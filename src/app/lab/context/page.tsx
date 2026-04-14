@@ -92,7 +92,7 @@ export default function ContextPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                                     {[
                                         { name: "Tiep Le Dinh", alias: "Prince of Wellness", role: "Vision, Output, Face, Content" },
-                                        { name: "Andrea (Atka)", alias: null, role: "Production, Structure, Deals, Community ops" },
+                                        { name: "Andrea (Adka)", alias: null, role: "Production, Structure, Deals, Community ops" },
                                         { name: "Sasha", alias: null, role: "Content creation, Marketing, Research" },
                                     ].map((f) => (
                                         <div key={f.name} className="p-4 border border-black/10">
@@ -640,7 +640,7 @@ export default function ContextPage() {
                             {/* Revenue structure */}
                             <div className="p-5 border border-black/10">
                                 <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">Revenue Structure — To Define</p>
-                                <p className="text-sm text-black/60 mb-3">The internal profit split between Tiep, Roman, Andrea (Atka), and the SORRYWECAN entity has not been formally mapped. Everyone needs financial clarity and motivation.</p>
+                                <p className="text-sm text-black/60 mb-3">The internal profit split between Tiep, Roman, Andrea (Adka), and the SORRYWECAN entity has not been formally mapped. Everyone needs financial clarity and motivation.</p>
                                 <div className="flex gap-2 text-sm">
                                     <span className="text-[#0047BB] shrink-0">—</span>
                                     <span className="text-black/60">Action: formally define the revenue split — who gets what % per workshop, per membership, per partnership deal. Map the s.r.o. structure and billing flow.</span>

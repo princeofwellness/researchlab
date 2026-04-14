@@ -921,7 +921,7 @@ export default function Q2OverviewPage() {
                         { n: "01", title: "Finalize the B2B pitch deck.", detail: "Complete the corporate offer this week. Start pitching directly." },
                         { n: "02", title: "Investigate Tatra banka.", detail: "Use personal contacts to find out what the competitor taught for €20k. Tailor RL's pitch for banking and finance accordingly." },
                         { n: "03", title: "Launch the Circle MVP.", detail: "Set it up within 2–3 weeks. Upload existing resources. Do not wait for it to be perfect before going live." },
-                        { n: "04", title: "Define the revenue split.", detail: "Map the business model and profit % for Tiep, Roman, Atka, and SORRYWECAN. Everyone needs financial clarity and motivation." },
+                        { n: "04", title: "Define the revenue split.", detail: "Map the business model and profit % for Tiep, Roman, Adka, and SORRYWECAN. Everyone needs financial clarity and motivation." },
                         { n: "05", title: "Sell the Mindshift recording.", detail: "Email campaign to everyone who couldn't attend. Heavy discount for students (50%). Quick revenue from an existing asset." },
                         { n: "06", title: "Follow up with partners.", detail: "Wait for Mirka's format doc. Schedule next meeting with Austrian group to plan the Vienna conference." },
                     ] : [

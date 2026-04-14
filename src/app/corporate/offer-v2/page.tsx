@@ -104,8 +104,8 @@ export default function CorporateOfferV2() {
                             </h1>
                             <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[320px] leading-relaxed">
                                 {en
-                                    ? "Not a lecture. A two-day guided experience. Your team thinks differently by the time they leave."
-                                    : "Nie prednáška. Dvojdňová riadená skúsenosť. Váš tím myslí inak, keď odchádza."}
+                                    ? "A two-day guided experience. Your team thinks differently by the time they leave."
+                                    : "Dvojdňová riadená skúsenosť. Váš tím myslí inak, keď odchádza."}
                             </p>
                         </div>
 

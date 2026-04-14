@@ -248,12 +248,12 @@ export default function CorporateOfferV2() {
                         <div className="flex-1 flex flex-col justify-center md:border-l border-white/[0.06] md:pl-10">
                             {(en ? [
                                 { t: "30 min", h: "Tea Opening Ceremony", d: "Sitting in a circle. Presence before performance. We open with intention." },
-                                { t: "3×30 min", h: "Three Perspectives", d: "Tiep · Roman — each brings their lens. Short, sharp, personal. No slides." },
+                                { t: "2×30 min", h: "Two Perspectives", d: "Tiep · Roman — each brings their lens. Short, sharp, personal. Slides or not." },
                                 { t: "60 min", h: "Circle Discussion", d: "Your team brings the real questions — the ones that don't get asked in meetings." },
                                 { t: "45 min", h: "Panel", d: "Open. Anything goes. Honest answers from experience, not theory." },
                             ] : [
                                 { t: "30 min", h: "Čajový Úvodný Rituál", d: "Sedenie v kruhu. Prítomnosť pred výkonom. Otvárame s úmyslom." },
-                                { t: "3×30 min", h: "Tri Perspektívy", d: "Tiep · Roman — každý prináša pohľad. Krátko, ostro, osobne. Bez slidov." },
+                                { t: "2×30 min", h: "Dve Perspektívy", d: "Tiep · Roman — každý prináša pohľad. Krátko, ostro, osobne. Slidy? Možno áno, možno nie." },
                                 { t: "60 min", h: "Diskusia v Kruhu", d: "Váš tím prinesie skutočné otázky — tie, čo sa na poradách nepýtajú." },
                                 { t: "45 min", h: "Panel", d: "Otvorený. Čokoľvek. Úprimné odpovede zo skúsenosti, nie teórie." },
                             ]).map((p, i, arr) => (

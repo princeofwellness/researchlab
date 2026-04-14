@@ -31,6 +31,7 @@ function Divider() {
 
 const changelog = [
     { date: "2026-04-14", note: "Initial version. Revenue model, content flywheel, platform launch plan, corporate pipeline, risks documented." },
+    { date: "2026-04-15", note: "Team structure added — core team, extended collaborators, external." },
 ]
 
 export default function Q2OverviewPage() {
@@ -65,9 +66,96 @@ export default function Q2OverviewPage() {
 
                     <Divider />
 
-                    {/* Three Priorities */}
+                    {/* The Team */}
                     <motion.div {...fade(0.05)}>
                         <Label>02</Label>
+                        <SectionTitle>The Team</SectionTitle>
+
+                        <div className="space-y-3">
+                            {/* Core */}
+                            <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">Core — 3 People</p>
+                            {[
+                                {
+                                    name: "Tiep Le Dinh",
+                                    handle: "Prince of Wellness",
+                                    role: "Vision & Output",
+                                    owns: ["Ideas and direction", "Face of Research Lab", "The thinking behind everything", "Content output — writing, speaking, presence", "Vision for where this goes"],
+                                },
+                                {
+                                    name: "Andrea",
+                                    handle: null,
+                                    role: "Production & Structure",
+                                    owns: ["Execution and follow-through", "Meetings, scheduling, logistics", "Holding the structure together", "Working with community — day-to-day", "Setting deals and managing relationships"],
+                                },
+                                {
+                                    name: "Sasha",
+                                    handle: null,
+                                    role: "Content & Research",
+                                    owns: ["Content creation and marketing", "Research — trends, tools, landscape", "Distribution and what gets made"],
+                                },
+                            ].map((p) => (
+                                <div key={p.name} className="p-5 border border-black/10">
+                                    <div className="flex items-start justify-between mb-3">
+                                        <div>
+                                            <p className="font-bold text-lg">{p.name}</p>
+                                            {p.handle && (
+                                                <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 mt-0.5">{p.handle}</p>
+                                            )}
+                                        </div>
+                                        <span className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] border border-[#0047BB]/30 px-2 py-0.5 shrink-0 ml-4">{p.role}</span>
+                                    </div>
+                                    <ul className="space-y-1">
+                                        {p.owns.map((o, i) => (
+                                            <li key={i} className="flex gap-2 text-sm text-black/60">
+                                                <span className="text-[#0047BB] shrink-0">—</span>
+                                                {o}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+
+                            {/* Extended */}
+                            <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40 pt-4">Extended — Regular Collaborators</p>
+                            {[
+                                {
+                                    name: "Roland",
+                                    role: "Taste & Network",
+                                    type: "External",
+                                    desc: "Taste curation and creative direction. Network from SORRYWECAN. Not in day-to-day ops — brought in where it matters.",
+                                },
+                                {
+                                    name: "Roman Pii Wagner",
+                                    role: "Advisor & Partner",
+                                    type: "External",
+                                    desc: "Works across both corporate workshops and THE MINDSHIFT. Advisor and delivery partner. Brings clarity, facilitation depth, and executive presence.",
+                                },
+                            ].map((p) => (
+                                <div key={p.name} className="p-5 border border-black/10 bg-black/[0.02]">
+                                    <div className="flex items-start justify-between mb-2">
+                                        <p className="font-bold">{p.name}</p>
+                                        <div className="flex items-center gap-2 shrink-0 ml-4">
+                                            <span className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 border border-black/10 px-2 py-0.5">{p.type}</span>
+                                            <span className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] border border-[#0047BB]/30 px-2 py-0.5">{p.role}</span>
+                                        </div>
+                                    </div>
+                                    <p className="text-sm text-black/60">{p.desc}</p>
+                                </div>
+                            ))}
+
+                            {/* Outsourced */}
+                            <div className="p-4 border border-black/10 bg-black/[0.02]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-1">Guest Speakers</p>
+                                <p className="text-sm text-black/50">Outsourced when needed. Brought in for specific topics, workshops, or events. Not part of standing team. Engaged per engagement.</p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
+                    {/* Three Priorities */}
+                    <motion.div {...fade(0.05)}>
+                        <Label>03</Label>
                         <SectionTitle>Three Priorities — Ranked</SectionTitle>
                         <div className="space-y-3">
                             {[
@@ -122,7 +210,7 @@ export default function Q2OverviewPage() {
 
                     {/* Revenue */}
                     <motion.div {...fade(0.05)}>
-                        <Label>03</Label>
+                        <Label>04</Label>
                         <SectionTitle>Revenue Model & Targets</SectionTitle>
 
                         <div className="space-y-4">
@@ -194,7 +282,7 @@ export default function Q2OverviewPage() {
 
                     {/* Audience Growth */}
                     <motion.div {...fade(0.05)}>
-                        <Label>04</Label>
+                        <Label>05</Label>
                         <SectionTitle>Audience Growth</SectionTitle>
 
                         <div className="space-y-4">
@@ -263,7 +351,7 @@ export default function Q2OverviewPage() {
 
                     {/* Content Flywheel */}
                     <motion.div {...fade(0.05)}>
-                        <Label>05</Label>
+                        <Label>06</Label>
                         <SectionTitle>Content Flywheel</SectionTitle>
 
                         <div className="space-y-3">
@@ -330,7 +418,7 @@ export default function Q2OverviewPage() {
 
                     {/* Platform Launch */}
                     <motion.div {...fade(0.05)}>
-                        <Label>06</Label>
+                        <Label>07</Label>
                         <SectionTitle>Platform Launch Plan</SectionTitle>
 
                         <div className="space-y-3">
@@ -404,7 +492,7 @@ export default function Q2OverviewPage() {
 
                     {/* Corporate Pipeline */}
                     <motion.div {...fade(0.05)}>
-                        <Label>07</Label>
+                        <Label>08</Label>
                         <SectionTitle>Corporate Pipeline — Q2</SectionTitle>
 
                         <div className="space-y-3">
@@ -450,7 +538,7 @@ export default function Q2OverviewPage() {
 
                     {/* Risks */}
                     <motion.div {...fade(0.05)}>
-                        <Label>08</Label>
+                        <Label>09</Label>
                         <SectionTitle>Risks & What We Are Not Doing</SectionTitle>
 
                         <div className="space-y-4">

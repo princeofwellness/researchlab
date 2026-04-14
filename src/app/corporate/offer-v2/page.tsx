@@ -102,7 +102,7 @@ export default function CorporateOfferV2() {
                             <h1 className="font-syne font-bold leading-[0.88] tracking-tighter text-[58px] md:text-[92px] text-white">
                                 {en ? <>Corporate<br />Workshop.</> : <>Firemný<br />Workshop.</>}
                             </h1>
-                            <p className="mt-6 md:mt-9 text-[14px] md:text-[17px] text-white/50 max-w-[300px] leading-relaxed">
+                            <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[320px] leading-relaxed">
                                 {en
                                     ? "Not a lecture. A two-day guided experience. Your team thinks differently by the time they leave."
                                     : "Nie prednáška. Dvojdňová riadená skúsenosť. Váš tím myslí inak, keď odchádza."}
@@ -121,7 +121,7 @@ export default function CorporateOfferV2() {
                                 </p>
                             </div>
                             <div className="h-px w-full bg-white/15" />
-                            <div className="text-right space-y-1.5 text-[11px] font-code-brand text-white/40">
+                            <div className="text-right space-y-1.5 text-[13px] font-code-brand text-white/40">
                                 <p>{en ? "10–15 people" : "10–15 ľudí"}</p>
                                 <p>{en ? "2 full days" : "2 celé dni"}</p>
                                 <p>Bratislava</p>
@@ -140,7 +140,7 @@ export default function CorporateOfferV2() {
                                 {en ? "per person + VAT" : "na osobu + DPH"}
                             </p>
                         </div>
-                        <div className="text-[11px] font-code-brand text-white/40 flex flex-col justify-end gap-1">
+                        <div className="text-[13px] font-code-brand text-white/40 flex flex-col justify-end gap-1">
                             <p>{en ? "10–15 people" : "10–15 ľudí"}</p>
                             <p>{en ? "2 full days" : "2 celé dni"}</p>
                         </div>

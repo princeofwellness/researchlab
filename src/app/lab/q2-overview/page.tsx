@@ -486,11 +486,11 @@ export default function Q2OverviewPage() {
 
                     {(en ? [
                         { platform: "Instagram", current: "~800", target: "1,500+", tactic: "4×/week: carousels, reels, opinion. Owned by Sasha." },
-                        { platform: "Newsletter", current: "Small list", target: "500+ subscribers", tactic: "Weekly THE SIGNAL — distilled AI news + Research Lab thinking." },
+                        { platform: "Newsletter", current: "Small list", target: "500+ subscribers", tactic: "Weekly The Radar — distilled AI news + Research Lab thinking." },
                         { platform: "Circle", current: "0", target: "15–25 founding members", tactic: "Personal invitations. Workshop alumni first. Founding price €39/mo." },
                     ] : [
                         { platform: "Instagram", current: "~800", target: "1 500+", tactic: "4×/týždeň: karusely, reels, názory. Zodpovedá Sasha." },
-                        { platform: "Newsletter", current: "Malý zoznam", target: "500+ odberateľov", tactic: "Týždenný THE SIGNAL — destilované AI správy + pohľad Research Lab." },
+                        { platform: "Newsletter", current: "Malý zoznam", target: "500+ odberateľov", tactic: "Týždenný The Radar — destilované AI správy + pohľad Research Lab." },
                         { platform: "Circle", current: "0", target: "15–25 zakladajúcich členov", tactic: "Osobné pozvánky. Absolventi workshopov ako prví. Zakladateľská cena €39/mes." },
                     ]).map((a, i, arr) => (
                         <motion.div key={a.platform} {...fadeUp(i * 0.05)}>
@@ -515,12 +515,12 @@ export default function Q2OverviewPage() {
 
                     {(en ? [
                         { cadence: "Daily", format: "Social", type: "Free", detail: "Instagram — 4 pillars rotating. Carousels, video, opinion.", owner: "Sasha + Tiep" },
-                        { cadence: "Weekly", format: "THE SIGNAL", type: "Free", detail: "Newsletter + short audio. Curated AI news + Research Lab take.", owner: "Tiep (write)" },
+                        { cadence: "Weekly", format: "The Radar", type: "Free", detail: "Newsletter + short audio. Curated AI news + Research Lab take.", owner: "Tiep (write)" },
                         { cadence: "Bi-weekly", format: "Live Webinar", type: "Free → Paid", detail: "Live to public. Archived in Circle. 45–60 min, one topic deep.", owner: "Tiep / Roman" },
                         { cadence: "Monthly", format: "Case Study", type: "Paid", detail: "One real AI application deconstructed. Lives in Circle, teased on social.", owner: "Rotating" },
                     ] : [
                         { cadence: "Denne", format: "Sociálne siete", type: "Zadarmo", detail: "Instagram — 4 piliere striedavo. Karusely, video, názory.", owner: "Sasha + Tiep" },
-                        { cadence: "Týždenne", format: "THE SIGNAL", type: "Zadarmo", detail: "Newsletter + krátke audio. Destilované AI správy + pohľad Research Lab.", owner: "Tiep (píše)" },
+                        { cadence: "Týždenne", format: "The Radar", type: "Zadarmo", detail: "Newsletter + krátke audio. Destilované AI správy + pohľad Research Lab.", owner: "Tiep (píše)" },
                         { cadence: "Bi-týždenne", format: "Živý Webinár", type: "Zadarmo → Platené", detail: "Naživo pre verejnosť. Archivované v Circle. 45–60 min, jedna téma do hĺbky.", owner: "Tiep / Roman" },
                         { cadence: "Mesačne", format: "Prípadová Štúdia", type: "Platené", detail: "Jedna reálna AI aplikácia dekontruovaná. Žije v Circle, upútavka na sieťach.", owner: "Rotujúci" },
                     ]).map((f, i, arr) => (

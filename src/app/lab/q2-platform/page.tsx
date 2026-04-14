@@ -149,7 +149,7 @@ export default function Q2PlatformPage() {
                                     space: "Agentic Systems",
                                     access: "All members (advanced content)",
                                     desc: "The frontier. How to build with AI, not just use it. Agent workflows, automation, combining models. For those ready to go deeper.",
-                                    content: "Step-by-step agent guides, workflow breakdowns, Ján-led content",
+                                    content: "Step-by-step agent guides, workflow breakdowns, Tiep-led content",
                                 },
                                 {
                                     space: "Member Lounge",
@@ -301,7 +301,7 @@ export default function Q2PlatformPage() {
                                             level: "Level 4 — Agentic Systems",
                                             label: "Advanced",
                                             desc: "Building with AI. Agent workflows. Combining models. Automation. For those who want to stop using tools and start building systems.",
-                                            format: "Ján-led. Step-by-step. Real examples. Updated as the technology moves.",
+                                            format: "Tiep-led. Step-by-step. Real examples. Updated as the technology moves.",
                                         },
                                     ].map((l, i) => (
                                         <div key={l.level} className="flex gap-4 p-4 border border-black/10">
@@ -326,7 +326,7 @@ export default function Q2PlatformPage() {
                                 <div className="space-y-2 text-sm text-black/70">
                                     <p><span className="text-[#0047BB]">Format:</span> 45-60 minutes. One topic deep. 20 min structured content, 15 min demo/examples, 15 min live Q&A.</p>
                                     <p><span className="text-[#0047BB]">Live access:</span> Free / open (draws new audience). Recording: inside Circle for members only.</p>
-                                    <p><span className="text-[#0047BB]">Rotation:</span> Prince (mindset, community), Ján (technical, tools, agentic), Roman (visual AI, design, creativity). Guest educators when relevant.</p>
+                                    <p><span className="text-[#0047BB]">Rotation:</span> Prince + Tiep (mindset, thinking, frameworks), Roman (visual AI, design, creativity). Guest educators when relevant.</p>
                                     <p><span className="text-[#0047BB]">Promotion:</span> Newsletter + Instagram 1 week before. Replay teaser post after.</p>
                                 </div>
                             </div>
@@ -366,8 +366,8 @@ export default function Q2PlatformPage() {
                                 { layer: "Video Recording", tool: "Loom / ScreenStudio", use: "Pre-recorded modules. Clean, professional, fast to produce." },
                                 { layer: "Live Webinars", tool: "Circle Live or Zoom", use: "Bi-weekly sessions. Recorded and archived in Circle." },
                                 { layer: "Content Scheduling", tool: "Buffer / Later", use: "Instagram + newsletter scheduling. Batch weekly." },
-                                { layer: "Newsletter", tool: "Resend or Beehiiv", use: "THE SIGNAL weekly. Integrates with Circle for member sync." },
-                                { layer: "AI Research & Writing", tool: "Claude API", use: "Content drafts, research synthesis, prompt development. Ján leads setup." },
+                                { layer: "Newsletter", tool: "Resend or Beehiiv", use: "The Radar weekly. Integrates with Circle for member sync." },
+                                { layer: "AI Research & Writing", tool: "Claude API", use: "Content drafts, research synthesis, prompt development. Tiep + Sasha lead." },
                                 { layer: "Design", tool: "Figma + Canva AI", use: "Roman leads. Social graphics, webinar decks, platform visuals." },
                                 { layer: "Platform Integration", tool: "researchlab (Next.js)", use: "This app evolves to link into Circle — member login, content teasers, event booking." },
                             ].map((t) => (

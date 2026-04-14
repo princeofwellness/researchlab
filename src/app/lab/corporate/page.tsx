@@ -85,9 +85,9 @@ export default function CorporatePage() {
                         <div className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                                 {[
-                                    { label: "Price", value: "€600/person + VAT" },
+                                    { label: "Price", value: "€690/person + VAT" },
                                     { label: "Group size", value: "10-15 people" },
-                                    { label: "Revenue per workshop", value: "~€8,400" },
+                                    { label: "Revenue per workshop", value: "~€6,900–10,350" },
                                 ].map((s) => (
                                     <div key={s.label} className="p-5 border border-black/10 text-center">
                                         <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/40">{s.label}</p>
@@ -137,7 +137,7 @@ export default function CorporatePage() {
                                     {[
                                         { segment: "Taste (Roland / Prince)", desc: "Opening the mind. Where are we? What is AI actually doing? Why does it feel threatening — and why that reaction makes sense. From fear to curiosity." },
                                         { segment: "Discussion: Their Reality", desc: "Structured conversation: where are you using AI now? Where are you blocked? What's the real fear? What would change if you trusted it? Real problems, real people, real room." },
-                                        { segment: "Leverage (Ján)", desc: "The thinking frameworks. How to approach a task with AI. Prompt thinking. The mental model shift from tool-user to system-thinker." },
+                                        { segment: "Leverage (Tiep)", desc: "The thinking frameworks. How to approach a task with AI. Prompt thinking. The mental model shift from tool-user to system-thinker." },
                                         { segment: "Clarity (Roman)", desc: "Synthesis. How these ideas connect to each other and to the team's specific context. Visual frameworks. What to take away from today." },
                                         { segment: "Open Q&A", desc: "No slides. No agenda. Real questions, honest answers." },
                                     ].map((s) => (
@@ -162,7 +162,7 @@ export default function CorporatePage() {
                                 </div>
                                 <div className="space-y-3">
                                     {[
-                                        { segment: "What's actually possible", desc: "Live demonstration: what Ján does with AI in a real working day. No slides. Screen share, real tools, real workflows. Sets the ceiling." },
+                                        { segment: "What's actually possible", desc: "Live demonstration: what Tiep does with AI in a real working day. No slides. Screen share, real tools, real workflows. Sets the ceiling." },
                                         { segment: "The Tool Stack", desc: "What exists, what to use for what. Meeting notes and transcription. Knowledge management and search. Video and content creation. Deep research. Writing and editing. Multimodal models — text, image, voice, video together." },
                                         { segment: "Prompts and how to think about them", desc: "Not a list of prompts. The underlying logic of how to prompt well. The mental model. Practice round: each person tries something live." },
                                         { segment: "Their Problems — Live", desc: "The team brings their actual challenges. We work on them in real time. This is the most valuable 90 minutes of the two days." },
@@ -195,7 +195,7 @@ export default function CorporatePage() {
                                     status: "Pre-warmed",
                                     statusColor: true,
                                     contact: "Head of department — attended THE MINDSHIFT personally",
-                                    value: "€8,400",
+                                    value: "~€9,660",
                                     why: "The head loved the thinking approach, not just the tools. Called it 'practical and philosophical at the same time.' That's our signal.",
                                     next: "Send formal proposal. Confirm dates. Get the contract signed.",
                                     timeline: "Target: May 2026",
@@ -205,7 +205,7 @@ export default function CorporatePage() {
                                     status: "Interested",
                                     statusColor: false,
                                     contact: "Same head of department is the bridge to second department",
-                                    value: "€8,400",
+                                    value: "~€9,660",
                                     why: "Internal referral. The internal credibility of Department 1 doing it first makes Department 2 easier.",
                                     next: "Wait for Department 1 confirmation, then move simultaneously.",
                                     timeline: "Target: June 2026",
@@ -215,8 +215,8 @@ export default function CorporatePage() {
                                     status: "To identify",
                                     statusColor: false,
                                     contact: "Pull from 145-company prospect database — Tier 1",
-                                    value: "€8,400",
-                                    why: "Three workshops gets us to ~€25k. We need one more hot conversation by end of April.",
+                                    value: "~€9,660",
+                                    why: "Two strong Q2 closings = ~€19k. A third extends the runway significantly. We need one more hot conversation by end of April.",
                                     next: "Pull top 10 Tier 1 prospects from /prospects. Identify best contact. Outreach by April 21.",
                                     timeline: "Target: June 2026",
                                 },
@@ -318,11 +318,11 @@ export default function CorporatePage() {
                                 },
                                 {
                                     objection: "\"This is expensive for a two-day training.\"",
-                                    response: "€600/person for a team that uses AI 20% more effectively is paid back in weeks, not months. The question isn't whether it's expensive — it's whether the team comes out of it actually changed. That's the thing we can promise.",
+                                    response: "€690/person for a team that uses AI 20% more effectively is paid back in weeks, not months. The question isn't whether it's expensive — it's whether the team comes out of it actually changed. That's the thing we can promise.",
                                 },
                                 {
                                     objection: "\"Can you do it in half a day?\"",
-                                    response: "Day 1 (mindset) can stand alone if budget is the real constraint. €300/person, half-day, thinking-only. Day 2 requires Day 1 — the practical lands differently when the mindset is already shifted. We'd recommend the full two days, but we can start with one.",
+                                    response: "Day 1 (mindset) can stand alone if budget is the real constraint. €345/person, half-day, thinking-only. Day 2 requires Day 1 — the practical lands differently when the mindset is already shifted. We'd recommend the full two days, but we can start with one.",
                                 },
                                 {
                                     objection: "\"We need to check with our training budget owner.\"",
@@ -408,7 +408,7 @@ export default function CorporatePage() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
                                 <div className="p-4 border border-black/10">
                                     <p className="font-bold mb-1">What it means for pricing</p>
-                                    <p className="text-black/60">At €600/person × 14 people = €8,400. We are <strong>significantly</strong> under-priced relative to the market. The mindset-first approach is a stronger differentiator than the competitor's tools-only overview.</p>
+                                    <p className="text-black/60">At €690/person × 14 people = €9,660. We are <strong>significantly</strong> under-priced relative to the market. After first delivery + testimonial, move to €800+. The mindset-first approach is a stronger differentiator than the competitor's tools-only overview.</p>
                                 </div>
                                 <div className="p-4 border border-black/10">
                                     <p className="font-bold mb-1">Action item</p>

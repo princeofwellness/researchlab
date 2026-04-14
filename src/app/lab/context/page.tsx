@@ -380,14 +380,14 @@ export default function ContextPage() {
                             {[
                                 {
                                     name: "THE MINDSHIFT",
-                                    status: "Live",
+                                    status: "Paused — returns Q3/Q4",
                                     type: "Public Workshop",
                                     details: [
                                         "3.5-hour immersive AI literacy session",
-                                        "Format: Taste (Roland) → Leverage (Ján) → Clarity (Roman) → Q&A",
+                                        "Format: Taste (Roland) → Leverage (Tiep) → Clarity (Roman) → Q&A",
                                         "Price: €99/person (in-person + online)",
-                                        "Capacity: 40 seats, live seat counter",
-                                        "Booking via Cal.com embed",
+                                        "Paused for Q2 — community growth first. Returns at different rhythm, not monthly.",
+                                        "When it returns: 40 seats, live seat counter, booking via Cal.com embed",
                                         "Bilingual: EN/SK",
                                     ]
                                 },
@@ -399,8 +399,8 @@ export default function ContextPage() {
                                         "Two-part format: Day 1 Mindshift thinking + Day 2 Practical tools",
                                         "Day 1: Mindset shift, philosophical framing, team discussion, blockades",
                                         "Day 2: Tools, prompts, workflows, multimodality, meeting notes, deep research",
-                                        "Price: €600/person + VAT, min 10 people (~€8,400 per workshop)",
-                                        "Target: 3 workshops Q2 = ~€25k",
+                                        "Price: €690/person + VAT, min 10 people (~€6,900–9,660 per workshop)",
+                                        "Target: 2 workshops Q2 = ~€14–20k. Raise to €800+ after first delivery + testimonial.",
                                         "Pipeline: O2 department (pre-warmed)",
                                     ]
                                 },
@@ -628,7 +628,7 @@ export default function ContextPage() {
                                 <div className="space-y-2 text-sm">
                                     <div className="flex gap-2">
                                         <span className="text-[#0047BB] shrink-0">—</span>
-                                        <span className="text-black/60"><strong>Tatra banka benchmark:</strong> A competitor agency charged Tatra banka €20,000 for a basic 3-day AI tools overview. RL's €600/person format delivers more depth at lower per-seat cost with a mindset-first approach. This validates pricing power and premium positioning.</span>
+                                        <span className="text-black/60"><strong>Tatra banka benchmark:</strong> A competitor agency charged Tatra banka €20,000 for a basic 3-day AI tools overview. RL's €690/person format delivers more depth at lower per-seat cost with a mindset-first approach. This validates pricing power and premium positioning — and signals €800+ is realistic after first delivery.</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <span className="text-[#0047BB] shrink-0">—</span>
@@ -683,7 +683,7 @@ TONE EXAMPLES:
 
 PRODUCTS:
 - THE MINDSHIFT: €99/person public workshop
-- Corporate: €600/person, min 10 people, two-day format
+- Corporate: €690/person, min 10 people, two-day format (→ €800+ after first delivery)
 - Community (Circle): €39/month, launching June 2026
 - NextGen: Youth programme, seeking CSR partners
 

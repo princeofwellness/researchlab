@@ -17,6 +17,7 @@ export default function LabPage() {
         { name: "Q2 Overview", href: "/lab/q2-overview", desc: "Holistic Q2 plan: revenue, content flywheel, platform launch, corporate pipeline." },
         { name: "Platform & Next Steps", href: "/lab/q2-platform", desc: "Circle architecture, membership tiers, educational framework, launch sequence." },
         { name: "Corporate Offer", href: "/lab/corporate", desc: "Two-day format, pricing, O2 pipeline, sales motion, objection handling." },
+        { name: "Content Architecture", href: "/lab/content", desc: "The Radar, funnel stages, 60/30/10 rule, distribution channels, monetization ceiling." },
     ]
 
     const pages = [

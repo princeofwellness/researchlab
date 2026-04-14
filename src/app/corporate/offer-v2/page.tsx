@@ -223,7 +223,7 @@ export default function CorporateOfferV2() {
 
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/25">
-                            {en ? "Day One" : "Deň Jeden"}
+                            {en ? "Day One" : "Prvý Deň"}
                         </span>
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#4d7fd4]">
                             The Mindshift
@@ -248,12 +248,12 @@ export default function CorporateOfferV2() {
                         <div className="flex-1 flex flex-col justify-center md:border-l border-white/[0.06] md:pl-10">
                             {(en ? [
                                 { t: "30 min", h: "Tea Opening Ceremony", d: "Sitting in a circle. Presence before performance. We open with intention." },
-                                { t: "2×30 min", h: "Two Perspectives", d: "Tiep · Roman — each brings their lens. Short, sharp, personal. Slides or not." },
+                                { t: "2×30 min", h: "Two Perspectives", d: "Tiep · Roman — two lenses, one room. Short, sharp. No script." },
                                 { t: "60 min", h: "Circle Discussion", d: "Your team brings the real questions — the ones that don't get asked in meetings." },
                                 { t: "45 min", h: "Panel", d: "Open. Anything goes. Honest answers from experience, not theory." },
                             ] : [
                                 { t: "30 min", h: "Čajový Úvodný Rituál", d: "Sedenie v kruhu. Prítomnosť pred výkonom. Otvárame s úmyslom." },
-                                { t: "2×30 min", h: "Dve Perspektívy", d: "Tiep · Roman — každý prináša pohľad. Krátko, ostro, osobne. Slidy? Možno áno, možno nie." },
+                                { t: "2×30 min", h: "Dve Perspektívy", d: "Tiep · Roman — dva pohľady, jedna miestnosť. Krátko, ostro. Bez scenára." },
                                 { t: "60 min", h: "Diskusia v Kruhu", d: "Váš tím prinesie skutočné otázky — tie, čo sa na poradách nepýtajú." },
                                 { t: "45 min", h: "Panel", d: "Otvorený. Čokoľvek. Úprimné odpovede zo skúsenosti, nie teórie." },
                             ]).map((p, i, arr) => (
@@ -298,7 +298,7 @@ export default function CorporateOfferV2() {
 
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
-                            {en ? "Day Two" : "Deň Dva"}
+                            {en ? "Day Two" : "Druhý Deň"}
                         </span>
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
                             {en ? "The Practice" : "Prax"}
@@ -324,13 +324,13 @@ export default function CorporateOfferV2() {
                             {(en ? [
                                 { t: "45 min", h: "What's Actually Possible", d: "Live screen share. Real tasks, real output. No slides. Sets the ceiling for the room." },
                                 { t: "60 min", h: "The Tool Stack", d: "Research, writing, video, meetings, knowledge management. What to use for what and why." },
-                                { t: "45 min", h: "Prompts That Work", d: "The logic, not the list. The mental model behind good prompting. Then everyone practices live." },
-                                { t: "90 min", h: "Your Problems, Live", d: "Your team's real challenges worked on in real time. The best 90 minutes of the two days." },
+                                { t: "45 min", h: "Prompts That Work", d: "The logic, not the list. The mental model behind good prompting. Then everyone tries it live." },
+                                { t: "90 min", h: "Your Problems, Live", d: "Your team's real challenges worked through in real time. No theory. Just output." },
                             ] : [
                                 { t: "45 min", h: "Čo Je Skutočne Možné", d: "Živé zdieľanie obrazovky. Skutočné úlohy, skutočný výstup. Bez slidov." },
                                 { t: "60 min", h: "Stack Nástrojov", d: "Výskum, písanie, video, porady, knowledge management. Čo na čo a prečo." },
-                                { t: "45 min", h: "Prompty, Ktoré Fungujú", d: "Logika, nie zoznam. Mentálny model za dobrým promptovaním. Potom každý cvičí živé." },
-                                { t: "90 min", h: "Vaše Problémy, Živo", d: "Skutočné výzvy vášho tímu riešené v reálnom čase. Najlepších 90 minút dvoch dní." },
+                                { t: "45 min", h: "Prompty, Ktoré Fungujú", d: "Logika, nie zoznam. Mentálny model za dobrým promptovaním. Potom každý cvičí naživo." },
+                                { t: "90 min", h: "Vaše Problémy, Živo", d: "Skutočné výzvy vášho tímu riešené v reálnom čase. Bez teórie. Len výsledky." },
                             ]).map((p, i, arr) => (
                                 <div key={i}>
                                     <div className="flex items-start gap-5 py-3 md:py-4">
@@ -384,13 +384,13 @@ export default function CorporateOfferV2() {
                             </h3>
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
                                 {en
-                                    ? "Builder and creative at the intersection of AI, culture, and human development. Founder of Research Lab. Works with AI across content, strategy, and community every day."
-                                    : "Tvorca a kreatívec na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab. Pracuje s AI naprieč obsahom, stratégiou a komunitou každý deň."}
+                                    ? "Builder and creative at the intersection of AI, culture, and human development. Founder of Research Lab. Thinks about AI the way others think about language — as the core of everything."
+                                    : "Tvorca a kreatívec na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab. Myslí o AI tak, ako iní myslia o jazyku — ako o jadre všetkého."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-black/40 max-w-[260px] leading-snug">
                                 {en
-                                    ? "\"The thinking behind the tools matters more than the tools.\""
-                                    : "\"Myslenie za nástrojmi je dôležitejšie ako nástroje samotné.\""}
+                                    ? "\"The thinking behind the tool is the tool.\""
+                                    : "\"Myslenie za nástrojom je nástrojom samotným.\""}
                             </p>
                         </div>
 
@@ -410,7 +410,7 @@ export default function CorporateOfferV2() {
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-black/40 max-w-[260px] leading-snug">
                                 {en
                                     ? "\"Clarity is not a luxury. It's what makes everything else possible.\""
-                                    : "\"Jasnosť nie je luxus. Je to to, čo umožňuje všetko ostatné.\""}
+                                    : "\"Jasnosť nie je luxus. To, čo umožňuje všetko ostatné.\""}
                             </p>
                         </div>
                     </div>
@@ -495,13 +495,13 @@ export default function CorporateOfferV2() {
                             </h2>
                             <p className="mt-7 text-[14px] text-white/45 max-w-xs leading-relaxed">
                                 {en
-                                    ? "20-minute call. No commitment. We figure out if it's a fit and go from there."
-                                    : "20-minútový hovor. Žiadny záväzok. Zistíme, či je to fit, a pohneme sa ďalej."}
+                                    ? "20-minute call. No commitment. We figure out if it makes sense and go from there."
+                                    : "20-minútový hovor. Žiadny záväzok. Zistíme, či to dáva zmysel, a pohneme sa ďalej."}
                             </p>
                             <p className="mt-4 text-[11px] text-white/25 max-w-xs leading-relaxed">
                                 {en
-                                    ? "If it's not the right fit, we'll say so directly."
-                                    : "Ak to nebude správny fit, povieme priamo."}
+                                    ? "If it's not the right match, we'll say so directly."
+                                    : "Ak to nedáva zmysel, povieme priamo."}
                             </p>
                         </div>
 

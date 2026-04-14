@@ -230,8 +230,37 @@ export default function ContextPage() {
                                 </div>
                             </div>
 
+                            {/* Art Direction */}
+                            <div className="p-5 border-2 border-[#0047BB]/30 bg-[#0047BB]/[0.04]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-1">Art Direction — Presentation Mode</p>
+                                <p className="text-xs text-black/50 mb-4">For decks, offer documents, and print-grade materials. Validated April 2026.</p>
+                                <div className="space-y-3 text-sm">
+                                    {[
+                                        ["Color rhythm", "Blue (#0047BB) → Parchment (#e8e1da) → Near-black (#0d0d0d) — alternating full-bleed slide backgrounds. Blue as a background is encouraged, not just as accent."],
+                                        ["Watermark typography", "Single word, 200-280px Syne, opacity 3-5% — used as background texture, not decoration. Examples: 'AI', 'WHO', '01', '02'."],
+                                        ["No card boxes", "Structure through hairlines (1px, opacity 7-15%) and negative space. Ruled separators between items instead of bordered cards."],
+                                        ["Slide anatomy", "Top bar: 9px label left + edition right. 1px separator. Content. 1px separator. Bottom bar: brand left + page number right."],
+                                        ["Giant names & headlines", "46-92px Syne, tracking-tighter, leading 0.88-0.92. Left-anchored, never centered on presentation slides."],
+                                        ["SVG motifs", "Geometric elements that carry meaning — e.g. circle of dots for people sitting in a circle. Placed as absolute positioned background elements."],
+                                        ["Grid texture", "On technical/tool slides: repeating linear-gradient at 2.5% opacity, 40×40px. Blueprint feel on blue backgrounds."],
+                                        ["Time/metadata labels", "9px font-code-brand, #4d7fd4 (lightened blue) on dark backgrounds. black/30 on parchment."],
+                                    ].map(([principle, desc]) => (
+                                        <div key={principle} className="flex gap-3">
+                                            <span className="text-[#0047BB] shrink-0">—</span>
+                                            <div>
+                                                <span className="font-bold">{principle}: </span>
+                                                <span className="text-black/60">{desc}</span>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-black/10">
+                                    <p className="text-xs text-black/40">Reference implementation: <a href="/corporate/offer-v2" className="text-[#0047BB] hover:underline">/corporate/offer-v2</a> — 7-slide deck that defines this direction.</p>
+                                </div>
+                            </div>
+
                             <div className="p-5 border border-black/10 bg-black/[0.02]">
-                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-4">Design Principles</p>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-4">Core Design Principles</p>
                                 <div className="space-y-3 text-sm">
                                     {[
                                         ["Zero border radius", "Everything is square. Buttons, cards, modals, inputs. No rounded corners ever."],

@@ -34,7 +34,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 01 HERO / blue ── */}
             <section className="relative min-h-screen bg-[#0047BB] text-white overflow-hidden flex flex-col">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[28vw] text-white/[0.04] leading-none select-none pointer-events-none">
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[28vw] text-white/[0.04] leading-none select-none pointer-events-none">
                     Q2
                 </span>
 
@@ -49,7 +49,7 @@ export default function Q2OverviewPage() {
                         <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.5em] text-white/40 mb-6">
                             {en ? "April → June · Internal Strategy" : "Apríl → Jún · Interná stratégia"}
                         </p>
-                        <h1 className="font-syne font-bold text-[20vw] md:text-[16vw] leading-[0.82] tracking-tighter text-white">
+                        <h1 className="font-cabinet font-bold text-[20vw] md:text-[16vw] leading-[0.82] tracking-tighter text-white">
                             {en ? <>The<br />Plan.</> : <>Plán.</>}
                         </h1>
                     </motion.div>
@@ -71,7 +71,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 02 THE QUARTER / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden">
-                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-syne font-bold text-[24vw] text-black/[0.035] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[24vw] text-black/[0.035] leading-none select-none pointer-events-none">
                     JULY
                 </span>
 
@@ -87,7 +87,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20 max-w-5xl">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
                             {en
                                 ? <>What July 1st<br />looks like<br /><span className="text-black/25">if Q2 worked.</span></>
                                 : <>Ako vyzerá<br />1. júl<br /><span className="text-black/25">ak Q2 vyšiel.</span></>}
@@ -109,7 +109,7 @@ export default function Q2OverviewPage() {
                             <div className="flex gap-8 py-8 md:py-10">
                                 <span className="text-[10px] font-code-brand text-[#0047BB] uppercase tracking-[0.3em] w-8 shrink-0 mt-1">{item.n}</span>
                                 <div>
-                                    <p className="font-syne font-bold text-[20px] md:text-[26px] tracking-tight">{item.title}</p>
+                                    <p className="font-cabinet font-bold text-[20px] md:text-[26px] tracking-tight">{item.title}</p>
                                     <p className="text-[15px] text-black/50 mt-2 leading-relaxed">{item.sub}</p>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 03 THE TEAM / dark ── */}
             <section className="relative bg-[#0d0d0d] text-[#e8e1da] overflow-hidden">
-                <span className="absolute left-[-2vw] top-1/2 -translate-y-1/2 font-syne font-bold text-[24vw] text-white/[0.025] leading-none select-none pointer-events-none">
+                <span className="absolute left-[-2vw] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[24vw] text-white/[0.025] leading-none select-none pointer-events-none">
                     WHO
                 </span>
 
@@ -143,7 +143,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16 text-white">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16 text-white">
                             {en
                                 ? <>Three people.<br /><span className="text-white/25">Two advisors.</span></>
                                 : <>Traja ľudia.<br /><span className="text-white/25">Dvaja poradcovia.</span></>}
@@ -196,7 +196,7 @@ export default function Q2OverviewPage() {
                         <motion.div key={person.name} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-16 py-8 md:py-10">
                                 <div className="md:w-[220px] shrink-0">
-                                    <p className="font-syne font-bold text-[22px] md:text-[26px] text-white tracking-tight">{person.name}</p>
+                                    <p className="font-cabinet font-bold text-[22px] md:text-[26px] text-white tracking-tight">{person.name}</p>
                                     {person.handle && (
                                         <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-[#4d7fd4] mt-1">{person.handle}</p>
                                     )}
@@ -228,7 +228,7 @@ export default function Q2OverviewPage() {
                         <motion.div key={person.name} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-16 py-7">
                                 <div className="md:w-[220px] shrink-0">
-                                    <p className="font-syne font-bold text-[20px] text-white tracking-tight">{person.name}</p>
+                                    <p className="font-cabinet font-bold text-[20px] text-white tracking-tight">{person.name}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/30 mt-1">{person.role}</p>
                                 </div>
                                 <p className="flex-1 text-[14px] text-white/40 leading-relaxed">{person.desc}</p>
@@ -251,7 +251,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 04 PRIORITIES / blue ── */}
             <section className="relative bg-[#0047BB] text-white overflow-hidden">
-                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-syne font-bold text-[22vw] text-white/[0.04] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[22vw] text-white/[0.04] leading-none select-none pointer-events-none">
                     FOCUS
                 </span>
 
@@ -267,7 +267,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
                             {en
                                 ? <>Three things.<br /><span className="text-white/25">Ranked.</span></>
                                 : <>Tri veci.<br /><span className="text-white/25">Zoradené.</span></>}
@@ -321,9 +321,9 @@ export default function Q2OverviewPage() {
                     ]).map((p, i, arr) => (
                         <motion.div key={p.rank} {...fadeUp(i * 0.05)}>
                             <div className="flex gap-6 md:gap-10 py-10 md:py-12">
-                                <span className="font-syne font-bold text-[48px] md:text-[64px] text-white/10 leading-none shrink-0 w-16 md:w-20">{p.rank}</span>
+                                <span className="font-cabinet font-bold text-[48px] md:text-[64px] text-white/10 leading-none shrink-0 w-16 md:w-20">{p.rank}</span>
                                 <div className="flex-1">
-                                    <p className="font-syne font-bold text-[20px] md:text-[26px] tracking-tight text-white">{p.title}</p>
+                                    <p className="font-cabinet font-bold text-[20px] md:text-[26px] tracking-tight text-white">{p.title}</p>
                                     <p className="text-[14px] text-white/45 mt-3 leading-relaxed max-w-2xl">{p.why}</p>
                                     <div className="mt-6 flex flex-col md:flex-row gap-4 md:gap-10">
                                         <div>
@@ -351,7 +351,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 05 REVENUE / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden">
-                <span className="absolute right-[-1vw] bottom-[-4vw] font-syne font-bold text-[30vw] text-black/[0.03] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-1vw] bottom-[-4vw] font-cabinet font-bold text-[30vw] text-black/[0.03] leading-none select-none pointer-events-none">
                     €
                 </span>
 
@@ -367,7 +367,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[56px] md:text-[80px] tracking-tighter leading-[0.9] mb-4">
+                        <h2 className="font-cabinet font-bold text-[56px] md:text-[80px] tracking-tighter leading-[0.9] mb-4">
                             €30k+
                         </h2>
                         <p className="text-[15px] text-black/40 mb-16 max-w-lg">
@@ -392,7 +392,7 @@ export default function Q2OverviewPage() {
                                     <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.35em] text-black/40">{r.source}</p>
                                     <p className="text-[9px] font-code-brand text-black/30 mt-1">{r.calc}</p>
                                 </div>
-                                <p className="font-syne font-bold text-[40px] md:text-[52px] text-[#0047BB] leading-none">{r.target}</p>
+                                <p className="font-cabinet font-bold text-[40px] md:text-[52px] text-[#0047BB] leading-none">{r.target}</p>
                                 <p className="flex-1 text-[13px] text-black/40 leading-relaxed">{r.note}</p>
                             </div>
                             {i < arr.length - 1 && <div className="h-px bg-black/[0.08]" />}
@@ -433,7 +433,7 @@ export default function Q2OverviewPage() {
                         <motion.div key={c.month} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[18px] tracking-tight">{c.month}</p>
+                                    <p className="font-cabinet font-bold text-[18px] tracking-tight">{c.month}</p>
                                 </div>
                                 <ul className="flex-1 space-y-2">
                                     {c.targets.map((t, j) => (
@@ -457,7 +457,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 06 AUDIENCE & CONTENT / dark ── */}
             <section className="relative bg-[#0d0d0d] text-[#e8e1da] overflow-hidden">
-                <span className="absolute right-0 top-0 font-syne font-bold text-[22vw] text-white/[0.025] leading-none select-none pointer-events-none">
+                <span className="absolute right-0 top-0 font-cabinet font-bold text-[22vw] text-white/[0.025] leading-none select-none pointer-events-none">
                     REACH
                 </span>
 
@@ -473,7 +473,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-4 text-white">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-4 text-white">
                             {en ? <>The<br />flywheel.</> : <>Koleso.</>}
                         </h2>
                         <p className="text-[15px] text-white/35 mb-16 max-w-xl">
@@ -499,7 +499,7 @@ export default function Q2OverviewPage() {
                         <motion.div key={a.platform} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-12 py-8">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[22px] text-white tracking-tight">{a.platform}</p>
+                                    <p className="font-cabinet font-bold text-[22px] text-white tracking-tight">{a.platform}</p>
                                     <div className="flex items-baseline gap-2 mt-1">
                                         <p className="text-[13px] text-white/25">{a.current}</p>
                                         <p className="text-[#4d7fd4]">→</p>
@@ -562,7 +562,7 @@ export default function Q2OverviewPage() {
                     backgroundSize: "40px 40px",
                 }}
             >
-                <span className="absolute left-[-2vw] bottom-[-4vw] font-syne font-bold text-[20vw] text-white/[0.04] leading-none select-none pointer-events-none">
+                <span className="absolute left-[-2vw] bottom-[-4vw] font-cabinet font-bold text-[20vw] text-white/[0.04] leading-none select-none pointer-events-none">
                     CIRCLE
                 </span>
 
@@ -578,7 +578,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
                             {en
                                 ? <>Circle.<br /><span className="text-white/25">Four phases.</span></>
                                 : <>Circle.<br /><span className="text-white/25">Štyri fázy.</span></>}
@@ -639,7 +639,7 @@ export default function Q2OverviewPage() {
                         <motion.div key={ph.phase} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8 md:py-10">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[20px] text-white tracking-tight">{ph.phase}</p>
+                                    <p className="font-cabinet font-bold text-[20px] text-white tracking-tight">{ph.phase}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/40 mt-1">{ph.timeline}</p>
                                     {ph.now && (
                                         <span className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-white border border-white/30 px-2 py-0.5 inline-block mt-2">
@@ -669,7 +669,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 08 CORPORATE PIPELINE / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden">
-                <span className="absolute right-[-2vw] bottom-[-3vw] font-syne font-bold text-[24vw] text-black/[0.03] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-2vw] bottom-[-3vw] font-cabinet font-bold text-[24vw] text-black/[0.03] leading-none select-none pointer-events-none">
                     B2B
                 </span>
 
@@ -685,7 +685,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
                             {en ? <>The<br />pipeline.</> : <>Pipeline.</>}
                         </h2>
                     </motion.div>
@@ -766,11 +766,11 @@ export default function Q2OverviewPage() {
                         <motion.div key={c.company} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8 md:py-10">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[20px] tracking-tight">{c.company}</p>
+                                    <p className="font-cabinet font-bold text-[20px] tracking-tight">{c.company}</p>
                                     <span className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-[#0047BB] border border-[#0047BB]/30 px-2 py-0.5 inline-block mt-2">{c.status}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <p className="font-syne font-bold text-[36px] text-[#0047BB] leading-none mb-3">{c.value}</p>
+                                    <p className="font-cabinet font-bold text-[36px] text-[#0047BB] leading-none mb-3">{c.value}</p>
                                     <p className="text-[14px] text-black/55 leading-relaxed">{c.note}</p>
                                     <p className="text-[10px] font-code-brand uppercase tracking-[0.3em] text-black/30 mt-3">
                                         {en ? "Next:" : "Ďalší krok:"} {c.action}
@@ -791,7 +791,7 @@ export default function Q2OverviewPage() {
 
             {/* ── 09 RISKS / dark ── */}
             <section className="relative bg-[#0d0d0d] text-[#e8e1da] overflow-hidden">
-                <span className="absolute left-[-2vw] top-0 font-syne font-bold text-[24vw] text-white/[0.025] leading-none select-none pointer-events-none">
+                <span className="absolute left-[-2vw] top-0 font-cabinet font-bold text-[24vw] text-white/[0.025] leading-none select-none pointer-events-none">
                     RISK
                 </span>
 
@@ -807,7 +807,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16 text-white">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16 text-white">
                             {en
                                 ? <>What could<br /><span className="text-white/25">go wrong.</span></>
                                 : <>Čo môže<br /><span className="text-white/25">zle ísť.</span></>}
@@ -851,7 +851,7 @@ export default function Q2OverviewPage() {
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8 md:py-10">
                                 <div className="md:w-[200px] shrink-0">
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/30 mb-2">{en ? "Risk" : "Riziko"}</p>
-                                    <p className="font-syne font-bold text-[18px] text-white tracking-tight">{r.risk}</p>
+                                    <p className="font-cabinet font-bold text-[18px] text-white tracking-tight">{r.risk}</p>
                                 </div>
                                 <div className="flex-1 space-y-4">
                                     <div>
@@ -915,7 +915,7 @@ export default function Q2OverviewPage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tighter leading-[1.0] mb-16">
                             {en ? <>Do this<br /><span className="text-white/25">this week.</span></> : <>Urob toto<br /><span className="text-white/25">tento týždeň.</span></>}
                         </h2>
                     </motion.div>
@@ -937,9 +937,9 @@ export default function Q2OverviewPage() {
                     ]).map((item, i, arr) => (
                         <motion.div key={item.n} {...fadeUp(i * 0.04)}>
                             <div className="flex gap-6 md:gap-10 py-7">
-                                <span className="font-syne font-bold text-[32px] md:text-[40px] text-white/10 leading-none shrink-0 w-12 md:w-16">{item.n}</span>
+                                <span className="font-cabinet font-bold text-[32px] md:text-[40px] text-white/10 leading-none shrink-0 w-12 md:w-16">{item.n}</span>
                                 <div className="flex-1">
-                                    <p className="font-syne font-bold text-[18px] md:text-[20px] tracking-tight text-white">{item.title}</p>
+                                    <p className="font-cabinet font-bold text-[18px] md:text-[20px] tracking-tight text-white">{item.title}</p>
                                     <p className="text-[14px] text-white/45 mt-2 leading-relaxed">{item.detail}</p>
                                 </div>
                             </div>
@@ -965,7 +965,7 @@ export default function Q2OverviewPage() {
                 <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.5em] text-white/40 mb-6">
                     {en ? "Internal Document · Q2 2026" : "Interný Dokument · Q2 2026"}
                 </p>
-                <p className="font-syne font-bold text-[32px] md:text-[48px] tracking-tighter leading-[0.92] text-white/20">
+                <p className="font-cabinet font-bold text-[32px] md:text-[48px] tracking-tighter leading-[0.92] text-white/20">
                     Research Lab<br />by SORRYWECAN
                 </p>
                 <div className="mt-10 h-px bg-white/10" />

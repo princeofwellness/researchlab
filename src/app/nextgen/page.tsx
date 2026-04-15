@@ -335,7 +335,7 @@ export default function NextGenPage() {
                         </div>
                     </motion.div>
 
-                    <motion.h1 {...fade(0.2)} className="font-syne font-bold text-6xl md:text-8xl tracking-tighter leading-[0.92] mb-8">
+                    <motion.h1 {...fade(0.2)} className="font-cabinet font-bold text-6xl md:text-8xl tracking-tighter leading-[0.92] mb-8">
                         {c.hero.title1}
                         <br />
                         <span className="text-[#0047BB]">{c.hero.title2}</span>
@@ -368,7 +368,7 @@ export default function NextGenPage() {
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 block mb-4">
                             {c.challenge.label}
                         </span>
-                        <h2 className="font-syne font-bold text-5xl md:text-7xl tracking-tighter mb-8">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-7xl tracking-tighter mb-8">
                             {c.challenge.title}
                         </h2>
                         <p className="text-xl text-white/60 max-w-3xl leading-relaxed font-light">
@@ -387,7 +387,7 @@ export default function NextGenPage() {
                                 transition={{ delay: i * 0.1 }}
                                 className="bg-[#0a0a0a] p-8"
                             >
-                                <div className="font-syne font-bold text-4xl md:text-5xl text-[#0047BB] mb-3">{s.val}</div>
+                                <div className="font-cabinet font-bold text-4xl md:text-5xl text-[#0047BB] mb-3">{s.val}</div>
                                 <div className="text-xs text-white/50 leading-relaxed">{s.label}</div>
                             </motion.div>
                         ))}
@@ -404,7 +404,7 @@ export default function NextGenPage() {
                                 transition={{ delay: i * 0.08 }}
                                 className="bg-[#111] p-8"
                             >
-                                <div className="font-syne font-bold text-xl mb-2">{card.h}</div>
+                                <div className="font-cabinet font-bold text-xl mb-2">{card.h}</div>
                                 <div className="text-white/50 text-sm leading-relaxed">{card.s}</div>
                             </motion.div>
                         ))}
@@ -424,7 +424,7 @@ export default function NextGenPage() {
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB] block mb-4">
                             {c.method.label}
                         </span>
-                        <h2 className="font-syne font-bold text-5xl md:text-7xl tracking-tighter mb-6">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-7xl tracking-tighter mb-6">
                             {c.method.title}
                         </h2>
                         <p className="text-xl text-black/60 max-w-2xl leading-relaxed font-light">
@@ -443,14 +443,14 @@ export default function NextGenPage() {
                                 className="bg-[#f5f5f3] p-8 hover:bg-white transition-colors group"
                             >
                                 <div className="flex items-start justify-between mb-6">
-                                    <span className="font-syne font-bold text-4xl text-black/10 group-hover:text-[#0047BB]/20 transition-colors">
+                                    <span className="font-cabinet font-bold text-4xl text-black/10 group-hover:text-[#0047BB]/20 transition-colors">
                                         {p.num}
                                     </span>
                                     <span className="text-[9px] font-bold uppercase tracking-widest text-[#0047BB] border border-[#0047BB]/30 px-2 py-1">
                                         {p.tag}
                                     </span>
                                 </div>
-                                <h3 className="font-syne font-bold text-lg tracking-tight mb-3">{p.title}</h3>
+                                <h3 className="font-cabinet font-bold text-lg tracking-tight mb-3">{p.title}</h3>
                                 <p className="text-sm text-black/55 leading-relaxed">{p.desc}</p>
                             </motion.div>
                         ))}
@@ -470,7 +470,7 @@ export default function NextGenPage() {
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 block mb-4">
                             {c.curriculum.label}
                         </span>
-                        <h2 className="font-syne font-bold text-5xl md:text-7xl tracking-tighter mb-6">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-7xl tracking-tighter mb-6">
                             {c.curriculum.title}
                         </h2>
                         <p className="text-xl text-white/50 max-w-2xl leading-relaxed font-light">
@@ -490,7 +490,7 @@ export default function NextGenPage() {
                             >
                                 <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-12">
                                     <div className="flex-shrink-0">
-                                        <span className="font-syne font-bold text-5xl text-white/10">{m.num}</span>
+                                        <span className="font-cabinet font-bold text-5xl text-white/10">{m.num}</span>
                                     </div>
                                     <div className="flex-1">
                                         <div className="mb-1">
@@ -498,7 +498,7 @@ export default function NextGenPage() {
                                                 {lang === "en" ? `Block ${m.num}` : `Blok ${m.num}`}
                                             </span>
                                         </div>
-                                        <h3 className="font-syne font-bold text-2xl md:text-3xl tracking-tight mb-1">
+                                        <h3 className="font-cabinet font-bold text-2xl md:text-3xl tracking-tight mb-1">
                                             {m.title}
                                         </h3>
                                         <p className="text-white/40 text-sm mb-4 italic">{m.sub}</p>
@@ -530,7 +530,7 @@ export default function NextGenPage() {
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-black/40 block mb-4">
                             {c.why.label}
                         </span>
-                        <h2 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-6xl tracking-tighter">
                             {c.why.title}
                         </h2>
                     </motion.div>
@@ -565,7 +565,7 @@ export default function NextGenPage() {
                         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB] block mb-4">
                             {c.collab.label}
                         </span>
-                        <h2 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter mb-4">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-6xl tracking-tighter mb-4">
                             {c.collab.title}
                         </h2>
                         <p className="text-xl text-black/50 font-light">{c.collab.subtitle}</p>
@@ -581,7 +581,7 @@ export default function NextGenPage() {
                                 transition={{ delay: i * 0.08 }}
                                 className="bg-white p-8 hover:bg-[#0047BB] group transition-colors"
                             >
-                                <h3 className="font-syne font-bold text-lg mb-3 group-hover:text-white transition-colors">
+                                <h3 className="font-cabinet font-bold text-lg mb-3 group-hover:text-white transition-colors">
                                     {p.title}
                                 </h3>
                                 <p className="text-sm text-black/60 leading-relaxed group-hover:text-white/80 transition-colors">
@@ -601,10 +601,10 @@ export default function NextGenPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="font-syne font-bold text-5xl md:text-7xl tracking-tighter mb-4">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-7xl tracking-tighter mb-4">
                             {c.cta.title}
                         </h2>
-                        <h2 className="font-syne font-bold text-5xl md:text-7xl tracking-tighter mb-10 text-white/50">
+                        <h2 className="font-cabinet font-bold text-5xl md:text-7xl tracking-tighter mb-10 text-white/50">
                             {c.cta.title2}
                         </h2>
                         <p className="text-xl text-white/70 mb-12 font-light leading-relaxed">
@@ -626,7 +626,7 @@ export default function NextGenPage() {
             {/* FOOTER */}
             <footer className="py-8 px-6 md:px-20 bg-[#0a0a0a] text-white/30">
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-                    <span className="font-syne font-bold text-sm">
+                    <span className="font-cabinet font-bold text-sm">
                         RESEARCH<span className="text-[#0047BB]">LAB</span>
                     </span>
                     <span className="text-xs uppercase tracking-widest">

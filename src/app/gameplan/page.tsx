@@ -66,7 +66,7 @@ function HeroSection() {
                         Growth Architecture // 2025-2026
                     </span>
 
-                    <h1 className="font-syne font-bold text-[10vw] md:text-[6.5vw] leading-[0.9] tracking-tighter">
+                    <h1 className="font-cabinet font-bold text-[10vw] md:text-[6.5vw] leading-[0.9] tracking-tighter">
                         THE<br />
                         <span className="text-[#0047BB]">PLAYBOOK</span>
                     </h1>
@@ -161,7 +161,7 @@ function MainCharacterSection() {
                             <div className="w-10 h-10 border border-black/[0.06] bg-white flex items-center justify-center text-[#0047BB] mb-6 shadow-sm">
                                 <role.icon size={20} strokeWidth={1.5} />
                             </div>
-                            <h3 className="text-xl font-syne font-bold mb-4">{role.title}</h3>
+                            <h3 className="text-xl font-cabinet font-bold mb-4">{role.title}</h3>
                             <p className="text-sm text-black/60 leading-relaxed font-sans-brand flex-1">{role.desc}</p>
                         </motion.div>
                     ))}
@@ -200,7 +200,7 @@ function ContentMachineSection() {
                             <tbody className="divide-y divide-black/[0.06]">
                                 {content.map((row, i) => (
                                     <tr key={i} className="hover:bg-black/[0.02] transition-colors">
-                                        <td className="p-5 font-bold font-syne text-sm">{row.type}</td>
+                                        <td className="p-5 font-bold font-cabinet text-sm">{row.type}</td>
                                         <td className="p-5 text-black/60 text-sm hidden md:table-cell font-sans-brand">{row.format}</td>
                                         <td className="p-5 text-black/60 text-sm hidden md:table-cell font-sans-brand">{row.platform}</td>
                                         <td className="p-5 text-[#0047BB] font-code-brand text-xs font-bold text-right">{row.freq}</td>
@@ -211,7 +211,7 @@ function ContentMachineSection() {
                     </div>
 
                     <div className="p-8 border border-black/[0.06] bg-black/[0.03] flex flex-col justify-center space-y-6">
-                        <h3 className="text-2xl font-syne font-bold">The 1 → 10 Rule</h3>
+                        <h3 className="text-2xl font-cabinet font-bold">The 1 → 10 Rule</h3>
                         <p className="text-black/60 leading-relaxed font-serif-instrument italic text-lg">
                             Every piece becomes 10. <br/>
                             Anchor → clips → email → community thread → case study.
@@ -235,7 +235,7 @@ function SocialPlaybookSection() {
                     <div className="p-8 md:p-10 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all space-y-8">
                         <div className="flex items-center gap-4 border-b border-black/5 pb-6">
                             <Linkedin className="w-6 h-6 text-[#0047BB]" />
-                            <h3 className="text-xl font-syne font-bold">LinkedIn <span className="text-sm font-sans-brand font-normal text-black/40 ml-1">(Primary)</span></h3>
+                            <h3 className="text-xl font-cabinet font-bold">LinkedIn <span className="text-sm font-sans-brand font-normal text-black/40 ml-1">(Primary)</span></h3>
                         </div>
                         <ul className="space-y-4">
                             {["Long-form posts with strong hooks", "'Art meets tech' positioning", "Build-in-public threads", "Workflow teardowns with screenshots", "Comment engagement (reply to everyone)"].map((item, i) => (
@@ -253,7 +253,7 @@ function SocialPlaybookSection() {
                     <div className="p-8 md:p-10 border border-black/[0.06] bg-black/[0.03] hover:border-[#0047BB]/30 transition-all space-y-8">
                         <div className="flex items-center gap-4 border-b border-black/5 pb-6">
                             <Instagram className="w-6 h-6 text-[#0047BB]" />
-                            <h3 className="text-xl font-syne font-bold">Instagram <span className="text-sm font-sans-brand font-normal text-black/40 ml-1">(Secondary)</span></h3>
+                            <h3 className="text-xl font-cabinet font-bold">Instagram <span className="text-sm font-sans-brand font-normal text-black/40 ml-1">(Secondary)</span></h3>
                         </div>
                         <ul className="space-y-4">
                             {["Reels: quick AI demos, before/after", "Stories: daily, raw, behind-scenes", "Carousels: frameworks, comparisons", "Visual aesthetic focus", "Direct Message engagement"].map((item, i) => (
@@ -300,7 +300,7 @@ function CommunityArcSection() {
                             <div className="space-y-4">
                                 <div className="space-y-2">
                                     <span className="text-[10px] font-code-brand font-bold text-[#0047BB] uppercase tracking-[0.2em] block">{phase.time}</span>
-                                    <h3 className="text-lg font-syne font-bold leading-tight">{phase.title}</h3>
+                                    <h3 className="text-lg font-cabinet font-bold leading-tight">{phase.title}</h3>
                                 </div>
                                 <ul className="space-y-2">
                                     {phase.items.map((item, j) => (
@@ -327,13 +327,13 @@ function EmailArchitectureSection() {
                 
                 <div className="flex flex-col items-center space-y-6 max-w-3xl mx-auto">
                     <div className="px-8 py-4 border border-black/[0.06] bg-white text-center shadow-sm">
-                        <span className="font-bold font-syne">New Subscriber</span>
+                        <span className="font-bold font-cabinet">New Subscriber</span>
                     </div>
                     
                     <div className="h-8 w-px bg-black/10" />
                     
                     <div className="p-6 border-2 border-[#0047BB]/30 bg-[#0047BB]/5 text-center w-full max-w-md">
-                        <h4 className="font-bold text-[#0047BB] font-syne text-lg">Welcome Series</h4>
+                        <h4 className="font-bold text-[#0047BB] font-cabinet text-lg">Welcome Series</h4>
                         <p className="text-[10px] font-code-brand text-black/40 mt-2 uppercase tracking-wider">5 emails, 14 days • Value first, ask later</p>
                     </div>
 
@@ -352,17 +352,17 @@ function EmailArchitectureSection() {
                     <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="p-6 border border-black/[0.06] bg-black/[0.03] text-center space-y-3 hover:border-[#0047BB]/30 transition-colors">
                             <Mail className="w-5 h-5 mx-auto text-black/30" />
-                            <h4 className="font-bold font-syne">Weekly Newsletter</h4>
+                            <h4 className="font-bold font-cabinet">Weekly Newsletter</h4>
                             <p className="text-[10px] font-code-brand text-black/30 uppercase tracking-wider">Ongoing value</p>
                         </div>
                         <div className="p-6 border border-black/[0.06] bg-black/[0.03] text-center space-y-3 hover:border-[#0047BB]/30 transition-colors">
                             <RocketIcon className="w-5 h-5 mx-auto text-black/30" />
-                            <h4 className="font-bold font-syne">Launch Sequence</h4>
+                            <h4 className="font-bold font-cabinet">Launch Sequence</h4>
                             <p className="text-[10px] font-code-brand text-black/30 uppercase tracking-wider">When product opens</p>
                         </div>
                         <div className="p-6 border border-black/[0.06] bg-black/[0.03] text-center space-y-3 hover:border-[#0047BB]/30 transition-colors">
                             <RefreshCw className="w-5 h-5 mx-auto text-black/30" />
-                            <h4 className="font-bold font-syne">Re-engagement</h4>
+                            <h4 className="font-bold font-cabinet">Re-engagement</h4>
                             <p className="text-[10px] font-code-brand text-black/30 uppercase tracking-wider">If inactive 30 days</p>
                         </div>
                     </div>
@@ -399,7 +399,7 @@ function KeyInsightsSection() {
                             transition={{ delay: i * 0.05 }}
                             className="p-6 border border-black/[0.06] bg-white/50 hover:border-[#0047BB]/30 transition-colors group"
                         >
-                            <h4 className="font-bold mb-3 group-hover:text-[#0047BB] transition-colors font-syne leading-tight">{insight.title}</h4>
+                            <h4 className="font-bold mb-3 group-hover:text-[#0047BB] transition-colors font-cabinet leading-tight">{insight.title}</h4>
                             <p className="text-sm text-black/50 leading-relaxed font-sans-brand">{insight.desc}</p>
                         </motion.div>
                     ))}
@@ -417,7 +417,7 @@ function TheNicheSection() {
                     <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                         The Niche
                     </span>
-                    <h2 className="font-syne font-bold text-4xl md:text-5xl tracking-tighter">
+                    <h2 className="font-cabinet font-bold text-4xl md:text-5xl tracking-tighter">
                         Where Art Meets Technology
                     </h2>
                     <p className="text-lg text-black/60 font-serif-instrument italic">
@@ -452,7 +452,7 @@ function MetricsSection() {
         <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0a0a0a] text-white">
             <div className="max-w-5xl mx-auto space-y-16">
                 <div className="space-y-2 border-l-2 border-[#0047BB] pl-6">
-                    <h2 className="text-4xl md:text-5xl font-syne font-bold tracking-tighter">METRICS THAT MATTER</h2>
+                    <h2 className="text-4xl md:text-5xl font-cabinet font-bold tracking-tighter">METRICS THAT MATTER</h2>
                     <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40">Dashboard Preview</p>
                 </div>
                 
@@ -464,7 +464,7 @@ function MetricsSection() {
                 </div>
 
                 <div className="text-center pt-12">
-                    <p className="text-3xl md:text-4xl font-syne font-bold text-white/90">
+                    <p className="text-3xl md:text-4xl font-cabinet font-bold text-white/90">
                         "Stop planning. Start shipping. Proof compounds."
                     </p>
                 </div>
@@ -476,7 +476,7 @@ function MetricsSection() {
 function SectionHeader({ title, subtitle }: { title: string, subtitle: string }) {
     return (
         <div className="space-y-2 border-l-2 border-[#0047BB] pl-6">
-            <h2 className="text-4xl md:text-5xl font-syne font-bold tracking-tighter">{title}</h2>
+            <h2 className="text-4xl md:text-5xl font-cabinet font-bold tracking-tighter">{title}</h2>
             <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{subtitle}</p>
         </div>
     )

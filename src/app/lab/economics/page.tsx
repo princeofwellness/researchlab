@@ -25,7 +25,7 @@ export default function EconomicsPage() {
 
             {/* ── 01 HERO / blue ── */}
             <section className="relative min-h-screen bg-[#0047BB] text-white overflow-hidden flex flex-col" style={grid}>
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[20vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[20vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
                     30K
                 </span>
                 <div className="flex items-center justify-between px-8 md:px-16 pt-36 md:pt-40 pb-6">
@@ -41,7 +41,7 @@ export default function EconomicsPage() {
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40 block mb-6">
                             01 — The Target
                         </span>
-                        <h1 className="font-syne font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-8">
+                        <h1 className="font-cabinet font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-8">
                             €30,000/month<br />by Q4 2026.
                         </h1>
                         <p className="text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
@@ -56,7 +56,7 @@ export default function EconomicsPage() {
                         ].map(s => (
                             <div key={s.label} className="bg-white/[0.06] p-5 text-center">
                                 <p className="text-[9px] font-code-brand uppercase tracking-widest text-white/30 mb-1">{s.label}</p>
-                                <p className="font-syne font-bold text-2xl">{s.value}</p>
+                                <p className="font-cabinet font-bold text-2xl">{s.value}</p>
                                 <p className="text-[9px] font-code-brand text-white/30 mt-1">{s.note}</p>
                             </div>
                         ))}
@@ -66,7 +66,7 @@ export default function EconomicsPage() {
 
             {/* ── 02 B2B MATH / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[16vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[16vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">
                     B2B
                 </span>
                 <div className="max-w-5xl mx-auto relative">
@@ -74,7 +74,7 @@ export default function EconomicsPage() {
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30 block mb-4">
                             02 — B2B Revenue Math
                         </span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">
                             €1,000/seat.<br />10 seats minimum.
                         </h2>
                         <p className="text-black/50 mt-6 max-w-2xl">
@@ -91,7 +91,7 @@ export default function EconomicsPage() {
                         ].map(s => (
                             <div key={s.label} className="p-6 border border-black/10 text-center">
                                 <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 mb-2">{s.label}</p>
-                                <p className="font-syne font-bold text-4xl text-[#0047BB] mb-1">{s.value}</p>
+                                <p className="font-cabinet font-bold text-4xl text-[#0047BB] mb-1">{s.value}</p>
                                 <p className="text-xs text-black/40">{s.sub}</p>
                             </div>
                         ))}
@@ -133,12 +133,12 @@ export default function EconomicsPage() {
                                 <motion.div key={p.path} {...fadeUp(i * 0.07)} className={`p-6 border ${p.color}`}>
                                     <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
                                         <div>
-                                            <p className="font-syne font-bold text-xl tracking-tight">{p.path}</p>
+                                            <p className="font-cabinet font-bold text-xl tracking-tight">{p.path}</p>
                                             <p className="text-sm text-black/40 mt-1">{p.monthly}</p>
                                         </div>
                                         <div className="text-right">
                                             <p className="text-[9px] font-code-brand uppercase tracking-widest text-black/30 mb-1">{p.math}</p>
-                                            <p className="font-syne font-bold text-3xl text-[#0047BB]">{p.result}</p>
+                                            <p className="font-cabinet font-bold text-3xl text-[#0047BB]">{p.result}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
@@ -161,7 +161,7 @@ export default function EconomicsPage() {
 
             {/* ── 03 PLATFORM CEILING / dark ── */}
             <section className="relative bg-[#0d0d0d] text-white overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute left-0 bottom-0 font-syne font-bold text-[14vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">
+                <span className="absolute left-0 bottom-0 font-cabinet font-bold text-[14vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">
                     1000
                 </span>
                 <div className="max-w-5xl mx-auto relative">
@@ -169,7 +169,7 @@ export default function EconomicsPage() {
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/30 block mb-4">
                             03 — Platform Ceiling
                         </span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">
                             1,000 members.<br />€49/month.<br />That's €49k MRR.
                         </h2>
                         <p className="text-white/40 mt-6 max-w-2xl">
@@ -192,9 +192,9 @@ export default function EconomicsPage() {
                                     {i === 3 && <span className="text-[9px] font-code-brand uppercase tracking-[0.2em] text-[#0047BB] border border-[#0047BB]/30 px-2 py-0.5">Q4 Target</span>}
                                 </div>
                                 <div className="flex items-baseline gap-3 mb-2">
-                                    <p className="font-syne font-bold text-3xl">{s.members}</p>
+                                    <p className="font-cabinet font-bold text-3xl">{s.members}</p>
                                     <p className="text-white/30 text-sm">members × {s.price}</p>
-                                    <p className="font-syne font-bold text-xl text-[#0047BB] ml-auto">{s.mrr}</p>
+                                    <p className="font-cabinet font-bold text-xl text-[#0047BB] ml-auto">{s.mrr}</p>
                                 </div>
                                 <p className="text-white/30 text-xs">{s.note}</p>
                             </motion.div>
@@ -219,7 +219,7 @@ export default function EconomicsPage() {
 
             {/* ── 04 OWNERSHIP / blue ── */}
             <section className="relative bg-[#0047BB] text-white overflow-hidden py-32 px-8 md:px-16" style={grid}>
-                <span className="absolute right-0 top-1/2 -translate-y-1/2 font-syne font-bold text-[16vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
+                <span className="absolute right-0 top-1/2 -translate-y-1/2 font-cabinet font-bold text-[16vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
                     EQUITY
                 </span>
                 <div className="max-w-5xl mx-auto relative">
@@ -227,7 +227,7 @@ export default function EconomicsPage() {
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40 block mb-4">
                             04 — Ownership Structure
                         </span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">
                             How we divide<br />the pie.
                         </h2>
                         <p className="text-white/50 mt-6 max-w-2xl">
@@ -239,7 +239,7 @@ export default function EconomicsPage() {
                     <motion.div {...fadeUp(0.05)} className="p-6 border border-white/10 bg-white/[0.05] mb-8">
                         <p className="text-[9px] font-code-brand uppercase tracking-widest text-white/40 mb-4">The Fixed Piece — SORRYWECAN Stake</p>
                         <div className="flex items-center gap-6 flex-wrap">
-                            <p className="font-syne font-bold text-5xl">33–40%</p>
+                            <p className="font-cabinet font-bold text-5xl">33–40%</p>
                             <div className="flex-1 min-w-[200px]">
                                 <p className="text-white/60 text-sm leading-relaxed">
                                     SORRYWECAN owns a proportional stake as the parent entity providing brand, network, legal structure, and operating infrastructure. This stake does not dilute with partner additions — it comes from the total. The exact number (33% or 40%) depends on how much operational weight SORRYWECAN carries vs. the individual founders.
@@ -298,11 +298,11 @@ export default function EconomicsPage() {
                                 },
                             ].map((m, mi) => (
                                 <motion.div key={m.model} {...fadeUp(mi * 0.07)} className={`p-6 border ${m.highlight ? "border-white bg-white/10" : "border-white/10"}`}>
-                                    <p className="font-syne font-bold text-lg tracking-tight mb-4">{m.model}</p>
+                                    <p className="font-cabinet font-bold text-lg tracking-tight mb-4">{m.model}</p>
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mb-4">
                                         {m.split.map(s => (
                                             <div key={s.who} className="p-3 bg-white/[0.06] border border-white/10">
-                                                <p className="font-syne font-bold text-2xl text-white mb-1">{s.pct}</p>
+                                                <p className="font-cabinet font-bold text-2xl text-white mb-1">{s.pct}</p>
                                                 <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/70 mb-1">{s.who}</p>
                                                 <p className="text-[10px] text-white/30">{s.role}</p>
                                             </div>
@@ -332,7 +332,7 @@ export default function EconomicsPage() {
 
             {/* ── 05 REVENUE DISTRIBUTION / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[16vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[16vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">
                     SPLIT
                 </span>
                 <div className="max-w-5xl mx-auto relative">
@@ -340,7 +340,7 @@ export default function EconomicsPage() {
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30 block mb-4">
                             05 — Revenue Distribution
                         </span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">
                             What €30k/month<br />looks like in practice.
                         </h2>
                     </motion.div>
@@ -363,7 +363,7 @@ export default function EconomicsPage() {
                                             <p className="text-xs text-black/40 mt-0.5">{r.note}</p>
                                         </div>
                                         <div className="text-right">
-                                            <p className="font-syne font-bold text-xl text-[#0047BB]">{r.monthly}<span className="text-xs font-sans font-normal text-black/30 ml-1">/mo</span></p>
+                                            <p className="font-cabinet font-bold text-xl text-[#0047BB]">{r.monthly}<span className="text-xs font-sans font-normal text-black/30 ml-1">/mo</span></p>
                                             <p className="text-xs text-black/40">{r.quarterly} /quarter</p>
                                         </div>
                                     </div>
@@ -404,7 +404,7 @@ export default function EconomicsPage() {
                             ].map((p, i) => (
                                 <motion.div key={p.type} {...fadeUp(i * 0.07)} className="p-6 border border-black/10">
                                     <div className="flex items-start justify-between mb-3">
-                                        <p className="font-syne font-bold text-lg tracking-tight">{p.type}</p>
+                                        <p className="font-cabinet font-bold text-lg tracking-tight">{p.type}</p>
                                         <span className="text-[9px] font-code-brand uppercase tracking-[0.2em] text-[#0047BB] border border-[#0047BB]/30 px-2 py-1 shrink-0">{p.stake}</span>
                                     </div>
                                     <p className="text-sm text-black/60 leading-relaxed mb-3">{p.desc}</p>
@@ -424,7 +424,7 @@ export default function EconomicsPage() {
             <footer className="bg-[#0d0d0d] text-white border-t border-white/[0.06] px-8 md:px-16 py-12">
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                     <div>
-                        <p className="font-syne font-bold text-xl tracking-tighter">RESEARCH<span className="text-[#0047BB]">LAB</span></p>
+                        <p className="font-cabinet font-bold text-xl tracking-tighter">RESEARCH<span className="text-[#0047BB]">LAB</span></p>
                         <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/20 mt-1">Economics · Internal · Confidential</p>
                         <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/10 mt-0.5">SORRYWECAN // 2026</p>
                     </div>

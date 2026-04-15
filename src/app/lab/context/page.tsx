@@ -21,7 +21,7 @@ function Label({ children }: { children: React.ReactNode }) {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
     return (
-        <h2 className="font-syne font-bold text-2xl md:text-3xl tracking-tighter mt-2 mb-6">
+        <h2 className="font-cabinet font-bold text-2xl md:text-3xl tracking-tighter mt-2 mb-6">
             {children}
         </h2>
     )
@@ -70,7 +70,7 @@ export default function ContextPage() {
                     {/* Header */}
                     <motion.div {...fade(0)} className="mb-16">
                         <Label>Master Context — Research Lab</Label>
-                        <h1 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter mt-3 leading-[0.95]">
+                        <h1 className="font-cabinet font-bold text-5xl md:text-6xl tracking-tighter mt-3 leading-[0.95]">
                             The Bible
                         </h1>
                         <p className="text-black/50 mt-4 max-w-xl">
@@ -145,7 +145,7 @@ export default function ContextPage() {
                         <div className="space-y-6">
                             <div className="p-6 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
                                 <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-2">Mission</p>
-                                <p className="text-xl font-syne font-bold tracking-tight leading-snug">
+                                <p className="text-xl font-cabinet font-bold tracking-tight leading-snug">
                                     Distill what matters from the noise. Teach people how to think with AI — not just use it. Build the most credible AI education community in the Slovak-speaking world and beyond.
                                 </p>
                             </div>
@@ -213,7 +213,7 @@ export default function ContextPage() {
                         <div className="space-y-6">
                             <div className="p-4 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
                                 <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-2">The Aesthetic in One Sentence</p>
-                                <p className="font-syne font-bold text-lg">A research institution that moves fast — warm, rigorous, and sharp.</p>
+                                <p className="font-cabinet font-bold text-lg">A research institution that moves fast — warm, rigorous, and sharp.</p>
                             </div>
 
                             <div>

@@ -358,7 +358,7 @@ export default function CorporateOffer() {
                         <p className="text-[11px] md:text-[13px] font-code-brand font-bold uppercase tracking-[0.4em] text-[#0047BB] mb-10 md:mb-14">
                             {t.hero.label}
                         </p>
-                        <h1 className="font-syne font-bold text-[44px] md:text-[80px] leading-[0.92] tracking-tighter">
+                        <h1 className="font-cabinet font-bold text-[44px] md:text-[80px] leading-[0.92] tracking-tighter">
                             {t.hero.title.line1}<br />
                             <span className="text-[#0047BB]">{t.hero.title.line2}</span>
                         </h1>
@@ -380,7 +380,7 @@ export default function CorporateOffer() {
                         <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.35em] text-[#0047BB] mb-6 md:mb-8">
                             The Situation
                         </p>
-                        <h2 className="font-syne font-bold text-[28px] md:text-[48px] tracking-tight mb-8 md:mb-12">
+                        <h2 className="font-cabinet font-bold text-[28px] md:text-[48px] tracking-tight mb-8 md:mb-12">
                             {t.problem.title}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
@@ -405,7 +405,7 @@ export default function CorporateOffer() {
                                 <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.35em] text-[#0047BB]">
                                     {t.day1.label}
                                 </p>
-                                <h2 className="font-syne font-bold text-[32px] md:text-[52px] tracking-tight mt-1">
+                                <h2 className="font-cabinet font-bold text-[32px] md:text-[52px] tracking-tight mt-1">
                                     {t.day1.title}
                                 </h2>
                             </div>
@@ -417,7 +417,7 @@ export default function CorporateOffer() {
                             {t.day1.parts.map((part, i) => (
                                 <div key={i} className={`p-4 md:p-5 border-2 flex flex-col ${i === 0 ? 'border-[#0047BB] bg-[#0047BB]/5' : 'border-black/10'}`}>
                                     <p className="text-[10px] md:text-[11px] font-code-brand font-bold text-black/25">{part.num}</p>
-                                    <p className="font-syne font-bold text-[18px] md:text-[22px] mt-1 tracking-tight leading-tight">{part.title}</p>
+                                    <p className="font-cabinet font-bold text-[18px] md:text-[22px] mt-1 tracking-tight leading-tight">{part.title}</p>
                                     <p className="text-[9px] md:text-[10px] font-code-brand text-black/35 mt-1 uppercase tracking-widest">{part.time}</p>
                                     <p className="text-[11px] md:text-[12px] text-black/55 mt-3 leading-relaxed flex-grow">{part.desc}</p>
                                     <p className="text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-[0.2em] text-[#0047BB] mt-3">{part.lead}</p>
@@ -438,7 +438,7 @@ export default function CorporateOffer() {
                                 <p className="text-[10px] md:text-[11px] font-code-brand font-bold uppercase tracking-[0.35em] text-[#0047BB]">
                                     {t.day2.label}
                                 </p>
-                                <h2 className="font-syne font-bold text-[32px] md:text-[52px] tracking-tight mt-1">
+                                <h2 className="font-cabinet font-bold text-[32px] md:text-[52px] tracking-tight mt-1">
                                     {t.day2.title}
                                 </h2>
                             </div>
@@ -450,7 +450,7 @@ export default function CorporateOffer() {
                             {t.day2.parts.map((part, i) => (
                                 <div key={i} className={`p-4 md:p-5 border-2 flex flex-col ${i === 3 ? 'border-[#0047BB] bg-[#0047BB]/5' : 'border-black/10'}`}>
                                     <p className="text-[10px] md:text-[11px] font-code-brand font-bold text-black/25">{part.num}</p>
-                                    <p className="font-syne font-bold text-[18px] md:text-[22px] mt-1 tracking-tight leading-tight">{part.title}</p>
+                                    <p className="font-cabinet font-bold text-[18px] md:text-[22px] mt-1 tracking-tight leading-tight">{part.title}</p>
                                     <p className="text-[9px] md:text-[10px] font-code-brand text-black/35 mt-1 uppercase tracking-widest">{part.time}</p>
                                     <p className="text-[11px] md:text-[12px] text-black/55 mt-3 leading-relaxed flex-grow">{part.desc}</p>
                                     <p className="text-[9px] md:text-[10px] font-code-brand font-bold uppercase tracking-[0.2em] text-[#0047BB] mt-3">{part.lead}</p>
@@ -478,7 +478,7 @@ export default function CorporateOffer() {
                                     <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                                         {card.role}
                                     </p>
-                                    <p className="font-syne font-bold text-[22px] md:text-[26px] mt-2 tracking-tight leading-tight">
+                                    <p className="font-cabinet font-bold text-[22px] md:text-[26px] mt-2 tracking-tight leading-tight">
                                         {card.name}
                                     </p>
                                     <p className="text-[12px] md:text-[13px] text-black/55 mt-4 leading-relaxed flex-grow">
@@ -499,7 +499,7 @@ export default function CorporateOffer() {
                 {/* ── SLIDE 6: OUTCOMES ── */}
                 <div className={pageClass}>
                     <div className="max-w-5xl w-full">
-                        <h2 className="font-syne font-bold text-[32px] md:text-[52px] tracking-tight text-center mb-8 md:mb-12">
+                        <h2 className="font-cabinet font-bold text-[32px] md:text-[52px] tracking-tight text-center mb-8 md:mb-12">
                             {t.outcomes.title}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
@@ -522,7 +522,7 @@ export default function CorporateOffer() {
                 {/* ── SLIDE 7: DETAILS + CTA ── */}
                 <div className={pageClass}>
                     <div className="max-w-4xl w-full text-center">
-                        <h2 className="font-syne font-bold text-[44px] md:text-[72px] tracking-tighter mb-2">
+                        <h2 className="font-cabinet font-bold text-[44px] md:text-[72px] tracking-tighter mb-2">
                             {t.cta.headline}
                         </h2>
                         <p className="text-[15px] md:text-[18px] text-black/45 mb-8 md:mb-12">

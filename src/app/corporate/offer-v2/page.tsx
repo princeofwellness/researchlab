@@ -99,7 +99,7 @@ export default function CorporateOfferV2() {
                     <div className="flex-1 flex flex-col md:flex-row items-end md:items-center px-10 md:px-16 py-10 md:py-0 gap-0">
                         {/* Headline */}
                         <div className="flex-1">
-                            <h1 className="font-syne font-bold leading-[0.88] tracking-tighter text-[58px] md:text-[92px] text-white">
+                            <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[58px] md:text-[92px] text-white">
                                 {en ? <>Corporate<br />Workshop.</> : <>Firemný<br />Workshop.</>}
                             </h1>
                             <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[320px] leading-relaxed">
@@ -115,7 +115,7 @@ export default function CorporateOfferV2() {
                                 <p className="text-[9px] font-code-brand uppercase tracking-[0.4em] text-white/30 mb-1">
                                     {en ? "Investment" : "Investícia"}
                                 </p>
-                                <p className="font-syne font-bold text-[68px] text-white leading-none">€600</p>
+                                <p className="font-cabinet font-bold text-[68px] text-white leading-none">€600</p>
                                 <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/35 mt-1">
                                     {en ? "per person + VAT" : "na osobu + DPH"}
                                 </p>
@@ -135,7 +135,7 @@ export default function CorporateOfferV2() {
                             <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/30">
                                 {en ? "Investment" : "Investícia"}
                             </p>
-                            <p className="font-syne font-bold text-[44px] text-white leading-none mt-1">€600</p>
+                            <p className="font-cabinet font-bold text-[44px] text-white leading-none mt-1">€600</p>
                             <p className="text-[9px] font-code-brand text-white/35">
                                 {en ? "per person + VAT" : "na osobu + DPH"}
                             </p>
@@ -158,7 +158,7 @@ export default function CorporateOfferV2() {
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
                     {/* Watermark */}
-                    <span className="absolute right-[-20px] top-1/2 -translate-y-1/2 font-syne font-bold text-[200px] md:text-[280px] text-black/[0.04] leading-none select-none pointer-events-none">
+                    <span className="absolute right-[-20px] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[200px] md:text-[280px] text-black/[0.04] leading-none select-none pointer-events-none">
                         AI
                     </span>
 
@@ -172,7 +172,7 @@ export default function CorporateOfferV2() {
                     <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-10 md:py-0 gap-10 items-center">
                         {/* Left: Big statement */}
                         <div className="flex-1 md:pr-12">
-                            <h2 className="font-syne font-bold text-[34px] md:text-[52px] tracking-tight leading-[1.0]">
+                            <h2 className="font-cabinet font-bold text-[34px] md:text-[52px] tracking-tight leading-[1.0]">
                                 {en
                                     ? <>{`Your team`}<br />{`is using AI.`}<br /><span className="text-black/25">Randomly.</span></>
                                     : <>{`Váš tím`}<br />{`používa AI.`}<br /><span className="text-black/25">Náhodne.</span></>}
@@ -217,7 +217,7 @@ export default function CorporateOfferV2() {
                     {/* Circle motif */}
                     <CircleMotif className="absolute right-8 md:right-14 top-1/2 -translate-y-1/2 w-44 md:w-60 h-44 md:h-60 text-white" />
                     {/* Watermark */}
-                    <span className="absolute left-0 bottom-[-10px] font-syne font-bold text-[150px] md:text-[200px] text-white/[0.03] leading-none select-none pointer-events-none">
+                    <span className="absolute left-0 bottom-[-10px] font-cabinet font-bold text-[150px] md:text-[200px] text-white/[0.03] leading-none select-none pointer-events-none">
                         01
                     </span>
 
@@ -234,7 +234,7 @@ export default function CorporateOfferV2() {
                     <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-8 md:py-0 gap-8">
                         {/* Left */}
                         <div className="w-full md:w-[200px] flex flex-col justify-center shrink-0">
-                            <h2 className="font-syne font-bold text-[36px] md:text-[46px] leading-[0.92] tracking-tighter text-white">
+                            <h2 className="font-cabinet font-bold text-[36px] md:text-[46px] leading-[0.92] tracking-tighter text-white">
                                 {en ? <>Thinking<br />before<br />tools.</> : <>Myslenie<br />pred<br />nástrojmi.</>}
                             </h2>
                             <p className="mt-5 text-[11px] text-white/35 leading-relaxed max-w-[170px]">
@@ -292,7 +292,7 @@ export default function CorporateOfferV2() {
                     }}
                 >
                     {/* Watermark */}
-                    <span className="absolute right-[-10px] bottom-[-10px] font-syne font-bold text-[150px] md:text-[200px] text-white/[0.05] leading-none select-none pointer-events-none">
+                    <span className="absolute right-[-10px] bottom-[-10px] font-cabinet font-bold text-[150px] md:text-[200px] text-white/[0.05] leading-none select-none pointer-events-none">
                         02
                     </span>
 
@@ -309,7 +309,7 @@ export default function CorporateOfferV2() {
                     <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-8 md:py-0 gap-8">
                         {/* Left */}
                         <div className="w-full md:w-[200px] flex flex-col justify-center shrink-0">
-                            <h2 className="font-syne font-bold text-[36px] md:text-[46px] leading-[0.92] tracking-tighter text-white">
+                            <h2 className="font-cabinet font-bold text-[36px] md:text-[46px] leading-[0.92] tracking-tighter text-white">
                                 {en ? <>Tools.<br />Prompts.<br />Your work.</> : <>Nástroje.<br />Prompty.<br />Vaša práca.</>}
                             </h2>
                             <p className="mt-5 text-[11px] text-white/40 leading-relaxed max-w-[170px]">
@@ -358,7 +358,7 @@ export default function CorporateOfferV2() {
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
                     {/* Background watermark */}
-                    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-syne font-bold text-[160px] md:text-[220px] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter whitespace-nowrap">
+                    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-cabinet font-bold text-[160px] md:text-[220px] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter whitespace-nowrap">
                         WHO
                     </span>
 
@@ -379,7 +379,7 @@ export default function CorporateOfferV2() {
                             <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#0047BB] mb-5">
                                 {en ? "Vision & Community" : "Vízia & Komunita"}
                             </p>
-                            <h3 className="font-syne font-bold leading-[0.9] tracking-tighter text-[46px] md:text-[60px]">
+                            <h3 className="font-cabinet font-bold leading-[0.9] tracking-tighter text-[46px] md:text-[60px]">
                                 Tiep<br />Le Dinh
                             </h3>
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
@@ -399,7 +399,7 @@ export default function CorporateOfferV2() {
                             <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#0047BB] mb-5">
                                 {en ? "Clarity & Decision" : "Jasnosť & Rozhodnutie"}
                             </p>
-                            <h3 className="font-syne font-bold leading-[0.9] tracking-tighter text-[46px] md:text-[60px]">
+                            <h3 className="font-cabinet font-bold leading-[0.9] tracking-tighter text-[46px] md:text-[60px]">
                                 Roman<br />Pii Wagner
                             </h3>
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
@@ -436,7 +436,7 @@ export default function CorporateOfferV2() {
                     <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-8 md:py-0 gap-10 items-center">
                         {/* Left: section title */}
                         <div className="w-full md:w-[170px] shrink-0 flex flex-col justify-center">
-                            <h2 className="font-syne font-bold text-[44px] md:text-[56px] leading-[0.88] tracking-tighter text-white">
+                            <h2 className="font-cabinet font-bold text-[44px] md:text-[56px] leading-[0.88] tracking-tighter text-white">
                                 {en ? <>Six<br />things.</> : <>Šesť<br />vecí.</>}
                             </h2>
                         </div>
@@ -490,7 +490,7 @@ export default function CorporateOfferV2() {
                     <div className="flex-1 flex flex-col md:flex-row items-stretch">
                         {/* Left: headline */}
                         <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-12 md:py-0">
-                            <h2 className="font-syne font-bold text-[64px] md:text-[100px] leading-[0.87] tracking-tighter text-white">
+                            <h2 className="font-cabinet font-bold text-[64px] md:text-[100px] leading-[0.87] tracking-tighter text-white">
                                 {en ? <>Let's<br />talk.</> : <>Pobavme<br />sa.</>}
                             </h2>
                             <p className="mt-7 text-[14px] text-white/45 max-w-xs leading-relaxed">

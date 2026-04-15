@@ -159,7 +159,7 @@ const principles = [
 
 const SectionHeader = ({ title, subtitle }: { title: string, subtitle: string }) => (
   <div className="space-y-2 border-l-2 border-[#0047BB] pl-6 mb-12">
-    <h2 className="text-4xl md:text-5xl font-syne font-bold tracking-tighter text-[#0a0a0a]">{title}</h2>
+    <h2 className="text-4xl md:text-5xl font-cabinet font-bold tracking-tighter text-[#0a0a0a]">{title}</h2>
     <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/40">{subtitle}</p>
   </div>
 )
@@ -213,7 +213,7 @@ export default function GrowthPlanPage() {
               </span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-syne font-bold tracking-tighter leading-[0.9]">
+            <h1 className="text-6xl md:text-8xl font-cabinet font-bold tracking-tighter leading-[0.9]">
               GROWTH<br/>PLAN
             </h1>
             
@@ -231,7 +231,7 @@ export default function GrowthPlanPage() {
           <div className="mb-12">
             <div className="inline-flex items-center gap-4 px-6 py-3 bg-[#0047BB] text-white rounded-lg shadow-lg shadow-[#0047BB]/20">
               <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.2em] opacity-80">Current Phase</span>
-              <span className="text-lg font-syne font-bold">PHASE 1: PROVE IT</span>
+              <span className="text-lg font-cabinet font-bold">PHASE 1: PROVE IT</span>
             </div>
           </div>
 
@@ -248,7 +248,7 @@ export default function GrowthPlanPage() {
                 <div className="flex justify-between items-start mb-3">
                   <metric.icon className="w-4 h-4 text-black/30 group-hover:text-[#0047BB] transition-colors" />
                 </div>
-                <div className="text-2xl font-syne font-bold text-[#0a0a0a] mb-1">{metric.value}</div>
+                <div className="text-2xl font-cabinet font-bold text-[#0a0a0a] mb-1">{metric.value}</div>
                 <div className="text-[10px] font-code-brand font-bold uppercase tracking-wider text-black/40 mb-1">{metric.label}</div>
                 <div className="text-xs font-serif-instrument italic text-black/50">{metric.sub}</div>
               </motion.div>
@@ -281,7 +281,7 @@ export default function GrowthPlanPage() {
                 
                 <div className="space-y-4">
                   <div>
-                    <h3 className={`text-xl font-syne font-bold mb-1 ${phase.status === 'active' ? 'text-[#0047BB]' : 'text-[#0a0a0a]'}`}>
+                    <h3 className={`text-xl font-cabinet font-bold mb-1 ${phase.status === 'active' ? 'text-[#0047BB]' : 'text-[#0a0a0a]'}`}>
                       {phase.title}
                     </h3>
                     <div className="flex items-center gap-2 text-[10px] font-code-brand font-bold uppercase tracking-wider text-black/50">
@@ -359,7 +359,7 @@ export default function GrowthPlanPage() {
                 transition={{ delay: i * 0.1 }}
                 className="space-y-6"
               >
-                <h3 className="text-lg font-syne font-bold border-b-2 border-[#0047BB]/20 pb-2 text-[#0047BB]">
+                <h3 className="text-lg font-cabinet font-bold border-b-2 border-[#0047BB]/20 pb-2 text-[#0047BB]">
                   {category.category}
                 </h3>
                 <div className="space-y-4">

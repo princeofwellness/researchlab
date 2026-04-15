@@ -21,7 +21,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── HERO / blue ── */}
             <section className="relative min-h-screen bg-[#0047BB] text-white overflow-hidden flex flex-col">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[24vw] text-white/[0.04] leading-none select-none pointer-events-none">
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[24vw] text-white/[0.04] leading-none select-none pointer-events-none">
                     SIGNAL
                 </span>
 
@@ -36,7 +36,7 @@ export default function ContentArchitecturePage() {
                         <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.5em] text-white/40 mb-6">
                             Intelligence Filter + Builder Toolkit
                         </p>
-                        <h1 className="font-syne font-bold text-[14vw] md:text-[11vw] leading-[0.85] tracking-tighter text-white">
+                        <h1 className="font-cabinet font-bold text-[14vw] md:text-[11vw] leading-[0.85] tracking-tighter text-white">
                             Content.<br />Architecture.
                         </h1>
                     </motion.div>
@@ -56,7 +56,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── THE FUNNEL / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden">
-                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-syne font-bold text-[20vw] text-black/[0.035] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[20vw] text-black/[0.035] leading-none select-none pointer-events-none">
                     WHO
                 </span>
 
@@ -70,7 +70,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
                             Stranger<br /><span className="text-black/25">to Advocate.</span>
                         </h2>
                         <p className="text-[15px] text-black/45 mb-16 max-w-lg">
@@ -113,7 +113,7 @@ export default function ContentArchitecturePage() {
                         <motion.div key={f.stage} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8">
                                 <div className="md:w-[220px] shrink-0">
-                                    <p className="font-syne font-bold text-[18px] tracking-tight">{f.stage}</p>
+                                    <p className="font-cabinet font-bold text-[18px] tracking-tight">{f.stage}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-[#0047BB] mt-1">{f.trigger}</p>
                                 </div>
                                 <div className="flex-1">
@@ -135,7 +135,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── 4 PILLARS / dark ── */}
             <section className="relative bg-[#0d0d0d] text-[#e8e1da] overflow-hidden">
-                <span className="absolute left-[-2vw] top-1/2 -translate-y-1/2 font-syne font-bold text-[20vw] text-white/[0.025] leading-none select-none pointer-events-none">
+                <span className="absolute left-[-2vw] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[20vw] text-white/[0.025] leading-none select-none pointer-events-none">
                     FOUR
                 </span>
 
@@ -149,7 +149,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-16 text-white">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-16 text-white">
                             Four pillars.<br /><span className="text-white/25">One system.</span>
                         </h2>
                     </motion.div>
@@ -195,8 +195,8 @@ export default function ContentArchitecturePage() {
                         <motion.div key={p.n} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-10 md:py-12">
                                 <div className="md:w-[220px] shrink-0">
-                                    <span className="font-syne font-bold text-[48px] text-white/10 leading-none">{p.n}</span>
-                                    <p className="font-syne font-bold text-[20px] text-white tracking-tight mt-1">{p.title}</p>
+                                    <span className="font-cabinet font-bold text-[48px] text-white/10 leading-none">{p.n}</span>
+                                    <p className="font-cabinet font-bold text-[20px] text-white tracking-tight mt-1">{p.title}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-[#4d7fd4] mt-1">{p.sub}</p>
                                 </div>
                                 <div className="flex-1 space-y-5">
@@ -236,7 +236,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── 60/30/10 / blue ── */}
             <section className="relative bg-[#0047BB] text-white overflow-hidden">
-                <span className="absolute right-[-1vw] bottom-[-2vw] font-syne font-bold text-[28vw] text-white/[0.04] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-1vw] bottom-[-2vw] font-cabinet font-bold text-[28vw] text-white/[0.04] leading-none select-none pointer-events-none">
                     60
                 </span>
 
@@ -250,7 +250,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
                             The 60/30/10<br /><span className="text-white/25">rule.</span>
                         </h2>
                         <p className="text-[15px] text-white/45 mb-16 max-w-lg">
@@ -299,7 +299,7 @@ export default function ContentArchitecturePage() {
                         <motion.div key={c.pct} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-10 md:py-12">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[52px] md:text-[64px] leading-none text-white">{c.pct}</p>
+                                    <p className="font-cabinet font-bold text-[52px] md:text-[64px] leading-none text-white">{c.pct}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.35em] text-white/40 mt-1">{c.label}</p>
                                 </div>
                                 <div className="flex-1 space-y-5">
@@ -334,7 +334,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── PUBLISHING RHYTHM / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden">
-                <span className="absolute left-[-2vw] bottom-[-3vw] font-syne font-bold text-[22vw] text-black/[0.03] leading-none select-none pointer-events-none">
+                <span className="absolute left-[-2vw] bottom-[-3vw] font-cabinet font-bold text-[22vw] text-black/[0.03] leading-none select-none pointer-events-none">
                     WHEN
                 </span>
 
@@ -348,7 +348,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
                             Rhythm,<br /><span className="text-black/25">not volume.</span>
                         </h2>
                         <p className="text-[15px] text-black/45 mb-16 max-w-lg">
@@ -396,7 +396,7 @@ export default function ContentArchitecturePage() {
                         <motion.div key={r.cadence} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8 md:py-10">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[22px] tracking-tight">{r.cadence}</p>
+                                    <p className="font-cabinet font-bold text-[22px] tracking-tight">{r.cadence}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-[#0047BB] mt-1">{r.when}</p>
                                 </div>
                                 <div className="flex-1 space-y-4">
@@ -433,7 +433,7 @@ export default function ContentArchitecturePage() {
                     backgroundSize: "40px 40px",
                 }}
             >
-                <span className="absolute right-0 top-0 font-syne font-bold text-[22vw] text-white/[0.025] leading-none select-none pointer-events-none">
+                <span className="absolute right-0 top-0 font-cabinet font-bold text-[22vw] text-white/[0.025] leading-none select-none pointer-events-none">
                     WHERE
                 </span>
 
@@ -447,7 +447,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-16 text-white">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-16 text-white">
                             Own the channels.<br /><span className="text-white/25">Rent the reach.</span>
                         </h2>
                     </motion.div>
@@ -516,7 +516,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── MONETIZATION / blue ── */}
             <section className="relative bg-[#0047BB] text-white overflow-hidden">
-                <span className="absolute right-[-1vw] bottom-[-3vw] font-syne font-bold text-[26vw] text-white/[0.04] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-1vw] bottom-[-3vw] font-cabinet font-bold text-[26vw] text-white/[0.04] leading-none select-none pointer-events-none">
                     €
                 </span>
 
@@ -530,7 +530,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-4">
                             €200k–400k<br /><span className="text-white/25">annual ceiling.</span>
                         </h2>
                         <p className="text-[15px] text-white/45 mb-16 max-w-lg">
@@ -578,11 +578,11 @@ export default function ContentArchitecturePage() {
                         <motion.div key={s.stream} {...fadeUp(i * 0.05)}>
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-8 md:py-10">
                                 <div className="md:w-[200px] shrink-0">
-                                    <p className="font-syne font-bold text-[18px] tracking-tight">{s.stream}</p>
+                                    <p className="font-cabinet font-bold text-[18px] tracking-tight">{s.stream}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/35 mt-2 leading-relaxed">{s.model}</p>
                                 </div>
                                 <div className="flex-1">
-                                    <p className="font-syne font-bold text-[36px] text-white/20 leading-none mb-3">{s.range}</p>
+                                    <p className="font-cabinet font-bold text-[36px] text-white/20 leading-none mb-3">{s.range}</p>
                                     <p className="text-[14px] text-white/50 leading-relaxed">{s.note}</p>
                                     <p className="text-[10px] font-code-brand uppercase tracking-[0.3em] text-white/25 mt-2">Owner: {s.owner}</p>
                                 </div>
@@ -601,7 +601,7 @@ export default function ContentArchitecturePage() {
 
             {/* ── 90-DAY TARGETS / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden">
-                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-syne font-bold text-[20vw] text-black/[0.03] leading-none select-none pointer-events-none">
+                <span className="absolute right-[-2vw] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[20vw] text-black/[0.03] leading-none select-none pointer-events-none">
                     90
                 </span>
 
@@ -615,7 +615,7 @@ export default function ContentArchitecturePage() {
 
                 <div className="px-8 md:px-16 py-20">
                     <motion.div {...fadeUp(0)}>
-                        <h2 className="font-syne font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[52px] tracking-tighter leading-[1.0] mb-16">
                             What good<br /><span className="text-black/25">looks like.</span>
                         </h2>
                     </motion.div>
@@ -666,7 +666,7 @@ export default function ContentArchitecturePage() {
                                         {cat.metrics.map((m, j) => (
                                             <div key={j} className="flex items-baseline justify-between gap-4">
                                                 <p className="text-[14px] text-black/55">{m.label}</p>
-                                                <p className="font-syne font-bold text-[18px] text-[#0047BB] shrink-0">{m.target}</p>
+                                                <p className="font-cabinet font-bold text-[18px] text-[#0047BB] shrink-0">{m.target}</p>
                                             </div>
                                         ))}
                                     </div>
@@ -693,7 +693,7 @@ export default function ContentArchitecturePage() {
                 <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.5em] text-white/40 mb-6">
                     Internal Document · Content Architecture
                 </p>
-                <p className="font-syne font-bold text-[32px] md:text-[44px] tracking-tighter leading-[0.92] text-white/20">
+                <p className="font-cabinet font-bold text-[32px] md:text-[44px] tracking-tighter leading-[0.92] text-white/20">
                     Research Lab<br />by SORRYWECAN
                 </p>
                 <div className="mt-10 h-px bg-white/10" />

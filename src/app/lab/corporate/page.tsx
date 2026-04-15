@@ -21,7 +21,7 @@ function Label({ children }: { children: React.ReactNode }) {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
     return (
-        <h2 className="font-syne font-bold text-2xl md:text-3xl tracking-tighter mt-2 mb-6">
+        <h2 className="font-cabinet font-bold text-2xl md:text-3xl tracking-tighter mt-2 mb-6">
             {children}
         </h2>
     )
@@ -48,7 +48,7 @@ export default function CorporatePage() {
                     {/* Header */}
                     <motion.div {...fade(0)} className="mb-16">
                         <Label>Corporate Offer — B2B Strategy</Label>
-                        <h1 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter mt-3 leading-[0.95]">
+                        <h1 className="font-cabinet font-bold text-5xl md:text-6xl tracking-tighter mt-3 leading-[0.95]">
                             Corporate Workshop
                         </h1>
                         <p className="text-black/50 mt-4 max-w-xl">
@@ -74,7 +74,7 @@ export default function CorporatePage() {
                     <motion.div {...fade(0.05)}>
                         <div className="p-6 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03] mb-12">
                             <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-2">The Insight That Sells It</p>
-                            <p className="text-xl font-syne font-bold tracking-tight leading-snug">
+                            <p className="text-xl font-cabinet font-bold tracking-tight leading-snug">
                                 The head of the O2 department didn't love the tools section. He loved the thinking section. That's the differentiator: we teach how to think about AI, not just how to use it. Most corporate AI training is glorified software onboarding. Ours is a mindset shift first, tools second.
                             </p>
                         </div>

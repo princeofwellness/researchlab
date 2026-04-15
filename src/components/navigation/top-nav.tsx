@@ -58,7 +58,7 @@ export function TopNav({
                     : "bg-[#f5f5f3]/80 backdrop-blur-md border-black/10 text-black"
             )}>
                 <div className="flex items-center gap-8">
-                    <Link href="/" className="font-syne font-bold tracking-tighter text-xl z-[101]">
+                    <Link href="/" className="font-cabinet font-bold tracking-tighter text-xl z-[101]">
                         RESEARCH<span className={isDark ? "text-blue-400" : "text-[#0047BB]"}>LAB</span>
                     </Link>
                     
@@ -157,7 +157,7 @@ export function TopNav({
                                         href={item.href}
                                         onClick={() => setIsOpen(false)}
                                         className={cn(
-                                            "text-2xl font-syne font-bold uppercase tracking-wide transition-colors",
+                                            "text-2xl font-cabinet font-bold uppercase tracking-wide transition-colors",
                                             pathname === item.href || (item.children && pathname.startsWith(item.children[0].href))
                                                 ? (isDark ? "text-blue-400" : "text-[#0047BB]") 
                                                 : (isDark ? "text-white/60 hover:text-white" : "text-black/60 hover:text-[#0047BB]")

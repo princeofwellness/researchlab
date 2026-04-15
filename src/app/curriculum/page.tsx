@@ -866,7 +866,7 @@ export default function CurriculumPage() {
                         <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB]">
                             {t.header.label}
                         </span>
-                        <h1 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter mt-2">
+                        <h1 className="font-cabinet font-bold text-5xl md:text-6xl tracking-tighter mt-2">
                             {t.header.title}
                         </h1>
                         <p className="text-black/50 mt-4 max-w-xl">
@@ -905,7 +905,7 @@ export default function CurriculumPage() {
                                     className="p-5 border-2 border-[#0047BB]/20 bg-[#0047BB]/5"
                                 >
                                     <span className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB]">{a.act}</span>
-                                    <h3 className="font-syne font-bold text-2xl tracking-tight mt-1">{a.title}</h3>
+                                    <h3 className="font-cabinet font-bold text-2xl tracking-tight mt-1">{a.title}</h3>
                                     <p className="text-sm text-black/40 italic">{a.subtitle}</p>
                                     <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mt-3">{a.speaker}</p>
                                     <p className="text-sm text-black/60 mt-1">{a.theme}</p>

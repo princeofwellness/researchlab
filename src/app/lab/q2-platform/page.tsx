@@ -20,7 +20,7 @@ function Label({ children }: { children: React.ReactNode }) {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
     return (
-        <h2 className="font-syne font-bold text-2xl md:text-3xl tracking-tighter mt-2 mb-6">
+        <h2 className="font-cabinet font-bold text-2xl md:text-3xl tracking-tighter mt-2 mb-6">
             {children}
         </h2>
     )
@@ -46,7 +46,7 @@ export default function Q2PlatformPage() {
                     {/* Header */}
                     <motion.div {...fade(0)} className="mb-16">
                         <Label>Platform Strategy — Q2 2026</Label>
-                        <h1 className="font-syne font-bold text-5xl md:text-6xl tracking-tighter mt-3 leading-[0.95]">
+                        <h1 className="font-cabinet font-bold text-5xl md:text-6xl tracking-tighter mt-3 leading-[0.95]">
                             Platform & Next Steps
                         </h1>
                         <p className="text-black/50 mt-4 max-w-xl">

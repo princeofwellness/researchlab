@@ -47,7 +47,7 @@ export function NextgenComments({ lang }: CommentsProps) {
           <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0047BB] block mb-4">
             {lang === "en" ? "Discussion" : "Diskusia"}
           </span>
-          <h2 className="font-syne font-bold text-4xl md:text-5xl tracking-tighter mb-3">
+          <h2 className="font-cabinet font-bold text-4xl md:text-5xl tracking-tighter mb-3">
             {lang === "en" ? "Leave a Comment." : "Zanechajte komentár."}
           </h2>
           <p className="text-black/50 text-base font-light max-w-xl">

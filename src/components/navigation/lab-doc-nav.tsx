@@ -34,7 +34,7 @@ export function LabDocNav({ prev, next, theme = "dark" }: LabDocNavProps) {
                         <span className={`text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] ${labelColor} mb-3`}>
                             ← Previous
                         </span>
-                        <span className={`font-syne font-bold text-2xl md:text-3xl ${textColor} group-hover:opacity-70 transition-opacity`}>
+                        <span className={`font-cabinet font-bold text-2xl md:text-3xl ${textColor} group-hover:opacity-70 transition-opacity`}>
                             {prev.label}
                         </span>
                     </Link>
@@ -45,7 +45,7 @@ export function LabDocNav({ prev, next, theme = "dark" }: LabDocNavProps) {
                         </span>
                         <Link
                             href="/lab"
-                            className={`font-syne font-bold text-2xl md:text-3xl ${dimColor} ${dimHover} transition-colors`}
+                            className={`font-cabinet font-bold text-2xl md:text-3xl ${dimColor} ${dimHover} transition-colors`}
                         >
                             ← Back to Lab
                         </Link>
@@ -61,7 +61,7 @@ export function LabDocNav({ prev, next, theme = "dark" }: LabDocNavProps) {
                         <span className={`text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] ${labelColor} mb-3`}>
                             Next →
                         </span>
-                        <span className={`font-syne font-bold text-2xl md:text-3xl ${textColor} group-hover:opacity-70 transition-opacity`}>
+                        <span className={`font-cabinet font-bold text-2xl md:text-3xl ${textColor} group-hover:opacity-70 transition-opacity`}>
                             {next.label}
                         </span>
                     </Link>
@@ -72,7 +72,7 @@ export function LabDocNav({ prev, next, theme = "dark" }: LabDocNavProps) {
                         </span>
                         <Link
                             href="/lab"
-                            className={`font-syne font-bold text-2xl md:text-3xl ${dimColor} ${dimHover} transition-colors`}
+                            className={`font-cabinet font-bold text-2xl md:text-3xl ${dimColor} ${dimHover} transition-colors`}
                         >
                             Back to Lab →
                         </Link>

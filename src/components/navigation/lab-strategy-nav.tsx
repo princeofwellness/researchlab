@@ -10,6 +10,7 @@ const docs = [
     { label: "Corporate", short: "B2B", href: "/lab/corporate" },
     { label: "Platform", short: "Platform", href: "/lab/q2-platform" },
     { label: "Content", short: "Content", href: "/lab/content" },
+    { label: "Platform Strategy", short: "Strategy", href: "/lab/platform-strategy" },
 ]
 
 export function LabStrategyNav() {

@@ -62,17 +62,32 @@ export default function CorporateOfferV2() {
                 }
             `}</style>
 
-            {/* ── Controls ── */}
-            <div className="np fixed top-4 right-4 z-50 flex gap-2">
+            {/* ── Top Nav (screen only) ── */}
+            <div className="np fixed top-0 left-0 right-0 z-50 h-10 bg-[#0d0d0d]/95 backdrop-blur-md border-b border-white/[0.06] flex items-center px-4 gap-1">
+                <a href="/lab" className="text-[9px] font-code-brand font-bold uppercase tracking-[0.25em] text-white/30 hover:text-white/70 transition-colors px-3 py-1">
+                    ← Lab
+                </a>
+                <div className="w-px h-4 bg-white/10 mx-1" />
+                <a href="/lab/corporate" className="text-[9px] font-code-brand font-bold uppercase tracking-[0.25em] text-white/30 hover:text-white/70 transition-colors px-3 py-1">
+                    Corporate Strategy
+                </a>
+                <div className="w-px h-4 bg-white/10 mx-1" />
+                <a href="/corporate/offer-v2" className="text-[9px] font-code-brand font-bold uppercase tracking-[0.25em] text-[#0047BB] border-b border-[#0047BB] px-3 py-1">
+                    Offer Deck
+                </a>
+                <a href="/corporate/onepager" className="text-[9px] font-code-brand font-bold uppercase tracking-[0.25em] text-white/30 hover:text-white/70 transition-colors px-3 py-1">
+                    One-Pager
+                </a>
+                <div className="flex-1" />
                 <button
                     onClick={() => setLang(l => l === "en" ? "sk" : "en")}
-                    className="text-[10px] font-code-brand font-bold uppercase tracking-widest px-4 py-2 bg-white/10 backdrop-blur text-white hover:bg-white hover:text-black transition-colors"
+                    className="text-[9px] font-code-brand font-bold uppercase tracking-widest px-3 py-1 text-white/30 hover:text-white/70 transition-colors"
                 >
                     {en ? "SK" : "EN"}
                 </button>
                 <button
                     onClick={() => window.print()}
-                    className="hidden md:block text-[10px] font-code-brand font-bold uppercase tracking-widest px-4 py-2 bg-[#0047BB] text-white hover:bg-black transition-colors"
+                    className="hidden md:block text-[9px] font-code-brand font-bold uppercase tracking-widest px-3 py-1 bg-[#0047BB] text-white hover:bg-[#0047BB]/80 transition-colors ml-1"
                 >
                     PDF
                 </button>

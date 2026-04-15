@@ -96,59 +96,46 @@ export default function CorporateOfferV2() {
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
 
                     {/* Main */}
-                    <div className="flex-1 flex flex-col md:flex-row items-end md:items-center px-10 md:px-16 py-10 md:py-0 gap-0">
-                        {/* Headline */}
-                        <div className="flex-1">
-                            <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[58px] md:text-[92px] text-white">
-                                {en ? <>Corporate<br />Workshop.</> : <>Firemný<br />Workshop.</>}
-                            </h1>
-                            <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[320px] leading-relaxed">
-                                {en
-                                    ? "A two-day guided experience. Your team thinks differently by the time they leave."
-                                    : "Dvojdňová riadená skúsenosť. Váš tím myslí inak, keď odchádza."}
-                            </p>
-                        </div>
-
-                        {/* Price block — desktop */}
-                        <div className="hidden md:flex flex-col items-end gap-5 ml-12 shrink-0">
-                            <div className="text-right">
-                                <p className="text-[9px] font-code-brand uppercase tracking-[0.4em] text-white/30 mb-1">
-                                    {en ? "Investment" : "Investícia"}
-                                </p>
-                                <p className="font-cabinet font-bold text-[68px] text-white leading-none">€600</p>
-                                <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/35 mt-1">
-                                    {en ? "per person + VAT" : "na osobu + DPH"}
-                                </p>
-                            </div>
-                            <div className="h-px w-full bg-white/15" />
-                            <div className="text-right space-y-1.5 text-[13px] font-code-brand text-white/40">
-                                <p>{en ? "10–15 people" : "10–15 ľudí"}</p>
-                                <p>{en ? "2 full days" : "2 celé dni"}</p>
-                                <p>Bratislava</p>
-                            </div>
-                        </div>
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-10 md:py-0">
+                        <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[58px] md:text-[92px] text-white">
+                            {en ? <>Corporate<br />Workshop.</> : <>Firemný<br />Workshop.</>}
+                        </h1>
+                        <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[400px] leading-relaxed">
+                            {en
+                                ? "A two-day guided experience. Your team thinks differently by the time they leave."
+                                : "Dvojdňová riadená skúsenosť. Váš tím myslí inak, keď odchádza."}
+                        </p>
                     </div>
 
-                    {/* Mobile price */}
-                    <div className="md:hidden flex gap-8 px-10 pb-10">
-                        <div>
-                            <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/30">
-                                {en ? "Investment" : "Investícia"}
-                            </p>
-                            <p className="font-cabinet font-bold text-[44px] text-white leading-none mt-1">€600</p>
-                            <p className="text-[9px] font-code-brand text-white/35">
-                                {en ? "per person + VAT" : "na osobu + DPH"}
-                            </p>
-                        </div>
-                        <div className="text-[13px] font-code-brand text-white/40 flex flex-col justify-end gap-1">
-                            <p>{en ? "10–15 people" : "10–15 ľudí"}</p>
-                            <p>{en ? "2 full days" : "2 celé dni"}</p>
-                        </div>
+                    {/* Quote */}
+                    <div className="px-10 md:px-16 pb-6 text-right">
+                        <p className="text-[11px] md:text-[13px] font-code-brand text-white/20 italic leading-relaxed max-w-[480px] ml-auto">
+                            "We cannot solve our problems with the same thinking we used when we created them."
+                        </p>
+                        <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/15 mt-1">— Einstein</p>
                     </div>
 
+                    {/* Bottom bar with price */}
                     <div className="mx-10 md:mx-16 h-px bg-white/10" />
-                    <div className="flex justify-between px-10 md:px-16 py-4">
+                    <div className="flex items-center justify-between px-10 md:px-16 py-4 gap-6 flex-wrap">
                         <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">SORRYWECAN</span>
+                        <div className="flex items-center gap-5 md:gap-8">
+                            <div className="flex items-baseline gap-2">
+                                <span className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/25">
+                                    {en ? "Investment" : "Investícia"}
+                                </span>
+                                <span className="font-cabinet font-bold text-[22px] md:text-[28px] text-white leading-none">€690</span>
+                                <span className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/30">
+                                    {en ? "/ person + VAT" : "/ osoba + DPH"}
+                                </span>
+                            </div>
+                            <div className="w-px h-4 bg-white/15 hidden md:block" />
+                            <div className="hidden md:flex items-center gap-5 text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/25">
+                                <span>{en ? "10–15 people" : "10–15 ľudí"}</span>
+                                <span>{en ? "2 full days" : "2 celé dni"}</span>
+                                <span>Bratislava</span>
+                            </div>
+                        </div>
                         <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">01</span>
                     </div>
                 </div>

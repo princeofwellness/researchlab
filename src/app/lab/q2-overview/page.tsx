@@ -297,6 +297,13 @@ export default function Q2OverviewPage() {
                             done: "1,500 followers. Content 4×/week. Newsletter weekly. Podcast episode live.",
                             owner: "Sasha (lead) + Tiep",
                         },
+                        {
+                            rank: "04",
+                            title: "Run the first THE SOURCE session — SORRYWECAN × Research Lab.",
+                            why: "SORRYWECAN is the real-world lab. The internal team needs to grow together or the translation to external work breaks. This is how we stay aligned and generate the raw material for everything else.",
+                            done: "First session held in June. Theme set. Every person in the room has shared something. At least one framework or insight captured for FUTURE PROTOCOLS.",
+                            owner: "Peter + Tiep (lead)",
+                        },
                     ] : [
                         {
                             rank: "01",
@@ -318,6 +325,13 @@ export default function Q2OverviewPage() {
                             why: "Každý sledovateľ je potenciálny člen alebo účastník workshopu. Bezplatný funnel živí všetko.",
                             done: "1 500 sledovateľov. Obsah 4×/týždeň. Newsletter týždenný. Podcastová epizóda živá.",
                             owner: "Sasha (lead) + Tiep",
+                        },
+                        {
+                            rank: "04",
+                            title: "Prvý THE SOURCE — SORRYWECAN × Research Lab interná session.",
+                            why: "SORRYWECAN je reálne laboratórium. Interný tím musí rásť spoločne, inak sa preklad do externej práce rozpadá.",
+                            done: "Prvá session v júni. Téma stanovená. Každý zdieľal niečo. Aspoň jeden rámec zachytený pre FUTURE PROTOCOLS.",
+                            owner: "Peter + Tiep (lead)",
                         },
                     ]).map((p, i, arr) => (
                         <motion.div key={p.rank} {...fadeUp(i * 0.05)}>

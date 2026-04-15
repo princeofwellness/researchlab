@@ -57,6 +57,7 @@ const changelog = [
     { date: "2026-04-14", note: "Initial version created. Identity, mission, brand, voice, products, audience, technology, priorities documented." },
     { date: "2026-04-15", note: "Art direction section added to Brand. Team updated to reflect current core (Tiep/Andrea/Sasha) + extended (Roland/Roman). Partnerships & Ecosystem section added: Austrian AI collaboration + Mirka/Aj Ty v IT. Competitive intelligence added. Strategic shift documented." },
     { date: "2026-04-15", note: "Synced with Q2 strategy: €690/person corporate pricing, Mindshift paused Q2, Platform product updated (Circle with builder network layer, €29→€49 pricing tiers), Revenue structure mapped (40/30/20/10 working model), Q4 €30k/month target added to priorities. Platform Strategy deep dive link fixed. The Radar noted in content flywheel." },
+    { date: "2026-04-16", note: "THE SOURCE added — bi-monthly internal session for SORRYWECAN × Research Lab team. Format defined, rhythm set (June/August/October), added to Ecosystem RESEARCH layer and Q2 priorities." },
     { date: "2026-04-15", note: "Major expansion from pitch deck: Peter Kaspar added as Creative Direction Co-Founder, Roland updated to SORRYWECAN CEO & Founder, full team roles updated. What We Are reframed. Core Problem section added. COMMUNITEA format added. MINDSHIFT reframed as organisational programme. FUTURE PROTOCOLS and MEDIA HOUSE added. New sections: The Ecosystem (4 layers) and Engagement Model (3 tiers). Origin, team structure reorganised." },
 ]
 
@@ -458,6 +459,20 @@ export default function ContextPage() {
                                     ]
                                 },
                                 {
+                                    name: "THE SOURCE",
+                                    status: "Starting June 2026",
+                                    type: "Internal — SORRYWECAN × Research Lab",
+                                    details: [
+                                        "Bi-monthly internal session for the full SORRYWECAN + Research Lab team",
+                                        "Panel discussion format — not a lecture. A structured conversation with a theme.",
+                                        "Each session: one person shares what they've been experimenting with in their domain, one external idea gets pressure-tested by the group",
+                                        "The internal version of COMMUNITEA — closed, honest, no performance",
+                                        "Output: shared language, aligned direction, raw material for FUTURE PROTOCOLS",
+                                        "Why: SORRYWECAN is the real-world lab. If the team inside isn't growing together, the translation to external work breaks down.",
+                                        "Rhythm: every 2 months — June, August, October 2026",
+                                    ]
+                                },
+                                {
                                     name: "Education — NextGen & Social",
                                     status: "Seeking partners",
                                     type: "Education / CSR",
@@ -593,8 +608,8 @@ export default function ContextPage() {
                                 },
                                 {
                                     layer: "RESEARCH",
-                                    desc: "Real-world experimentation inside SORRYWECAN production. Tested approaches translated into frameworks, systems, and learning formats used across the ecosystem.",
-                                    format: "FUTURE PROTOCOLS",
+                                    desc: "Real-world experimentation inside SORRYWECAN production. Tested approaches translated into frameworks, systems, and learning formats used across the ecosystem. THE SOURCE sessions keep the internal team aligned and feed this layer directly.",
+                                    format: "FUTURE PROTOCOLS + THE SOURCE",
                                 },
                             ].map((l) => (
                                 <div key={l.layer} className="p-5 border border-black/10">

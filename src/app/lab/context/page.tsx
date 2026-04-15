@@ -55,6 +55,7 @@ function ColorSwatch({ hex, name, usage }: { hex: string; name: string; usage: s
 const changelog = [
     { date: "2026-04-14", note: "Initial version created. Identity, mission, brand, voice, products, audience, technology, priorities documented." },
     { date: "2026-04-15", note: "Art direction section added to Brand. Team updated to reflect current core (Tiep/Andrea/Sasha) + extended (Roland/Roman). Partnerships & Ecosystem section added: Austrian AI collaboration + Mirka/Aj Ty v IT. Competitive intelligence added. Strategic shift documented." },
+    { date: "2026-04-15", note: "Synced with Q2 strategy: €690/person corporate pricing, Mindshift paused Q2, Platform product updated (Circle with builder network layer, €29→€49 pricing tiers), Revenue structure mapped (40/30/20/10 working model), Q4 €30k/month target added to priorities. Platform Strategy deep dive link fixed. The Radar noted in content flywheel." },
 ]
 
 export default function ContextPage() {
@@ -408,16 +409,18 @@ export default function ContextPage() {
                                     ]
                                 },
                                 {
-                                    name: "Community Membership",
+                                    name: "Circle — Practitioner Platform",
                                     status: "Building — June 2026 launch",
                                     type: "B2C Recurring",
                                     details: [
                                         "Platform: Circle",
-                                        "Entry tier: €39/month (validation pricing)",
-                                        "Access: Pre-recorded library, bi-weekly webinars, prompt library, thinking frameworks",
-                                        "Content: Basic → Mindshift thinking → Tools → Agentic systems → What's New",
-                                        "Perks: Physical event access, co-working sessions, collaborator network",
+                                        "Founding cohort: €29/month — early believers, locked in",
+                                        "Standard tier: €49/month — full access post-launch",
+                                        "Three audiences: Beginners (Mindshift first), Professionals (frameworks + tools), Builders (vibe coders, AI architects, domain specialists)",
+                                        "Curriculum: Basic → Mindshift thinking → Tools → Agentic systems → What's New",
+                                        "Asset moat: Component library + Collective Intelligence AI — cancelling means losing infrastructure, not just videos",
                                         "Launch: Founding cohort June 2026, full launch September 2026",
+                                        "Q4 ceiling: 1,000 members × €49 = €49k/month platform potential",
                                     ]
                                 },
                                 {
@@ -538,9 +541,9 @@ export default function ContextPage() {
                         <div className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                                 {[
-                                    { rank: "01", title: "Close corporate workshops", detail: "O2 and two more. €25k+ from 3 workshops." },
-                                    { rank: "02", title: "Build & launch Circle", detail: "Founding cohort in by June. September full blast." },
-                                    { rank: "03", title: "Grow Instagram 800 → 1500", detail: "Content flywheel. Free funnels into paid." },
+                                    { rank: "01", title: "Close corporate workshops", detail: "2 workshops Q2 = ~€14–20k. O2 pipeline pre-warmed. Raise to €800+ after first delivery." },
+                                    { rank: "02", title: "Build & launch Circle", detail: "Founding cohort by June. Full launch September. €30k/month path by Q4." },
+                                    { rank: "03", title: "Grow Instagram 800 → 1500", detail: "Content flywheel. The Radar newsletter. Free funnels into paid." },
                                 ].map((p) => (
                                     <div key={p.rank} className="p-5 border border-black/10">
                                         <div className="w-8 h-8 bg-[#0047BB] text-white flex items-center justify-center text-[11px] font-bold mb-3">
@@ -571,7 +574,7 @@ export default function ContextPage() {
                                     <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 mb-1">Deep Dive →</p>
                                     <p className="font-bold group-hover:text-[#0047BB] transition-colors">Q2 Overview</p>
                                 </a>
-                                <a href="/lab/q2-platform" className="p-4 border border-black/10 hover:border-[#0047BB] hover:bg-[#0047BB]/5 transition-all group">
+                                <a href="/lab/platform-strategy" className="p-4 border border-black/10 hover:border-[#0047BB] hover:bg-[#0047BB]/5 transition-all group">
                                     <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/30 mb-1">Deep Dive →</p>
                                     <p className="font-bold group-hover:text-[#0047BB] transition-colors">Platform Strategy</p>
                                 </a>
@@ -642,11 +645,12 @@ export default function ContextPage() {
 
                             {/* Revenue structure */}
                             <div className="p-5 border border-black/10">
-                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">Revenue Structure — To Define</p>
-                                <p className="text-sm text-black/60 mb-3">The internal profit split between Tiep, Roman, Andrea (Adka), and the SORRYWECAN entity has not been formally mapped. Everyone needs financial clarity and motivation.</p>
-                                <div className="flex gap-2 text-sm">
-                                    <span className="text-[#0047BB] shrink-0">—</span>
-                                    <span className="text-black/60">Action: formally define the revenue split — who gets what % per workshop, per membership, per partnership deal. Map the s.r.o. structure and billing flow.</span>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">Ownership & Revenue Structure — Working Model</p>
+                                <p className="text-sm text-black/60 mb-3">Working model (Model B — Weighted + Partner): SORRYWECAN entity 40% · Tiep 30% · Adka 20% · Partners 10%. Applied after operating costs. Formal s.r.o. structure and billing flow to be mapped.</p>
+                                <div className="space-y-1 text-sm">
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">B2B path: 2 workshops Q2 at €6,900–10,350 each → €14–20k gross</span></div>
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Realistic Q4 mix: 1 workshop/mo + 400 Circle members = €30k+/month</span></div>
+                                    <div className="flex gap-2"><span className="text-[#0047BB] shrink-0">—</span><span className="text-black/60">Full breakdown: <a href="/lab/economics" className="text-[#0047BB] hover:underline">/lab/economics</a></span></div>
                                 </div>
                             </div>
                         </div>
@@ -685,10 +689,15 @@ TONE EXAMPLES:
 ✗ "Disrupt your workflow with revolutionary AI solutions."
 
 PRODUCTS:
-- THE MINDSHIFT: €99/person public workshop
+- THE MINDSHIFT: €99/person public workshop (paused Q2, returns Q3/Q4)
 - Corporate: €690/person, min 10 people, two-day format (→ €800+ after first delivery)
-- Community (Circle): €39/month, launching June 2026
+- Circle (Community + Practitioner Platform): €29 founding / €49 standard, launching June 2026
 - NextGen: Youth programme, seeking CSR partners
+
+PLATFORM NOTE:
+Circle is not just a learning platform. It serves Beginners, Professionals, AND Builders (vibe coders, AI architects, domain specialists). Asset moat: Component Library + Collective Intelligence AI built from the network's collective frameworks.
+
+REVENUE TARGET: €30k/month by Q4 2026 via 1 corporate workshop/mo + 400 Circle members.
 
 WHAT WE ARE NOT: A dev shop. A consulting firm. A hype machine. A tools aggregator.`}
                             </div>

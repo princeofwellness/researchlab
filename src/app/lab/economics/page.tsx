@@ -302,7 +302,7 @@ export default function EconomicsPage() {
                                         {m.split.map(s => (
                                             <div key={s.who} className="p-3 bg-white/[0.06] border border-white/10">
                                                 <p className="font-syne font-bold text-2xl text-white mb-1">{s.pct}</p>
-                                                <p className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] mb-1">{s.who}</p>
+                                                <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/70 mb-1">{s.who}</p>
                                                 <p className="text-[10px] text-white/30">{s.role}</p>
                                             </div>
                                         ))}

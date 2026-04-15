@@ -109,10 +109,10 @@ export default function CorporateOfferV2() {
 
                     {/* Quote */}
                     <div className="px-10 md:px-16 pb-6 text-right">
-                        <p className="text-[11px] md:text-[13px] font-code-brand text-white/20 italic leading-relaxed max-w-[480px] ml-auto">
+                        <p className="text-[11px] md:text-[13px] font-code-brand text-white/50 italic leading-relaxed max-w-[480px] ml-auto">
                             "We cannot solve our problems with the same thinking we used when we created them."
                         </p>
-                        <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/15 mt-1">— Einstein</p>
+                        <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/35 mt-1">— Einstein</p>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-white/10" />

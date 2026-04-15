@@ -57,6 +57,7 @@ const changelog = [
     { date: "2026-04-14", note: "Initial version created. Identity, mission, brand, voice, products, audience, technology, priorities documented." },
     { date: "2026-04-15", note: "Art direction section added to Brand. Team updated to reflect current core (Tiep/Andrea/Sasha) + extended (Roland/Roman). Partnerships & Ecosystem section added: Austrian AI collaboration + Mirka/Aj Ty v IT. Competitive intelligence added. Strategic shift documented." },
     { date: "2026-04-15", note: "Synced with Q2 strategy: €690/person corporate pricing, Mindshift paused Q2, Platform product updated (Circle with builder network layer, €29→€49 pricing tiers), Revenue structure mapped (40/30/20/10 working model), Q4 €30k/month target added to priorities. Platform Strategy deep dive link fixed. The Radar noted in content flywheel." },
+    { date: "2026-04-15", note: "Major expansion from pitch deck: Peter Kaspar added as Creative Direction Co-Founder, Roland updated to SORRYWECAN CEO & Founder, full team roles updated. What We Are reframed. Core Problem section added. COMMUNITEA format added. MINDSHIFT reframed as organisational programme. FUTURE PROTOCOLS and MEDIA HOUSE added. New sections: The Ecosystem (4 layers) and Engagement Model (3 tiers). Origin, team structure reorganised." },
 ]
 
 export default function ContextPage() {
@@ -88,38 +89,29 @@ export default function ContextPage() {
                             <div className="p-6 border border-black/10 bg-black/[0.02]">
                                 <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-2">What We Are</p>
                                 <p className="leading-relaxed">
-                                    Research Lab is an AI literacy and transformation venture operating under the SORRYWECAN creative agency umbrella, based in Bratislava, Slovakia. We run immersive workshops and build community infrastructure that teaches professionals and young people not just how to use AI tools — but how to think with AI. The tagline: <strong>WHERE HUMANS & AI CO-EVOLVE.</strong>
+                                    Research Lab is an applied AI platform focused on how organisations adapt to AI in real work. It translates real-world AI practice into better workflows, clearer decision-making, and stronger organisational adaptation. Developed within the SORRYWECAN ecosystem, based in Bratislava, Slovakia. The tagline: <strong>WHERE HUMANS & AI CO-EVOLVE.</strong>
                                 </p>
                             </div>
 
                             <div className="space-y-2">
-                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40">Core Team</p>
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40">Team</p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                                     {[
-                                        { name: "Tiep Le Dinh", alias: "Prince of Wellness", role: "Vision, Output, Face, Content" },
-                                        { name: "Andrea (Adka)", alias: null, role: "Production, Structure, Deals, Community ops" },
-                                        { name: "Sasha", alias: null, role: "Content creation, Marketing, Research" },
+                                        { name: "Peter Kaspar", sub: "Co-Founder", role: "Creative Direction — creative alchemy at the intersection of human intuition and AI systems" },
+                                        { name: "Tiep Le Dinh", sub: "Co-Founder", role: "Automation Infrastructure — scalable workflows across tech, finance, creative strategy" },
+                                        { name: "Sasha Zaytseva", sub: null, role: "Learning Systems — translates complex tech shifts into practical education + organisational formats" },
+                                        { name: "Andrea Kutlikova", sub: null, role: "Project Lead & Adult Educator — community coordination, lifelong learning, adaptation programmes" },
+                                        { name: "Roman Pii Wagner", sub: null, role: "Strategic Navigation — decision frameworks for uncertainty, helps leadership prioritise signal over noise" },
+                                        { name: "Roland Wranik", sub: "SORRYWECAN CEO & Founder", role: "Vision & Creative Strategy — early AI-native multimedia practitioner, working with these systems from the very beginning" },
                                     ].map((f) => (
                                         <div key={f.name} className="p-4 border border-black/10">
                                             <p className="font-bold text-sm">{f.name}</p>
-                                            {f.alias && <p className="text-xs text-black/30 mt-0.5">{f.alias}</p>}
-                                            <p className="text-xs text-[#0047BB] font-code-brand mt-1 uppercase tracking-widest">{f.role}</p>
+                                            {f.sub && <p className="text-xs text-black/30 mt-0.5">{f.sub}</p>}
+                                            <p className="text-xs text-[#0047BB] font-code-brand mt-1 uppercase tracking-widest leading-relaxed">{f.role}</p>
                                         </div>
                                     ))}
                                 </div>
-                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mt-3">Extended</p>
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                    {[
-                                        { name: "Roland", role: "Taste curation, SORRYWECAN network" },
-                                        { name: "Roman Pii Wagner", role: "Advisor & partner — corporate workshops + Mindshift" },
-                                        { name: "Guest speakers", role: "Outsourced per engagement" },
-                                    ].map((f) => (
-                                        <div key={f.name} className="p-4 border border-black/10 bg-black/[0.02]">
-                                            <p className="font-bold text-sm">{f.name}</p>
-                                            <p className="text-xs text-[#0047BB] font-code-brand mt-1 uppercase tracking-widest">{f.role}</p>
-                                        </div>
-                                    ))}
-                                </div>
+                                <p className="text-[9px] font-code-brand text-black/30 mt-2">Extended by a curated network of domain experts engaged based on the needs of each project.</p>
                             </div>
 
                             <div className="p-6 border border-black/10 bg-black/[0.02]">
@@ -186,6 +178,28 @@ export default function ContextPage() {
                                         ))}
                                     </ul>
                                 </div>
+                            </div>
+
+                            <div className="p-5 border border-black/10 bg-black/[0.02]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-3">The Core Problem We Solve</p>
+                                <div className="space-y-2 text-sm">
+                                    {[
+                                        ["AI adoption is chaotic", "No shared standards, random usage across teams"],
+                                        ["Decision-making is weakening", "More options, no framework to evaluate them"],
+                                        ["Quality is inconsistent", "High output volume, unstable creative and operational standards"],
+                                        ["Execution is faster, judgment is harder", "Direction suffers as speed increases"],
+                                    ].map(([problem, detail]) => (
+                                        <div key={problem} className="flex gap-3">
+                                            <span className="text-[#0047BB] shrink-0">—</span>
+                                            <div><span className="font-bold">{problem}: </span><span className="text-black/50">{detail}</span></div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="p-5 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-2">How We Work</p>
+                                <p className="text-sm text-black/70 leading-relaxed">Research Lab works where strategy, execution, and cognition meet. Built on real AI production inside SORRYWECAN, we test ideas in actual workflows before translating them into systems for partners. Most organisations move faster with AI but lose consistency and direction. We design structures that keep both.</p>
                             </div>
 
                             <div className="p-5 border border-black/10 bg-black/[0.02]">
@@ -384,29 +398,51 @@ export default function ContextPage() {
                         <div className="space-y-3">
                             {[
                                 {
-                                    name: "THE MINDSHIFT",
-                                    status: "Paused — returns Q3/Q4",
-                                    type: "Public Workshop",
+                                    name: "COMMUNITEA",
+                                    status: "Active",
+                                    type: "Public — Open Format",
                                     details: [
-                                        "3.5-hour immersive AI literacy session",
-                                        "Format: Taste (Roland) → Leverage (Tiep) → Clarity (Roman) → Q&A",
-                                        "Price: €99/person (in-person + online)",
-                                        "Paused for Q2 — community growth first. Returns at different rhythm, not monthly.",
-                                        "When it returns: 40 seats, live seat counter, booking via Cal.com embed",
-                                        "Bilingual: EN/SK",
+                                        "Public sessions and curated discussions on AI, creativity, and change",
+                                        "Open and accessible — not just for tech or business audiences",
+                                        "Length: 2–3 hours · Capacity: up to 20 people",
+                                        "Hosted in our studio or at partner locations",
+                                        "Builds shared language and awareness across society",
                                     ]
                                 },
                                 {
-                                    name: "Corporate Workshop",
-                                    status: "Validating",
-                                    type: "B2B",
+                                    name: "MINDSHIFT",
+                                    status: "Active — B2B focus",
+                                    type: "Organisational Programme",
                                     details: [
-                                        "Two-part format: Day 1 Mindshift thinking + Day 2 Practical tools",
-                                        "Day 1: Mindset shift, philosophical framing, team discussion, blockades",
-                                        "Day 2: Tools, prompts, workflows, multimodality, meeting notes, deep research",
-                                        "Price: €690/person + VAT, min 10 people (~€6,900–9,660 per workshop)",
-                                        "Target: 2 workshops Q2 = ~€14–20k. Raise to €800+ after first delivery + testimonial.",
+                                        "Structured programme for teams and leadership",
+                                        "Cross-team AI diagnostics + integration into real workflows, decision-making, shared standards",
+                                        "Format: 2-day workshop → long-term programme / collaboration",
+                                        "Capacity: up to 15 people",
+                                        "Price: €690/person + VAT, min 10 people. Raise to €800+ post-testimonial.",
+                                        "Public version paused Q2 — returns Q3/Q4 at different rhythm",
                                         "Pipeline: O2 department (pre-warmed)",
+                                    ]
+                                },
+                                {
+                                    name: "FUTURE PROTOCOLS",
+                                    status: "Developing",
+                                    type: "Toolkits & Applied Research",
+                                    details: [
+                                        "Custom and open toolkits built on real SORRYWECAN workflows",
+                                        "Live experiments translated into practical frameworks others can use",
+                                        "Both proprietary client work and open-access editions",
+                                        "The research layer that feeds everything else",
+                                    ]
+                                },
+                                {
+                                    name: "MEDIA HOUSE",
+                                    status: "Building",
+                                    type: "Content & Distribution",
+                                    details: [
+                                        "House blog, media source, and online distribution channel",
+                                        "The Radar: bi-weekly newsletter (EN/SK) — curated signal from the noise",
+                                        "Collaboration with other creators and thinkers",
+                                        "The content flywheel that feeds all other formats",
                                     ]
                                 },
                                 {
@@ -414,23 +450,21 @@ export default function ContextPage() {
                                     status: "Building — June 2026 launch",
                                     type: "B2C Recurring",
                                     details: [
-                                        "Platform: Circle",
-                                        "Founding cohort: €29/month — early believers, locked in",
-                                        "Standard tier: €49/month — full access post-launch",
+                                        "Founding cohort: €29/month · Standard tier: €49/month",
                                         "Three audiences: Beginners (Mindshift first), Professionals (frameworks + tools), Builders (vibe coders, AI architects, domain specialists)",
                                         "Curriculum: Basic → Mindshift thinking → Tools → Agentic systems → What's New",
                                         "Asset moat: Component library + Collective Intelligence AI — cancelling means losing infrastructure, not just videos",
                                         "Launch: Founding cohort June 2026, full launch September 2026",
-                                        "Q4 ceiling: 1,000 members × €49 = €49k/month platform potential",
                                     ]
                                 },
                                 {
-                                    name: "NextGen — Youth AI",
+                                    name: "Education — NextGen & Social",
                                     status: "Seeking partners",
-                                    type: "Social / CSR",
+                                    type: "Education / CSR",
                                     details: [
-                                        "AI literacy for 14-18 year olds aging out of care homes",
-                                        "Trauma-aware curriculum design",
+                                        "Programmes for groups navigating technological change: seniors, educators, young people from children's homes",
+                                        "Focus on building long-term capacity and meaningful adaptation to AI",
+                                        "NextGen: AI literacy for 14-18 year olds aging out of care homes",
                                         "Funded via CSR and institutional partnerships",
                                         "Timeline: Partnership outreach Q2, delivery Q3+",
                                     ]
@@ -534,9 +568,94 @@ export default function ContextPage() {
 
                     <Divider />
 
-                    {/* 8. Current Priorities */}
+                    {/* 8. Ecosystem Layers */}
                     <motion.div {...fade(0.1)}>
                         <Label>08</Label>
+                        <SectionTitle>The Ecosystem</SectionTitle>
+                        <p className="text-sm text-black/50 mb-6 -mt-2">Research Lab operates as a layered system. Each layer is a different mode of engagement, grounded in real AI workflows.</p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                            {[
+                                {
+                                    layer: "PUBLIC",
+                                    desc: "Open events, discussions, and resources accessible to anyone. Formats that make AI understandable and relevant beyond the tech world — building shared language and awareness across society.",
+                                    format: "COMMUNITEA",
+                                },
+                                {
+                                    layer: "EDUCATION",
+                                    desc: "Programmes for groups navigating technological change. From seniors and educators to young people from children's homes — focused on long-term capacity and meaningful adaptation.",
+                                    format: "NextGen & Social Programmes",
+                                },
+                                {
+                                    layer: "ORGANISATIONS",
+                                    desc: "Internal educational programmes for teams and leadership. From fragmented AI usage to structured workflows, clear decision-making, and consistent quality across teams.",
+                                    format: "MINDSHIFT",
+                                },
+                                {
+                                    layer: "RESEARCH",
+                                    desc: "Real-world experimentation inside SORRYWECAN production. Tested approaches translated into frameworks, systems, and learning formats used across the ecosystem.",
+                                    format: "FUTURE PROTOCOLS",
+                                },
+                            ].map((l) => (
+                                <div key={l.layer} className="p-5 border border-black/10">
+                                    <p className="font-cabinet font-bold text-xl tracking-tight mb-1">{l.layer}</p>
+                                    <p className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] mb-3">{l.format}</p>
+                                    <p className="text-sm text-black/50 leading-relaxed">{l.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
+                    {/* 8b. Engagement Model */}
+                    <motion.div {...fade(0.1)}>
+                        <Label>08b</Label>
+                        <SectionTitle>Engagement Model</SectionTitle>
+                        <p className="text-sm text-black/50 mb-6 -mt-2">How organisations engage with Research Lab. Three levels — each with a different depth of involvement.</p>
+
+                        <div className="space-y-2">
+                            {[
+                                {
+                                    tier: "PARTICIPATION",
+                                    sub: "Participating in programmes",
+                                    desc: "Organisations engage Research Lab by participating in its programmes and formats, designed to strengthen how teams work with AI in practice. For organisations ready to build internal capability and apply AI with clarity and consistency.",
+                                    available: true,
+                                },
+                                {
+                                    tier: "COLLABORATION",
+                                    sub: "Contributing to shared outputs",
+                                    desc: "Direct involvement in selected programmes, formats, and initiatives, or as partners on specific projects. Includes co-development of themes or modules, project-based partnerships, and participation in research outputs. For organisations ready to actively contribute and shape work with broader relevance.",
+                                    available: true,
+                                },
+                                {
+                                    tier: "STRATEGIC PARTNERSHIP",
+                                    sub: "Long-term — limited slots",
+                                    desc: "A limited number of organisations selected for long-term partnership. Support of public formats and educational initiatives, contribution to AI literacy development, visible role in shaping how AI is understood and applied. Reserved for organisations ready to take a leading role at scale.",
+                                    available: false,
+                                },
+                            ].map((t) => (
+                                <div key={t.tier} className={`p-5 border ${t.available ? "border-black/10" : "border-[#0047BB]/30 bg-[#0047BB]/[0.03]"}`}>
+                                    <div className="flex items-start justify-between gap-4 mb-2">
+                                        <div>
+                                            <p className="font-cabinet font-bold text-lg tracking-tight">{t.tier}</p>
+                                            <p className="text-[10px] font-code-brand uppercase tracking-widest text-black/40">{t.sub}</p>
+                                        </div>
+                                        {!t.available && (
+                                            <span className="text-[10px] font-code-brand uppercase tracking-widest text-[#0047BB] border border-[#0047BB]/30 px-2 py-1 shrink-0">Selected</span>
+                                        )}
+                                    </div>
+                                    <p className="text-sm text-black/50 leading-relaxed">{t.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
+                    {/* 9. Current Priorities */}
+                    <motion.div {...fade(0.1)}>
+                        <Label>09</Label>
                         <SectionTitle>Current Priorities — Q2 2026</SectionTitle>
 
                         <div className="space-y-4">

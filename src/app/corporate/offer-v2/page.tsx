@@ -115,27 +115,9 @@ export default function CorporateOfferV2() {
                         <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/15 mt-1">— Einstein</p>
                     </div>
 
-                    {/* Bottom bar with price */}
                     <div className="mx-10 md:mx-16 h-px bg-white/10" />
-                    <div className="flex items-center justify-between px-10 md:px-16 py-4 gap-6 flex-wrap">
+                    <div className="flex justify-between px-10 md:px-16 py-4">
                         <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">SORRYWECAN</span>
-                        <div className="flex items-center gap-5 md:gap-8">
-                            <div className="flex items-baseline gap-2">
-                                <span className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/25">
-                                    {en ? "Investment" : "Investícia"}
-                                </span>
-                                <span className="font-cabinet font-bold text-[22px] md:text-[28px] text-white leading-none">€690</span>
-                                <span className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/30">
-                                    {en ? "/ person + VAT" : "/ osoba + DPH"}
-                                </span>
-                            </div>
-                            <div className="w-px h-4 bg-white/15 hidden md:block" />
-                            <div className="hidden md:flex items-center gap-5 text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/25">
-                                <span>{en ? "10–15 people" : "10–15 ľudí"}</span>
-                                <span>{en ? "2 full days" : "2 celé dni"}</span>
-                                <span>Bratislava</span>
-                            </div>
-                        </div>
                         <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">01</span>
                     </div>
                 </div>
@@ -514,7 +496,7 @@ export default function CorporateOfferV2() {
                                 </div>
                                 <div className="h-px bg-white/10" />
                                 <div className="space-y-1.5 text-[10px] font-code-brand text-white/30">
-                                    <p>€600 {en ? "/ person + VAT" : "/ osoba + DPH"}</p>
+                                    <p>€690 {en ? "/ person + VAT" : "/ osoba + DPH"}</p>
                                     <p>{en ? "10–15 people" : "10–15 ľudí"}</p>
                                     <p>{en ? "2 full days" : "2 celé dni"}</p>
                                     <p>Bratislava</p>

@@ -11,6 +11,7 @@ const docs = [
     { label: "Platform", short: "Platform", href: "/lab/q2-platform" },
     { label: "Content", short: "Content", href: "/lab/content" },
     { label: "Platform Strategy", short: "Strategy", href: "/lab/platform-strategy" },
+    { label: "Economics", short: "€", href: "/lab/economics" },
 ]
 
 export function LabStrategyNav() {

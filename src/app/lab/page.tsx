@@ -19,6 +19,7 @@ export default function LabPage() {
         { name: "Corporate Offer", href: "/lab/corporate", desc: "Two-day format, pricing, O2 pipeline, sales motion, objection handling." },
         { name: "Content Architecture", href: "/lab/content", desc: "The Radar, funnel stages, 60/30/10 rule, distribution channels, monetization ceiling." },
         { name: "Platform Strategy", href: "/lab/platform-strategy", desc: "Circle build, three audiences, curriculum ladder, asset moat, monetization stack, Quick Win principle." },
+        { name: "Economics", href: "/lab/economics", desc: "€30k/month path, B2B math, platform ceiling, ownership structure, revenue distribution. Internal." },
     ]
 
     const pages = [

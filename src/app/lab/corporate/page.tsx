@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
+import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
 
 const fade = (delay = 0) => ({
     initial: { opacity: 0, y: 16 },
@@ -38,8 +39,9 @@ export default function CorporatePage() {
     return (
         <div className="min-h-screen bg-[#e8e1da] text-[#0a0a0a] font-sans-brand">
             <TopNav />
+            <LabStrategyNav />
 
-            <section className="pt-32 pb-24 px-6 md:px-12">
+            <section className="pt-44 pb-24 px-6 md:px-12">
                 <div className="max-w-3xl mx-auto">
 
                     {/* Header */}

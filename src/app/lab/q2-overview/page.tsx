@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
+import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
@@ -18,9 +19,10 @@ export default function Q2OverviewPage() {
     return (
         <div className="font-sans-brand">
             <TopNav />
+            <LabStrategyNav />
 
             {/* Lang toggle */}
-            <div className="fixed top-4 right-4 z-50">
+            <div className="fixed top-[104px] right-4 z-50">
                 <button
                     onClick={() => setLang(l => l === "en" ? "sk" : "en")}
                     className="text-[10px] font-code-brand font-bold uppercase tracking-widest px-4 py-2 bg-white/10 backdrop-blur text-white hover:bg-white hover:text-black transition-colors"
@@ -35,7 +37,7 @@ export default function Q2OverviewPage() {
                     Q2
                 </span>
 
-                <div className="flex items-center justify-between px-8 md:px-16 pt-28 md:pt-32">
+                <div className="flex items-center justify-between px-8 md:px-16 pt-36 md:pt-40">
                     <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">Research Lab</span>
                     <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">Q2 2026</span>
                 </div>

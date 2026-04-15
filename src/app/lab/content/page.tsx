@@ -3,6 +3,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
+import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
@@ -15,6 +16,7 @@ export default function ContentArchitecturePage() {
     return (
         <div className="font-sans-brand">
             <TopNav />
+            <LabStrategyNav />
 
             {/* ── HERO / blue ── */}
             <section className="relative min-h-screen bg-[#0047BB] text-white overflow-hidden flex flex-col">
@@ -22,7 +24,7 @@ export default function ContentArchitecturePage() {
                     SIGNAL
                 </span>
 
-                <div className="flex items-center justify-between px-8 md:px-16 pt-28 md:pt-32">
+                <div className="flex items-center justify-between px-8 md:px-16 pt-36 md:pt-40">
                     <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">Research Lab</span>
                     <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">Content Architecture</span>
                 </div>

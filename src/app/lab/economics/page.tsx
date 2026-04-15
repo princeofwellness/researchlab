@@ -4,6 +4,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
+import { LabDocNav } from "@/components/navigation/lab-doc-nav"
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
@@ -414,6 +415,10 @@ export default function EconomicsPage() {
                     </motion.div>
                 </div>
             </section>
+
+            <LabDocNav
+                prev={{ label: "Platform Strategy", href: "/lab/platform-strategy" }}
+            />
 
             {/* ── FOOTER ── */}
             <footer className="bg-[#0d0d0d] text-white border-t border-white/[0.06] px-8 md:px-16 py-12">

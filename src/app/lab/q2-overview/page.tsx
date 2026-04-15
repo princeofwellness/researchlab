@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
+import { LabDocNav } from "@/components/navigation/lab-doc-nav"
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
@@ -953,6 +954,11 @@ export default function Q2OverviewPage() {
                     <span className="text-[8px] font-code-brand uppercase tracking-[0.4em] text-white/20">09</span>
                 </div>
             </section>
+
+            <LabDocNav
+                prev={{ label: "The Bible", href: "/lab/context" }}
+                next={{ label: "Corporate", href: "/lab/corporate" }}
+            />
 
             {/* ── FOOTER / blue ── */}
             <footer className="bg-[#0047BB] text-white px-8 md:px-16 py-20">

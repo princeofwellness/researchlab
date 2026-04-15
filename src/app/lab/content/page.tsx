@@ -4,6 +4,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
+import { LabDocNav } from "@/components/navigation/lab-doc-nav"
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
@@ -681,6 +682,11 @@ export default function ContentArchitecturePage() {
                     <span className="text-[8px] font-code-brand uppercase tracking-[0.4em] text-black/20">08</span>
                 </div>
             </section>
+
+            <LabDocNav
+                prev={{ label: "Corporate", href: "/lab/corporate" }}
+                next={{ label: "Platform Strategy", href: "/lab/platform-strategy" }}
+            />
 
             {/* ── FOOTER ── */}
             <footer className="bg-[#0d0d0d] text-white px-8 md:px-16 py-20">

@@ -8,7 +8,6 @@ const docs = [
     { label: "The Bible", short: "Bible", href: "/lab/context" },
     { label: "Q2 Overview", short: "Q2", href: "/lab/q2-overview" },
     { label: "Corporate", short: "B2B", href: "/lab/corporate" },
-    { label: "Platform", short: "Platform", href: "/lab/q2-platform" },
     { label: "Content", short: "Content", href: "/lab/content" },
     { label: "Platform Strategy", short: "Strategy", href: "/lab/platform-strategy" },
     { label: "Economics", short: "€", href: "/lab/economics" },

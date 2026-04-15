@@ -15,7 +15,6 @@ export default function LabPage() {
     const strategyPages = [
         { name: "The Bible", href: "/lab/context", desc: "Master context: who we are, brand system, voice, products, audience. Start here." },
         { name: "Q2 Overview", href: "/lab/q2-overview", desc: "Holistic Q2 plan: revenue, content flywheel, platform launch, corporate pipeline." },
-        { name: "Platform & Next Steps", href: "/lab/q2-platform", desc: "Circle architecture, membership tiers, educational framework, launch sequence." },
         { name: "Corporate Offer", href: "/lab/corporate", desc: "Two-day format, pricing, O2 pipeline, sales motion, objection handling." },
         { name: "Content Architecture", href: "/lab/content", desc: "The Radar, funnel stages, 60/30/10 rule, distribution channels, monetization ceiling." },
         { name: "Platform Strategy", href: "/lab/platform-strategy", desc: "Circle build, three audiences, curriculum ladder, asset moat, monetization stack, Quick Win principle." },

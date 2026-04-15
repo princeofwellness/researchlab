@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
+import { LabDocNav } from "@/components/navigation/lab-doc-nav"
 
 const fade = (delay = 0) => ({
     initial: { opacity: 0, y: 16 },
@@ -486,6 +487,12 @@ export default function CorporatePage() {
 
                 </div>
             </section>
+
+            <LabDocNav
+                theme="light"
+                prev={{ label: "Q2 Overview", href: "/lab/q2-overview" }}
+                next={{ label: "Content", href: "/lab/content" }}
+            />
 
             <footer className="py-12 text-center border-t border-black/10">
                 <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.4em] opacity-20">

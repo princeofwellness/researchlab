@@ -10,6 +10,7 @@ module.exports = {
         "serif-instrument": ["var(--font-instrument-serif)", "serif"],
         mono: ["var(--font-space-mono)", "monospace"],
         syne: ["var(--font-syne)", "sans-serif"],
+        cabinet: ["Cabinet Grotesk", "sans-serif"],
         inter: ["var(--font-inter)", "sans-serif"],
       },
       colors: {

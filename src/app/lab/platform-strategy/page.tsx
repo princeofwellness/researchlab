@@ -25,7 +25,7 @@ export default function PlatformStrategyPage() {
 
             {/* ── 01 HERO / blue ── */}
             <section className="relative min-h-screen bg-[#0047BB] text-white overflow-hidden flex flex-col" style={grid}>
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[22vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[22vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
                     PLATFORM
                 </span>
                 <div className="flex items-center justify-between px-8 md:px-16 pt-36 md:pt-40 pb-6">
@@ -35,7 +35,7 @@ export default function PlatformStrategyPage() {
                 <div className="flex-1 flex flex-col justify-center px-8 md:px-16 pb-24">
                     <motion.div {...fadeUp(0.1)} className="mb-12">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40 block mb-6">01 — Vision</span>
-                        <h1 className="font-syne font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.92] mb-8">
+                        <h1 className="font-cabinet font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.92] mb-8">
                             Not a course.<br />A living network.
                         </h1>
                         <p className="text-white/50 text-xl max-w-xl leading-relaxed">
@@ -49,7 +49,7 @@ export default function PlatformStrategyPage() {
                             { label: "B2B Teams", sub: "Workshop → Circle" },
                         ].map(t => (
                             <div key={t.label} className="bg-white/[0.06] px-5 py-4">
-                                <p className="font-syne font-bold text-lg">{t.label}</p>
+                                <p className="font-cabinet font-bold text-lg">{t.label}</p>
                                 <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/30 mt-1">{t.sub}</p>
                             </div>
                         ))}
@@ -65,11 +65,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 02 AUDIENCES / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute right-0 top-0 font-syne font-bold text-[20vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">WHO</span>
+                <span className="absolute right-0 top-0 font-cabinet font-bold text-[20vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">WHO</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30 block mb-4">02 — Three Audiences</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">One platform.<br />Three entry points.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">One platform.<br />Three entry points.</h2>
                     </motion.div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10">
                         {[
@@ -97,7 +97,7 @@ export default function PlatformStrategyPage() {
                         ].map((a, i) => (
                             <motion.div key={a.label} {...fadeUp(i * 0.1)} className={`p-8 ${a.color}`}>
                                 <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-[#0047BB] block mb-3">{a.tag}</span>
-                                <p className="font-syne font-bold text-3xl tracking-tight mb-6">{a.label}</p>
+                                <p className="font-cabinet font-bold text-3xl tracking-tight mb-6">{a.label}</p>
                                 <div className="h-px bg-black/10 mb-6" />
                                 <div className="space-y-1 mb-8">
                                     {a.lines.map(l => (
@@ -115,11 +115,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 03 FRAMEWORKS / dark ── */}
             <section className="relative bg-[#0d0d0d] text-white overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute left-0 bottom-0 font-syne font-bold text-[18vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">CORE</span>
+                <span className="absolute left-0 bottom-0 font-cabinet font-bold text-[18vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">CORE</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/30 block mb-4">03 — The Frameworks</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">What we own.<br />How every session moves.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">What we own.<br />How every session moves.</h2>
                     </motion.div>
 
                     {/* The Arc — clean and visual */}
@@ -132,7 +132,7 @@ export default function PlatformStrategyPage() {
                                 { label: "Clarity", owner: "Roman", desc: "Synthesis. Visual. What to take and where to go next." },
                             ].map((s, i) => (
                                 <div key={s.label} className={`p-6 ${i < 2 ? "border-r border-white/[0.06]" : ""}`}>
-                                    <p className="font-syne font-bold text-4xl tracking-tighter mb-2">{s.label}</p>
+                                    <p className="font-cabinet font-bold text-4xl tracking-tighter mb-2">{s.label}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-widest text-white/30 mb-4">{s.owner}</p>
                                     <p className="text-white/40 text-sm">{s.desc}</p>
                                 </div>
@@ -151,7 +151,7 @@ export default function PlatformStrategyPage() {
                         ].map((f, i) => (
                             <motion.div key={f.n} {...fadeUp(i * 0.06)} className="flex items-baseline gap-8 py-6 border-b border-white/[0.06] last:border-0">
                                 <span className="text-[11px] font-code-brand text-white/15 w-8 shrink-0">{f.n}</span>
-                                <p className="font-syne font-bold text-xl tracking-tight flex-1">{f.name}</p>
+                                <p className="font-cabinet font-bold text-xl tracking-tight flex-1">{f.name}</p>
                                 <p className="text-white/40 text-sm flex-[2] hidden md:block">{f.line}</p>
                                 <span className="text-[9px] font-code-brand uppercase tracking-[0.2em] text-white/20 shrink-0 hidden lg:block">{f.who}</span>
                             </motion.div>
@@ -162,11 +162,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 04 CURRICULUM / blue ── */}
             <section className="relative bg-[#0047BB] text-white overflow-hidden py-32 px-8 md:px-16" style={grid}>
-                <span className="absolute right-0 top-1/2 -translate-y-1/2 font-syne font-bold text-[18vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">LEVELS</span>
+                <span className="absolute right-0 top-1/2 -translate-y-1/2 font-cabinet font-bold text-[18vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">LEVELS</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40 block mb-4">04 — Curriculum</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">Four levels.<br />One direction: deeper.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">Four levels.<br />One direction: deeper.</h2>
                     </motion.div>
                     <div className="space-y-3">
                         {[
@@ -204,7 +204,7 @@ export default function PlatformStrategyPage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <p className="font-syne font-bold text-2xl tracking-tight mb-4">{l.name}</p>
+                                    <p className="font-cabinet font-bold text-2xl tracking-tight mb-4">{l.name}</p>
                                     <div className="space-y-1">
                                         {l.items.map(it => (
                                             <p key={it} className="text-sm text-white/50">— {it}</p>
@@ -223,11 +223,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 05 NETWORK / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[14vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">NETWORK</span>
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[14vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">NETWORK</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30 block mb-4">05 — The Network</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">Learners look up.<br />Builders teach down.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">Learners look up.<br />Builders teach down.</h2>
                         <p className="text-black/40 mt-6 max-w-xl">
                             SORRYWECAN spent years building trust across Slovakia's creative and business scene. Research Lab opens that network as a platform feature.
                         </p>
@@ -241,7 +241,7 @@ export default function PlatformStrategyPage() {
                             { name: "Tiep Le Dinh", role: "Vision · Face · Product", desc: "The thinking behind the tool is the tool." },
                         ].map((p, i) => (
                             <div key={p.name} className={`p-6 ${i < 2 ? "border-r border-black/10" : ""}`}>
-                                <p className="font-syne font-bold text-xl tracking-tight mb-1">{p.name}</p>
+                                <p className="font-cabinet font-bold text-xl tracking-tight mb-1">{p.name}</p>
                                 <p className="text-[9px] font-code-brand uppercase tracking-widest text-[#0047BB] mb-4">{p.role}</p>
                                 <p className="text-sm text-black/40">{p.desc}</p>
                             </div>
@@ -258,7 +258,7 @@ export default function PlatformStrategyPage() {
                             { type: "Creative Operators", example: "Designers and directors using AI with taste", what: "The SORRYWECAN angle. AI that has aesthetic intelligence." },
                         ].map((p, i) => (
                             <motion.div key={p.type} {...fadeUp(i * 0.07)} className="p-5 border border-black/10">
-                                <p className="font-syne font-bold text-lg tracking-tight mb-1">{p.type}</p>
+                                <p className="font-cabinet font-bold text-lg tracking-tight mb-1">{p.type}</p>
                                 <p className="text-xs text-black/30 italic mb-4">{p.example}</p>
                                 <p className="text-sm text-black/60">{p.what}</p>
                             </motion.div>
@@ -269,12 +269,12 @@ export default function PlatformStrategyPage() {
                     <motion.div {...fadeUp(0.12)} className="p-6 bg-[#0d0d0d] text-white flex flex-col md:flex-row items-start gap-6">
                         <div className="flex-1">
                             <p className="text-[9px] font-code-brand uppercase tracking-widest text-white/30 mb-2">Membership Tier</p>
-                            <p className="font-syne font-bold text-2xl tracking-tight mb-2">Core Contributor</p>
+                            <p className="font-cabinet font-bold text-2xl tracking-tight mb-2">Core Contributor</p>
                             <p className="text-white/40 text-sm">Full access in exchange for real contribution. Max 5–8 in founding phase. Teach one session, contribute actively, get the audience.</p>
                         </div>
                         <div className="shrink-0">
                             <p className="text-[9px] font-code-brand uppercase tracking-widest text-white/30 mb-1">Price</p>
-                            <p className="font-syne font-bold text-4xl">Free</p>
+                            <p className="font-cabinet font-bold text-4xl">Free</p>
                         </div>
                     </motion.div>
                 </div>
@@ -282,11 +282,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 06 CIRCLE / dark ── */}
             <section className="relative bg-[#0d0d0d] text-white overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute left-0 top-0 font-syne font-bold text-[18vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">CIRCLE</span>
+                <span className="absolute left-0 top-0 font-cabinet font-bold text-[18vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">CIRCLE</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/30 block mb-4">06 — Inside Circle</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">Nine spaces.<br />One ecosystem.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">Nine spaces.<br />One ecosystem.</h2>
                     </motion.div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.05] mb-8">
                         {[
@@ -316,11 +316,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 07 BRIDGE / blue ── */}
             <section className="relative bg-[#0047BB] text-white overflow-hidden py-32 px-8 md:px-16" style={grid}>
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[18vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">BRIDGE</span>
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[18vw] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">BRIDGE</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/40 block mb-4">07 — Workshop → Circle</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">The highest-trust moment<br />we have with a stranger.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">The highest-trust moment<br />we have with a stranger.</h2>
                     </motion.div>
                     <div className="space-y-px">
                         {[
@@ -341,11 +341,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 08 MONETIZATION / parchment ── */}
             <section className="relative bg-[#e8e1da] text-[#0a0a0a] overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[20vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">€</span>
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[20vw] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">€</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30 block mb-4">08 — Monetization</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">Four layers.<br />One direction: up.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">Four layers.<br />One direction: up.</h2>
                     </motion.div>
                     <div className="space-y-3">
                         {[
@@ -356,11 +356,11 @@ export default function PlatformStrategyPage() {
                         ].map((t, i) => (
                             <motion.div key={t.tier} {...fadeUp(i * 0.07)} className={`flex items-center justify-between gap-6 p-6 border flex-wrap ${t.highlight ? "border-2 border-[#0047BB]/40 bg-[#0047BB]/[0.03]" : "border-black/10"}`}>
                                 <div className="flex-1 min-w-[200px]">
-                                    <p className="font-syne font-bold text-xl tracking-tight mb-1">{t.tier}</p>
+                                    <p className="font-cabinet font-bold text-xl tracking-tight mb-1">{t.tier}</p>
                                     <p className="text-[9px] font-code-brand uppercase tracking-widest text-black/30 mb-2">{t.tag}</p>
                                     <p className="text-sm text-black/50">{t.note}</p>
                                 </div>
-                                <p className="font-syne font-bold text-3xl md:text-4xl text-[#0047BB] shrink-0">{t.price}</p>
+                                <p className="font-cabinet font-bold text-3xl md:text-4xl text-[#0047BB] shrink-0">{t.price}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -369,11 +369,11 @@ export default function PlatformStrategyPage() {
 
             {/* ── 09 QUICK WIN / dark ── */}
             <section className="relative bg-[#0d0d0d] text-white overflow-hidden py-32 px-8 md:px-16">
-                <span className="absolute right-0 bottom-0 font-syne font-bold text-[18vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">WIN</span>
+                <span className="absolute right-0 bottom-0 font-cabinet font-bold text-[18vw] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">WIN</span>
                 <div className="max-w-5xl mx-auto relative">
                     <motion.div {...fadeUp(0)} className="mb-16">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/30 block mb-4">09 — Retention</span>
-                        <h2 className="font-syne font-bold text-4xl md:text-6xl tracking-tighter">Month one<br />decides everything.</h2>
+                        <h2 className="font-cabinet font-bold text-4xl md:text-6xl tracking-tighter">Month one<br />decides everything.</h2>
                         <p className="text-white/40 mt-6 max-w-xl text-lg">
                             No quick win in 30 days = discretionary expense = first thing cut. Not because they don't believe in it — because it never became real.
                         </p>
@@ -385,7 +385,7 @@ export default function PlatformStrategyPage() {
                             { title: "Community Pull", desc: "The Lounge, the webinars, the challenges. People stay for people." },
                         ].map(s => (
                             <div key={s.title} className="bg-[#0d0d0d] p-6">
-                                <p className="font-syne font-bold text-2xl tracking-tight text-[#0047BB] mb-3">{s.title}</p>
+                                <p className="font-cabinet font-bold text-2xl tracking-tight text-[#0047BB] mb-3">{s.title}</p>
                                 <p className="text-white/40 text-sm leading-relaxed">{s.desc}</p>
                             </div>
                         ))}
@@ -416,7 +416,7 @@ export default function PlatformStrategyPage() {
             <footer className="bg-[#0d0d0d] text-white border-t border-white/[0.06] px-8 md:px-16 py-12">
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                     <div>
-                        <p className="font-syne font-bold text-xl tracking-tighter">RESEARCH<span className="text-[#0047BB]">LAB</span></p>
+                        <p className="font-cabinet font-bold text-xl tracking-tighter">RESEARCH<span className="text-[#0047BB]">LAB</span></p>
                         <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/20 mt-1">Platform Strategy · 2026</p>
                         <p className="text-[10px] font-code-brand uppercase tracking-widest text-white/10 mt-0.5">SORRYWECAN // WHERE HUMANS & AI CO-EVOLVE</p>
                     </div>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
 import { LabDocNav } from "@/components/navigation/lab-doc-nav"
+import { LabComments } from "@/components/lab/lab-comments"
 
 const fade = (delay = 0) => ({
     initial: { opacity: 0, y: 16 },
@@ -721,6 +722,8 @@ WHAT WE ARE NOT: A dev shop. A consulting firm. A hype machine. A tools aggregat
 
                 </div>
             </section>
+
+            <LabComments page="context" />
 
             <LabDocNav
                 theme="light"

@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { TopNav } from "@/components/navigation/top-nav"
 import { LabStrategyNav } from "@/components/navigation/lab-strategy-nav"
 import { LabDocNav } from "@/components/navigation/lab-doc-nav"
+import { LabComments } from "@/components/lab/lab-comments"
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
@@ -406,6 +407,8 @@ export default function PlatformStrategyPage() {
                     </motion.div>
                 </div>
             </section>
+
+            <LabComments page="platform-strategy" />
 
             <LabDocNav
                 prev={{ label: "Content", href: "/lab/content" }}

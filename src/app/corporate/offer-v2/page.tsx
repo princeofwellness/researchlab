@@ -113,12 +113,13 @@ export default function CorporateOfferV2() {
                     {/* Main */}
                     <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-10 md:py-0">
                         <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[58px] md:text-[92px] text-white">
-                            {en ? <>Corporate<br />Workshop.</> : <>Firemný<br />Workshop.</>}
+                            {en ? <>Corporate<br />Workshop.</> : <>Tímový<br />Workshop.</>}
                         </h1>
+                        {!en && <p className="text-[13px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/30 mt-3">SORRYWECAN x O2</p>}
                         <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[400px] leading-relaxed">
                             {en
                                 ? "A two-day guided experience. Your team thinks differently by the time they leave."
-                                : "Dvojdňová riadená skúsenosť. Váš tím myslí inak, keď odchádza."}
+                                : "Dvojdňový vzdelávací program. Váš tím odchádza s iným spôsobom myslenia."}
                         </p>
                     </div>
 
@@ -174,7 +175,7 @@ export default function CorporateOfferV2() {
                                 ["Nástroje pribúdajú.", "Jasnosť nie."],
                                 ["Tlak je reálny.", "Smer nie je."],
                                 ["Adopcia prebieha.", "Myslenie nestíha."],
-                                ["Všetci experimentujú.", "Nikto nevlastní výsledok."],
+                                ["Každý experimentuje.", "Nikto nenesie zodpovednosť za výsledok."],
                             ]).map(([a, b], i, arr) => (
                                 <div key={i}>
                                     <div className="py-4 md:py-5">
@@ -224,7 +225,7 @@ export default function CorporateOfferV2() {
                             <p className="mt-5 text-[11px] text-white/35 leading-relaxed max-w-[170px]">
                                 {en
                                     ? "Before anyone reaches for a tool, the team builds a shared mental model."
-                                    : "Predtým než niekto siahne po nástroji, tím buduje spoločný mentálny model."}
+                                    : "Predtým, než niekto siahne po nástroji, tím si vytvorí spoločný mentálny model."}
                             </p>
                         </div>
 
@@ -236,10 +237,10 @@ export default function CorporateOfferV2() {
                                 { t: "60 min", h: "Circle Discussion", d: "Your team brings the real questions — the ones that don't get asked in meetings." },
                                 { t: "45 min", h: "Panel", d: "Open. Anything goes. Honest answers from experience, not theory." },
                             ] : [
-                                { t: "30 min", h: "Úvodný Čajový Rituál", d: "Sedenie v kruhu. Prítomnosť pred výkonom. Otvárame s úmyslom." },
-                                { t: "2×30 min", h: "Dve Perspektívy", d: "Tiep · Roman — dva pohľady, jedna miestnosť. Krátko, ostro. Bez scenára." },
-                                { t: "60 min", h: "Diskusia v Kruhu", d: "Váš tím prinesie skutočné otázky — tie, čo sa na poradách nepýtajú." },
-                                { t: "45 min", h: "Panel", d: "Otvorený. Čokoľvek. Úprimné odpovede zo skúsenosti, nie teórie." },
+                                { t: "30 min", h: "Úvodný Čajový Rituál", d: "Sedenie v kruhu. Prítomnosť pred výkonom. Začíname s jasným zámerom." },
+                                { t: "2×30 min", h: "Dve Perspektívy", d: "Tiep · Roman: dva pohľady, jedna miestnosť. Krátke, presné. Bez scenára." },
+                                { t: "60 min", h: "Diskusia v Kruhu", d: "Váš tím prinesie reálne otázky — tie, ktoré na poradách nezaznievajú." },
+                                { t: "45 min", h: "Panel", d: "Otvorený formát. Akákoľvek téma. Úprimné odpovede zo skúsenosti, nie z teórie." },
                             ]).map((p, i, arr) => (
                                 <div key={i}>
                                     <div className="flex items-start gap-5 py-3 md:py-4">
@@ -299,7 +300,7 @@ export default function CorporateOfferV2() {
                             <p className="mt-5 text-[11px] text-white/40 leading-relaxed max-w-[170px]">
                                 {en
                                     ? "Everything tailored to your actual workflow. Not a generic AI tools tour."
-                                    : "Všetko prispôsobené vášmu skutočnému workflow. Nie všeobecná prehliadka AI nástrojov."}
+                                    : "Všetko prispôsobené vášmu reálnemu workflow. Nie všeobecný prehľad AI nástrojov."}
                             </p>
                         </div>
 
@@ -313,8 +314,8 @@ export default function CorporateOfferV2() {
                             ] : [
                                 { t: "45 min", h: "Čo Je Skutočne Možné", d: "Živé zdieľanie obrazovky. Skutočné úlohy, skutočný výstup. Bez slidov." },
                                 { t: "60 min", h: "Stack Nástrojov", d: "Výskum, písanie, video, porady, knowledge management. Čo na čo a prečo." },
-                                { t: "45 min", h: "Prompty, Ktoré Fungujú", d: "Logika, nie zoznam. Mentálny model za dobrým promptovaním. Potom každý cvičí naživo." },
-                                { t: "90 min", h: "Vaše Problémy, Živo", d: "Skutočné výzvy vášho tímu riešené v reálnom čase. Bez teórie. Len výsledky." },
+                                { t: "45 min", h: "Prompty, Ktoré Fungujú", d: "Logika, nie zoznam. Mentálny model za kvalitným promptovaním. Následne si to každý vyskúša naživo." },
+                                { t: "90 min", h: "Vaše Problémy, Naživo", d: "Reálne výzvy vášho tímu riešené v reálnom čase. Bez teórie. Len výsledok." },
                             ]).map((p, i, arr) => (
                                 <div key={i}>
                                     <div className="flex items-start gap-5 py-3 md:py-4">
@@ -369,7 +370,7 @@ export default function CorporateOfferV2() {
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
                                 {en
                                     ? "Builder and creative at the intersection of AI, culture, and human development. Founder of Research Lab. Thinks about AI the way others think about language — as the core of everything."
-                                    : "Tvorca a kreatívec na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab. Myslí o AI tak, ako iní myslia o jazyku — ako o jadre všetkého."}
+                                    : "Tvorca a kreatívec na priesečníku AI, kultúry a ľudského rozvoja. Spoluzakladateľ Research Lab. O AI premýšľa podobne, ako iní o jazyku — ako o základe všetkého."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-black/40 max-w-[260px] leading-snug">
                                 {en
@@ -389,12 +390,12 @@ export default function CorporateOfferV2() {
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
                                 {en
                                     ? "Transformational designer. Helps teams align on what matters and make decisions that hold under pressure. Facilitates the conversations most teams avoid."
-                                    : "Transformačný dizajnér. Pomáha tímom zladiť sa na tom, čo je dôležité, a robiť rozhodnutia, ktoré vydržia pod tlakom. Facilituje konverzácie, ktorým sa väčšina tímov vyhýba."}
+                                    : "Transformačný dizajnér. Pomáha tímom zjednotiť sa v tom, čo je podstatné, a robiť rozhodnutia, ktoré obstojia aj pod tlakom."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-black/40 max-w-[260px] leading-snug">
                                 {en
                                     ? "\"Clarity is not a luxury. It's what makes everything else possible.\""
-                                    : "\"Jasnosť nie je luxus. To, čo umožňuje všetko ostatné.\""}
+                                    : "\"Jasnosť nie je luxus. Je to to, čo umožňuje všetko ostatné.\""}
                             </p>
                         </div>
                     </div>
@@ -435,10 +436,10 @@ export default function CorporateOfferV2() {
                                 ["30-Day Follow-Up", "A check-in call. What's working, what isn't. Included."],
                                 ["Community Access", "30 days in Research Lab's Circle. Keep going."],
                             ] : [
-                                ["Spoločný Rámec", "Jeden tím, jeden spôsob myslenia o AI."],
-                                ["Funkčný Stack Nástrojov", "Pre váš workflow, nie všeobecný zoznam."],
+                                ["Spoločný Rámec", "Jeden tím. Jeden spôsob premýšľania o AI."],
+                                ["Funkčný Nástrojový Stack", "Navrhnutý pre váš workflow, nie univerzálny zoznam."],
                                 ["Prompty, Ktoré Fungujú", "Logika, nielen príklady."],
-                                ["Pondelkové Rozhodnutie", "Niečo konkrétne. Od nasledujúceho rána."],
+                                ["Pondelkové Rozhodnutie", "Niečo konkrétne. Požiteľné hneď od nasledujúceho rána."],
                                 ["30-Dňový Follow-Up", "Kontrolný hovor. Čo funguje, čo nie. V cene."],
                                 ["Prístup do Komunity", "30 dní v Research Lab Circle. Pokračujte."],
                             ]).map(([title, desc], i) => (

@@ -95,11 +95,6 @@ export default function PitchDeckPage() {
                         <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[72px] md:text-[110px] text-white">
                             RESEARCH<br />LAB.
                         </h1>
-                        <p className="mt-8 text-[15px] md:text-[18px] text-white/50 max-w-[480px] leading-relaxed">
-                            {en
-                                ? "An applied AI platform focused on how organisations adapt to AI in real work."
-                                : "Aplikovaná AI platforma zameraná na adaptáciu organizácií na AI v reálnej práci."}
-                        </p>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-white/10" />
@@ -196,13 +191,8 @@ export default function PitchDeckPage() {
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
 
-                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-8 md:py-0 gap-10 items-center">
-                        <div className="md:w-48 flex-shrink-0">
-                            <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/30 leading-loose">
-                                {en ? "Four\nfailure\nmodes" : "Štyri\nmódy\nzlyhania"}
-                            </p>
-                        </div>
-                        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-8 md:py-0">
+                        <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10">
                             {(en ? [
                                 { title: "AI adoption is chaotic", body: "No shared standards, random usage across teams." },
                                 { title: "Decision-making is weakening", body: "More options, no framework to evaluate them." },
@@ -214,9 +204,9 @@ export default function PitchDeckPage() {
                                 { title: "Kvalita je nekonzistentná", body: "Vysoký objem výstupu, nestabilné kreatívne a operačné štandardy." },
                                 { title: "Exekúcia je rýchlejšia, ale úsudok je ťažší", body: "Smer trpí." },
                             ]).map((p) => (
-                                <div key={p.title} className="bg-white/[0.08] p-5 md:p-6 rounded-sm">
-                                    <p className="font-cabinet font-bold text-[16px] md:text-[18px] tracking-tight text-white leading-tight mb-2">{p.title}</p>
-                                    <p className="text-[12px] text-white/45 leading-relaxed">{p.body}</p>
+                                <div key={p.title} className="bg-[#0047BB] p-7 md:p-10">
+                                    <p className="font-cabinet font-bold text-[18px] md:text-[22px] tracking-tight text-white leading-tight mb-3">{p.title}</p>
+                                    <p className="text-[12px] text-white/40 leading-relaxed">{p.body}</p>
                                 </div>
                             ))}
                         </div>
@@ -340,62 +330,24 @@ export default function PitchDeckPage() {
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
 
                     <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-6 md:py-0">
-                        <h2 className="font-cabinet font-bold text-[26px] md:text-[36px] tracking-tight leading-[1.05] text-white mb-6">
-                            {en ? "Research Lab formats" : "Formáty Research Lab"}
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+                        <div className="grid grid-cols-2 gap-px bg-white/10 border border-white/10">
                             {(en ? [
-                                {
-                                    title: "Public sessions and curated discussions",
-                                    body: "Open formats designed to explore AI, creativity, and change in a structured but accessible way — for individuals, communities, and partner-led initiatives.",
-                                    meta: ["Length — 2–3 hours", "Capacity — up to 20 people", "Location — our studio or partner locations"],
-                                },
-                                {
-                                    title: "Organisational programmes",
-                                    body: "A structured programme for teams and leadership, combining cross-team AI diagnostics with integration into real work across workflows, decision-making, and shared standards.",
-                                    meta: ["Length — From 2-day workshop to long-term programme", "Capacity — up to 15 people"],
-                                },
-                                {
-                                    title: "Toolkits and applied research",
-                                    body: "Custom and open toolkits built on real workflows and production experience, translating live experiments into practical frameworks others can use.",
-                                    meta: [],
-                                },
-                                {
-                                    title: "A curated digital platform",
-                                    body: "Continuous access to Research Lab content, formats, and collaborations. Regularly updated content from short-form insights to in-depth sessions, lectures, and webinars. Subscription-based.",
-                                    meta: [],
-                                },
+                                { name: "COMMUNITEA", tag: "Public · Open Format", desc: "Public sessions and curated discussions. Open formats that make AI understandable beyond the tech world.", meta: ["2–3 hours · up to 20 people"] },
+                                { name: "MINDSHIFT", tag: "Organisations · B2B", desc: "Structured programme for teams and leadership. Cross-team AI diagnostics + integration into real workflows. From 2-day workshop to long-term collaboration.", meta: ["2-day to long-term · up to 15 people"] },
+                                { name: "FUTURE PROTOCOLS", tag: "Toolkits & Research", desc: "Custom and open toolkits built on real SORRYWECAN workflows. Live experiments translated into practical frameworks others can use.", meta: [] },
+                                { name: "MEDIA HOUSE", tag: "Content & Distribution", desc: "The Radar newsletter, blog, and online distribution. The content flywheel that builds trust and feeds all other formats.", meta: [] },
                             ] : [
-                                {
-                                    title: "Verejné stretnutia a moderované diskusie",
-                                    body: "Otvorené formáty navrhnuté na skúmanie AI, kreativity a zmeny — pre jednotlivcov, komunity a partnerské iniciatívy.",
-                                    meta: ["Dĺžka — 2–3 hodiny", "Kapacita — až 20 ľudí", "Miesto — naše štúdio alebo priestory partnerov"],
-                                },
-                                {
-                                    title: "Organizačné programy",
-                                    body: "Štruktúrovaný program pre tímy a vedenie, kombinujúci AI diagnostiku naprieč tímami s integráciou do reálnej práce.",
-                                    meta: ["Dĺžka — Od 2-dňového workshopu po dlhodobý program", "Kapacita — až 15 ľudí"],
-                                },
-                                {
-                                    title: "Toolkity a aplikovaný výskum",
-                                    body: "Vlastné a otvorené toolkity postavené na reálnych workflow a produkčnej skúsenosti, prekladajúce živé experimenty do praktických rámcov.",
-                                    meta: [],
-                                },
-                                {
-                                    title: "Kurátorská digitálna platforma",
-                                    body: "Nepretržitý prístup k obsahu, formátom a spolupráciam Research Lab. Pravidelne aktualizovaný obsah od krátkych postrehov po hĺbkové prednášky. Predplatné.",
-                                    meta: [],
-                                },
+                                { name: "COMMUNITEA", tag: "Verejnosť · Otvorený Formát", desc: "Verejné stretnutia a moderované diskusie. Otvorené formáty, ktoré robia AI zrozumiteľnou mimo tech sveta.", meta: ["2–3 hodiny · až 20 ľudí"] },
+                                { name: "MINDSHIFT", tag: "Organizácie · B2B", desc: "Štruktúrovaný program pre tímy a vedenie. Diagnostika AI + integrácia do reálnych workflow. Od 2-dňového workshopu po dlhodobú spoluprácu.", meta: ["2 dni až dlhodobý · až 15 ľudí"] },
+                                { name: "FUTURE PROTOCOLS", tag: "Toolkity & Výskum", desc: "Vlastné a otvorené toolkity postavené na reálnych SORRYWECAN workflow. Živé experimenty preložené do praktických rámcov.", meta: [] },
+                                { name: "MEDIA HOUSE", tag: "Obsah & Distribúcia", desc: "Newsletter The Radar, blog a online distribúcia. Obsahový flywheel, ktorý buduje dôveru a živí všetky ostatné formáty.", meta: [] },
                             ]).map((f) => (
-                                <div key={f.title} className="bg-white/[0.08] p-4 md:p-5 flex flex-col gap-2">
-                                    <p className="font-cabinet font-bold text-[14px] md:text-[15px] tracking-tight text-white leading-tight">{f.title}</p>
-                                    <p className="text-[11px] text-white/45 leading-relaxed flex-1">{f.body}</p>
+                                <div key={f.name} className="bg-[#0047BB] p-7 md:p-10 flex flex-col">
+                                    <p className="font-cabinet font-bold text-[22px] md:text-[28px] tracking-tight text-white leading-none mb-1">{f.name}</p>
+                                    <p className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/35 mb-4">{f.tag}</p>
+                                    <p className="text-[12px] text-white/50 leading-relaxed flex-1">{f.desc}</p>
                                     {f.meta.length > 0 && (
-                                        <div className="mt-1 space-y-0.5">
-                                            {f.meta.map((m) => (
-                                                <p key={m} className="text-[10px] font-code-brand text-white/30">{m}</p>
-                                            ))}
-                                        </div>
+                                        <p className="text-[10px] font-code-brand text-white/25 mt-3">{f.meta[0]}</p>
                                     )}
                                 </div>
                             ))}

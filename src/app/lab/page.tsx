@@ -6,6 +6,8 @@ import { TopNav } from "@/components/navigation/top-nav"
 
 export default function LabPage() {
     const onepagers = [
+        { name: "Research Lab Pitch Deck", href: "/lab/pitchdeck", desc: "Holistic RL pitch: problem, ecosystem, formats, team, engagement. EN/SK, PDF-ready." },
+        { name: "Corporate Offer v2", href: "/corporate/offer-v2", desc: "O2 workshop offer deck — 7 slides, bilingual, landscape PDF." },
         { name: "Public One-Pager", href: "/public/onepager", desc: "THE MINDSHIFT session deck (PDF export)" },
         { name: "Corporate One-Pager", href: "/corporate/onepager", desc: "Corporate workshop deck (PDF export)" },
         { name: "Instagram Stories", href: "/public/stories", desc: "22 story slides for Instagram (EN/SK, screenshot-ready)" },

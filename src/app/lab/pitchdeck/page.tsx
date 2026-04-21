@@ -71,10 +71,10 @@ export default function PitchDeckPage() {
             <div className="page-container font-sans-brand">
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 01 — COVER / blue
+                    SLIDE 01 — COVER / blue + grid
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#0047BB] text-white`} style={grid}>
-                    <span className="absolute right-[-20px] bottom-[-20px] font-cabinet font-bold text-[180px] md:text-[260px] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
+                    <span className="absolute right-[-20px] bottom-[-20px] font-cabinet font-bold text-[200px] md:text-[300px] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
                         RL
                     </span>
 
@@ -92,19 +92,13 @@ export default function PitchDeckPage() {
                         <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.4em] text-white/30 mb-6">
                             SORRYWECAN ecosystem
                         </p>
-                        <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[64px] md:text-[100px] text-white">
-                            Research<br />Lab.
+                        <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[72px] md:text-[110px] text-white">
+                            RESEARCH<br />LAB.
                         </h1>
-                        <p className="mt-8 text-[15px] md:text-[19px] text-white/50 max-w-[420px] leading-relaxed">
+                        <p className="mt-8 text-[15px] md:text-[18px] text-white/50 max-w-[480px] leading-relaxed">
                             {en
-                                ? "An applied AI platform. Where strategy, execution, and cognition meet."
-                                : "Aplikovaná AI platforma. Kde sa stretáva stratégia, exekúcia a kognícia."}
-                        </p>
-                    </div>
-
-                    <div className="px-10 md:px-16 pb-6 text-right">
-                        <p className="text-[11px] md:text-[13px] font-code-brand text-white/30 italic max-w-[400px] ml-auto leading-relaxed">
-                            "WHERE HUMANS & AI CO-EVOLVE"
+                                ? "An applied AI platform focused on how organisations adapt to AI in real work."
+                                : "Aplikovaná AI platforma zameraná na adaptáciu organizácií na AI v reálnej práci."}
                         </p>
                     </div>
 
@@ -116,48 +110,40 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 02 — THE PROBLEM / parchment
+                    SLIDE 02 — IDENTITY / parchment
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
-                    <span className="absolute right-[-20px] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[180px] md:text-[260px] text-black/[0.04] leading-none select-none pointer-events-none tracking-tighter">
-                        WHY
+                    <span className="absolute right-[-10px] bottom-[-10px] font-cabinet font-bold text-[180px] md:text-[260px] text-black/[0.04] leading-none select-none pointer-events-none tracking-tighter">
+                        ID
                     </span>
 
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/30">
-                            {en ? "The Problem" : "Problém"}
+                            {en ? "Identity" : "Identita"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-black/10" />
 
-                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-10 md:py-0 gap-10 items-center">
-                        <div className="flex-1 md:pr-10">
-                            <h2 className="font-cabinet font-bold text-[32px] md:text-[48px] tracking-tight leading-[1.0]">
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 max-w-[680px]">
+                        <h2 className="font-cabinet font-bold text-[28px] md:text-[40px] tracking-tight leading-[1.05] mb-8">
+                            {en ? "Identity" : "Identita"}
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-[15px] md:text-[18px] leading-relaxed text-[#0a0a0a]">
                                 {en
-                                    ? <>AI is not a<br />tool change.<br /><span className="text-black/25">It is a system-<br />level shift.</span></>
-                                    : <>AI nie je zmena<br />nástrojov.<br /><span className="text-black/25">Je to zmena<br />na úrovni systému.</span></>}
-                            </h2>
-                        </div>
-                        <div className="flex-1 border-t md:border-t-0 md:border-l border-black/10 md:pl-10 pt-8 md:pt-0">
-                            {(en ? [
-                                ["AI adoption is chaotic", "No shared standards, random usage across teams."],
-                                ["Decision-making is weakening", "More options, no framework to evaluate them."],
-                                ["Quality is inconsistent", "High output volume, unstable standards."],
-                                ["Execution is faster, judgment is harder", "Direction suffers as speed increases."],
-                            ] : [
-                                ["Adopcia AI je chaotická", "Žiadne zdieľané štandardy, náhodné používanie naprieč tímami."],
-                                ["Rozhodovanie sa oslabuje", "Viac možností, žiadny rámec na ich vyhodnotenie."],
-                                ["Kvalita je nekonzistentná", "Vysoký objem výstupu, nestabilné štandardy."],
-                                ["Exekúcia je rýchlejšia, úsudok je ťažší", "Smer trpí, keď rýchlosť rastie."],
-                            ]).map(([a, b], i, arr) => (
-                                <div key={i}>
-                                    <div className="py-3 md:py-4">
-                                        <p className="text-[14px] md:text-[15px] font-medium">{a}</p>
-                                        <p className="text-[12px] md:text-[13px] text-black/35 mt-0.5">{b}</p>
-                                    </div>
-                                    {i < arr.length - 1 && <div className="h-px bg-black/[0.08]" />}
-                                </div>
-                            ))}
+                                    ? "Research Lab is an applied AI platform focused on how organisations adapt to AI in real work."
+                                    : "Research Lab je aplikovaná AI platforma zameraná na to, ako sa organizácie adaptujú na AI v reálnej práci."}
+                            </p>
+                            <p className="text-[15px] md:text-[18px] leading-relaxed text-[#0a0a0a]">
+                                {en
+                                    ? "It translates real-world AI practice into better workflows, clearer decision-making, and stronger organisational adaptation."
+                                    : "Prekladá reálnu prax AI do lepších workflow, jasnejšieho rozhodovania a silnejšej organizačnej adaptácie."}
+                            </p>
+                            <p className="text-[15px] md:text-[18px] leading-relaxed text-black/40">
+                                {en
+                                    ? "Developed within the SORRYWECAN ecosystem."
+                                    : "Vyvinuté v rámci ekosystému SORRYWECAN."}
+                            </p>
                         </div>
                     </div>
 
@@ -169,54 +155,27 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 03 — WHAT WE ARE / dark
+                    SLIDE 03 — WHY THIS EXISTS / dark
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#0d0d0d] text-[#e8e1da]`}>
-                    <span className="absolute left-0 bottom-[-10px] font-cabinet font-bold text-[140px] md:text-[190px] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">
-                        WHO
-                    </span>
-
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/25">
-                            {en ? "Who We Are" : "Kto Sme"}
-                        </span>
-                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#4d7fd4]">
-                            Bratislava · Slovakia
+                            {en ? "Why This Exists" : "Prečo Existujeme"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/[0.07]" />
 
-                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-10 md:py-0 gap-10 items-center">
-                        <div className="flex-1 md:pr-10">
-                            <h2 className="font-cabinet font-bold text-[28px] md:text-[40px] tracking-tight leading-[1.05] text-white">
-                                {en
-                                    ? <>An applied AI platform<br />focused on how organisations<br />adapt to AI in real work.</>
-                                    : <>Aplikovaná AI platforma<br />zameraná na to, ako sa<br />organizácie adaptujú na AI.</>}
-                            </h2>
-                        </div>
-                        <div className="flex-1 border-t md:border-t-0 md:border-l border-white/[0.07] md:pl-10 pt-8 md:pt-0 space-y-5">
-                            <div>
-                                <p className="text-[9px] font-code-brand uppercase tracking-[0.35em] text-[#4d7fd4] mb-2">
-                                    {en ? "The Bridge" : "Most"}
-                                </p>
-                                <p className="text-[13px] text-white/50 leading-relaxed">
-                                    {en
-                                        ? "We translate real-world AI practice inside SORRYWECAN into better workflows, clearer decisions, and stronger adaptation for the organisations we work with."
-                                        : "Prekladáme reálnu prax AI vo vnútri SORRYWECAN do lepších workflow, jasnejších rozhodnutí a silnejšej adaptácie pre organizácie, s ktorými pracujeme."}
-                                </p>
-                            </div>
-                            <div className="h-px bg-white/[0.06]" />
-                            <div>
-                                <p className="text-[9px] font-code-brand uppercase tracking-[0.35em] text-[#4d7fd4] mb-2">
-                                    {en ? "How We Work" : "Ako Pracujeme"}
-                                </p>
-                                <p className="text-[13px] text-white/50 leading-relaxed">
-                                    {en
-                                        ? "We test ideas in actual production before turning them into systems for partners. Most organisations move faster with AI but lose consistency. We design structures that keep both."
-                                        : "Testujeme nápady v reálnej produkcii skôr, než ich premeníme na systémy pre partnerov. Väčšina organizácií sa pohybuje rýchlejšie s AI, ale stráca konzistentnosť. My navrhujeme štruktúry, ktoré udržia oboje."}
-                                </p>
-                            </div>
-                        </div>
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16">
+                        <h2 className="font-cabinet font-bold text-[40px] md:text-[68px] tracking-tight leading-[1.0] text-white max-w-[700px] mb-10">
+                            {en
+                                ? <>AI is a system-level<br />shift, not a tool change.</>
+                                : <>AI je zmena na úrovni<br />systému, nie nástrojov.</>}
+                        </h2>
+                        <p className="text-[14px] md:text-[17px] text-white/45 max-w-[560px] leading-relaxed">
+                            {en
+                                ? "Most organisations lack a structured way to integrate AI without losing control. Research Lab exists to provide that bridge: across workflows, decisions, and how teams adapt."
+                                : "Väčšine organizácií chýba štruktúrovaný spôsob integrácie AI bez straty kontroly. Research Lab je práve ten most: cez workflow, rozhodnutia a spôsob adaptácie tímov."}
+                        </p>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-white/[0.07]" />
@@ -227,45 +186,37 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 04 — THE ECOSYSTEM / blue + grid
+                    SLIDE 04 — THE CORE PROBLEM / blue + grid
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#0047BB] text-white`} style={grid}>
-                    <span className="absolute right-[-30px] bottom-[-10px] font-cabinet font-bold text-[120px] md:text-[160px] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
-                        SYSTEM
-                    </span>
-
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
-                            {en ? "The Ecosystem" : "Ekosystém"}
-                        </span>
-                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/30">
-                            {en ? "Four Layers" : "Štyri Vrstvy"}
+                            {en ? "The Core Problem" : "Koreňový Problém"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
 
-                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-8 md:py-0">
-                        <p className="text-[12px] md:text-[14px] text-white/40 mb-8 max-w-xl leading-relaxed">
-                            {en
-                                ? "Research Lab operates as a layered system connecting public, education, organisations, and research — each a different mode of engagement grounded in real AI workflows."
-                                : "Research Lab funguje ako vrstvený systém prepájajúci verejnosť, vzdelávanie, organizácie a výskum — každý je iný spôsob zapojenia zakotvený v reálnych AI workflow."}
-                        </p>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10">
+                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-8 md:py-0 gap-10 items-center">
+                        <div className="md:w-48 flex-shrink-0">
+                            <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/30 leading-loose">
+                                {en ? "Four\nfailure\nmodes" : "Štyri\nmódy\nzlyhania"}
+                            </p>
+                        </div>
+                        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3">
                             {(en ? [
-                                { layer: "PUBLIC", format: "COMMUNITEA", desc: "Open sessions for anyone. Building shared language across society." },
-                                { layer: "EDUCATION", format: "NextGen & Social", desc: "Seniors, educators, young people from care homes. Long-term capacity." },
-                                { layer: "ORGANISATIONS", format: "MINDSHIFT", desc: "Internal programmes for teams and leadership. From chaos to structure." },
-                                { layer: "RESEARCH", format: "FUTURE PROTOCOLS", desc: "Live experiments inside SORRYWECAN translated into frameworks." },
+                                { title: "AI adoption is chaotic", body: "No shared standards, random usage across teams." },
+                                { title: "Decision-making is weakening", body: "More options, no framework to evaluate them." },
+                                { title: "Quality is inconsistent", body: "High output volume, unstable creative and operational standards." },
+                                { title: "Execution is faster, but judgment is harder", body: "Direction suffers." },
                             ] : [
-                                { layer: "VEREJNOSŤ", format: "COMMUNITEA", desc: "Otvorené stretnutia pre každého. Budovanie spoločného jazyka." },
-                                { layer: "VZDELÁVANIE", format: "NextGen & Social", desc: "Seniori, pedagógovia, mladí z detských domovov. Dlhodobá kapacita." },
-                                { layer: "ORGANIZÁCIE", format: "MINDSHIFT", desc: "Interné programy pre tímy a vedenie. Od chaosu k štruktúre." },
-                                { layer: "VÝSKUM", format: "FUTURE PROTOCOLS", desc: "Živé experimenty vo vnútri SORRYWECAN preložené do rámcov." },
-                            ]).map((l) => (
-                                <div key={l.layer} className="bg-white/[0.06] p-5 md:p-6">
-                                    <p className="font-cabinet font-bold text-[20px] md:text-[24px] tracking-tighter text-white leading-none mb-1">{l.layer}</p>
-                                    <p className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-white/40 mb-3">{l.format}</p>
-                                    <p className="text-[11px] text-white/40 leading-relaxed">{l.desc}</p>
+                                { title: "Adopcia AI je chaotická", body: "Žiadne zdieľané štandardy, náhodné používanie naprieč tímami." },
+                                { title: "Rozhodovanie sa oslabuje", body: "Viac možností, žiadny rámec na ich vyhodnotenie." },
+                                { title: "Kvalita je nekonzistentná", body: "Vysoký objem výstupu, nestabilné kreatívne a operačné štandardy." },
+                                { title: "Exekúcia je rýchlejšia, ale úsudok je ťažší", body: "Smer trpí." },
+                            ]).map((p) => (
+                                <div key={p.title} className="bg-white/[0.08] p-5 md:p-6 rounded-sm">
+                                    <p className="font-cabinet font-bold text-[16px] md:text-[18px] tracking-tight text-white leading-tight mb-2">{p.title}</p>
+                                    <p className="text-[12px] text-white/45 leading-relaxed">{p.body}</p>
                                 </div>
                             ))}
                         </div>
@@ -279,38 +230,50 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 05 — THE FORMATS / parchment
+                    SLIDE 05 — HOW WE WORK / parchment
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
-                    <span className="absolute left-[-10px] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[140px] md:text-[200px] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">
+                    <span className="absolute right-[-10px] bottom-[-10px] font-cabinet font-bold text-[150px] md:text-[220px] text-black/[0.04] leading-none select-none pointer-events-none tracking-tighter">
                         HOW
                     </span>
 
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/30">
-                            {en ? "What We Run" : "Čo Robíme"}
+                            {en ? "How We Work" : "Ako Pracujeme"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-black/10" />
 
-                    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-0 px-10 md:px-16 py-8 md:py-0 content-center gap-y-0">
-                        {(en ? [
-                            { name: "COMMUNITEA", tag: "Public · Open Format", desc: "Public sessions and curated discussions. Open formats that make AI understandable beyond the tech world. 2–3 hours, up to 20 people." },
-                            { name: "MINDSHIFT", tag: "Organisations · B2B", desc: "Structured programme for teams and leadership. Cross-team AI diagnostics + integration into real workflows. From 2-day workshop to long-term collaboration." },
-                            { name: "FUTURE PROTOCOLS", tag: "Toolkits & Research", desc: "Custom and open toolkits built on real SORRYWECAN workflows. Live experiments translated into practical frameworks others can use." },
-                            { name: "MEDIA HOUSE", tag: "Content & Distribution", desc: "The Radar newsletter, blog, and online distribution. The content flywheel that builds trust and feeds all other formats." },
-                        ] : [
-                            { name: "COMMUNITEA", tag: "Verejnosť · Otvorený Formát", desc: "Verejné stretnutia a moderované diskusie. Otvorené formáty, ktoré robí AI zrozumiteľnou mimo tech sveta. 2–3 hodiny, až 20 ľudí." },
-                            { name: "MINDSHIFT", tag: "Organizácie · B2B", desc: "Štruktúrovaný program pre tímy a vedenie. Diagnostika AI naprieč tímami + integrácia do reálnych workflow. Od 2-dňového workshopu po dlhodobú spoluprácu." },
-                            { name: "FUTURE PROTOCOLS", tag: "Toolkity & Výskum", desc: "Vlastné a otvorené toolkity postavené na reálnych SORRYWECAN workflow. Živé experimenty preložené do praktických rámcov." },
-                            { name: "MEDIA HOUSE", tag: "Obsah & Distribúcia", desc: "Newsletter The Radar, blog a online distribúcia. Obsahový flywheel, ktorý buduje dôveru a živí všetky ostatné formáty." },
-                        ]).map((f, i) => (
-                            <div key={f.name} className={`p-6 md:p-7 ${i % 2 === 0 ? "md:border-r border-black/10" : ""} ${i < 2 ? "border-b border-black/10" : ""}`}>
-                                <p className="font-cabinet font-bold text-[22px] md:text-[26px] tracking-tight mb-1">{f.name}</p>
-                                <p className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-[#0047BB] mb-3">{f.tag}</p>
-                                <p className="text-[12px] text-black/50 leading-relaxed">{f.desc}</p>
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16">
+                        <h2 className="font-cabinet font-bold text-[36px] md:text-[56px] tracking-tight leading-[1.0] mb-10">
+                            {en ? "How we work" : "Ako pracujeme"}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-[820px]">
+                            <div className="space-y-2">
+                                <p className="text-[14px] md:text-[16px] leading-relaxed text-[#0a0a0a]">
+                                    {en
+                                        ? <>Research Lab works where <em>strategy</em>, <em>execution</em>, and <em>cognition</em> meet.</>
+                                        : <>Research Lab pracuje tam, kde sa stretáva <em>stratégia</em>, <em>exekúcia</em> a <em>kognícia</em>.</>}
+                                </p>
+                                <p className="text-[14px] md:text-[16px] leading-relaxed text-[#0a0a0a]">
+                                    {en
+                                        ? <>Built on real AI production inside SORRY<strong>WECAN</strong>, we test ideas in actual workflows before translating them into systems for partners.</>
+                                        : <>Postavené na reálnej AI produkcii vo vnútri SORRY<strong>WECAN</strong>, testujeme nápady v skutočných workflow predtým, ako ich preložíme do systémov pre partnerov.</>}
+                                </p>
                             </div>
-                        ))}
+                            <div className="space-y-2">
+                                <p className="text-[14px] md:text-[16px] leading-relaxed text-black/55">
+                                    {en
+                                        ? "We focus on how work holds under AI, how decisions are made, how quality is maintained, and how teams stay aligned as output scales."
+                                        : "Zameriavame sa na to, ako práca obstojí pod vplyvom AI, ako sa prijímajú rozhodnutia, ako sa udržiava kvalita a ako tímy zostávajú zladené pri rastúcom výkone."}
+                                </p>
+                                <p className="text-[14px] md:text-[16px] leading-relaxed text-black/55">
+                                    {en
+                                        ? "Most organisations move faster with AI, but lose consistency and direction. We design structures that keep both."
+                                        : "Väčšina organizácií sa pohybuje rýchlejšie s AI, ale stráca konzistentnosť a smer. My navrhujeme štruktúry, ktoré udržia oboje."}
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-black/10" />
@@ -321,46 +284,41 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 06 — THE TEAM / dark
+                    SLIDE 06 — THE ECOSYSTEM / dark
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#0d0d0d] text-[#e8e1da]`}>
-                    <span className="absolute right-[-10px] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[140px] md:text-[200px] text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">
-                        TEAM
-                    </span>
-
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/25">
-                            {en ? "The Team" : "Tím"}
-                        </span>
-                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#4d7fd4]">
-                            {en ? "Practitioners" : "Praktici"}
+                            {en ? "The Ecosystem" : "Ekosystém"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/[0.07]" />
 
-                    <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-px bg-white/[0.05] py-0">
-                        {(en ? [
-                            { name: "Peter Kaspar", role: "Creative Direction", sub: "Co-Founder · SORRYWECAN", note: "Creative alchemy at the intersection of human intuition and AI systems." },
-                            { name: "Tiep Le Dinh", role: "Automation Infrastructure", sub: "Co-Founder · Research Lab", note: "Scalable workflows across tech, finance, and creative strategy." },
-                            { name: "Roland Wranik", role: "Vision & Creative Strategy", sub: "SORRYWECAN CEO & Founder", note: "Early AI-native multimedia practitioner. Working with these systems from the very beginning." },
-                            { name: "Roman Pii Wagner", role: "Strategic Navigation", sub: "Transformational Design", note: "Decision frameworks for uncertainty. Helps leadership prioritise signal over noise." },
-                            { name: "Sasha Zaytseva", role: "Learning Systems", sub: "Research Facilitator", note: "Translates complex tech shifts into practical education and organisational formats." },
-                            { name: "Andrea Kutlikova", role: "Project Lead", sub: "Adult Educator", note: "Community coordination and lifelong learning programmes focused on adaptation." },
-                        ] : [
-                            { name: "Peter Kaspar", role: "Kreatívne vedenie", sub: "Spoluzakladateľ · SORRYWECAN", note: "Kreatívna alchýmia na priesečníku ľudskej intuície a AI systémov." },
-                            { name: "Tiep Le Dinh", role: "Automatizačná infraštruktúra", sub: "Spoluzakladateľ · Research Lab", note: "Škálovateľné workflow naprieč technológiami, financiami a kreatívnou stratégiou." },
-                            { name: "Roland Wranik", role: "Vízia & Kreatívna stratégia", sub: "SORRYWECAN CEO & zakladateľ", note: "Raný AI-natívny multimediálny praktik. Pracuje s týmito systémami od samého začiatku." },
-                            { name: "Roman Pii Wagner", role: "Strategická navigácia", sub: "Transformačný dizajn", note: "Rozhodovacie rámce pre neistotu. Pomáha vedeniu prioritizovať signál nad šumom." },
-                            { name: "Sasha Zaytseva", role: "Vzdelávacie systémy", sub: "Výskumná facilitátorka", note: "Prekladá komplexné technologické zmeny do praktického vzdelávania a organizačných formátov." },
-                            { name: "Andrea Kutlikova", role: "Vedúca projektov", sub: "Lektorka pre dospelých", note: "Koordinácia komunity a programy celoživotného vzdelávania zamerané na adaptáciu." },
-                        ]).map((p) => (
-                            <div key={p.name} className="bg-[#0d0d0d] p-5 md:p-6">
-                                <p className="font-cabinet font-bold text-[16px] md:text-[18px] tracking-tight text-white leading-tight">{p.name}</p>
-                                <p className="text-[9px] font-code-brand uppercase tracking-[0.25em] text-[#4d7fd4] mt-1 mb-2">{p.role}</p>
-                                <p className="text-[9px] font-code-brand text-white/20 mb-2">{p.sub}</p>
-                                <p className="text-[11px] text-white/35 leading-relaxed">{p.note}</p>
-                            </div>
-                        ))}
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-6 md:py-0">
+                        <h2 className="font-cabinet font-bold text-[26px] md:text-[38px] tracking-tight leading-[1.05] text-white mb-6">
+                            {en ? "A layered system for real AI engagement" : "Vrstvený systém pre reálne zapojenie s AI"}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            {(en ? [
+                                { layer: "PUBLIC", icon: "○", desc: "Open events, discussions, and resources accessible to anyone. Formats that make AI understandable and relevant beyond the tech and business world, building shared language and awareness across society." },
+                                { layer: "EDUCATION", icon: "◇", desc: "Programmes for groups actively navigating and adapting to technological change. From seniors and educators to young people from children's homes, focused on building long-term capacity and supporting meaningful adaptation to AI." },
+                                { layer: "ORGANISATIONS", icon: "□", desc: "Internal educational programmes for teams and leadership. From fragmented AI usage to structured workflows, clear decision-making, and consistent quality across teams." },
+                                { layer: "RESEARCH", icon: "△", desc: "Real-world experimentation inside SORRYWECAN production. Tested approaches translated into frameworks, systems, and learning formats used across the ecosystem." },
+                            ] : [
+                                { layer: "VEREJNOSŤ", icon: "○", desc: "Otvorené podujatia, diskusie a zdroje prístupné každému. Formáty, ktoré robia AI zrozumiteľnou a relevantnou mimo tech a business sveta, budujúc spoločný jazyk a povedomie." },
+                                { layer: "VZDELÁVANIE", icon: "◇", desc: "Programy pre skupiny aktívne navigujúce technologickú zmenu. Od seniorov a pedagógov po mladých z detských domovov — zamerané na dlhodobú kapacitu a zmysluplnú adaptáciu na AI." },
+                                { layer: "ORGANIZÁCIE", icon: "□", desc: "Interné vzdelávacie programy pre tímy a vedenie. Od fragmentovaného používania AI k štruktúrovaným workflow, jasnému rozhodovaniu a konzistentnej kvalite naprieč tímami." },
+                                { layer: "VÝSKUM", icon: "△", desc: "Reálne experimenty vo vnútri SORRYWECAN produkcie. Overené prístupy preložené do rámcov, systémov a vzdelávacích formátov používaných naprieč ekosystémom." },
+                            ]).map((l) => (
+                                <div key={l.layer} className="bg-white/[0.04] border border-white/[0.06] p-5 md:p-6">
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <span className="text-[#4d7fd4] text-[16px]">{l.icon}</span>
+                                        <p className="text-[10px] font-code-brand uppercase tracking-[0.3em] text-white/60">{l.layer}</p>
+                                    </div>
+                                    <p className="text-[12px] text-white/40 leading-relaxed">{l.desc}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-white/[0.07]" />
@@ -371,47 +329,74 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 07 — PROVEN IN PRACTICE / blue + grid
+                    SLIDE 07 — KEY FORMATS / blue + grid
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#0047BB] text-white`} style={grid}>
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
-                            {en ? "Proven In Practice" : "Overené v Praxi"}
+                            {en ? "Key Formats" : "Kľúčové Formáty"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
 
-                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-8 md:py-0 gap-10 items-center">
-                        <div className="w-full md:w-[200px] shrink-0 flex flex-col justify-center">
-                            <h2 className="font-cabinet font-bold text-[36px] md:text-[46px] leading-[0.92] tracking-tighter text-white">
-                                {en ? <>Applied.<br />Not<br />theoretical.</> : <>Aplikované.<br />Nie<br />teoretické.</>}
-                            </h2>
-                        </div>
-                        <div className="flex-1 flex flex-col justify-center md:border-l border-white/10 md:pl-10">
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-6 md:py-0">
+                        <h2 className="font-cabinet font-bold text-[26px] md:text-[36px] tracking-tight leading-[1.05] text-white mb-6">
+                            {en ? "Research Lab formats" : "Formáty Research Lab"}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
                             {(en ? [
-                                ["AI workflows", "Live in creative production and content pipelines inside SORRYWECAN."],
-                                ["MINDSHIFT delivered", "Internal programmes delivered to teams and organisations in Bratislava."],
-                                ["Future Protocols", "Toolkits built from real workflows — tested before published."],
-                                ["Education formats", "Across seniors, educators, and young people from children's homes."],
-                                ["International collaboration", "Educational and research initiatives across borders."],
-                                ["Market benchmark", "A competitor charged Tatra banka €20k for a basic 3-day tools overview. We deliver deeper for less — and with a mindset-first approach."],
+                                {
+                                    title: "Public sessions and curated discussions",
+                                    body: "Open formats designed to explore AI, creativity, and change in a structured but accessible way — for individuals, communities, and partner-led initiatives.",
+                                    meta: ["Length — 2–3 hours", "Capacity — up to 20 people", "Location — our studio or partner locations"],
+                                },
+                                {
+                                    title: "Organisational programmes",
+                                    body: "A structured programme for teams and leadership, combining cross-team AI diagnostics with integration into real work across workflows, decision-making, and shared standards.",
+                                    meta: ["Length — From 2-day workshop to long-term programme", "Capacity — up to 15 people"],
+                                },
+                                {
+                                    title: "Toolkits and applied research",
+                                    body: "Custom and open toolkits built on real workflows and production experience, translating live experiments into practical frameworks others can use.",
+                                    meta: [],
+                                },
+                                {
+                                    title: "A curated digital platform",
+                                    body: "Continuous access to Research Lab content, formats, and collaborations. Regularly updated content from short-form insights to in-depth sessions, lectures, and webinars. Subscription-based.",
+                                    meta: [],
+                                },
                             ] : [
-                                ["AI workflow", "Živé v kreatívnej produkcii a obsahových pipeline vo vnútri SORRYWECAN."],
-                                ["MINDSHIFT odovzdaný", "Interné programy dodané tímom a organizáciám v Bratislave."],
-                                ["Future Protocols", "Toolkity postavené na reálnych workflow — otestované pred publikovaním."],
-                                ["Vzdelávacie formáty", "Naprieč seniormi, pedagógmi a mladými z detských domovov."],
-                                ["Medzinárodná spolupráca", "Vzdelávacie a výskumné iniciatívy naprieč hranicami."],
-                                ["Trhový benchmark", "Konkurent účtoval Tatra banke €20k za základný 3-dňový prehľad AI nástrojov. My dodávame hlbšie za menej — a s prístupom zameraným na myslenie."],
-                            ]).map(([a, b], i, arr) => (
-                                <div key={i}>
-                                    <div className="flex gap-4 py-2.5 md:py-3 items-start">
-                                        <span className="text-white/20 shrink-0 mt-0.5">—</span>
-                                        <div>
-                                            <span className="text-[13px] font-medium text-white">{a}: </span>
-                                            <span className="text-[12px] text-white/40">{b}</span>
+                                {
+                                    title: "Verejné stretnutia a moderované diskusie",
+                                    body: "Otvorené formáty navrhnuté na skúmanie AI, kreativity a zmeny — pre jednotlivcov, komunity a partnerské iniciatívy.",
+                                    meta: ["Dĺžka — 2–3 hodiny", "Kapacita — až 20 ľudí", "Miesto — naše štúdio alebo priestory partnerov"],
+                                },
+                                {
+                                    title: "Organizačné programy",
+                                    body: "Štruktúrovaný program pre tímy a vedenie, kombinujúci AI diagnostiku naprieč tímami s integráciou do reálnej práce.",
+                                    meta: ["Dĺžka — Od 2-dňového workshopu po dlhodobý program", "Kapacita — až 15 ľudí"],
+                                },
+                                {
+                                    title: "Toolkity a aplikovaný výskum",
+                                    body: "Vlastné a otvorené toolkity postavené na reálnych workflow a produkčnej skúsenosti, prekladajúce živé experimenty do praktických rámcov.",
+                                    meta: [],
+                                },
+                                {
+                                    title: "Kurátorská digitálna platforma",
+                                    body: "Nepretržitý prístup k obsahu, formátom a spolupráciam Research Lab. Pravidelne aktualizovaný obsah od krátkych postrehov po hĺbkové prednášky. Predplatné.",
+                                    meta: [],
+                                },
+                            ]).map((f) => (
+                                <div key={f.title} className="bg-white/[0.08] p-4 md:p-5 flex flex-col gap-2">
+                                    <p className="font-cabinet font-bold text-[14px] md:text-[15px] tracking-tight text-white leading-tight">{f.title}</p>
+                                    <p className="text-[11px] text-white/45 leading-relaxed flex-1">{f.body}</p>
+                                    {f.meta.length > 0 && (
+                                        <div className="mt-1 space-y-0.5">
+                                            {f.meta.map((m) => (
+                                                <p key={m} className="text-[10px] font-code-brand text-white/30">{m}</p>
+                                            ))}
                                         </div>
-                                    </div>
-                                    {i < arr.length - 1 && <div className="h-px bg-white/[0.07]" />}
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -425,71 +410,61 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 08 — ENGAGEMENT / parchment
+                    SLIDE 08 — THE TEAM / parchment
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
-                    <span className="absolute right-[-10px] bottom-[-10px] font-cabinet font-bold text-[120px] md:text-[170px] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter">
-                        WORK
-                    </span>
-
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/30">
-                            {en ? "Work With Us" : "Spolupráca"}
+                            {en ? "The Team" : "Tím"}
                         </span>
-                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/20">
-                            {en ? "Three Models" : "Tri Modely"}
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#0047BB]">
+                            {en ? "Practitioners" : "Praktici"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-black/10" />
 
-                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-8 md:py-0 gap-3">
+                    <div className="px-10 md:px-16 pt-4 pb-2">
+                        <h2 className="font-cabinet font-bold text-[22px] md:text-[28px] tracking-tight">
+                            {en ? "ResearchLab team" : "Tím ResearchLab"}
+                        </h2>
+                        <p className="text-[12px] text-black/40 mt-1">
+                            {en
+                                ? "Practitioners shaping how business, technology, creative production, and human decision-making evolve with AI."
+                                : "Praktici formujúci to, ako sa biznis, technológia, kreatívna produkcia a ľudské rozhodovanie vyvíjajú s AI."}
+                        </p>
+                    </div>
+
+                    <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-px bg-black/[0.08] mx-10 md:mx-16 mb-0">
                         {(en ? [
-                            {
-                                tier: "PARTICIPATION",
-                                sub: "Participating in programmes",
-                                desc: "Organisations engage Research Lab by participating in its programmes and formats. For organisations ready to build internal capability and apply AI with clarity and consistency.",
-                                highlight: false,
-                            },
-                            {
-                                tier: "COLLABORATION",
-                                sub: "Contributing to shared outputs",
-                                desc: "Direct involvement in selected programmes and project-based partnerships. Co-development of themes, modules, or programme editions. For organisations ready to actively contribute.",
-                                highlight: false,
-                            },
-                            {
-                                tier: "STRATEGIC PARTNERSHIP",
-                                sub: "Long-term · Limited slots",
-                                desc: "A limited number of organisations selected for long-term partnership. Support public formats, contribute to AI literacy, take a visible role in shaping how AI is understood at scale.",
-                                highlight: true,
-                            },
+                            { name: "Peter Kaspar", role: "Creative Direction", sub: "SORRYWECAN and Research Lab Co-Founder", note: "Exploring creative alchemy at the intersection of human intuition and AI systems." },
+                            { name: "Tiep Le Dinh", role: "Automation Infrastructure", sub: "Research Lab Co-Founder", note: "Designs scalable workflows across tech, finance, and creative strategy." },
+                            { name: "Sasha Zaytseva", role: "Learning Systems", sub: "Research Facilitator", note: "Translates complex tech shifts into practical education and organisational formats." },
+                            { name: "Andrea Kutlikova", role: "Project Leader, Adult Educator", sub: "", note: "Leads community coordination and develops adult and lifelong learning programmes focused on adaptation to technological change." },
+                            { name: "Roman Pii Wagner", role: "Strategic Navigation", sub: "Transformational Design", note: "Builds decision frameworks for uncertainty. Helps leadership prioritise signal over noise." },
+                            { name: "Roland Wranik", role: "Vision and Creative Strategy", sub: "SORRYWECAN CEO and Founder", note: "Early practitioner of AI-native multimedia production, working with these systems from the very beginning." },
                         ] : [
-                            {
-                                tier: "PARTICIPÁCIA",
-                                sub: "Účasť v programoch",
-                                desc: "Organizácie sa zapájajú do programov a formátov Research Lab. Pre organizácie pripravené budovať internú kapacitu a aplikovať AI s jasnosťou a konzistentnosťou.",
-                                highlight: false,
-                            },
-                            {
-                                tier: "SPOLUPRÁCA",
-                                sub: "Príspevok k spoločným výstupom",
-                                desc: "Priame zapojenie do vybraných programov a projektových partnerstiev. Spolutvorianie tém, modulov alebo edícií programov. Pre organizácie pripravené aktívne prispievať.",
-                                highlight: false,
-                            },
-                            {
-                                tier: "STRATEGICKÉ PARTNERSTVO",
-                                sub: "Dlhodobé · Obmedzený počet",
-                                desc: "Obmedzený počet organizácií vybraných pre dlhodobé partnerstvo. Podpora verejných formátov, príspevok k AI gramotnosti, viditeľná rola pri formovaní toho, ako je AI chápaná v škále.",
-                                highlight: true,
-                            },
-                        ]).map((t) => (
-                            <div key={t.tier} className={`flex gap-6 p-4 md:p-5 border ${t.highlight ? "border-[#0047BB]/40 bg-[#0047BB]/[0.04]" : "border-black/10"}`}>
-                                <div className="shrink-0 w-44 md:w-52">
-                                    <p className="font-cabinet font-bold text-[15px] md:text-[17px] tracking-tight">{t.tier}</p>
-                                    <p className="text-[9px] font-code-brand uppercase tracking-[0.2em] text-black/40 mt-0.5">{t.sub}</p>
-                                </div>
-                                <p className="text-[12px] text-black/50 leading-relaxed">{t.desc}</p>
+                            { name: "Peter Kaspar", role: "Kreatívne Vedenie", sub: "Spoluzakladateľ SORRYWECAN a Research Lab", note: "Skúma kreatívnu alchýmiu na priesečníku ľudskej intuície a AI systémov." },
+                            { name: "Tiep Le Dinh", role: "Automatizačná Infraštruktúra", sub: "Spoluzakladateľ Research Lab", note: "Navrhuje škálovateľné workflow naprieč tech, financiami a kreatívnou stratégiou." },
+                            { name: "Sasha Zaytseva", role: "Vzdelávacie Systémy", sub: "Výskumná Facilitátorka", note: "Prekladá komplexné technologické zmeny do praktického vzdelávania a organizačných formátov." },
+                            { name: "Andrea Kutlikova", role: "Vedúca Projektu, Lektorka pre Dospelých", sub: "", note: "Vedie komunitnú koordináciu a rozvíja celoživotné vzdelávacie programy zamerané na adaptáciu na technologickú zmenu." },
+                            { name: "Roman Pii Wagner", role: "Strategická Navigácia", sub: "Transformačný Dizajn", note: "Buduje rozhodovací rámec pre neistotu. Pomáha vedeniu uprednostniť signál pred šumom." },
+                            { name: "Roland Wranik", role: "Vízia a Kreatívna Stratégia", sub: "CEO a Zakladateľ SORRYWECAN", note: "Raný praktik AI-natívnej multimediálnej produkcie, pracujúci s týmito systémami od samého začiatku." },
+                        ]).map((p) => (
+                            <div key={p.name} className="bg-[#e8e1da] p-4 md:p-5">
+                                <p className="font-cabinet font-bold text-[14px] md:text-[15px] tracking-tight text-[#0047BB]">{p.name}</p>
+                                <p className="text-[10px] text-black/40 mt-0.5">{p.role}</p>
+                                {p.sub && <p className="text-[10px] text-black/30">{p.sub}</p>}
+                                <p className="text-[11px] text-black/50 leading-relaxed mt-2">{p.note}</p>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="px-10 md:px-16 py-3">
+                        <p className="text-[10px] text-black/30 leading-relaxed">
+                            {en
+                                ? "The core team is extended by a curated network of domain experts, engaged based on the needs of each project, ensuring the right combination of perspectives for each context."
+                                : "Kmeňový tím je rozšírený o kurátorskú sieť odborníkov z praxe, zapájaných podľa potrieb každého projektu."}
+                        </p>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-black/10" />
@@ -500,63 +475,252 @@ export default function PitchDeckPage() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 09 — CLOSE / dark
+                    SLIDE 09 — APPLIED WORK / dark
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#0d0d0d] text-[#e8e1da]`}>
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/25">
-                            {en ? "Let's Build Together" : "Budujme Spolu"}
-                        </span>
-                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#4d7fd4]">
-                            Research Lab · 2026
+                            {en ? "Applied Work and Experience" : "Aplikovaná Práca a Skúsenosť"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-white/[0.07]" />
 
-                    <div className="flex-1 flex flex-col md:flex-row items-stretch">
-                        <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-12 md:py-0">
-                            <h2 className="font-cabinet font-bold text-[56px] md:text-[86px] leading-[0.87] tracking-tighter text-white">
-                                {en ? <>Let's<br />talk.</> : <>Porozprávajme<br />sa.</>}
-                            </h2>
-                            <p className="mt-7 text-[13px] text-white/40 max-w-xs leading-relaxed">
+                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-10 md:py-0 gap-12 items-center">
+                        <div className="md:w-64 flex-shrink-0">
+                            <h2 className="font-cabinet font-bold text-[24px] md:text-[32px] tracking-tight leading-[1.1] text-white mb-4">
                                 {en
-                                    ? "A short conversation. No commitment. We figure out together if there's something worth building."
-                                    : "Krátky rozhovor. Žiadny záväzok. Spoločne zistíme, či je tu niečo, čo stojí za to budovať."}
+                                    ? <>Applied work<br />and experience</>
+                                    : <>Aplikovaná práca<br />a skúsenosť</>}
+                            </h2>
+                            <p className="text-[13px] text-white/40 leading-relaxed mb-4">
+                                {en
+                                    ? "We design and run AI workflows for real work — from early experiments to systems that scale."
+                                    : "Navrhujeme a prevádzkujeme AI workflow pre reálnu prácu — od prvých experimentov po škálovateľné systémy."}
+                            </p>
+                            <p className="text-[11px] font-code-brand uppercase tracking-[0.2em] text-white/25">
+                                {en ? "This shows up in:" : "Toto sa prejavuje v:"}
                             </p>
                         </div>
-
-                        <div className="w-full md:w-[260px] flex flex-col justify-center px-10 md:px-12 py-10 md:py-0 gap-6 border-t md:border-t-0 md:border-l border-white/[0.07]">
-                            <a
-                                href="mailto:hello@researchlab.sk"
-                                className="block bg-white text-[#0d0d0d] text-center px-6 py-4 hover:bg-[#e8e1da] transition-colors"
-                            >
-                                <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em]">
-                                    {en ? "Get In Touch" : "Kontaktujte Nás"}
-                                </span>
-                            </a>
-                            <div className="space-y-4 text-[11px] font-code-brand text-white/30">
-                                <div>
-                                    <p className="uppercase tracking-[0.3em] text-white/20 mb-1">Email</p>
-                                    <p>hello@researchlab.sk</p>
+                        <div className="flex-1 border-t md:border-t-0 md:border-l border-white/[0.07] md:pl-12 pt-8 md:pt-0 space-y-4">
+                            {(en ? [
+                                "AI workflows used in live creative production and content pipelines",
+                                "Internal programmes (MINDSHIFT) delivered to teams and organisations",
+                                "Future Protocols toolkits built from real workflows",
+                                "Educational formats across seniors, educators, and young people from children's homes",
+                                "International collaboration through educational and research initiatives",
+                            ] : [
+                                "AI workflow používané v živej kreatívnej produkcii a obsahových pipeline",
+                                "Interné programy (MINDSHIFT) dodávané tímom a organizáciám",
+                                "Toolkity Future Protocols postavené z reálnych workflow",
+                                "Vzdelávacie formáty pre seniorov, pedagógov a mladých z detských domovov",
+                                "Medzinárodná spolupráca cez vzdelávacie a výskumné iniciatívy",
+                            ]).map((item, i) => (
+                                <div key={i} className="flex gap-4 items-start">
+                                    <span className="text-[#4d7fd4] text-[16px] mt-0.5 flex-shrink-0">—</span>
+                                    <p className="text-[14px] md:text-[15px] text-white/70 leading-relaxed">{item}</p>
                                 </div>
-                                <div className="h-px bg-white/[0.07]" />
-                                <div>
-                                    <p className="uppercase tracking-[0.3em] text-white/20 mb-1">Based</p>
-                                    <p>Bratislava, Slovakia</p>
-                                </div>
-                                <div className="h-px bg-white/[0.07]" />
-                                <div>
-                                    <p className="uppercase tracking-[0.3em] text-white/20 mb-1">Part Of</p>
-                                    <p>SORRYWECAN ecosystem</p>
-                                </div>
+                            ))}
+                            <div className="pt-4">
+                                <p className="text-[13px] text-[#4d7fd4] leading-relaxed">
+                                    {en
+                                        ? "Proven in live environments and applied across organisational contexts."
+                                        : "Overené v živých prostrediach a aplikované naprieč organizačnými kontextmi."}
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-white/[0.07]" />
                     <div className="flex justify-between px-10 md:px-16 py-4">
-                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/15">SORRYWECAN // RESEARCH LAB // 2026</span>
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/15">SORRYWECAN</span>
                         <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/15">09</span>
+                    </div>
+                </div>
+
+                {/* ════════════════════════════════════════════════════════════
+                    SLIDE 10 — ENGAGEMENT 01/03 PARTICIPATION / blue + grid
+                ════════════════════════════════════════════════════════════ */}
+                <div className={`${S} bg-[#0047BB] text-white`} style={grid}>
+                    <div className="flex items-center justify-between px-10 md:px-16 pt-7">
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
+                            {en ? "Engagement — 01 / 03" : "Zapojenie — 01 / 03"}
+                        </span>
+                    </div>
+                    <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
+
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16">
+                        <h2 className="font-cabinet font-bold text-[54px] md:text-[88px] tracking-tighter leading-[0.9] text-white mb-8">
+                            {en ? "PARTICIPATION" : "PARTICIPÁCIA"}
+                        </h2>
+                        <p className="text-[13px] text-[#c8b89a] mb-5 max-w-[500px]">
+                            {en
+                                ? "Participating in Research Lab programmes"
+                                : "Účasť v programoch Research Lab"}
+                        </p>
+                        <div className="space-y-3 max-w-[560px]">
+                            <p className="text-[14px] md:text-[16px] text-white/80 leading-relaxed">
+                                {en
+                                    ? "Organisations engage Research Lab by participating in its programmes and formats, designed to strengthen how teams work with AI in practice."
+                                    : "Organizácie sa zapájajú do Research Lab účasťou v programoch a formátoch navrhnutých na posilnenie práce tímov s AI v praxi."}
+                            </p>
+                            <p className="text-[14px] md:text-[16px] text-white/50 leading-relaxed">
+                                {en
+                                    ? "For organisations ready to build internal capability and apply AI with clarity and consistency."
+                                    : "Pre organizácie pripravené budovať internú kapacitu a aplikovať AI s jasnosťou a konzistentnosťou."}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="mx-10 md:mx-16 h-px bg-white/10" />
+                    <div className="flex justify-between px-10 md:px-16 py-4">
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">SORRYWECAN</span>
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">10</span>
+                    </div>
+                </div>
+
+                {/* ════════════════════════════════════════════════════════════
+                    SLIDE 11 — ENGAGEMENT 02/03 COLLABORATION / parchment
+                ════════════════════════════════════════════════════════════ */}
+                <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
+                    <div className="flex items-center justify-between px-10 md:px-16 pt-7">
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/30">
+                            {en ? "Engagement — 02 / 03" : "Zapojenie — 02 / 03"}
+                        </span>
+                    </div>
+                    <div className="mx-10 md:mx-16 mt-4 h-px bg-black/10" />
+
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16">
+                        <h2 className="font-cabinet font-bold text-[54px] md:text-[88px] tracking-tighter leading-[0.9] mb-8">
+                            {en ? "COLLABORATION" : "SPOLUPRÁCA"}
+                        </h2>
+                        <p className="text-[13px] text-[#0047BB] mb-5 max-w-[500px]">
+                            {en
+                                ? "Contributing to programmes and shared outputs"
+                                : "Prispievanie k programom a spoločným výstupom"}
+                        </p>
+                        <p className="text-[14px] md:text-[16px] text-black/70 leading-relaxed max-w-[500px] mb-5">
+                            {en
+                                ? "Organisations collaborate with Research Lab through direct involvement in selected programmes, formats, and initiatives, or as partners on specific projects."
+                                : "Organizácie spolupracujú s Research Lab cez priame zapojenie do vybraných programov a formátov, alebo ako partneri na konkrétnych projektoch."}
+                        </p>
+                        <div className="space-y-2 max-w-[500px]">
+                            {(en ? [
+                                "External contribution within established formats",
+                                "Co-development of themes, modules, or programme editions",
+                                "Project-based partnerships on selected initiatives",
+                                "Participation in research and broader outputs",
+                            ] : [
+                                "Externý príspevok v rámci zavedených formátov",
+                                "Spoločný vývoj tém, modulov alebo edícií programu",
+                                "Partnerstvá na báze projektov pri vybraných iniciatívach",
+                                "Účasť na výskume a širších výstupoch",
+                            ]).map((item, i) => (
+                                <div key={i} className="flex gap-3 items-start">
+                                    <span className="text-[#0047BB] text-[14px] mt-0.5 flex-shrink-0">—</span>
+                                    <p className="text-[13px] text-black/60 leading-relaxed">{item}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="mx-10 md:mx-16 h-px bg-black/10" />
+                    <div className="flex justify-between px-10 md:px-16 py-4">
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-black/20">SORRYWECAN</span>
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-black/20">11</span>
+                    </div>
+                </div>
+
+                {/* ════════════════════════════════════════════════════════════
+                    SLIDE 12 — ENGAGEMENT 03/03 STRATEGIC PARTNERSHIP / dark
+                ════════════════════════════════════════════════════════════ */}
+                <div className={`${S} bg-[#0d0d0d] text-[#e8e1da]`}>
+                    <div className="flex items-center justify-between px-10 md:px-16 pt-7">
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/25">
+                            {en ? "Engagement — 03 / 03" : "Zapojenie — 03 / 03"}
+                        </span>
+                    </div>
+                    <div className="mx-10 md:mx-16 mt-4 h-px bg-white/[0.07]" />
+
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16">
+                        <h2 className="font-cabinet font-bold text-[44px] md:text-[72px] tracking-tighter leading-[0.9] text-white mb-8">
+                            {en ? <>STRATEGIC<br />PARTNERSHIP</> : <>STRATEGICKÉ<br />PARTNERSTVO</>}
+                        </h2>
+                        <p className="text-[14px] md:text-[16px] text-white/70 leading-relaxed max-w-[540px] mb-5">
+                            {en
+                                ? "A limited number of organisations are selected for long-term partnership with Research Lab."
+                                : "Obmedzený počet organizácií je vybraný pre dlhodobé partnerstvo s Research Lab."}
+                        </p>
+                        <div className="space-y-2 max-w-[500px] mb-6">
+                            {(en ? [
+                                "Support of public formats and educational initiatives",
+                                "Contribution to the development of AI literacy",
+                                "Visible role in shaping how AI is understood and applied",
+                            ] : [
+                                "Podpora verejných formátov a vzdelávacích iniciatív",
+                                "Príspevok k rozvoju AI gramotnosti",
+                                "Viditeľná rola pri formovaní toho, ako je AI chápaná a aplikovaná",
+                            ]).map((item, i) => (
+                                <div key={i} className="flex gap-3 items-start">
+                                    <span className="text-[#4d7fd4] text-[14px] mt-0.5 flex-shrink-0">—</span>
+                                    <p className="text-[13px] text-white/55 leading-relaxed">{item}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-[12px] text-white/30 leading-relaxed max-w-[480px]">
+                            {en
+                                ? "Reserved for organisations ready to take a leading role in defining how AI is understood and applied at scale."
+                                : "Vyhradené pre organizácie pripravené prevziať vedúcu rolu v tom, ako je AI chápaná a aplikovaná v škále."}
+                        </p>
+                    </div>
+
+                    <div className="mx-10 md:mx-16 h-px bg-white/[0.07]" />
+                    <div className="flex justify-between px-10 md:px-16 py-4">
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/15">SORRYWECAN</span>
+                        <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/15">12</span>
+                    </div>
+                </div>
+
+                {/* ════════════════════════════════════════════════════════════
+                    SLIDE 13 — CLOSE / blue + grid
+                ════════════════════════════════════════════════════════════ */}
+                <div className={`${S} bg-[#0047BB] text-white`} style={grid}>
+                    <span className="absolute right-[-20px] bottom-[-20px] font-cabinet font-bold text-[180px] md:text-[260px] text-white/[0.04] leading-none select-none pointer-events-none tracking-tighter">
+                        RL
+                    </span>
+
+                    <div className="flex items-center justify-between px-10 md:px-16 pt-7">
+                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
+                            Research Lab
+                        </span>
+                    </div>
+                    <div className="mx-10 md:mx-16 mt-4 h-px bg-white/10" />
+
+                    <div className="flex-1 flex flex-col justify-center px-10 md:px-16">
+                        <p className="text-[14px] md:text-[17px] text-white/50 leading-relaxed max-w-[480px] mb-6">
+                            {en
+                                ? "To discuss your specific needs and find the right format of engagement:"
+                                : "Ak chcete prediskutovať vaše konkrétne potreby a nájsť správny formát zapojenia:"}
+                        </p>
+                        <a
+                            href="mailto:researchlab@sorrywecan.com"
+                            className="font-cabinet font-bold text-[24px] md:text-[36px] tracking-tight text-white underline decoration-white/30 underline-offset-4 hover:decoration-white transition-all"
+                        >
+                            researchlab@sorrywecan.com
+                        </a>
+                    </div>
+
+                    <div className="px-10 md:px-16 pb-8">
+                        <div className="flex items-end justify-between">
+                            <div>
+                                <p className="font-cabinet font-bold text-[16px] md:text-[20px] tracking-tight text-white">
+                                    RESEARCH<span className="text-white/50">LAB</span>
+                                </p>
+                                <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/40 mt-0.5">
+                                    BY SORRY<strong>WECAN</strong>
+                                </p>
+                            </div>
+                            <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-white/20">13</span>
+                        </div>
                     </div>
                 </div>
 

@@ -49,7 +49,7 @@ export function PublicNav() {
             <Link
               key={item.href}
               href={item.href}
-              className="no-underline transition-colors"
+              className="no-underline transition-colors hover:opacity-60"
               style={{
                 fontSize: 12,
                 fontWeight: 600,
@@ -85,6 +85,7 @@ export function PublicNav() {
             className="md:hidden p-1"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
+            aria-expanded={open}
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>

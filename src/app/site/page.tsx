@@ -125,7 +125,7 @@ export default function PublicHomePage() {
             About the Lab
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 80, alignItems: "start" }}>
+          <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 80, alignItems: "start" }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
               <p style={{ fontSize: 17, lineHeight: 1.75, fontWeight: 400, color: "#e8e1da" }}>
                 SORRYWECAN Research Lab is an experimental space for exploring tomorrow&apos;s
@@ -145,7 +145,7 @@ export default function PublicHomePage() {
               </p>
               {/* TODO: link to /manifesto when page exists */}
               <a
-                href="#"
+                href="/manifesto"
                 style={{
                   fontFamily: "'SF Mono','Fira Code',monospace",
                   fontSize: 9,
@@ -162,6 +162,7 @@ export default function PublicHomePage() {
             </div>
 
             <div
+              className="about-sidebar"
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -242,6 +243,7 @@ export default function PublicHomePage() {
             <Link
               key={prog.slug}
               href={`/programmes/${prog.slug}`}
+              className="programme-row"
               style={{
                 display: "grid",
                 gridTemplateColumns: "48px 1fr 200px 120px",
@@ -269,10 +271,11 @@ export default function PublicHomePage() {
               <span style={{ fontSize: 22, fontWeight: 800, letterSpacing: "0.02em", color: "#0d0d0d" }}>
                 {prog.name}
               </span>
-              <span style={{ fontSize: 13, lineHeight: 1.5, color: "rgba(0,0,0,0.55)", fontWeight: 400 }}>
+              <span className="programme-desc" style={{ fontSize: 13, lineHeight: 1.5, color: "rgba(0,0,0,0.55)", fontWeight: 400 }}>
                 {prog.desc}
               </span>
               <span
+                className="programme-tag"
                 style={{
                   fontFamily: "'SF Mono','Fira Code',monospace",
                   fontSize: 11,
@@ -352,6 +355,7 @@ export default function PublicHomePage() {
             {HAAB_ARTICLES.map((article, i) => (
               <div
                 key={article.num}
+                className="haab-row"
                 style={{
                   display: "grid",
                   gridTemplateColumns: "48px 1fr 100px 80px",
@@ -377,6 +381,7 @@ export default function PublicHomePage() {
                   {article.title}
                 </span>
                 <span
+                  className="haab-tag"
                   style={{
                     fontFamily: "'SF Mono','Fira Code',monospace",
                     fontSize: 9,
@@ -389,6 +394,7 @@ export default function PublicHomePage() {
                   {article.tag}
                 </span>
                 <span
+                  className="haab-date"
                   style={{
                     fontFamily: "'SF Mono','Fira Code',monospace",
                     fontSize: 9,
@@ -405,7 +411,7 @@ export default function PublicHomePage() {
 
         <div style={{ paddingTop: 40 }}>
           <a
-            href="#"
+            href="/haab"
             style={{
               fontFamily: "'SF Mono','Fira Code',monospace",
               fontSize: 9,
@@ -520,7 +526,7 @@ export default function PublicHomePage() {
           navigating what AI means for how they think, lead, and create.
         </p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "rgba(255,255,255,0.10)" }}>
+        <div className="collaborate-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "rgba(255,255,255,0.10)" }}>
           {[
             {
               tier: "Participation",
@@ -611,13 +617,12 @@ export default function PublicHomePage() {
           researchlab@sorrywecan.com
         </a>
 
-        <div style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
+        <div className="footer-links" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
           {[
             { label: "Programmes", href: "#programmes" },
-            { label: "Publications", href: "#publications" },
+            { label: "Publications", href: "#haab" },
             { label: "HAAB", href: "#haab" },
             { label: "Collaborate", href: "#collaborate" },
-            { label: "Lab", href: "/lab" },
           ].map((link) => (
             <a
               key={link.href}
@@ -635,6 +640,20 @@ export default function PublicHomePage() {
               {link.label}
             </a>
           ))}
+          <Link
+            href="/lab"
+            style={{
+              fontFamily: "'SF Mono','Fira Code',monospace",
+              fontSize: 9,
+              fontWeight: 600,
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "rgba(232,225,218,0.45)",
+              textDecoration: "none",
+            }}
+          >
+            Lab
+          </Link>
         </div>
 
         <p

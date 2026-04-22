@@ -64,6 +64,72 @@ body {
   scrollbar-width: none;
 }
 
+/* ─── Public Homepage Responsive ─── */
+
+/* Hero: reduce side padding on mobile */
+@media (max-width: 768px) {
+  section#hero,
+  section#about,
+  section#programmes,
+  section#haab,
+  section#questions,
+  section#collaborate,
+  footer {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* About: collapse 2-column to single column */
+  section#about .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  section#about .about-sidebar {
+    border-left: none !important;
+    border-top: 1px solid rgba(255,255,255,0.10);
+    padding-left: 0 !important;
+    padding-top: 24px;
+  }
+
+  /* Programmes: collapse to 2 columns (num + name), hide desc and tag */
+  .programme-row {
+    grid-template-columns: 40px 1fr !important;
+  }
+
+  .programme-desc,
+  .programme-tag {
+    display: none !important;
+  }
+
+  /* HAAB articles: collapse to 2 columns (num + title), hide tag and date */
+  .haab-row {
+    grid-template-columns: 40px 1fr !important;
+  }
+
+  .haab-tag,
+  .haab-date {
+    display: none !important;
+  }
+
+  /* Collaborate: single column */
+  .collaborate-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer: stack vertically */
+  footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+  }
+
+  .footer-links {
+    gap: 20px !important;
+    flex-wrap: wrap;
+  }
+}
+
 /* ─── Toolkit print/PDF styles ─── */
 @media print {
   @page {

@@ -58,6 +58,36 @@ export default function LabPage() {
                         </p>
                     </motion.div>
 
+                    {/* Public Homepage Preview */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="mb-16"
+                    >
+                        <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-3">Public Site</p>
+                        <Link
+                            href="/site"
+                            className="flex items-center justify-between p-6 bg-[#0d0d0d] hover:bg-[#0047BB] transition-all group"
+                        >
+                            <div>
+                                <div className="flex items-center gap-3 mb-1">
+                                    <span className="font-cabinet font-black text-lg tracking-widest uppercase" style={{ color: "#e8e1da" }}>
+                                        <span style={{ color: "#0047BB" }} className="group-hover:text-white transition-colors">RESEARCH</span>LAB
+                                    </span>
+                                    <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.2em] text-white/30 border border-white/20 px-2 py-0.5">
+                                        Preview
+                                    </span>
+                                </div>
+                                <p className="text-sm text-white/40 group-hover:text-white/60 transition-colors">
+                                    Unified public homepage — institute + magazine. Opens at /site until DNS flip.
+                                </p>
+                            </div>
+                            <span className="text-white/30 group-hover:text-white group-hover:translate-x-1 transition-all text-xl">
+                                →
+                            </span>
+                        </Link>
+                    </motion.div>
+
                     <div className="mb-12">
                         <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-3">One-Pagers</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

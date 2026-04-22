@@ -31,7 +31,7 @@ export const PROGRAMMES = [
   },
 ]
 
-export const HAAB_ARTICLES = [
+export const HUB_ARTICLES = [
   {
     num: "01",
     title: "The Quiet Collapse of Expertise",

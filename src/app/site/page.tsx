@@ -1,6 +1,6 @@
 import { PublicNav } from "@/components/public/PublicNav"
 import Link from "next/link"
-import { PROGRAMMES, HAAB_ARTICLES, QUESTIONS } from "./data"
+import { PROGRAMMES, HUB_ARTICLES, QUESTIONS } from "./data"
 
 export default function PublicHomePage() {
   return (
@@ -175,7 +175,7 @@ export default function PublicHomePage() {
                 { label: "Founded", value: "2024" },
                 { label: "Location", value: "Bratislava, Slovakia" },
                 { label: "Focus", value: "AI × Human Research" },
-                { label: "Output", value: "Programmes, Publications, HAAB" },
+                { label: "Output", value: "Programmes, Publications, HUB" },
               ].map((item) => (
                 <div key={item.label}>
                   <p
@@ -293,9 +293,9 @@ export default function PublicHomePage() {
         </div>
       </section>
 
-      {/* ─── HAAB ─── */}
+      {/* ─── HUB ─── */}
       <section
-        id="haab"
+        id="hub"
         style={{
           minHeight: "100vh",
           background: "#0047BB",
@@ -318,7 +318,7 @@ export default function PublicHomePage() {
                 color: "rgba(255,255,255,0.60)",
               }}
             >
-              HAAB
+              HUB
             </p>
             <p
               style={{
@@ -352,10 +352,10 @@ export default function PublicHomePage() {
           </h2>
 
           <div>
-            {HAAB_ARTICLES.map((article, i) => (
+            {HUB_ARTICLES.map((article, i) => (
               <div
                 key={article.num}
-                className="haab-row"
+                className="hub-row"
                 style={{
                   display: "grid",
                   gridTemplateColumns: "48px 1fr 100px 80px",
@@ -381,7 +381,7 @@ export default function PublicHomePage() {
                   {article.title}
                 </span>
                 <span
-                  className="haab-tag"
+                  className="hub-tag"
                   style={{
                     fontFamily: "'SF Mono','Fira Code',monospace",
                     fontSize: 9,
@@ -394,7 +394,7 @@ export default function PublicHomePage() {
                   {article.tag}
                 </span>
                 <span
-                  className="haab-date"
+                  className="hub-date"
                   style={{
                     fontFamily: "'SF Mono','Fira Code',monospace",
                     fontSize: 9,
@@ -411,7 +411,7 @@ export default function PublicHomePage() {
 
         <div style={{ paddingTop: 40 }}>
           <a
-            href="/haab"
+            href="https://research-hub.xyz"
             style={{
               fontFamily: "'SF Mono','Fira Code',monospace",
               fontSize: 9,
@@ -422,8 +422,7 @@ export default function PublicHomePage() {
               textDecoration: "none",
             }}
           >
-            {/* TODO: link to HAAB magazine site when live */}
-            Explore HAAB →
+            Explore HUB →
           </a>
         </div>
       </section>
@@ -620,8 +619,8 @@ export default function PublicHomePage() {
         <div className="footer-links" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
           {[
             { label: "Programmes", href: "#programmes" },
-            { label: "Publications", href: "#haab" },
-            { label: "HAAB", href: "#haab" },
+            { label: "Publications", href: "#hub" },
+            { label: "HUB", href: "#hub" },
             { label: "Collaborate", href: "#collaborate" },
           ].map((link) => (
             <a

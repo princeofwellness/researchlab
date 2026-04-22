@@ -71,7 +71,7 @@ body {
   section#hero,
   section#about,
   section#programmes,
-  section#haab,
+  section#hub,
   section#questions,
   section#collaborate,
   footer {
@@ -102,13 +102,13 @@ body {
     display: none !important;
   }
 
-  /* HAAB articles: collapse to 2 columns (num + title), hide tag and date */
-  .haab-row {
+  /* HUB articles: collapse to 2 columns (num + title), hide tag and date */
+  .hub-row {
     grid-template-columns: 40px 1fr !important;
   }
 
-  .haab-tag,
-  .haab-date {
+  .hub-tag,
+  .hub-date {
     display: none !important;
   }
 

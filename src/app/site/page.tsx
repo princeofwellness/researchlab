@@ -1,4 +1,7 @@
 import { PublicNav } from "@/components/public/PublicNav"
+import { RotatingHero } from "@/components/public/RotatingHero"
+import { ProgrammeList } from "@/components/public/ProgrammeList"
+import { StatsStrip } from "@/components/public/StatsStrip"
 import Link from "next/link"
 import { PROGRAMMES, HUB_ARTICLES, QUESTIONS } from "./data"
 
@@ -7,94 +10,54 @@ export default function PublicHomePage() {
     <main className="font-cabinet">
       <PublicNav />
 
-      {/* ─── HERO ─── */}
+      {/* ─── HERO — rotating provocations ─── */}
+      <RotatingHero />
+
+      {/* ─── TYPOGRAPHIC BREAK — full blue viewport, one statement ─── */}
       <section
-        id="hero"
         style={{
           minHeight: "100vh",
-          background: "#e8e1da",
+          background: "#0047BB",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
-          padding: "0 56px",
-          paddingTop: 56,
+          justifyContent: "center",
+          padding: "80px 56px",
         }}
       >
-        <div style={{ flex: 1 }} />
-
-        <div>
-          <h1
-            style={{
-              fontWeight: 900,
-              fontSize: "clamp(52px, 8vw, 96px)",
-              lineHeight: 1.0,
-              letterSpacing: "-0.02em",
-              color: "#0d0d0d",
-              maxWidth: 900,
-              marginBottom: 32,
-            }}
-          >
-            WHERE HUMANS &<br />AI CO-EVOLVE.
-          </h1>
-          <p
-            style={{
-              fontFamily: "'SF Mono','Fira Code',monospace",
-              fontSize: 11,
-              fontWeight: 700,
-              letterSpacing: "0.28em",
-              textTransform: "uppercase",
-              color: "rgba(0,0,0,0.45)",
-              marginBottom: 56,
-            }}
-          >
-            Research · Rewire · Recreate
-          </p>
-        </div>
-
-        <div
+        <p
           style={{
-            display: "flex",
-            gap: 16,
-            paddingBottom: 56,
-            borderTop: "1px solid rgba(0,0,0,0.10)",
-            paddingTop: 32,
+            fontFamily: "'SF Mono','Fira Code',monospace",
+            fontSize: 9,
+            fontWeight: 700,
+            letterSpacing: "0.32em",
+            textTransform: "uppercase",
+            color: "rgba(255,255,255,0.40)",
+            marginBottom: 48,
           }}
         >
-          <Link
-            href="#about"
-            style={{
-              fontFamily: "'SF Mono','Fira Code',monospace",
-              fontSize: 10,
-              fontWeight: 700,
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "#0d0d0d",
-              border: "1px solid rgba(0,0,0,0.20)",
-              padding: "12px 24px",
-              borderRadius: 2,
-              textDecoration: "none",
-            }}
-          >
-            Read the Lab →
-          </Link>
-          <Link
-            href="#collaborate"
-            style={{
-              fontFamily: "'SF Mono','Fira Code',monospace",
-              fontSize: 10,
-              fontWeight: 700,
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "white",
-              background: "#0047BB",
-              padding: "12px 24px",
-              borderRadius: 2,
-              textDecoration: "none",
-            }}
-          >
-            Work With Us
-          </Link>
-        </div>
+          Research Lab — Est. 2024
+        </p>
+        <h2
+          style={{
+            fontFamily: "'Cabinet Grotesk', sans-serif",
+            fontSize: "clamp(48px, 8vw, 120px)",
+            fontWeight: 900,
+            lineHeight: 1.0,
+            letterSpacing: "-0.025em",
+            color: "white",
+            maxWidth: 1000,
+          }}
+        >
+          What happens to the human when the machine can think?
+        </h2>
+        <div
+          style={{
+            marginTop: 64,
+            width: 64,
+            height: 1,
+            background: "rgba(255,255,255,0.30)",
+          }}
+        />
       </section>
 
       {/* ─── ABOUT ─── */}
@@ -199,99 +162,11 @@ export default function PublicHomePage() {
         </div>
       </section>
 
-      {/* ─── PROGRAMMES ─── */}
-      <section
-        id="programmes"
-        style={{
-          minHeight: "100vh",
-          background: "#e8e1da",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          padding: "80px 56px 56px",
-        }}
-      >
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 56 }}>
-          <p
-            style={{
-              fontFamily: "'SF Mono','Fira Code',monospace",
-              fontSize: 9,
-              fontWeight: 700,
-              letterSpacing: "0.32em",
-              textTransform: "uppercase",
-              color: "rgba(0,0,0,0.40)",
-            }}
-          >
-            Programmes
-          </p>
-          <p
-            style={{
-              fontFamily: "'SF Mono','Fira Code',monospace",
-              fontSize: 9,
-              fontWeight: 700,
-              letterSpacing: "0.24em",
-              textTransform: "uppercase",
-              color: "rgba(0,0,0,0.28)",
-            }}
-          >
-            {`${String(PROGRAMMES.length).padStart(2, "0")} Active`}
-          </p>
-        </div>
+      {/* ─── PROGRAMMES — expanding cards ─── */}
+      <ProgrammeList programmes={PROGRAMMES} />
 
-        <div style={{ flex: 1 }}>
-          {PROGRAMMES.map((prog, i) => (
-            <Link
-              key={prog.slug}
-              href={`/programmes/${prog.slug}`}
-              className="programme-row"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "48px 1fr 200px 120px",
-                alignItems: "baseline",
-                gap: 24,
-                padding: "28px 0",
-                borderTop: i === 0 ? "1px solid rgba(0,0,0,0.12)" : undefined,
-                borderBottom: "1px solid rgba(0,0,0,0.12)",
-                textDecoration: "none",
-                color: "inherit",
-                transition: "opacity 0.2s",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily: "'SF Mono','Fira Code',monospace",
-                  fontSize: 9,
-                  fontWeight: 700,
-                  letterSpacing: "0.24em",
-                  color: "rgba(0,0,0,0.30)",
-                }}
-              >
-                {prog.num}
-              </span>
-              <span style={{ fontSize: 22, fontWeight: 800, letterSpacing: "0.02em", color: "#0d0d0d" }}>
-                {prog.name}
-              </span>
-              <span className="programme-desc" style={{ fontSize: 13, lineHeight: 1.5, color: "rgba(0,0,0,0.55)", fontWeight: 400 }}>
-                {prog.desc}
-              </span>
-              <span
-                className="programme-tag"
-                style={{
-                  fontFamily: "'SF Mono','Fira Code',monospace",
-                  fontSize: 11,
-                  fontWeight: 600,
-                  letterSpacing: "0.10em",
-                  textTransform: "uppercase",
-                  color: "rgba(0,0,0,0.28)",
-                  textAlign: "right",
-                }}
-              >
-                {prog.tag}
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* ─── STATS ─── */}
+      <StatsStrip />
 
       {/* ─── HUB ─── */}
       <section

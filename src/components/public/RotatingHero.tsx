@@ -4,10 +4,13 @@ import { AnimatePresence, motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 
-const PROVOCATIONS = [
-  { line1: "What breaks first", line2: "when execution accelerates?" },
-  { line1: "Can you move faster", line2: "and still stay human?" },
-  { line1: "Is judgment the last thing", line2: "that is still yours?" },
+// Short supporting lines — each one is a genuine statement about what RL does.
+// These rotate beneath the fixed headline.
+const SUPPORTING_LINES = [
+  "We teach people to think with AI — not just use it.",
+  "We distill what matters from the noise.",
+  "We design structures that keep speed and direction together.",
+  "We translate real-world AI practice into better decisions.",
 ]
 
 export function RotatingHero() {
@@ -15,7 +18,7 @@ export function RotatingHero() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((i) => (i + 1) % PROVOCATIONS.length)
+      setIndex((i) => (i + 1) % SUPPORTING_LINES.length)
     }, 5000)
     return () => clearInterval(timer)
   }, [])
@@ -36,37 +39,53 @@ export function RotatingHero() {
       <div style={{ flex: 1 }} />
 
       <div>
-        {/* rotating headline */}
-        <AnimatePresence mode="wait">
-          <motion.h1
-            key={index}
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -16 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            style={{
-              fontWeight: 900,
-              fontSize: "clamp(52px, 8vw, 100px)",
-              lineHeight: 1.0,
-              letterSpacing: "-0.025em",
-              color: "#0d0d0d",
-              maxWidth: 900,
-              marginBottom: 40,
-            }}
-          >
-            {PROVOCATIONS[index].line1}
-            <br />
-            {PROVOCATIONS[index].line2}
-          </motion.h1>
-        </AnimatePresence>
+        {/* Fixed headline */}
+        <h1
+          style={{
+            fontWeight: 900,
+            fontSize: "clamp(52px, 8vw, 100px)",
+            lineHeight: 1.0,
+            letterSpacing: "-0.025em",
+            color: "#0d0d0d",
+            maxWidth: 900,
+            marginBottom: 28,
+          }}
+        >
+          Where humans
+          <br />
+          & AI co-evolve.
+        </h1>
 
-        {/* progress dots */}
+        {/* Rotating supporting line */}
+        <div style={{ minHeight: 28, marginBottom: 28 }}>
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+              style={{
+                fontSize: 17,
+                fontWeight: 500,
+                lineHeight: 1.5,
+                color: "rgba(13,13,13,0.55)",
+                maxWidth: 520,
+                margin: 0,
+              }}
+            >
+              {SUPPORTING_LINES[index]}
+            </motion.p>
+          </AnimatePresence>
+        </div>
+
+        {/* Progress dots */}
         <div style={{ display: "flex", gap: 8, marginBottom: 32, alignItems: "center" }}>
-          {PROVOCATIONS.map((_, i) => (
+          {SUPPORTING_LINES.map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}
-              aria-label={`Question ${i + 1}`}
+              aria-label={`Statement ${i + 1}`}
               style={{
                 width: i === index ? 28 : 8,
                 height: 2,

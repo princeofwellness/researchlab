@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react"
 
 const NAV_LINKS = [
   { label: "Programmes", href: "#programmes" },
-  { label: "Publications", href: "#hub" }, // TODO: /publications page
+  { label: "Publications", href: "#publications" },
   { label: "HUB", href: "#hub" },
   { label: "Collaborate", href: "#collaborate" },
   { label: "About", href: "#about" },
@@ -28,19 +28,13 @@ export function PublicNav() {
         }}
       >
         {/* Logo */}
-        <Link href="/site" className="flex items-center gap-0 no-underline">
-          <span
-            className="font-black tracking-widest uppercase"
-            style={{ fontSize: 13, letterSpacing: "0.18em", color: "#0047BB" }}
-          >
-            RESEARCH
-          </span>
-          <span
-            className="font-black tracking-widest uppercase"
-            style={{ fontSize: 13, letterSpacing: "0.18em", color: "#0d0d0d" }}
-          >
-            LAB
-          </span>
+        <Link href="/site" className="flex items-center no-underline">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/researchlab-logo.png"
+            alt="Research Lab by SORRYWECAN"
+            style={{ height: 28, width: "auto" }}
+          />
         </Link>
 
         {/* Desktop links */}

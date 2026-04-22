@@ -2,6 +2,7 @@ import { PublicNav } from "@/components/public/PublicNav"
 import { RotatingHero } from "@/components/public/RotatingHero"
 import { ProgrammeList } from "@/components/public/ProgrammeList"
 import { StatsStrip } from "@/components/public/StatsStrip"
+import { NewsletterForm } from "@/components/public/NewsletterForm"
 import Link from "next/link"
 import { PROGRAMMES, HUB_ARTICLES, QUESTIONS } from "./data"
 
@@ -106,9 +107,8 @@ export default function PublicHomePage() {
                 to build new languages for our and our shared future. Developed within the
                 SORRYWECAN ecosystem.
               </p>
-              {/* TODO: link to /manifesto when page exists */}
               <a
-                href="/manifesto"
+                href="mailto:researchlab@sorrywecan.com"
                 style={{
                   fontFamily: "'SF Mono','Fira Code',monospace",
                   fontSize: 9,
@@ -120,7 +120,7 @@ export default function PublicHomePage() {
                   marginTop: 16,
                 }}
               >
-                Read the Manifesto →
+                Get in Touch →
               </a>
             </div>
 
@@ -228,8 +228,11 @@ export default function PublicHomePage() {
 
           <div>
             {HUB_ARTICLES.map((article, i) => (
-              <div
+              <a
                 key={article.num}
+                href="https://research-hub.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hub-row"
                 style={{
                   display: "grid",
@@ -239,6 +242,9 @@ export default function PublicHomePage() {
                   padding: "20px 0",
                   borderTop: i === 0 ? "1px solid rgba(255,255,255,0.15)" : undefined,
                   borderBottom: "1px solid rgba(255,255,255,0.15)",
+                  textDecoration: "none",
+                  opacity: 1,
+                  transition: "opacity 0.15s",
                 }}
               >
                 <span
@@ -279,7 +285,7 @@ export default function PublicHomePage() {
                 >
                   {article.date}
                 </span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -299,6 +305,151 @@ export default function PublicHomePage() {
           >
             Explore HUB →
           </a>
+        </div>
+      </section>
+
+      {/* ─── PUBLICATIONS / TOOLKITS ─── */}
+      <section
+        id="publications"
+        style={{
+          background: "#e8e1da",
+          padding: "100px 56px",
+          borderTop: "1px solid rgba(0,0,0,0.08)",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 56 }}>
+          <p
+            style={{
+              fontFamily: "'SF Mono','Fira Code',monospace",
+              fontSize: 9,
+              fontWeight: 700,
+              letterSpacing: "0.32em",
+              textTransform: "uppercase",
+              color: "rgba(0,0,0,0.40)",
+            }}
+          >
+            Publications
+          </p>
+          <p
+            style={{
+              fontFamily: "'SF Mono','Fira Code',monospace",
+              fontSize: 9,
+              fontWeight: 700,
+              letterSpacing: "0.24em",
+              textTransform: "uppercase",
+              color: "rgba(0,0,0,0.28)",
+            }}
+          >
+            Toolkits & Papers
+          </p>
+        </div>
+
+        <div>
+          {[
+            {
+              num: "01",
+              date: "Nov 2025",
+              title: "THE MINDSHIFT ISSUE",
+              category: "Toolkit",
+              desc: "The core methodology behind our six-month Mindshift program — how we think about change, adaptability, and the cognitive mechanics behind flexibility.",
+              href: "/Mindshift-Issue.pdf",
+            },
+            {
+              num: "02",
+              date: "Oct 2025",
+              title: "The End of Art — or Art Without End?",
+              category: "Toolkit",
+              desc: "When machines can effortlessly generate what we once called art, what remains for the human imagination? Authorship, creativity, and meaning in an era of shared human-AI creation.",
+              href: "/end-of-art-or-art-without-end.pdf",
+            },
+            {
+              num: "03",
+              date: "Sep 2025",
+              title: "The Coming Age of Wisdom Work",
+              category: "Toolkit",
+              desc: "As AI takes over execution, human work becomes about awareness, intuition, and presence. Productivity redefined through emotional intelligence, flow, and depth.",
+              href: "/the-coming-age-of-wisdom-work.pdf",
+            },
+            {
+              num: "04",
+              date: "Aug 2025",
+              title: "AI as a New Entity",
+              category: "Toolkit",
+              desc: "The first edition — AI not as a tool, but as an emerging form of intelligence evolving its own logic and ecology. Developed in parallel with EXHIBIZZ.",
+              href: "/Toolkit.pdf",
+            },
+            {
+              num: "05",
+              date: "Aug 2025",
+              title: "Lightpaper",
+              category: "Paper & Essay",
+              desc: "Adaptive pattern recognition frameworks for navigating hybrid human-AI intelligence landscapes.",
+              href: "/Lightpaper.pdf",
+            },
+          ].map((pub, i) => (
+            <a
+              key={pub.num}
+              href={pub.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "48px 1fr 120px 80px",
+                alignItems: "baseline",
+                gap: 24,
+                padding: "24px 0",
+                borderTop: i === 0 ? "1px solid rgba(0,0,0,0.10)" : undefined,
+                borderBottom: "1px solid rgba(0,0,0,0.10)",
+                textDecoration: "none",
+                color: "inherit",
+              }}
+              className="hub-row"
+            >
+              <span
+                style={{
+                  fontFamily: "'SF Mono','Fira Code',monospace",
+                  fontSize: 9,
+                  fontWeight: 700,
+                  letterSpacing: "0.24em",
+                  color: "rgba(0,0,0,0.25)",
+                }}
+              >
+                {pub.num}
+              </span>
+              <div>
+                <span style={{ fontSize: 15, fontWeight: 700, color: "#0d0d0d", display: "block", marginBottom: 4 }}>
+                  {pub.title}
+                </span>
+                <span style={{ fontSize: 13, color: "rgba(0,0,0,0.50)", lineHeight: 1.5 }}>
+                  {pub.desc}
+                </span>
+              </div>
+              <span
+                className="hub-tag"
+                style={{
+                  fontFamily: "'SF Mono','Fira Code',monospace",
+                  fontSize: 9,
+                  fontWeight: 600,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "rgba(0,0,0,0.35)",
+                }}
+              >
+                {pub.category}
+              </span>
+              <span
+                className="hub-date"
+                style={{
+                  fontFamily: "'SF Mono','Fira Code',monospace",
+                  fontSize: 9,
+                  color: "rgba(0,0,0,0.30)",
+                  textAlign: "right",
+                }}
+              >
+                {pub.date}
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 
@@ -463,6 +614,50 @@ export default function PublicHomePage() {
         </div>
       </section>
 
+      {/* ─── NEWSLETTER ─── */}
+      <section
+        style={{
+          background: "#0d0d0d",
+          padding: "80px 56px",
+          borderTop: "1px solid rgba(255,255,255,0.06)",
+        }}
+      >
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "end" }}>
+          <div>
+            <p
+              style={{
+                fontFamily: "'SF Mono','Fira Code',monospace",
+                fontSize: 9,
+                fontWeight: 700,
+                letterSpacing: "0.32em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.35)",
+                marginBottom: 20,
+              }}
+            >
+              Newsletter
+            </p>
+            <h2
+              style={{
+                fontWeight: 900,
+                fontSize: "clamp(32px, 4vw, 52px)",
+                lineHeight: 1.05,
+                letterSpacing: "-0.02em",
+                color: "#e8e1da",
+                marginBottom: 16,
+              }}
+            >
+              Distilled intelligence.<br />Straight to your inbox.
+            </h2>
+            <p style={{ fontSize: 15, lineHeight: 1.7, color: "rgba(232,225,218,0.45)", maxWidth: 400 }}>
+              Toolkits, events, and insights from Research Lab — when something worth saying is ready.
+              No noise.
+            </p>
+          </div>
+          <NewsletterForm />
+        </div>
+      </section>
+
       {/* ─── FOOTER ─── */}
       <footer
         style={{
@@ -494,7 +689,7 @@ export default function PublicHomePage() {
         <div className="footer-links" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
           {[
             { label: "Programmes", href: "#programmes" },
-            { label: "Publications", href: "#hub" },
+            { label: "Publications", href: "#publications" },
             { label: "HUB", href: "#hub" },
             { label: "Collaborate", href: "#collaborate" },
           ].map((link) => (

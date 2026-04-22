@@ -116,13 +116,13 @@ export default function MiniTechMBAOffer() {
                         </p>
                         <h1 className="font-cabinet font-bold leading-[0.88] tracking-tighter text-[52px] md:text-[82px] text-white">
                             {en
-                                ? <>AI fluency<br />for the<br />builders.</>
-                                : <>AI gramotnosť<br />pre tých,<br />čo stavajú.</>}
+                                ? <>AI fluency<br />for those<br />who create.</>
+                                : <>AI gramotnosť<br />pre tých,<br />čo tvoria.</>}
                         </h1>
                         <p className="mt-6 md:mt-9 text-[15px] md:text-[18px] text-white/50 max-w-[420px] leading-relaxed">
                             {en
-                                ? "A collaboration between two communities. One brings depth. One brings reach. Together, we make the transition to AI-native work real."
-                                : "Spolupráca dvoch komunít. Jedna prináša hĺbku. Druhá dosah. Spolu robíme prechod na AI-native prácu reálnym."}
+                                ? "Research Lab brings the depth. Mini Tech MBA brings the community. Together, we give the people building AI-era careers an actual framework — not just tools."
+                                : "Research Lab prináša hĺbku. Mini Tech MBA prináša komunitu. Spolu dávame ľuďom, ktorí budujú kariéru v ére AI, skutočný rámec — nie len nástroje."}
                         </p>
                     </div>
 
@@ -130,8 +130,8 @@ export default function MiniTechMBAOffer() {
                     <div className="px-10 md:px-16 pb-6 text-right">
                         <p className="text-[11px] md:text-[13px] font-code-brand text-white/40 italic leading-relaxed max-w-[440px] ml-auto">
                             {en
-                                ? "\"The question is not whether AI will change the way you work. It already has.\""
-                                : "\"Otázka nie je, či AI zmení spôsob, akým pracujete. Už sa to stalo.\""}
+                                ? "\"AI doesn't replace thinking. It makes the quality of your thinking more visible.\""
+                                : "\"AI nenahrádza myslenie. Robí kvalitu vášho myslenia viditeľnejšou.\""}
                         </p>
                     </div>
 
@@ -169,7 +169,7 @@ export default function MiniTechMBAOffer() {
                             <p className="mt-6 text-[13px] text-black/40 leading-relaxed max-w-[260px]">
                                 {en
                                     ? "Women in AI and tech are navigating a fast-moving landscape — often alone, without a shared framework."
-                                    : "Ženy v AI a technológiách navigujú rýchlo sa meniace prostredie — často samy, bez spoločného rámca."}
+                                    : "Ženy v AI a technológiách sa pohybujú v rýchlo meniacom sa prostredí — často samy, bez spoločného rámca."}
                             </p>
                         </div>
 
@@ -181,10 +181,10 @@ export default function MiniTechMBAOffer() {
                                 ["The tools are accessible.", "The thinking behind them isn't taught."],
                                 ["Career paths are shifting.", "Most guidance hasn't caught up."],
                             ] : [
-                                ["AI nástroje pribúdajú.", "Jasnosť o tom, ktoré sú podstatné, nie."],
-                                ["Všetci sa prispôsobujú.", "Nikto nevedie prechod."],
+                                ["Nástrojov pribúda.", "Jasnosti o tom, ktoré skutočne rozhodujú, nie."],
+                                ["Všetci sa prispôsobujú.", "Nikto to nevedie."],
                                 ["Nástroje sú dostupné.", "Myslenie za nimi sa neučí."],
-                                ["Kariérne cesty sa menia.", "Väčšina rád nestíha."],
+                                ["Kariérne cesty sa posúvajú.", "Väčšina rád za tým nestíha."],
                             ]).map(([a, b], i, arr) => (
                                 <div key={i}>
                                     <div className="py-4 md:py-5">
@@ -257,18 +257,18 @@ export default function MiniTechMBAOffer() {
                             ] : [
                                 {
                                     tag: "01 — Automatizácia & Workflow",
-                                    h: "Práca, ktorá trvala hodiny.",
-                                    d: "Praktická automatizácia pre výskum, komunikáciu, obsah a administratívu. Reálne prípady, nie teória. Navrhnutá pre prácu, ktorú vaša komunita skutočne robí.",
+                                    h: "Práca, ktorá kedysi trvala hodiny.",
+                                    d: "Praktická automatizácia pre výskum, komunikáciu, obsah a administratívu. Reálne príklady, nie teória. Navrhnuté pre prácu, ktorú vaša komunita skutočne robí.",
                                 },
                                 {
                                     tag: "02 — Orientácia v Nástrojoch",
                                     h: "Správny nástroj pre správnu prácu.",
-                                    d: "Za hranicami ChatGPT. Ako hodnotiť, kombinovať a vlastniť tool stack, ktorý slúži vašej kariére. Logika, nielen zoznam.",
+                                    d: "Za hranicou ChatGPT. Ako nástroje vyhodnocovať, kombinovať a vybudovať si stack, ktorý slúži vašej kariére. Logika, nielen zoznam.",
                                 },
                                 {
-                                    tag: "03 — Mindset & Kariérna Navigácia",
-                                    h: "AI mení to, čo znamená odbornosť.",
-                                    d: "Ako sa menia roly, ktoré zručnosti sa znásobujú, a ako sa nastaviť, keď sa mení základ. Pre líderky aj individuálnych prispievateľov.",
+                                    tag: "03 — Myslenie & Kariérna Navigácia",
+                                    h: "AI mení to, čo znamená byť odborníčkou.",
+                                    d: "Ako sa menia roly, ktoré zručnosti sa znásobujú a ako sa nastaviť, keď sa mení celý základ. Pre líderky aj samostatné prispievateľky.",
                                 },
                             ]).map((p, i, arr) => (
                                 <div key={i}>
@@ -351,19 +351,19 @@ export default function MiniTechMBAOffer() {
                                 },
                             ] : [
                                 {
-                                    tag: "Vstupný",
-                                    h: "Mindshift Session — 3,5h",
-                                    d: "Jeden sústredený program. Dve perspektívy, živá diskusia, Q&A. Funguje ako samostatná udalosť alebo úvod série. Pre až 50 účastníkov.",
+                                    tag: "Úvod",
+                                    h: "Mindshift Session — 3,5 hodiny",
+                                    d: "Jedno sústredené stretnutie. Dve perspektívy, živá diskusia, otvorené Q&A. Funguje ako samostatná udalosť aj ako úvod do série. Pre až 50 ľudí.",
                                 },
                                 {
                                     tag: "Séria",
-                                    h: "3-dielny Arc — počas 6 týždňov",
-                                    d: "Tri tematické stretnutia pokrývajúce celý oblúk: zmena myslenia → orientácia v nástrojoch → kariérne nastavenie. Pre komunity, ktoré chcú skutočnú hĺbku.",
+                                    h: "3-dielny oblúk — 6 týždňov",
+                                    d: "Tri tematické stretnutia: zmena myslenia → orientácia v nástrojoch → kariérne nastavenie. Pre komunity, ktoré chcú skutočnú hĺbku, nie len inšpiráciu.",
                                 },
                                 {
                                     tag: "Intenzív",
-                                    h: "Celodenný alebo Dvojdňový Intenzív",
-                                    d: "Hlboké ponorenie pre menšiu skupinu (15–30). Teória stretáva prax. Reálne problémy riešené naživo. Vrátane follow-upu a prístupu do komunity.",
+                                    h: "Celodenný alebo dvojdňový intenzív",
+                                    d: "Hlboké ponorenie pre menšiu skupinu (15–30). Teória sa stretáva s praxou. Reálne pracovné výzvy riešené naživo. Vrátane follow-upu a prístupu do komunity.",
                                 },
                             ]).map((p, i, arr) => (
                                 <div key={i}>
@@ -388,83 +388,54 @@ export default function MiniTechMBAOffer() {
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════
-                    SLIDE 05 — THE COLLABORATION LAYERS  /  parchment
+                    SLIDE 05 — WHAT YOUR COMMUNITY GETS  /  parchment
                 ════════════════════════════════════════════════════════════ */}
                 <div className={`${S} bg-[#e8e1da] text-[#0a0a0a]`}>
                     {/* Background watermark */}
-                    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-cabinet font-bold text-[130px] md:text-[190px] text-black/[0.03] leading-none select-none pointer-events-none tracking-tighter whitespace-nowrap">
-                        TOGETHER
+                    <span className="absolute right-[-20px] top-1/2 -translate-y-1/2 font-cabinet font-bold text-[160px] md:text-[220px] text-black/[0.04] leading-none select-none pointer-events-none">
+                        GET
                     </span>
 
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/30">
-                            {en ? "The Collaboration" : "Spolupráca"}
-                        </span>
-                        <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-black/20">
-                            {en ? "Three layers" : "Tri vrstvy"}
+                            {en ? "What Your Community Gets" : "Čo Vaša Komunita Získa"}
                         </span>
                     </div>
                     <div className="mx-10 md:mx-16 mt-4 h-px bg-black/10" />
 
-                    <div className="flex-1 flex flex-col md:flex-row items-center px-10 md:px-16 py-10 md:py-0 gap-10">
-                        {/* Left: statement */}
-                        <div className="w-full md:w-[220px] shrink-0 flex flex-col justify-center">
-                            <h2 className="font-cabinet font-bold text-[36px] md:text-[48px] leading-[0.9] tracking-tighter">
-                                {en
-                                    ? <>This is more<br />than a gig.</>
-                                    : <>Toto je viac<br />než zákazka.</>}
+                    <div className="flex-1 flex flex-col md:flex-row px-10 md:px-16 py-10 md:py-0 gap-10 items-center">
+                        {/* Left */}
+                        <div className="w-full md:w-[190px] shrink-0 flex flex-col justify-center">
+                            <h2 className="font-cabinet font-bold text-[40px] md:text-[52px] leading-[0.9] tracking-tighter">
+                                {en ? <>Six<br />things.</> : <>Šesť<br />vecí.</>}
                             </h2>
                             <p className="mt-5 text-[12px] text-black/40 leading-relaxed">
                                 {en
-                                    ? "We're building something that compounds over time. Three ways this can grow."
-                                    : "Stavíme niečo, čo sa zhodnocuje v čase. Tri spôsoby, ako to môže rásť."}
+                                    ? "Not a lecture. Not a list of tools. Something that actually changes how people work."
+                                    : "Nie prednáška. Nie zoznam nástrojov. Niečo, čo skutočne mení spôsob, akým ľudia pracujú."}
                             </p>
                         </div>
 
-                        {/* Right: three layers */}
-                        <div className="flex-1 md:border-l border-black/10 md:pl-12">
+                        {/* Right: six outcomes */}
+                        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 content-center md:border-l border-black/10 md:pl-12 gap-x-10">
                             {(en ? [
-                                {
-                                    num: "01",
-                                    h: "Community Education",
-                                    d: "Research Lab content — live sessions, toolkits, frameworks — delivered inside Mini Tech MBA. Your community gets curriculum. We get reach.",
-                                },
-                                {
-                                    num: "02",
-                                    h: "External Client Pipeline",
-                                    d: "Mini Tech MBA members work in companies. Those companies need AI training. You refer. We deliver. Revenue shared. Clean and sustainable.",
-                                },
-                                {
-                                    num: "03",
-                                    h: "Ecosystem & Platform Access",
-                                    d: "Mini Tech MBA members get access to Research Lab's Circle — online content, community, and new releases. A reason to stay connected beyond single events.",
-                                },
+                                ["A Shared AI Framework", "One vocabulary, one way of thinking about AI across the community."],
+                                ["Applied Tool Skills", "Not a demo — skills built around their actual work and challenges."],
+                                ["Career Clarity", "A clear picture of how AI accelerates certain paths and changes others."],
+                                ["Research Lab Toolkits", "Access to the full toolkit series — distilled thinking, not generic content."],
+                                ["Live Q&A with Practitioners", "Real answers from people working in AI education and business, not theory."],
+                                ["Community Connection", "30 days in Research Lab's online community. Keep the thinking going."],
                             ] : [
-                                {
-                                    num: "01",
-                                    h: "Vzdelávanie Komunity",
-                                    d: "Research Lab obsah — živé sessions, toolkity, rámce — doručený v rámci Mini Tech MBA. Vaša komunita dostane curriculum. My dosah.",
-                                },
-                                {
-                                    num: "02",
-                                    h: "Pipeline Externých Klientov",
-                                    d: "Členky Mini Tech MBA pracujú vo firmách. Tie firmy potrebujú AI tréning. Vy odporučíte. My doručíme. Príjem zdieľaný. Čisté a udržateľné.",
-                                },
-                                {
-                                    num: "03",
-                                    h: "Ekosystém a Prístup k Platforme",
-                                    d: "Členky Mini Tech MBA dostanú prístup do Research Lab Circle — online obsah, komunita a nové vydania. Dôvod zostať prepojený aj po jednorazových udalostiach.",
-                                },
-                            ]).map((p, i, arr) => (
-                                <div key={i}>
-                                    <div className="flex items-start gap-6 py-4 md:py-5">
-                                        <span className="text-[10px] font-code-brand font-bold text-[#0047BB] w-6 shrink-0 pt-0.5">{p.num}</span>
-                                        <div>
-                                            <p className="text-[14px] md:text-[16px] font-medium leading-tight">{p.h}</p>
-                                            <p className="text-[12px] text-black/40 mt-1 leading-relaxed">{p.d}</p>
-                                        </div>
-                                    </div>
-                                    {i < arr.length - 1 && <div className="h-px bg-black/[0.08]" />}
+                                ["Spoločný AI Rámec", "Jedna slovná zásoba, jeden spôsob uvažovania o AI — naprieč celou komunitou."],
+                                ["Praktické Zručnosti s Nástrojmi", "Nie demo — zručnosti postavené okolo ich skutočnej práce a výziev."],
+                                ["Kariérna Jasnosť", "Jasný obraz toho, kde AI kariéru urýchľuje a kde ju mení."],
+                                ["Research Lab Toolkity", "Prístup k celej sérii toolkitov — destilované myslenie, nie generický obsah."],
+                                ["Živé Q&A s Odborníkmi", "Skutočné odpovede od ľudí pracujúcich v AI vzdelávaní a podnikaní."],
+                                ["Prepojenie s Komunitou", "30 dní v online komunite Research Lab. Myslenie pokračuje."],
+                            ]).map(([title, desc], i) => (
+                                <div key={i} className="py-3 md:py-4 border-b border-black/[0.08] last:border-b-0">
+                                    <p className="text-[13px] md:text-[14px] font-medium">{title}</p>
+                                    <p className="text-[11px] text-black/35 mt-0.5 leading-relaxed">{desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -509,7 +480,7 @@ export default function MiniTechMBAOffer() {
                             <p className="mt-6 text-[12px] md:text-[13px] text-white/40 leading-relaxed max-w-[280px]">
                                 {en
                                     ? "Builder and creative at the intersection of AI, culture, and human development. Founder of Research Lab. Designs experiences that change how people think — not just what they know."
-                                    : "Tvorca a kreatívec na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab. Navrhuje zážitky, ktoré menia spôsob, akým ľudia premýšľajú — nielen to, čo vedia."}
+                                    : "Tvorca a kreatívec na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab. Navrhuje zážitky, ktoré menia to, ako ľudia uvažujú — nie len to, čo vedia."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-white/30 max-w-[260px] leading-snug">
                                 {en
@@ -529,7 +500,7 @@ export default function MiniTechMBAOffer() {
                             <p className="mt-6 text-[12px] md:text-[13px] text-white/40 leading-relaxed max-w-[280px]">
                                 {en
                                     ? "Transformational designer and strategist. Works on AI business models, organizational architecture, and the societal impact of emerging technology. Brings clarity to rooms that are moving fast."
-                                    : "Transformačný dizajnér a stratég. Pracuje na AI obchodných modeloch, organizačnej architektúre a spoločenskom dopade nových technológií. Prináša jasnosť do miestností, ktoré sa rýchlo pohybujú."}
+                                    : "Transformačný dizajnér a stratég. Pracuje na AI obchodných modeloch, organizačnej architektúre a spoločenskom vplyve nových technológií. Prináša jasnosť tam, kde sa všetko rýchlo hýbe."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-white/30 max-w-[260px] leading-snug">
                                 {en
@@ -569,12 +540,12 @@ export default function MiniTechMBAOffer() {
                             <p className="mt-7 text-[14px] text-white/45 max-w-xs leading-relaxed">
                                 {en
                                     ? "30-minute conversation. No commitment. We find where the overlap is and design it from there."
-                                    : "30-minútový rozhovor. Žiadny záväzok. Nájdeme, kde je prienik, a odtiaľ to navrhneme."}
+                                    : "30-minútový rozhovor. Bez záväzkov. Pozrieme sa, kde je prienik, a odtiaľ to spoločne navrhneme."}
                             </p>
                             <p className="mt-4 text-[11px] text-white/25 max-w-xs leading-relaxed">
                                 {en
                                     ? "If this isn't the right time or fit, we'll say so directly."
-                                    : "Ak to nie je správny čas alebo fit, povieme priamo."}
+                                    : "Ak to nedáva zmysel alebo nie je správny čas, povieme priamo."}
                             </p>
                         </div>
 

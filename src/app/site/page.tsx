@@ -646,7 +646,7 @@ export default function PublicHomePage() {
             color: "rgba(232,225,218,0.25)",
           }}
         >
-          © 2024 SORRYWECAN
+          © {new Date().getFullYear()} SORRYWECAN
         </p>
       </footer>
     </main>

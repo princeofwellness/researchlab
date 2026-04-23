@@ -240,35 +240,35 @@ export default function MiniTechMBAOffer() {
                         <div className="flex-1 flex flex-col justify-center md:border-l border-white/[0.06] md:pl-10">
                             {(en ? [
                                 {
-                                    tag: "01 — Automation & Workflow",
-                                    h: "Work that used to take hours.",
-                                    d: "Practical automation for research, communication, content, and admin. Real use cases, not theory. Built for the work your community actually does.",
+                                    tag: "01 — Mindset, Creativity & Career",
+                                    h: "The tools are the same. The thinking isn't.",
+                                    d: "AI shifts what expertise means, what creativity is worth, and how careers compound. We give your community a framework for navigating all of it — not a pep talk, not a list of prompts.",
                                 },
                                 {
                                     tag: "02 — Tool Orientation",
-                                    h: "The right tool for the right job.",
-                                    d: "Beyond ChatGPT. How to evaluate, combine, and own a tool stack that serves your career. The logic, not just the list.",
+                                    h: "The list won't save you. The logic will.",
+                                    d: "Beyond ChatGPT. We map the landscape, teach the selection logic, and help your community build a tool stack that fits their actual work — not someone else's workflow.",
                                 },
                                 {
-                                    tag: "03 — Mindset & Career Navigation",
-                                    h: "AI changes what expertise means.",
-                                    d: "How roles shift, what skills compound, and how to position yourself when the floor is moving. For leaders and individual contributors both.",
+                                    tag: "03 — Automation & Workflow",
+                                    h: "Hours back. Decisions forward.",
+                                    d: "Practical automation for research, communication, content, and admin. Built around the work your community actually does — not generic demos.",
                                 },
                             ] : [
                                 {
-                                    tag: "01 — Automatizácia & Workflow",
-                                    h: "Práca, ktorá kedysi trvala hodiny.",
-                                    d: "Praktická automatizácia pre výskum, komunikáciu, obsah a administratívu. Reálne príklady, nie teória. Navrhnuté pre prácu, ktorú vaša komunita skutočne robí.",
+                                    tag: "01 — Myslenie, Kreativita & Kariéra",
+                                    h: "Nástroje sú rovnaké. Myslenie nie.",
+                                    d: "AI mení to, čo znamená byť odborníčkou, čo zostáva z kreativity a kam kariéry smerujú. Vašej komunite dávame rámec — nie motivačný prejav, nie zoznam promptov.",
                                 },
                                 {
                                     tag: "02 — Orientácia v Nástrojoch",
-                                    h: "Správny nástroj pre správnu prácu.",
-                                    d: "Za hranicou ChatGPT. Ako nástroje vyhodnocovať, kombinovať a vybudovať si stack, ktorý slúži vašej kariére. Logika, nielen zoznam.",
+                                    h: "Zoznam ťa nezachráni. Logika áno.",
+                                    d: "Za ChatGPT. Mapujeme prostredie, učíme logiku výberu a pomáhame postaviť stack, ktorý slúži skutočnej práci — nie cudziemu workflowu.",
                                 },
                                 {
-                                    tag: "03 — Myslenie & Kariérna Navigácia",
-                                    h: "AI mení to, čo znamená byť odborníčkou.",
-                                    d: "Ako sa menia roly, ktoré zručnosti sa znásobujú a ako sa nastaviť, keď sa mení celý základ. Pre líderky aj samostatné prispievateľky.",
+                                    tag: "03 — Automatizácia & Workflow",
+                                    h: "Hodiny späť. Rozhodnutia vpred.",
+                                    d: "Praktická automatizácia pre výskum, komunikáciu, obsah a administratívu. Pre prácu, ktorú vaša komunita reálne robí — nie generické demá.",
                                 },
                             ]).map((p, i, arr) => (
                                 <div key={i}>

@@ -523,7 +523,7 @@ export default function MiniTechMBAOffer() {
                 <div className={`${S} bg-[#0047BB] text-white`}>
                     <div className="flex items-center justify-between px-10 md:px-16 pt-7">
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
-                            {en ? "Next Step" : "Ďalší Krok"}
+                            {en ? "Your Thoughts" : "Váš Pohľad"}
                         </span>
                         <span className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-white/40">
                             Research Lab · 2026
@@ -534,18 +534,20 @@ export default function MiniTechMBAOffer() {
                     <div className="flex-1 flex flex-col md:flex-row items-stretch">
                         {/* Left: headline */}
                         <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-12 md:py-0">
-                            <h2 className="font-cabinet font-bold text-[60px] md:text-[96px] leading-[0.87] tracking-tighter text-white">
-                                {en ? <>Let's<br />talk.</> : <>Pobavme<br />sa.</>}
+                            <h2 className="font-cabinet font-bold text-[52px] md:text-[80px] leading-[0.9] tracking-tighter text-white">
+                                {en
+                                    ? <>We'd love<br />your feedback.</>
+                                    : <>Tešíme sa<br />na vašu spätnú väzbu.</>}
                             </h2>
                             <p className="mt-7 text-[14px] text-white/45 max-w-xs leading-relaxed">
                                 {en
-                                    ? "30-minute conversation. No commitment. We find where the overlap is and design it from there."
-                                    : "30-minútový rozhovor. Bez záväzkov. Pozrieme sa, kde je prienik, a odtiaľ to spoločne navrhneme."}
+                                    ? "We've made our first connection — now we're curious what resonates, what you'd push back on, and where you see the fit."
+                                    : "Prvý kontakt je za nami — teraz nás zaujíma, čo rezonuje, čo by ste zmenili a kde vidíte prienik."}
                             </p>
-                            <p className="mt-4 text-[11px] text-white/25 max-w-xs leading-relaxed">
+                            <p className="mt-4 text-[11px] text-white/30 max-w-xs leading-relaxed">
                                 {en
-                                    ? "If this isn't the right time or fit, we'll say so directly."
-                                    : "Ak to nedáva zmysel alebo nie je správny čas, povieme priamo."}
+                                    ? "Even a short reply makes a difference. We'll take it from there."
+                                    : "Aj krátka odpoveď nám pomôže. Odtiaľ to spoločne dotvoríme."}
                             </p>
                         </div>
 
@@ -558,7 +560,7 @@ export default function MiniTechMBAOffer() {
                                 className="block bg-white text-[#0047BB] text-center px-6 py-4 hover:bg-[#e8e1da] transition-colors"
                             >
                                 <span className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em]">
-                                    {en ? "Book the Call" : "Rezervovať Hovor"}
+                                    {en ? "Get in Touch" : "Napíšte Nám"}
                                 </span>
                             </a>
 

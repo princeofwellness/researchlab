@@ -281,53 +281,72 @@ export default function HomePage() {
                 <div className="max-w-5xl mx-auto px-6 md:px-12">
 
                     {/* Top bar */}
-                    <div className="flex items-center justify-between py-4 border-b border-white/[0.08]">
+                    <div className="flex items-center justify-between py-4 border-b border-white/[0.07]">
                         <span className="font-cabinet font-black text-[13px] tracking-widest uppercase">
                             RESEARCH<span className="text-[#0047BB]">LAB</span>
                         </span>
-                        <div className="flex items-center gap-4">
-                            <span className="font-code-brand text-[9px] text-white/25 uppercase tracking-[0.3em] hidden md:block">
+                        <div className="flex items-center gap-5">
+                            <span className="font-code-brand text-[9px] text-white/20 uppercase tracking-[0.3em] hidden md:block">
                                 SORRYWECAN · BRATISLAVA
                             </span>
-                            <span className="font-code-brand text-[10px] text-white/25">
+                            <span className="font-code-brand text-[10px] text-white/20">
                                 <LiveClock />
                             </span>
+                            <Link href="/lab" className="font-code-brand text-[9px] text-white/25 hover:text-white/60 uppercase tracking-[0.25em] transition-colors hidden md:block">
+                                Lab →
+                            </Link>
                         </div>
                     </div>
 
                     {/* Hero */}
-                    <div className="py-14 md:py-20">
-                        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                            <p className="font-code-brand text-[9px] uppercase tracking-[0.45em] text-white/25 mb-4">
-                                Internal Overview · Q2 2026
-                            </p>
-                            <h1 className="font-cabinet font-black tracking-tighter leading-[0.87] text-white"
-                                style={{ fontSize: "clamp(52px, 9vw, 104px)" }}>
-                                Where humans<br />& AI co-evolve.
+                    <div className="py-16 md:py-24">
+                        <motion.div
+                            initial={{ opacity: 0, y: 24 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                        >
+                            {/* Main headline */}
+                            <h1
+                                className="font-cabinet font-black tracking-tighter leading-[0.87] text-white mb-8"
+                                style={{ fontSize: "clamp(48px, 8.5vw, 100px)" }}
+                            >
+                                The thinking<br />behind the tool<br />
+                                <span className="text-white/30">is the tool.</span>
                             </h1>
-                            <p className="font-code-brand text-[13px] text-white/35 mt-6 max-w-lg leading-relaxed">
-                                Research Lab is an AI education institute. This is the global overview —
-                                every programme, toolkit, offer, and active project in one place.
-                            </p>
+
+                            {/* Philosophy */}
+                            <div className="border-l-[2px] border-[#0047BB] pl-6 max-w-xl mb-10">
+                                <p className="text-[15px] md:text-[17px] text-white/60 leading-relaxed">
+                                    Most AI content teaches output. We teach perspective.
+                                    Research Lab exists because nobody was teaching
+                                    the underlying thinking — and that gap is the whole problem.
+                                </p>
+                            </div>
+
+                            {/* Three beliefs */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-px border border-white/[0.07] bg-white/[0.07] max-w-2xl">
+                                {[
+                                    ["Thinking is the skill.", "Tools are just the interface."],
+                                    ["Curation beats volume.", "Most AI content is noise."],
+                                    ["Immersive, not informational.", "Education that changes how you think."],
+                                ].map(([a, b]) => (
+                                    <div key={a} className="bg-[#0a0a0a] px-5 py-4">
+                                        <p className="font-cabinet font-bold text-[13px] text-white/80 leading-snug">{a}</p>
+                                        <p className="font-code-brand text-[10px] text-white/30 mt-1 leading-relaxed">{b}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </motion.div>
 
-                        {/* Stats strip */}
-                        <motion.div
-                            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }}
-                            className="flex items-center gap-8 md:gap-12 mt-10 pt-8 border-t border-white/[0.08]"
+                        {/* Tagline */}
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.4, duration: 0.6 }}
+                            className="font-code-brand text-[9px] uppercase tracking-[0.5em] text-white/20 mt-10"
                         >
-                            {[
-                                { n: "4", l: "Programmes" },
-                                { n: "5", l: "Toolkits" },
-                                { n: "2", l: "Active Offers" },
-                                { n: "30+", l: "Internal Docs" },
-                            ].map(({ n, l }) => (
-                                <div key={l}>
-                                    <p className="font-cabinet font-black text-[28px] md:text-[36px] tracking-tighter text-white leading-none">{n}</p>
-                                    <p className="font-code-brand text-[9px] text-white/25 uppercase tracking-[0.3em] mt-1">{l}</p>
-                                </div>
-                            ))}
-                        </motion.div>
+                            WHERE HUMANS & AI CO-EVOLVE · BRATISLAVA · 2026
+                        </motion.p>
                     </div>
                 </div>
             </header>

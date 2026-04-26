@@ -23,7 +23,7 @@ const ITEMS: Item[] = [
         type: "Programme",
         name: "THE MINDSHIFT",
         href: "/programmes/mindshift",
-        desc: "A 3.5-hour immersive session on how to think with AI — not just use it. Two perspectives, live discussion, open panel.",
+        desc: "Soft Engineering in practice. 3.5 hours — two perspectives, one room, real questions. The moment you realise perception is editable.",
         img: "/img/protocols/mindshift-issue.jpg",
         status: "ACTIVE",
     },
@@ -32,7 +32,7 @@ const ITEMS: Item[] = [
         type: "Programme",
         name: "COMMUNITEA",
         href: "/programmes/communitea",
-        desc: "The tea ritual that opens every session. Slowing down to sit together before we think together.",
+        desc: "Before the thinking, the sitting. Tea, presence, circle. The slowdown that makes everything after it sharper.",
         status: "ONGOING",
     },
     {
@@ -40,7 +40,7 @@ const ITEMS: Item[] = [
         type: "Programme",
         name: "FUTURE PROTOCOLS",
         href: "/programmes/future-protocols",
-        desc: "Toolkit series. Each issue distils one session into something you can keep — read, share, return to.",
+        desc: "Each session becomes an issue. Each issue becomes something you can keep, return to, share. Thinking made portable.",
         img: "/img/protocols/wisdom-work.jpg",
         status: "ONGOING",
     },
@@ -49,7 +49,7 @@ const ITEMS: Item[] = [
         type: "Programme",
         name: "THE SOURCE",
         href: "/programmes/the-source",
-        desc: "The research and thinking that feeds everything else. Where the ideas come from.",
+        desc: "The research layer. Where everything that surfaces in public gets built in private first.",
         status: "ONGOING",
     },
     // Toolkits
@@ -58,7 +58,7 @@ const ITEMS: Item[] = [
         type: "Toolkit",
         name: "The Mindshift Issue",
         href: "/Mindshift-Issue.pdf",
-        desc: "Issue 01 · Nov 2025. Three speakers, one night, distilled.",
+        desc: "Issue 01 · Soft Engineering. Adaptability is a cognitive skill, not a personality trait. What we call change is often nothing more than perception learning to move.",
         img: "/img/protocols/mindshift-issue.jpg",
     },
     {
@@ -66,7 +66,7 @@ const ITEMS: Item[] = [
         type: "Toolkit",
         name: "The End of Art — or Art Without End?",
         href: "/end-of-art-or-art-without-end.pdf",
-        desc: "Issue 02 · Oct 2025. What AI means for creativity and what it can't touch.",
+        desc: "Issue 02 · Taste is the new scarcity. When machines can effortlessly generate the content we consume, what's left for the human imagination?",
         img: "/img/protocols/end-of-art.jpg",
     },
     {
@@ -74,7 +74,7 @@ const ITEMS: Item[] = [
         type: "Toolkit",
         name: "The Coming Age of Wisdom Work",
         href: "/the-coming-age-of-wisdom-work.pdf",
-        desc: "Issue 03 · Sep 2025. When execution is automated, what becomes valuable?",
+        desc: "Issue 03 · When AI handles 70–80% of the work, what does the remaining 20% look like? Work is becoming improvisation.",
         img: "/img/protocols/wisdom-work.jpg",
     },
     {
@@ -82,7 +82,7 @@ const ITEMS: Item[] = [
         type: "Toolkit",
         name: "AI as a New Entity",
         href: "/Toolkit.pdf",
-        desc: "Issue 04 · Aug 2025. How to relate to AI as something genuinely new.",
+        desc: "Issue 04 · [YOU ARE HERE] — the crossing point. We've entered a world where we study AI not as tools, but as agents with their own cognitive ecology. We explore AI, and AI explores us.",
         img: "/img/protocols/ai-as-entity.jpg",
     },
     {
@@ -90,7 +90,7 @@ const ITEMS: Item[] = [
         type: "Toolkit",
         name: "Lightpaper",
         href: "/Lightpaper.pdf",
-        desc: "Issue 05 · Aug 2025. The Research Lab foundation document.",
+        desc: "Issue 05 · Where it began and where it's going. The foundation document. A map of the territory before the territory had a name.",
         img: "/img/protocols/lightpaper.jpg",
     },
     // Offers
@@ -99,7 +99,7 @@ const ITEMS: Item[] = [
         type: "Offer",
         name: "Corporate Workshop",
         href: "/corporate/offer-v2",
-        desc: "Two-day guided experience for teams. Thinking before tools. Built for companies ready to move beyond random AI adoption.",
+        desc: "Thinking before tools. A two-day experience for teams who want a shared framework — not just AI adoption, but a new way of working with it.",
         status: "ACTIVE",
     },
     {
@@ -107,7 +107,7 @@ const ITEMS: Item[] = [
         type: "Offer",
         name: "RL × Mini Tech MBA",
         href: "/corporate/mini-tech-mba",
-        desc: "Partnership offer for the Mini Tech MBA community. AI fluency for those who create.",
+        desc: "AI fluency for those who create. A partnership for a community where the questions are real and the answers need to be original.",
         status: "NEW",
     },
     // Site & Lab
@@ -116,7 +116,7 @@ const ITEMS: Item[] = [
         type: "Site",
         name: "Public Homepage",
         href: "/site",
-        desc: "The public face of Research Lab. Institute + magazine. Opens at researchlab.sk after DNS flip.",
+        desc: "The face of Research Lab. Institute + magazine. Opens at researchlab.sk — this is what the world sees.",
         status: "ACTIVE",
     },
     {
@@ -124,7 +124,7 @@ const ITEMS: Item[] = [
         type: "Lab",
         name: "The Lab",
         href: "/lab",
-        desc: "Backstage. All internal documents, strategy, decks, experiments. The engine room.",
+        desc: "Backstage. Every internal document, strategy, deck, and experiment. Where the public face gets made.",
         status: "INTERNAL",
     },
 ]
@@ -305,34 +305,41 @@ export default function HomePage() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                         >
+                            {/* Label */}
+                            <p className="font-code-brand text-[9px] uppercase tracking-[0.45em] text-white/20 mb-6">
+                                Research Lab · Bratislava · 2026
+                            </p>
+
                             {/* Main headline */}
                             <h1
-                                className="font-cabinet font-black tracking-tighter leading-[0.87] text-white mb-8"
-                                style={{ fontSize: "clamp(48px, 8.5vw, 100px)" }}
+                                className="font-cabinet font-black tracking-tighter leading-[0.87] text-white mb-10"
+                                style={{ fontSize: "clamp(52px, 9vw, 108px)" }}
                             >
-                                The thinking<br />behind the tool<br />
-                                <span className="text-white/30">is the tool.</span>
+                                Perception<br />
+                                <span className="text-white/28">is editable.</span>
                             </h1>
 
-                            {/* Philosophy */}
-                            <div className="border-l-[2px] border-[#0047BB] pl-6 max-w-xl mb-10">
-                                <p className="text-[15px] md:text-[17px] text-white/60 leading-relaxed">
-                                    Most AI content teaches output. We teach perspective.
-                                    Research Lab exists because nobody was teaching
-                                    the underlying thinking — and that gap is the whole problem.
+                            {/* Philosophy — blue border block */}
+                            <div className="border-l-[2px] border-[#0047BB] pl-7 max-w-lg mb-12">
+                                <p className="text-[16px] md:text-[18px] text-white/55 leading-[1.6]">
+                                    The real transformation isn't in the machines.
+                                    It's in how we learn to move with them.<br /><br />
+                                    Taste, judgment, the capacity to adapt —
+                                    these don't come with the tool.
+                                    They have to be built.
                                 </p>
                             </div>
 
-                            {/* Three beliefs */}
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-px border border-white/[0.07] bg-white/[0.07] max-w-2xl">
+                            {/* Three lines — no boxes, hairlines only */}
+                            <div className="max-w-xl border-t border-white/[0.08]">
                                 {[
-                                    ["Thinking is the skill.", "Tools are just the interface."],
-                                    ["Curation beats volume.", "Most AI content is noise."],
-                                    ["Immersive, not informational.", "Education that changes how you think."],
-                                ].map(([a, b]) => (
-                                    <div key={a} className="bg-[#0a0a0a] px-5 py-4">
-                                        <p className="font-cabinet font-bold text-[13px] text-white/80 leading-snug">{a}</p>
-                                        <p className="font-code-brand text-[10px] text-white/30 mt-1 leading-relaxed">{b}</p>
+                                    ["Soft Engineering", "Designing with awareness, not just with systems."],
+                                    ["Wisdom Work", "When AI handles the how, the why becomes everything."],
+                                    ["Co-evolution", "We explore AI, and AI explores us."],
+                                ].map(([title, desc]) => (
+                                    <div key={title} className="flex items-baseline gap-5 py-4 border-b border-white/[0.08]">
+                                        <span className="font-cabinet font-bold text-[14px] text-white/70 shrink-0 w-36">{title}</span>
+                                        <span className="font-code-brand text-[11px] text-white/30 leading-relaxed">{desc}</span>
                                     </div>
                                 ))}
                             </div>
@@ -342,10 +349,10 @@ export default function HomePage() {
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4, duration: 0.6 }}
-                            className="font-code-brand text-[9px] uppercase tracking-[0.5em] text-white/20 mt-10"
+                            transition={{ delay: 0.5, duration: 0.6 }}
+                            className="font-code-brand text-[9px] uppercase tracking-[0.5em] text-white/15 mt-12"
                         >
-                            WHERE HUMANS & AI CO-EVOLVE · BRATISLAVA · 2026
+                            WHERE HUMANS & AI CO-EVOLVE
                         </motion.p>
                     </div>
                 </div>

@@ -841,6 +841,168 @@ WHAT WE ARE NOT: A dev shop. A consulting firm. A hype machine. A tools aggregat
 
                     <Divider />
 
+                    {/* 11. Lexicon & Voice — From Toolkits */}
+                    <motion.div {...fade(0.1)}>
+                        <Label>11</Label>
+                        <SectionTitle>Lexicon & Voice — From the Toolkits</SectionTitle>
+                        <p className="text-sm text-black/50 mb-6 -mt-2">
+                            Extracted from deep reading of all five Future Protocols issues (Apr 2026).
+                            These are the actual concepts, sentence structures, and vocabulary that define Research Lab's thinking.
+                            Use this when writing anything — copy, decks, social, internal docs.
+                        </p>
+
+                        <div className="space-y-6">
+
+                            {/* Core coined concepts */}
+                            <div className="p-5 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-4">Our Coined Concepts — Use These</p>
+                                <div className="space-y-4">
+                                    {[
+                                        {
+                                            term: "Soft Engineering",
+                                            src: "Issue 01",
+                                            def: "The practice of designing with awareness — combining systems thinking with empathy, observation, and imagination. Rooted in presence and human-centered. The counter to hard tech culture. 9 qualities: self-awareness without ego, energy to make decisions, radical imagination, dynamic communication, alignment with values + purpose, systems-oriented thinking, observation, empathy, active listening.",
+                                        },
+                                        {
+                                            term: "Prediction-Error Tolerance",
+                                            src: "Issue 01",
+                                            def: "The neuroscience frame for adaptability. The brain only updates its internal models when a strong enough prediction error occurs. Highly adaptable individuals tolerate prediction error without shutting down or defending old assumptions. Adaptability is a cognitive skill, not a personality trait.",
+                                        },
+                                        {
+                                            term: "Wisdom Work",
+                                            src: "Issue 03",
+                                            def: "The post-execution era of work. When AI handles the how — the remaining 20% becomes everything: taste, judgment, presence, improvisation, depth leadership. Work is becoming less like execution and more like improvisation.",
+                                        },
+                                        {
+                                            term: "Creative Entropy",
+                                            src: "Issue 02",
+                                            def: "Nothing is fixed, everything merges, everything is fluid. The condition of co-creation with AI — we do not fully know what is happening inside the system, even if we have designed it ourselves.",
+                                        },
+                                        {
+                                            term: "Operational AI",
+                                            src: "Issue 01",
+                                            def: "Distinct from tool AI. In 2026, the task is turning agents into Operational AI — a shared layer that makes collective thinking precise and reproducible. The same way the body synchronises billions of neurons through a shared electrochemical language, Operational AI synchronises team intelligence through a shared operational language.",
+                                        },
+                                        {
+                                            term: "Algorithmic Unconscious",
+                                            src: "Issue 04",
+                                            def: "AI systems have hidden layers similar to our own subconscious — formed from the mix of human desires, logic, and computer programming, remaining hidden because of the black-box effect. AI is not other; it is a mirror of collective human patterns.",
+                                        },
+                                        {
+                                            term: "Self-As-Process",
+                                            src: "Issue 01",
+                                            def: "Identity is fluid, not fixed. 'There is no previously existing I to do the experiencing. The only self that exists is the one in the process of contacting the environment.' Resistance emerges when we cling to outdated self-concepts. Growth requires letting the old self dissolve.",
+                                        },
+                                        {
+                                            term: "Symbiotic Creativity",
+                                            src: "Issue 02",
+                                            def: "Five principles: Transparency (name AI's role openly), Intentionality (work with purpose, not just effect), Reflexivity (notice how tools shape your process), Openness (stay receptive to detours, accidents, surprise), Authenticity (let your own voice remain visible).",
+                                        },
+                                    ].map(({ term, src, def }) => (
+                                        <div key={term} className="flex gap-4 pb-4 border-b border-black/[0.07] last:border-b-0 last:pb-0">
+                                            <div className="w-48 shrink-0">
+                                                <p className="font-cabinet font-bold text-[15px] tracking-tight">{term}</p>
+                                                <p className="text-[9px] font-code-brand text-[#0047BB] uppercase tracking-widest mt-0.5">{src}</p>
+                                            </div>
+                                            <p className="text-sm text-black/55 leading-relaxed">{def}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Sentence structures */}
+                            <div className="p-5 border border-black/10">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-4">Sentence Structures We Use</p>
+                                <div className="space-y-3">
+                                    {[
+                                        ["Paradox / inversion", "if NOT CHANGE then MOVEMENT · change how you see, and see how you change"],
+                                        ["Not X, but Y", "The real transformation happens not in machines, but in the way we learn to move with them."],
+                                        ["X is not a destination, it is a stance", "Mindshift is not a destination; it is an ongoing stance."],
+                                        ["Question as punctuation", "Can there be machine taste? · Does AI know you better than you do? · What's left for the human imagination?"],
+                                        ["The colon reveal", "Collaboration begins with knowing: where we stand and what we bring to the table."],
+                                        ["Scientific → poetic", "Start with neuroscience, arrive at the human. 'Each moment of awareness becomes an act of redesign.'"],
+                                        ["Before X, Y", "Before AI can free us to be creative, we need to remember how to enter that space again."],
+                                        ["The editable declaration", "Perception is editable. The future stops being something that happens to you."],
+                                    ].map(([pattern, example]) => (
+                                        <div key={pattern} className="flex gap-4">
+                                            <span className="text-[#0047BB] shrink-0 w-4">—</span>
+                                            <div>
+                                                <p className="text-sm font-bold">{pattern}</p>
+                                                <p className="text-sm text-black/45 italic mt-0.5">"{example}"</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Vocabulary — use vs avoid */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <div className="p-5 border border-black/10">
+                                    <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-3">Words That Are Ours</p>
+                                    <div className="flex flex-wrap gap-1">
+                                        {[
+                                            "aliveness", "presence", "stance", "perception", "plasticity",
+                                            "soft engineering", "wisdom work", "creative entropy", "operational AI",
+                                            "co-evolution", "co-creation", "distill", "curate", "engineer context",
+                                            "the fold", "the opening", "the threshold", "rhythm", "tempo",
+                                            "improvisation", "the crossing point", "awareness", "adaptability",
+                                            "taste", "judgment", "the mirror", "the pause",
+                                        ].map((w) => <Tag key={w}>{w}</Tag>)}
+                                    </div>
+                                </div>
+                                <div className="p-5 border border-black/10">
+                                    <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/30 mb-3">Words We Never Use</p>
+                                    <div className="flex flex-wrap gap-1 opacity-50">
+                                        {[
+                                            "disruptive", "game-changing", "revolutionary", "unleash",
+                                            "leverage", "AI-powered future", "unprecedented", "cutting-edge",
+                                            "transformational journey", "next-level", "supercharge",
+                                            "seamlessly", "robust", "scalable solution", "unlock potential",
+                                        ].map((w) => <Tag key={w}>{w}</Tag>)}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* The AI mirror thesis */}
+                            <div className="p-5 border-2 border-[#0047BB]/20 bg-[#0047BB]/[0.03]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-[#0047BB] mb-3">The Mirror Thesis — Our Core AI Philosophy</p>
+                                <div className="space-y-3 text-sm text-black/65 leading-relaxed">
+                                    <p>From <em>AI as a New Entity</em>: <strong>"A new agent, not divine but speaking in our voices, revealing our blind spots, repeating our patterns. Every output's a mirror. Every answer's an echo. AI's not other — it is us."</strong></p>
+                                    <p>AI is not a tool to be feared or worshipped. It is a reflection of collective human thought — built from everything we have written, imagined, and decided. To understand AI is to understand ourselves more clearly.</p>
+                                    <p>The AI spectrum: <strong>Tool → Partner → Co-creator → Independent Agent.</strong> Research Lab works at the Partner / Co-creator level — not just using AI but thinking alongside it.</p>
+                                    <p>From <em>The End of Art</em>: <strong>"Interacting with AI can feel like pure magic — an unexpected alchemy, a quantum space of creativity where intuition, chance, and machine intelligence intersect. It's only a question of optics: shift your gaze, and the ordinary becomes transcendent."</strong></p>
+                                </div>
+                            </div>
+
+                            {/* Bangers — lines to use */}
+                            <div className="p-5 border border-black/10 bg-black/[0.02]">
+                                <p className="text-[10px] font-code-brand font-bold uppercase tracking-widest text-black/40 mb-4">Lines Worth Stealing — From Our Own Work</p>
+                                <div className="space-y-3">
+                                    {[
+                                        ["Issue 01", "Mindshift is not a destination; it is an ongoing stance: the moment you realise your perception is editable — the future stops being something that happens to you and becomes something you can (self) engineer."],
+                                        ["Issue 01", "What we call change is often nothing more than perception learning to move."],
+                                        ["Issue 01", "The mind that observes itself changes itself. Each moment of awareness becomes an act of redesign."],
+                                        ["Issue 02", "Taste is the new scarcity. This personal perspective is one of the most valuable resources in creative work — a rare luxury that cannot be copied yet always offers new depth."],
+                                        ["Issue 02", "Most people use AI like an upgraded office tool. But the real future begins when we use it wrong — in strange, illogical, inefficient ways. In those glitches and improvisations, new forms of art, thought, and human-machine relations appear."],
+                                        ["Issue 03", "Before AI can free us to be creative, we need to remember how to enter that space again — and rebuild the rituals we lost chasing productivity."],
+                                        ["Issue 03", "While AI can handle the how, the why will always be uniquely and irreplaceably human. The ability to see the whole as more than the sum of its parts is our core advantage."],
+                                        ["Issue 03", "We don't just solve problems; we engineer context and systems — we curate."],
+                                        ["Issue 04", "We've entered a new world where we need to study AI systems not as engineering artifacts, but as agents with their own cognitive ecology, behaviors, and logic. We explore AI, and AI explores us."],
+                                        ["Lightpaper", "How do all domains of intuition blur for the most learning environment?"],
+                                    ].map(([src, line]) => (
+                                        <div key={line.slice(0, 30)} className="flex gap-4">
+                                            <span className="font-code-brand text-[9px] text-[#0047BB] uppercase tracking-widest shrink-0 w-16 pt-0.5">{src}</span>
+                                            <p className="text-sm text-black/60 italic leading-relaxed border-l border-[#0047BB]/20 pl-4">"{line}"</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                        </div>
+                    </motion.div>
+
+                    <Divider />
+
                     {/* Changelog */}
                     <motion.div {...fade(0.1)}>
                         <p className="text-[10px] font-code-brand font-bold uppercase tracking-[0.3em] text-black/30 mb-4">Changelog</p>

@@ -121,8 +121,8 @@ export default function CorporateOfferV3() {
                         {!en && <p className="text-[13px] font-code-brand font-bold uppercase tracking-[0.3em] text-white/30 mt-3">SORRYWECAN</p>}
                         <p className="mt-6 md:mt-9 text-[16px] md:text-[20px] text-white/50 max-w-[440px] leading-relaxed">
                             {en
-                                ? "3.5 hours. One room. Your team walks out thinking differently about AI."
-                                : "3,5 hodiny. Váš tím odchádza s novým pohľadom, inšpiráciou a nástrojmi, ktoré začne používať hneď zajtra."}
+                                ? "3.5 hours. New thinking, real tools, and the clarity to use AI with intention — not just curiosity."
+                                : "3,5 hodiny. Nové myslenie, reálne nástroje a jasnosť, ako s AI pracovať zámerne — nielen zo zvedavosti."}
                         </p>
                     </div>
 
@@ -164,23 +164,23 @@ export default function CorporateOfferV3() {
                         <div className="flex-1 md:pr-12">
                             <h2 className="font-cabinet font-bold text-[34px] md:text-[52px] tracking-tight leading-[1.0]">
                                 {en
-                                    ? <>{`Your team`}<br />{`is using AI.`}<br /><span className="text-black/25">Randomly.</span></>
-                                    : <>{`Váš tím`}<br />{`používa AI.`}<br /><span className="text-black/25">Náhodne.</span></>}
+                                    ? <>{`AI is everywhere.`}<br />{`The thinking`}<br /><span className="text-black/25">isn't.</span></>
+                                    : <>{`AI je všade.`}<br />{`Myslenie`}<br /><span className="text-black/25">zaostáva.</span></>}
                             </h2>
                         </div>
 
                         {/* Right: Four tensions */}
                         <div className="flex-1 border-t md:border-t-0 md:border-l border-black/10 md:pl-12 pt-8 md:pt-0">
                             {(en ? [
-                                ["Tools multiply.", "Clarity doesn't."],
-                                ["Pressure is real.", "Direction isn't."],
-                                ["Adoption is happening.", "Thinking hasn't caught up."],
-                                ["Everyone experiments.", "Nobody owns the outcome."],
+                                ["Your team already uses AI.", "But everyone has their own version of what it means."],
+                                ["Tools keep multiplying.", "A shared framework doesn't exist yet."],
+                                ["Individual experiments work.", "Organizational thinking hasn't caught up."],
+                                ["Curiosity is there.", "Clarity on what to actually do with it — isn't."],
                             ] : [
-                                ["Nástrojov pribúda.", "Jasnosť chýba."],
-                                ["Tlak rastie.", "Smer nie."],
-                                ["Ľudia AI používajú.", "Myslenie nestíha."],
-                                ["Všetci experimentujú.", "Nikto za to nezodpovedá."],
+                                ["Váš tím už AI používa.", "Ale každý si pod tým predstavuje niečo iné."],
+                                ["Nástrojov pribúda.", "Spoločný rámec zatiaľ chýba."],
+                                ["Jednotlivci experimentujú.", "Firemné myslenie nestíha."],
+                                ["Zvedavosť je.", "Jasnosť, čo s tým robiť — nie."],
                             ]).map(([a, b], i, arr) => (
                                 <div key={i}>
                                     <div className="py-4 md:py-5">
@@ -229,23 +229,23 @@ export default function CorporateOfferV3() {
                             </h2>
                             <p className="mt-5 text-[11px] text-white/35 leading-relaxed max-w-[170px]">
                                 {en
-                                    ? "One concentrated session. Thinking and doing in the same room, the same day."
-                                    : "Všetko v jednom bloku. Najprv pochopíte prečo, potom si vyskúšate ako."}
+                                    ? "First you shift how you think. Then you build with your hands. Same room. Same day."
+                                    : "Najprv zmeníte spôsob, akým o AI premýšľate. Potom si to vyskúšate na vlastnej koži."}
                             </p>
                         </div>
 
                         {/* Right: session flow */}
                         <div className="flex-1 flex flex-col justify-center md:border-l border-white/[0.06] md:pl-10">
                             {(en ? [
-                                { t: "2×30 min", h: "Two Perspectives", d: "Tiep · Roman — two lenses, one room. Short, sharp. No script." },
-                                { t: "30 min", h: "Diagnostics Circle", d: "Sitting in a circle. Your team surfaces the real questions — the ones that don't get asked in meetings." },
-                                { t: "90 min", h: "Hands-On Practice", d: "Real tools, real prompts, your actual work. Everyone builds something they'll use Monday morning." },
-                                { t: "30 min", h: "Panel Discussion", d: "Open. Anything goes. Honest answers from experience, not theory. The room decides the agenda." },
+                                { t: "2×30 min", h: "Two Perspectives", d: "Tiep on AI as a way of thinking. Roman on clarity and decision-making under pressure. Two lenses. No slides, no script." },
+                                { t: "30 min", h: "Diagnostics Circle", d: "We sit in a circle. Your team names what's actually happening — the gaps, the friction, the questions nobody asks in meetings." },
+                                { t: "90 min", h: "Hands-On Practice", d: "Real tools, real prompts, your actual workflows. Everyone builds something usable. Not a demo — you leave with output, not notes." },
+                                { t: "30 min", h: "Panel + Open Floor", d: "No agenda. The room decides. Honest answers from practitioners who use AI daily — not consultants who read about it." },
                             ] : [
-                                { t: "2×30 min", h: "Dva Pohľady", d: "Tiep · Roman — každý so svojou optikou. Bez slidov, bez scenára. Rovno k veci." },
-                                { t: "30 min", h: "Diagnostika v Kruhu", d: "Sadneme si do kruhu. Na stôl prídu otázky, ktoré sa na poradách nikdy nepoložia." },
-                                { t: "90 min", h: "Prax", d: "Reálne nástroje, reálne prompty, vaša skutočná práca. Každý si odnesie niečo, čo použije hneď v pondelok." },
-                                { t: "30 min", h: "Panelová Diskusia", d: "Otvorený formát. Bez tabu. Úprimné odpovede zo skúseností, nie z učebníc." },
+                                { t: "2×30 min", h: "Dva Pohľady", d: "Tiep o AI ako spôsobe myslenia. Roman o jasnosti a rozhodovaní pod tlakom. Dva pohľady. Bez slidov, bez scenára." },
+                                { t: "30 min", h: "Diagnostika v Kruhu", d: "Sadneme si do kruhu. Váš tím pomenuje, čo sa naozaj deje — medzery, trenie, otázky, ktoré sa na poradách nekladú." },
+                                { t: "90 min", h: "Prax", d: "Reálne nástroje, reálne prompty, vaše skutočné workflow. Každý niečo vytvorí. Žiadna ukážka — odchádzate s výstupom, nie s poznámkami." },
+                                { t: "30 min", h: "Panel + Otvorená Diskusia", d: "Bez agendy. Rozhoduje miestnosť. Odpovede od ľudí, ktorí AI denne používajú — nie od konzultantov, ktorí o nej čítajú." },
                             ]).map((p, i, arr) => (
                                 <div key={i}>
                                     <div className="flex items-start gap-5 py-3 md:py-4">
@@ -352,24 +352,26 @@ export default function CorporateOfferV3() {
                         {/* Left: section title */}
                         <div className="w-full md:w-[170px] shrink-0 flex flex-col justify-center">
                             <h2 className="font-cabinet font-bold text-[44px] md:text-[56px] leading-[0.88] tracking-tighter text-white">
-                                {en ? <>Five<br />things.</> : <>Päť<br />vecí.</>}
+                                {en ? <>Six<br />things.</> : <>Šesť<br />vecí.</>}
                             </h2>
                         </div>
 
                         {/* Right: two-column editorial list */}
                         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 content-center md:border-l border-white/[0.06] md:pl-12 gap-x-10">
                             {(en ? [
-                                ["A Shared Framework", "One team, one way of thinking about AI."],
-                                ["Hands-On Tool Experience", "Not a demo — you built something real during the session."],
-                                ["Prompts That Work", "The logic, not just the examples."],
-                                ["A Monday Decision", "Something concrete. Starting the next morning."],
-                                ["30-Day Follow-Up", "A check-in call. What's working, what isn't. Included."],
+                                ["A Shared Framework", "Your team leaves with one language for AI. Not ten individual experiments — one way of thinking together."],
+                                ["Real Output", "Not a demo. During the session, everyone builds something they'll actually use. You leave with artifacts, not slides."],
+                                ["Prompt Thinking", "The mental model behind good prompting. Structure, not copy-paste. The skill that compounds."],
+                                ["A Monday Decision", "One concrete thing that changes how you work. Starting tomorrow morning."],
+                                ["30-Day Follow-Up", "A check-in call 30 days later. What stuck, what didn't. Honest recalibration. Included."],
+                                ["Community Access", "30 days inside Research Lab's Circle. Stay curious. Keep building."],
                             ] : [
-                                ["Spoločný Rámec", "Celý tím na jednej vlne. Jasné pravidlá, ako s AI pracovať."],
-                                ["Reálna Skúsenosť", "Žiadna prezentácia — sami ste si vyskúšali, čo funguje."],
-                                ["Prompty, Ktoré Fungujú", "Nie zoznam. Pochopenie logiky, ktorá za nimi stojí."],
-                                ["Pondelkové Rozhodnutie", "Konkrétny krok. Použiteľný hneď ráno."],
-                                ["30-Dňový Follow-Up", "Kontrolný hovor. Čo funguje, čo nie. Súčasť balíka."],
+                                ["Spoločný Rámec", "Celý tím odchádza s jedným jazykom pre AI. Nie desať individuálnych pokusov — jeden spôsob myslenia."],
+                                ["Reálny Výstup", "Žiadna ukážka. Počas sesie každý niečo vytvorí a odnesie si to. Odchádzate s výstupom, nie so slidmi."],
+                                ["Prompt Thinking", "Mentálny model za dobrým promptom. Štruktúra, nie copy-paste. Zručnosť, ktorá rastie."],
+                                ["Pondelkové Rozhodnutie", "Jedna konkrétna vec, ktorá zmení spôsob práce. Od zajtra."],
+                                ["30-Dňový Follow-Up", "Hovor o 30 dní. Čo sa uchytilo, čo nie. Úprimná kalibrácia. V cene."],
+                                ["Prístup do Komunity", "30 dní v Research Lab Circle. Zostaňte zvedaví. Pokračujte."],
                             ]).map(([title, desc], i) => (
                                 <div key={i} className="py-3 md:py-4 border-b border-white/[0.06] last:border-b-0 odd:last:border-b-0">
                                     <p className="text-[13px] md:text-[14px] font-medium text-white">{title}</p>

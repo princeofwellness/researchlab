@@ -27,7 +27,8 @@ const SECTIONS: Section[] = [
         coord: "48°21'N · 17°06'E",
         items: [
             { name: "Research Lab Pitch Deck", href: "/lab/pitchdeck", desc: "Holistic RL pitch: problem, ecosystem, formats, team. EN/SK, PDF-ready." },
-            { name: "Corporate Offer v2", href: "/corporate/offer-v2", desc: "O2 workshop offer deck — 7 slides, bilingual, landscape PDF." },
+            { name: "Corporate Offer v2", href: "/corporate/offer-v2", desc: "2-day workshop offer deck — 7 slides, bilingual, landscape PDF." },
+            { name: "Corporate Intensive", href: "/corporate/offer-v3", desc: "1-day 3.5h intensive — 6 slides, bilingual, €360/person. Compressed format." },
             { name: "RL × Mini Tech MBA", href: "/corporate/mini-tech-mba", desc: "Partnership offer deck — 7 slides EN/SK. Community education + client pipeline.", tag: "PARTNER" },
             { name: "Public One-Pager", href: "/public/onepager", desc: "THE MINDSHIFT session deck — PDF export." },
             { name: "Corporate One-Pager", href: "/corporate/onepager", desc: "Corporate workshop deck — PDF export." },
@@ -43,7 +44,7 @@ const SECTIONS: Section[] = [
         items: [
             { name: "The Bible", href: "/lab/context", desc: "Master context: who we are, brand system, voice, products, audience. Start here." },
             { name: "Q2 Overview", href: "/lab/q2-overview", desc: "Holistic Q2 plan: revenue, content flywheel, platform launch, corporate pipeline." },
-            { name: "Corporate Offer", href: "/lab/corporate", desc: "Two-day format, pricing, O2 pipeline, sales motion, objection handling." },
+            { name: "Corporate Offer", href: "/lab/corporate", desc: "Both formats (2-day + 1-day intensive), pricing, pipeline, sales motion." },
             { name: "Content Architecture", href: "/lab/content", desc: "The Radar, funnel stages, 60/30/10 rule, distribution channels." },
             { name: "Platform Strategy", href: "/lab/platform-strategy", desc: "Circle build, three audiences, curriculum ladder, asset moat, monetization stack." },
             { name: "Economics", href: "/lab/economics", desc: "€30k/month path, B2B math, platform ceiling, ownership structure.", tag: "CONFIDENTIAL" },

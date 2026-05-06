@@ -60,7 +60,13 @@ export default function CorporatePage() {
                                 href="/corporate/offer-v2"
                                 className="inline-flex items-center gap-2 px-5 py-3 bg-[#0047BB] text-white text-[10px] font-code-brand font-bold uppercase tracking-[0.25em] hover:bg-black transition-colors"
                             >
-                                Offer Document (Art Direction) →
+                                2-Day Workshop →
+                            </a>
+                            <a
+                                href="/corporate/offer-v3"
+                                className="inline-flex items-center gap-2 px-5 py-3 bg-[#0047BB] text-white text-[10px] font-code-brand font-bold uppercase tracking-[0.25em] hover:bg-black transition-colors"
+                            >
+                                1-Day Intensive →
                             </a>
                             <a
                                 href="/corporate/offer"

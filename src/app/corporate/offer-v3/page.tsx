@@ -130,10 +130,10 @@ export default function CorporateOfferV3() {
                     <div className="px-10 md:px-16 pb-6 text-right">
                         <p className="text-[11px] md:text-[13px] font-code-brand text-white/50 italic leading-relaxed max-w-[480px] ml-auto">
                             {en
-                                ? "\"We cannot solve our problems with the same thinking we used when we created them.\""
-                                : "\"Problémy nemôžeme vyriešiť rovnakým myslením, akým sme ich vytvorili.\""}
+                                ? "\"Most AI training teaches tools. We teach the thinking that makes tools useful.\""
+                                : "\"Väčšina AI školení učí nástroje. My učíme myslenie, vďaka ktorému nástroje fungujú.\""}
                         </p>
-                        <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/35 mt-1">— Einstein</p>
+                        <p className="text-[9px] font-code-brand uppercase tracking-[0.3em] text-white/35 mt-1">— Research Lab</p>
                     </div>
 
                     <div className="mx-10 md:mx-16 h-px bg-white/10" />
@@ -193,6 +193,17 @@ export default function CorporateOfferV3() {
                         </div>
                     </div>
 
+                    <div className="px-10 md:px-16 pb-4">
+                        <p className="text-[7px] font-code-brand uppercase tracking-[0.35em] text-black/25 mb-2">
+                            {en ? "Teams we've worked with" : "Tímy, s ktorými sme pracovali"}
+                        </p>
+                        <div className="flex items-center gap-6">
+                            {["/logos/tatrabanka.png", "/logos/meta.png", "/logos/sennheiser.png", "/logos/forbes.png", "/logos/vub.png"].map((src) => (
+                                <img key={src} src={src} alt="" className="h-4 md:h-5 w-auto object-contain" style={{ filter: "grayscale(100%)", opacity: 0.18 }} />
+                            ))}
+                        </div>
+                    </div>
+
                     <div className="mx-10 md:mx-16 h-px bg-black/10" />
                     <div className="flex justify-between px-10 md:px-16 py-4">
                         <span className="text-[8px] font-code-brand uppercase tracking-[0.3em] text-black/20">SORRYWECAN</span>
@@ -238,12 +249,12 @@ export default function CorporateOfferV3() {
                         <div className="flex-1 flex flex-col justify-center md:border-l border-white/[0.06] md:pl-10">
                             {(en ? [
                                 { t: "2×30 min", h: "Two Perspectives", d: "Tiep on AI as a way of thinking. Roman on clarity and decision-making under pressure. Two lenses. No slides, no script." },
-                                { t: "30 min", h: "Diagnostics Circle", d: "We sit in a circle. Your team names what's actually happening — the gaps, the friction, the questions nobody asks in meetings." },
+                                { t: "30 min", h: "Diagnostics Circle", d: "Structured team diagnostic. We map where your team stands with AI — adoption level, gaps, friction points. The questions that surface here set the agenda for the practical block." },
                                 { t: "90 min", h: "Hands-On Practice", d: "Real tools, real prompts, your actual workflows. Everyone builds something usable. Not a demo — you leave with output, not notes." },
                                 { t: "30 min", h: "Panel + Open Floor", d: "No agenda. The room decides. Honest answers from practitioners who use AI daily — not consultants who read about it." },
                             ] : [
                                 { t: "2×30 min", h: "Dva Pohľady", d: "Tiep o AI ako spôsobe myslenia. Roman o jasnosti a rozhodovaní pod tlakom. Dva pohľady. Bez slidov, bez scenára." },
-                                { t: "30 min", h: "Diagnostika v Kruhu", d: "Sadneme si do kruhu. Váš tím pomenuje, čo sa naozaj deje — medzery, trenie, otázky, ktoré sa na poradách nekladú." },
+                                { t: "30 min", h: "Diagnostika v Kruhu", d: "Štruktúrovaná tímová diagnostika. Zmapujeme, kde sa váš tím s AI nachádza — úroveň adopcie, medzery, trecie body. Otázky, ktoré tu vyjdú na povrch, určia agendu praktickej časti." },
                                 { t: "90 min", h: "Prax", d: "Reálne nástroje, reálne prompty, vaše skutočné workflow. Každý niečo vytvorí. Žiadna ukážka — odchádzate s výstupom, nie s poznámkami." },
                                 { t: "30 min", h: "Panel + Otvorená Diskusia", d: "Bez agendy. Rozhoduje miestnosť. Odpovede od ľudí, ktorí AI denne používajú — nie od konzultantov, ktorí o nej čítajú." },
                             ]).map((p, i, arr) => (
@@ -289,8 +300,8 @@ export default function CorporateOfferV3() {
 
                     {/* Two people — full height split */}
                     <div className="flex-1 flex flex-col md:flex-row">
-                        {/* Tiep Le Dinh */}
                         <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-10 md:py-0 border-b md:border-b-0 md:border-r border-black/10">
+                            <img src="/founders/tiep.webp" alt="Tiep Le Dinh" className="w-[72px] h-[72px] rounded-full object-cover mb-5" style={{ filter: "grayscale(20%)", printColorAdjust: "exact" } as React.CSSProperties} />
                             <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#0047BB] mb-5">
                                 {en ? "Vision & Community" : "Vízia & Komunita"}
                             </p>
@@ -299,8 +310,8 @@ export default function CorporateOfferV3() {
                             </h3>
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
                                 {en
-                                    ? "Builder and creative at the intersection of AI, culture, and human development. Founder of Research Lab. Thinks about AI the way others think about language — as the core of everything."
-                                    : "Tvorca na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab. O AI premýšľa ako o jazyku — ako o základe všetkého."}
+                                    ? "Builder at the intersection of AI, culture, and human development. Founder of Research Lab and SORRYWECAN. Uses AI as a daily creative practice — not a tool, but a way of thinking."
+                                    : "Tvorca na priesečníku AI, kultúry a ľudského rozvoja. Zakladateľ Research Lab a SORRYWECAN. AI používa ako denný tvorivý proces — nie nástroj, ale spôsob myslenia."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-black/40 max-w-[260px] leading-snug">
                                 {en
@@ -309,8 +320,8 @@ export default function CorporateOfferV3() {
                             </p>
                         </div>
 
-                        {/* Roman Pii Wagner */}
                         <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-10 md:py-0">
+                            <img src="/founders/roman.jpg" alt="Roman Pii Wagner" className="w-[72px] h-[72px] rounded-full object-cover mb-5" style={{ filter: "grayscale(20%)", printColorAdjust: "exact" } as React.CSSProperties} />
                             <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#0047BB] mb-5">
                                 {en ? "Clarity & Decision" : "Jasnosť & Rozhodnutie"}
                             </p>
@@ -319,8 +330,8 @@ export default function CorporateOfferV3() {
                             </h3>
                             <p className="mt-6 text-[12px] md:text-[13px] text-black/50 leading-relaxed max-w-[280px]">
                                 {en
-                                    ? "Transformational designer. Helps teams align on what matters and make decisions that hold under pressure. Facilitates the conversations most teams avoid."
-                                    : "Transformačný dizajnér. Pomáha tímom zladiť sa v tom, na čom záleží, a robiť rozhodnutia, ktoré vydržia aj pod tlakom."}
+                                    ? "Transformational designer. Helps teams align on what actually matters and make decisions that hold under pressure. Facilitates the conversations most organizations avoid."
+                                    : "Transformačný dizajnér. Pomáha tímom zladiť sa v tom, na čom naozaj záleží, a robiť rozhodnutia, ktoré vydržia aj pod tlakom. Facilituje konverzácie, ktorým sa väčšina firiem vyhýba."}
                             </p>
                             <p className="mt-4 text-[11px] md:text-[12px] italic text-black/40 max-w-[260px] leading-snug">
                                 {en
@@ -447,6 +458,12 @@ export default function CorporateOfferV3() {
                                     <p>{en ? "1 day · 3.5 hours" : "1 deň · 3,5 hodiny"}</p>
                                     <p>Bratislava</p>
                                 </div>
+                                <div className="h-px bg-white/10" />
+                                <a href="/corporate/offer-v2" className="text-[10px] font-code-brand text-white/40 hover:text-white/70 transition-colors leading-snug">
+                                    {en
+                                        ? "Want the full experience? → 2-day workshop available"
+                                        : "Chcete plnú skúsenosť? → 2-dňový workshop"}
+                                </a>
                             </div>
                         </div>
                     </div>

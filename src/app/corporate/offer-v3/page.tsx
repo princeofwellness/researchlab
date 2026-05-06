@@ -301,7 +301,7 @@ export default function CorporateOfferV3() {
                     {/* Two people — full height split */}
                     <div className="flex-1 flex flex-col md:flex-row">
                         <div className="flex-1 flex flex-col justify-center px-10 md:px-16 py-10 md:py-0 border-b md:border-b-0 md:border-r border-black/10">
-                            <img src="/founders/tiep.webp" alt="Tiep Le Dinh" className="w-[72px] h-[72px] rounded-full object-cover mb-5" style={{ filter: "grayscale(20%)", printColorAdjust: "exact" } as React.CSSProperties} />
+                            <img src="/founders/tiep.jpg" alt="Tiep Le Dinh" className="w-[72px] h-[72px] rounded-full object-cover mb-5" style={{ filter: "grayscale(20%)", printColorAdjust: "exact" } as React.CSSProperties} />
                             <p className="text-[9px] font-code-brand font-bold uppercase tracking-[0.45em] text-[#0047BB] mb-5">
                                 {en ? "Vision & Community" : "Vízia & Komunita"}
                             </p>

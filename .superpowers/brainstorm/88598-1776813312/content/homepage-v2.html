@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Lab — Homepage v2 (Minimal / Institute)</title>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,600,700,800,900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #0047BB;
+    --dark: #0d0d0d;
+    --parchment: #e8e1da;
+    --parchment-mid: #d8cfc6;
+    --font: 'Cabinet Grotesk', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font);
+    background: var(--parchment);
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  /* ─────────────────────────────────────────
+     NAV — ultra minimal, Berggruen-style
+  ───────────────────────────────────────── */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 48px;
+    background: rgba(232,225,218,0.92);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+  }
+
+  .nav-logo {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    color: var(--dark);
+    margin-right: auto;
+    text-decoration: none;
+  }
+  .nav-logo em { color: rgba(0,0,0,0.25); font-style: normal; }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+  .nav-link {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.4);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover { color: var(--dark); }
+  .nav-link.accent { color: var(--blue); }
+
+  .nav-divider { width: 1px; height: 14px; background: rgba(0,0,0,0.12); }
+
+  /* ─────────────────────────────────────────
+     HERO — full viewport, ultra clean
+  ───────────────────────────────────────── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 48px;
+    padding-top: 56px;
+    background: var(--parchment);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(120px, 22vw, 280px);
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    color: rgba(0,0,0,0.04);
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+  }
+
+  .hero-label {
+    color: rgba(0,0,0,0.3);
+    margin-bottom: 28px;
+  }
+
+  .hero-headline {
+    font-size: clamp(42px, 7vw, 88px);
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    color: var(--dark);
+    margin-bottom: 40px;
+  }
+
+  .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 28px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+    color: rgba(0,0,0,0.4);
+    max-width: 440px;
+    line-height: 1.65;
+  }
+
+  .hero-scroll {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-scroll::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: rgba(0,0,0,0.15);
+  }
+
+  /* ─────────────────────────────────────────
+     MISSION — one paragraph, very large
+  ───────────────────────────────────────── */
+  .mission {
+    background: var(--dark);
+    color: rgba(232,225,218,0.75);
+    padding: 80px 48px;
+  }
+
+  .mission-inner {
+    max-width: 860px;
+  }
+
+  .mission-label {
+    color: rgba(255,255,255,0.2);
+    margin-bottom: 32px;
+  }
+
+  .mission-text {
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+
+  .mission-text strong {
+    color: rgba(232,225,218,1);
+    font-weight: 700;
+  }
+
+  .mission-text .blue { color: #7aabff; }
+
+  .mission-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mission-link {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 2px;
+  }
+
+  /* ─────────────────────────────────────────
+     PROGRAMMES — clean list, whitespace-heavy
+  ───────────────────────────────────────── */
+  .programmes {
+    background: var(--parchment);
+    padding: 80px 48px;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 56px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.3);
+  }
+
+  .section-count {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(0,0,0,0.2);
+    font-family: monospace;
+  }
+
+  .programme-list { display: flex; flex-direction: column; }
+
+  .programme-item {
+    display: grid;
+    grid-template-columns: 48px 1fr 200px auto;
+    align-items: center;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    cursor: pointer;
+    transition: background 0.15s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .programme-item:hover .prog-name { color: var(--blue); }
+
+  .prog-num {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: rgba(0,0,0,0.2);
+    font-family: monospace;
+  }
+
+  .prog-name {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--dark);
+    transition: color 0.15s;
+  }
+
+  .prog-desc {
+    font-size: 13px;
+    color: rgba(0,0,0,0.4);
+    line-height: 1.55;
+  }
+
+  .prog-tag {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.25);
+    text-align: right;
+  }
+
+  /* ─────────────────────────────────────────
+     RADAR — dark, editorial list
+  ───────────────────────────────────────── */
+  .radar {
+    background: var(--blue);
+    color: white;
+    padding: 80px 48px;
+  }
+
+  .radar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 56px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .radar-title-label { color: rgba(255,255,255,0.4); }
+  .radar-see-all {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .radar-see-all:hover { color: white; }
+
+  .radar-intro {
+    font-size: clamp(18px, 2.5vw, 26px);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: rgba(255,255,255,0.6);
+    max-width: 600px;
+    margin-bottom: 56px;
+  }
+  .radar-intro strong { color: white; }
+
+  .article-list { display: flex; flex-direction: column; }
+
+  .article-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 100px;
+    align-items: start;
+    gap: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .article-item:hover .art-title { color: white; }
+
+  .art-week {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.2);
+    font-family: monospace;
+    padding-top: 3px;
+  }
+
+  .art-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    transition: color 0.15s;
+  }
+
+  .art-tag {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+    padding-top: 3px;
+    text-align: right;
+  }
+
+  /* ─────────────────────────────────────────
+     QUESTIONS — parchment, sparse
+  ───────────────────────────────────────── */
+  .questions {
+    background: var(--parchment);
+    padding: 80px 48px;
+    border-top: 1px solid rgba(0,0,0,0.07);
+  }
+
+  .q-list { display: flex; flex-direction: column; margin-top: 48px; }
+
+  .q-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+  }
+
+  .q-num { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; color: var(--blue); font-family: monospace; padding-top: 4px; }
+
+  .q-text {
+    font-size: clamp(18px, 2.5vw, 26px);
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: rgba(0,0,0,0.55);
+  }
+
+  /* ─────────────────────────────────────────
+     ENGAGE — dark, CTA
+  ───────────────────────────────────────── */
+  .engage {
+    background: var(--dark);
+    color: white;
+    padding: 80px 48px;
+  }
+
+  .engage-inner {
+    max-width: 700px;
+  }
+
+  .engage-headline {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    line-height: 0.93;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+  }
+
+  .engage-sub {
+    font-size: 15px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.65;
+    max-width: 480px;
+    margin-bottom: 40px;
+  }
+
+  .engage-tiers {
+    display: flex;
+    gap: 0;
+    border: 1px solid rgba(255,255,255,0.07);
+    margin-bottom: 40px;
+  }
+
+  .tier {
+    padding: 24px 28px;
+    border-right: 1px solid rgba(255,255,255,0.07);
+    flex: 1;
+  }
+  .tier:last-child { border-right: none; }
+
+  .tier-num { font-size: 9px; font-weight: 700; letter-spacing: 0.25em; color: var(--blue); font-family: monospace; margin-bottom: 6px; }
+  .tier-name { font-size: 13px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 4px; }
+  .tier-desc { font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.5; }
+
+  .engage-email {
+    font-size: clamp(18px, 2.5vw, 28px);
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0,71,187,0.5);
+    padding-bottom: 4px;
+    letter-spacing: -0.01em;
+    transition: border-color 0.15s;
+  }
+  .engage-email:hover { border-color: var(--blue); }
+
+  /* ─────────────────────────────────────────
+     FOOTER
+  ───────────────────────────────────────── */
+  .footer {
+    background: var(--parchment);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 40px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo { font-size: 11px; font-weight: 900; letter-spacing: -0.01em; color: var(--dark); }
+  .footer-logo em { color: rgba(0,0,0,0.25); font-style: normal; }
+
+  .footer-links { display: flex; gap: 28px; }
+  .footer-link { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(0,0,0,0.3); text-decoration: none; }
+  .footer-link:hover { color: var(--dark); }
+
+  .footer-copy { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(0,0,0,0.2); font-family: monospace; }
+
+  /* mockup label */
+  .mockup-banner {
+    background: var(--blue);
+    color: rgba(255,255,255,0.8);
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 7px;
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">MOCKUP v2 — Research Lab · Unified Homepage · Minimal / Institute Feel</div>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+  <a class="nav-logo" href="#">RESEARCH<em>LAB</em></a>
+  <div class="nav-links">
+    <a class="nav-link" href="#">Institute</a>
+    <a class="nav-link" href="#">Programmes</a>
+    <a class="nav-link" href="#">The Radar</a>
+    <div class="nav-divider"></div>
+    <a class="nav-link" href="#">Lightpaper</a>
+    <a class="nav-link" href="#">About</a>
+    <div class="nav-divider"></div>
+    <a class="nav-link" href="#" style="color:rgba(0,0,0,0.2);">Lab ↗</a>
+    <div class="nav-divider"></div>
+    <a class="nav-link accent" href="#">Work With Us</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg-text">RL</div>
+  <div class="hero-content">
+    <p class="code hero-label">SORRYWECAN · Bratislava · Est. 2024</p>
+    <h1 class="hero-headline">WHERE<br>HUMANS &<br>AI CO-EVOLVE.</h1>
+    <div class="hero-bottom">
+      <p class="hero-tagline">
+        Research Lab is an experimental space for exploring tomorrow's mindset —<br>
+        a platform for open experimentation and observation.
+      </p>
+      <div class="hero-scroll">Scroll</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MISSION ── -->
+<section class="mission">
+  <div class="mission-inner">
+    <p class="code mission-label">About the Lab</p>
+    <p class="mission-text">
+      In the age of AI, we turn our attention to <strong>the human</strong> —
+      how creativity transforms, how consciousness adapts, and how identity
+      evolves in dialogue with non-human agents.<br><br>
+      Research Lab's holistic practice combines <strong>analytical and intuitive
+      approaches</strong> to build new languages for our shared future.
+      <span class="blue">Developed within the SORRYWECAN ecosystem.</span>
+    </p>
+    <div class="mission-footer">
+      <a class="mission-link" href="#">Read the Lightpaper →</a>
+      <p class="code" style="color:rgba(255,255,255,0.15);">Research. Rewire. Recreate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROGRAMMES ── -->
+<section class="programmes">
+  <div class="section-header">
+    <span class="section-title">Programmes</span>
+    <span class="section-count">04 active</span>
+  </div>
+  <div class="programme-list">
+    <a class="programme-item" href="#">
+      <span class="prog-num">01</span>
+      <span class="prog-name">MINDSHIFT</span>
+      <span class="prog-desc">AI programme for teams and leadership. Cognitive transformation, not tool training. From 2-day workshop to long-term.</span>
+      <span class="prog-tag">Organisations · B2B</span>
+    </a>
+    <a class="programme-item" href="#">
+      <span class="prog-num">02</span>
+      <span class="prog-name">COMMUNITEA</span>
+      <span class="prog-desc">Public sessions and curated discussions. AI made understandable beyond the tech world. 2–3h, up to 20 people.</span>
+      <span class="prog-tag">Public · Open</span>
+    </a>
+    <a class="programme-item" href="#">
+      <span class="prog-num">03</span>
+      <span class="prog-name">FUTURE PROTOCOLS</span>
+      <span class="prog-desc">Monthly open toolkits built from real workflows. Live experiments translated into practical frameworks.</span>
+      <span class="prog-tag">Toolkits · Open Access</span>
+    </a>
+    <a class="programme-item" href="#">
+      <span class="prog-num">04</span>
+      <span class="prog-name">THE SOURCE</span>
+      <span class="prog-desc">Internal SORRYWECAN × Research Lab bi-monthly sessions. The research backbone. First session June 2026.</span>
+      <span class="prog-tag">Internal · Research</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── THE RADAR ── -->
+<section class="radar">
+  <div class="radar-header">
+    <span class="code radar-title-label">The Radar — Intelligence & Editorial</span>
+    <a class="radar-see-all" href="#">Enter The Radar →</a>
+  </div>
+  <p class="radar-intro">
+    We track <strong>what the news is a symptom of.</strong> AI, work, cognition, and the forces reshaping how humans operate.
+  </p>
+  <div class="article-list">
+    <a class="article-item" href="#">
+      <span class="art-week">W16 · Apr</span>
+      <span class="art-title">Execution is faster, but judgment is harder. What organisations are losing in the speed-up.</span>
+      <span class="art-tag">AI & Work</span>
+    </a>
+    <a class="article-item" href="#">
+      <span class="art-week">W15 · Apr</span>
+      <span class="art-title">The Quality Collapse. Why AI-native teams produce more but mean less.</span>
+      <span class="art-tag">Organisations</span>
+    </a>
+    <a class="article-item" href="#">
+      <span class="art-week">W14 · Apr</span>
+      <span class="art-title">Tatra banka benchmark: what a real enterprise AI rollout looks like from the inside.</span>
+      <span class="art-tag">Case Study</span>
+    </a>
+    <a class="article-item" href="#">
+      <span class="art-week">W13 · Mar</span>
+      <span class="art-title">Future Protocols 001: The 6 workflow patterns we tested, and the 2 that actually held.</span>
+      <span class="art-tag">Research</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── ANIMATING QUESTIONS ── -->
+<section class="questions">
+  <p class="code section-title">Animating Questions</p>
+  <div class="q-list">
+    <div class="q-item">
+      <span class="q-num">01</span>
+      <p class="q-text">How does work hold under AI — and what breaks first when execution accelerates?</p>
+    </div>
+    <div class="q-item">
+      <span class="q-num">02</span>
+      <p class="q-text">Can organisations move faster with AI while keeping consistency, direction, and what makes them human?</p>
+    </div>
+    <div class="q-item">
+      <span class="q-num">03</span>
+      <p class="q-text">What does it mean to build and lead in an age where judgment is more scarce than execution?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── ENGAGE ── -->
+<section class="engage">
+  <div class="engage-inner">
+    <p class="code" style="color:rgba(255,255,255,0.2);margin-bottom:24px;">Work With Us</p>
+    <h2 class="engage-headline">Let's think<br>together.</h2>
+    <p class="engage-sub">Three ways to engage — from participating in our programmes to long-term strategic partnership.</p>
+    <div class="engage-tiers">
+      <div class="tier">
+        <div class="tier-num">01 / 03</div>
+        <div class="tier-name">PARTICIPATION</div>
+        <div class="tier-desc">Join our programmes and formats. Build internal AI capability.</div>
+      </div>
+      <div class="tier">
+        <div class="tier-num">02 / 03</div>
+        <div class="tier-name">COLLABORATION</div>
+        <div class="tier-desc">Co-develop themes, modules, or editions. Project-based partnership.</div>
+      </div>
+      <div class="tier">
+        <div class="tier-num">03 / 03</div>
+        <div class="tier-name">STRATEGIC PARTNERSHIP</div>
+        <div class="tier-desc">Long-term. Visible role in shaping how AI is understood at scale.</div>
+      </div>
+    </div>
+    <a class="engage-email" href="mailto:researchlab@sorrywecan.com">researchlab@sorrywecan.com</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-logo">RESEARCH<em>LAB</em><br><span style="font-size:8px;letter-spacing:0.3em;color:rgba(0,0,0,0.2);">BY SORRYWECAN</span></div>
+  <div class="footer-links">
+    <a class="footer-link" href="#">Institute</a>
+    <a class="footer-link" href="#">Programmes</a>
+    <a class="footer-link" href="#">The Radar</a>
+    <a class="footer-link" href="#">Lightpaper</a>
+    <a class="footer-link" href="#">Contact</a>
+    <a class="footer-link" href="#">Lab ↗</a>
+  </div>
+  <p class="footer-copy">SORRYWECAN // 2026</p>
+</footer>
+
+</body>
+</html>

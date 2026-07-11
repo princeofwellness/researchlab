@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Lab — Unified Homepage Mockup</title>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,600,700,800,900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #0047BB;
+    --dark: #0d0d0d;
+    --parchment: #e8e1da;
+    --white: #ffffff;
+    --blue-mid: #1a5cd8;
+    --font: 'Cabinet Grotesk', sans-serif;
+  }
+
+  body {
+    font-family: var(--font);
+    background: #111;
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* ── UTILITY ── */
+  .code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; }
+  .hairline { height: 1px; background: currentColor; opacity: 0.1; }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .grid-bg-dark {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* ── TOP NAV ── */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(13,13,13,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 52px;
+    gap: 0;
+  }
+  .nav-logo {
+    font-size: 13px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -0.02em;
+    margin-right: 48px;
+    white-space: nowrap;
+  }
+  .nav-logo span { color: rgba(255,255,255,0.35); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex: 1;
+  }
+  .nav-link {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    padding: 0 16px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .nav-link:hover { color: white; }
+  .nav-link.active { color: white; border-bottom-color: var(--blue); }
+  .nav-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.08); margin: 0 4px; }
+  .nav-cta {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--blue);
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-left: auto;
+    transition: background 0.15s;
+  }
+  .nav-cta:hover { background: var(--blue-mid); }
+  .nav-lang {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+    padding: 0 12px;
+    cursor: pointer;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--blue);
+    color: white;
+    padding: 80px 40px 60px;
+    position: relative;
+    overflow: hidden;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero-watermark {
+    position: absolute;
+    right: -40px;
+    bottom: -60px;
+    font-size: 280px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    pointer-events: none;
+    user-select: none;
+  }
+  .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hero-eyebrow { color: rgba(255,255,255,0.4); margin-bottom: 24px; }
+  .hero-headline {
+    font-size: clamp(52px, 7vw, 96px);
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.03em;
+    max-width: 800px;
+    margin-bottom: 32px;
+  }
+  .hero-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    max-width: 480px;
+    line-height: 1.6;
+  }
+  .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .hero-question {
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    font-style: italic;
+    max-width: 400px;
+    line-height: 1.6;
+  }
+  .hero-question strong { color: rgba(255,255,255,0.65); font-style: normal; }
+  .hero-stat {
+    text-align: right;
+  }
+  .hero-stat-num {
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .hero-stat-label { font-size: 10px; color: rgba(255,255,255,0.3); letter-spacing: 0.2em; text-transform: uppercase; margin-top: 2px; }
+
+  /* ── ANIMATING QUESTIONS ── */
+  .questions {
+    background: var(--dark);
+    color: rgba(232,225,218,0.5);
+    padding: 48px 40px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .questions-label { color: rgba(255,255,255,0.2); margin-bottom: 24px; }
+  .questions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .question-item {
+    padding: 0 32px 0 0;
+    border-right: 1px solid rgba(255,255,255,0.05);
+  }
+  .question-item:last-child { border-right: none; padding-right: 0; }
+  .question-item:not(:first-child) { padding-left: 32px; }
+  .question-num { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; color: var(--blue); margin-bottom: 10px; font-family: monospace; }
+  .question-text { font-size: 15px; color: rgba(232,225,218,0.75); line-height: 1.55; font-weight: 500; }
+
+  /* ── TWO BRANCHES ── */
+  .branches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: var(--parchment);
+  }
+
+  /* Institute branch */
+  .branch-institute {
+    background: var(--parchment);
+    padding: 56px 40px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .branch-radar {
+    background: var(--dark);
+    padding: 56px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .branch-label { margin-bottom: 6px; }
+  .branch-title {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.0;
+    margin-bottom: 12px;
+  }
+  .branch-sub {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 340px;
+  }
+
+  /* Programmes grid */
+  .programmes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  .programme {
+    background: var(--parchment);
+    padding: 20px;
+  }
+  .programme-name {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 2px;
+    color: var(--dark);
+  }
+  .programme-tag {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .programme-desc {
+    font-size: 12px;
+    color: rgba(0,0,0,0.45);
+    line-height: 1.5;
+  }
+
+  /* Radar articles */
+  .radar-articles { display: flex; flex-direction: column; gap: 0; }
+  .radar-article {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer;
+  }
+  .radar-article:last-child { border-bottom: none; }
+  .radar-article:hover .article-title { color: white; }
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .article-tag {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+  }
+  .tag-tech { background: rgba(0,71,187,0.3); color: #7aabff; }
+  .tag-org { background: rgba(200,184,154,0.15); color: #c8b89a; }
+  .tag-human { background: rgba(100,160,100,0.15); color: #8dc48d; }
+  .tag-research { background: rgba(180,100,100,0.15); color: #e89090; }
+  .article-date { font-size: 10px; color: rgba(255,255,255,0.2); font-family: monospace; }
+  .article-title { font-size: 14px; font-weight: 700; color: rgba(232,225,218,0.75); line-height: 1.35; transition: color 0.15s; }
+  .article-excerpt { font-size: 12px; color: rgba(255,255,255,0.25); line-height: 1.5; margin-top: 4px; }
+  .radar-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 2px;
+  }
+
+  /* ── FORMATS ROW ── */
+  .formats {
+    background: var(--blue);
+    color: white;
+    padding: 56px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .formats-watermark {
+    position: absolute;
+    right: -20px;
+    top: -30px;
+    font-size: 200px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    pointer-events: none;
+  }
+  .formats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+  .formats-title { font-size: 32px; font-weight: 900; letter-spacing: -0.02em; }
+  .formats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .format-card {
+    background: var(--blue);
+    padding: 24px;
+  }
+  .format-name { font-size: 18px; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 4px; }
+  .format-tag { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 12px; }
+  .format-desc { font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.5; }
+  .format-meta { font-size: 10px; color: rgba(255,255,255,0.2); margin-top: 10px; font-family: monospace; }
+
+  /* ── TEAM STRIP ── */
+  .team {
+    background: var(--dark);
+    padding: 56px 40px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+  .team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+  .team-title { font-size: 28px; font-weight: 900; letter-spacing: -0.02em; color: white; }
+  .team-sub { font-size: 13px; color: rgba(255,255,255,0.3); max-width: 400px; line-height: 1.6; }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+  .team-member {
+    background: var(--dark);
+    padding: 20px 16px;
+  }
+  .member-name { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 2px; letter-spacing: -0.01em; }
+  .member-role { font-size: 10px; color: rgba(255,255,255,0.3); line-height: 1.4; font-family: monospace; letter-spacing: 0.05em; }
+
+  /* ── ENGAGE ── */
+  .engage {
+    background: var(--parchment);
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background-color: rgba(0,0,0,0.08);
+  }
+  .engage-tier {
+    background: var(--parchment);
+    padding: 40px 32px;
+    position: relative;
+  }
+  .engage-tier.featured {
+    background: var(--dark);
+    color: var(--parchment);
+  }
+  .engage-num { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; color: var(--blue); margin-bottom: 16px; font-family: monospace; }
+  .engage-name { font-size: 28px; font-weight: 900; letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 12px; }
+  .engage-desc { font-size: 13px; line-height: 1.6; color: rgba(0,0,0,0.5); }
+  .engage-tier.featured .engage-desc { color: rgba(232,225,218,0.5); }
+  .engage-cta {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: var(--blue);
+    color: white;
+    text-decoration: none;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 40px 40px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer-logo { font-size: 11px; font-weight: 900; letter-spacing: -0.01em; color: white; }
+  .footer-logo span { color: rgba(255,255,255,0.2); }
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-link { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.2); text-decoration: none; }
+  .footer-copy { font-size: 10px; color: rgba(255,255,255,0.12); letter-spacing: 0.2em; text-transform: uppercase; }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+  .see-all {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 2px;
+  }
+  .see-all-light {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+  }
+
+  /* mockup label */
+  .mockup-banner {
+    background: #0047BB;
+    color: white;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+    position: sticky;
+    top: 52px;
+    z-index: 99;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+  <div class="nav-logo">RESEARCH<span>LAB</span></div>
+  <div class="nav-links">
+    <a class="nav-link active" href="#">Institute</a>
+    <div class="nav-divider"></div>
+    <a class="nav-link" href="#">Programmes</a>
+    <a class="nav-link" href="#">The Radar</a>
+    <div class="nav-divider"></div>
+    <a class="nav-link" href="#">Lightpaper</a>
+    <a class="nav-link" href="#">About</a>
+    <div class="nav-divider"></div>
+    <a class="nav-link" href="#" style="color:rgba(255,255,255,0.15);">Lab ↗</a>
+  </div>
+  <span class="nav-lang">EN / SK</span>
+  <a class="nav-cta" href="#">Work With Us</a>
+</nav>
+
+<div class="mockup-banner">MOCKUP — Research Lab Unified Homepage · Visual Draft 01</div>
+
+<!-- ── HERO ── -->
+<section class="hero grid-bg">
+  <div class="hero-watermark">RL</div>
+
+  <div>
+    <div class="hero-top">
+      <p class="code hero-eyebrow">SORRYWECAN ecosystem · Bratislava, Slovakia · 2026</p>
+    </div>
+    <h1 class="hero-headline">Research<br>Lab.</h1>
+    <p class="hero-sub">An applied AI platform focused on how organisations adapt to AI in real work. Where strategy, execution, and cognition meet.</p>
+  </div>
+
+  <div class="hero-bottom">
+    <p class="hero-question">
+      <strong>How do organisations adapt to AI without losing what makes them human?</strong><br>
+      This question drives everything we do. It is not rhetorical.
+    </p>
+    <div style="display:flex;gap:40px;">
+      <div class="hero-stat">
+        <div class="hero-stat-num">6+</div>
+        <div class="hero-stat-label">Formats running</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Engagement tiers</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">SK/EU</div>
+        <div class="hero-stat-label">Primary node</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ANIMATING QUESTIONS ── -->
+<section class="questions">
+  <p class="code questions-label">Animating Questions</p>
+  <div class="questions-grid">
+    <div class="question-item">
+      <div class="question-num">01 —</div>
+      <p class="question-text">How does work hold under AI — and what breaks first?</p>
+    </div>
+    <div class="question-item">
+      <div class="question-num">02 —</div>
+      <p class="question-text">Can organisations move faster with AI while keeping consistency and direction?</p>
+    </div>
+    <div class="question-item">
+      <div class="question-num">03 —</div>
+      <p class="question-text">What does it mean to build and lead in an age where judgment matters more than execution?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── TWO BRANCHES ── -->
+<div class="branches">
+
+  <!-- INSTITUTE -->
+  <div class="branch-institute grid-bg-dark">
+    <div class="section-header">
+      <div>
+        <p class="code branch-label" style="color:var(--blue);">The Institute</p>
+        <h2 class="branch-title" style="color:var(--dark);">Programmes &<br>Formats</h2>
+        <p class="branch-sub" style="color:rgba(0,0,0,0.45);">We design and run AI education programmes for the public, organisations, and communities navigating the shift.</p>
+      </div>
+    </div>
+    <div class="programmes">
+      <div class="programme">
+        <div class="programme-tag">Public · Open</div>
+        <div class="programme-name">COMMUNITEA</div>
+        <div class="programme-desc">Curated discussions. AI made understandable. 2–3h, up to 20 people.</div>
+      </div>
+      <div class="programme">
+        <div class="programme-tag">Organisations · B2B</div>
+        <div class="programme-name">MINDSHIFT</div>
+        <div class="programme-desc">Structured AI programme for teams and leadership. 2-day to long-term.</div>
+      </div>
+      <div class="programme">
+        <div class="programme-tag">Toolkits & Research</div>
+        <div class="programme-name">FUTURE PROTOCOLS</div>
+        <div class="programme-desc">Open toolkits from real SORRYWECAN workflows. Live → frameworks.</div>
+      </div>
+      <div class="programme">
+        <div class="programme-tag">Internal · Bi-monthly</div>
+        <div class="programme-name">THE SOURCE</div>
+        <div class="programme-desc">Internal SORRYWECAN × Research Lab sessions. The research backbone.</div>
+      </div>
+    </div>
+    <a class="see-all" href="#" style="margin-top:24px;display:inline-block;">All Programmes →</a>
+  </div>
+
+  <!-- RADAR -->
+  <div class="branch-radar">
+    <div class="section-header">
+      <div>
+        <p class="code branch-label" style="color:var(--blue);">The Radar</p>
+        <h2 class="branch-title" style="color:white;">Intelligence &<br>Editorial</h2>
+        <p class="branch-sub" style="color:rgba(255,255,255,0.35);">We track what the news is a symptom of. AI, work, cognition, and the forces reshaping how humans operate.</p>
+      </div>
+    </div>
+    <div class="radar-articles">
+      <div class="radar-article">
+        <div class="article-meta">
+          <span class="article-tag tag-tech">AI & Work</span>
+          <span class="article-date">Apr 2026 · W16</span>
+        </div>
+        <div class="article-title">Execution is faster, but judgment is harder. What organisations are losing in the speed-up.</div>
+        <div class="article-excerpt">Third-order consequences of AI adoption no one is tracking yet.</div>
+      </div>
+      <div class="radar-article">
+        <div class="article-meta">
+          <span class="article-tag tag-org">Organisations</span>
+          <span class="article-date">Apr 2026 · W15</span>
+        </div>
+        <div class="article-title">The Quality Collapse. Why AI-native teams produce more but mean less.</div>
+        <div class="article-excerpt">Pattern signal from this week's synthesis — and what to do about it.</div>
+      </div>
+      <div class="radar-article">
+        <div class="article-meta">
+          <span class="article-tag tag-human">Cognition</span>
+          <span class="article-date">Apr 2026 · W14</span>
+        </div>
+        <div class="article-title">Tatra banka benchmark: what a real enterprise AI rollout looks like from the inside.</div>
+        <div class="article-excerpt">Case study from a live organisational programme.</div>
+      </div>
+      <div class="radar-article">
+        <div class="article-meta">
+          <span class="article-tag tag-research">Research</span>
+          <span class="article-date">Mar 2026 · W13</span>
+        </div>
+        <div class="article-title">Future Protocols 001: The 6 workflow patterns we tested, and the 2 that actually held.</div>
+      </div>
+    </div>
+    <a class="radar-cta" href="#">Enter The Radar →</a>
+  </div>
+</div>
+
+<!-- ── FORMATS FULL ROW ── -->
+<section class="formats grid-bg">
+  <div class="formats-watermark">HOW</div>
+  <div class="formats-header">
+    <div>
+      <p class="code" style="color:rgba(255,255,255,0.3);margin-bottom:6px;">Key Formats</p>
+      <h2 class="formats-title">Research Lab formats</h2>
+    </div>
+    <a class="see-all-light" href="#">All Formats →</a>
+  </div>
+  <div class="formats-grid">
+    <div class="format-card">
+      <div class="format-name">COMMUNITEA</div>
+      <div class="format-tag">Public · Open Format</div>
+      <div class="format-desc">Public sessions and curated discussions. Open formats that make AI understandable beyond the tech world.</div>
+      <div class="format-meta">2–3h · up to 20 people · Studio or partner locations</div>
+    </div>
+    <div class="format-card">
+      <div class="format-name">MINDSHIFT</div>
+      <div class="format-tag">Organisations · B2B</div>
+      <div class="format-desc">Structured programme for teams and leadership. Cross-team AI diagnostics + integration into real workflows.</div>
+      <div class="format-meta">2-day to long-term · up to 15 people</div>
+    </div>
+    <div class="format-card">
+      <div class="format-name">FUTURE PROTOCOLS</div>
+      <div class="format-tag">Toolkits & Research</div>
+      <div class="format-desc">Custom and open toolkits built on real SORRYWECAN workflows. Live experiments → practical frameworks.</div>
+      <div class="format-meta">Open access · updated continuously</div>
+    </div>
+    <div class="format-card">
+      <div class="format-name">MEDIA HOUSE</div>
+      <div class="format-tag">Content & Distribution</div>
+      <div class="format-desc">The Radar newsletter, blog, interviews, case studies. The content flywheel that builds trust across all formats.</div>
+      <div class="format-meta">Weekly · subscription-based platform</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TEAM ── -->
+<section class="team">
+  <div class="team-header">
+    <div>
+      <p class="code" style="color:rgba(255,255,255,0.2);margin-bottom:6px;">The Team</p>
+      <h2 class="team-title">Practitioners, not consultants.</h2>
+    </div>
+    <p class="team-sub">We build with AI before we teach it. The SORRYWECAN production environment is our laboratory.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-name">Peter Kaspar</div>
+      <div class="member-role">Creative Direction<br>Co-Founder</div>
+    </div>
+    <div class="team-member">
+      <div class="member-name">Tiep Le Dinh</div>
+      <div class="member-role">Automation Infrastructure<br>Co-Founder</div>
+    </div>
+    <div class="team-member">
+      <div class="member-name">Roland Wranik</div>
+      <div class="member-role">Vision & Strategy<br>SORRYWECAN CEO</div>
+    </div>
+    <div class="team-member">
+      <div class="member-name">Sasha Zaytseva</div>
+      <div class="member-role">Learning Systems<br>Research Facilitator</div>
+    </div>
+    <div class="team-member">
+      <div class="member-name">Roman Pii Wagner</div>
+      <div class="member-role">Strategic Navigation<br>Transformational Design</div>
+    </div>
+    <div class="team-member">
+      <div class="member-name">Andrea Kutlikova</div>
+      <div class="member-role">Project Lead<br>Adult Educator</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ENGAGE ── -->
+<section style="background:var(--parchment);">
+  <div style="padding:40px 40px 0;border-top:1px solid rgba(0,0,0,0.08);">
+    <p class="code" style="color:var(--blue);margin-bottom:6px;">How to Engage</p>
+    <h2 style="font-size:36px;font-weight:900;letter-spacing:-0.02em;color:var(--dark);margin-bottom:4px;">Work with Research Lab</h2>
+    <p style="font-size:14px;color:rgba(0,0,0,0.4);max-width:500px;line-height:1.6;">Three ways to engage — from participating in our programmes to long-term strategic partnership.</p>
+  </div>
+  <div class="engage">
+    <div class="engage-tier">
+      <div class="engage-num">01 / 03</div>
+      <div class="engage-name">PARTICIPATION</div>
+      <div class="engage-desc">Organisations engage Research Lab by joining its programmes and formats. For teams ready to build internal AI capability.</div>
+    </div>
+    <div class="engage-tier featured">
+      <div class="engage-num">02 / 03</div>
+      <div class="engage-name">COLLABORATION</div>
+      <div class="engage-desc">Direct involvement in selected programmes, co-development of themes, modules, or editions. Project-based partnerships.</div>
+      <a class="engage-cta" href="#">Let's Talk</a>
+    </div>
+    <div class="engage-tier">
+      <div class="engage-num">03 / 03</div>
+      <div class="engage-name">STRATEGIC PARTNERSHIP</div>
+      <div class="engage-desc">A limited number of organisations selected for long-term partnership. Visible role in shaping how AI is understood at scale.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div>
+    <div class="footer-logo">RESEARCH<span>LAB</span><br><span style="font-size:9px;letter-spacing:0.25em;">BY SORRYWECAN</span></div>
+  </div>
+  <div class="footer-links">
+    <a class="footer-link" href="#">Institute</a>
+    <a class="footer-link" href="#">The Radar</a>
+    <a class="footer-link" href="#">Programmes</a>
+    <a class="footer-link" href="#">Lightpaper</a>
+    <a class="footer-link" href="#">Lab ↗</a>
+    <a class="footer-link" href="#">Contact</a>
+  </div>
+  <div class="footer-copy">SORRYWECAN // RESEARCH LAB // 2026</div>
+</footer>
+
+</body>
+</html>
